@@ -20,7 +20,7 @@ jobs:
         run: Rscript -e 'bookdown::render_book("index.Rmd")'
       - uses: actions/upload-artifact@v1
         with:
-          name: catalog
+          name: index.Rmd
           path: docs/
   
 # Need to first create an empty gh-pages branch
@@ -37,9 +37,9 @@ jobs:
        uses: actions/download-artifact@v1.0.0
        with:
          # Artifact name
-         name: catlaog # optional
+         #name: catlaog # optional
          # Destination path
-         path: docs/ # optional
+         #path: docs/ # optional
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@master
        env:
