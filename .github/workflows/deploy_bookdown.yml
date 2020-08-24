@@ -21,7 +21,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: catalog
-          path: chapters/
+          path: docs/
   
 # Need to first create an empty gh-pages branch
 # see https://pkgdown.r-lib.org/reference/deploy_site_github.html
@@ -39,11 +39,11 @@ jobs:
          # Artifact name
          name: catlaog # optional
          # Destination path
-         path: chapters/ # optional
+         path: docs/ # optional
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@master
        env:
           EMAIL: ${{ kimberly.bastille@gmail.com }}               # must be a verified email
           GH_TOKEN: ${{ e4c81517dbbb4b76625d2d68d1744538df2a7405 }} # https://github.com/settings/tokens
-          BUILD_DIR: catalog                     # "_site/" by default
+          BUILD_DIR: docs/                     # "_site/" by default
     
