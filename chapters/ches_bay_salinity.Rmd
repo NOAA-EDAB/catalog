@@ -1,0 +1,86 @@
+# Chesapeake Bay Salinity
+
+**Description**: Chesapeake Bay Low Salinity Event Summary 
+
+**Contributor(s)**: Bruce Vogt, Charles Pellerin
+  
+**Data steward**: Charles Pellerin, <charles.pellerin@noaa.gov>
+  
+**Point of contact**: Bruce Vogt, <bruce.vogt@noaa.gov> 
+
+## Impact Summary
+
+## Low Salinity Conditions in the Chesapeake Bay, 2018-2019: Synthesis of Impacts to Living Resources
+
+
+The Chesapeake Bay experienced below average salinity, caused by the highest precipitation levels ever recorded for the watershed throughout 2018 and 2019. Shifts in physical conditions changed the salinity dynamics throughout the Chesapeake Bay environment, impacting habitat conditions and biological responses for multiple species of interest, including eastern oysters, blue crab, striped bass, shad and herring, invasive blue catfish, and underwater seagrasses. Low salinity levels recorded by NOAA Chesapeake Bay Office’s Chesapeake Bay Interpretive Buoy System (CBIBS) at Stingray Point showed below-average levels starting in summer 2018 and continuing through spring of 2019 (see below). 
+
+```{r}
+
+knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map"))
+
+```
+
+
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL.Rmd-cb-sal.R"), echo = F, fig.align="center", eval = T, fig.cap="Buoy data showing unprecedented fresh water in Chesapeake Bay, 2018-2019."}
+
+```
+
+
+The above graph represents the salinity trends throughout the year in 2018 and 2019, as well as the daily average, which is the average salinity of each day from 2008-2019. These data were gathered from a CBIBS buoy located at Stingray Point near Deltaville, VA, and were chosen to demonstrate the anomalous salinity observations of the last two years because this particular buoy has the longest-running, most reliable continuous dataset currently available.
+Salinity in 2018 was slightly above average in the first half of the year, but declined to below-average levels by late May. Salinity remained consistently below average through the summer of 2019. About 10 weeks of data are missing in summer 2019 due to a battery failure in the buoy.  Salinity increases to near-average levels by the time the buoy is again fully operational in September. These data demonstrate the anomalous low-salinity conditions that the Chesapeake Bay experienced throughout 2018 and 2019, which had significant impacts on living resources in the Bay.
+
+
+### Poor Dissolved Oxygen for Fisheries
+High flows during the winter and spring of Water Year 2019 came during a critical time of year when the nutrients delivered to the Bay fuel algal blooms, which cause low dissolved oxygen in the summer. Dissolved oxygen levels less than 2.0 mg/l (or hypoxia) are harmful to oysters, crabs, and fish. The high flows, and associated nutrient loads, during WY 2019 contributed to low summer dissolved oxygen levels in the Bay that were the 3rd worst recorded in Maryland waters, according to the Maryland Department of Natural Resources. High summer water temperatures combined with low dissolved oxygen decreases suitable habitat for species such as striped bass and increases recreational fishing mortality.
+
+### Impacts to Oysters 
+Elevated freshwater flows into the Chesapeake during 2018 lowered salinities over an extended time period, impacting spatset, disease, mortality and growth of oysters. 
+
+In Maryland, the Spatfall Intensity Index, a measure of recruitment success and potential increase in the population, was 15.0 spat/bu, well below the 34-year median value of 39.8. Spatset intensity declined 36% from the previous year, with more than twice as many 2018 index bars having decreased spatfall when compared with 2017. Despite locally devastating freshets at some upstream locations, the Maryland-wide Observed Mortality Index remained the same as the previous year. At 14%, the 2018 index was well below the 34-year mean of 22.5%, continuing a 15-year trend as a consequence of low to moderate disease pressure. However, the prolonged period of elevated streamflows and consequent drop in salinity had a severe impact on the upper Potomac bars and to a lesser extent the upper bay oysters. In the Potomac River above Cobb Island, observed mortalities ranged from 88% to 100%. On the Eastern Shore side of the upper bay, the highest observed mortalities ranged from 25% to 100% and the western shore of the upper bay, mortalities ranged from 35% to 53%. 
+
+```{r}
+
+knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map2"))
+
+knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map3"))
+
+```
+
+
+
+#### Oyster Hatchery Declines
+Oyster restoration and aquaculture in the Maryland portions of the Chesapeake Bay rely on oyster spat reared at the Horn Point Oyster Hatchery.  Low salinity conditions may have resulted in the reduced spat production observed between 2018 and 2019 with 1.28 billion and 197 million viable spat respectively (Stephanie Alexander, presentation 2020). 
+
+#### Spread of invasive species
+Blue catfish, an invasive species in the Chesapeake, has spread over the last two summers due to the lower salinity levels. Biologists and state fishery managers are concerned about the predation impacts this spread can have on native species such as blue crabs, shad, herring, menhaden, and white catfish. 
+
+
+
+## Methods
+### Data sources
+The National Oceanic and Atmospheric Administration’s (NOAA) Chesapeake Bay Interpretive Buoy System (CBIBS) is a network of observing platforms (buoys) that collect meteorological, oceanographic, and water-quality data and relay that information using wireless technology. The stations have been in place since 2007. The Sting Ray station was deployed in July of 2008 and has been monitoring conditions on and off since then. The data is recorded in situ and sent to a server over a cellular modem. 
+
+The standard CBIBS instrument is a WETLabs WQM mounted in the buoy well approximately 0.5 meters below the surface. Seabird purchased WETLabs and are now the manufacturer of the instruments. The WQM instruments are calibrated and swapped out on a regular basis. Salinity is stored as a double with the units of PSU.
+
+### Data extraction 
+Data is directly inserted into a database from the real time system over the cellular network. The general public can use [this link](https://buoybay.noaa.gov/observations/data-download) to explore and pull that data from the CBIBS database. The process for data extraction for this indicator can be found [here](https://github.com/NOAA-EDAB/tech-doc/tree/master/R/stored_scripts/ches_bay_sal_extraction.txt).
+
+
+### Data analysis
+The data is processed by a [python script](https://github.com/NOAA-EDAB/tech-doc/tree/master/R/stored_scripts/ches_bay_sal_analysis.py). This creates an array and runs the data through a qartod routine. The result is a set of flags. Only the good data is used in the plot below.
+
+### Data processing
+Code for processing salinity data can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_ch_bay_sal.R). 
+
+
+### Raw Data 
+The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
+
+```{r}
+library(DT)
+datatable(ecodata::ch_bay_sal, options = list(pageLength = 10))
+```
+```
+
+

@@ -1,0 +1,134 @@
+---
+title: "Synthetic Indicator Catalog"
+author: "Northeast Fisheries Science Center"
+date: "`r format(Sys.Date(), '%e %B %Y')`"
+site: bookdown::bookdown_site
+knit: "bookdown::render_book"
+output: bookdown::gitbook
+always_allow_html: true
+documentclass: book
+bibliography: ["bibliography/introduction.bib","bibliography/ches_bay_water_quality.bib","bibliography/primary_production_required.bib","bibliography/marine_heatwave.bib"]
+geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
+biblio-style: apalike
+link-citations: true
+github-repo: NOAA-EDAB/tech-doc
+description: "This catalog holds information on available datasets and indicators."
+---
+
+# Introduction {-}
+
+The purpose of this document is to collate the methods used to access, collect, process, and analyze derived data ("indicators") used to describe the status and trend of social, economical, ecological, and biological conditions in the Northeast Shelf Large Marine Ecosystem (see figure, below). These indicators are further synthesized in State of the Ecosystem Reports produced annually by the [Northeast Fisheries Science Center](https://www.nefsc.noaa.gov/) for the [New England Fisheries Management Council](https://www.nefmc.org/) and the [Mid-Atlantic Fisheries Management Council](http://www.mafmc.org/). The metadata for each indicator (in accordance with the [Public Access to Research Results (PARR) directive](http://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)) and the methods used to construct each indicator are described in the subsequent chapters, with each chapter title corresponding to an indicator or analysis present in State of the Ecosystem Reports. The most recent and usable html version of this document can be found at the [NOAA EDAB Github](https://noaa-edab.github.io/tech-doc/). The PDF version of this document is for archiving only. The [PDF version](https://doi.org/10.25923/64pf-sc70) from previous years is archived in NOAA's Institutional Repository. 
+
+Indicators included in this document were selected to clearly align with management objectives, which is required for integrated ecosystem assessment [@levin_integrated_2009], and has been advised many times in the literature [@degnbol_review_2004; @jennings_indicators_2005; @rice_framework_2005; @link_translating_2005]. A difficulty with practical implementation of this in ecosystem reporting can be the lack of clearly specified ecosystem-level management objectives (although some have been suggested [@murawski_definitions_2000]). In our case, considerable effort had already been applied to derive both general goals and operational objectives from both US legislation such as the Magnuson-Stevens Fisheries Conservation and Management Act (MSA) and regional sources [@depiper_operationalizing_2017]. These objectives are somewhat general and would need refinement together with managers and stakeholders, however, they serve as a useful starting point to structure ecosystem reporting.
+
+```{r setup, echo=FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = F, 
+                      message = F,
+                      warning = F, 
+                      #dev = "cairo_pdf", 
+                      fig.path = here::here("images/")) 
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
+#update.packages(ask = FALSE, checkBuilt = TRUE)  # update R packages
+tinytex::tlmgr_update() 
+
+#source directories
+image.dir <- here::here("images")
+r.dir <- here::here("R")
+gis.dir <- here::here("gis")
+data.dir <- here::here("data")
+#Plotting and data libraries
+remotes::install_github("noaa-edab/ecodata")
+remotes::install_github("thomasp85/patchwork")
+
+library(ggplot2)
+#library(formatR)
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(ecodata)
+library(here)
+library(kableExtra)
+library(ggrepel)
+library(stringr)
+library(patchwork)
+library(grid)
+library(vegan)
+library(rpart)
+library(knitr)
+library(rmarkdown)
+library(magick)
+library(readr)
+library(RColorBrewer)
+library(ks)
+library(plyr)
+library(cowplot)
+#GIS libraries
+library(sf)
+library(rgdal)
+library(raster)
+library(marmap)
+library(ggspatial)
+
+#Time series constants
+shade.alpha <- 0.3
+shade.fill <- "lightgrey"
+lwd <- 1
+pcex <- 2
+trend.alpha <- 0.5
+trend.size <- 2
+hline.size <- 1
+hline.alpha <- 0.35
+hline.lty <- "dashed"
+label.size <- 5
+hjust.label <- 1.5
+letter_size <- 4
+feeding.guilds1 <- c("Piscivore","Planktivore","Benthivore","Benthos")
+feeding.guilds <- c("Apex Predator","Piscivore","Planktivore","Benthivore","Benthos")
+x.shade.min <- 2009
+x.shade.max <- max(Time)
+#Function for custom ggplot facet labels
+label <- function(variable,value){
+  return(facet_names[value])
+}
+
+
+#Map line parameters
+map.lwd <- 0.4
+#CRS
+crs <- "+proj=longlat +lat_1=35 +lat_2=45 +lat_0=40 +lon_0=-77 +x_0=0 +y_0=0 +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0"
+#Coastline shapefile
+# coast <- ne_countries(scale = 10,
+#                           continent = "North America",
+#                           returnclass = "sf") %>%
+#              sf::st_transform(crs = crs)
+# # #State polygons
+# ne_states <- ne_states(country = "united states of america",
+#                                       returnclass = "sf") %>%
+#   sf::st_transform(crs = crs)
+# #high-res polygon of Maine
+# new_england <- read_sf(gis.dir,"new_england")
+#EPU shapefile
+epu_sf <- ecodata::epu_sf %>% 
+  filter(EPU %in% c("MAB","GB","GOM"))
+#identifiers
+council <- "Mid-Atlantic Fishery Management Council"
+council_abbr <- "MAFMC"
+epu <- "Mid-Atlantic Bight"
+epu_abbr <- "MAB"
+region <- "Mid-Atlantic"
+region_abbr <- "MA"
+```
+
+(ref:neusmap) Map of Northeast U.S. Continental Shelf Large Marine Ecosystem from @Hare2016.
+
+
+```{r neusmap, message = FALSE, warning=FALSE, fig.align='center', fig.height=6, echo = F, fig.cap='(ref:neusmap)'}
+knitr::include_graphics("images/journal.pone.0146756.g002.PNG")
+
+```
+
+<!-- **References** -->
+
+<!-- Hare JA, Morrison WE, Nelson MW, Stachura MM, Teeters EJ, Griffis RB, et al. (2016) A Vulnerability Assessment of Fish and Invertebrates to Climate Change on the Northeast US Continental Shelf. PLoS ONE 11(2): e0146756. https://doi.org/10.1371/journal.pone.0146756 -->
+
+<!-- -------------- -->
