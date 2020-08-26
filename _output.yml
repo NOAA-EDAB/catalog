@@ -3,10 +3,10 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Test Doc</a></li>
+        <li><a href="./">Catalog</a></li>
       after: |
-        <li><a href="https://github.com/andybeet/test-doc" target="blank">github repo</a></li>
+        <li><a href="https://github.com/kimberly-bastille/sin-cat" target="blank">github repo</a></li>
 #    edit: https://github.com/andybeet/test-doc/edit/master/%s
-    download: ["pdf"]
-bookdown::pdf_book:
-  keep_tex: yes
+    #download: ["pdf"]
+#bookdown::pdf_book:
+ # keep_tex: yes
