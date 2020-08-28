@@ -35,6 +35,10 @@ jobs:
           key: bookdown-${{ hashFiles('**/*Rmd') }}
           restore-keys: bookdown-
 
+      - name: Install remotes
+        run: |
+          R -e 'install.packages("remotes")'
+
       - name: Install ecodata
         run: |
           R -e 'remotes::install_github("noaa-edab/ecodata")'
