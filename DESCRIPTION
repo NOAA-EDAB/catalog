@@ -10,7 +10,6 @@ Depends:
   data.table,
   nlme,
   AICcmodavg,
-  rgdal,
   maps,
   mapdata,
   png,
