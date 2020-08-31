@@ -540,13 +540,6 @@
       "Repository": "CRAN",
       "Hash": "6f76f71042411426ec8df6c54f34e6dd"
     },
-    "sf": {
-      "Package": "sf",
-      "Version": "0.9-4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "dd69923fdfcbd45666f67f149dea4c6a"
-    },
     "sp": {
       "Package": "sp",
       "Version": "1.4-2",

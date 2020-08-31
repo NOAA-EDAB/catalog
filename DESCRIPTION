@@ -51,7 +51,6 @@ Depends:
   ggrepel,
   kernlab,
   formatR,
-  sf, 
   ggspatial
 Remotes: 
   slucey/RSurvey/Survdat,

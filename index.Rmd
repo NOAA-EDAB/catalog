@@ -63,7 +63,7 @@ library(ks)
 library(plyr)
 library(cowplot)
 #GIS libraries
-library(sf)
+#library(sf)
 #library(rgdal)
 library(raster)
 library(marmap)
