@@ -22,9 +22,9 @@ knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map"))
 ```
 
 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL.Rmd-cb-sal.R"), echo = F, fig.align="center", eval = T, fig.cap="Buoy data showing unprecedented fresh water in Chesapeake Bay, 2018-2019."}
+<!-- ```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL.Rmd-cb-sal.R"), echo = F, fig.align="center", eval = T, fig.cap="Buoy data showing unprecedented fresh water in Chesapeake Bay, 2018-2019."} -->
 
-```
+<!-- ``` -->
 
 
 The above graph represents the salinity trends throughout the year in 2018 and 2019, as well as the daily average, which is the average salinity of each day from 2008-2019. These data were gathered from a CBIBS buoy located at Stingray Point near Deltaville, VA, and were chosen to demonstrate the anomalous salinity observations of the last two years because this particular buoy has the longest-running, most reliable continuous dataset currently available.
