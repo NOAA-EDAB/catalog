@@ -38,6 +38,10 @@ jobs:
       - name: Install remotes
         run: |
           R -e 'install.packages("remotes")'
+          
+      - name: Install ggplot2
+        run: |
+          R -e 'install.packages("ggplot2")'
 
       - name: Install ecodata
         run: |
