@@ -64,7 +64,7 @@ library(plyr)
 library(cowplot)
 #GIS libraries
 library(sf)
-library(rgdal)
+#library(rgdal)
 library(raster)
 library(marmap)
 library(ggspatial)
