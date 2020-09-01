@@ -7,7 +7,7 @@ knit: "bookdown::render_book"
 output: bookdown::gitbook
 always_allow_html: true
 documentclass: book
-bibliography: ["bibliography/introduction.bib","bibliography/ches_bay_water_quality.bib","bibliography/primary_production_required.bib","bibliography/marine_heatwave.bib"]
+bibliography: ["bibliography/introduction.bib","bibliography/ches_bay_sal.bib","bibliography/primary_production_required.bib","bibliography/marine_heatwave.bib"]
 geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
 biblio-style: apalike
 link-citations: true
