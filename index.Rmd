@@ -21,109 +21,109 @@ The purpose of this document is to collate the methods used to access, collect, 
 
 Indicators included in this document were selected to clearly align with management objectives, which is required for integrated ecosystem assessment [@levin_integrated_2009], and has been advised many times in the literature [@degnbol_review_2004; @jennings_indicators_2005; @rice_framework_2005; @link_translating_2005]. A difficulty with practical implementation of this in ecosystem reporting can be the lack of clearly specified ecosystem-level management objectives (although some have been suggested [@murawski_definitions_2000]). In our case, considerable effort had already been applied to derive both general goals and operational objectives from both US legislation such as the Magnuson-Stevens Fisheries Conservation and Management Act (MSA) and regional sources [@depiper_operationalizing_2017]. These objectives are somewhat general and would need refinement together with managers and stakeholders, however, they serve as a useful starting point to structure ecosystem reporting.
 
-<!-- ```{r setup, echo=FALSE, message = FALSE, warning = FALSE} -->
-<!-- knitr::opts_chunk$set(echo = F,  -->
-<!--                       message = F, -->
-<!--                       warning = F,  -->
-<!--                       #dev = "cairo_pdf",  -->
-<!--                       fig.path = here::here("images/"))  -->
-<!-- knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE) -->
-<!-- #update.packages(ask = FALSE, checkBuilt = TRUE)  # update R packages -->
-<!-- #tinytex::tlmgr_update()  -->
+```{r setup, echo=FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = F,
+                      message = F,
+                      warning = F,
+                      #dev = "cairo_pdf",
+                      fig.path = here::here("images/"))
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
+#update.packages(ask = FALSE, checkBuilt = TRUE)  # update R packages
+#tinytex::tlmgr_update()
 
-<!-- #source directories -->
-<!-- image.dir <- here::here("images") -->
-<!-- r.dir <- here::here("R") -->
-<!-- gis.dir <- here::here("gis") -->
-<!-- data.dir <- here::here("data") -->
-<!-- #Plotting and data libraries -->
-<!-- remotes::install_github("noaa-edab/ecodata") -->
-<!-- remotes::install_github("thomasp85/patchwork") -->
+#source directories
+image.dir <- here::here("images")
+r.dir <- here::here("R")
+gis.dir <- here::here("gis")
+data.dir <- here::here("data")
+#Plotting and data libraries
+remotes::install_github("noaa-edab/ecodata")
+remotes::install_github("thomasp85/patchwork")
 
-<!-- library(ggplot2) -->
-<!-- #library(formatR) -->
-<!-- library(magrittr) -->
-<!-- library(dplyr) -->
-<!-- library(tidyr) -->
-<!-- library(ecodata) -->
-<!-- library(here) -->
-<!-- install.packages("kableExtra") -->
-<!-- library(kableExtra) -->
-<!-- install.packages("ggrepel") -->
-<!-- library(ggrepel) -->
-<!-- library(stringr) -->
-<!-- library(patchwork) -->
-<!-- library(grid) -->
-<!-- install.packages("vegan") -->
-<!-- library(vegan) -->
-<!-- library(rpart) -->
-<!-- library(knitr) -->
-<!-- library(rmarkdown) -->
-<!-- install.packages("magick") -->
-<!-- library(magick) -->
-<!-- library(readr) -->
-<!-- library(RColorBrewer) -->
-<!-- install.packages("ks") -->
-<!-- library(ks) -->
-<!-- library(cowplot) -->
-<!-- #GIS libraries -->
-<!-- #library(sf) -->
-<!-- #library(rgdal) -->
-<!-- library(raster) -->
-<!-- install.packages("marmap") -->
-<!-- library(marmap) -->
-<!-- install.packages("ggspatial") -->
-<!-- library(ggspatial) -->
+library(ggplot2)
+#library(formatR)
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(ecodata)
+library(here)
+install.packages("kableExtra")
+library(kableExtra)
+install.packages("ggrepel")
+library(ggrepel)
+library(stringr)
+library(patchwork)
+library(grid)
+install.packages("vegan")
+library(vegan)
+library(rpart)
+library(knitr)
+library(rmarkdown)
+install.packages("magick")
+library(magick)
+library(readr)
+library(RColorBrewer)
+install.packages("ks")
+library(ks)
+library(cowplot)
+#GIS libraries
+#library(sf)
+#library(rgdal)
+library(raster)
+install.packages("marmap")
+library(marmap)
+install.packages("ggspatial")
+library(ggspatial)
 
-<!-- #Time series constants -->
-<!-- shade.alpha <- 0.3 -->
-<!-- shade.fill <- "lightgrey" -->
-<!-- lwd <- 1 -->
-<!-- pcex <- 2 -->
-<!-- trend.alpha <- 0.5 -->
-<!-- trend.size <- 2 -->
-<!-- hline.size <- 1 -->
-<!-- hline.alpha <- 0.35 -->
-<!-- hline.lty <- "dashed" -->
-<!-- label.size <- 5 -->
-<!-- hjust.label <- 1.5 -->
-<!-- letter_size <- 4 -->
-<!-- feeding.guilds1 <- c("Piscivore","Planktivore","Benthivore","Benthos") -->
-<!-- feeding.guilds <- c("Apex Predator","Piscivore","Planktivore","Benthivore","Benthos") -->
-<!-- x.shade.min <- 2009 -->
-<!-- x.shade.max <- max(Time) -->
-<!-- #Function for custom ggplot facet labels -->
-<!-- label <- function(variable,value){ -->
-<!--   return(facet_names[value]) -->
-<!-- } -->
+#Time series constants
+shade.alpha <- 0.3
+shade.fill <- "lightgrey"
+lwd <- 1
+pcex <- 2
+trend.alpha <- 0.5
+trend.size <- 2
+hline.size <- 1
+hline.alpha <- 0.35
+hline.lty <- "dashed"
+label.size <- 5
+hjust.label <- 1.5
+letter_size <- 4
+feeding.guilds1 <- c("Piscivore","Planktivore","Benthivore","Benthos")
+feeding.guilds <- c("Apex Predator","Piscivore","Planktivore","Benthivore","Benthos")
+x.shade.min <- 2009
+x.shade.max <- max(Time)
+#Function for custom ggplot facet labels
+label <- function(variable,value){
+  return(facet_names[value])
+}
 
 
-<!-- #Map line parameters -->
-<!-- map.lwd <- 0.4 -->
-<!-- #CRS -->
-<!-- crs <- "+proj=longlat +lat_1=35 +lat_2=45 +lat_0=40 +lon_0=-77 +x_0=0 +y_0=0 +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0" -->
-<!-- #Coastline shapefile -->
-<!-- # coast <- ne_countries(scale = 10, -->
-<!-- #                           continent = "North America", -->
-<!-- #                           returnclass = "sf") %>% -->
-<!-- #              sf::st_transform(crs = crs) -->
-<!-- # # #State polygons -->
-<!-- # ne_states <- ne_states(country = "united states of america", -->
-<!-- #                                       returnclass = "sf") %>% -->
-<!-- #   sf::st_transform(crs = crs) -->
-<!-- # #high-res polygon of Maine -->
-<!-- # new_england <- read_sf(gis.dir,"new_england") -->
-<!-- #EPU shapefile -->
-<!-- epu_sf <- ecodata::epu_sf %>%  -->
-<!--   filter(EPU %in% c("MAB","GB","GOM")) -->
-<!-- #identifiers -->
-<!-- council <- "Mid-Atlantic Fishery Management Council" -->
-<!-- council_abbr <- "MAFMC" -->
-<!-- epu <- "Mid-Atlantic Bight" -->
-<!-- epu_abbr <- "MAB" -->
-<!-- region <- "Mid-Atlantic" -->
-<!-- region_abbr <- "MA" -->
-<!-- ``` -->
+#Map line parameters
+map.lwd <- 0.4
+#CRS
+crs <- "+proj=longlat +lat_1=35 +lat_2=45 +lat_0=40 +lon_0=-77 +x_0=0 +y_0=0 +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0"
+#Coastline shapefile
+# coast <- ne_countries(scale = 10,
+#                           continent = "North America",
+#                           returnclass = "sf") %>%
+#              sf::st_transform(crs = crs)
+# # #State polygons
+# ne_states <- ne_states(country = "united states of america",
+#                                       returnclass = "sf") %>%
+#   sf::st_transform(crs = crs)
+# #high-res polygon of Maine
+# new_england <- read_sf(gis.dir,"new_england")
+#EPU shapefile
+epu_sf <- ecodata::epu_sf %>%
+  filter(EPU %in% c("MAB","GB","GOM"))
+#identifiers
+council <- "Mid-Atlantic Fishery Management Council"
+council_abbr <- "MAFMC"
+epu <- "Mid-Atlantic Bight"
+epu_abbr <- "MAB"
+region <- "Mid-Atlantic"
+region_abbr <- "MA"
+```
 
 (ref:neusmap) Map of Northeast U.S. Continental Shelf Large Marine Ecosystem from @Hare2016.
 
