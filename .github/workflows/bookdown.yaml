@@ -39,6 +39,10 @@ jobs:
         run: |
           R -e 'install.packages("remotes")'
           
+       - name: Install bookdown from github
+        run: |
+          R -e 'remotes::install_github('rstudio/bookdown')
+          
       - name: Install rgdal
         run: |
           R -e 'install.packages("rgdal")'
