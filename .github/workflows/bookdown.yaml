@@ -41,7 +41,7 @@ jobs:
           
        - name: Install bookdown from github
         run: |
-          R -e 'remotes::install_github('rstudio/bookdown')
+          R -e 'remotes::install_github('rstudio/bookdown')'
           
       - name: Install rgdal
         run: |
