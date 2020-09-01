@@ -17,7 +17,7 @@ The Chesapeake Bay experienced below average salinity, caused by the highest pre
 
 ```{r}
 
-knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map"))
+knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map.png"))
 
 ```
 
@@ -41,9 +41,9 @@ In Maryland, the Spatfall Intensity Index, a measure of recruitment success and 
 
 ```{r}
 
-knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map2"))
+knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map2.png"))
 
-knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map3"))
+knitr::include_graphics(file.path(image.dir, "ches_bay_salinity_map3.png"))
 
 ```
 
