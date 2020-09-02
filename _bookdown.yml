@@ -1,8 +1,9 @@
 book_filename: "catalog"
 rmd_files: ["index.Rmd",
-"chapters/primary_production_required.Rmd",
+"template.Rmd",
 "chapters/ches_bay_salinity.Rmd",
-"chapters/heatwave.Rmd"]
+"chapters/heatwave.Rmd",
+"chapters/primary_production_required.Rmd"]
 delete_merged_file: false
 output_dir: "_book"
 new_session: false # merge and knit as appose to knit and merge

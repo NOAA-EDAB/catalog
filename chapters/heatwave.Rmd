@@ -1,5 +1,67 @@
-# Testing Heatwave
+# Marine Heatwave
 
-some content
+**Description**: Marine Heatwave
 
-## Blah Blah Blah
+**Contributor(s)**: Vincent Saba
+  
+**Data steward**: Kimberly Bastille <kimberly.bastille@noaa.gov>
+  
+**Point of contact**: Vincent Saba <vincent.saba@noaa.gov>
+
+
+## Impact Summary
+
+### Marine Heatwaves (2019 GOM/GB)
+
+Marine heatwaves can derive from both atmospheric and oceanographic factors that can have dramatic impacts on marine ecosystems.  These heatwaves are measured in terms of magnitude and duration by using satellite measurements of daily sea surface temperature.  Here we use the marine heatwave metrics defined by Hobday et al. 2016 such that a warm event in the Gulf of Maine and Georges Bank is considered a marine heatwave if the event lasts for five or more days with temperatures warmer than the 90th percentile based on a historical climatology (1982-2010).     
+
+In 2019, the Gulf of Maine experienced four distinct marine heatwaves in the summer and fall with the strongest event beginning on July 3 and lasting 53 days (GOM_2019_Heatwave_time_series.pdf  dark red = strongest event of the year, light red = weaker events).  Relative to prior years, this marine heatwave ranked  12th on record in terms of maximum intensity (+3.27 oC above average on Aug 1) and 12th on record in terms of cumulative intensity (112 oC-days [sum of daily intensity anomalies]) (GOM_1982_2019_Heatwave_Max_Intensity_time_series.pdf and GOM_1982_2019_Heatwave_Cumul_Intensity_time_series.pdf).  The strongest heatwaves on record in the Gulf of Maine occurred in the summer of 2010 in terms of maximum intensity (+4.83 oC above average) and in the summer of 2012 in terms of cumulative intensity (630 oC-days).   The impacts of the 2012 marine heatwave in the Gulf of Maine have been well documented within the lobster fishery (Mills et al. 2013).
+
+In 2019, Georges Bank experienced three distinct marine heatwaves in the summer and fall with the strongest event beginning on August 17 and lasting 20 days (GB_2019_Heatwave_time_series.pdf  dark red = strongest event of the year, light red = weaker events).  Relative to prior years, this marine heatwave ranked 15th on record in terms of maximum intensity (+3.14 oC above average on Aug 23)  (GB_1982_2019_Heatwave_Max_Intensity_time_series.pdf).  The strongest heatwaves on record in the Georges Bank occurred in the summer of 2016 in terms of maximum intensity (+4.06 oC above average) and in the winter/spring/summer of 2012 in terms of cumulative intensity (485 oC-days).
+
+
+### Marine Heatwaves (2019 MAB)
+
+Marine heatwaves can derive from both atmospheric and oceanographic factors that can have dramatic impacts on marine ecosystems.  These heatwaves are measured in terms of magnitude and duration by using satellite measurements of daily sea surface temperature.  Here we use the marine heatwave metrics defined by Hobday et al. 2016 such that a warm event in the Gulf of Maine and Georges Bank is considered a marine heatwave if the event lasts for five or more days with temperatures warmer than the 90th percentile based on a historical climatology (1982-2010).     
+
+In 2019, the Middle Atlantic Bight experienced six distinct marine heatwaves in the spring, summer, and fall with one of the strongest events beginning on July 3 and lasting 21 days (MAB_2019_Heatwave_time_series.pdf  dark red = strongest event of the year, light red = weaker events).  Relative to prior years, this marine heatwave ranked 17th on record in terms of maximum intensity (+2.88 oC above average on Jul 22) (MAB_1982_2019_Heatwave_Max_Intensity_time_series.pdf).  Another strong marine heatwave began on Aug 1 and lasted 24 days, which was 20th on record in terms of cumulative intensity (46 oC-days [sum of daily intensity anomalies]) (MAB_1982_2019_Heatwave_Cumul_Intensity_time_series.pdf).  The strongest heatwaves on record in the Middle Atlantic Bight occurred in the winter of 2012 in terms of maximum intensity (+5.13 oC above average) and in the winter/summer of 2012 in terms of cumulative intensity (515 oC-days).   
+
+
+## Methods
+Marine heatwave analysis for Georges Bank, Gulf of Maine, and the Middle Atlantic Bight according to the definition in @hobday2016.  
+
+### Data sources
+NOAA high-res OISST (daily, 25-km, 1982-2019)   https://www.esrl.noaa.gov/psd/cgi-bin/db_search/DBListFiles.pl?did=132&tid=79458&vid=2423
+
+### Data extraction 
+Each yearly file (global) was downloaded, concatenated into a single netcdf file using nco (Unix), and then cropped to the USNES region using Ferret.  Each EPU's time-series of SST was averaged using .shp file boundaries for the MAB, GB, and GOM (also done in Ferret) and saved to the three .csv files.
+
+### Data analysis
+The marine heatwave metrics Maximum Intensity [deg. C] and Cumulative Intensity [deg. C x days] are calculated using NOAA OISST daily sea surface temperature data (25-km resolution) from January 1982 to December 2019.  The heatwaves are calculated based on the algorithms in Hobday et al. 2016 and by using a climatology of 1982-2010.  These metrics were run R using https://robwschlegel.github.io/heatwaveR/
+
+### Data processing 
+Marine Heatwave data were formatted for inclusion in the `ecodata` R package using this [R code](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_heatwave.R).
+
+### Plotting
+
+Code used for the plots below can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/LTL.Rmd-heatwave_mab.R).
+
+
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL.Rmd-heatwave_mab.R"), eval = T, echo=F, fig.cap="Cumulative and maximum marine heatwave in the Mid-Atlantic", fig.align="center"}
+```
+
+```{r, fig.cap="Heatwave events in 2019.", out.width='100%'}
+knitr::include_graphics(file.path(image.dir, "mab_heatwave.jpeg"))
+```
+
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL.Rmd-mab-heatwave-max.R"), eval = T, echo=F, fig.cap="Map showing the maximum intensity heatwave in the Mid-Atlantic occuring on July 22, 2019", fig.align="center"}
+```
+
+### Raw Data 
+The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
+
+```{r}
+library(DT)
+datatable(ecodata::heatwave, options = list(pageLength = 10))
+```
+```

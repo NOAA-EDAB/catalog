@@ -12,14 +12,17 @@ geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
 biblio-style: apalike
 link-citations: true
 github-repo: kimberly-bastille/sin-cat
-description: "This catalog holds information on available datasets and indicators."
+description: "This catalogue holds information on available datasets and indicators."
 ---
 
 # Introduction {-}
 
-The purpose of this document is to collate the methods used to access, collect, process, and analyze derived data ("indicators") used to describe the status and trend of social, economical, ecological, and biological conditions in the Northeast Shelf Large Marine Ecosystem (see figure, below). These indicators are further synthesized in State of the Ecosystem Reports produced annually by the [Northeast Fisheries Science Center](https://www.nefsc.noaa.gov/) for the [New England Fisheries Management Council](https://www.nefmc.org/) and the [Mid-Atlantic Fisheries Management Council](http://www.mafmc.org/). The metadata for each indicator (in accordance with the [Public Access to Research Results (PARR) directive](http://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)) and the methods used to construct each indicator are described in the subsequent chapters, with each chapter title corresponding to an indicator or analysis present in State of the Ecosystem Reports. The most recent and usable html version of this document can be found at the [NOAA EDAB Github](https://noaa-edab.github.io/tech-doc/). The PDF version of this document is for archiving only. The [PDF version](https://doi.org/10.25923/64pf-sc70) from previous years is archived in NOAA's Institutional Repository. 
+The purpose of this document is to collate the indicator information and methods used to inform the data driven products on the Northeast Shelf Large Marine Ecosystem by the Ecosystem Dynamics and Assessment Branch at the Northeast Fisheries Science Center (see figure, below). 
 
-Indicators included in this document were selected to clearly align with management objectives, which is required for integrated ecosystem assessment [@levin_integrated_2009], and has been advised many times in the literature [@degnbol_review_2004; @jennings_indicators_2005; @rice_framework_2005; @link_translating_2005]. A difficulty with practical implementation of this in ecosystem reporting can be the lack of clearly specified ecosystem-level management objectives (although some have been suggested [@murawski_definitions_2000]). In our case, considerable effort had already been applied to derive both general goals and operational objectives from both US legislation such as the Magnuson-Stevens Fisheries Conservation and Management Act (MSA) and regional sources [@depiper_operationalizing_2017]. These objectives are somewhat general and would need refinement together with managers and stakeholders, however, they serve as a useful starting point to structure ecosystem reporting.
+The information included in this document is contributed by a large variety of callaborators and contact information is available in each chapter. When possible we include the provided data in `ecodata`, an R package that holds the lastest version of the data avaialable. 
+
+The metadata for each indicator (in accordance with the [Public Access to Research Results (PARR) directive](http://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)) and the methods used to construct each indicator are described in the subsequent chapters, with each chapter title corresponding to an indicator or analysis present in State of the Ecosystem Reports. The most recent and usable html version of this document can be found at the [NOAA EDAB Github](https://keen-golick-345d62.netlify.app/index.html). 
+
 
 ```{r setup, echo=FALSE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = F,
