@@ -34,22 +34,6 @@ jobs:
           path: _bookdown_files
           key: bookdown-${{ hashFiles('**/*Rmd') }}
           restore-keys: bookdown-
-
-      - name: Install remotes
-        run: |
-          R -e 'install.packages("remotes")'
-          
-      - name: Install rgdal
-        run: |
-          R -e 'install.packages("rgdal")'
-          
-      - name: Install ggplot2
-        run: |
-          R -e 'install.packages("ggplot2")'
-      
-      - name: Install ecodata
-        run: |
-          R -e 'remotes::install_github("noaa-edab/ecodata")'
           
       - name: Install packages
         run: |
