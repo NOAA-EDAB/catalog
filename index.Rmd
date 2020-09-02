@@ -1,5 +1,5 @@
 ---
-title: "Synthetic Indicator Catalog"
+title: "Synthetic Indicator Catalogue"
 author: "Northeast Fisheries Science Center"
 date: "`r format(Sys.Date(), '%e %B %Y')`"
 site: bookdown::bookdown_site
