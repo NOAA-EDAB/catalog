@@ -1,6 +1,6 @@
 book_filename: "catalog"
 rmd_files: ["index.Rmd",
-"template.Rmd",
+"chapters/template.Rmd",
 "chapters/ches_bay_salinity.Rmd",
 "chapters/heatwave.Rmd",
 "chapters/primary_production_required.Rmd"]

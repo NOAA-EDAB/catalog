@@ -64,4 +64,4 @@ The raw data is available in the [`ecodata` package](https://noaa-edab.github.io
 library(DT)
 datatable(ecodata::heatwave, options = list(pageLength = 10))
 ```
-```
+
