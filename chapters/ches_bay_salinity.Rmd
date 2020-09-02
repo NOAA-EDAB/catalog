@@ -81,6 +81,5 @@ The raw data is available in the [`ecodata` package](https://noaa-edab.github.io
 library(DT)
 datatable(ecodata::ch_bay_sal, options = list(pageLength = 10))
 ```
-```
 
 
