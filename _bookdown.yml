@@ -4,5 +4,5 @@ rmd_files: ["index.Rmd",
 "chapters/ches_bay_salinity.Rmd",
 "chapters/heatwave.Rmd"]
 delete_merged_file: false
-output_dir: "catalog"
+output_dir: "_book"
 new_session: false # merge and knit as appose to knit and merge
