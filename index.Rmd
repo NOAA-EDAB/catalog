@@ -11,7 +11,7 @@ bibliography: ["bibliography/introduction.bib","bibliography/ches_bay_sal.bib","
 geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
 biblio-style: apalike
 link-citations: true
-github-repo: NOAA-EDAB/tech-doc
+github-repo: kimberly-bastille/sin-cat
 description: "This catalog holds information on available datasets and indicators."
 ---
 
