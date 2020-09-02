@@ -81,10 +81,10 @@ Figures for Mid-Atlantic Bight are presented in this document. For Georges Bank 
 #### Mid-Atlantic Bight (MAB)
 
 ```{r, pprmab,  echo=FALSE, out.width='50%'}
-knitr::include_graphics(paste0(imagePath,"/PPR-MAB-0_80.png"))
-knitr::include_graphics(paste0(imagePath,"/MTL-MAB-0_80.png"))
-knitr::include_graphics(paste0(imagePath,"/PP-MAB.png"))
-knitr::include_graphics(paste0(imagePath,"/composition-MAB-0_80.png"))
+knitr::include_graphics(paste0(image.dir,"/PPR-MAB-0_80.png"))
+knitr::include_graphics(paste0(image.dir,"/MTL-MAB-0_80.png"))
+knitr::include_graphics(paste0(image.dir,"/PP-MAB.png"))
+knitr::include_graphics(paste0(image.dir,"/composition-MAB-0_80.png"))
 ```
 
 
