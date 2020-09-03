@@ -26,22 +26,6 @@ Marine heatwaves can derive from both atmospheric and oceanographic factors that
 
 In 2019, the Middle Atlantic Bight experienced six distinct marine heatwaves in the spring, summer, and fall with one of the strongest events beginning on July 3 and lasting 21 days (MAB_2019_Heatwave_time_series.pdf  dark red = strongest event of the year, light red = weaker events).  Relative to prior years, this marine heatwave ranked 17th on record in terms of maximum intensity (+2.88 oC above average on Jul 22) (MAB_1982_2019_Heatwave_Max_Intensity_time_series.pdf).  Another strong marine heatwave began on Aug 1 and lasted 24 days, which was 20th on record in terms of cumulative intensity (46 oC-days [sum of daily intensity anomalies]) (MAB_1982_2019_Heatwave_Cumul_Intensity_time_series.pdf).  The strongest heatwaves on record in the Middle Atlantic Bight occurred in the winter of 2012 in terms of maximum intensity (+5.13 oC above average) and in the winter/summer of 2012 in terms of cumulative intensity (515 oC-days).   
 
-
-## Methods
-Marine heatwave analysis for Georges Bank, Gulf of Maine, and the Middle Atlantic Bight according to the definition in @hobday2016.  
-
-### Data sources
-NOAA high-res OISST (daily, 25-km, 1982-2019)   https://www.esrl.noaa.gov/psd/cgi-bin/db_search/DBListFiles.pl?did=132&tid=79458&vid=2423
-
-### Data extraction 
-Each yearly file (global) was downloaded, concatenated into a single netcdf file using nco (Unix), and then cropped to the USNES region using Ferret.  Each EPU's time-series of SST was averaged using .shp file boundaries for the MAB, GB, and GOM (also done in Ferret) and saved to the three .csv files.
-
-### Data analysis
-The marine heatwave metrics Maximum Intensity [deg. C] and Cumulative Intensity [deg. C x days] are calculated using NOAA OISST daily sea surface temperature data (25-km resolution) from January 1982 to December 2019.  The heatwaves are calculated based on the algorithms in Hobday et al. 2016 and by using a climatology of 1982-2010.  These metrics were run R using https://robwschlegel.github.io/heatwaveR/
-
-### Data processing 
-Marine Heatwave data were formatted for inclusion in the `ecodata` R package using this [R code](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_heatwave.R).
-
 ### Plotting
 
 Code used for the plots below can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/LTL.Rmd-heatwave_mab.R).
@@ -64,4 +48,21 @@ The raw data is available in the [`ecodata` package](https://noaa-edab.github.io
 library(DT)
 datatable(ecodata::heatwave, options = list(pageLength = 10))
 ```
+
+
+## Methods
+Marine heatwave analysis for Georges Bank, Gulf of Maine, and the Middle Atlantic Bight according to the definition in @hobday2016.  
+
+### Data sources
+NOAA high-res OISST (daily, 25-km, 1982-2019)   https://www.esrl.noaa.gov/psd/cgi-bin/db_search/DBListFiles.pl?did=132&tid=79458&vid=2423
+
+### Data extraction 
+Each yearly file (global) was downloaded, concatenated into a single netcdf file using nco (Unix), and then cropped to the USNES region using Ferret.  Each EPU's time-series of SST was averaged using .shp file boundaries for the MAB, GB, and GOM (also done in Ferret) and saved to the three .csv files.
+
+### Data analysis
+The marine heatwave metrics Maximum Intensity [deg. C] and Cumulative Intensity [deg. C x days] are calculated using NOAA OISST daily sea surface temperature data (25-km resolution) from January 1982 to December 2019.  The heatwaves are calculated based on the algorithms in Hobday et al. 2016 and by using a climatology of 1982-2010.  These metrics were run R using https://robwschlegel.github.io/heatwaveR/
+
+### Data processing 
+Marine Heatwave data were formatted for inclusion in the `ecodata` R package using this [R code](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_heatwave.R).
+
 

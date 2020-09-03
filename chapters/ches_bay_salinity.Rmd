@@ -55,6 +55,36 @@ Oyster restoration and aquaculture in the Maryland portions of the Chesapeake Ba
 #### Spread of invasive species
 Blue catfish, an invasive species in the Chesapeake, has spread over the last two summers due to the lower salinity levels. Biologists and state fishery managers are concerned about the predation impacts this spread can have on native species such as blue crabs, shad, herring, menhaden, and white catfish. 
 
+### Plotting
+```{r}
+
+ches_sal<-ecodata::ch_bay_sal %>% 
+  dplyr::filter(!Var == "UTCTime") %>% 
+  tidyr::drop_na() %>%
+  dplyr::mutate(Time =  as.numeric(str_sub(Time, 2, -1)),
+         Time1 = as.Date(Time, origin = "2018-12-31")) %>% 
+  tidyr::pivot_wider(names_from = Var, values_from = Value)
+
+ches_sal %>% 
+  ggplot2::ggplot() +
+  ggplot2::geom_ribbon(aes(x = Time1, ymin = AvgMinLim, ymax = AvgMaxLim))+
+  ggplot2::geom_ribbon(aes(x = Time1, ymin = MinDataLim, ymax = MaxDataLim), alpha = 0.3)+
+  ggplot2::geom_line(aes(x = Time1, y = Daily18), color = "blue") +
+  ggplot2::geom_line(aes(x = Time1, y = Daily19), color = "red") +
+  ggplot2::ylab(expression("PSU")) +
+  ggplot2::ggtitle("Chesapeake Bay Salinity") +
+  ecodata::theme_ts()
+```
+
+
+### Raw Data 
+The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
+
+```{r}
+library(DT)
+datatable(ecodata::ch_bay_sal, options = list(pageLength = 10))
+```
+
 
 
 ## Methods
@@ -73,13 +103,5 @@ The data is processed by a [python script](https://github.com/NOAA-EDAB/tech-doc
 ### Data processing
 Code for processing salinity data can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_ch_bay_sal.R). 
 
-
-### Raw Data 
-The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
-
-```{r}
-library(DT)
-datatable(ecodata::ch_bay_sal, options = list(pageLength = 10))
-```
 
 

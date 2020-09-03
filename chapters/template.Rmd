@@ -12,6 +12,12 @@
 
 Description of why this indicator is important and what is going on in the Northeast related to this information. 
 
+### Plotted data 
+Either from the contributor or from ecodata
+
+### Raw data 
+If available. 
+
 ## Methods
 ### Data Sources
 
@@ -21,10 +27,5 @@ Description of why this indicator is important and what is going on in the North
 
 ### Data Processing
 
-### Plotted data 
-Either from the contributor or from ecodata
 
-### Raw data 
-If available. 
-
-### References
+## References

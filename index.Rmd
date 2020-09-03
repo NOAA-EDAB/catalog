@@ -19,9 +19,9 @@ description: "This catalogue holds information on available datasets and indicat
 
 The purpose of this document is to collate the indicator information and methods used to inform the data driven products on the Northeast Shelf Large Marine Ecosystem by the Ecosystem Dynamics and Assessment Branch at the Northeast Fisheries Science Center (see figure, below). 
 
-The information included in this document is contributed by a large variety of callaborators and contact information is available in each chapter. When possible we include the provided data in `ecodata`, an R package that holds the lastest version of the data avaialable. 
+The information included in this document is contributed by a large variety of callaborators and contact information is available in each chapter. When possible, provided data is available in `ecodata`, an R package that holds the lastest version of the data avaialable. 
 
-The metadata for each indicator (in accordance with the [Public Access to Research Results (PARR) directive](http://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)) and the methods used to construct each indicator are described in the subsequent chapters, with each chapter title corresponding to an indicator or analysis present in State of the Ecosystem Reports. The most recent and usable html version of this document can be found at the [NOAA EDAB Github](https://keen-golick-345d62.netlify.app/index.html). 
+The metadata for each indicator (in accordance with the [Public Access to Research Results (PARR) directive](http://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)) and the methods used to construct each indicator are described in the subsequent chapters or in the Technical Documentation, with each chapter title corresponding to an indicator or analysis.
 
 
 ```{r setup, echo=FALSE, message = FALSE, warning = FALSE}

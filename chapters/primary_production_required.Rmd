@@ -19,7 +19,41 @@ species and therefore require only one step in the transfer of energy. The loss 
 of energy transfer of the species in the ecosystem, the proportion of phytoplankton production required (PPR) to
 account for the observed catch can be estimated.
 
-  
+
+### Plotting 
+
+Four plots are produced for each EPU:
+
+* The normalized PPR index (along with the associated landings). 
+* Total primary production 
+* Mean trophic level of the species included in the index (weighted by their landings)
+* Species composition of landings
+
+All created using the [indexPPR](https://github.com/andybeet/indexPPR)
+
+See the [workedExample vignette](https://github.com/andybeet/indexPPR/tree/master/vignettes) in the [indexPPR](https://github.com/andybeet/indexPPR/) package for plotting code.
+
+Figures for Mid-Atlantic Bight are presented in this document. For Georges Bank and the Gulf of Maine, please visit [here]((https://github.com/andybeet/indexPPR/tree/master/vignettes/figures))
+
+#### Mid-Atlantic Bight (MAB)
+
+```{r, pprmab,  echo=FALSE, out.width='50%'}
+knitr::include_graphics(paste0(image.dir,"/PPR-MAB-0_80.png"))
+knitr::include_graphics(paste0(image.dir,"/MTL-MAB-0_80.png"))
+knitr::include_graphics(paste0(image.dir,"/PP-MAB.png"))
+knitr::include_graphics(paste0(image.dir,"/composition-MAB-0_80.png"))
+```
+
+
+### Raw Data 
+The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
+
+```{r}
+library(DT)
+datatable(ecodata::ppr, options = list(pageLength = 10))
+```
+
+
 ## Methods
 
 The index is a measure of the impact of fishing on the base of the foodweb. The amount of potential yield we can expect from a marine ecosystem depends on the amount of production entering at the base of the food web, primarily in the form of phytoplankton; the pathways this energy follows to reach harvested species; the efficiency of transfer of energy at each step in the food web; and the fraction of this production that is removed by the fisheries.  Species such as scallops and clams primarily feed directly on larger phytoplankton species and therefore require only one step in the transfer of energy. The loss of energy at each step can exceed 80-90%.  For many fish species, as many as 2-4 steps may be necessary. Given the trophic level and the efficiency of energy transfer of the species in the ecosystem the amount phytoplankton production required (PPR) to account for the observed catch can be estimated.
@@ -63,36 +97,4 @@ The index is then normalized by dividing the index in year t by the total primar
 
 
 
-### Plotting 
-
-Four plots are produced for each EPU:
-
-* The normalized PPR index (along with the associated landings). 
-* Total primary production 
-* Mean trophic level of the species included in the index (weighted by their landings)
-* Species composition of landings
-
-All created using the [indexPPR](https://github.com/andybeet/indexPPR)
-
-See the [workedExample vignette](https://github.com/andybeet/indexPPR/tree/master/vignettes) in the [indexPPR](https://github.com/andybeet/indexPPR/) package for plotting code.
-
-Figures for Mid-Atlantic Bight are presented in this document. For Georges Bank and the Gulf of Maine, please visit [here]((https://github.com/andybeet/indexPPR/tree/master/vignettes/figures))
-
-#### Mid-Atlantic Bight (MAB)
-
-```{r, pprmab,  echo=FALSE, out.width='50%'}
-knitr::include_graphics(paste0(image.dir,"/PPR-MAB-0_80.png"))
-knitr::include_graphics(paste0(image.dir,"/MTL-MAB-0_80.png"))
-knitr::include_graphics(paste0(image.dir,"/PP-MAB.png"))
-knitr::include_graphics(paste0(image.dir,"/composition-MAB-0_80.png"))
-```
-
-
-### Raw Data 
-The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
-
-```{r}
-library(DT)
-datatable(ecodata::ppr, options = list(pageLength = 10))
-```
 
