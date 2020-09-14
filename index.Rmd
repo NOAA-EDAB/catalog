@@ -5,6 +5,7 @@ date: "`r format(Sys.Date(), '%e %B %Y')`"
 site: bookdown::bookdown_site
 knit: "bookdown::render_book"
 output: bookdown::gitbook
+  theme: united
 always_allow_html: true
 documentclass: book
 bibliography: ["bibliography/introduction.bib","bibliography/ches_bay_sal.bib","bibliography/primary_production_required.bib","bibliography/marine_heatwave.bib"]

@@ -38,7 +38,6 @@ Depends:
   sp,
   openxlsx,
   lubridate, 
-  rgeos,
   kableExtra,
   here,
   ks,
