@@ -38,6 +38,70 @@ Code used for the plots below can be found [here](https://github.com/NOAA-EDAB/e
 knitr::include_graphics(file.path(image.dir, "mab_heatwave.jpeg"))
 ```
 
+```{r MAB_heatwave1, eval= T, echo = F, out.width = "80%", fig.cap="Marine heatwave events (red) in the Mid-Atlantic occuring in 2019."}
+p1<-ecodata::heatwave_year %>% 
+  filter(EPU == "MAB") %>% 
+  ggplot( aes(x = t, y = temp))+
+  heatwaveR::geom_flame(aes(y2 = thresh))+ 
+  geom_line(aes(x = t, y = seas, color = "a"), size = 1)+
+  geom_line(aes(x = t, y = thresh, color = "c"), size = 1)+
+  geom_line(aes(x = t, y = temp, color = "b"))+
+  scale_colour_manual(values = c("turquoise4", "sienna3", "black"),
+                      labels = c("Climatology","Temperature", "Threshold"))+
+  ylab("Temperature (°C)")+
+  xlab("")+
+  scale_x_date(date_labels = "%b", breaks = "1 month")+
+  theme_bw()+
+  theme(legend.title = element_blank(),
+        legend.position=c(0.2, 0.8))
+
+plotly::ggplotly( p = p1,
+  tooltip = "all",
+  dynamicTicks = FALSE,
+  layerData = 1,
+  originalData = TRUE)
+
+```
+
+```{r heatwave_mab, fig.cap="Marine heatwave cumulative intesity (left) and maximum intensity (right) in the Mid-Atlantic Bight."}
+cumu <- ecodata::heatwave %>% 
+  dplyr::filter(Var == "cumulative intensity") %>% 
+  dplyr::mutate(Var = dplyr::recode(Var, "cumulative intensity" = "Cumulative Intensity (degree C x days)"))
+maxin <- ecodata::heatwave %>% 
+  dplyr::filter(Var == "maximum intensity") %>% 
+  dplyr::group_by(Time, EPU, Var, Units) %>% 
+  dplyr::summarise(Value = max(Value)) %>% 
+  dplyr::ungroup() %>% 
+  dplyr::mutate(Var = dplyr::recode(Var, "maximum intensity" = "Maximum Intensity (degree C)"))
+hw<- cumu %>%
+  rbind(maxin) %>% 
+  dplyr::group_by(Var, EPU) %>% 
+  dplyr::mutate(hline = mean(Value))
+mab.hw<- hw %>% dplyr::filter(EPU == epu_abbr)
+p2<-mab.hw %>% 
+  ggplot2::ggplot() +
+  ggplot2::geom_line(aes(x = Time, y = Value)) +
+  ggplot2::geom_point(aes(x = Time, y = Value)) +
+  ecodata::geom_gls(aes(x = Time, y = Value, group = Var)) +
+  ggplot2::ylab("") +
+  ggplot2::xlab("")+
+  ggplot2::ggtitle("Mid-Atlantic Marine Heatwave Intesity") +
+  ggplot2::scale_x_continuous(expand = c(0.01, 0.01))+
+  ggplot2::geom_hline(aes(yintercept = hline),
+           size = hline.size,
+           alpha = hline.alpha,
+           linetype = hline.lty)+
+  ggplot2::annotate("rect", fill = shade.fill, alpha = shade.alpha,
+      xmin = x.shade.min , xmax = x.shade.max,
+      ymin = -Inf, ymax = Inf) +
+  ggplot2::facet_wrap(~Var, scales = "free")+
+  ecodata::theme_ts()+
+  ggplot2::theme(strip.text=element_text(hjust=0,
+                                face = "italic"))
+p2
+plotly::ggplotly( p = p2)
+```
+
 ```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL.Rmd-mab-heatwave-max.R"), eval = T, echo=F, fig.cap="Map showing the maximum intensity heatwave in the Mid-Atlantic occuring on July 22, 2019", fig.align="center"}
 ```
 
