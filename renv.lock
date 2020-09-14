@@ -100,6 +100,13 @@
       "Repository": "CRAN",
       "Hash": "8845285b6151967fb0d95678b7eee11a"
     },
+    "RcppRoll": {
+      "Package": "RcppRoll",
+      "Version": "0.3.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "84a03997fbb5acfb3c9b43bad88fea1f"
+    },
     "VGAM": {
       "Package": "VGAM",
       "Version": "1.1-3",
@@ -460,12 +467,26 @@
       "Repository": "CRAN",
       "Hash": "221d0ad75dfa03ebf17b1a4cc5c31dfc"
     },
+    "heatwaveR": {
+      "Package": "heatwaveR",
+      "Version": "0.4.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "a147a93d27cebef81ec395bf62d87997"
+    },
     "here": {
       "Package": "here",
       "Version": "0.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "2c0406b8e0a4c3516ab37be62da74e3c"
+    },
+    "hexbin": {
+      "Package": "hexbin",
+      "Version": "1.28.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "3d59212f2814d65dff517e6899813c58"
     },
     "highr": {
       "Package": "highr",
@@ -767,6 +788,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "09eb987710984fc2905c7129c7d85e65"
+    },
+    "plotly": {
+      "Package": "plotly",
+      "Version": "4.9.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b08edf378e0e38959a6983e3d5902795"
     },
     "plotrix": {
       "Package": "plotrix",
