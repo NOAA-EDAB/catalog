@@ -45,6 +45,28 @@ knitr::include_graphics(paste0(image.dir,"/composition-MAB-0_80.png"))
 ```
 
 
+```{r ppr-mab, fig.cap="Primary production required to support the commercial landings in the Mid-Atlantic Bight. Included are the top species accounting for 80% of the landings in each year."}
+ppr<-ecodata::ppr %>% 
+  dplyr::group_by(EPU) %>% 
+  dplyr::mutate(hline = mean(Value)) %>% 
+  dplyr::filter(EPU == "MAB") %>% 
+  ggplot2::ggplot() +
+  ggplot2::annotate("rect", fill = shade.fill, alpha = shade.alpha,
+      xmin = x.shade.min , xmax = x.shade.max,
+      ymin = -Inf, ymax = Inf) +
+  ggplot2::geom_point(aes(x = Time, y = Value))+
+  ggplot2::geom_line(aes(x = Time, y = Value))+
+  ggplot2::geom_hline(aes(yintercept = hline),
+           size = hline.size,
+           alpha = hline.alpha,
+           linetype = hline.lty)+
+  ggplot2::scale_x_continuous(expand = c(0.01, 0.01)) +
+  ggplot2::ggtitle("Primary Production Required")+
+  ggplot2::ylab("Proportion of Total PPD ")+
+  ecodata::theme_ts()
+plotly::ggplotly( p = ppr)
+```
+
 ### Raw Data 
 The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
 

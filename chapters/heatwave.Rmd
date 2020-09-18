@@ -35,35 +35,36 @@ Code used for the plots below can be found [here](https://github.com/NOAA-EDAB/e
 <!-- ``` -->
 
 ```{r, fig.cap="Heatwave events in 2019.", out.width='100%'}
-knitr::include_graphics(file.path(image.dir, "mab_heatwave.jpeg"))
+knitr::include_graphics(file.path(image.dir, "/mab_heatwave.jpeg"))
 ```
 
-```{r MAB_heatwave1, eval= T, echo = F, out.width = "80%", fig.cap="Marine heatwave events (red) in the Mid-Atlantic occuring in 2019."}
+```{r MAB-heatwave1,  fig.cap="Marine heatwave events (red) in the Mid-Atlantic occuring in 2019.", eval= T, echo = F, out.width = "80%"}
 p1<-ecodata::heatwave_year %>% 
   filter(EPU == "MAB") %>% 
-  ggplot( aes(x = t, y = temp))+
-  heatwaveR::geom_flame(aes(y2 = thresh))+ 
-  geom_line(aes(x = t, y = seas, color = "a"), size = 1)+
-  geom_line(aes(x = t, y = thresh, color = "c"), size = 1)+
-  geom_line(aes(x = t, y = temp, color = "b"))+
+  dplyr::rename(c( "Climatology" ="seas",  "Threshold" = "thresh" ,  "Temperature" ="temp" )) %>% 
+  ggplot( aes(x = t, y = Temperature))+ 
+  heatwaveR::geom_flame(aes(y2 = Threshold))+ 
+  geom_line(aes(x = t, y = Climatology, color = "Climatology"), size = 1)+
+  geom_line(aes(x = t, y = Threshold, color = "Threshold"), size = 1)+
+  geom_line(aes(x = t, y = Temperature, color = "Temperature"))+
   scale_colour_manual(values = c("turquoise4", "sienna3", "black"),
                       labels = c("Climatology","Temperature", "Threshold"))+
   ylab("Temperature (°C)")+
   xlab("")+
   scale_x_date(date_labels = "%b", breaks = "1 month")+
   theme_bw()+
-  theme(legend.title = element_blank(),
-        legend.position=c(0.2, 0.8))
+  theme(legend.title = element_blank())
 
 plotly::ggplotly( p = p1,
   tooltip = "all",
   dynamicTicks = FALSE,
   layerData = 1,
-  originalData = TRUE)
+  originalData = TRUE) %>% 
+  plotly::layout(legend = list(x = 0.1, y = 0.8))
 
 ```
 
-```{r heatwave_mab, fig.cap="Marine heatwave cumulative intesity (left) and maximum intensity (right) in the Mid-Atlantic Bight."}
+```{r heatwave-mab, fig.cap="Marine heatwave cumulative intesity (left) and maximum intensity (right) in the Mid-Atlantic Bight."}
 cumu <- ecodata::heatwave %>% 
   dplyr::filter(Var == "cumulative intensity") %>% 
   dplyr::mutate(Var = dplyr::recode(Var, "cumulative intensity" = "Cumulative Intensity (degree C x days)"))
@@ -101,7 +102,16 @@ p2<-mab.hw %>%
 p2
 plotly::ggplotly( p = p2)
 ```
-
+ 
+Issue with adding trends lines from ecodata::geom_gls <span style="color: red;">geom_GeomGLS() has yet to be implemented in plotly.
+  If you'd like to see this geom implemented,
+  Please open an issue with your example code at
+  https://github.com/ropensci/plotly/issuesgeom_GeomGLS() has yet to be implemented in plotly.
+  If you'd like to see this geom implemented,
+  Please open an issue with your example code at
+  https://github.com/ropensci/plotly/issues. </span>
+ 
+ 
 ```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL.Rmd-mab-heatwave-max.R"), eval = T, echo=F, fig.cap="Map showing the maximum intensity heatwave in the Mid-Atlantic occuring on July 22, 2019", fig.align="center"}
 ```
 
