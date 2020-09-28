@@ -1,7 +1,7 @@
 bookdown::gitbook:
   css: css/style.css
   config:
-    toc:
+    toc: 
       before: |
         <li><a href="./">Synthetic Indicator Catalogue</a></li>
       after: |
