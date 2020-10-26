@@ -950,13 +950,6 @@
       "Repository": "CRAN",
       "Hash": "bb5996d0bd962d214a11140d77589917"
     },
-    "rgdal": {
-      "Package": "rgdal",
-      "Version": "1.5-16",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "3f840ce3afbcb78ad2a728558dba2078"
-    },
     "rjson": {
       "Package": "rjson",
       "Version": "0.2.20",
