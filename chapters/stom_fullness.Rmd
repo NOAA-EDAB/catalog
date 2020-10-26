@@ -17,7 +17,7 @@ Description of why this indicator is important and what is going on in the North
 The plot below was built using the code found
 [here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/macrofauna.Rmd-ma-stomachs.R). 
 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna.Rmd-ma-stomachs.R"), eval = T, fig.cap= "Stomach fullness anomaly."}
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna_MAB.Rmd-stom-fullness.R"), eval = T, fig.cap= "Stomach fullness anomaly."}
 
 plotly::last_plot()
 ```
@@ -29,7 +29,7 @@ library(DT)
 datatable(ecodata::stom_fullness, options = list(pageLength = 10))
 ```
 
-## Methods
+## Methods {#stom_fullness-methods}
 
 An index of stomach fullness was calculated from NEFSC autumn bottom trawl food habits data, as a simple ratio of estimated stomach content weight to total weight of an individual fish. Stomach fullness may be a better measure than absolute stomach weight if combining across species into a feeding guild, to prevent larger animals with heavier stomachs from dominating the index. An average stomach fullness was calcuated annually for each species and Ecological Production Unit (EPU).
 
