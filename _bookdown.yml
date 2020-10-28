@@ -1,6 +1,9 @@
 book_filename: "catalog"
 rmd_files: ["index.Rmd",
 "chapters/template.Rmd",
+"chapters/aggregate_groups.rmd",
+"chapters/Annual_SST_cycle_indicator.Rmd",
+"chapters/Aquaculture_indicators.Rmd",
 "chapters/ches_bay_salinity.Rmd",
 "chapters/heatwave.Rmd",
 "chapters/primary_production_required.Rmd", 
