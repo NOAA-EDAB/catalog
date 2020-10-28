@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>1 Template | Synthetic Indicator Catalogue</title>
+  <title>3 Annual SST Cycles | Synthetic Indicator Catalogue</title>
   <meta name="description" content="This catalogue holds information on available datasets and indicators." />
   <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="1 Template | Synthetic Indicator Catalogue" />
+  <meta property="og:title" content="3 Annual SST Cycles | Synthetic Indicator Catalogue" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="kimberly-bastille/sin-cat" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1 Template | Synthetic Indicator Catalogue" />
+  <meta name="twitter:title" content="3 Annual SST Cycles | Synthetic Indicator Catalogue" />
   
   <meta name="twitter:description" content="This catalogue holds information on available datasets and indicators." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="aggroups.html"/>
+<link rel="prev" href="aggroups.html"/>
+<link rel="next" href="aquaculture.html"/>
 <script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -226,42 +226,49 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="template" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Template</h1>
-<p><strong>Description</strong>: Short description of information included</p>
-<p><strong>Contributor(s)</strong>: Contributor Name / Affiliation</p>
-<p><strong>Data steward</strong>: Data Steward / email</p>
-<p><strong>Point of contact</strong>: Point of Contact / email</p>
-<div id="impact-summary" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Impact Summary</h2>
+<div id="annual-sst-cycles" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Annual SST Cycles</h1>
+<p><strong>Description</strong>: Annual SST Cycles</p>
+<p><strong>Found in</strong>: State of the Ecosystem - Gulf of Maine &amp; Georges Bank (2018), State of the Ecosystem - Mid-Atlantic (2018)</p>
+<p><strong>Indicator category</strong>: Database pull with analysis</p>
+<p><strong>Contributor(s)</strong>: Sean Hardison, Vincent Saba</p>
+<p><strong>Data steward</strong>: Kimberly Bastille, <a href="mailto:kimberly.bastille@noaa.gov" class="email">kimberly.bastille@noaa.gov</a></p>
+<p><strong>Point of contact</strong>: Kimberly Bastille, <a href="mailto:kimberly.bastille@noaa.gov" class="email">kimberly.bastille@noaa.gov</a></p>
+<p><strong>Public availability statement</strong>: Source data are available <a href="https://www.esrl.noaa.gov/psd/data/gridded/data.noaa.oisst.v2.highres.html">here</a>.</p>
+<div id="impact-summary-2" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Impact Summary</h2>
 <p>Description of why this indicator is important and what is going on in the Northeast related to this information.</p>
-<div id="plotted-data" class="section level3" number="1.1.1">
-<h3><span class="header-section-number">1.1.1</span> Plotted data</h3>
-<p>Either from the contributor or from ecodata</p>
+<div id="plotted-data-2" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Plotted data</h3>
+<p>R code used for analysis and plotting can be found <a href="https://github.com/NOAA-EDAB/tech-doc/blob/master/R/stored_scripts/annual_sst_cycles_analysis_and_plotting.R">here</a></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="images/annual_SST_cycle_plot.png" alt="Long-term mean SSTs for the Mid-Atlantic Bight (A), Georges Bank (B), and Gulf of Maine (C). Orange and cyan shading show where the 2017 daily SST values were above or below the long-term mean respectively; red and dark blue shades indicate days when the 2017 mean exceeded +/- 1 standard deviation from the long-term mean." width="464" />
+<p class="caption">
+Figure 3.1: Long-term mean SSTs for the Mid-Atlantic Bight (A), Georges Bank (B), and Gulf of Maine (C). Orange and cyan shading show where the 2017 daily SST values were above or below the long-term mean respectively; red and dark blue shades indicate days when the 2017 mean exceeded +/- 1 standard deviation from the long-term mean.
+</p>
 </div>
-<div id="raw-data" class="section level3" number="1.1.2">
-<h3><span class="header-section-number">1.1.2</span> Raw data</h3>
+</div>
+<div id="raw-data-2" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Raw data</h3>
 <p>If available.</p>
 </div>
 </div>
-<div id="methods" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Methods</h2>
-<div id="data-sources" class="section level3" number="1.2.1">
-<h3><span class="header-section-number">1.2.1</span> Data Sources</h3>
+<div id="methods-2" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Methods</h2>
+<div id="data-sources-2" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Data sources</h3>
+<p>Data for annual sea surface tempature (SST) cycles were derived from the NOAA optimum interpolation sea surface temperature (OISST) high resolution dataset (<a href="https://www.esrl.noaa.gov/psd/data/gridded/data.noaa.oisst.v2.highres.html">NOAA OISST V2 dataset</a>) provided by NOAA’s Earth System Research Laboratory’s Physical Sciences Devision, Boulder, CO. The data extend from 1981 to present, and provide a 0.25° x 0.25° global grid of SST measurements <span class="citation">(<span class="citeproc-not-found" data-reference-id="Reynolds2007"><strong>???</strong></span>)</span>. Gridded SST data were masked according to the extent of Ecological Production Units (EPU) in the Northeast Large Marine Ecosystem (NE-LME) (See <a href="https://github.com/NOAA-EDAB/tech-doc/tree/master/gis">“EPU_Extended” shapefiles</a>).</p>
 </div>
-<div id="data-extraction" class="section level3" number="1.2.2">
-<h3><span class="header-section-number">1.2.2</span> Data Extraction</h3>
+<div id="data-extraction-2" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Data extraction</h3>
+<p>Daily mean sea surface temperature data for 2017 and for each year during the period of 1981-2012 were downloaded from the NOAA <a href="https://www.esrl.noaa.gov/psd/data/gridded/data.noaa.oisst.v2.highres.html">OI SST V2 site</a> to derive the long-term climatological mean for the period. The use of a 30-year climatological reference period is a standard procedure for metereological observing <span class="citation">(<span class="citeproc-not-found" data-reference-id="WMO2017"><strong>???</strong></span>)</span>. These reference periods serve as benchmarks for comparing current or recent observations, and for the development of standard anomaly data sets. The reference period of 1982-2012 was chosen to be consistent with previous versions of the State of the Ecosystem report.</p>
+<p>R code used in extraction and processing can be found <a href="https://github.com/NOAA-EDAB/tech-doc/blob/master/R/stored_scripts/annual_sst_cycles_extraction_and_processing.R">here</a></p>
 </div>
-<div id="data-analysis" class="section level3" number="1.2.3">
-<h3><span class="header-section-number">1.2.3</span> Data Analysis</h3>
-</div>
-<div id="data-processing" class="section level3" number="1.2.4">
-<h3><span class="header-section-number">1.2.4</span> Data Processing</h3>
-</div>
-</div>
-<div id="references" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> References</h2>
+<div id="data-analysis-1" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Data analysis</h3>
+<p>We calculated the long-term mean and standard deviation of SST over the period of 1982-2012 for each EPU, as well as the daily mean for 2017.</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -269,8 +276,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="aggroups.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="aggroups.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="aquaculture.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
