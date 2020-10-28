@@ -1,0 +1,49 @@
+# Aquaculture
+
+**Description**: Aquaculture indicators
+
+**Found in**: State of the Ecosystem - Gulf of Maine & Georges Bank (2017, 2018), State of the Ecosystem - Mid-Atlantic (2017, 2018, 2019)
+
+**Indicator category**: Synthesis of published information
+
+**Contributor(s)**: Sean Hardison, Lisa Calvo, Karl Roscher
+  
+**Data steward**: Kimberly Bastille <kimberly.bastille@noaa.gov>
+  
+**Point of contact**: Kimberly Bastille <kimberly.bastille@noaa.gov> 
+  
+**Public availability statement**: Source data are publicly available in referenced reports, and are also available for download [here](https://comet.nefsc.noaa.gov/erddap/tabledap/aquaculture_soe_v1.html). 
+
+## Impact Summary
+
+Description of why this indicator is important and what is going on in the Northeast related to this information. 
+
+### Plotted data 
+Code for plotting data included in the State of the Ecosystem report can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/human_dimensions.Rmd-oyster-aqua.R). 
+
+```{r, code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/human_dimensions_MAB.Rmd-aquaculture.R"), fig.cap="Oyster aquaculture production in terms of number of oysters sold from Virginia, Maryland, and New Jersey.",echo = F, eval =T, warning = F, message=F, fig.align='center', fig.height=4}
+plotly::ggplotly(
+  p = ggplot2::last_plot())
+```
+
+### Raw data 
+If available. 
+
+## Methods
+Aquaculture data included in the State of the Ecosystem (SOE) report were time series of number of oysters sold in Virginia, Maryland, and New Jersey. 
+
+
+### Data sources
+Virginia oyster harvest data are collected from mail and internet-based surveys of active oyster aquaculture operations on both sides of the Chesapeake Bay, which are then synthesized in an annual report [@Hudson2017a]. In Maryland, shellfish aquaculturists are required to report their monthly harvests to the Maryland Department of Natural Resources (MD-DNR). The MD-DNR then aggregates the harvest data for release in the Maryland Aquaculture Coordinating Council Annual Report [@ACC2017], from which data were collected. Similar to Virginia, New Jersey releases annual reports synthesizing electronic survey results from lease-holding shellfish growers. Data from New Jersey reflects cage reared oysters grown from hatchery seed [@Calvo2017]. 
+
+
+### Data extraction 
+Data were collected directly from state aquaculture reports. Oyster harvest data in MD was reported in bushels which were then converted to individual oysters by an estimate of 300 oysters bushel$^{-1}$. View processing code for this indicator [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_aquaculture.R).
+
+### Data analysis
+No data analyses occurred for this indicator.
+
+### Data processing
+
+Aquaculture data were formatted for inclusion in the `ecodata` R package using the code found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_aquaculture.R).
+
