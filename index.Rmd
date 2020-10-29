@@ -65,6 +65,7 @@ library(readr)
 library(RColorBrewer)
 library(ks)
 library(cowplot)
+library(DT)
 #GIS libraries
 library(sf)
 #library(rgdal)
