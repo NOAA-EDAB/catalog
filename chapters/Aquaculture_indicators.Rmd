@@ -21,13 +21,13 @@ Description of why this indicator is important and what is going on in the North
 ### Plotted data 
 Code for plotting data included in the State of the Ecosystem report can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/human_dimensions.Rmd-oyster-aqua.R). 
 
-```{r, code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/human_dimensions_MAB.Rmd-aquaculture.R"), fig.cap="Oyster aquaculture production in terms of number of oysters sold from Virginia, Maryland, and New Jersey.",echo = F, eval =T, warning = F, message=F, fig.align='center', fig.height=4}
-```
+<!-- ```{r, code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/human_dimensions_MAB.Rmd-aquaculture.R"), fig.cap="Oyster aquaculture production in terms of number of oysters sold from Virginia, Maryland, and New Jersey.",echo = F, eval =T, warning = F, message=F, fig.align='center', fig.height=4} -->
+<!-- ``` -->
 
 
-```{r}
-plotly::ggplotly(ggplot2::last_plot())
-```
+<!-- ```{r} -->
+<!-- plotly::ggplotly(ggplot2::last_plot()) -->
+<!-- ``` -->
 
 ### Raw data 
 The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
