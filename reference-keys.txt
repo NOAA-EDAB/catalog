@@ -2,7 +2,6 @@ fig:neusmap
 tab:soe2017class
 tab:soe2018class
 fig:unnamed-chunk-2
-fig:unnamed-chunk-3
 fig:unnamed-chunk-8
 fig:MAB-heatwave1
 fig:heatwave-mab
