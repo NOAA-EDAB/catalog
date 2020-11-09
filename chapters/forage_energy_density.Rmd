@@ -1,0 +1,76 @@
+# Forage Fish Energy Density
+
+**Description**: Forage Engery Density indicators
+
+**Found in**: State of the Ecosystem - Gulf of Maine & Georges Bank (2020), State of the Ecosystem - Mid-Atlantic (2020)
+
+**Indicator category**: Database pull with analysis
+
+**Contributor(s)**: Mark Wuenschel, Ken Oliveira and Kelcie Bean
+  
+**Data steward**: Mark Wuenschel <mark.wuenschel@noaa.gov>
+  
+**Point of contact**: Mark Wuenschel <mark.wuenschel@noaa.gov>
+  
+**Public availability statement**: Source data are publicly available.
+
+## Impact Summary
+
+Description of why this indicator is important and what is going on in the Northeast related to this information. 
+
+### Plotted data 
+NA
+
+### Raw data 
+The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
+
+```{r}
+library(DT)
+datatable(ecodata::energy_density, options = list(pageLength = 10))
+```
+
+
+
+## Methods
+
+The forage fish energy denisty indicator comes from a collaborative project between UMASS Dartmouth Biology Department (Dr. Ken Oliveira, M.S student Kelcie Bean) and NEFSC Population Biology Branch (Mark Wuenschel).  The study focuses on evaluating energy content of the species in Table \@ref(tab:foragefish).
+
+```{r foragefish, eval = T, echo = F}
+library(tidyverse)
+forage.tab <- data.frame('Common Name' = c('Atlantic Herring','alewife','silver hake',
+                                           'butterfish','northern sandlance','Atlantic mackerel',
+                                           'longfin squid','northern shortfin squid'),
+                         'Scientific Name' = c('*Clupea harengus*', '*Alosa pseudoharengus*',
+                                        '*Merluccius bilinearis*', '*Peprilus triacanthus*', 
+                                        '*Ammodytes dubius*','*Scomber Scombrus*', 
+                                        '*Loligo pealeii*', '*Illex illecebrosus*'))
+names(forage.tab) <- c("Common Name","Scientific Name")
+
+
+knitr::kable(forage.tab, caption = "List of forage fish study species.",  booktabs=T) %>%
+  kableExtra::kable_styling(full_width = F)
+```
+
+
+
+### Data sources
+2017 and 2018 NEFSC spring and fall bottom trawl surveys. 
+
+### Data extraction
+NA 
+
+### Data analysis
+
+Samples were analyzed for proximate composition and energy density from 2017 and 2018 NEFSC spring and fall bottom trawl surveys. Predictive relationships between the percent dry weight of samples and energy density were developed, and samples collected from 2019 surveys are currently being analyzed for percentage dry weight to enable estimation of energy content (@Bean2020). The energy density of forage species differed from prior studies in the 1980s and 1990s (@steimle1985, @lawson1998, Table \@ref(tab:tab)).
+
+Sampling and laboratory analysis is ongoing, with the goal of continuing routine monitoring of energy density of these species. 
+
+### Data processing
+
+Code for building the table used in the SOE can be found 
+[here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/macrofauna.Rmd-forage.R). 
+
+
+<!-- ```{r tab, code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna_MAB.Rmd-energy-density.R"), echo = F, eval = T, warning = F, message=F} -->
+
+<!-- ``` -->

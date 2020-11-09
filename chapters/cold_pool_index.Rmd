@@ -1,0 +1,55 @@
+# Cold Pool Index
+
+**Description**: Cold Pool Index
+
+**Found in**: State of the Ecosystem - Mid-Atlantic (2020)
+
+**Indicator category**: Published methods
+
+**Contributor(s)**: Chris Melrose
+  
+**Data steward**: Kimberly Bastille 
+  
+**Point of contact**: Chris Melrose <chris.melrose@noaa.gov>
+  
+**Public availability statement**: Source data are publicly available.
+
+## Impact Summary
+
+Description of why this indicator is important and what is going on in the Northeast related to this information. 
+
+### Plotted data 
+
+The plot below was built using the code found
+[here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/LTL.Rmd-cold_pool.R). 
+
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-cold_pool.R"), fig.cap = "Cold Pool Index", fig.align="center", eval=T, echo=F}
+
+```
+
+### Raw data 
+The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
+
+```{r}
+library(DT)
+datatable(ecodata::cold_pool, options = list(pageLength = 10))
+```
+
+
+## Methods
+
+
+### Data sources
+NEFSC Hydrographic Database
+This data represents the annual mean bottom temperature residual for Sept-Oct in the Mid-Atlantic Bight cold pool region from 1977-2018.
+
+### Data extraction 
+
+
+### Data analysis
+Methods published @miller2016, [original MATLAB source code](https://github.com/NOAA-EDAB/tech-doc/tree/master/R/stored_scripts/cold_pool_analysis.txt) used in that paper was provided by Jon Hare and used in this analysis.
+
+### Data processing
+
+Code used to process the cold pool inidcator can be found in the `ecodata` package [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_cold_pool.R). 
+
