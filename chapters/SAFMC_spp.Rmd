@@ -1,0 +1,120 @@
+# SAFMC managed spp
+
+**Description**: SAFMC Species on NES
+
+**Found in**: State of the Ecosystem - Mid-Atlantic (2020), State of the Ecosystem - New England (2020)
+
+**Indicator category**: Database pull
+
+**Contributor(s)**: Sean Lucey
+  
+**Data steward**: Sean Lucey <Sean.Lucey@noaa.gov>
+  
+**Point of contact**: Sean Lucey <Sean.Lucey@noaa.gov>
+  
+**Public availability statement**: Source data are available to qualified researchers upon request (see "Access Information" [here](https://inport.nmfs.noaa.gov/inport/item/22560)).
+
+
+## Impact Summary
+
+Description of why this indicator is important and what is going on in the Northeast related to this information. 
+
+### Plotted data 
+
+The plot below was built using the code found
+[here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/macrofauna.Rmd-blue-runner.R). 
+
+
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna_MAB.Rmd-blue-runner.R"), eval = T, fig.cap= "Blue runner presence on the Northeast shelf."}
+
+```
+
+### Raw data 
+If available. 
+The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
+
+```{r}
+library(DT)
+datatable(ecodata::blue_runner, options = list(pageLength = 10))
+```
+
+
+
+
+
+## Methods
+
+
+### Data sources
+The [Survdat](#survdat) data set was used to examine the presence of "southern" species (table \@ref(tab:southern)) in Mid-Atlantic and New England waters.
+
+### Data extraction 
+Survdat was subsetted by common "southern" species (table \@ref(tab:soe2018class)). 
+
+```{r southern, eval = T, echo = F}
+comnames <- c('Black snapper', 'Queen snapper', 'Mutton snapper', 'Schoolmaster snapper',
+              'Blackfin snapper', 'Northern Red snapper', 'Cubera snapper',
+              'Grey snapper', 'Mahogany snapper', 'Dog snapper', 'Lane snapper',
+              'Silk snapper', 'Yellowtail snapper', 'Vermilion snapper',
+              'Bank sea bass', 'Rock sea bass', 'Black sea bass',
+              'Rock hind', 'Graysby', 'Calico grouper',
+              'Yellowedge grouper', 'Coney', 'Red hind',
+              'Atlantic goliath grouper', 'Red grouper', 'Misty grouper',
+              'Warsaw grouper', 'Snowy grouper', 'Nassau grouper',
+              'Black grouper', 'Yellowmouth grouper', 'Gag grouper',
+              'Scamp grouper', 'Tiger grouper', 'Yellowfin grouper',
+              'Sheepshead', 'Grass porgy', 'Jolthead porgy',
+              'Saucereye porgy', 'Whitebone porgy', 'Knobbed porgy',
+              'Red porgy', 'Longspine porgy', 'Black margate',
+              'Porkfish', 'White margate', 'Tomtate',
+              'Smallmouth grunt', 'French grunt', 'Spanish grunt',
+              'Cottonwick grunt', "Sailor's grunt", 'White grunt', 'Blue Striped grunt',
+              'Grey triggerfish', 'Queen triggerfish', 'Ocean triggerfish',
+              'Hogfish', 'Puddingwife wrasse', 'Yellow jack',
+              'Blue runner', 'Crevalle jack', 'Bar jack', 'Greater amberjack',
+              'Almaco jack')
+
+scinames <- c('Apsilus dentatus', 'Etelis oculatus', 'Lutjanus analis', 'Lutjanus apodus', 
+              'Lutjanus buccanella', 'Lutjanus campechanus', 'Lutjanus cyanopterus', 
+              'Lutjanus griseus', 'Lutjanus mahogoni', 'Lutjanus jocu', 'Lutjanus synagris', 
+              'Lutjanus vivanus', 'Ocyurus chrysurus', 'Rhomboplites aurorubens', 
+              'Centropristis ocyurus', 'Centropristis philadelphica', 'Centropristis striata', 
+              'Epinephelus adscensionis', 'Epinephelus cruentatus', 'Epinephelus drummondhayi', 
+              'Epinephelus flavolimbatus', 'Epinephelus fulvus',  'Epinephelus guttatus', 
+              'Epinephelus itajara', 'Epinephelus mario', 'Epinephelus mystacinus', 
+              'Epinephelus nigritus', 'Epinephelus niveatus', 'Epinephelus striatus', 
+              'Mycteroperca bonaci', 'Mycteroperca interstitialis', 'Mycteroperco microlepis', 
+              'Mycteroperca phenax', 'Mycteroperca tigris', 'Mycteroperca venenoso', 
+              'Archosargus probotocephalus', 'Calamus arctifrons', 'Calamus bajonado', 
+              'Calamus calamus', 'Calamus leucosteus', 'Calamus leucosteus', 
+              'Pagrus pagrus', 'Stenotomus caprinus', 'Anisotremus surinamensis', 
+              'Anisotremus virginicus', 'Haemulon album', 'Haemulon aurolineatum', 
+              'Hemulon chrysargyreum', 'Haemulon flavolineatum', 'Haemulon macrostomum', 
+              'Haemulon melanurum', 'Haemulon parra', 'Haemulon plumieri', 'Haemulon sciurus',
+              'Balistes capriscus', 'Balistes vetula', 'Canthidermis sufflamen',
+              'Lachnolaimus maximus', 'Halichoeres rodiatus', 'Caranx bartholomaei', 
+              'Caranx crysos', 'Caranx hippos', 'Caranx ruber', 'Seriola dumerili', 
+              'Seriola rivoliano')
+
+type <- c(rep('Snappers', 14), rep('Sea Basses', 3), rep('Groupers', 18), 
+          rep('Porgies', 8), rep('Grunts', 11), rep('Triggerfishes', 3),
+          rep('Wrasses', 2), rep('Jacks', 6))
+
+southern.sp <- data.frame('Common Name' = comnames,
+                          'Scientific Name' = scinames,
+                          Group = type)
+
+knitr::kable(southern.sp, booktabs = TRUE,
+      caption = "Southern Species that were examined within the NEFSC trawl survey data") %>% 
+  kableExtra::column_spec(2, italic = TRUE)
+
+```
+
+### Data analysis
+The presence/absence of "southern" species was broadly examined for all species listed in table \@ref(tab:southern).  It was quickly determined that these species were extremely rare in the bottom trawl survey.  When a species was present, they were found during the fall survey and not the spring.  No trends were apparent in the data.  The one species that was commonly present was the blue runner (*Caranx crysos*).  Stations were binned temporally by three categories: Prior to 2001, 2001 - 2010, and since 2010.  Stations were then plotted on a map of the survey region and visually inspected.
+
+### Data processing
+
+Blue runner (*Caranx crysos*) data were formatted for inclusion in the `ecodata` R package using this [R code](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_blue_runner.R). 
+
+
