@@ -20,10 +20,12 @@
 Description of why this indicator is important and what is going on in the Northeast related to this information. 
 
 ### Plotted data 
-### Plotting
+
 
 ```{r kde-fig, fig.cap="Current and historical sea scallop kernel density estimates derived from spring survey data. Current estimates derived from 2016-2018 data.", echo = F, eval = T}
-plot_kd(species = "SEA SCALLOP", season = "SPRING", exclude_years = NULL)
+
+knitr::include_graphics(file.path(image.dir, "spp_density.png"))
+
 ```
 
 ### Raw data 
