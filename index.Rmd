@@ -17,6 +17,11 @@ description: "This catalogue holds information on available datasets and indicat
 
 # Introduction {-}
 
+
+* THIS BOOK IS IN DEVELOPEMENT. IF YOU ARE LOOKING FOR EXAMPLES, CHECK OUT THE [CHESAPEAKE BAY SALINITY](https://kimberly-bastille.github.io/sin-cat/chesapeake-bay-salinity.html), [MARINE HEATWAVE](https://kimberly-bastille.github.io/sin-cat/marine-heatwave.html) OR [PRIMARY PRODUCTION REQUIRED](https://kimberly-bastille.github.io/sin-cat/primary-production-required.html) CHAPTERS. 
+
+
+
 The purpose of this document is to collate the indicator information and methods used to inform the data driven products on the Northeast Shelf Large Marine Ecosystem by the Ecosystem Dynamics and Assessment Branch at the Northeast Fisheries Science Center (see figure, below). 
 
 The information included in this document is contributed by a large variety of callaborators and contact information is available in each chapter. When possible, provided data is available in `ecodata`, an R package that holds the lastest version of the data avaialable. 
