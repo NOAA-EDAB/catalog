@@ -16,7 +16,7 @@
 
 ## Impact Summary
 
-Description of why this indicator is important and what is going on in the Northeast related to this information. 
+Evaluating fish condition can provide insight into the health of fish populations, where higher relative condition indicates fatter, healthier fish. These changes in condition can directly cause implications for stock assessments, catch quotas and management and may indirectly impact fish recruitment and mortality. Annual changes in condition can be due to many factors including changes in prey abundance, density dependence, system productivity, temperature or even fishing pressure. 
 
 ### Plotted data 
 
