@@ -1,0 +1,53 @@
+# Toxin Pruducing Species Blooms
+
+**Description**: Incedence and Impacts of Toxin Producing Species Blooms 
+
+**Found in**: 
+
+**Indicator Category**: 
+
+**Contributor(s)**:
+
+**Data steward**:
+
+**Point of contact**: 
+
+**Public availability statement**: 
+
+
+### Highlights
+
+- Rapid shift in species causing closures. 
+- June 2020 closure due to Pseudo-nitzschia (> 1 million cells per liter).
+- FL species moved into Chesapeake Bay.
+
+
+
+
+## Impact Summary
+
+
+Description of why this indicator is important and what is going on in the Northeast related to this information. 
+
+
+### Plotted data 
+
+
+Plots from [google doc](https://docs.google.com/document/d/1Hw16QADChlk1eJHlwOlAiAR3bT7EECKpsMz7vluQ-LY/edit) to be added here. 
+
+### Raw data 
+NA
+
+
+## Methods
+
+
+### Data sources
+
+
+### Data extraction
+
+
+### Data analysis
+
+
