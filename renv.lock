@@ -44,6 +44,13 @@
       "Repository": "CRAN",
       "Hash": "b56998fff55e4a4b4860ad6e8c67e0f9"
     },
+    "Kendall": {
+      "Package": "Kendall",
+      "Version": "2.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "33cab08326760148faef1435b22dd7fb"
+    },
     "KernSmooth": {
       "Package": "KernSmooth",
       "Version": "2.23-16",
@@ -128,6 +135,13 @@
       "Repository": "CRAN",
       "Hash": "66bf40b0d6dd56c3cb57c382dd2f3a5a"
     },
+    "askpass": {
+      "Package": "askpass",
+      "Version": "1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "e8a22846fff485f0be3770c2da758713"
+    },
     "assertthat": {
       "Package": "assertthat",
       "Version": "0.2.1",
@@ -181,6 +195,13 @@
       "RemoteRef": "master",
       "RemoteSha": "9eb20a83fe303d643cdc1ffca21c2b228be9406a",
       "Hash": "3564c698fc02ab5bcf7a3daedf9c7ba8"
+    },
+    "boot": {
+      "Package": "boot",
+      "Version": "1.3-24",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "72557d88b5f42f01221dfa436de99301"
     },
     "broom": {
       "Package": "broom",
@@ -337,9 +358,9 @@
       "RemoteHost": "api.github.com",
       "RemoteRepo": "ecodata",
       "RemoteUsername": "noaa-edab",
-      "RemoteRef": "master",
-      "RemoteSha": "747e6c01e7f1cac5ea09d5f025854326df6188a0",
-      "Hash": "04e9941045d35160ce63fb91b9e208e0"
+      "RemoteRef": "HEAD",
+      "RemoteSha": "58a2d9d7c8b7f0eba2d0e5976ea6505ca6e8bf7d",
+      "Hash": "e606472ac94bdc6809ea4c14b6a4ac3d"
     },
     "ellipsis": {
       "Package": "ellipsis",
@@ -382,6 +403,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "1cb4279e697650f0bd78cd3601ee7576"
+    },
+    "foreign": {
+      "Package": "foreign",
+      "Version": "0.8-75",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "9a7efaa7320b9f327a904d1e615b0b46"
     },
     "formatR": {
       "Package": "formatR",
@@ -635,6 +663,13 @@
       "Repository": "CRAN",
       "Hash": "fc1c91e2e8d9e1fc932e75aa1ed989b7"
     },
+    "magick": {
+      "Package": "magick",
+      "Version": "2.4.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "40a9efbb0418902cf6b663a1529a975a"
+    },
     "magrittr": {
       "Package": "magrittr",
       "Version": "1.5",
@@ -648,6 +683,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "392212982257ea03c37b63547dc871b4"
+    },
+    "maptools": {
+      "Package": "maptools",
+      "Version": "1.0-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "5117ca3798362fadc2d985899b3e891e"
     },
     "markdown": {
       "Package": "markdown",
@@ -732,6 +774,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "e80d41932d3cc235ccbbbb9732ae162e"
+    },
+    "openssl": {
+      "Package": "openssl",
+      "Version": "1.4.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "a399e4773075fc2375b71f45fca186c4"
     },
     "openxlsx": {
       "Package": "openxlsx",
@@ -943,6 +992,20 @@
       "Repository": "CRAN",
       "Hash": "bb5996d0bd962d214a11140d77589917"
     },
+    "rgdal": {
+      "Package": "rgdal",
+      "Version": "1.5-16",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "3f840ce3afbcb78ad2a728558dba2078"
+    },
+    "rgeos": {
+      "Package": "rgeos",
+      "Version": "0.5-5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "94a44c3f0d49ceb80c385610696873ca"
+    },
     "rjson": {
       "Package": "rjson",
       "Version": "0.2.20",
@@ -1015,7 +1078,7 @@
     },
     "sf": {
       "Package": "sf",
-      "Version": "0.9-6",
+      "Version": "0.9-5",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "5b23b3b72c0d9962a59c57b110076f9a"
@@ -1029,10 +1092,10 @@
     },
     "sp": {
       "Package": "sp",
-      "Version": "1.4-2",
+      "Version": "1.4-4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "3290eebc34ba4df5e213878d54c1e623"
+      "Hash": "e0485290545c0e768c2b50390114da1f"
     },
     "stringi": {
       "Package": "stringi",
@@ -1054,6 +1117,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "ad25122f95d04988f6f79d69aaadd53d"
+    },
+    "sys": {
+      "Package": "sys",
+      "Version": "3.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "507f3116a38d37ad330a038b3be07b66"
     },
     "testthat": {
       "Package": "testthat",
