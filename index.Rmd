@@ -75,7 +75,7 @@ library(DT)
 #library(sf)
 #library(rgdal)
 library(raster)
-library(marmap)
+#library(marmap)
 library(ggspatial)
 
 # #Time series constants
