@@ -1,12 +1,18 @@
 # Chesapeake Bay Salinity
 
-**Description**: Chesapeake Bay Low Salinity Event Summary 
+**Description**: Chesapeake Bay Salinity
+
+**Found in**: State of the Ecosystem - Mid-Atlantic (2020)
+
+**Indicator category**: Database pull with analysis
 
 **Contributor(s)**: Bruce Vogt, Charles Pellerin
   
 **Data steward**: Charles Pellerin, <charles.pellerin@noaa.gov>
   
 **Point of contact**: Bruce Vogt, <bruce.vogt@noaa.gov> 
+  
+**Public availability statement**: Source data are publicly available.
 
 ## Impact Summary
 

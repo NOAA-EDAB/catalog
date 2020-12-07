@@ -20,7 +20,7 @@
 Description of why this indicator is important and what is going on in the Northeast related to this information. 
 
 ### Plotted data 
-R code used for analysis and plotting can be found [here](https://github.com/NOAA-EDAB/tech-doc/blob/master/R/stored_scripts/annual_sst_cycles_analysis_and_plotting.R)
+R code used for analysis and plotting can be found [here](https://github.com/NOAA-EDAB/tech-doc/blob/master/R/stored_scripts/annual_sst_cycles_analysis_and_plotting.R).
 
 ```{r , fig.width=5, fig.asp = 0.45, fig.cap = "Long-term mean SSTs for the Mid-Atlantic Bight (A), Georges Bank (B), and Gulf of Maine (C). Orange and cyan shading show where the 2017 daily SST values were above or below the long-term mean respectively; red and dark blue shades indicate days when the 2017 mean exceeded +/- 1 standard deviation from the long-term mean.", echo = F, fig.align="center", eval=T }
  
