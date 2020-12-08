@@ -6,7 +6,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Synthetic Indicator Catalogue</a></li>
       after: |
-        <li><a href="https://github.com/kimberly-bastille/catalog" target="blank">github repo</a></li>
+        <li><a href="https://github.com/NOAA-EDAB/catalog" target="blank">github repo</a></li>
 #    edit: https://github.com/andybeet/test-doc/edit/master/%s
     #download: ["pdf"]
 #bookdown::pdf_book:

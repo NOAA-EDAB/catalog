@@ -11,7 +11,7 @@ documentclass: book
 geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
 #biblio-style: apalike
 link-citations: true
-github-repo: kimberly-bastille/catalog
+github-repo: NOAA-EDAB/catalog
 description: "This catalogue holds information on available datasets and indicators."
 ---
 
