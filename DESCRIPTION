@@ -49,7 +49,6 @@ Depends:
   ggrepel,
   kernlab,
   formatR,
-  ggspatial, 
   plotly
 Remotes: 
   slucey/RSurvey/Survdat,

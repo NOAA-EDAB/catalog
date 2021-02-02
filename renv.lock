@@ -460,13 +460,6 @@
       "Repository": "CRAN",
       "Hash": "c013a50b19695daf04853679e1bc105a"
     },
-    "ggspatial": {
-      "Package": "ggspatial",
-      "Version": "1.1.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "ad362984082e869bac518874b1bb1c70"
-    },
     "glue": {
       "Package": "glue",
       "Version": "1.4.2",
@@ -1012,13 +1005,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "202260e1b2c410edc086d5b8f1ed946e"
-    },
-    "rosm": {
-      "Package": "rosm",
-      "Version": "0.2.5",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "2d44e9bbfe7aff5acb7583482be4096d"
     },
     "rpart": {
       "Package": "rpart",
