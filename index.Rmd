@@ -73,7 +73,6 @@ library(cowplot)
 library(DT)
 #GIS libraries
 #library(sf)
-#library(rgdal)
 library(raster)
 #library(marmap)
 library(ggspatial)
