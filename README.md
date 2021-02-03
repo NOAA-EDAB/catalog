@@ -6,7 +6,7 @@ editor_options:
 
 # [Synthetic Indicator Catalog](https://noaa-edab.github.io/catalog/)
 
-![gitleaks](https://github.com/NOAA-EDAB/LeMANS/workflows/gitleaks/badge.svg)
+![gitleaks](https://github.com/NOAA-EDAB/catalog/workflows/gitleaks/badge.svg)
 
 Catalog of indicators used in the State of the Ecosystem reports and
 other ecosystem assessment products.
