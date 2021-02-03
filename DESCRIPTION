@@ -35,6 +35,7 @@ Depends:
   geosphere,
   readr,
   sp,
+  sf,
   openxlsx,
   lubridate, 
   kableExtra,
