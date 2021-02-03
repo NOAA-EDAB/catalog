@@ -3,6 +3,7 @@ Type: Book
 Title: Synthetic Indicator Cataloque
 Description: Catalogue containing indicator used in the State of the Ecosystem Report and Beyond...
 Version: 1.0.0
+License: file LICENSE
 Depends: 
   bookdown, 
   rmarkdown,
