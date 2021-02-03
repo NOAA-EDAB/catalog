@@ -75,7 +75,7 @@ library(DT)
 #library(sf)
 library(raster)
 #library(marmap)
-library(ggspatial)
+#library(ggspatial)
 
 # #Time series constants
 shade.alpha <- 0.3
