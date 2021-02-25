@@ -111,9 +111,7 @@ Issue with adding trends lines from ecodata::geom_gls <span style="color: red;">
   Please open an issue with your example code at
   https://github.com/ropensci/plotly/issues. </span>
  
- 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-heatwave-anom-gridded.R"), eval = T, echo=F, fig.cap="Map showing the maximum intensity heatwave in the Mid-Atlantic occuring on July 22, 2019", fig.align="center"}
-```
+
 
 ### Raw Data 
 The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
