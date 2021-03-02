@@ -23,8 +23,8 @@ Description of why this indicator is important and what is going on in the North
 The plot below was built using the code found
 [here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/LTL.Rmd-cold_pool.R). 
 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-cold_pool.R"), fig.cap = "Cold Pool Index", fig.align="center", eval=T, echo=F}
-
+```{r ,  fig.cap = "Cold Pool Index", fig.align="center", eval=T, echo=F}
+knitr::include_graphics(file.path(image.dir, "/cold_pool_area.png"))
 ```
 
 ### Raw data 

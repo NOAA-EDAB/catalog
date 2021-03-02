@@ -45,8 +45,8 @@ rmd_files: ["index.Rmd",
 "chapters/Ocean_acidification.Rmd",
 #"chapters/Trend_analysis.Rmd",
 #"chapters/warm_core_rings.Rmd",
-"chapters/wind_habitat_occupancy.Rmd",
-"chapters/Zooplankton_indicators.Rmd",
+#"chapters/wind_habitat_occupancy.Rmd",
+#"chapters/Zooplankton_indicators.Rmd",
 "chapters/glossary.Rmd",
 "chapters/references.Rmd"]
 delete_merged_file: false

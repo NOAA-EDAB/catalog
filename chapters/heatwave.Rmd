@@ -11,107 +11,41 @@
 
 ## Impact Summary
 
-### Marine Heatwaves (2019 GOM/GB)
+Marine heatwaves measure not just temperature, but how long the ecosystem is subjected to the high temperature. They are driven by both atmospheric and oceanographic factors and can have dramatic impacts on marine ecosystems. Marine heatwaves are measured in terms of intensity (water temperature) and duration (the cumulative number of degree days) using satellite measurements of daily sea surface temperature. Plotted below are maximum intensity and cumulative intensity, which is intensity times duration. Here we define a marine heatwave as a warming event that lasts for five or more days with sea surface temperatures above the 90th percentile of the historical daily climatology (1982-2011). 
 
-Marine heatwaves can derive from both atmospheric and oceanographic factors that can have dramatic impacts on marine ecosystems.  These heatwaves are measured in terms of magnitude and duration by using satellite measurements of daily sea surface temperature.  Here we use the marine heatwave metrics defined by Hobday et al. 2016 such that a warm event in the Gulf of Maine and Georges Bank is considered a marine heatwave if the event lasts for five or more days with temperatures warmer than the 90th percentile based on a historical climatology (1982-2010).     
+### Georges Bank
 
-In 2019, the Gulf of Maine experienced four distinct marine heatwaves in the summer and fall with the strongest event beginning on July 3 and lasting 53 days (GOM_2019_Heatwave_time_series.pdf  dark red = strongest event of the year, light red = weaker events).  Relative to prior years, this marine heatwave ranked  12th on record in terms of maximum intensity (+3.27 oC above average on Aug 1) and 12th on record in terms of cumulative intensity (112 oC-days [sum of daily intensity anomalies]) (GOM_1982_2019_Heatwave_Max_Intensity_time_series.pdf and GOM_1982_2019_Heatwave_Cumul_Intensity_time_series.pdf).  The strongest heatwaves on record in the Gulf of Maine occurred in the summer of 2010 in terms of maximum intensity (+4.83 oC above average) and in the summer of 2012 in terms of cumulative intensity (630 oC-days).   The impacts of the 2012 marine heatwave in the Gulf of Maine have been well documented within the lobster fishery (Mills et al. 2013).
-
-In 2019, Georges Bank experienced three distinct marine heatwaves in the summer and fall with the strongest event beginning on August 17 and lasting 20 days (GB_2019_Heatwave_time_series.pdf  dark red = strongest event of the year, light red = weaker events).  Relative to prior years, this marine heatwave ranked 15th on record in terms of maximum intensity (+3.14 oC above average on Aug 23)  (GB_1982_2019_Heatwave_Max_Intensity_time_series.pdf).  The strongest heatwaves on record in the Georges Bank occurred in the summer of 2016 in terms of maximum intensity (+4.06 oC above average) and in the winter/spring/summer of 2012 in terms of cumulative intensity (485 oC-days).
-
-
-### Marine Heatwaves (2019 MAB)
-
-Marine heatwaves can derive from both atmospheric and oceanographic factors that can have dramatic impacts on marine ecosystems.  These heatwaves are measured in terms of magnitude and duration by using satellite measurements of daily sea surface temperature.  Here we use the marine heatwave metrics defined by Hobday et al. 2016 such that a warm event in the Gulf of Maine and Georges Bank is considered a marine heatwave if the event lasts for five or more days with temperatures warmer than the 90th percentile based on a historical climatology (1982-2010).     
-
-In 2019, the Middle Atlantic Bight experienced six distinct marine heatwaves in the spring, summer, and fall with one of the strongest events beginning on July 3 and lasting 21 days (MAB_2019_Heatwave_time_series.pdf  dark red = strongest event of the year, light red = weaker events).  Relative to prior years, this marine heatwave ranked 17th on record in terms of maximum intensity (+2.88 oC above average on Jul 22) (MAB_1982_2019_Heatwave_Max_Intensity_time_series.pdf).  Another strong marine heatwave began on Aug 1 and lasted 24 days, which was 20th on record in terms of cumulative intensity (46 oC-days [sum of daily intensity anomalies]) (MAB_1982_2019_Heatwave_Cumul_Intensity_time_series.pdf).  The strongest heatwaves on record in the Middle Atlantic Bight occurred in the winter of 2012 in terms of maximum intensity (+5.13 oC above average) and in the winter/summer of 2012 in terms of cumulative intensity (515 oC-days).   
-
-### Plotting
-
-Code used for the plots below can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/LTL.Rmd-heatwave_mab.R).
-
-
-<!-- ```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL.Rmd-heatwave_mab.R"), eval = T, echo=F, fig.cap="Cumulative and maximum marine heatwave in the Mid-Atlantic", fig.align="center"} -->
-<!-- ``` -->
-
-```{r, fig.cap="Heatwave events in 2019.", out.width='100%'}
-knitr::include_graphics(file.path(image.dir, "/mab_heatwave.jpeg"))
-```
-
-```{r MAB-heatwave1,  fig.cap="Marine heatwave events (red) in the Mid-Atlantic occuring in 2019.", eval= T, echo = F, out.width = "80%"}
-p1<-ecodata::heatwave_year %>% 
-  filter(EPU == "MAB") %>% 
-  dplyr::rename(c( "Climatology" ="seas",  "Threshold" = "thresh" ,  "Temperature" ="temp" )) %>% 
-  ggplot( aes(x = t, y = Temperature))+ 
-  heatwaveR::geom_flame(aes(y2 = Threshold))+ 
-  geom_line(aes(x = t, y = Climatology, color = "Climatology"), size = 1)+
-  geom_line(aes(x = t, y = Threshold, color = "Threshold"), size = 1)+
-  geom_line(aes(x = t, y = Temperature, color = "Temperature"))+
-  scale_colour_manual(values = c("turquoise4", "sienna3", "black"),
-                      labels = c("Climatology","Temperature", "Threshold"))+
-  ylab("Temperature (°C)")+
-  xlab("")+
-  scale_x_date(date_labels = "%b", breaks = "1 month")+
-  theme_bw()+
-  theme(legend.title = element_blank())
-
-plotly::ggplotly( p = p1,
-  tooltip = "all",
-  dynamicTicks = FALSE,
-  layerData = 1,
-  originalData = TRUE) %>% 
-  plotly::layout(legend = list(x = 0.1, y = 0.8))
+In 2020, Georges Bank experienced six distinct marine heatwaves in the spring, summer, and fall, which included the warmest event on record.  The strongest event began on July 8 and lasting 51 days. Relative to prior years, this marine heatwave ranked 1st on record in terms of maximum intensity (+4.33 °C above average on Aug 14) and 4th on record in terms of cumulative intensity (138 oC-days). Another relatively strong marine heatwave began on October 20 and also lasted 51 days with a peak warming on October 30 (+3.17 °C above average).   This event was the 8th strongest on record in terms of cumulative intensity (111 oC-days).  The strongest three marine heatwaves on record in Georges Bank occurred over the last five years (2015, 2016, 2020).
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-heatwave-gb.R"), eval = T, echo=F, fig.cap="Cumulative and maximum marine heatwave in Georges Bank", fig.align="center"}
 
 ```
 
-```{r heatwave-mab, fig.cap="Marine heatwave cumulative intesity (left) and maximum intensity (right) in the Mid-Atlantic Bight."}
-cumu <- ecodata::heatwave %>% 
-  dplyr::filter(Var == "cumulative intensity") %>% 
-  dplyr::mutate(Var = dplyr::recode(Var, "cumulative intensity" = "Cumulative Intensity (degree C x days)"))
-maxin <- ecodata::heatwave %>% 
-  dplyr::filter(Var == "maximum intensity") %>% 
-  dplyr::group_by(Time, EPU, Var, Units) %>% 
-  dplyr::summarise(Value = max(Value)) %>% 
-  dplyr::ungroup() %>% 
-  dplyr::mutate(Var = dplyr::recode(Var, "maximum intensity" = "Maximum Intensity (degree C)"))
-hw<- cumu %>%
-  rbind(maxin) %>% 
-  dplyr::group_by(Var, EPU) %>% 
-  dplyr::mutate(hline = mean(Value))
-mab.hw<- hw %>% dplyr::filter(EPU == epu_abbr)
-p2<-mab.hw %>% 
-  ggplot2::ggplot() +
-  ggplot2::geom_line(aes(x = Time, y = Value)) +
-  ggplot2::geom_point(aes(x = Time, y = Value)) +
-  ecodata::geom_gls(aes(x = Time, y = Value, group = Var)) +
-  ggplot2::ylab("") +
-  ggplot2::xlab("")+
-  ggplot2::ggtitle("Mid-Atlantic Marine Heatwave Intesity") +
-  ggplot2::scale_x_continuous(expand = c(0.01, 0.01))+
-  ggplot2::geom_hline(aes(yintercept = hline),
-           size = hline.size,
-           alpha = hline.alpha,
-           linetype = hline.lty)+
-  ggplot2::annotate("rect", fill = shade.fill, alpha = shade.alpha,
-      xmin = x.shade.min , xmax = x.shade.max,
-      ymin = -Inf, ymax = Inf) +
-  ggplot2::facet_wrap(~Var, scales = "free")+
-  ecodata::theme_ts()+
-  ggplot2::theme(strip.text=element_text(hjust=0,
-                                face = "italic"))
-p2
-plotly::ggplotly( p = p2)
-```
- 
-Issue with adding trends lines from ecodata::geom_gls <span style="color: red;">geom_GeomGLS() has yet to be implemented in plotly.
-  If you'd like to see this geom implemented,
-  Please open an issue with your example code at
-  https://github.com/ropensci/plotly/issuesgeom_GeomGLS() has yet to be implemented in plotly.
-  If you'd like to see this geom implemented,
-  Please open an issue with your example code at
-  https://github.com/ropensci/plotly/issues. </span>
- 
+```{r, fig.cap="Georges Bank Marine Heatwave events in 2020.",code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-heatwave-year-gb.R"), eval = T, echo=F}
 
+```
+  
+### Gulf of Maine
+
+In 2020, the Gulf of Maine experienced five distinct marine heatwaves throughout all seasons with the strongest event beginning on June 17 and lasting 71 days. Relative to prior years, this marine heatwave ranked 7th on record in terms of maximum intensity (+4.02 °C above average on August 2) and 5th on record in terms of cumulative intensity (206 °C-days ) . 
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-heatwave-gom.R"), eval = T, echo=F, fig.cap="Cumulative and maximum marine heatwave in the Gulf of Maine", fig.align="center"}
+
+```
+
+```{r, fig.cap="Gulf of Maine Marine Heatwave events in 2020.",code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-heatwave-year-gom.R"), eval = T, echo=F}
+
+```
+
+### Mid-Atlantic Bight
+
+In 2020, the Middle Atlantic Bight experienced eight distinct marine heatwaves with the strongest event beginning on July 18 and lasting 18 days. Relative to prior years, this marine heatwave ranked 30th on record in terms of maximum intensity (+2.61 °C above average on July 28) and 26th on record in terms of cumulative intensity (40 °C-days ).  The region was not as warm as in recent years but is still experiencing more frequent marine heatwaves over the last decade, including this year, compared to the historical period from 1980’s to early 2000’s. 
+
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-heatwave.R"), eval = T, echo=F, fig.cap="Cumulative and maximum marine heatwave in the Mid-Atlantic", fig.align="center"}
+
+```
+
+```{r, fig.cap="Mid-Atlantic Marine Heatwave events in 2020.",code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-heatwave-year.R"), eval = T, echo=F}
+
+```
 
 ### Raw Data 
 The raw data is available in the [`ecodata` package](https://noaa-edab.github.io/ecodata/landing_page). 
@@ -132,7 +66,7 @@ NOAA high-res OISST (daily, 25-km, 1982-2019)   https://www.esrl.noaa.gov/psd/cg
 Each yearly file (global) was downloaded, concatenated into a single netcdf file using nco (Unix), and then cropped to the USNES region using Ferret.  Each EPU's time-series of SST was averaged using .shp file boundaries for the MAB, GB, and GOM (also done in Ferret) and saved to the three .csv files.
 
 ### Data analysis
-The marine heatwave metrics Maximum Intensity [deg. C] and Cumulative Intensity [deg. C x days] are calculated using NOAA OISST daily sea surface temperature data (25-km resolution) from January 1982 to December 2019.  The heatwaves are calculated based on the algorithms in Hobday et al. 2016 and by using a climatology of 1982-2010.  These metrics were run R using https://robwschlegel.github.io/heatwaveR/
+The marine heatwave metrics Maximum Intensity [deg. C] and Cumulative Intensity [deg. C x days] are calculated using NOAA OISST daily sea surface temperature data (25-km resolution) from January 1982 to December 2019.  The heatwaves are calculated based on the algorithms in Hobday et al. 2016 and by using a climatology of 1982-2011.  These metrics were run R using https://robwschlegel.github.io/heatwaveR/
 
 ### Data processing 
 Marine Heatwave data were formatted for inclusion in the `ecodata` R package using this [R code](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_heatwave.R).
