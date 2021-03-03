@@ -45,7 +45,7 @@ Structured habitat such as submerged aquatic vegetation (SAV) is a critical comp
 ### Plotting
 ```{r}
 
-knitr::include_graphics(file.path(image.dir, "ches_temp_temp.png"))
+knitr::include_graphics(file.path(image.dir, "ches-temp-temp.png"))
 ```
 
 ### Methods
