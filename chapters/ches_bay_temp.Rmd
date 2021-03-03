@@ -1,0 +1,52 @@
+# Chesapeake Bay Temperature
+
+**Description**: Chesapeake Bay Temperature Anomalies
+
+**Found in**: State of the Ecosystem - Mid-Atlantic (2021)
+
+**Indicator category**: Database pull with analysis
+
+**Contributor(s)**: Bruce Vogt, Charles Pellerin
+  
+**Data steward**: Charles Pellerin, <charles.pellerin@noaa.gov>
+  
+**Point of contact**: Bruce Vogt, <bruce.vogt@noaa.gov> 
+  
+**Public availability statement**: Source data are publicly available.
+
+## Imapct Summary
+
+###  Water Temperature
+
+Ocean remote sensing conducted by NOAA’s CoastWatch Program observed seasonal anomalies in sea surface temperature throughout the Chesapeake Bay in 2020. The satellite data show that the Chesapeake Bay experienced a warmer-than-average winter and a cooler-than-average spring, relative to the previous decade. These anomalies were also observed in situ by the NOAA Chesapeake Bay Interpretive Buoy System (CBIBS). Water temperatures returned to average during the summer. 
+
+The warm winter may have affected key Chesapeake Bay fishery resources during a critical period. Results of the Maryland juvenile striped bass survey, conducted by the Maryland Department of Natural Resources (MDNR), showed low recruitment success in 2020, about fivefold below the long-term average. This low recruitment event may have been caused by a mismatch in striped bass (Morone saxatilis) larval and prey abundance due to the warm winter conditions, resulting in reduced larval survival. Warm winters typically trigger an early plankton bloom, including key copepod prey, which dies out before striped bass larvae are present in the tributary (Millette et al. 2019). 
+
+Conversely, warmer winter temperatures may have reduced overwintering mortality of Chesapeake Bay blue crabs (Callinectes sapidus). Calculations done by MDNR based on data from the annual Bay-wide winter dredge survey indicate that blue crabs experienced the lowest overwintering mortality ever calculated (2020 Chesapeake Bay Blue Crab Advisory Report). Previous studies have demonstrated the correlation between winter water temperature and blue crab survival in the Chesapeake Bay (Bauer & Miller 2010, Hines et al. 2010, Rome et al. 2005). 
+
+### Salinity
+
+Observations from the NOAA CBIBS buoys indicated higher-than-average salinity throughout 2020, particularly in the upper Chesapeake Bay (Gooses Reef), suggesting that the region experienced less precipitation than usual. This is corroborated by river discharge data collected by the U.S. Geological Survey (USGS); winter freshwater flow rates in particular were lower than the previous decade’s average (USGS 01492500 Sallie Harris Creek, MD). 
+
+Salinity and freshwater input often play important roles in the survival and recruitment success of key Chesapeake Bay species such as striped bass and oysters (Crassostrea virginica). In addition to winter water temperature, survival of early life stages of striped bass in the Chesapeake Bay is strongly correlated with freshwater flow (Martino & Houde 2010, Millette et al. 2019, North & Houde 2003); high-flow regimes push zooplankton prey downstream, where they get trapped in the estuarine turbidity maximum with striped bass larvae. In low-flow years, zooplankton prey are less likely to match up with striped bass larvae in space and time, reducing larval survival and recruitment success. The combined effects of warm winter temperatures and low flow in 2020 may be the primary cause of the low recruitment success observed by the MDNR juvenile striped bass survey. 
+
+Conversely, increased salinity often results in high juvenile oyster abundance in the Chesapeake Bay (Kimmel et al. 2014). In Maryland, the 2020 MDNR fall oyster survey documented above-average spatsets along the Eastern Shore as expected given the high salinity; however, the Western Shore did not fare as well, suggesting that local environmental conditions are also important.
+
+### Dissolved Oxygen
+
+A dissolved oxygen model operated by the Virginia Institute of Marine Science (VIMS) and Anchor QEA (www.vims.edu/hypoxia) estimated that the overall severity and duration of hypoxia in the Chesapeake Bay was lower and shorter in 2020 compared to most recent years. A smaller-than-average spring freshet, which resulted in above-average salinity in the Bay, also might have decreased surface runoff and nutrient concentrations. Reduced nutrient inputs and cool spring temperatures likely contributed to reduced hypoxia in 2020. 
+
+Dissolved oxygen is a critical component of habitat for benthic organisms and finfishes in the Chesapeake Bay such as blue crabs and striped bass. A smaller volume and shorter duration of hypoxia in the Bay suggests better environmental conditions for these species and, as a result, they would likely experience reduced stress in the summer.
+
+### Submerged Aquatic Vegetation
+
+Structured habitat such as submerged aquatic vegetation (SAV) is a critical component of the Chesapeake Bay ecosystem, and abundance and distribution are often dictated by summer water temperature, salinity, and light availability (Moore et al. 2014, Rybicki & Carter 2002). Chesapeake Bay SAV is monitored annually by VIMS using aerial imagery and ground surveys (https://www.vims.edu/research/units/programs/sav/). Although the data from the 2020 surveys have not yet been processed, anecdotal reports suggest that SAV was patchy, with some areas showing expansion and others showing retraction. As with oysters, local environmental conditions likely play a critical role in SAV abundance.
+
+### Plotting
+```{r}
+
+knitr::include_graphics(file.path(image.dir, "ches_temp_temp.png"))
+```
+
+### Methods
+Methods can be [found here.](https://noaa-edab.github.io/tech-doc/chesapeake-bay-temperature-anomaly.html)
