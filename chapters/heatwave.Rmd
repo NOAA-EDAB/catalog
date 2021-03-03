@@ -16,11 +16,11 @@ Marine heatwaves measure not just temperature, but how long the ecosystem is sub
 ### Georges Bank
 
 In 2020, Georges Bank experienced six distinct marine heatwaves in the spring, summer, and fall, which included the warmest event on record.  The strongest event began on July 8 and lasting 51 days. Relative to prior years, this marine heatwave ranked 1st on record in terms of maximum intensity (+4.33 °C above average on Aug 14) and 4th on record in terms of cumulative intensity (138 oC-days). Another relatively strong marine heatwave began on October 20 and also lasted 51 days with a peak warming on October 30 (+3.17 °C above average).   This event was the 8th strongest on record in terms of cumulative intensity (111 oC-days).  The strongest three marine heatwaves on record in Georges Bank occurred over the last five years (2015, 2016, 2020).
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-heatwave-gb.R"), eval = T, echo=F, fig.cap="Cumulative and maximum marine heatwave in Georges Bank", fig.align="center"}
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-heatwave-gb.R"), eval = T, echo=F, fig.cap="Cumulative and maximum marine heatwave in Georges Bank", fig.align="center"}
 
 ```
 
-```{r, fig.cap="Georges Bank Marine Heatwave events in 2020.",code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-heatwave-year-gb.R"), eval = T, echo=F}
+```{r, fig.cap="Georges Bank Marine Heatwave events in 2020.",code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-heatwave-year-gb.R"), eval = T, echo=F}
 
 ```
   
