@@ -1,0 +1,36 @@
+# Calanus Stage
+
+**Description**: Calanus abundance per life stage 
+
+**Contributor(s)**: Ryan Morse
+  
+**Data steward**: Ryan Morse <ryan.morse@noaa.gov>
+  
+**Point of contact**:  Ryan Morse <ryan.morse@noaa.gov>
+
+## Impact Summary
+
+Description of why this indicator is important and what is going on in the Northeast related to this information. 
+
+### Plotted data 
+```{r, code = readlines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-gb-calanus-stage.R")}
+
+```
+
+### Raw data 
+```{r}
+library(DT)
+datatable(ecodata::CalanusStage, options = list(pageLength = 10))
+```
+
+## Methods
+### Data Sources
+
+### Data Extraction
+
+### Data Analysis
+Code used to analyze calanus stage data can be found [at this link](https://github.com/NOAA-EDAB/tech-doc/blob/master/R/stored_scripts/CalanusStage_SOE.R). 
+
+### Data Processing
+
+Code for processing Calanus stage data can be found  [here](https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-calanus-stage.R). 
