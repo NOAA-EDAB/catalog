@@ -50,7 +50,8 @@ Depends:
   ggrepel,
   kernlab,
   formatR,
-  plotly
+  plotly, 
+  heatwaveR
 Remotes: 
   slucey/RSurvey/Survdat,
   NOAA-EDAB/ecodata,
