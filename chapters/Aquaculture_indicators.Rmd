@@ -16,7 +16,7 @@
 
 ## Impact Summary
 
-Description of why this indicator is important and what is going on in the Northeast related to this information. 
+Overall oyster production is increasing and production per area is also improving.  Aquaculture reporting is state specific and because of this can be difficult to collate in a meaningful way. However, this is improving year to year as aquaculture increases across the coast. The data included here only holds oyster numbers at this time. 
 
 ### Plotted data 
 Code for plotting data included in the State of the Ecosystem report can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/chunk-scripts/human_dimensions.Rmd-oyster-aqua.R). 
