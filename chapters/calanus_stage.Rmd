@@ -28,7 +28,7 @@ In the GOM during all seasons from 2000-2010, C. finmarchicus had high levels of
 ### Raw data 
 ```{r}
 library(DT)
-datatable(ecodata::CalanusStage, options = list(pageLength = 10))
+datatable(ecodata::calanus_stage, options = list(pageLength = 10))
 ```
 
 ## Methods
