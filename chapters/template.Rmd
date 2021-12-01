@@ -2,11 +2,15 @@
 
 **Description**: Short description of information included 
 
+**Indicator category**: 
+
 **Contributor(s)**: Contributor Name / Affiliation
   
 **Data steward**: Data Steward / email
   
 **Point of contact**: Point of Contact / email
+
+**Public availability statement**:
 
 ## Impact Summary
 

@@ -1,0 +1,46 @@
+# Northeast Fishing Effects Model
+
+**Description**: Short description of information included 
+
+**Indicator category**: 
+
+**Contributor(s)**: Michelle Bachman <mbachman@nefmc.org> 
+  
+**Data steward**: Michelle Bachman <mbachman@nefmc.org> 
+  
+**Point of contact**: Michelle Bachman <mbachman@nefmc.org> 
+
+**Public availability statement**:
+
+## Impact Summary
+
+The Northeast Fishing Effects Model combines seafloor data (sediment type, energy regime) with fishing effort data and parameters related to the interactions between fishing gear and seafloor habitats to generate percent habitat disturbance estimates in space and time. The model domain extends north to south from the U.S./Canadian border to the N.C./S.C. border. The model differentiates six types of bottom-tending fishing gears: trawl, scallop dredge, clam dredge, longline, gillnet, and trap. Data inputs and outputs to Fishing Effects are gridded at a 5 km by 5 km resolution. The model outputs are monthly estimates of percent seabed habitat disturbance for each of these six gear types, by grid cell, from 1996-2017. The fishing effort spatial distributions (standardized as area swept in square kilometers) used for these model runs were generated using NEFSC’s Fishing Footprints method (DePiper 2014, Benjamin et al. 2018) combined with gear width and length dimensions estimated from fishing observer data. In addition, model runs based on a uniform fishing effort distribution are used to estimate which locations have the highest intrinsic vulnerability to fishing impacts. These intrinsic vulnerability outputs are useful for estimating the potential for habitat impacts to occur in areas where certain types of fishing effort are prohibited by regulation. Additional information about the model can be found in NEFMC (2020) and in the report for the precursor to Fishing Effects, the Swept Area Seabed Impact (SASI) Model (NEFMC 2011). The SASI vulnerability assessment, which was applied to Fishing Effects with minor modifications, was published in Grabowski et al. 2014. Smeltz et al. (2019) details the North Pacific implementation of the model and provides additional background. Sediment data inputs and both types of model outputs are available via the Northeast Ocean Data Portal (https://www.northeastoceandata.org/data-explorer/, under Habitat). The data portal hosts selected outputs from the Northeast Fishing Effects Model which combines seafloor data (sediment type, energy regime) with fishing effort data to generate percent habitat disturbance estimates in space and time.
+
+### Plotted data 
+Either from the contributor or from ecodata
+
+### Raw data 
+If available. 
+
+## Methods
+### Data Sources
+
+### Data Extraction
+
+### Data Analysis
+
+### Data Processing
+
+
+## References
+Benjamin, S., M.-Y. Lee and G. DePiper (2018). Visualizing Fishing Data as Rasters. NEFSC Ref Doc 18-12: 24.
+
+DePiper, G. S. (2014). Statistically assessing the precision of self-reported VTR fishing locations. NOAA Technical Memorandum NMFS-NE-229: 16.
+
+Grabowski, J. H., M. Bachman, C. Demarest, S. Eayrs, B. P. Harris, V. Malkoski, D. Packer and D. Stevenson (2014). "Assessing the Vulnerability of Marine Benthos to Fishing Gear Impacts." Reviews in Fisheries Science & Aquaculture: 142-155.
+
+NEFMC (2011). Omnibus Essential Fish Habitat Amendment 2 Final Environmental Impact Statement. Appendix D: The Swept Area Seabed Impact (SASI) approach: a tool for analyzing the effects of fishing on Essential Fish Habitat. Newburyport, MA, New England Fishery Management Council: 257. Accessed: https://s3.amazonaws.com/nefmc.org/Appendix_D_Swept_Area_Seabed_Impact_approach_171011_091330.pdf.
+
+NEFMC (2020). Fishing Effects Model Northeast Region. Newburyport, MA, New England Fishery Management Council: 109. Accessed: https://s3.amazonaws.com/nefmc.org/Fishing_Effects_Northeast_Report_edited-May-22-2020.pdf.
+
+Smeltz, T. S., B. P. Harris, J. V. Olson and S. A. Sethi (2019). "A seascape-scale habitat model to support management of fishing impacts on benthic ecosystems." Canadian Journal of Fisheries and Aquatic Sciences: 1-9.
