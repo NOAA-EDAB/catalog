@@ -1,0 +1,72 @@
+# Harmful Algal Blooms - Alexandrium
+
+**Description**: Alexandrium catenella annual cyst abundance in the Gulf of Maine
+
+**Indicator category**: Published methods, Database pull with analysis
+
+**Contributor(s)**: Yizhen Li, NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch, Silver Spring MD
+  
+**Data steward**: Moe Nelson <david.moe.nelson@noaa.gov>
+  
+**Point of contact**: Moe Nelson <david.moe.nelson@noaa.gov>
+
+**Public availability statement**: Source data are NOT publicly available. Data were provided upon request by Yizhen Li.  Data are also used in operational HAB forecast models, freely available to the public.
+
+## Impact Summary
+
+Description of why this indicator is important and what is going on in the Northeast related to this information. 
+
+### Plotted data 
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-alex.R"), echo = F, fig.align="center", eval = T, fig.cap="Gulf of Maine Alexandrium Cyst abundance."}
+
+```
+
+
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-alex-distribution.R"), echo = F, fig.align="center", eval = T, fig.cap="Gulf of Maine Alexandrium Cyst distribution."}
+
+```
+
+```{r , echo = F, fig.align="center", eval = T}
+knitr::include_graphics(file.path(image.dir, "HAB_dashboard_GMaine_July8_2020 - David Nelson - NOAA Federal.png"))
+```
+
+### Raw data 
+```{r}
+library(DT)
+dat<- ecodata::habs %>% dplyr::filter(Source == "Alexadrium")
+
+datatable(dat, options = list(pageLength = 10))
+
+```
+
+## Methods
+### Data Sources
+
+Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years.  Sampling methods are described in Anderson et al. 2005.  In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer.
+
+### Data Extraction
+Tabular data provided by Yizhen Li, NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch. 
+
+### Data Analysis
+
+Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years.  Sampling methods are described in Anderson et al. 2005.  In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1 cm of sediment layer.  Results are extrapolated from sampled area to estimate cyst abundance broader Gulf of Maine.
+
+The spatial distribution and abundance of cyst cells from the annual survey are used to drive an ecosystem forecast model for the Gulf of Maine (Anderson et al. 2005, Li et al. 2009 & 2020,  McGillicuddy et al. 2011).  The model also many other inputs of dynamic oceanographic data such as currents, temperature, and nutrients.
+Operational Harmful Algal Bloom forecast is served online at https://coastalscience.noaa.gov/research/stressor-impacts-mitigation/hab-forecasts/gulf-of-maine-alexandrium-catenella-predictive-models/
+
+### Data Processing
+
+Code for processing salinity data can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_habs.R).
+
+## References
+Anderson, D.M., D.M. Kulis, B.A. Keafer, K.E. Gribble, R. Marin, and C.A. Scholin. 2005.  Identification and enumeration of Alexandrium spp. from the Gulf of Maine using molecular probes.  Deep-sea Research II 52:2467-2490.
+
+Li, Yizhen.  Pers. Comm.  NOAA/NOS NCCOS Stressor Detection and Impacts Division, Silver Spring MD.
+
+Li, Y., R. He, D.J. McGillicuddy, D.M. Anderson, and B.A. Keafer.  2009.  Investigation of the 2006 Alexandrium fundyense bloom in the Gulf of Maine: In-situ observations and numerical modeling.  Continental Shelf Research 29:2069-2082.
+
+Li, Y., R.P. Stumpf, D.J. McGillicuddy, and R. He. 2020.  Dynamics of an intense Alexandrium catenella red tide in the Gulf of Maine: satellite observations and numerical modeling. Harmful Algae 99:101927.
+
+McGillicuddy, D.J., D.W. Townsend, R. He, B.A. Keafer, J.L. Kleindinst, Y. Li, J.P. Manning, D.G. Mountain, M.A. Thomas, and D.M. Anderson. 2011.  Suppression of the 2010 Alexandrium fundyense bloom by changes in physical, biological, and chemical properties of the Gulf of Maine.  Limnology and Oceanography 56(6):2411–2426.
+
+NOAA/NCCOS.  2021.  Gulf of Maine Alexandrium catenella Predictive Models.  Interactive website with operational Nowcast/Forecast simulation.  https://coastalscience.noaa.gov/research/stressor-impacts-mitigation/hab-forecasts/gulf-of-maine-alexandrium-catenella-predictive-models/
