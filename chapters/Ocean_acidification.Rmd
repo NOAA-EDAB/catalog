@@ -22,11 +22,11 @@ Atlantic surfclam exposure to ocean acidification research in the laboratory for
 
 ### Plotting
 
-Code for plotting can be found [here](https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-mab-oa-glider.R). 
+Code for plotting can be found [here](https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-mab-oa.R).
 
-```{r, code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-mab-oa-glider.R"), eval=TRUE, echo = FALSE}
+<!-- ```{r, code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-mab-oa-glider.R"), eval=TRUE, echo = FALSE} -->
 
-```
+<!-- ``` -->
 
 ```{r, code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-mab-oa.R"), eval=TRUE, echo = FALSE}
 
