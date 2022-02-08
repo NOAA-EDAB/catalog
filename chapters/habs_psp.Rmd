@@ -22,7 +22,7 @@ Description of why this indicator is important and what is going on in the North
 ```
 
 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-psp-closure.R"), echo = F, fig.align="center", eval = T, fig.cap=""}
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-psp-closures.R"), echo = F, fig.align="center", eval = T, fig.cap=""}
 
 ```
 
