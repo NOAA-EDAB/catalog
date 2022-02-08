@@ -22,7 +22,7 @@ Description of why this indicator is important and what is going on in the North
 ```
 
 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-alex-distribution.R"), echo = F, fig.align="center", eval = T, fig.cap="Gulf of Maine Alexandrium Cyst distribution."}
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-alex-distibution.R"), echo = F, fig.align="center", eval = T, fig.cap="Gulf of Maine Alexandrium Cyst distribution."}
 
 ```
 
