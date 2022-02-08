@@ -27,7 +27,7 @@ Description of why this indicator is important and what is going on in the North
 ```
 
 ```{r , echo = F, fig.align="center", eval = T}
-knitr::include_graphics(file.path(image.dir, "HAB_dashboard_GMaine_July8_2020 - David Nelson - NOAA Federal.png"))
+knitr::include_graphics(file.path(image.dir, "HAB_dashboard_GMaine_July8_2021 - David Nelson - NOAA Federal.png"))
 ```
 
 ### Raw data 
