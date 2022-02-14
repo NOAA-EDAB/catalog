@@ -1,6 +1,7 @@
-# Harmful Algal Blooms - Alexandrium
+# Harmful Algal Blooms - *Alexandrium*
 
-**Description**: Alexandrium catenella annual cyst abundance in the Gulf of Maine
+
+**Description**: *Alexandrium catenella* annual cyst abundance in the Gulf of Maine
 
 **Indicator category**: Published methods, Database pull with analysis
 
@@ -14,7 +15,7 @@
 
 ## Impact Summary
 
-The annual fall surveys of Alexandrium cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year.  Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales (Li et al. 2020).  After strong bloom events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2020.  However, bloom events and shellfishery closures usually occur somewhere in any given year.  Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (Jin and Hoagland 2008).  Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 (Anderson et al. 1997). 
+The annual fall surveys of *Alexandrium* cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year.  Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales (Li et al. 2020).  After strong bloom events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2020.  However, bloom events and shellfishery closures usually occur somewhere in any given year.  Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (Jin and Hoagland 2008).  Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 (Anderson et al. 1997). 
 
 ### Plotted data 
 ```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-alex.R"), echo = F, fig.align="center", eval = T, fig.cap="Gulf of Maine Alexandrium Cyst abundance."}
@@ -33,7 +34,7 @@ knitr::include_graphics(file.path(image.dir, "HAB_dashboard_GMaine_July8_2021 - 
 ### Raw data 
 ```{r}
 library(DT)
-dat<- ecodata::habs %>% dplyr::filter(Source == "Alexadrium")
+dat<- ecodata::habs %>% dplyr::filter(Source == "Alexandrium")
 
 datatable(dat, options = list(pageLength = 10))
 
@@ -42,7 +43,7 @@ datatable(dat, options = list(pageLength = 10))
 ## Methods
 ### Data Sources
 
-Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years.  Sampling methods are described in Anderson et al. 2005.  In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.Results are reported as estimated total numbers of cells (10 to the 16th power) in Eastern Gulf of Maine (east of Penobscot Bay), Western Gulf of Maine (west of Penobscot Bay), Bay of Fundy (2003-2013 only), and entire Gulf of Maine.
+*Alexandrium* cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years.  Sampling methods are described in Anderson et al. 2005.  In the annual survey cruises, samples are obtained with a Craib corer, and *Alexandrium* cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.Results are reported as estimated total numbers of cells (10 to the 16th power) in Eastern Gulf of Maine (east of Penobscot Bay), Western Gulf of Maine (west of Penobscot Bay), Bay of Fundy (2003-2013 only), and entire Gulf of Maine.
 
 
 
