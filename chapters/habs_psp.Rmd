@@ -1,6 +1,6 @@
 # Harmful Algal Blooms - Paralitic Shellfish Poisoning
 
-**Description**: Alexandrium catenella annual cyst abundance in the Gulf of Maine
+**Description**: Paralytic Shellfish Poisoning (PSP) toxins in the Gulf of Maine
 
 **Indicator category**: Published methods, Database pull
 
