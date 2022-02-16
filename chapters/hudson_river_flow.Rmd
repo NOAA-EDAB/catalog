@@ -18,7 +18,7 @@ Description of why this indicator is important and what is going on in the North
 
 ### Plotted data 
 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-hudson_river_flow.R"), echo = F, fig.align="center", eval = T, fig.cap=""}
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_MAB.Rmd-hudson-river-flow.R"), echo = F, fig.align="center", eval = T, fig.cap=""}
 
 ```
 
