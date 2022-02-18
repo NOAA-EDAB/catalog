@@ -21,6 +21,17 @@ Description of why this indicator is important and what is going on in the North
 
 ```
 
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna_NE.Rmd-sandlance-colocation.R"), echo = F, fig.align="center", eval = T, fig.cap=""}
+
+```
+
+
+```{r, fig.cap=""}
+
+image.dir <- here::here("images")
+
+knitr::include_graphics(file.path(image.dir, "Stellwagen_sand_lance_sampling_map_1.jpg"))
+```
 
 
 ### Raw data 
