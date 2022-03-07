@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Chesapeake Bay Temperature | Synthetic Indicator Catalogue</title>
+  <title>13 NERRs | Synthetic Indicator Catalogue</title>
   <meta name="description" content="This catalogue holds information on available datasets and indicators." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Chesapeake Bay Temperature | Synthetic Indicator Catalogue" />
+  <meta property="og:title" content="13 NERRs | Synthetic Indicator Catalogue" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="NOAA-EDAB/catalog" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Chesapeake Bay Temperature | Synthetic Indicator Catalogue" />
+  <meta name="twitter:title" content="13 NERRs | Synthetic Indicator Catalogue" />
   
   <meta name="twitter:description" content="This catalogue holds information on available datasets and indicators." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="chesapeake-bay-salinity.html"/>
-<link rel="next" href="cold-pool-index.html"/>
+<link rel="prev" href="hudson-river-flow.html"/>
+<link rel="next" href="sandlance.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -327,47 +327,147 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="chesapeake-bay-temperature" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Chesapeake Bay Temperature</h1>
-<p><strong>Description</strong>: Chesapeake Bay Temperature Anomalies</p>
-<p><strong>Found in</strong>: State of the Ecosystem - Mid-Atlantic (2021)</p>
+<div id="nerrs" class="section level1" number="13">
+<h1><span class="header-section-number">13</span> NERRs</h1>
+<p><strong>Description</strong>: New England National Estruine Reareach Reserve (NERR) Station Water Quality</p>
+<p><strong>Found in</strong>: Memo (2022)</p>
 <p><strong>Indicator category</strong>: Database pull with analysis</p>
-<p><strong>Contributor(s)</strong>: Bruce Vogt, Charles Pellerin</p>
-<p><strong>Data steward</strong>: Charles Pellerin, <a href="mailto:charles.pellerin@noaa.gov" class="email">charles.pellerin@noaa.gov</a></p>
-<p><strong>Point of contact</strong>: Bruce Vogt, <a href="mailto:bruce.vogt@noaa.gov" class="email">bruce.vogt@noaa.gov</a></p>
+<p><strong>Contributor(s)</strong>:Rhegan Thomason <a href="mailto:rheganthomason13@gmail.com" class="email">rheganthomason13@gmail.com</a></p>
+<p><strong>Data steward</strong>: Rhegan Thomason <a href="mailto:rheganthomason13@gmail.com" class="email">rheganthomason13@gmail.com</a></p>
+<p><strong>Point of contact</strong>: Kimberly Bastille, <a href="mailto:kimberly.bastille@noaa.gov" class="email">kimberly.bastille@noaa.gov</a></p>
 <p><strong>Public availability statement</strong>: Source data are publicly available.</p>
-<div id="imapct-summary" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Imapct Summary</h2>
-<div id="water-temperature" class="section level3" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Water Temperature</h3>
-<p>Ocean remote sensing conducted by NOAA’s CoastWatch Program observed seasonal anomalies in sea surface temperature throughout the Chesapeake Bay in 2020. The satellite data show that the Chesapeake Bay experienced a warmer-than-average winter and a cooler-than-average spring, relative to the previous decade. These anomalies were also observed in situ by the NOAA Chesapeake Bay Interpretive Buoy System (CBIBS). Water temperatures returned to average during the summer.</p>
-<p>The warm winter may have affected key Chesapeake Bay fishery resources during a critical period. Results of the Maryland juvenile striped bass survey, conducted by the Maryland Department of Natural Resources (MDNR), showed low recruitment success in 2020, about fivefold below the long-term average. This low recruitment event may have been caused by a mismatch in striped bass (Morone saxatilis) larval and prey abundance due to the warm winter conditions, resulting in reduced larval survival. Warm winters typically trigger an early plankton bloom, including key copepod prey, which dies out before striped bass larvae are present in the tributary (Millette et al. 2019).</p>
-<p>Conversely, warmer winter temperatures may have reduced overwintering mortality of Chesapeake Bay blue crabs (Callinectes sapidus). Calculations done by MDNR based on data from the annual Bay-wide winter dredge survey indicate that blue crabs experienced the lowest overwintering mortality ever calculated (2020 Chesapeake Bay Blue Crab Advisory Report). Previous studies have demonstrated the correlation between winter water temperature and blue crab survival in the Chesapeake Bay (Bauer &amp; Miller 2010, Hines et al. 2010, Rome et al. 2005).</p>
+<div id="impact-summary-11" class="section level2" number="13.1">
+<h2><span class="header-section-number">13.1</span> Impact Summary</h2>
+<p>Data from the National Estuarine Research Reserve System (NERRS) is used to explore certain water quality and climate indicators for four different stations in the New England area. The main goal of this project is to create a partially automated data workflow to aid in the visualization and ingestion of all the data available for each site to inform fisheries-based management while using open data science and principles. This work can be found on github <a href="https://github.com/rheganthomason/NERRSdata">rheganthomason/NERRSdata</a>.</p>
+<p>###TEMPERATURE</p>
+<p>The seasonality of temperature is very clear, with peaks in the summer and valleys in the winters. 2012 is recorded as the hottest year on record in the Northeast, and 2020 seems to be the runner-up to that. We observed Wells winter temperatures usually dropping to the 0-degree mark, but they barely got to 2 degrees in both 2012 and 2020. Narragansett is usually around 2 degrees but hits 3 - 4 degrees. Our main point here is that it is not getting cold enough in the winters. After evaluating our climatologies, we could see that the temperature averages of 2020 are higher than the overall average across 14 years of data, and even has the highest points in the entire series. These warmer temperatures are changing fisheries’ habitats, and a great example comes from the Wells site in Maine. They are currently seeing the implements of species that have never been observed there before. After the abnormally warm temperature period of 2012, the larval fish yields they collect annually suddenly had a majority of “marine migrant species,” and among those were the Chesapeake Blue Crab, and the Black Sea Bass.</p>
+<p>The black sea bass is commonly found below the cape, in warmer water, and because they were caught so far North, they are now being treated as potential climate change indicators.</p>
+<p>###DISSOLVED OXYGEN</p>
+<p>There is also a seasonal cycle in dissolved oxygen - cold water can hold more oxygen, and there is less respiration occurring when it is colder. Usually, the “danger zone”, where oxygen content is so low it becomes harmful, is around 2 milligrams per liter. Luckily, we did not observe any data dropping to that point, however, in late 2011 oxygen content in Great Bay did get close. The most devastating impact of low dissolved oxygen is anoxia, which is a complete deprivation of oxygen and is usually a death sentence for most animals involved. There were 2 events that took place very close to Narragansett Bay. Greenwich Bay and Barrington. The Greenwich bay fish kill was the worst event in the last 50 - 100 years. Menhaden fish were hit the hardest, but crabs, eels, shrimp, and sea bass were also affected by this drop in oxygen. Millions of dead fish washed ashore, and the water was described as a “pea-soup green” The Barrington event took place just last august (2020), and around 5,000 dead fish washed ashore then.</p>
+<p>###SALINITY</p>
+<p>Low salinity is the result of an influx of freshwater, from rain, or freshwater runoff and it is an Indicator of offshore water and high evaporation rates. If the data is completely out of the normal range, it could show a flooding event. We did observe a very low point in Narragansett, and it was, in fact, a flood. It was called the “great march flood of 2010” and as you can see in the pictures, it was a major event. From March 29 to 31, 6 to 10 inches of rain fell on Rhode Island, causing the rivers all around to overflow and take over highways, businesses, and homes.</p>
+<p>FEMA granted 79 million dollars in assistance for the communities affected.
+On the opposite side, droughts have another impact on salinity. Higher salinity leads to less freshwater and then droughts. On October 13th, 2020, we found that Narragansett and Waquoit were experiencing droughts and through our data observed peaks in salinity.</p>
+<div id="plotted-data-9" class="section level3" number="13.1.1">
+<h3><span class="header-section-number">13.1.1</span> Plotted Data</h3>
+<div class="figure"><span id="fig:unnamed-chunk-32"></span>
+<img src="images/NERRs_Map_RT.PNG" alt="Map of NERRs stations used in this data analysis." width="222" />
+<p class="caption">
+Figure 13.1: Map of NERRs stations used in this data analysis.
+</p>
 </div>
-<div id="salinity" class="section level3" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Salinity</h3>
-<p>Observations from the NOAA CBIBS buoys indicated higher-than-average salinity throughout 2020, particularly in the upper Chesapeake Bay (Gooses Reef), suggesting that the region experienced less precipitation than usual. This is corroborated by river discharge data collected by the U.S. Geological Survey (USGS); winter freshwater flow rates in particular were lower than the previous decade’s average (USGS 01492500 Sallie Harris Creek, MD).</p>
-<p>Salinity and freshwater input often play important roles in the survival and recruitment success of key Chesapeake Bay species such as striped bass and oysters (Crassostrea virginica). In addition to winter water temperature, survival of early life stages of striped bass in the Chesapeake Bay is strongly correlated with freshwater flow (Martino &amp; Houde 2010, Millette et al. 2019, North &amp; Houde 2003); high-flow regimes push zooplankton prey downstream, where they get trapped in the estuarine turbidity maximum with striped bass larvae. In low-flow years, zooplankton prey are less likely to match up with striped bass larvae in space and time, reducing larval survival and recruitment success. The combined effects of warm winter temperatures and low flow in 2020 may be the primary cause of the low recruitment success observed by the MDNR juvenile striped bass survey.</p>
-<p>Conversely, increased salinity often results in high juvenile oyster abundance in the Chesapeake Bay (Kimmel et al. 2014). In Maryland, the 2020 MDNR fall oyster survey documented above-average spatsets along the Eastern Shore as expected given the high salinity; however, the Western Shore did not fare as well, suggesting that local environmental conditions are also important.</p>
+<div class="figure"><span id="fig:unnamed-chunk-33"></span>
+<img src="images/NERRsTemp.png" alt="Temperature climatologies (2007-2020) compared to last year in timeseries (2020)." width="545" />
+<p class="caption">
+Figure 13.2: Temperature climatologies (2007-2020) compared to last year in timeseries (2020).
+</p>
 </div>
-<div id="dissolved-oxygen" class="section level3" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> Dissolved Oxygen</h3>
-<p>A dissolved oxygen model operated by the Virginia Institute of Marine Science (VIMS) and Anchor QEA (www.vims.edu/hypoxia) estimated that the overall severity and duration of hypoxia in the Chesapeake Bay was lower and shorter in 2020 compared to most recent years. A smaller-than-average spring freshet, which resulted in above-average salinity in the Bay, also might have decreased surface runoff and nutrient concentrations. Reduced nutrient inputs and cool spring temperatures likely contributed to reduced hypoxia in 2020.</p>
-<p>Dissolved oxygen is a critical component of habitat for benthic organisms and finfishes in the Chesapeake Bay such as blue crabs and striped bass. A smaller volume and shorter duration of hypoxia in the Bay suggests better environmental conditions for these species and, as a result, they would likely experience reduced stress in the summer.</p>
+<div class="figure"><span id="fig:unnamed-chunk-34"></span>
+<img src="images/NERRs_DO_RT.png" alt="Dissolved Oxygen climatologies (2007-2020) compared to last year in timeseries (2020)." width="544" />
+<p class="caption">
+Figure 13.3: Dissolved Oxygen climatologies (2007-2020) compared to last year in timeseries (2020).
+</p>
 </div>
-<div id="submerged-aquatic-vegetation" class="section level3" number="4.1.4">
-<h3><span class="header-section-number">4.1.4</span> Submerged Aquatic Vegetation</h3>
-<p>Structured habitat such as submerged aquatic vegetation (SAV) is a critical component of the Chesapeake Bay ecosystem, and abundance and distribution are often dictated by summer water temperature, salinity, and light availability (Moore et al. 2014, Rybicki &amp; Carter 2002). Chesapeake Bay SAV is monitored annually by VIMS using aerial imagery and ground surveys (<a href="https://www.vims.edu/research/units/programs/sav/" class="uri">https://www.vims.edu/research/units/programs/sav/</a>). Although the data from the 2020 surveys have not yet been processed, anecdotal reports suggest that SAV was patchy, with some areas showing expansion and others showing retraction. As with oysters, local environmental conditions likely play a critical role in SAV abundance.</p>
+<div class="figure"><span id="fig:unnamed-chunk-35"></span>
+<img src="images/NERRS_Salinity_RT.png" alt="Salinity climatologies (2007-2020) compared to last year in timeseries (2020)." width="524" />
+<p class="caption">
+Figure 13.4: Salinity climatologies (2007-2020) compared to last year in timeseries (2020).
+</p>
 </div>
-<div id="plotting-1" class="section level3" number="4.1.5">
-<h3><span class="header-section-number">4.1.5</span> Plotting</h3>
-<p><img src="images/ches-temp-temp.png" width="342" /></p>
 </div>
-<div id="methods-3" class="section level3" number="4.1.6">
-<h3><span class="header-section-number">4.1.6</span> Methods</h3>
-<p>Methods can be <a href="https://noaa-edab.github.io/tech-doc/chesapeake-bay-temperature-anomaly.html">found here.</a></p>
+<div id="raw-data-11" class="section level3" number="13.1.2">
+<h3><span class="header-section-number">13.1.2</span> Raw data</h3>
+<p>See <a href="https://github.com/rheganthomason/NERRSdata">rheganthomason/NERRSdata</a>.</p>
+</div>
+</div>
+<div id="methods-12" class="section level2" number="13.2">
+<h2><span class="header-section-number">13.2</span> Methods</h2>
+<div id="data-sources-11" class="section level3" number="13.2.1">
+<h3><span class="header-section-number">13.2.1</span> Data Sources</h3>
+<p>All data were sourced from the Centralized Data Management Office (CDMO) <a href="http://cdmo.baruch.sc.edu/" class="uri">http://cdmo.baruch.sc.edu/</a>, the NERRS repository where all data is organized before being made available to the public.</p>
+</div>
+<div id="data-extraction-8" class="section level3" number="13.2.2">
+<h3><span class="header-section-number">13.2.2</span> Data Extraction</h3>
+<p>Four water quality parameters were explored (Temperature, Dissolved Oxygen, Salinity, Chlorophyll). This data was accessed from the Centralized Data Management Office and imported using the <a href="https://github.com/fawda123/SWMPr">SWMPr</a> R package.</p>
+<p>Four National Estuarine Research Reserve Stations were compared from Rhode Island to Maine (Narragansett RI, Waquoit Bay MA, Great Bay NH, Wells ME). Each NERRs station has multiple sampling sites. With consultation from NERRs Station scientists, a single representative sampling site was chosen.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+NERRs Station
+</th>
+<th style="text-align:left;">
+Sampling Site Chosen
+</th>
+<th style="text-align:left;">
+Expert Consulted
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Narragansett Bay, RI
+</td>
+<td style="text-align:left;">
+TWharf
+</td>
+<td style="text-align:left;">
+Kim Hyde
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Waquoit Bay, MA
+</td>
+<td style="text-align:left;">
+Metoxit Point
+</td>
+<td style="text-align:left;">
+Megan Tyrrell
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Great Bay, NH
+</td>
+<td style="text-align:left;">
+Great Bay
+</td>
+<td style="text-align:left;">
+Chris Peter
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Wells Bay, ME
+</td>
+<td style="text-align:left;">
+Inlet
+</td>
+<td style="text-align:left;">
+Jeremy Miller
+</td>
+</tr>
+</tbody>
+</table>
+<p>NERRs Station
+Sampling Site Chosen
+Expert Consulted</p>
+</div>
+<div id="data-analysis-11" class="section level3" number="13.2.3">
+<h3><span class="header-section-number">13.2.3</span> Data Analysis</h3>
+<p>All data used was aggregated to month in order to handle days with missing data.
+The long-term time series average was calculated and compared to the most recent year of data (2020). They created a climatology that was used to identify years outside the normal range for that variable.</p>
+</div>
+<div id="data-processing-11" class="section level3" number="13.2.4">
+<h3><span class="header-section-number">13.2.4</span> Data Processing</h3>
+<p>All data analysis and processing code are stored in GitHub <a href="https://github.com/rheganthomason/NERRSdata">rheganthomason/NERRSdata</a>.</p>
+</div>
+</div>
+<div id="references-5" class="section level2" number="13.3">
+<h2><span class="header-section-number">13.3</span> References</h2>
 
-</div>
 </div>
 </div>
             </section>
@@ -375,8 +475,8 @@
           </div>
         </div>
       </div>
-<a href="chesapeake-bay-salinity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="cold-pool-index.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="hudson-river-flow.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sandlance.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
