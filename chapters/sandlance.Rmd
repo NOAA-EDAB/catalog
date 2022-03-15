@@ -14,7 +14,8 @@
 
 ## Impact Summary
 
-Description of why this indicator is important and what is going on in the Northeast related to this information. 
+Northern sand lance (*Ammodytes dubius*) is a foundational forage species in the Gulf of Maine, and depends on sand substrate for survival.  Higher trophic level species that depend on sand lance include humpback whale, great shearwater, and Atlantic cod.  Stellwagen Bank National Marine Sanctuary (SBNMS) has conducted annual benthic grab sample surveys of sand lance since 2013 to assess their distribution and abundance, producing one of the few time-series data sets targeting this species in the Gulf of Maine.  Overall abundance in SBNMS waters tends to cyclical, with high catches in 2014 through 2016, and declining from 2017 through 2019.  Related studies have focused on trophic relationships, reproductive behavior and physiology, larval life history and recruitment, and other aspects of sand lance ecology.  Two protected species (humpback whale and great shearwater) feed on sand lance in the Sanctuary, with highest collocation in the southwest corner, the same area with the highest interaction of whales and fixed fishing gear.  Outside of the Sanctuary, areas of sand lance habitat may also represent areas of entanglement and bycatch risk for humpbacks and shearwaters.  Sand lance are known to be vulnerable to increases in temperature and pCO2 (ocean acidification).  If sand lance populations are affected by climate shifts, then whale and bird populations will likely be affected as well.
+
 
 ### Plotted data 
 ```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna_NE.Rmd-sandlance.R"), echo = F, fig.align="center", eval = T, fig.cap=""}
@@ -45,18 +46,39 @@ datatable(ecodata::sandlance, options = list(pageLength = 10))
 ## Methods
 ### Data Sources
 
-This data set is taken directly from Table 1, Silva et al. 2020.  See full citation in "References" section below.
+The first four line plots (Mean Sandlance, Number of Samples, Number of Samples with Fish, and Proportion of Non-Zero Samples) are derived directly from the raw survey data (SBNMS 2021).  These illustrate the cyclical pattern of abundance, with higher abundance 2014-2016, and lower abundance 2017-2019.
+
+The multi-line plot labeled Sandlance illustrates the collocation of sandlance with humpback whale and great shearwater.  Data are taken directly from Table 1 of Silva et al. 2020.  
+
+The map graphic depicts the grab sample locations in SBNMS, with cumulative catch at each.
+
 
 ### Data Analysis
 
-Data processing and analysis methods are described in Silva et al. 2020.  The catch counts of sand lance and observational counts of humpback whales and great shearwater were used to derive spatial metrics (center of gravity, and inertia) for each species.  Equations for these spatial metrics are provided in Table 2 of Silva et al. 2020. The spatial metrics (center of gravity,  inertia) were used to calculate the global index of collocation (GIC) to quantify spatial overlap between pairs of species for each cruise.  GICs for species pairs are reported in Table 3 of Silva et al. 2020, but data were not sufficient to calculate GICs for each pair of species in each cruise.
+The first four line plots (Mean Sandlance, Number of Samples, Number of Samples with Fish, and Proportion of Non-Zero Samples) are simple descriptive statistics, derived directly from the raw survey data (SBNMS 2021).  “Mean Sandlance” is the mean number of sand lance captured in each sample in the given year.  “Number of Samples” is the total number of samples completed in each year.  “Number of Samples with Fish” is the number of grab samples in each year that captured at least one sand lance.  “Proportion of Non-Zero Samples” is a simple ratio of the “Number of Samples with Fish” to the “Number of Samples”.  
+
+For the collocation of sand lance, humpback whales, and great shearwater, data processing and analysis methods are described in Silva et al. 2020. The catch counts of sand lance and observational counts of humpback whales and great shearwater were used to derive spatial metrics (center of gravity, and inertia) for each species. Equations for these spatial metrics are provided in Table 2 of Silva et al. 2020. The spatial metrics (center of gravity, inertia) were used to calculate the global index of collocation (GIC) to quantify spatial overlap between pairs of species for each cruise. GICs for species pairs are reported in Table 3 of Silva et al. 2020, but data were not sufficient to calculate GICs for each pair of species in each cruise.  Other statistical approaches confirm the positive correlation of sand and humpback whales (Silva et al. 2021).
+
 
 
 
 ### Data Processing
 
-Code for processing salinity data can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_sandlance.R).
+Code for processing sandlance data can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_sandlance.R).
 
 ## References
 
 Silva, T.L., D.N. Wiley, M.A. Thompson, P. Hong, L. Kaufman, J.J. Suca, J.K. Llopiz, H. Baumann, and G. Fay.  2020.  High collocation of sand lance and protected top predators: Implications for conservation and management.  Conservation Science and Practice 2020;e274.  https://doi.org/10.1111/csp2.274
+
+
+Silva, T.L., D.N Wiley and G. Fay. 2021. A hierarchical modelling approach to
+estimating humpback whale abundance from sand lance abundance. Ecological Modelling 456: 109662https://doi.org/10.1016/j.ecolmodel.2021.109662
+
+Suca, J.J., D.N. Wiley, T.L. Silva, A.R. Robuck, D.E. Richardson, S.G. Glancy, E Clancey, T. Giandonato, A.R. Solow, M.A. Thompson, P. Hong, H. Baumann, L. Kaufman, and J.K. Llopiz.  2021.  Sensitivity of sand lance to shifting prey and hydrography indicates forthcoming change to the northeast US shelf forage fish complex.  ICES J. Mar. Sci. (2021), doi:10.1093/icesjms/fsaa251 
+
+SBNMS.  2021.  Standardized surveys of sand lance.  Tabular data provided by Stellwagen Bank NMS.
+
+Staudinger, M.D., H. Goyert, J.J. Suca, K. Coleman, L. Welch, J.K. Llopiz, D. Wiley, Irit Altman, A. Applegate, P. Auster, H. Baumann, J. Beaty, D. Boelke, L. Kaufman, P. Loring, J. Moxley, S. Paton, K. Powers, D. Richardson, Jooke Robbins, J. Runge, B. Smith, C. Spiegel, and H. Steinmetz.  2020.  The role of sand lances (Ammodytes sp.) in the Northwest Atlantic Ecosystem: A synthesis of current knowledge with implications for conservation and management. Fish and Fisheries. 2020;21:522-566. DOI: 10.1111/faf.12445
+
+
+
