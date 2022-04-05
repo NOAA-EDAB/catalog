@@ -14,15 +14,15 @@
 
 ## Impact Summary
 
-Description of why this indicator is important and what is going on in the Northeast related to this information. 
+*Alexandrium* bloom events in the Gulf of Maine can result in Paralytic Shellfish Poisoning (PSP) toxins accumulating in shellfish and other species.   Bloom events and shellfishery closures usually occur somewhere in any given year, but vary greatly between years and among local areas.  The presence of PSP toxins in shellfish, and shellfishery closures have been used as metrics for assessing the severity of PSP outbreaks (Kleindinst et al. 2014).  Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (Jin and Hoagland 2008).
 
 ### Plotted data 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-psp.R"), echo = F, fig.align="center", eval = T, fig.cap=""}
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-psp.R"), echo = F, fig.align="center", eval = T, fig.cap="This line graph depicts the percentage of samples that exceed the designated threshold (44ug STX equivalent / 100g tissue), in the samples that had some level of STX detected.    The percentages may be affected by protocols on where and when to sample – e.g. sampling may be more intense during bloom events, and protocols may differ between the three states (MA, NH, ME)."}
 
 ```
 
 
-```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-psp-closures.R"), echo = F, fig.align="center", eval = T, fig.cap=""}
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/LTL_NE.Rmd-habs-psp-closures.R"), echo = F, fig.align="center", eval = T, fig.cap="This three-tier column graph illustrates three different metrics of shellfish bed closures in Massachusetts waters due to PSP, 1990-2019.  Annual metrics include number of sites closed, mean number of days closed per site, and total closed area (acres).  Bloom events in the early 1990s, 2005, and 2009 are evident in the closure metrics."}
 
 ```
 
@@ -38,7 +38,8 @@ datatable(dat, options = list(pageLength = 10))
 ## Methods
 ### Data Sources
 
-Original data were collected by the State of Maine, Department of Marine Resources, which tests coastal shellfish areas for biotoxins weekly, annually beginning in March and going through October or later when necessary.  
+This data set presents information on the presence of PSP toxins in blue mussels (Mytilis edulis) sampled at coastal sites in Maine (2005 to 2019), New Hampshire (2000-2019), and Massachusetts (1972-2019).  Results are summarized on an annual basis for each state.  Variables include total number of samples, number of samples above and below a designated threshold (44ug STX equivalent / 100g tissue), and percentage of samples above the threshold.  Original data for Maine were collected by Maine Department of Marine Resources, which tests coastal shellfish areas for biotoxins weekly, annually beginning in March and going through October or later when necessary.  Original data for New Hampshire were collected by NH Department of Environmental Services, and original data for Massachusetts were collected by Massachusetts Division of Marine Fisheries.  These data were provided by Yizhen Li, NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch, Silver Spring, MD.  Graphics and summaries were developed by Ayman Mabrouk, NOAA/NOS NCCOS Marine Spatial Ecology Division, Biogeography Branch, Silver Spring, MD. 
+
 
 Data set was provided by Yizhen Li, NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch, Silver Spring, MD. Graphics and summaries were developed by Ayman Mabrouk, NOAA/NOS NCCOS Marine Spatial Ecology Division, Biogeography Branch, Silver Spring, MD.
 Original data were collected by the State of Maine, Department of Marine Resources, which samples and tests blue mussels (*Mytilis edulis*) in coastal shellfish areas for HAB biotoxins on a weekly basis from March through October.  
@@ -53,19 +54,25 @@ Original data were collected by the State of Maine, Department of Marine Resourc
 
 ### Data Analysis
 
-Blue mussels (*Mytilis edulis*) were sampled at designated sites each year from March through October, and tissues were analyzed for presence and quantity of PSP toxins.  Saxitoxin (STX) is a well-known PSP toxin, but a bloom can generate a range of related PSP toxins.  Therefore, in many monitoring programs, toxins are reported as ""ug STX equivalents per 100 grams of shellfish tissue", where the quantity of each toxin present is normalized by it's toxicity compared to STX (Chung 2010).
+Blue mussels (*Mytilis edulis*) were sampled at designated coastal sites each year in Maine, New Hampshire, and Massachusetts.  Mussel tissues were analyzed for presence and quantity of PSP toxins. Saxitoxin (STX) is a well-known PSP toxin, but a bloom can generate a range of related PSP toxins. Therefore, in many monitoring programs, toxins are reported as “ug STX equivalents per 100 grams of shellfish tissue”, where the quantity of each toxin present is normalized by its toxicity compared to STX (Chung 2010).
 
 
-Data include total number of samples at multiple locations collected in each calendar year (2005-2019), numbers of samples above and below the PSP threshold of 44 ug/100g, and percentage of samples above the threshold.  Simple bar and line graphs are used to plot the values for each variable as time series, 2005-2019.
-Operational Harmful Algal Bloom forecast is served online at https://coastalscience.noaa.gov/research/stressor-impacts-mitigation/hab-forecasts/gulf-of-maine-alexandrium-catenella-predictive-models/
+
+Data include total number of samples at multiple locations collected in each calendar year, numbers of samples above and below the PSP threshold of 44 ug/100g, and percentage of samples above the threshold. Simple bar and line graphs are used to plot the values for each variable as an annual time series for Maine (2005 to 2019), New Hampshire (2000-2019), and Massachusetts (1972-2019).
+
+
+Information on the closure of shellfish harvesting areas in Massachusetts due to PSP toxicity from *Alexandrium* blooms is reported from 1990 to 2019.  Results are summarized on an annual basis.  Metrics reported include Number of sites closed, Mean number of closed day per site, and Total closed area in acres.  Results are summarized in a three-part time-series bar graph.  Shellfishery closures have been used as a metric for HAB severity throughout New England (Kleindinst et al. 2014), but information reported here is for Massachusetts only.
+
 
 ### Data Processing
 
-Code for processing salinity data can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_habs.R).
+Code for processing harmful algal bloom data can be found [here](https://github.com/NOAA-EDAB/ecodata/blob/master/data-raw/get_habs.R).
 
 ## References
 
 Chung, L.L. 2010.  Measuring paralytic shellfish toxins in mussels from New Hampshire coastal waters using zwitterionic hydrophilic liquid chromatography/electrospray mass spectrometry. Master's Theses and Capstones. 539.  https://scholars.unh.edu/thesis/539
+
+Jin, D., and P. Hoagland. 2008. The value of harmful algal bloom predictions to the nearshore commercial shellfish fishery in the Gulf of Maine. WHOI Marine Policy Center, Woods Hole MA. May 1, 2008. 29 pp.
 
 Kleindinst, J.L., D.M. Anderson, D.J. McGillicuddy Gr., R.P. Stumpf, K.M. Fisher, D.A. Couture, J.M. Hickey, and C. Nash.  2014.  Categorizing the severity of paralytic shellfish poisoning outbreaks in the Gulf of Maine for forecasting and management.  Deep-Sea Research II 103:277-287.
 
