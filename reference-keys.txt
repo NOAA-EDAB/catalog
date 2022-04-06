@@ -110,7 +110,7 @@ data-extraction-6
 data-analysis-7
 data-processing-7
 references-2
-harmful-algal-blooms---paralitic-shellfish-poisoning
+harmful-algal-blooms---paralytic-shellfish-poisoning
 impact-summary-8
 plotted-data-7
 raw-data-8
