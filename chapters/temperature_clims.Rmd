@@ -20,6 +20,53 @@ Definiton of baseline climatology. pros and cons of shifting
 
 ### Plotting
 
+#### Sea Surface Temperatures 
+
+```{r}
+gom<-readxl::read_excel(here::here("data-raw/GOM_SST_1982_to_2021 - Vincent Saba - NOAA Federal.xlsx")) %>%
+  dplyr::mutate(t = as.Date(t), 
+                EPU = "GOM")
+gb<-readxl::read_excel(here::here("data-raw/GB_SST_1982_to_2021 - Vincent Saba - NOAA Federal.xlsx")) %>%
+  dplyr::mutate(t = as.Date(t), 
+                EPU = "GB")
+mab<-readxl::read_excel(here::here("data-raw/MAB_SST_1982_to_2021 - Vincent Saba - NOAA Federal.xlsx")) %>%
+  dplyr::mutate(t = as.Date(t), 
+                EPU = "MAB")
+
+ltm8211<- rbind(gom,gb,mab) %>% 
+  dplyr::mutate(Time = lubridate::year(t), 
+                DOY = lubridate::yday(t)) %>% 
+  dplyr::filter(Time %in% 1982:2011) %>% 
+  dplyr::group_by(DOY, EPU) %>% 
+  dplyr::summarise(ltm = mean(temp)) %>% 
+  dplyr::mutate(Cat = "ltm 82-11")
+
+ltm9120<- rbind(gom,gb,mab) %>% 
+  dplyr::mutate(Time = lubridate::year(t), 
+                DOY = lubridate::yday(t)) %>% 
+  dplyr::filter(Time %in% 1991:2020) %>% 
+  dplyr::group_by(DOY, EPU) %>% 
+  dplyr::summarise(ltm = mean(temp)) %>% 
+  dplyr::mutate(Cat = "ltm 91-20")
+
+gom %>% rbind(gb,mab) %>% 
+  dplyr::mutate(Time = lubridate::year(t), 
+                DOY = lubridate::yday(t)) %>% 
+  dplyr::filter(Time == 2021) %>%
+  dplyr::mutate(Cat = "2021", 
+                ltm = temp) %>% 
+  dplyr::select(DOY, EPU, ltm, Cat) %>% 
+  rbind(ltm8211, ltm9120) %>% 
+  ggplot(aes(x = DOY, y = ltm, color = Cat))+
+  geom_line()+
+  geom_point()+
+  facet_wrap(EPU~.)+
+  theme(legend.title = element_blank())+
+  ylab("Temp C")
+
+```
+
+
 #### Seasonal Sea Surface Temperature Anomolies 
 
 ```{r}
