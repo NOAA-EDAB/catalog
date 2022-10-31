@@ -78,6 +78,6 @@ ecodata::heatwave_year %>%
 
 ```{r, fig.cap="GOM heatwave using climatology from 92-20"}
 
-
+```
 
 
