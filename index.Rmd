@@ -71,7 +71,7 @@ library(heatwaveR)
 #library(magick)
 library(readr)
 library(RColorBrewer)
-library(ks)
+#library(ks)
 library(cowplot)
 library(DT)
 #GIS libraries
