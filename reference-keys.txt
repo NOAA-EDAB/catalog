@@ -22,6 +22,7 @@ fig:unnamed-chunk-35
 fig:unnamed-chunk-37
 fig:unnamed-chunk-38
 fig:unnamed-chunk-39
+fig:unnamed-chunk-42
 fig:neusmap1
 aquaculture
 impact-summary
@@ -158,8 +159,14 @@ data-sources-12
 data-analysis-12
 data-processing-12
 references-6
-ocean-acidification-and-shellfish
+sea-surface-climatologies
 impact-summary-13
 plotting-2
+seasonal-sea-surface-temperature-anomolies
+gom-marine-heatwave-2021---82-11
+gom-marine-heatwave-2021---92-20
+ocean-acidification-and-shellfish
+impact-summary-14
+plotting-3
 methods-14
 state-of-the-ecosystem-plain-language-glossary
