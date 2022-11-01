@@ -22,7 +22,7 @@ fig:unnamed-chunk-35
 fig:unnamed-chunk-37
 fig:unnamed-chunk-38
 fig:unnamed-chunk-39
-fig:unnamed-chunk-42
+fig:unnamed-chunk-43
 fig:neusmap1
 aquaculture
 impact-summary
@@ -162,6 +162,7 @@ references-6
 sea-surface-climatologies
 impact-summary-13
 plotting-2
+sea-surface-temperatures
 seasonal-sea-surface-temperature-anomolies
 gom-marine-heatwave-2021---82-11
 gom-marine-heatwave-2021---92-20
