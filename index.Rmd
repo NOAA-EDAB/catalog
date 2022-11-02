@@ -50,8 +50,8 @@ remotes::install_github("noaa-edab/ecodata")
 remotes::install_github("noaa-edab/stocksmart")
 remotes::install_github("thomasp85/patchwork")
 #remotes::install_github("andybeet/arfit")
-install.packages("AICcmodavg")
-install.packages("readxl")
+install.packages("AICcmodavg", repos = "http://cran.us.r-project.org")
+install.packages("readxl", repos = "http://cran.us.r-project.org")
 library(ggplot2)
 #library(formatR)
 library(magrittr)
@@ -96,8 +96,8 @@ hjust.label <- 1.5
 letter_size <- 4
 feeding.guilds1 <- c("Piscivore","Planktivore","Benthivore","Benthos")
 feeding.guilds <- c("Apex Predator","Piscivore","Planktivore","Benthivore","Benthos")
-x.shade.min <- 2009
-x.shade.max <- 2019
+x.shade.min <- 2011
+x.shade.max <- 2021
 # #Function for custom ggplot facet labels
 label <- function(variable,value){
   return(facet_names[value])
