@@ -165,7 +165,8 @@ plotting-2
 sea-surface-temperatures
 seasonal-sea-surface-temperature-anomolies
 gom-marine-heatwave-2021---82-11
-gom-marine-heatwave-2021---92-20
+gom-marine-heatwave-2021---82-11-1
+cumulative-and-maximum-marine-heatwaves
 ocean-acidification-and-shellfish
 impact-summary-14
 plotting-3
