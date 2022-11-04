@@ -190,9 +190,9 @@ hw %>% rbind(hw9120) %>%
   ggplot2::annotate("rect", fill = shade.fill, alpha = shade.alpha,
                     xmin = x.shade.min , xmax = x.shade.max,
                     ymin = -Inf, ymax = Inf) +
-  ggplot2::geom_line(aes(x = Time, y = Value, color = Var)) +
-  ggplot2::geom_point(aes(x = Time, y = Value, color = Var)) +
-  ecodata::geom_gls(aes(x = Time, y = Value)) +
+  ggplot2::geom_line(aes(x = Time, y = Value, color = ltm)) +
+  ggplot2::geom_point(aes(x = Time, y = Value, color = ltm)) +
+  ecodata::geom_gls(aes(x = Time, y = Value, color = ltm)) +
   #ecodata::geom_gls(aes(x= Time, y = Value))+
   ggplot2::ylab("") +
   ggplot2::xlab(element_blank())+
