@@ -20,53 +20,6 @@ Definiton of baseline climatology. pros and cons of shifting
 
 ### Plotting
 
-#### Sea Surface Temperatures 
-
-```{r}
-gom<-readxl::read_excel(here::here("data-raw/GOM_SST_1982_to_2021 - Vincent Saba - NOAA Federal.xlsx")) %>%
-  dplyr::mutate(t = as.Date(t), 
-                EPU = "GOM")
-gb<-readxl::read_excel(here::here("data-raw/GB_SST_1982_to_2021 - Vincent Saba - NOAA Federal.xlsx")) %>%
-  dplyr::mutate(t = as.Date(t), 
-                EPU = "GB")
-mab<-readxl::read_excel(here::here("data-raw/MAB_SST_1982_to_2021 - Vincent Saba - NOAA Federal.xlsx")) %>%
-  dplyr::mutate(t = as.Date(t), 
-                EPU = "MAB")
-
-ltm8211<- rbind(gom,gb,mab) %>% 
-  dplyr::mutate(Time = lubridate::year(t), 
-                DOY = lubridate::yday(t)) %>% 
-  dplyr::filter(Time %in% 1982:2011) %>% 
-  dplyr::group_by(DOY, EPU) %>% 
-  dplyr::summarise(ltm = mean(temp)) %>% 
-  dplyr::mutate(Cat = "ltm 82-11")
-
-ltm9120<- rbind(gom,gb,mab) %>% 
-  dplyr::mutate(Time = lubridate::year(t), 
-                DOY = lubridate::yday(t)) %>% 
-  dplyr::filter(Time %in% 1991:2020) %>% 
-  dplyr::group_by(DOY, EPU) %>% 
-  dplyr::summarise(ltm = mean(temp)) %>% 
-  dplyr::mutate(Cat = "ltm 91-20")
-
-gom %>% rbind(gb,mab) %>% 
-  dplyr::mutate(Time = lubridate::year(t), 
-                DOY = lubridate::yday(t)) %>% 
-  dplyr::filter(Time == 2021) %>%
-  dplyr::mutate(Cat = "2021", 
-                ltm = temp) %>% 
-  dplyr::select(DOY, EPU, ltm, Cat) %>% 
-  rbind(ltm8211, ltm9120) %>% 
-  ggplot(aes(x = DOY, y = ltm, color = Cat), alpha = 0.7)+
-  geom_line()+
-  geom_point()+
-  facet_wrap(EPU~.)+
-  theme(legend.title = element_blank())+
-  ylab("Temp C")
-
-```
-
-
 #### Seasonal Sea Surface Temperature Anomolies 
 
 ```{r}
@@ -90,6 +43,7 @@ ecodata::seasonal_oisst_anom %>%
   ecodata::geom_gls(aes(x= Time, y = Value, color = ltm))+
   facet_grid(EPU~Var)+
   ecodata::theme_facet() +
+  ylab("Temperature Anomaly")
   ggplot2::theme(strip.text=element_text(hjust=0),
                  plot.title = element_text(size = 12))+
   ecodata::theme_title()
@@ -203,7 +157,7 @@ hw %>% rbind(hw9120) %>%
                       alpha = hline.alpha,
                       linetype = hline.lty)+
   ggplot2::facet_grid(Var~EPU, scales = "free") +
-  ecodata::theme_ts()+
+  ecodata::theme_facet() +
   ggplot2::theme(strip.text=element_text(hjust=0,
                                          face = "italic"), 
                  axis.title.y = element_text(angle = 90))+
