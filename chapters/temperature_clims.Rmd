@@ -57,7 +57,7 @@ gom %>% rbind(gb,mab) %>%
                 ltm = temp) %>% 
   dplyr::select(DOY, EPU, ltm, Cat) %>% 
   rbind(ltm8211, ltm9120) %>% 
-  ggplot(aes(x = DOY, y = ltm, color = Cat))+
+  ggplot(aes(x = DOY, y = ltm, color = Cat), alpha = 0.7)+
   geom_line()+
   geom_point()+
   facet_wrap(EPU~.)+
@@ -87,7 +87,7 @@ ecodata::seasonal_oisst_anom %>%
   ggplot()+
   geom_point(aes(x= Time, y = Value, color = ltm))+
   geom_line(aes(x= Time, y = Value, color = ltm))+
-  #ecodata::geom_gls(aes(x= Time, y = Value))+
+  ecodata::geom_gls(aes(x= Time, y = Value))+
   facet_grid(EPU~Var)+
   ecodata::theme_facet() +
   ggplot2::theme(strip.text=element_text(hjust=0),
@@ -95,7 +95,7 @@ ecodata::seasonal_oisst_anom %>%
   ecodata::theme_title()
 ```
 
-#### GOM Marine Heatwave 2021 - 82-11
+#### GOM Marine Heatwave 2021
 
 
 ```{r, fig.cap="GOM heatwave presented in the 2022 SOE, uses clim of 82-11"}
@@ -121,10 +121,9 @@ ecodata::heatwave_year %>%
 
 ```
 
-#### GOM Marine Heatwave 2021 - 82-11
 
 
-```{r, fig.cap="GOM heatwave presented in the 2022 SOE, uses clim of 91-20"}
+```{r, fig.cap="GOM heatwave uses clim of 91-20"}
 gom<-read.csv(here::here("data-raw/heatwave_year_9120.csv"), header = TRUE) %>% 
   dplyr::filter(EPU == "GOM", 
          stringr::str_detect(t, "2021")) %>% 
@@ -144,6 +143,7 @@ gom<-read.csv(here::here("data-raw/heatwave_year_9120.csv"), header = TRUE) %>%
         legend.position=c(0.2, 0.8))+
   ecodata::theme_title()
 
+gom
 ```
 
 #### Cumulative and Maximum Marine Heatwaves
@@ -191,7 +191,7 @@ hw %>% rbind(hw9120) %>%
                     ymin = -Inf, ymax = Inf) +
   ggplot2::geom_line(aes(x = Time, y = Value, color = ltm)) +
   ggplot2::geom_point(aes(x = Time, y = Value, color = ltm)) +
-  #ecodata::geom_gls(aes(x = Time, y = Value)) +
+  ecodata::geom_gls(aes(x = Time, y = Value)) +
   #ecodata::geom_gls(aes(x= Time, y = Value))+
   ggplot2::ylab("") +
   ggplot2::xlab(element_blank())+
@@ -200,7 +200,8 @@ hw %>% rbind(hw9120) %>%
   ggplot2::geom_hline(aes(yintercept = hline),
                       size = hline.size,
                       alpha = hline.alpha,
-                      linetype = hline.lty)+
+                      linetype = hline.lty, 
+                      color = ltm)+
   ggplot2::facet_grid(Var~EPU, scales = "free") +
   ecodata::theme_ts()+
   ggplot2::theme(strip.text=element_text(hjust=0,
