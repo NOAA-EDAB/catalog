@@ -201,8 +201,7 @@ hw %>% rbind(hw9120) %>%
   ggplot2::geom_hline(aes(yintercept = hline),
                       size = hline.size,
                       alpha = hline.alpha,
-                      linetype = hline.lty, 
-                      color = ltm)+
+                      linetype = hline.lty)+
   ggplot2::facet_grid(Var~EPU, scales = "free") +
   ecodata::theme_ts()+
   ggplot2::theme(strip.text=element_text(hjust=0,
