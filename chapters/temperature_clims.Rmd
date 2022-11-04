@@ -22,7 +22,7 @@ Definiton of baseline climatology. pros and cons of shifting
 
 #### Seasonal Sea Surface Temperature Anomolies 
 
-```{r}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 
 new<- read.csv(here::here("data-raw/SST_ltm9220.csv")) %>% 
   #dplyr::filter(EPU == "MAB") %>% 
@@ -52,7 +52,7 @@ ecodata::seasonal_oisst_anom %>%
 #### GOM Marine Heatwave 2021
 
 
-```{r, fig.cap="GOM heatwave presented in the 2022 SOE, uses clim of 82-11"}
+```{r,, echo = FALSE, message = FALSE, warning = FALSE, fig.cap="GOM heatwave presented in the 2022 SOE, uses clim of 82-11"}
 ecodata::heatwave_year %>% 
   filter(EPU == "GOM", 
          str_detect(t, "2021")) %>% 
@@ -77,7 +77,7 @@ ecodata::heatwave_year %>%
 
 
 
-```{r, fig.cap="GOM heatwave uses clim of 91-20"}
+```{r,, echo = FALSE, message = FALSE, warning = FALSE, fig.cap="GOM heatwave uses clim of 91-20"}
 gom<-read.csv(here::here("data-raw/heatwave_year_9120.csv"), header = TRUE) %>% 
   dplyr::filter(EPU == "GOM", 
          stringr::str_detect(t, "2021")) %>% 
@@ -102,7 +102,7 @@ gom
 
 #### Cumulative and Maximum Marine Heatwaves
 
-```{r, fig.cap=""}
+```{r,, echo = FALSE, message = FALSE, warning = FALSE, fig.cap=""}
 cumu <- ecodata::heatwave %>% 
   dplyr::filter(Var == "cumulative intensity") %>% 
   dplyr::mutate(Var = recode(Var, "cumulative intensity" = "Cumulative Intensity (degree C x days)"))
