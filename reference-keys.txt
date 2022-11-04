@@ -23,6 +23,7 @@ fig:unnamed-chunk-37
 fig:unnamed-chunk-38
 fig:unnamed-chunk-39
 fig:unnamed-chunk-43
+fig:unnamed-chunk-44
 fig:neusmap1
 aquaculture
 impact-summary
@@ -164,8 +165,7 @@ impact-summary-13
 plotting-2
 sea-surface-temperatures
 seasonal-sea-surface-temperature-anomolies
-gom-marine-heatwave-2021---82-11
-gom-marine-heatwave-2021---82-11-1
+gom-marine-heatwave-2021
 cumulative-and-maximum-marine-heatwaves
 ocean-acidification-and-shellfish
 impact-summary-14
