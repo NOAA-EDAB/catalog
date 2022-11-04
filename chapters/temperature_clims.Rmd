@@ -22,13 +22,13 @@ Definiton of baseline climatology. pros and cons of shifting
 
 #### Seasonal Sea Surface Temperature Anomolies 
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, results = FALSE}
 
 new<- read.csv(here::here("data-raw/SST_ltm9220.csv")) %>% 
   #dplyr::filter(EPU == "MAB") %>% 
   dplyr::mutate(ltm = c("91-20")) %>% 
   dplyr::select(-X)
-ecodata::seasonal_oisst_anom %>%
+sst<- ecodata::seasonal_oisst_anom %>%
   dplyr::mutate(ltm = c("82-10")) %>% 
   #dplyr::filter(EPU  == "MAB") %>%
   rbind(new) %>% 
@@ -37,16 +37,18 @@ ecodata::seasonal_oisst_anom %>%
          Var = recode(Var, "spring" = "Spring"),
          Var = recode(Var, "summer" = "Summer"),
          Var = recode(Var, "fall" = "Fall")) %>% 
-  ggplot()+
-  geom_point(aes(x= Time, y = Value, color = ltm))+
-  geom_line(aes(x= Time, y = Value, color = ltm))+
+  ggplot2::ggplot()+
+  ggplot2::geom_point(aes(x= Time, y = Value, color = ltm))+
+  ggplot2::geom_line(aes(x= Time, y = Value, color = ltm))+
   ecodata::geom_gls(aes(x= Time, y = Value, color = ltm))+
-  facet_grid(EPU~Var)+
+  ggplot2::facet_grid(EPU~Var)+
   ecodata::theme_facet() +
-  ylab("Temperature Anomaly")
+  ggplot2::ylab("Temperature Anomaly")+
   ggplot2::theme(strip.text=element_text(hjust=0),
                  plot.title = element_text(size = 12))+
   ecodata::theme_title()
+  
+sst
 ```
 
 #### GOM Marine Heatwave 2021
