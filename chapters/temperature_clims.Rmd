@@ -87,7 +87,7 @@ ecodata::seasonal_oisst_anom %>%
   ggplot()+
   geom_point(aes(x= Time, y = Value, color = ltm))+
   geom_line(aes(x= Time, y = Value, color = ltm))+
-  ecodata::geom_gls(aes(x= Time, y = Value))+
+  ecodata::geom_gls(aes(x= Time, y = Value, color = ltm))+
   facet_grid(EPU~Var)+
   ecodata::theme_facet() +
   ggplot2::theme(strip.text=element_text(hjust=0),
@@ -103,7 +103,7 @@ ecodata::heatwave_year %>%
   filter(EPU == "GOM", 
          str_detect(t, "2021")) %>% 
   ggplot( aes(x = t, y = temp))+
-  geom_flame(aes(y2 = thresh))+ 
+  heatwaveR::geom_flame(aes(y2 = thresh))+ 
   geom_line(aes(x = t, y = seas, color = "a"), size = 1)+
   geom_line(aes(x = t, y = thresh, color = "c"), size = 1)+
   geom_line(aes(x = t, y = temp, color = "b"))+
@@ -129,7 +129,7 @@ gom<-read.csv(here::here("data-raw/heatwave_year_9120.csv"), header = TRUE) %>%
          stringr::str_detect(t, "2021")) %>% 
   dplyr::mutate(date  = lubridate::as_date(t)) %>% 
   ggplot( aes(x = date, y = temp))+
-  geom_flame(aes(y2 = thresh))+ 
+  heatwaveR::geom_flame(aes(y2 = thresh))+ 
   geom_line(aes(x = date, y = seas, color = "a"), size = 1)+
   geom_line(aes(x = date, y = thresh, color = "c"), size = 1)+
   geom_line(aes(x = date, y = temp, color = "b"))+
@@ -182,15 +182,16 @@ hw9120<- cumu9120 %>%
   rbind(maxin9120) %>% 
   dplyr::group_by(Var, EPU) %>% 
   dplyr::mutate(hline = mean(Value), 
-                ltm = "91-20")
+                ltm = "91-20", 
+                Time = as.numeric(Time))
 
 hw %>% rbind(hw9120) %>%  
   ggplot2::ggplot() +
   ggplot2::annotate("rect", fill = shade.fill, alpha = shade.alpha,
                     xmin = x.shade.min , xmax = x.shade.max,
                     ymin = -Inf, ymax = Inf) +
-  ggplot2::geom_line(aes(x = Time, y = Value, color = ltm)) +
-  ggplot2::geom_point(aes(x = Time, y = Value, color = ltm)) +
+  ggplot2::geom_line(aes(x = Time, y = Value, color = Var)) +
+  ggplot2::geom_point(aes(x = Time, y = Value, color = Var)) +
   ecodata::geom_gls(aes(x = Time, y = Value)) +
   #ecodata::geom_gls(aes(x= Time, y = Value))+
   ggplot2::ylab("") +
