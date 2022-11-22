@@ -20,6 +20,26 @@ Definiton of baseline climatology. pros and cons of shifting
 
 ### Plotting
 
+#### Daily Temperature Anomalies
+
+```{r}
+dat<- read.csv(here::here("data-raw/daily_ltm_sst.csv")) %>% 
+  mutate(ltm = stringr::str_extract(ltm_name, "\\d+"), 
+         ltm = recode(ltm, "1982" = "82-10", 
+                      "1991" = "91-20")) %>% 
+  tidyr::separate(Var, into = c("DOY", "SST", "Anom"), sep = " ") %>% 
+  dplyr::mutate(DOY = as.numeric(DOY))
+
+
+dat %>% 
+  ggplot2::ggplot(aes(x = DOY, y = Value, color = ltm)) + 
+  geom_line()+
+  facet_wrap(~EPU)+
+  ecodata::theme_facet()+
+  ylab("Temperature (C)")
+```
+
+
 #### Seasonal Sea Surface Temperature Anomolies 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, results = FALSE}
