@@ -22,8 +22,8 @@ fig:unnamed-chunk-35
 fig:unnamed-chunk-37
 fig:unnamed-chunk-38
 fig:unnamed-chunk-39
-fig:unnamed-chunk-42
 fig:unnamed-chunk-43
+fig:unnamed-chunk-44
 fig:neusmap1
 aquaculture
 impact-summary
@@ -163,6 +163,7 @@ references-6
 sea-surface-climatologies
 impact-summary-13
 plotting-2
+daily-temperature-anomalies
 seasonal-sea-surface-temperature-anomolies
 gom-marine-heatwave-2021
 cumulative-and-maximum-marine-heatwaves
