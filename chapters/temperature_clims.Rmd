@@ -125,11 +125,26 @@ gom
 #### Cumulative and Maximum Marine Heatwaves
 
 ```{r,, echo = FALSE, message = FALSE, warning = FALSE, fig.cap=""}
-cumu <- ecodata::heatwave %>% 
+df<- data.frame(EPU = c(rep(c("GB"), 40), 
+                         rep(c("GOM"), 40), 
+                         rep(c("MAB"), 40)), 
+                Time = rep(c(1982:2021), 3),
+                Value = c(0), 
+                Var = rep(c("cumulative intensity",
+                            "maximum intensity"), 60), 
+                Units = c("NA"))
+
+filled<- plyr::rbind.fill(  df, ecodata::heatwave) %>% 
+  group_by(Time, EPU, Var) %>% 
+  filter(Value == max(Value))
+
+cumu <- filled %>% 
   dplyr::filter(Var == "cumulative intensity") %>% 
   dplyr::mutate(Var = recode(Var, "cumulative intensity" = "Cumulative Intensity (degree C x days)"))
 
-maxin <- ecodata::heatwave %>% 
+
+
+maxin <- filled %>% 
   dplyr::filter(Var == "maximum intensity") %>% 
   dplyr::group_by(Time, EPU, Var, Units) %>% 
   dplyr::summarise(Value = max(Value)) %>% 
@@ -142,12 +157,18 @@ hw<- cumu %>%
   dplyr::mutate(hline = mean(Value), 
                 ltm = "82-11")
 
-cumu9120 <- read.csv(here::here("data-raw/heatwave_9120.csv")) %>% 
+dat<- read.csv(here::here("data-raw/heatwave_9120.csv")) 
+
+filled2<- plyr::rbind.fill(  df,dat) %>% 
+  group_by(Time, EPU, Var) %>% 
+  filter(Value == max(Value))
+
+cumu9120 <- filled2 %>% 
   dplyr::filter(Var == "cumulative intensity") %>% 
   dplyr::mutate(Var = recode(Var, "cumulative intensity" = "Cumulative Intensity (degree C x days)")) %>% 
   dplyr::select(!X)
 
-maxin9120 <- read.csv(here::here("data-raw/heatwave_9120.csv")) %>% 
+maxin9120 <- filled2 %>% 
   dplyr::filter(Var == "maximum intensity") %>% 
   dplyr::group_by(Time, EPU, Var, Units) %>% 
   dplyr::summarise(Value = max(Value)) %>% 
@@ -184,6 +205,8 @@ hw %>% rbind(hw9120) %>%
                                          face = "italic"), 
                  axis.title.y = element_text(angle = 90))+
   ecodata::theme_title()
+
+
 ```
 
 
