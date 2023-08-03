@@ -1,0 +1,127 @@
+# Forage Index
+
+**Description**: Aggregate forage fish biomass index from fish stomach contents
+
+**Indicator family**: megafauna
+
+**Contributor(s)**: Sarah Gaichas, James Gartland, Brian Smith, Anthony Wood, Elizabeth Ng, Michael Celestino, Katie Drew, Abigail Tyrell, and James Thorson
+
+**Affiliation(s)**:
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(tidyverse)
+
+# #Time series constants
+shade.alpha <- 0.3
+shade.fill <- "lightgrey"
+lwd <- 1
+pcex <- 2
+trend.alpha <- 0.5
+trend.size <- 2
+hline.size <- 1
+hline.alpha <- 0.35
+hline.lty <- "dashed"
+label.size <- 5
+hjust.label <- 1.5
+letter_size <- 4
+feeding.guilds1 <- c("Piscivore","Planktivore","Benthivore","Benthos")
+feeding.guilds <- c("Apex Predator","Piscivore","Planktivore","Benthivore","Benthos")
+x.shade.min <- 2011
+x.shade.max <- 2021
+# #Function for custom ggplot facet labels
+label <- function(variable,value){
+  return(facet_names[value])
+}
+# try to put affiliations in the yaml header later
+# author:
+# - affiliation: group1
+#   name: 'Sarah Gaichas, Brian Smith, Anthony Wood, Abigail Tyrell'
+# - affiliation: group2
+#   name: James Gartland
+# - affiliation: group3
+#   name: Elizabeth Ng
+# - affiliation: group4
+#   name: Michael Celestino
+# - affiliation: group5
+#   name: Katie Drew
+# - affiliation: group6
+#   name: Abigail Tyrell
+# address:
+# - address: NOAA NMFS Northeast Fisheries Science Center, Woods Hole, MA, USA
+#   code: group1
+# - address: Virginia Institute of Marine Science, Gloucester Point, VA, USA
+#   code: group2
+# - address: University of Washington, Seattle, WA, USA
+#   code: group3
+# - address: New Jersey Department of Environmental Protection, Port Republic, NJ, USA
+#   code: group4
+# - address: Atlantic States Marine Fisheries Commission, Arlington, VA, USA
+#   code: group5
+# - address: Ocean Associates Inc, Arlington, VA, USA
+#   code: group6
+```
+
+## What is this?
+
+The amount of forage fish available in the ecosystem combined with the energy content of the forage species determines the amount of energy potentially available to predators in the ecosystem. Changes in the forage base could pose a risk to managed and protected species production. This spatially-explicit forage index estimated the combined biomass of 20 forage species using stomach contents information from 22 predatory fish species collected on bottom trawl surveys. 
+
+### Visualization
+
+Variables plotted are Fall Forage Fish Biomass Estimate and Spring Forage Fish Biomass Estimate with error bands from Fall Forage Fish Biomass Estimate SE and Spring Forage Fish Biomass Estimate SE, respectively. 
+
+```{r , code = readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna_MAB.Rmd-setup.R")}
+```
+
+#### MAB
+
+```{r MAforagebio, fig.cap = "Forage fish index based on spring and fall survey predator diets in the Mid Atlantic.",code=readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna_MAB.Rmd-forage-index.R")}
+```
+
+#### NE
+```{r NEforagebio, code=readLines("https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/chunk-scripts/macrofauna_NE.Rmd-forage-index.R"), fig.cap = "Forage fish index based on spring and fall survey predator diets on Georges Bank (GB) and in the Gulf of Maine (GOM)."}
+```
+
+### Indicator statistics
+
+Spatial scale: by EPU and full shelf
+
+Temporal scale: Spring (January-June), Fall (July-December), Annual
+
+```{r autostats}
+#Either from the contributor or from ecodata
+yrEPU <- ecodata::forage_index |>
+  dplyr::group_by(EPU) |>
+  dplyr::summarise(minyr = min(Time),
+                   maxyr = max(Time))
+
+DT::datatable(yrEPU)
+#side by side with automated stats next to image
+
+```
+
+
+### Implications
+
+While the resulting indices show no long term trends in the Mid-Atlantic, they do show overall higher forage fish in fall relative to spring (Fig. \@ref(fig:MAforagebio)), with highest forage biomass during fall in the mid-1980s. In New England, the forage index shows an overall higher forage fish biomass in fall relative to spring (Fig. \@ref(fig:NEforagebio)). There is a long-term decreasing trend in the fall for GB and an increasing trend in the spring on GOM.  Changes in the distribution of forage biomass also affects predator distribution. Spatial subsets of this index were included in the bluefish research track stock assessment to investigate forage-driven changes in bluefish availability to recreational fisheries and surveys.  
+
+## Get the data
+
+**Point of contact**: [Sarah.Gaichas\@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
+
+**ecodata name**: `ecodata::forage_index`
+
+**variable names**
+
+```{r}
+# pull all variable names
+vars <- ecodata::forage_index |>
+  dplyr::select(Var, Units) |>
+  dplyr::distinct()
+
+DT::datatable(vars)
+```
+
+**tech-doc link**: <https://noaa-edab.github.io/tech-doc/forage-fish-biomass-indices.html>
+
+## References
