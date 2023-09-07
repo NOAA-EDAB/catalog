@@ -2,34 +2,59 @@
 
 **Description**: Short description of information included 
 
-**Indicator category**: 
+**Indicator family**: oceanographic/habitat/LTL/megafauna/social/economic
 
-**Contributor(s)**: Contributor Name / Affiliation
+**Contributor(s)**: Contributor Name  
+
+**Affiliation(s)**: Affiliation by numeric superscript if more than one
   
-**Data steward**: Data Steward / email
-  
-**Point of contact**: Point of Contact / email
 
-**Public availability statement**:
-
-## Impact Summary
+## What is this?
 
 Description of why this indicator is important and what is going on in the Northeast related to this information. 
 
-### Plotted data 
-Either from the contributor or from ecodata
+intro
 
-### Raw data 
-If available. 
+### Visualization
 
-## Methods
-### Data Sources
+Description of which variables are plotted 
 
-### Data Extraction
+ALL REGIONS
 
-### Data Analysis
+#### MAB 
 
-### Data Processing
+#### NE
+
+
+### Indicator statistics
+
+Spatial scale: 
+
+Temporal scale: 
+
+
+```{r autostats}
+
+```
+
+
+### Implications
+
+Results and discussion
+
+## Get the data
+
+**Point of contact**: Point of Contact / email
+
+**ecodata name**: `ecodata::XXX` add link to ecodata pkgdown documentation
+
+**variable names** (MAY MOVE TO TECH DOC)
+
+```{r}
+# pull all variable names
+```
+
+**tech-doc link**: 
 
 
 ## References
