@@ -1,0 +1,150 @@
+name: State of the Ecosystem - Catalog Submission
+description: Use this issue template to submit catalog information for the State of the Ecosystem reports.
+title: "[Submission]: "
+labels: ["submission"]
+assignees: "BBeltz1"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the State of the Ecosystem reports! Please reach out to nefsc.soe.leads@noaa.gov with any questions or concerns.
+  - type: input
+    id: contact1
+    attributes:
+      label: Primary Contact
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@noaa.gov
+    validations:
+      required: true
+  - type: input
+    id: contact2
+    attributes:
+      label: Secondary Contact
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@noaa.gov
+    validations:
+      required: false
+  - type: input
+    id: data_name
+    attributes:
+      label: Data Name
+      description: Enter the name of the data set.
+      placeholder: Ex. NE Shelf Annual Sea Surface Temperature
+    validations:
+      required: true
+  - type: textarea
+    id: data_description
+    attributes:
+      label: Data Description
+      description: Briefly describe the data set.
+      value: "Ex: The data presented here are average annual sea-surface temperatures from PSL OISST on the Northeast Continental Shelf."
+    validations:
+      required: true
+  - type: checkboxes
+    id: synthesis_theme
+    attributes:
+      label: Synthesis Theme
+      description: Please check the synthesis theme(s) that could apply to your indicator.
+      options:
+        - label: Multiple System Drivers
+        - label: Regime Shifts
+        - label: Ecosystem Reorganization
+    validations:
+      required: false
+  - type: textarea
+    id: define_variables
+    attributes:
+      label: Define Variables
+      description: Provide definitions for all variable names with units.
+      value: "Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1."
+    validations:
+      required: true
+  - type: checkboxes
+    id: indicator_category
+    attributes:
+      label: Indicator Category
+      description: Select one or more categories that apply to your data set.
+      options:
+        - label: Published Methods
+        - label: Extensive analysis, not yet published
+        - label: Syntheses of published information
+        - label: Database pull
+        - label: Database pull with analysis
+        - label: Other
+          required: false
+  - type: input
+    id: other_indicator_category
+    attributes:
+      label: If other, please specify indicator category
+      description: If you selected Other above, please specify a new indicator category.
+      placeholder: Indicator category other than those above.
+    validations:
+      required: false
+  - type: textarea
+    id: data_contributors
+    attributes:
+      label: Data Contributors
+      description: Enter the names of all contributing persons.
+      value: "Ex: Brandon Beltz, Sarah Gaichas and Sean Lucey."
+    validations:
+      required: true
+  - type: input
+    id: point_contact
+    attributes:
+      label: Point(s) of Contact
+      description: Enter name(s) and email(s) for point(s) of contact.
+      placeholder: Ex. Brandon Beltz (brandon.beltz@noaa.gov)
+    validations:
+      required: true
+  - type: dropdown
+    id: public_availability
+    attributes:
+      label: Public Availability
+      description: State public availability of source data for this indicator.
+      multiple: false
+      options:
+        - Source data are publicly available.
+        - Source data are NOT publicly available.
+    validations:
+      required: true
+  - type: input
+    id: accessibility
+    attributes:
+      label: Accessibility and Constraints
+      description: If source data are NOT publicly available, what are the procedures for accessing the data?
+      placeholder: Ex. Please email your.email@noaa.gov for further information and queries of X indicator source data.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Methods"
+  - type: markdown
+    attributes:
+      value: |
+        In the following sections, please outline the methods used for these indicator data. Please include any documentation when available (i.e. links to code, published works, etc). If easier, you may include a write up of your methods in a separate document and upload that file below.
+  - type: textarea
+    id: data_source
+    attributes:
+      label: Data Source(s)
+      description: Describe data sources here, with links wherever applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: data_processing
+    attributes:
+      label: Data Processing
+      description: How were data processed? At minimum, please include a text description of the processing steps. Code may be uploaded as a supporting file below. If code is published elsewhere, please provide a link.
+    validations:
+      required: false
+  - type: textarea
+    id: data_analysis
+    attributes:
+      label: Data Analysis
+      description: How were the data analyzed? Please provide a description of analytical methods, upload any relevant code and/or link to appropriate sources. At minimum, please include a text description of the analytical steps. Code may be uploaded as a supporting file below.
+    validations:
+      required: false
+  - type: textarea
+    id: bibliography
+    attributes:
+      label: Bibiography
+      description: Use this space to enter citations for above fields, preferably in BibTeX format. Otherwise, please upload a bibliography as a supporting file below.
