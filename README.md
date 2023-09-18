@@ -15,9 +15,9 @@ This book is in development.
 
 ## Contact
 
-| [kimberly-bastille](https://github.com/kimberly-bastille)
+| [Brandon-Beltz](https://github.com/BBeltz1)
 |--------------------------------
-| [![](https://avatars.githubusercontent.com/u/39955661?s=100&u=b65aaafd27d4c925988755e61e497e2e7d573622&v=4)](https://github.com/kimberly-bastille) |
+| [![](https://avatars.githubusercontent.com/u/136381970?s=100&u=b65aaafd27d4c925988755e61e497e2e7d573622&v=4)](https://github.com/BBeltz1) |
 
 #### Legal disclaimer
 
