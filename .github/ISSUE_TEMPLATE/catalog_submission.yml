@@ -44,24 +44,24 @@ body:
     id: indicator_intro
     attributes:
       label: Introduction to Indicator
-      description: Please introduce the indicator within an appropriate context. Proceed as though this were a short summary of a typical introduction section in a paper.
-      value: 
+      description: Please introduce the indicator within an appropriate context.
+      value: "Proceed as though this were a short summary of a typical introduction section in a paper."
     validations:
       required: false
   - type: textarea
     id: indicator_results
     attributes:
       label: Key Results and Visualization
-      description: Please describe the results and/or visualizations of this indicator. Proceed as though this were a short summary of a typical results section in a paper.
-      value: 
+      description: Please describe the results and/or visualizations of this indicator.
+      value: "Proceed as though this were a short summary of a typical results section in a paper."
     validations:
       required: false
   - type: textarea
     id: indicator_implications
     attributes:
       label: Implications
-      description: Please describe the implications of this indicator. Proceed as though this were a short summary of a typical discussion section in a paper.
-      value: 
+      description: Please describe the implications of this indicator.
+      value: "Proceed as though this were a short summary of a typical discussion section in a paper."
     validations:
       required: false
   - type: input
