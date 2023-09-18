@@ -40,6 +40,46 @@ body:
       value: "Ex: The data presented here are average annual sea-surface temperatures from PSL OISST on the Northeast Continental Shelf."
     validations:
       required: true
+  - type: textarea
+    id: indicator_intro
+    attributes:
+      label: Introduction to Indicator
+      description: Please introduce the indicator within an appropriate context. Proceed as though this were a short summary of a typical introduction section in a paper.
+      value: 
+    validations:
+      required: false
+  - type: textarea
+    id: indicator_results
+    attributes:
+      label: Key Results and Visualization
+      description: Please describe the results and/or visualizations of this indicator. Proceed as though this were a short summary of a typical results section in a paper.
+      value: 
+    validations:
+      required: false
+  - type: textarea
+    id: indicator_implications
+    attributes:
+      label: Implications
+      description: Please describe the implications of this indicator. Proceed as though this were a short summary of a typical discussion section in a paper.
+      value: 
+    validations:
+      required: false
+  - type: input
+    id: spatial_scale
+    attributes:
+      label: Spatial Scale
+      description: Please briefly describe the spatial scale of the indicator.
+      placeholder: ex. by EPU and full shelf.
+    validations:
+      required: false
+  - type: input
+    id: temporal_scale
+    attributes:
+      label: Temporal Scale
+      description: Please briefly describe the temporal scale of the indicator.
+      placeholder: ex. Spring (January-June), Fall (July-December), Annual.
+    validations:
+      required: false      
   - type: checkboxes
     id: synthesis_theme
     attributes:
@@ -115,36 +155,3 @@ body:
       placeholder: Ex. Please email your.email@noaa.gov for further information and queries of X indicator source data.
     validations:
       required: false
-  - type: markdown
-    attributes:
-      value: "## Methods"
-  - type: markdown
-    attributes:
-      value: |
-        In the following sections, please outline the methods used for these indicator data. Please include any documentation when available (i.e. links to code, published works, etc). If easier, you may include a write up of your methods in a separate document and upload that file below.
-  - type: textarea
-    id: data_source
-    attributes:
-      label: Data Source(s)
-      description: Describe data sources here, with links wherever applicable.
-    validations:
-      required: true
-  - type: textarea
-    id: data_processing
-    attributes:
-      label: Data Processing
-      description: How were data processed? At minimum, please include a text description of the processing steps. Code may be uploaded as a supporting file below. If code is published elsewhere, please provide a link.
-    validations:
-      required: false
-  - type: textarea
-    id: data_analysis
-    attributes:
-      label: Data Analysis
-      description: How were the data analyzed? Please provide a description of analytical methods, upload any relevant code and/or link to appropriate sources. At minimum, please include a text description of the analytical steps. Code may be uploaded as a supporting file below.
-    validations:
-      required: false
-  - type: textarea
-    id: bibliography
-    attributes:
-      label: Bibiography
-      description: Use this space to enter citations for above fields, preferably in BibTeX format. Otherwise, please upload a bibliography as a supporting file below.
