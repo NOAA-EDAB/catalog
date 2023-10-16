@@ -43,7 +43,7 @@ body:
   - type: textarea
     id: indicator_intro
     attributes:
-      label: Introduction to Indicator
+      label: Introduction to Indicator (i.e. "What is this?")
       description: Please introduce the indicator within an appropriate context.
       value: "Proceed as though this were a short summary of a typical introduction section in a paper."
     validations:
