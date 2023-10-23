@@ -23,12 +23,12 @@ jobs:
         run: |
           brew install pandoc
 
-      - name: Cache Renv packages
-        uses: actions/cache@v1
-        with:
-          path: $HOME/.local/share/renv
-          key: r-${{ hashFiles('renv.lock') }}
-          restore-keys: r-
+# - name: Cache Renv packages
+      #   uses: actions/cache@v1
+      #   with:
+      #     path: $HOME/.local/share/renv
+      #     key: r-${{ hashFiles('renv.lock') }}
+      #     restore-keys: r-
 
       - name: Cache bookdown results
         uses: actions/cache@v1
@@ -37,16 +37,16 @@ jobs:
           key: bookdown-${{ hashFiles('**/*Rmd') }}
           restore-keys: bookdown-
           
-      - name: Install packages
-        run: |
-          R -e 'install.packages("renv")'
-          R -e 'renv::restore()'
+      # - name: Install packages
+      #   run: |
+      #     R -e 'install.packages("renv")'
+      #     R -e 'renv::restore()'
         
       - name: Build site
         run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
 
       - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@4.4.3
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
