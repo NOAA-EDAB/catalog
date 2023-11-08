@@ -14,16 +14,27 @@ submissions <- issues$number[indices]
 for (issuenum in submissions) {
   issue <- jsonlite::fromJSON(paste0(repo,"/",issuenum))
   body <- issue$body
+  body_ss <- strsplit(body,"###")
+  body_ul <- unlist(body_ss)
+
   
-  # need to parse issue
-  # need to work this out
-  
-  #if (grepl("\\n\\n",body)) {
-    #ss <- strsplit(body,"###") 
-  #} else {
-  #  ss <- strsplit(body,"\r\n\r\n")
-    
-  #}
-  print(ss)
-   
+  print(body_ss)
 }
+
+#if (grepl("\\n\\n",body)) {
+#  body_ss <- strsplit(body,"\n\\n") 
+#} else {
+#  body_ss <- strsplit(body,"\r\n\r\n")
+#}
+
+
+### DEPRICATED
+# need to parse issue
+# need to work this out
+
+#if (grepl("\\n\\n",body)) {
+#ss <- strsplit(body,"###") 
+#} else {
+#  ss <- strsplit(body,"\r\n\r\n")
+
+#}
