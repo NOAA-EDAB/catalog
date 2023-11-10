@@ -34,6 +34,7 @@ knitr::opts_chunk$set(echo = F,
                       message = F,
                       warning = F)
 
+shadedRegion <- c(2013:2022)
 
  library(magrittr)
  library(dplyr)

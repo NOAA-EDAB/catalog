@@ -2,9 +2,9 @@
 #' 
 #' Template rmd hardcoded in function. Interspersed with data from github issue
 #' 
-#' @param listobject parsed issue from github
+#' @param listobject list. parsed issue from github
 #' 
-#' 
+#' @return creates an rmd in chapters folder
 
 # this list created after parsing issue
 listobject <- list()
