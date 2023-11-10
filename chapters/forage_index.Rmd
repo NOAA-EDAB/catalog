@@ -26,14 +26,14 @@ Variables plotted are Fall Forage Fish Biomass Estimate and Spring Forage Fish B
 
 ```{r MAforagebio2, fig.cap = "Forage fish index based on spring and fall survey predator diets in the Mid Atlantic."}
 
-p <- plot_forage_index("MAB")
+p <- plot_forage_index(shadedRegion,report="MidAtlantic")
 print(p)
 
 ```
 
 #### NE
 ```{r NEforagebio2, fig.cap = "Forage fish index based on spring and fall survey predator diets on Georges Bank (GB) and in the Gulf of Maine (GOM)."}
-p <- plot_forage_index("GB")
+p <- plot_forage_index(shadedRegion,report="NewEngland")
 print(p)
 ```
 

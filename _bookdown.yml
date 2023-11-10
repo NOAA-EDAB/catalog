@@ -1,6 +1,7 @@
 book_filename: "catalog"
 rmd_files: ["index.Rmd",
 "chapters/forage_index.Rmd",
+"chapters/more_forage_fish.Rmd",
 "chapters/glossary.Rmd",
 "chapters/references.Rmd"]
 delete_merged_file: false
