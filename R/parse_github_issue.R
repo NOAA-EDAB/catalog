@@ -53,3 +53,20 @@ gh_parser <- function(repo,issuenum,linenum){
   
   return(toString(body_rf[-1]))
 }
+
+### The gh_parser function should output the below listobject
+listobject <- list()
+listobject$indicatorname <- "more forage fish"
+listobject$ecodataname <- "more_forage_fish"  # add to template (dropdown)
+listobject$family <- "family" # add to template (dropdown)
+listobject$description <- "a really long description"
+listobject$contributors <- "contribs"
+listobject$affiliations <- "affiliations" # add to template
+listobject$whatsthis <- "what is this"
+listobject$visualizations <- "visuals"
+listobject$indicatorStatsSpatial <- "spatial"
+listobject$indicatorStatsTemporal <- "temporal"
+listobject$implications <- "implications"
+listobject$poc <- "poc"
+
+### gh_parser can be saved as a standalone function and used by another script/function, if needed
