@@ -35,3 +35,21 @@ for (issuenum in submissions) {
     assign(paste0(econame[-1],"_",body_rf[1]), toString(body_rf[-1]))
   }
 }
+
+### WRITE A FUNCTION THAT TAKES ISSUENUM, LINENUM AS VARIABLES AND PRODUCES LISTOBJECT
+repo <- 'https://api.github.com/repos/NOAA-EDAB/catalog/issues'
+
+gh_parser <- function(repo,issuenum,linenum){
+  issue <- jsonlite::fromJSON(paste0(repo,"/",issuenum))
+  body <- issue$body
+  body_ss <- strsplit(body,"### ")
+  body_ul <- unlist(body_ss)
+  
+  if (grepl("\\n\\n",body_ul[linenum])) {
+    body_rf <- unlist(strsplit(body_ul[linenum],"\n\\n")) 
+  } else {
+    body_rf <- unlist(strsplit(body_ul[linenum],"\r\n\r\n"))
+  }
+  
+  return(toString(body_rf[-1]))
+}
