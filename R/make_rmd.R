@@ -8,15 +8,16 @@
 
 # this list created after parsing issue
 listobject <- list()
-listobject$name <- "more forage fish"
-listobject$indicatorname <- "more_forage_fish"
-listobject$family <- "family"
+listobject$indicatorname <- "more forage fish"
+listobject$ecodataname <- "more_forage_fish"  # add to template (dropdown)
+listobject$family <- "family" # add to template (dropdown)
 listobject$description <- "a really long description"
 listobject$contributors <- "contribs"
-listobject$affiliations <- "affiliations"
+listobject$affiliations <- "affiliations" # add to template
 listobject$whatsthis <- "what is this"
 listobject$visualizations <- "visuals"
-listobject$indicatorStats <- "indicator stats"
+listobject$indicatorStatsSpatial <- "spatial"
+listobject$indicatorStatsTemporal <- "temporal"
 listobject$implications <- "implications"
 listobject$poc <- "poc"
 
@@ -27,14 +28,14 @@ make_rmd <- function(listobject){
   #indicator_name <- listobject$name
   # create filename based on indicator name. Replace all spaces with underscore
   #filename <- gsub("\\s+","_",indicator_name)
-  filename <- listobject$indicatorname
+  filename <- listobject$ecodataname
   
   # create rmd with name of indicator
   con <- file(here::here("chapters",paste0(filename,".rmd")),open="w")
      
   # start to create the Rmd
   #cat(paste0("# ",stringr::str_to_title(indicator_name)),append=T,fill=T,file=con)    
-  cat(paste0("# ",listobject$name),append=T,fill=T,file=con)    
+  cat(paste0("# ",listobject$indicatorname),append=T,fill=T,file=con)    
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("**Description**: ",listobject$description),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
@@ -64,7 +65,9 @@ make_rmd <- function(listobject){
   
   
   cat("### Indicator statistics ",append=T,fill=T,file=con)
-  cat(listobject$indicatorStats,append=T,fill=T,file=con)
+  cat(paste0("Spatial scale: ",listobject$indicatorStatsSpatial),append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+  cat(paste0("Temporal scale: ",listobject$indicatorStatsTemporal),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
   # r chunk for autostats
@@ -85,16 +88,16 @@ make_rmd <- function(listobject){
   cat(paste0("**Point of contact**: [",listobject$poc,"](",listobject$poc,"){.email}"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  cat(paste0("**ecodata name**: `ecodata::",listobject$indicatorname,"`"),append=T,fill=T,file=con)
+  cat(paste0("**ecodata name**: `ecodata::",listobject$ecodataname,"`"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
   cat("**variable names**",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
   # r code chunk to make table
-  cat(paste0("```{r vars_",listobject$indicatorname,"}"),append=T,fill=T,file=con)
+  cat(paste0("```{r vars_",listobject$ecodataname,"}"),append=T,fill=T,file=con)
   cat("# Pull all var names",append=T,fill=T,file=con)
-  cat(paste0("vars <- ecodata::",listobject$indicatorname," |>"),append=T,fill=T,file=con)
+  cat(paste0("vars <- ecodata::",listobject$ecodataname," |>"),append=T,fill=T,file=con)
   cat("   dplyr::select(Var, Units) |>",append=T,fill=T,file=con)
   cat("   dplyr::distinct()",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
@@ -105,7 +108,7 @@ make_rmd <- function(listobject){
   
   cat("**tech-doc link**",append=T,fill=T,file=con)
   
-  cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
+  cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$ecodataname,".html>"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
   
