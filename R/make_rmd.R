@@ -6,22 +6,6 @@
 #' 
 #' @return creates an rmd in chapters folder
 
-# this list created after parsing issue
-listobject <- list()
-listobject$indicatorname <- "more forage fish"
-listobject$ecodataname <- "more_forage_fish"  # add to template (dropdown)
-listobject$family <- "family" # add to template (dropdown)
-listobject$description <- "a really long description"
-listobject$contributors <- "contribs"
-listobject$affiliations <- "affiliations" # add to template
-listobject$whatsthis <- "what is this"
-listobject$visualizations <- "visuals"
-listobject$indicatorStatsSpatial <- "spatial"
-listobject$indicatorStatsTemporal <- "temporal"
-listobject$implications <- "implications"
-listobject$poc <- "poc"
-
-
 make_rmd <- function(listobject){
   
   # line for the indicator name
