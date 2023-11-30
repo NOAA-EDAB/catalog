@@ -17,24 +17,30 @@ indices <- which(unlist(lapply(issues$labels,function(x) {if(length(x$name)==0){
 submissions <- issues$number[indices]
 
 # Manual issue selection
-issuenum <- 37 # Manually select repo for function. Initial catalog build will use loop
+#issuenum <- 37 # Manually select repo for function. Initial catalog build will use loop
 
-#for (issuenum in submissions) {
+for (issuenum in submissions) {
+### Pull issue from GitHub API
+issue <- jsonlite::fromJSON(paste0(repo,"/",issuenum))
+body <- issue$body
+body_ss <- strsplit(body,"### ")
+body_ul <- unlist(body_ss)
+  
 ### Generate listobject using gh_parser
 listobject <- list()
-listobject$indicatorname <- gh_parser(issuenum,4)
-listobject$ecodataname <- gh_parser(issuenum,4)  # add to template (dropdown)
-listobject$family <- "family" # add to template (dropdown)
-listobject$description <- gh_parser(issuenum,5)
-listobject$contributors <- gh_parser(issuenum,15)
-listobject$affiliations <- "affiliations" # add to template
-listobject$whatsthis <- gh_parser(issuenum,6)
-listobject$visualizations <- gh_parser(issuenum,7)
-listobject$indicatorStatsSpatial <- gh_parser(issuenum,9)
-listobject$indicatorStatsTemporal <- gh_parser(issuenum,10)
-listobject$implications <- gh_parser(issuenum,8)
-listobject$poc <- gh_parser(issuenum,16)
+listobject$indicatorname <- gh_parser(4)
+listobject$ecodataname <- gh_parser(4)
+listobject$family <- "family"
+listobject$description <- gh_parser(5)
+listobject$contributors <- gh_parser(15)
+listobject$affiliations <- "affiliations"
+listobject$whatsthis <- gh_parser(6)
+listobject$visualizations <- gh_parser(7)
+listobject$indicatorStatsSpatial <- gh_parser(9)
+listobject$indicatorStatsTemporal <- gh_parser(10)
+listobject$implications <- gh_parser(8)
+listobject$poc <- gh_parser(16)
 
 ### Test make_Rmd.R using above inputs
 make_rmd(listobject)
-#}
+}

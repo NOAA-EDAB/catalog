@@ -2,17 +2,12 @@
 #' 
 #' Process GitHub issues and convert into listobject used by make_Rmd function
 #' 
-#' @param issuenum value. manually entered to select issue for parsing
+#' @param linenum value. designates which line of the issue template to draw from
 #' 
 #' @return 
 
 # Function below
-gh_parser <- function(issuenum,linenum){
-  issue <- jsonlite::fromJSON(paste0(repo,"/",issuenum))
-  body <- issue$body
-  body_ss <- strsplit(body,"### ")
-  body_ul <- unlist(body_ss)
-  
+gh_parser <- function(linenum){
   if (grepl("\\n\\n",body_ul[linenum])) {
     body_rf <- unlist(strsplit(body_ul[linenum],"\n\\n")) 
   } else {
