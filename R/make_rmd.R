@@ -12,7 +12,7 @@ make_rmd <- function(listobject){
   #indicator_name <- listobject$name
   # create filename based on indicator name. Replace all spaces with underscore
   #filename <- gsub("\\s+","_",indicator_name)
-  filename <- listobject$ecodataname
+  filename <- listobject$indicatorname
   
   # create rmd with name of indicator
   con <- file(here::here("chapters",paste0(filename,".rmd")),open="w")
