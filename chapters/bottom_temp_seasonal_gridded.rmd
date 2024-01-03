@@ -1,0 +1,95 @@
+# Bottom temperature - High Resolution
+
+**Description**: The data are gridded (1/12 degree) seasonal mean bottom temperature for the northeast U.S. shelf.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Joseph Caracappa, Hubert duPontavice, Vincent Saba, Zhuomin Chen
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+The bottom temperature product is in a horizontal 1/12 degree grid between 1959 and 2022 and is made of daily bottom temperature estimates from:
+
+Bias-corrected ROMS-NWA (ROMScor) between 1959 and 1992 which was regridded in the same 1/12degree grid as GLORYS using bilinear interpolation; GLORYS12v1 in its original 1/12 degree grid between 1993 and 2020; GLO12v3 (called PSY4V3R1 in “A High-Resolution Ocean Bottom Temperature Product for the Northeast u.s. Continental Shelf Marine Ecosystem” ([2023](https://noaa-edab.github.io/tech-doc/bottom-temperature---high-resolution.html#ref-duPontavice2023)) and Lellouche et al. ([2018](https://noaa-edab.github.io/tech-doc/bottom-temperature---high-resolution.html#ref-Lellouche2018))) in its original 1/12 degree grid for 2021 to 2023.
+
+### Visualizations
+Proceed as though this were a short summary of a typical results section in a paper.
+
+```{r plot_bottom_temp_seasonal_griddedMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_seasonal_gridded(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_bottom_temp_seasonal_griddedNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_seasonal_gridded(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: full shelf
+
+Temporal scale: annual-seasonal
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_bottom_temp_seasonal_gridded}
+# Either from Contributor or ecodata
+```
+
+### Implications
+_No response_
+
+## Get the data
+
+**Point of contact**: [joseph.caracappa@noaa.gov](joseph.caracappa@noaa.gov){.email}
+
+**ecodata name**: `ecodata::bottom_temp_seasonal_gridded`
+
+**variable names**
+
+```{r vars_bottom_temp_seasonal_gridded}
+# Pull all var names
+vars <- ecodata::bottom_temp_seasonal_gridded |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [X] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/bottom_temp_seasonal_gridded.html>
+
+## References
+

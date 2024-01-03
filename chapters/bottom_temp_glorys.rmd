@@ -1,0 +1,95 @@
+# Bottom temperature - High resolution
+
+**Description**: Seasonal bottom temperatures on the Northeast Continental Shelf between 1959 and 2023 in a 1/12° grid.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Joseph Caracappa, Hubert du Pontavice, Vincent Saba, Zhuomin Chen
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+The bottom temperature product is in a horizontal 1/12 degree grid between 1959 and 2022 and is made of daily bottom temperature estimates from:
+
+Bias-corrected ROMS-NWA (ROMScor) between 1959 and 1992 which was regridded in the same 1/12degree grid as GLORYS using bilinear interpolation; GLORYS12v1 in its original 1/12 degree grid between 1993 and 2020; GLO12v3 (called PSY4V3R1 in “A High-Resolution Ocean Bottom Temperature Product for the Northeast u.s. Continental Shelf Marine Ecosystem” ([2023](https://noaa-edab.github.io/tech-doc/bottom-temperature---high-resolution.html#ref-duPontavice2023)) and Lellouche et al. ([2018](https://noaa-edab.github.io/tech-doc/bottom-temperature---high-resolution.html#ref-Lellouche2018))) in its original 1/12 degree grid for 2021 and 2022.
+
+### Visualizations
+Bottom temperature anomaly time series (by EPU and season) are presented from 1959 - 2022 using 1992-2010 as a reference period climatology.
+
+```{r plot_bottom_temp_glorysMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_glorys(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_bottom_temp_glorysNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_glorys(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: by EPU
+
+Temporal scale: Winter (Jan-Mar), Spring (April-June), Summer (July-Sept), Fall (Oct - Dec) form 1959-2022
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_bottom_temp_glorys}
+# Either from Contributor or ecodata
+```
+
+### Implications
+Bottom temperature is a key environmental parameter in defining the habitat and metabolic conditions of demersal and benthic species. Interannual and seasonal changes in bottom temperature can provide significant indicators of species productivity, spatial distributions, or mortality.  Long-term trends in bottom temperature are indicators of regional implications of global climate change and may be used in evaluating climate risk for fisheries management.
+
+## Get the data
+
+**Point of contact**: [joseph.caracappa@noaa.gov](joseph.caracappa@noaa.gov){.email}
+
+**ecodata name**: `ecodata::bottom_temp_glorys`
+
+**variable names**
+
+```{r vars_bottom_temp_glorys}
+# Pull all var names
+vars <- ecodata::bottom_temp_glorys |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [X] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/bottom_temp_glorys.html>
+
+## References
+

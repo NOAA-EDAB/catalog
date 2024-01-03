@@ -1,0 +1,93 @@
+# Highly Migratory Species Landings
+
+**Description**: Aggregated Atlantic HMS landings data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2022.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [X] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Heather Baertlein, Jackie Wilson, George Silva, Jennifer Cudney
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+HMS landings and approximate value of landings are presented separately as an indicator, and are combined in several datasets presented in the SOE report (e.g., total commercial landings as discussed under “Seafood Production” and total commercial revenue as presented under “Commercial Profits”).
+
+### Visualizations
+TBD - recommend including a version of the plots or tables generated in the Technical Document / code that is linked. Pending finalization of the dataset for this year's report.
+
+```{r plot_hms_landingsMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_hms_landingsNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: Regionally by EPU
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [ ] Multiple System Drivers
+- [X] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_hms_landings}
+# Either from Contributor or ecodata
+```
+
+### Implications
+TBD – pending finalization of dataset for 2024 report
+
+## Get the data
+
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::hms_landings`
+
+**variable names**
+
+```{r vars_hms_landings}
+# Pull all var names
+vars <- ecodata::hms_landings |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [X] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are NOT publicly available.
+
+### Accessibility and Contraints
+
+Data that has been properly screened to meet data standards and confidentiality are publicly available via the Fisheries of the United States (FUS) landings portal. Canadian landings information, which are included in this analysis, are not included in the FUS portal (https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings). Data should be aggregated to protect data confidentiality (raw data are lumped by year and species). Please email jennifer.cudney@noaa.gov for further information and queries of source data.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/hms_landings.html>
+
+## References
+

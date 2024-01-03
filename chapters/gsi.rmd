@@ -1,0 +1,93 @@
+# Gulf Stream Index
+
+**Description**: The monthly Gulf Stream North Wall Index presented here are based on the gridded EN.4.2.2 analyses dataset from 1954 to 2022 (https://www.metoffice.gov.uk/hadobs/en4/), calculated following Joyce et al. (2009).
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Zhuomin Chen
+
+**Affiliations**: ?
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+The T200-based Gulf Stream Index is calculated as the standardized first principal component time series from the empirical orthogonal function (EOF) analysis of the 200 m temperature time series at the 20 base points (selected along the climatological 15°C isotherm at 200 m between 74° and 55°W) and it represents the meridional fluctuation of the Gulf Stream North Wall (Joyce et al., 2019; Chi et al., 2019).
+
+### Visualizations
+The Gulf Stream Index suggest that recent years (2021-2022) the GS almost maintains its relative northward shift relative to the long-term mean.
+
+```{r plot_gsiMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_gsiNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: Gulf Stream between 74°W and 55°W
+
+Temporal scale: Monthly from 1954 to 2022
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_gsi}
+# Either from Contributor or ecodata
+```
+
+### Implications
+The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stream position on monthly timescale, which may affect the slope water properties intruding onto the continental shelf. The GSNW index is also suggested to be an good indicator for biomass distribution of multiple marine fishes (e.g., silver hake Nye et al., 2011).
+
+## Get the data
+
+**Point of contact**: [Zhuomin Chen (zhuomin.chen@uconn.edu)](Zhuomin Chen (zhuomin.chen@uconn.edu)){.email}
+
+**ecodata name**: `ecodata::gsi`
+
+**variable names**
+
+```{r vars_gsi}
+# Pull all var names
+vars <- ecodata::gsi |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [X] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/gsi.html>
+
+## References
+

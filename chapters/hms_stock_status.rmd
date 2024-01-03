@@ -1,0 +1,93 @@
+# Highly Migratory Species Stock Status
+
+**Description**: Summary of the most recent stock assessment results for each assessed Highly Migratory Species.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [X] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Jennifer Cudney
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+There is interest in the stock status of predators and commercially or recreationally valuable Highly Migratory Species. The latest Highly Migratory Species Stock Assessment and Fishery Evaluation (SAFE) report provides a summary of stock assessment information and current stock statuses of HMS under domestic and applicable international stock thresholds. Some stocks use proxies for biomass, such as spawning stock biomass (e.g., bluefin and northern albacore tunas) and spawning stock fecundity or number of fish (e.g., sharks).
+
+### Visualizations
+TBD – we have a meeting in mid-November to finalize decisions regarding this contribution. The most complete representation of these data can be found in our SAFE report (starting on pg 31, Table 2.1 – Table 2.4)
+
+```{r plot_hms_stock_statusMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_stock_status(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_hms_stock_statusNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_stock_status(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: North Atlantic basin; full shelf
+
+Temporal scale: Annual summary of stock status
+
+**Synthesis Theme**:
+
+- [ ] Multiple System Drivers
+- [X] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_hms_stock_status}
+# Either from Contributor or ecodata
+```
+
+### Implications
+TBD – our assessment team has asked that the Kobe plots be redone, so please do not include them here yet.
+
+## Get the data
+
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::hms_stock_status`
+
+**variable names**
+
+```{r vars_hms_stock_status}
+# Pull all var names
+vars <- ecodata::hms_stock_status |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+All stock assessment results are publicly available (see Data Sources). Summarized Atlantic HMS data are available in the Atlantic HMS SAFE Reports. Species with a range of uncertainty estimates for F/Fmsy and B/Bmsy and assessments completed very recently may not be included in Stock Smart queries.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/hms_stock_status.html>
+
+## References
+

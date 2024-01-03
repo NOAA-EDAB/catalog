@@ -1,0 +1,93 @@
+# Forage Fish Energy Density
+
+**Description**: The data presented are the seasonal (Spring and Fall) energy density (kJ/g) for eight important forage species; Alewife, Atlantic Herring, Silver Hake, Northern Sand Lance, Atlantic Mackerel, Butterfish, Northern Shortfin Squid, and Inshore Longfin Squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed int he lab to estimate energy content.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [X] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Mark Wuenschel
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+The energy density of prey indicates the the amount of energy passing from lower trophic levels to higher predators. Changes in ecosystem productivity and/or bioenergetic demands (e.g. metabolic increases due to rising temperature) can impact energy density. Energy density of fishes can vary widely (several fold), particularly for some species that undergo seasonal cycles in energy allocation to reproduction, energy allocation to migration, or seasonal/ontogenetic shifts in energy storage. The value of forage species to higher trophic levels is a function of the their energy density.
+
+### Visualizations
+Variable plotted are the mean energy density (kJ/g) for eight species across seasons and years. The reference lines represent estimates from prior studies where available for comparison. The energy density of Atlantic Herring has been well below the available estimates from the 1980s and 1990s, but is showing some signs of improving.
+
+```{r plot_energy_densityMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_energy_density(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_energy_densityNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_energy_density(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: Full shelf
+
+Temporal scale: Spring and Fall Bottom Trawl Survey
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [X] Ecosystem Reorganization
+
+```{r autostats_energy_density}
+# Either from Contributor or ecodata
+```
+
+### Implications
+_No response_
+
+## Get the data
+
+**Point of contact**: [Mark Wuenschel (mark.wuenschel@noaa.gov)](Mark Wuenschel (mark.wuenschel@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::energy_density`
+
+**variable names**
+
+```{r vars_energy_density}
+# Pull all var names
+vars <- ecodata::energy_density |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [X] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are NOT publicly available.
+
+### Accessibility and Contraints
+
+Email mark.wuenschel@noaa.gov for further information. Data tables are beign created to make this readily available soon.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/energy_density.html>
+
+## References
+

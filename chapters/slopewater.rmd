@@ -1,0 +1,93 @@
+# Slopewater Proportions
+
+**Description**: This index gives the relative proportions of watermass type observed in the deep Northeast Channel (150-200 m water depth).
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Paula Fratantoni
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+Temperature and salinity measurements are examined to assess the composition of the waters entering the Gulf of Maine through the deep Northeast Channel. The analysis closely follows the methodology described by David G. Mountain (2012a). This method assumes that the waters flowing into the Northeast Channel between 150 and 200 meters depth are composed of slope waters, originating offshore of the continental shelf, and shelf waters, originating on the continental shelf south of Nova Scotia.
+
+### Visualizations
+_No response_
+
+```{r plot_slopewaterMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_slopewater(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_slopewaterNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_slopewater(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: Within the central Northeast Channel
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [ ] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_slopewater}
+# Either from Contributor or ecodata
+```
+
+### Implications
+_No response_
+
+## Get the data
+
+**Point of contact**: [Paula Fratantoni (paula.fratantoni@noaa.gov)](Paula Fratantoni (paula.fratantoni@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::slopewater`
+
+**variable names**
+
+```{r vars_slopewater}
+# Pull all var names
+vars <- ecodata::slopewater |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [X] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/slopewater.html>
+
+## References
+

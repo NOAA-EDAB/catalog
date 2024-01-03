@@ -1,0 +1,97 @@
+# abc.acl
+
+**Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [X] Social
+- [X] Economic
+
+**Contributor(s)**: Brandon Muffley, Jason, Didden, Julia Beaty, Jose Montanez, Karson Cisneros, Jessica Coakley, Hannah Hart, Kiley Dancy
+
+**Affiliations**: MAFMC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+The ratio of total estimates catch (landings and dead discards) compared to the specified catch limit, either the Acceptable Biological Catch (ABC) or the Annual Catch Limit (ACL) by species and sector (e.g., commercial or recreational, if appropriate). This ratio can provide an understanding of management control to constrain total catch below the acceptable/specified limits through different management tools (e.g., trip limits, seasons, gear requirements etc.). Ratios above one can be an indicator of poor management control and/or uncertainties, or indicative that the catch limits in place are constraining on the fishery. Ratios below one could indicate greater management control and/or fewer uncertainties or that their may be other factors (e.g., markets, price, availability) may be limiting a sectors ability to reach its catch limits.
+
+### Visualizations
+Catch divided by ABC/ACL for MAFMC managed fisheries. Red line indicates the median ratio across all fisheries. A secondary figure is also produced that provides the sum of catch limits across all MAFMC managed commercial (C) and recreational (R) fisheries.
+
+```{r plot_abc.aclMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc.acl(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_abc.aclNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc.acl(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: Cape Hatteras, NC north to Maine
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_abc.acl}
+# Either from Contributor or ecodata
+```
+
+### Implications
+Need to write later once updated data has been added to the data file.
+
+## Get the data
+
+**Point of contact**: [Brandon Muffley (bmuffley@mafmc.org)](Brandon Muffley (bmuffley@mafmc.org)){.email}
+
+**ecodata name**: `ecodata::abc.acl`
+
+**variable names**
+
+```{r vars_abc.acl}
+# Pull all var names
+vars <- ecodata::abc.acl |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [X] Other
+
+**Indicator Category**:
+
+Management reports (e.g., specification packages, fishery information documents), stock assessment reports, or data pulls from CAMS
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/abc.acl.html>
+
+## References
+

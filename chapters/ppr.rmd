@@ -1,0 +1,99 @@
+# Ecosytem overfishing
+
+**Description**: Ecosystem overfishing is an ecological, and not legal, term that ultimately evaluates how much fish are caught in an ecosystem relative to how much can be produced. Several indices are used to evaluate ecosystem overfishing, the Ryther index, the Fogarty index, and primary production required.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [X] Megafauna
+- [ ] Social
+- [X] Economic
+
+**Contributor(s)**: Andrew Beet
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+The Ryther index is defined as total catch per unit area in the ecosystem ([JS Link and Watson 2019](https://noaa-edab.github.io/tech-doc/ecosystem-overfishing.html#ref-link2019eof)). The units are mt km^-2 year^-1. It measures the total removal of fish biomass by area in a Large Marine Ecosystem relative to how much that entire ecosystem can produce.  In general terms, the lower the Ryther index, the less likely an ecosystem will be experiencing ecosystem overfishing.
+
+The Fogarty index is defined as ratio of total catches to total primary productivity in an ecosystem ([JS Link and Watson 2019](https://noaa-edab.github.io/tech-doc/ecosystem-overfishing.html#ref-link2019eof)). The units are parts per thousand.
+
+A modification of the indices are used. Total landings are used in lieu of total catch. Accountng for total IUU (Illegal, unreported, and unregulated fishing) data, at the spatial footprint required, is not currently available. This will have the effect of reducing the value of the index (compared to using total catch, including IUU).
+
+### Visualizations
+Compared to thresholds based on global estimates of primary production and catch, the Ryther index shows elevated levels of fishing in the Gulf of Maine and the Mid Atlantic but not at a point considered "extreme" ([JS Link and Watson 2019](https://noaa-edab.github.io/tech-doc/ecosystem-overfishing.html#ref-link2019eof)). When accounting for regional primary prductivity the Fogarty index shows low levels of fishing relative to these global thresholds.
+
+Thresholds based on regional estimates of primary productivity, are not yet available. This work is ongoing
+
+```{r plot_pprMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_pprNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: EPU
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+```{r autostats_ppr}
+# Either from Contributor or ecodata
+```
+
+### Implications
+There is insufficient evidence to determine whether ecosystem overfishing in occuring in our region. However the overall amount  of ecosytem fishing has ben declining over the past several years.
+
+## Get the data
+
+**Point of contact**: [andrew.beet@noaa.gov](andrew.beet@noaa.gov){.email}
+
+**ecodata name**: `ecodata::ppr`
+
+**variable names**
+
+```{r vars_ppr}
+# Pull all var names
+vars <- ecodata::ppr |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [ ] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are NOT publicly available.
+
+### Accessibility and Contraints
+
+Please email andrew.beet@noaa.gov for further information and queries of source data.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/ppr.html>
+
+## References
+

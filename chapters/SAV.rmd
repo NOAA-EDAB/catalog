@@ -1,0 +1,98 @@
+# Submerged Aquatic Vegetation
+
+**Description**: The data provided here are the 1984-2022 area distribution and percent coverage of submerged aquatic vegetation in the Chesapeake Bay and its tributaries that area measured and calculated from photo-interpreted aerial imagery taken during surveys conducted in the growing season.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [X] Lower trophic levels
+- [ ] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Christoper J. Patrick, David J. Wilcox, Jennifer R. Whiting, Anna K. Kenne, Erica R. Smith
+
+**Affiliations**: VIMS
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+Underwater grass beds are critical to the Chesapeake Bay ecosystem. They provide food and shelter to fish and wildlife, sequester carbon, add oxygen to the water, absorb nutrient pollution, reduce shoreline erosion and help suspended particles of sediment settle to the bottom. Because they are sensitive to pollution but quick to respond to improvements in water quality, underwater grass abundance is a good indicator of the Bay’s health. Before Europeans colonized the region, up to 600,000 acres of underwater grasses may have grown along the shorelines of the Bay and its tributaries. By the mid-1980s, nutrient and sediment pollution had weakened or eliminated many of these grass beds. While climate change, shoreline hardening and stressors that reduce water clarity will continue to impact our restoration success, many of these stressors can be managed with on-the-ground efforts to reduce pollution and research has shown that nutrient reductions made under the Chesapeake Bay Total Maximum Daily Load (Bay TMDL) have played a critical role in the overall underwater grass recovery documented since the Bay-wide aerial survey began in 1984.
+
+### Visualizations
+SAV increased in the Mesohaline and Polyhaline zones, where SAV continued to recover from recent declines in some areas. The Mesohaline zone showed a 28% increase from 2021 (2,768 hectares, 6,840 acres). The Polyhaline zone showed a 17% increase from 2021 (1,145 hectares, 2,828 acres). The Tidal Fresh zone stayed essentially the same with a small decrease (29 hectares, 73 acres) while the Oligohaline zone showed a 15% decrease (501 hectares, 1,239 acres). The increases in the Mesohaline and Polyhaline zone largely reflect recovery following the SAV crash in 2019. Those losses in 2019 were largely due to declines in widgeongrass which has expanded over the past decade due to increases in water quality but is sensitive to wet springs like the one experienced in 2019.  The expansion in polyhaline zone is also attributable to a La Nina climate cycle which has resulted in cooler summers, benefiting eelgrass.  The primary losses in the Oligohaline were concentrated in a small area, the Gunpowder River, the Middle River, and the adjacent mainstem.  These declines may have been influenced by phytoplankton blooms observed in those segments in the spring and summer of 2022.
+
+```{r plot_SAVMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_SAV(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_SAVNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_SAV(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: The data covers the tidal Chesapeake Bay region.
+
+Temporal scale: 1984-2022, annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_SAV}
+# Either from Contributor or ecodata
+```
+
+### Implications
+Bay-wide: In 2022, 76,462 acres of SAV were mapped in the Chesapeake Bay.  This is 41% of the Bay SAV goal.
+•	Tidal Fresh Salinity Zone: 19,185 acres in 2022 achieving 93% of the area’s 20,602-acre goal.
+•	Oligohaline Salinity Zone: 7,145 acres in 2022 achieving 69% of the area’s 10,334-acre goal.
+•	Mesohaline Salinity Zone: 30,932 acres in 2022 achieving 26% of the area’s 120,306-acre goal.
+•	Polyhaline Salinity Zone: 19,200 acres in 2022 achieving 57% of the area’s 33,647-acre goal.
+The outlook toward achieving the outcome goal is uncertain.  Gains from 2021 to 2022 are positive, indicating an on-course trajectory, but these gains don’t yet offset the recent major declines observed in 2019.  Additional years of positive trajectory will help clarify whether this recent gain in 2022 is the start of a new positive trend toward higher levels of SAV across the Bay.
+
+## Get the data
+
+**Point of contact**: [Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)](Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)){.email}
+
+**ecodata name**: `ecodata::SAV`
+
+**variable names**
+
+```{r vars_SAV}
+# Pull all var names
+vars <- ecodata::SAV |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [ ] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/SAV.html>
+
+## References
+

@@ -1,0 +1,93 @@
+# Bottom Temperature - in situ
+
+**Description**: The data presented here are time series of regional average bottom temperature anomalies from ship-based measurements made on the Northeast Continental Shelf.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Paula Fratantoni; Chris Melrose; Tamara Holzwarth-Davis
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+The bottom temperature index incorporates near-bottom temperature measurements collected on Northeast Fisheries Science Center (NEFSC) surveys between 1977-present. Early measurements were made using surface bucket samples, mechanical bathythermographs and expendable bathythermograph probes, but by 1991 the CTD – an acronym for conductivity temperature and depth – became standard equipment on all NEFSC surveys. Near-bottom refers to the deepest observation at each station that falls within 10 m of the reported water depth. Observations encompass the entire continental shelf area extending from Cape Hatteras, NC to Nova Scotia, Canada, inclusive of the Gulf of Maine and Georges Bank.
+
+### Visualizations
+_No response_
+
+```{r plot_bottom_tempMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_bottom_tempNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: by EPU
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [ ] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_bottom_temp}
+# Either from Contributor or ecodata
+```
+
+### Implications
+_No response_
+
+## Get the data
+
+**Point of contact**: [Paula.Fratantoni@noaa.gov](Paula.Fratantoni@noaa.gov){.email}
+
+**ecodata name**: `ecodata::bottom_temp`
+
+**variable names**
+
+```{r vars_bottom_temp}
+# Pull all var names
+vars <- ecodata::bottom_temp |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [X] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/bottom_temp.html>
+
+## References
+

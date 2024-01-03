@@ -1,0 +1,101 @@
+# stock_status
+
+**Description**: Summary of the most recent stock assessment results for each assessed species
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [X] Social
+- [X] Economic
+
+**Contributor(s)**: Sarah Gaichas, Andy Beet, Jeff Vieser, Chris Legault
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## What is this?
+Stock assessments are conducted regularly for fisheries managed by the New England and Mid-Atlantic Fishery Management Councils to support decisions on catch limits and to determine whether conservation objectives for each stock are being met. Single species management objectives include
+1. Maintaining biomass above minimum thresholds, and 
+2. Maintaining fishing mortality below overfishing limits. 
+
+This indicator summarizes the most recent stock status, defined as stock assessment estimated current biomass (B) relative to the biomass threshold (1/2 B<sub>MSY</sub>) and biomass target (B<sub>MSY</sub>), and current fishing mortality (F) relative to the fishing mortality limit (F<sub>MSY</sub>).
+
+### Visualizations
+Single species management objectives (1. maintaining biomass above minimum thresholds and 2. maintaining fishing mortality below overfishing limits) are being met for all but one MAFMC managed species, though the status of six stocks is unknown. Single species management objectives are not being met for some NEFMC managed species.  Nine stocks are currently estimated to be below B<sub>MSY</sub>, while status relative to B<sub>MSY</sub> could not be assessed for 13 additional stocks.
+
+```{r plot_stock_statusMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_stock_status(shadedRegion=c(2013,2022))
+print(ggplotObject)
+```
+```{r plot_stock_statusNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_stock_status(shadedRegion=c(2013,2022),report='NewEngland')
+print(ggplotObject)
+```
+### Indicator statistics 
+Spatial scale: Stock-specific spatial scale, reported by Council
+
+Temporal scale: Annual update for the aggregate; individual stock status 1-5 years depending on assessment cycle
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_stock_status}
+# Either from Contributor or ecodata
+```
+
+### Implications
+Stock status affects catch limits established by the Council, which in turn may affect landings trends. 
+
+In the Mid Atlantic, stock status is above the minimum threshold for all but one stock, and aggregate biomass trends appear stable, so the decline in commercial seafood landings is most likely driven by market dynamics affecting the landings of surfclams and ocean quahogs, as landings have been below quotas for these species. The long term decline in total planktivore landings is largely driven by Atlantic menhaden fishery dynamics, including a consolidation of processors leading to reduced fishing capacity between the 1990s and mid-2000s.
+
+In New England, stock status and associated management constraints are likely contributing to decreased landings. With the poor or unknown stock status of many managed species, the decline in commercial seafood landings in the Gulf of Maine most likely reflects lower catch quotas implemented to rebuild overfished stocks, as well as market dynamics.
+
+## Get the data
+
+**Point of contact**: [Sarah.Gaichas@noaa.gov](Sarah.Gaichas@noaa.gov){.email}
+
+**ecodata name**: `ecodata::stock_status`
+
+**variable names**
+
+```{r vars_stock_status}
+# Pull all var names
+vars <- ecodata::stock_status |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [X] Database pull with analysis
+- [ ] Other
+
+### Public Availability
+
+Source data are publicly available.
+
+### Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/stock_status.html>
+
+## References
+
