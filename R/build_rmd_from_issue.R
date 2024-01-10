@@ -16,19 +16,26 @@ build_rmd_from_issue <- function(issuenum = 1) {
 
   # Define repo information, pull issues from GH API and subset 'submissions'
   repo <- 'https://api.github.com/repos/NOAA-EDAB/catalog/issues'
-  issues <- jsonlite::fromJSON(repo)
-  indices <- which(unlist(lapply(issues$labels,function(x) {if(length(x$name)==0){F}else{x$name=="submission"}})))
-  submissions <- issues$number[indices]
-  
+
   if (!is.null(issuenum)) {
-    if (issuenum %in% submissions) {
+    repoissue <- paste0('https://api.github.com/repos/NOAA-EDAB/catalog/issues/',issuenum)
+    issues <- jsonlite::fromJSON(repoissue)
+    if (issues$labels$name == "submission") {
       submissions <- issuenum
     } else {
       stop("This issue number is not a submission issue and can not be parsed")
     }
-  } 
+  } else {
+    # pull all issues and select all submissions
+    issues <- jsonlite::fromJSON(repo)
+    # make sure it has the "submission" tag associated with it
+    indices <- which(unlist(lapply(issues$labels,function(x) {if(length(x$name)==0){F}else{x$name=="submission"}})))
+    submissions <- issues$number[indices]
+  }
   
   
+  
+  # pull data
   for (issuenum in submissions) {
     message(paste0("Issue number: ",issuenum))
     ### Pull issue from GitHub API
@@ -59,9 +66,10 @@ build_rmd_from_issue <- function(issuenum = 1) {
     listobject$primaryContact <- parsedIssue$`### Primary Contact`
     listobject$secondaryContact <- parsedIssue$`### Secondary Contact`
     
-  
-  ### Test make_Rmd.R using above inputs
-  make_rmd(listobject)
+    ### Test make_Rmd.R using above inputs
+    make_rmd(listobject)
   }
+  
+  return(listobject)
 
 }

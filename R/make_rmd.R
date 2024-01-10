@@ -41,31 +41,33 @@ make_rmd <- function(listobject){
   cat("```",append=T,fill=T,file=con)
   
   ### DESCRIPTION OF INDICATOR
-  cat("## What is this?",append=T,fill=T,file=con)
+  cat("## Indroduction to Indicator",append=T,fill=T,file=con)
   cat(listobject$whatsthis,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
   ### PLOT INDICATOR
-  cat("### Visualizations",append=T,fill=T,file=con)
+  cat("## Key Results and Visualizations",append=T,fill=T,file=con)
   cat(listobject$visualizations,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
   ### rchunk code to run plot functions from ecodata
   cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
   cat("# Plot indicator",append=T,fill=T,file=con)
-  cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(shadedRegion=c(",shadedRegion[1],",",shadedRegion[2],"))"),append=T,fill=T,file=con)
+  cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
   cat("print(ggplotObject)",append=T,fill=T,file=con)
   cat("```",append=T,fill=T,file=con)
   
   cat(paste0("```{r plot_",listobject$indicatorname,"NE}"),append=T,fill=T,file=con)
   cat("# Plot indicator",append=T,fill=T,file=con)
-  cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(shadedRegion=c(",shadedRegion[1],",",shadedRegion[2],"),report='NewEngland')"),append=T,fill=T,file=con)
+  cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland')"),append=T,fill=T,file=con)
   cat("print(ggplotObject)",append=T,fill=T,file=con)
   cat("```",append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
   
   
   ### SPATIAL + TEMPORAL SCALE
-  cat("### Indicator statistics ",append=T,fill=T,file=con)
+  
+  cat("## Indicator statistics ",append=T,fill=T,file=con)
   cat(paste0("Spatial scale: ",listobject$indicatorStatsSpatial),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("Temporal scale: ",listobject$indicatorStatsTemporal),append=T,fill=T,file=con)
@@ -84,7 +86,7 @@ make_rmd <- function(listobject){
   cat("",append=T,fill=T,file=con) # add space
   
   ### IMPLICATIONS 
-  cat("### Implications",append=T,fill=T,file=con)
+  cat("## Implications",append=T,fill=T,file=con)
   cat(listobject$implications,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
@@ -100,7 +102,11 @@ make_rmd <- function(listobject){
   cat("",append=T,fill=T,file=con) # add space
   
   ### VARIABLES FOUND IN DATA
-  cat("**variable names**",append=T,fill=T,file=con)
+  cat("**Variable definitions**",append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+
+  # grabs the defined variables and writes out as an unordered list
+  cat(unlist(strsplit(listobject$defineVariables,"\\n")),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
   # r code chunk to make table
@@ -132,12 +138,12 @@ make_rmd <- function(listobject){
   
   ### PUBLIC AVAILABILITY + ACCESSIBILITY
   
-  cat("### Public Availability",append=T,fill=T,file=con)
+  cat("## Public Availability",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(listobject$publicAvailability,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  cat("### Accessibility and Contraints",append=T,fill=T,file=con)
+  cat("## Accessibility and Contraints",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(listobject$accessibility,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
