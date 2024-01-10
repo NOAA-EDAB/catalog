@@ -51,22 +51,86 @@ make_rmd <- function(listobject){
   cat("",append=T,fill=T,file=con) # add space
   
   ### rchunk code to run plot functions from ecodata
-  cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
-  cat("# Plot indicator",append=T,fill=T,file=con)
-  cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
-  cat("print(ggplotObject)",append=T,fill=T,file=con)
-  cat("```",append=T,fill=T,file=con)
   
-  cat(paste0("```{r plot_",listobject$indicatorname,"NE}"),append=T,fill=T,file=con)
-  cat("# Plot indicator",append=T,fill=T,file=con)
-  cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland')"),append=T,fill=T,file=con)
-  cat("print(ggplotObject)",append=T,fill=T,file=con)
-  cat("```",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
+  # Find the names of the arguments to the function
+  functionArgs <- names(formals(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname)))))
+  if (length(functionArgs) == 2) {
+    # this is standard shadedRegion and report
+    # check to see how many EPUs are listed in data object and/or they are "All" (shelfwide)
+    indicatorData <- eval(parse(text=paste0("ecodata::",listobject$indicatorname)))  
+    epus <- unique(indicatorData$EPU)
+    if (any(c("all","na") %in% tolower(epus)) | is.null(epus)) {
+      # plot just one map
+      cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
+      cat("# Plot indicator",append=T,fill=T,file=con)
+      cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
+      cat("print(ggplotObject)",append=T,fill=T,file=con)
+      cat("```",append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+    } else {
+      if ("mab" %in% tolower(epus)) {
+        # plot MidAtlantic Report 
+        cat("### MAB",append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+        cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
+        cat("# Plot indicator",append=T,fill=T,file=con)
+        cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
+        cat("print(ggplotObject)",append=T,fill=T,file=con)
+        cat("```",append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+      } 
+      if (any(c("gb","gom","ne") %in% tolower(epus))) {
+      # plot NewEngland Report
+        cat("### NE",append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+        cat(paste0("```{r plot_",listobject$indicatorname,"NE}"),append=T,fill=T,file=con)
+        cat("# Plot indicator",append=T,fill=T,file=con)
+        cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland')"),append=T,fill=T,file=con)
+        cat("print(ggplotObject)",append=T,fill=T,file=con)
+        cat("```",append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+      }
+    }
+
+  } else if (length(functionArgs) == 3 & ("EPU" %in% functionArgs )) {
+    # additional EPU argument. Create 3 plots, one for each EPU
+    cat("### MAB",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
+    cat("# Plot indicator",append=T,fill=T,file=con)
+    cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
+    cat("print(ggplotObject)",append=T,fill=T,file=con)
+    cat("```",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    
+    ## GB
+    cat("### GB",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    cat(paste0("```{r plot_",listobject$indicatorname,"NEGB}"),append=T,fill=T,file=con)
+    cat("# Plot indicator",append=T,fill=T,file=con)
+    cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland',EPU='GB')"),append=T,fill=T,file=con)
+    cat("print(ggplotObject)",append=T,fill=T,file=con)
+    cat("```",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    
+    ## GOM
+    cat("### GOM",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    cat(paste0("```{r plot_",listobject$indicatorname,"NEGOM}"),append=T,fill=T,file=con)
+    cat("# Plot indicator",append=T,fill=T,file=con)
+    cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland',EPU='GOM')"),append=T,fill=T,file=con)
+    cat("print(ggplotObject)",append=T,fill=T,file=con)
+    cat("```",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    
+        
+  }
+  
+
   
   
   ### SPATIAL + TEMPORAL SCALE
-  
+  cat("",append=T,fill=T,file=con) # add space
   cat("## Indicator statistics ",append=T,fill=T,file=con)
   cat(paste0("Spatial scale: ",listobject$indicatorStatsSpatial),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
