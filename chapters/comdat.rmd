@@ -1,0 +1,92 @@
+# Commercial Landings
+
+**Description**: Commercial landings from dealer reports.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [X] Megafauna
+- [ ] Social
+- [X] Economic
+
+**Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Indroduction to Indicator
+The Northeast US has a long, rich history of commercial fishing.  Species of all different types are caught using a plethora of different fishing gear from North Carolina to Maine.  This data set aggregates those landings into catch for seafood consumption, total landings, and those managed by the Mid-Atlantic Fisheries Management Council and New England Fisheries Management Council.  Landings can also be visualized by feeding guilds as well as by region.
+
+## Key Results and Visualizations
+Landings have fluctuated over time in all regions.  In the two northern regions, a majority of the catch is used for human consumption (seafood) while less so in the Mid-Atlantic.  Commercial seafood landings have been declining in both the Mid-Atlantic and Gulf of Maine regions.
+
+## Indicator statistics 
+Spatial scale: By EPU
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_comdat}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Landings is a key indicator of the State of the Ecosystem report.  It is the key driver in fisheries and is impacted by many of the other indicators presented throughout the report.  Changes in landings can occur from a number of different factors including but not limited to the underlying ecosystem, changes in climate, fisheries economics, and management measures.
+
+## Get the data
+
+**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
+
+**ecodata name**: `ecodata::comdat`
+
+**Variable definitions**
+
+1) Name: Landings; Definition: Total landings for a region; Units: metric tons.  
+2) Name: Seafood Landings; Definition: Total landings used for human consumption for a region; Units: metric tons. 
+3) Name: Guild Landings; Definition: Total landings for an aggregate group within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  For example "Benthivore Landings"; Units: metric tons 
+4) Name: Guild Landings - US only; Definition: Total landings from US flagged vessels for an aggregate group within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  For example "Benthivore Landings - US only"; Units: metric tons 
+5) Name: Guild Seafood Landings; Definition: Total landings for an aggregate group within a region used for human consumption.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  For example "Benthivore Seafood Landings"; Units: metric tons 
+6) Name: Guild Management Body managed species - Landings weight; Definition: Total landings for an aggregate group of managed species within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Landings weight"; Units: metric tons 
+7) Name: Guild Management Body managed species - Landings weight - US only; Definition: Total landings from US flagged vessels for an aggregate group of managed species within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Landings weight - US only"; Units: metric tons 
+8) Name: Guild Management Body managed species - Seafood Landings; Definition: Total landings for an aggregate group of managed species within a region used for human consumption.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Seafood Landings"; Units: metric tons
+
+```{r vars_comdat}
+# Pull all var names
+vars <- ecodata::comdat |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [X] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Contraints
+
+Please email Andrew.Beet@NOAA.gov for further questions.  Access to data will require a non-disclosure agreement with NOAA.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/comdat.html>
+
+## References
+

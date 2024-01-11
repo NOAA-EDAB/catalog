@@ -1,0 +1,105 @@
+# Bottom temperature - Seasonal Anomaly
+
+**Description**: The data are seasonal bottom temperature anomaly time series for each EPU
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Joseph Caracappa, Hubert duPontavice, Vincent Saba, Zhuomin Chen
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Indroduction to Indicator
+The raw bottom temperature product is in a horizontal 1/12 degree grid between 1959 and 2023 and is made of daily bottom temperature estimates from:
+
+Bias-corrected ROMS-NWA (ROMScor) between 1959 and 1992 which was regridded in the same 1/12degree grid as GLORYS using bilinear interpolation; GLORYS12v1 in its original 1/12 degree grid between 1993 and 2023-08-29; and PSY in it's 1/12 degree grid from 2023-08-29 to 2023-12-31. 
+
+Anomalies are calculated using the 1990-2020 reference period.
+
+## Key Results and Visualizations
+Time series plots for seasonal bottom temperature anomaly for each EPU shows a long-term warming trend. PSY forecasted data also included for comparison and indicates varying skill in predicting regional bottom temperature.
+
+```{r plot_bottom_temp_compMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_comp(report='MidAtlantic')
+print(ggplotObject)
+```
+
+```{r plot_bottom_temp_compNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_comp(report='NewEngland')
+print(ggplotObject)
+```
+
+## Indicator statistics 
+Spatial scale: EPU
+
+Temporal scale: annual-seasonal
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_bottom_temp_comp}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Bottom temperature is an important driver for benthic and demersal species growth, metabolism, and reproduction. Changes in seasonal bottom temperature have implications for species' phenology
+
+## Get the data
+
+**Point of contact**: [joseph.caracappa@noaa.gov](joseph.caracappa@noaa.gov){.email}
+
+**ecodata name**: `ecodata::bottom_temp_comp`
+
+**Variable definitions**
+
+Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) 
+Subarea: EPU name 
+Source:  ROMS (bias-corrected ROMS-NWA bottom temperature from du Pontavice et al, 2023), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
+bt_temp : mean bottom temperature for each year/season across entire EPU 
+ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
+
+```{r vars_bottom_temp_comp}
+# Pull all var names
+vars <- ecodata::bottom_temp_comp |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [X] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/bottom_temp_comp.html>
+
+## References
+

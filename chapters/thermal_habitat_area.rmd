@@ -1,0 +1,113 @@
+# Thermal Habitat Area
+
+**Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2023
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Joe Caracappa
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Indroduction to Indicator
+See "Thermal Habitat Persistence" for cell-based calculations. Many deep water benthic and demersal exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal presences may impair these processes. Two temperature thresholds (15 and 24 degrees C) were chosen based on cutoff points where demersal species are less commonly found. Thermal habitat area is calculated by identifying 1/12 degree cells within a given EPU that are greater than or equal to the temperature threshold then taking the sum of all cell areas. Data from 1993-01-01 to 2023-08-29 were obtained from the CMEMS' GLORYS12V1 global reanalysis product, and from 2023-08-30 to 2023-12-31 data were obtained from the CMEMS' PSY global forecasting product.
+
+## Key Results and Visualizations
+For each EPU, bottom temperature data were separate by depth bin (0-25m; 25m-100m; and >100m), as well as temperature threshold (>15C , >24C), and the proportion of each EPU exceeding these thresholds was calculated on a daily basis from 1993 to 2023. Overlayed time series of each year's proportional area shows that recent years have resulted in a increasing proportion of the MAB and GB mid-depths have experienced high temperatures. The 24C threshold is rarely seen in GB and GOM.
+
+### MAB
+
+```{r plot_thermal_habitat_areaMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_thermal_habitat_area(report='MidAtlantic')
+print(ggplotObject)
+```
+
+### GB
+
+```{r plot_thermal_habitat_areaNEGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_thermal_habitat_area(report='NewEngland',EPU='GB')
+print(ggplotObject)
+```
+
+### GOM
+
+```{r plot_thermal_habitat_areaNEGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_thermal_habitat_area(report='NewEngland',EPU='GOM')
+print(ggplotObject)
+```
+
+## Indicator statistics 
+Spatial scale: EPU
+
+Temporal scale: daily
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_thermal_habitat_area}
+# Either from Contributor or ecodata
+```
+
+## Implications
+If a large proportion of species current habitat become thermally inhospitable, it can influence species productivity and in extreme cases cause mortality.
+
+## Get the data
+
+**Point of contact**: [joseph.caracappa@noaa.gov](joseph.caracappa@noaa.gov){.email}
+
+**ecodata name**: `ecodata::thermal_habitat_area`
+
+**Variable definitions**
+
+Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) and PSY (CMEM’s PSY global forecast bottom temperature) 
+min.depth: minimum of depth band max.depth: maximum of depth band 
+temp.threshold: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature) 
+area: area exceeding temperature threshold (m2) 
+area.prop: proportion of EPU area exceeding temperature threshold
+
+```{r vars_thermal_habitat_area}
+# Pull all var names
+vars <- ecodata::thermal_habitat_area |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [X] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/thermal_habitat_area.html>
+
+## References
+

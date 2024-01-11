@@ -19,23 +19,13 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 The ratio of total estimates catch (landings and dead discards) compared to the specified catch limit, either the Acceptable Biological Catch (ABC) or the Annual Catch Limit (ACL) by species and sector (e.g., commercial or recreational, if appropriate). This ratio can provide an understanding of management control to constrain total catch below the acceptable/specified limits through different management tools (e.g., trip limits, seasons, gear requirements etc.). Ratios above one can be an indicator of poor management control and/or uncertainties, or indicative that the catch limits in place are constraining on the fishery. Ratios below one could indicate greater management control and/or fewer uncertainties or that their may be other factors (e.g., markets, price, availability) may be limiting a sectors ability to reach its catch limits.
 
-### Visualizations
+## Key Results and Visualizations
 Catch divided by ABC/ACL for MAFMC managed fisheries. Red line indicates the median ratio across all fisheries. A secondary figure is also produced that provides the sum of catch limits across all MAFMC managed commercial (C) and recreational (R) fisheries.
 
-```{r plot_abc.aclMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_abc.acl(shadedRegion=c(2013,2022))
-print(ggplotObject)
-```
-```{r plot_abc.aclNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_abc.acl(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+## Indicator statistics 
 Spatial scale: Cape Hatteras, NC north to Maine
 
 Temporal scale: Annual
@@ -50,7 +40,7 @@ Temporal scale: Annual
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 Need to write later once updated data has been added to the data file.
 
 ## Get the data
@@ -59,7 +49,11 @@ Need to write later once updated data has been added to the data file.
 
 **ecodata name**: `ecodata::abc.acl`
 
-**variable names**
+**Variable definitions**
+
+Catch - definition: total landings and dead discards; units - metric tons (MT) 
+Acceptable biological catch (ABC) - the annual catch level recommended for a stock or stock complex by the Scientific and Statistical Committee that could be equal to or less than the Overfishing Limit (OFL); units - metric tons (MT) 
+Annual Catch Limit (ACL) - sector specific total catch limits which can be equal to or less than the ABC; units - metric tons (MT)
 
 ```{r vars_abc.acl}
 # Pull all var names
@@ -82,11 +76,11 @@ DT::datatable(vars)
 
 Management reports (e.g., specification packages, fishery information documents), stock assessment reports, or data pulls from CAMS
 
-### Public Availability
+## Public Availability
 
 Source data are publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 _No response_
 
