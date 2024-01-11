@@ -1,6 +1,6 @@
-# Bottom temperature - High resolution
+# Bottom temperature - Seasonal Gridded
 
-**Description**: Seasonal bottom temperatures on the Northeast Continental Shelf between 1959 and 2023 in a 1/12° grid.
+**Description**: Seasonal mean bottom temperatures on the Northeast Continental Shelf between 1959 and 2023 in a 1/12° grid.
 
 **Indicator family**: 
 
@@ -19,26 +19,28 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 The bottom temperature product is in a horizontal 1/12 degree grid between 1959 and 2022 and is made of daily bottom temperature estimates from:
 
-Bias-corrected ROMS-NWA (ROMScor) between 1959 and 1992 which was regridded in the same 1/12degree grid as GLORYS using bilinear interpolation; GLORYS12v1 in its original 1/12 degree grid between 1993 and 2020; GLO12v3 (called PSY4V3R1 in “A High-Resolution Ocean Bottom Temperature Product for the Northeast u.s. Continental Shelf Marine Ecosystem” ([2023](https://noaa-edab.github.io/tech-doc/bottom-temperature---high-resolution.html#ref-duPontavice2023)) and Lellouche et al. ([2018](https://noaa-edab.github.io/tech-doc/bottom-temperature---high-resolution.html#ref-Lellouche2018))) in its original 1/12 degree grid for 2021 and 2022.
+Bias-corrected ROMS-NWA between 1959 and 1992 which was regridded in the same 1/12degree grid as GLORYS using bilinear interpolation; Years 1993 through summer 2023 are from CMEMS GLORYS12V1 global reanalysis bottom temperature, and fall 2023 is from CMEMS PSY forecasting product.
 
-### Visualizations
-Bottom temperature anomaly time series (by EPU and season) are presented from 1959 - 2022 using 1992-2010 as a reference period climatology.
+## Key Results and Visualizations
+Maps of seasonal mean bottom temperature across NE shelf.
 
 ```{r plot_bottom_temp_glorysMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_glorys(shadedRegion=c(2013,2022))
+ggplotObject <- ecodata::plot_bottom_temp_glorys(report='MidAtlantic')
 print(ggplotObject)
 ```
+
 ```{r plot_bottom_temp_glorysNE}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_glorys(shadedRegion=c(2013,2022),report='NewEngland')
+ggplotObject <- ecodata::plot_bottom_temp_glorys(report='NewEngland')
 print(ggplotObject)
 ```
-### Indicator statistics 
-Spatial scale: by EPU
+
+## Indicator statistics 
+Spatial scale: Whole shelf
 
 Temporal scale: Winter (Jan-Mar), Spring (April-June), Summer (July-Sept), Fall (Oct - Dec) form 1959-2022
 
@@ -52,7 +54,7 @@ Temporal scale: Winter (Jan-Mar), Spring (April-June), Summer (July-Sept), Fall 
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 Bottom temperature is a key environmental parameter in defining the habitat and metabolic conditions of demersal and benthic species. Interannual and seasonal changes in bottom temperature can provide significant indicators of species productivity, spatial distributions, or mortality.  Long-term trends in bottom temperature are indicators of regional implications of global climate change and may be used in evaluating climate risk for fisheries management.
 
 ## Get the data
@@ -61,7 +63,10 @@ Bottom temperature is a key environmental parameter in defining the habitat and 
 
 **ecodata name**: `ecodata::bottom_temp_glorys`
 
-**variable names**
+**Variable definitions**
+
+- Time dimension in each file is annual with winter dates (XXXX-01-01), spring dates (XXXX-03-01), summer dates (XXXX-07-01), and fall dates (XXXX-10-01).  
+- Gridded values are mean bottom temperature in degrees C.
 
 ```{r vars_bottom_temp_glorys}
 # Pull all var names
@@ -80,11 +85,11 @@ DT::datatable(vars)
 - [X] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 _No response_
 

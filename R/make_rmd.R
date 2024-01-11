@@ -51,7 +51,7 @@ make_rmd <- function(listobject){
   cat("",append=T,fill=T,file=con) # add space
   
   ### rchunk code to run plot functions from ecodata
-  
+  # gets a bit messy trying to check for function arguments
   # Find the names of the arguments to the function
   functionArgs <- names(formals(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname)))))
   if (length(functionArgs) == 2) {

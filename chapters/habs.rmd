@@ -19,23 +19,13 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson et al. 2005. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
 
-### Visualizations
+## Key Results and Visualizations
 Visualizations of the data include an annual time series plot of estimated cyst abundance, and a time series of maps depicting the spatial and temporal variability in the Gulf of Maine.  Results are plotted as estimated total numbers of cells (10 to the 16th power) in Eastern Gulf of Maine (east of Penobscot Bay), Western Gulf of Maine (west of Penobscot Bay), Bay of Fundy (2003-2013 only), and entire Gulf of Maine.
 
-```{r plot_habsMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_habs(shadedRegion=c(2013,2022))
-print(ggplotObject)
-```
-```{r plot_habsNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_habs(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+## Indicator statistics 
 Spatial scale: Results are reported for the entire Gulf of Maine, and also by sub-regions: Eastern Gulf of Maine (east of Penobscot Bay), Western Gulf of Maine (west of Penobscot Bay), and Bay of Fundy (2003-2013 only).
 
 Temporal scale: Results are aggregated annually, and reported for 2003 to 2021.  Cyst sampling is done in the late fall.
@@ -50,7 +40,7 @@ Temporal scale: Results are aggregated annually, and reported for 2003 to 2021. 
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 The annual fall surveys of Alexandrium cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year. Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales (Anderson et al. 2005, Li et al. 2009 & 2020, McGillicuddy et al. 2011). After strong cyst deposition events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2021. However, bloom events and shellfishery closures usually occur somewhere in any given year. Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (Jin and Hoagland 2008). Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 (Anderson et al. 1997).
 
 ## Get the data
@@ -59,7 +49,9 @@ The annual fall surveys of Alexandrium cyst distribution and abundance in the Gu
 
 **ecodata name**: `ecodata::habs`
 
-**variable names**
+**Variable definitions**
+
+Name: 1) Year; Definition: calendar year; Units: yyyy. 2) Name: Var; Definition: Gulf of Maine region (West, East, Bay of Fundy, All); Units: categories. 3) Name: Value; Definition: Estimated cyst abundance; Units: numbers of cells * 10 to the 16th power)
 
 ```{r vars_habs}
 # Pull all var names
@@ -78,11 +70,11 @@ DT::datatable(vars)
 - [X] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are NOT publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 Data were provided by consultation with Yizhen Li.  Data are also used in operational HAB forecast models, freely available to the public.
 

@@ -1,4 +1,4 @@
-# stock_status
+# Stock Status
 
 **Description**: Summary of the most recent stock assessment results for each assessed species
 
@@ -19,27 +19,23 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 Stock assessments are conducted regularly for fisheries managed by the New England and Mid-Atlantic Fishery Management Councils to support decisions on catch limits and to determine whether conservation objectives for each stock are being met. Single species management objectives include
 1. Maintaining biomass above minimum thresholds, and 
 2. Maintaining fishing mortality below overfishing limits. 
 
 This indicator summarizes the most recent stock status, defined as stock assessment estimated current biomass (B) relative to the biomass threshold (1/2 B<sub>MSY</sub>) and biomass target (B<sub>MSY</sub>), and current fishing mortality (F) relative to the fishing mortality limit (F<sub>MSY</sub>).
 
-### Visualizations
+## Key Results and Visualizations
 Single species management objectives (1. maintaining biomass above minimum thresholds and 2. maintaining fishing mortality below overfishing limits) are being met for all but one MAFMC managed species, though the status of six stocks is unknown. Single species management objectives are not being met for some NEFMC managed species.  Nine stocks are currently estimated to be below B<sub>MSY</sub>, while status relative to B<sub>MSY</sub> could not be assessed for 13 additional stocks.
 
 ```{r plot_stock_statusMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_stock_status(shadedRegion=c(2013,2022))
+ggplotObject <- ecodata::plot_stock_status(report='MidAtlantic')
 print(ggplotObject)
 ```
-```{r plot_stock_statusNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_stock_status(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+
+## Indicator statistics 
 Spatial scale: Stock-specific spatial scale, reported by Council
 
 Temporal scale: Annual update for the aggregate; individual stock status 1-5 years depending on assessment cycle
@@ -54,7 +50,7 @@ Temporal scale: Annual update for the aggregate; individual stock status 1-5 yea
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 Stock status affects catch limits established by the Council, which in turn may affect landings trends. 
 
 In the Mid Atlantic, stock status is above the minimum threshold for all but one stock, and aggregate biomass trends appear stable, so the decline in commercial seafood landings is most likely driven by market dynamics affecting the landings of surfclams and ocean quahogs, as landings have been below quotas for these species. The long term decline in total planktivore landings is largely driven by Atlantic menhaden fishery dynamics, including a consolidation of processors leading to reduced fishing capacity between the 1990s and mid-2000s.
@@ -67,7 +63,14 @@ In New England, stock status and associated management constraints are likely co
 
 **ecodata name**: `ecodata::stock_status`
 
-**variable names**
+**Variable definitions**
+
+Variables in `ecodata::stock_status`  **Stock:**  Name of stock   
+**Last assessment:** Most recent assessment year for stock status  
+**Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both" 
+ **Code:**  Short stock name for plotting corresponding to **Stock**        
+**Var:**  "F.Fmsy" (Current year fishing mortality F relative to F<sub>MSY</sub>) "B.Bmsy" (Current year biomass B relative to B<sub>MSY</sub>) 
+       **Value:** Decimal value of Var  **Units:** Unitless
 
 ```{r vars_stock_status}
 # Pull all var names
@@ -86,11 +89,11 @@ DT::datatable(vars)
 - [X] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 _No response_
 

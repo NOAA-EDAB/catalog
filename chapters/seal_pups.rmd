@@ -19,24 +19,23 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 Gray seals were extirpated from the northeast U.S. coast by the mid-20th century due to local and statewide bounty systems (Andrews and Mott 1967; Lelli et al. 2009). Since the late 1980s, ground and aerial surveys have documented the recovery and recolonization of pupping sites in northeast U.S. waters (Wood et al. 2022). This recovery is due in large part to the protection provided by the Marine Mammal Protection Act (MMPA) of 1972.
 
-### Visualizations
+## Key Results and Visualizations
 The increase in bycatch of gray seals (Fig. x) since 1995 corresponds to an increase in numbers of gray seals in U.S. waters, which has risen dramatically in the last three decades. Based on a survey conducted in 2021, the size of the gray seal population in the U.S. during the breeding season was approximately 28,000 animals, while in Canada the population was estimated to be roughly 425,000. The population in Canada is increasing at roughly 4% per year, and contributing to rates of increase in the U.S., where the number of pupping sites has increased from one in 1988 to nine in 2019.
 Mean rates of increase in the number of pups born at various times since 1988 at four of the more data-rich pupping sites (Muskeget, Monomoy, Seal, and Green Islands) ranged from no change on Green Island to high rates of increase on the other three islands, with a maximum increase of 26.3% (95%CI: 21.6 - 31.4%; [4] Fig. x).
 
-```{r plot_seal_pupsMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_seal_pups(shadedRegion=c(2013,2022))
-print(ggplotObject)
-```
+### NE
+
 ```{r plot_seal_pupsNE}
 # Plot indicator
-ggplotObject <- ecodata::plot_seal_pups(shadedRegion=c(2013,2022),report='NewEngland')
+ggplotObject <- ecodata::plot_seal_pups(report='NewEngland')
 print(ggplotObject)
 ```
-### Indicator statistics 
+
+
+## Indicator statistics 
 Spatial scale: Haul out sites off New England (Maine to New York) that correspond roughly to EPU’s Gulf of Maine (GOM) and Mid-Atlantic Bight (MAB).
 
 Temporal scale: Annually 1988 to 1921. Survey is in January that corresponds to the gray seal pupping season.
@@ -51,7 +50,7 @@ Temporal scale: Annually 1988 to 1921. Survey is in January that corresponds to 
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 These high rates of increase in gray seal pups born at US pupping sites provide further support for the hypothesis that seals from Canada are continually supplementing the breeding population in U.S. waters.
 
 ## Get the data
@@ -60,7 +59,9 @@ These high rates of increase in gray seal pups born at US pupping sites provide 
 
 **ecodata name**: `ecodata::seal_pups`
 
-**variable names**
+**Variable definitions**
+
+1) Name=Year. 2) Name=Count; Definition=count of gray seals on haulout site; unit=n=number. 3) Name=colony; Definition=name of haul site site.
 
 ```{r vars_seal_pups}
 # Pull all var names
@@ -79,11 +80,11 @@ DT::datatable(vars)
 - [ ] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are NOT publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 Reach out to Stephanie Wood (stephanie.wood@noaa.gov) for data.
 

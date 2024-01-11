@@ -19,23 +19,18 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 The T200-based Gulf Stream Index is calculated as the standardized first principal component time series from the empirical orthogonal function (EOF) analysis of the 200 m temperature time series at the 20 base points (selected along the climatological 15°C isotherm at 200 m between 74° and 55°W) and it represents the meridional fluctuation of the Gulf Stream North Wall (Joyce et al., 2019; Chi et al., 2019).
 
-### Visualizations
+## Key Results and Visualizations
 The Gulf Stream Index suggest that recent years (2021-2022) the GS almost maintains its relative northward shift relative to the long-term mean.
 
 ```{r plot_gsiMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(shadedRegion=c(2013,2022))
+ggplotObject <- ecodata::plot_gsi(report='MidAtlantic')
 print(ggplotObject)
 ```
-```{r plot_gsiNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_gsi(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+## Indicator statistics 
 Spatial scale: Gulf Stream between 74°W and 55°W
 
 Temporal scale: Monthly from 1954 to 2022
@@ -50,7 +45,7 @@ Temporal scale: Monthly from 1954 to 2022
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stream position on monthly timescale, which may affect the slope water properties intruding onto the continental shelf. The GSNW index is also suggested to be an good indicator for biomass distribution of multiple marine fishes (e.g., silver hake Nye et al., 2011).
 
 ## Get the data
@@ -59,7 +54,9 @@ The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stre
 
 **ecodata name**: `ecodata::gsi`
 
-**variable names**
+**Variable definitions**
+
+Name: GSI; Definition: Gulf Stream North Wall Index (T200-based using EN4 datasets); Units: None.
 
 ```{r vars_gsi}
 # Pull all var names
@@ -78,11 +75,11 @@ DT::datatable(vars)
 - [X] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 _No response_
 

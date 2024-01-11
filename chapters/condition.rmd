@@ -1,6 +1,4 @@
-# rel_condition
-
-Ecosytem overfishing
+# Relative condition
 
 **Description**: NEFSC fall bottom trawl survey relative condition
 
@@ -21,7 +19,7 @@ Ecosytem overfishing
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 The health and well being of individual fish can be related to body shape condition indices (i.e.,
 weight at a given length) such as relative condition index, which is the ratio of observed weight to predicted weight based on length (Le Cren 1951). Heavier and fatter fish at a given length have higher relative condition which is expected to improve growth, reproductive output, and survival.
 
@@ -33,22 +31,36 @@ Le Cren ED. The Length-Weight Relationship and Seasonal Cycle in Gonad Weight an
 
 Wigley, S.E., H.M. McBride, N.J. McHugh. 2003. Length-Weight Relationships for 74 Fish Species Collected during NEFSC Research Vessel Bottom Trawl Surveys, 1992-99. NOAA Tech. Memo. NMFS-NE-171.
 
-### Visualizations
+## Key Results and Visualizations
 Condition factor for fish species in the MAB based on fall NEFSC bottom trawl survey data. MAB data are missing for 2017 due to survey delays, and no survey was conducted in 2020.
 
 A pattern of generally good condition was observed across many MAB species prior to 2000, followed by a period of generally poor condition from 2001-2010, with a mix of good and poor condition from 2011-2019. Condition was again mixed in 2022, but a number of species improved in condition from the relatively low condition year in 2021 (Fig. 43). Preliminary results of synthetic analyses show that changes in temperature, zooplankton, fishing pressure, and population size influence the condition of different fish species.
 
+### MAB
+
 ```{r plot_conditionMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(shadedRegion=c(2013,2022))
+ggplotObject <- ecodata::plot_condition(report='MidAtlantic')
 print(ggplotObject)
 ```
-```{r plot_conditionNE}
+
+### GB
+
+```{r plot_conditionNEGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(shadedRegion=c(2013,2022),report='NewEngland')
+ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GB')
 print(ggplotObject)
 ```
-### Indicator statistics 
+
+### GOM
+
+```{r plot_conditionNEGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GOM')
+print(ggplotObject)
+```
+
+## Indicator statistics 
 Spatial scale: The spatial scale for relative condition was on the EPU level.
 
 Temporal scale: The temporal scale for relative condition was the fall NEFSC bottom trawl survey (Sept.-Nov.).
@@ -63,7 +75,7 @@ Temporal scale: The temporal scale for relative condition was the fall NEFSC bot
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 These changes in condition have direct implications for stock assessments, catch quotas and management, and may indirectly impact fish recruitment and mortality.
 
 ## Get the data
@@ -72,7 +84,11 @@ These changes in condition have direct implications for stock assessments, catch
 
 **ecodata name**: `ecodata::condition`
 
-**variable names**
+**Variable definitions**
+
+Species: common name for fish species EPU: Ecological Production Unit 
+YEAR: year of condition data 
+MeanCond: annual mean by EPU and species of relative condition (unitless)
 
 ```{r vars_condition}
 # Pull all var names
@@ -91,11 +107,11 @@ DT::datatable(vars)
 - [X] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 _No response_
 

@@ -19,23 +19,18 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 The energy density of prey indicates the the amount of energy passing from lower trophic levels to higher predators. Changes in ecosystem productivity and/or bioenergetic demands (e.g. metabolic increases due to rising temperature) can impact energy density. Energy density of fishes can vary widely (several fold), particularly for some species that undergo seasonal cycles in energy allocation to reproduction, energy allocation to migration, or seasonal/ontogenetic shifts in energy storage. The value of forage species to higher trophic levels is a function of the their energy density.
 
-### Visualizations
+## Key Results and Visualizations
 Variable plotted are the mean energy density (kJ/g) for eight species across seasons and years. The reference lines represent estimates from prior studies where available for comparison. The energy density of Atlantic Herring has been well below the available estimates from the 1980s and 1990s, but is showing some signs of improving.
 
 ```{r plot_energy_densityMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_energy_density(shadedRegion=c(2013,2022))
+ggplotObject <- ecodata::plot_energy_density(report='MidAtlantic')
 print(ggplotObject)
 ```
-```{r plot_energy_densityNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_energy_density(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+## Indicator statistics 
 Spatial scale: Full shelf
 
 Temporal scale: Spring and Fall Bottom Trawl Survey
@@ -50,7 +45,7 @@ Temporal scale: Spring and Fall Bottom Trawl Survey
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 _No response_
 
 ## Get the data
@@ -59,7 +54,9 @@ _No response_
 
 **ecodata name**: `ecodata::energy_density`
 
-**variable names**
+**Variable definitions**
+
+Energy Density (kJ/g) for each species.
 
 ```{r vars_energy_density}
 # Pull all var names
@@ -78,11 +75,11 @@ DT::datatable(vars)
 - [ ] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are NOT publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 Email mark.wuenschel@noaa.gov for further information. Data tables are beign created to make this readily available soon.
 

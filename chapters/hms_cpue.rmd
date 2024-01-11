@@ -19,23 +19,13 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 The Pelagic Observer Program (POP) is operated out of the Southeast Fisheries Science Center, but provides observers in all regions (including the high seas) where U.S. flagged and HMS-permitted vessels fish under regulations for the HMS pelagic longline fishery. Data from the POP is collected during trips on pelagic longline vessels that are generally targeting swordfish, and yellowfin and bigeye tunas. Once a set is retrieved, information like the length, dressed weight, sex, and tag number of each individual fish is recorded. There have been times and areas where the agency has required 100-percent coverage over specific times or areas such as during bluefin tuna spawning time period in the Gulf of Mexico for a number of years and in the Mid-Atlantic Bight. Between 2017 and 2021, observer coverage for the entire pelagic longline fleet (i.e., from Maine to Texas, and the U.S. Caribbean and high seas) ranged from 9 to 13 percent of total overall reported sets.
 
-### Visualizations
+## Key Results and Visualizations
 TBD; data may not be correctly displayed in graphs.
 
-```{r plot_hms_cpueMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(shadedRegion=c(2013,2022))
-print(ggplotObject)
-```
-```{r plot_hms_cpueNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+## Indicator statistics 
 Spatial scale: Data are extracted from the MAB and NEC fishing areas (see "Fishing Areas" figure)
 
 Temporal scale: 1992-2022, Annual
@@ -50,7 +40,7 @@ Temporal scale: 1992-2022, Annual
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 Pelagic observer data summarizes catch per unit effort information for a subset of total pelagic longline effort in the U.S. EEZ, and should not be interpreted as total interaction information for the northeast region pelagic longline fleet. CPUE trends can be used to evaluate whether the number of interactions with longline vessels has changed through time.
 
 ## Get the data
@@ -59,7 +49,9 @@ Pelagic observer data summarizes catch per unit effort information for a subset 
 
 **ecodata name**: `ecodata::hms_cpue`
 
-**variable names**
+**Variable definitions**
+
+Year: year in which observations were made; Animal_Code: three letter abbreviation used by POP as a shorthand for species; Count: number of animals observed per year/species ; Haul_Num: number of observed hauls in the NE EEZ, in the two areas (NEC and MAB) within a given year (does not include damaged or incomplete sets). Num_per_haul: total # fish caught / total # hauls (for each species and year)
 
 ```{r vars_hms_cpue}
 # Pull all var names
@@ -78,11 +70,11 @@ DT::datatable(vars)
 - [ ] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are NOT publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 Pelagic observer data is considered confidential data, and must be screened to ensure that data meet requirements for "rule of three" at the set and vessel level before they can be distributed. Do not publish raw data.
 

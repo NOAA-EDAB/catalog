@@ -19,23 +19,13 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 HMS landings and approximate value of landings are presented separately as an indicator, and are combined in several datasets presented in the SOE report (e.g., total commercial landings as discussed under “Seafood Production” and total commercial revenue as presented under “Commercial Profits”).
 
-### Visualizations
+## Key Results and Visualizations
 TBD - recommend including a version of the plots or tables generated in the Technical Document / code that is linked. Pending finalization of the dataset for this year's report.
 
-```{r plot_hms_landingsMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(shadedRegion=c(2013,2022))
-print(ggplotObject)
-```
-```{r plot_hms_landingsNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+## Indicator statistics 
 Spatial scale: Regionally by EPU
 
 Temporal scale: Annual
@@ -50,7 +40,7 @@ Temporal scale: Annual
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 TBD – pending finalization of dataset for 2024 report
 
 ## Get the data
@@ -59,7 +49,9 @@ TBD – pending finalization of dataset for 2024 report
 
 **ecodata name**: `ecodata::hms_landings`
 
-**variable names**
+**Variable definitions**
+
+Year: data are summarized/aggregated by year. EPU: region, Mid Atlantic Bight (MAB) or New England (NE). HMS_Group: Management group for HMS, as defined below in “Data Processing”. Var: description of data, whether total landings or revenue. Units: description of unit of measure for data. Value: Represents either metric tons of landings or dollar value of landings by year and region.
 
 ```{r vars_hms_landings}
 # Pull all var names
@@ -78,11 +70,11 @@ DT::datatable(vars)
 - [X] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are NOT publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 Data that has been properly screened to meet data standards and confidentiality are publicly available via the Fisheries of the United States (FUS) landings portal. Canadian landings information, which are included in this analysis, are not included in the FUS portal (https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings). Data should be aggregated to protect data confidentiality (raw data are lumped by year and species). Please email jennifer.cudney@noaa.gov for further information and queries of source data.
 

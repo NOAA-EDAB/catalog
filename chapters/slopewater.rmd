@@ -19,23 +19,19 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 Temperature and salinity measurements are examined to assess the composition of the waters entering the Gulf of Maine through the deep Northeast Channel. The analysis closely follows the methodology described by David G. Mountain (2012a). This method assumes that the waters flowing into the Northeast Channel between 150 and 200 meters depth are composed of slope waters, originating offshore of the continental shelf, and shelf waters, originating on the continental shelf south of Nova Scotia.
 
-### Visualizations
+## Key Results and Visualizations
 _No response_
 
-```{r plot_slopewaterMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_slopewater(shadedRegion=c(2013,2022))
-print(ggplotObject)
-```
 ```{r plot_slopewaterNE}
 # Plot indicator
-ggplotObject <- ecodata::plot_slopewater(shadedRegion=c(2013,2022),report='NewEngland')
+ggplotObject <- ecodata::plot_slopewater(report='NewEngland')
 print(ggplotObject)
 ```
-### Indicator statistics 
+
+## Indicator statistics 
 Spatial scale: Within the central Northeast Channel
 
 Temporal scale: Annual
@@ -50,7 +46,7 @@ Temporal scale: Annual
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 _No response_
 
 ## Get the data
@@ -59,7 +55,9 @@ _No response_
 
 **ecodata name**: `ecodata::slopewater`
 
-**variable names**
+**Variable definitions**
+
+Name: LSW; Definition: Percent total that is Labrador Slope Water; Units: percent; Name: WSW: Definition: Percent total that is Warm Slope Water; Units: percent
 
 ```{r vars_slopewater}
 # Pull all var names
@@ -78,11 +76,11 @@ DT::datatable(vars)
 - [ ] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 _No response_
 

@@ -19,27 +19,17 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 We use total recreational harvest as an indicator of seafood production and total recreational trips and total recreational anglers as proxies for recreational value generated from the Mid-Atlantic and New England regions respectively. We estimate both recreational catch diversity in species managed by the Fisheries Management Councils; Mid-Atlantic (MAFMC), New England (NEFMC), South Atlantic (SAFMC) and Atlantic States (ASFMC), and fleet effort diversity using the effective Shannon index.
 
-### Visualizations
+## Key Results and Visualizations
 Total recreational harvest (retained fish presumed to be eaten) is down in the MAB. Although harvest has increased from a historic low in 2018, it is still below the long term average. Overall, recreational harvest (harvested fish presumed to be eaten) have also declined in New England. Recreational harvest in 2022 is up somewhat from the historical low seen in 2020.
 
 Recreational effort (angler trips) in New England increased during 1980-2010, but has since declined to just around the long-term average. Recreational fleets are defined as private vessels, shore-based fishing, or party-charter vessels. Recreational fleet diversity, or the relative importance of each fleet type, has remained relatively stable over the latter half of the time series in New England. In the Mid-Atlantic, recreational effort (angler trips) in 2022 is above the long-term average. However, recreational fleet diversity has declined over the long term. 
 
 In New England, recreational species catch diversity has been above the time series average since 2008 with a long-term positive trend. In the Mid-Atlantic, recreational species catch diversity has no long term trend so is considered stable, and has been at or above the long term average in 8 of the last 10 years.
 
-```{r plot_recdatMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_recdat(shadedRegion=c(2013,2022))
-print(ggplotObject)
-```
-```{r plot_recdatNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_recdat(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+## Indicator statistics 
 Spatial scale: MA and NE
 
 Temporal scale: Annual
@@ -54,7 +44,7 @@ Temporal scale: Annual
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 The decline in recreational seafood harvest in New England stems from multiple drivers. Changes in demographics and preferences over recreational activities likely play a role in non-HMS (Highly Migratory Species) declines in recreational harvest, with current harvests near the lowest in the time series. Drivers of the the decline in Mid-Atlantic recreational seafood harvest are unclear. NOAA Fisheries’ Marine Recreational Information Program survey methodology was updated in 2018, so it is unclear whether the record-low landings for species other than sharks in 2018 are driven by changes in fishing behavior
 or the change in the survey methodology. Nevertheless, the recreational harvest seems to be stabilizing at a lower level than historical estimates.
 
@@ -68,7 +58,13 @@ The increase in recreational species catch diversity in New England is due to re
 
 **ecodata name**: `ecodata::recdat`
 
-**variable names**
+**Variable definitions**
+
+Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1. 
+ 1) Name: Recreational Seafood; Definition: Recreational Harvest; Units: lbs 
+2) Name: Recreational Effort; Definition: Recreational Trips; Units: Angler Trips 
+3) Name: Recreational Effort Diversity; Definition: Recreational fleet effort diversity across modes; Units: Effective Shannon Metric 
+4) Name: Recreational Catch Diversity; Definition: Recreational Diversity of Catch across managed species; Units: Effective Shannon Metric
 
 ```{r vars_recdat}
 # Pull all var names
@@ -87,11 +83,11 @@ DT::datatable(vars)
 - [X] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 _No response_
 

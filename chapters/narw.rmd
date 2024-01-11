@@ -19,12 +19,12 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## What is this?
+## Indroduction to Indicator
 Endangered North Atlantic right whales are approaching extinction. The latest population estimate for the beginning of 2022 indicates there 356 individuals remaining. The species has been experiencing an Unusual Mortality Event since 2017, which is ongoing.
 
 Primary threats to the species—and primary drivers of the Unusual Mortality Event—are entanglement in fishing gear and vessel strikes. Climate change is also affecting every aspect of their survival. It is changing their ocean habitat, their migratory patterns, the location and availability of their prey, and even their risk of becoming entangled in fishing gear or struck by vessels.
 
-### Visualizations
+## Key Results and Visualizations
 The North Atlantic right whale population was on a recovery trajectory until 2010, but has since declined (Fig. x).
 The most recent estimate of total population size in 2022 was 356 whales, with a 95% credible interval ranging from 346 to 363. The population continues to be in decline since 2011, though the short-term trend is equivocal due to the recent increase in survival. Reduced survival rates of adult females and diverging abundance trends between sexes have also been observed. 
 
@@ -33,17 +33,7 @@ North Atlantic right whale calf counts have generally declined after 2009 to the
 This year, the Unusual Mortality Event (UME) for North Atlantic right whales continued. Since 2017, the total
 UME right whale mortalities includes 35 dead stranded whales, 14 in the US and 21 in Canada. When alive but seriously injured whales (22) and sublethal injuries or ill whales (37) are taken into account, 94 individual whales are included in the UME. Recent research suggests that many mortalities go unobserved and the true number of mortalities are about three times the count of the observed mortalities [3]. The primary cause of death is “human interaction” from entanglements or vessel strikes.
 
-```{r plot_narwMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_narw(shadedRegion=c(2013,2022))
-print(ggplotObject)
-```
-```{r plot_narwNE}
-# Plot indicator
-ggplotObject <- ecodata::plot_narw(shadedRegion=c(2013,2022),report='NewEngland')
-print(ggplotObject)
-```
-### Indicator statistics 
+## Indicator statistics 
 Spatial scale: Full shelf and farther offshore corresponding to all EPUs and beyond
 
 Temporal scale: Annual 1990 - 2022
@@ -58,7 +48,7 @@ Temporal scale: Annual 1990 - 2022
 # Either from Contributor or ecodata
 ```
 
-### Implications
+## Implications
 Strong evidence exists to suggest that interactions between right whales and both the fixed gear fisheries in the U.S. and Canada and vessel strikes in the U.S. are contributing substantially to the decline of the species [5]. Further, right whale distribution has changed since 2010. New research suggests that recent climate driven changes in ocean circulation have resulted in right whale distribution changes driven by increased warm water influx through the Northeast Channel, which has reduced the primary right whale prey (Calanus fnmarchicus) in the central and eastern portions of the Gulf of Maine [5–7]. Additional potential stressors include offshore wind development, which overlaps with important habitat areas used year-round by right whales, including mother and calf migration corridors and foraging habitat [8,9]. This area is also a primary right whale winter foraging habitat. Additional information can be found in the offshore wind section.
 
 The UMEs are under investigation and are likely the result of multiple drivers. For all large whale UMEs, human interaction appears to have contributed to increased mortalities, although investigations are not complete.
@@ -69,7 +59,16 @@ The UMEs are under investigation and are likely the result of multiple drivers. 
 
 **ecodata name**: `ecodata::narw`
 
-**variable names**
+**Variable definitions**
+
+"Palka_NARW_abundance_2023_10_02.csv 1)	Year.  
+2) lower95 = lower 95% confidence interval value in number of animals.  
+3) Median=median estimate of right whale abundance in number of animals.  
+4) Upper95= upper 95% confidence interval value in number of animals.   
+5) Mean= mean estimate of right whale abundance in number of animals.   
+6) SD=standard deviation of estimate of right whale abundance in number of animals.  
+Palka_NARW_Calves_1980_2023.csv 1)	Year.  
+2) Tot.Calves = total number of right whale calves born that year in number of animals. "
 
 ```{r vars_narw}
 # Pull all var names
@@ -88,11 +87,11 @@ DT::datatable(vars)
 - [ ] Database pull with analysis
 - [ ] Other
 
-### Public Availability
+## Public Availability
 
 Source data are publicly available.
 
-### Accessibility and Contraints
+## Accessibility and Contraints
 
 Source data are available from the New England Aquarium upon request. Estimates and derived source data available in Linden 2023.
 
