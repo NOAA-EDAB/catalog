@@ -25,11 +25,14 @@ Temperature and salinity measurements are examined to assess the composition of 
 ## Key Results and Visualizations
 _No response_
 
+### NE
+
 ```{r plot_slopewaterNE}
 # Plot indicator
 ggplotObject <- ecodata::plot_slopewater(report='NewEngland')
 print(ggplotObject)
 ```
+
 
 ## Indicator statistics 
 Spatial scale: Within the central Northeast Channel

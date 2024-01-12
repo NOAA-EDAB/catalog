@@ -25,17 +25,22 @@ The bottom temperature index incorporates near-bottom temperature measurements c
 ## Key Results and Visualizations
 _No response_
 
+### MAB
+
 ```{r plot_bottom_tempMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp(report='MidAtlantic')
 print(ggplotObject)
 ```
 
+### NE
+
 ```{r plot_bottom_tempNE}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp(report='NewEngland')
 print(ggplotObject)
 ```
+
 
 ## Indicator statistics 
 Spatial scale: by EPU

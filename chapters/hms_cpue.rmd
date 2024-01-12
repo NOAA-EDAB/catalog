@@ -25,6 +25,35 @@ The Pelagic Observer Program (POP) is operated out of the Southeast Fisheries Sc
 ## Key Results and Visualizations
 TBD; data may not be correctly displayed in graphs.
 
+### MidAtlantic
+
+```{r plot_hms_cpueMidAtlanticshark}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_cpue(report= 'MidAtlantic', varName= 'shark')
+print(ggplotObject)
+```
+
+```{r plot_hms_cpueMidAtlantictuna}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_cpue(report= 'MidAtlantic', varName= 'tuna')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_hms_cpueNewEnglandshark}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_cpue(report= 'NewEngland', varName= 'shark')
+print(ggplotObject)
+```
+
+```{r plot_hms_cpueNewEnglandtuna}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_cpue(report= 'NewEngland', varName= 'tuna')
+print(ggplotObject)
+```
+
+
 ## Indicator statistics 
 Spatial scale: Data are extracted from the MAB and NEC fishing areas (see "Fishing Areas" figure)
 

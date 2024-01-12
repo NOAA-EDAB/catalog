@@ -25,6 +25,35 @@ The ratio of total estimates catch (landings and dead discards) compared to the 
 ## Key Results and Visualizations
 Catch divided by ABC/ACL for MAFMC managed fisheries. Red line indicates the median ratio across all fisheries. A secondary figure is also produced that provides the sum of catch limits across all MAFMC managed commercial (C) and recreational (R) fisheries.
 
+### MidAtlantic
+
+```{r plot_abc.aclMidAtlanticStacked}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc.acl(report= 'MidAtlantic', plottype= 'Stacked')
+print(ggplotObject)
+```
+
+```{r plot_abc.aclMidAtlanticCatch}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc.acl(report= 'MidAtlantic', plottype= 'Catch')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_abc.aclNewEnglandStacked}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc.acl(report= 'NewEngland', plottype= 'Stacked')
+print(ggplotObject)
+```
+
+```{r plot_abc.aclNewEnglandCatch}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc.acl(report= 'NewEngland', plottype= 'Catch')
+print(ggplotObject)
+```
+
+
 ## Indicator statistics 
 Spatial scale: Cape Hatteras, NC north to Maine
 

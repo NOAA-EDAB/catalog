@@ -27,6 +27,83 @@ These indicators are based on the work of Charles Perretti et al. (2017). We upd
 ## Key Results and Visualizations
 The small fish per large fish anomaly indicator, derived from NEFSC bottom trawl survey data, shows that productivity has been declining in the Mid-Atlantic region since 2010.  A similar analysis based on stock assessment model outputs (recruitment per spawning stock biomass anomaly) for stocks primarily inhabiting the Mid-Atlantic region also shows a decline in productivity. The indicators show great variability in the Gulf of Maine and Georges Bank, with both regions being below average for much of the past decade.
 
+### MidAtlantic
+
+```{r plot_productivity_anomalyMidAtlanticanomalyMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'anomaly' ,EPU= 'MAB')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyMidAtlanticanomalyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'anomaly' ,EPU= 'GB')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyMidAtlanticanomalyGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'anomaly' ,EPU= 'GOM')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyMidAtlanticassessmentMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'assessment' ,EPU= 'MAB')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyMidAtlanticassessmentGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'assessment' ,EPU= 'GB')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyMidAtlanticassessmentGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'assessment' ,EPU= 'GOM')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_productivity_anomalyNewEnglandanomalyMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'MAB')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyNewEnglandanomalyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'GB')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyNewEnglandanomalyGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'GOM')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyNewEnglandassessmentMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'assessment' ,EPU= 'MAB')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyNewEnglandassessmentGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'assessment' ,EPU= 'GB')
+print(ggplotObject)
+```
+
+```{r plot_productivity_anomalyNewEnglandassessmentGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'assessment' ,EPU= 'GOM')
+print(ggplotObject)
+```
+
+
 ## Indicator statistics 
 Spatial scale: _No response_
 
@@ -53,8 +130,7 @@ The apparent decline in productivity across multiple managed species in the MAB,
 
 **Variable definitions**
 
-Variable names are organized using this format: 
-[region] stock name - variable type and source  
+Variable names are organized using this format: [region] stock name - variable type and source  
 Variables ending with "_Survey" are survey derived recruits/spawner anomalies 
 Variables ending with "-Assessment" are assessment derived quantities 
 Survey stock names are in ALL CAPS 

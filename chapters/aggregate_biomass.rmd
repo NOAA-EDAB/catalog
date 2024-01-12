@@ -49,6 +49,7 @@ ggplotObject <- ecodata::plot_aggregate_biomass(report='NewEngland',EPU='GOM')
 print(ggplotObject)
 ```
 
+
 ## Indicator statistics 
 Spatial scale: By EPU
 

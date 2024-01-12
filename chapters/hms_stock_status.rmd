@@ -30,6 +30,8 @@ TBD – we have a meeting in mid-November to finalize decisions regarding this c
 ggplotObject <- ecodata::plot_hms_stock_status(report='MidAtlantic')
 print(ggplotObject)
 ```
+
+
 ## Indicator statistics 
 Spatial scale: North Atlantic basin; full shelf
 

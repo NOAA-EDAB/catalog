@@ -29,6 +29,83 @@ Phytoplankton are the foundation of the marine food web and are the primary food
 ## Key Results and Visualizations
 (In development)
 
+### MidAtlantic
+
+```{r plot_chl_ppMidAtlanticchlweekly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'weekly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppMidAtlanticchlmonthly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'monthly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppMidAtlanticchlanomaly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'anomaly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppMidAtlanticppweekly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'weekly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppMidAtlanticppmonthly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'monthly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppMidAtlanticppanomaly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'anomaly')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_chl_ppNewEnglandchlweekly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'weekly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppNewEnglandchlmonthly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'monthly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppNewEnglandchlanomaly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'anomaly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppNewEnglandppweekly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'weekly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppNewEnglandppmonthly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'monthly')
+print(ggplotObject)
+```
+
+```{r plot_chl_ppNewEnglandppanomaly}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'anomaly')
+print(ggplotObject)
+```
+
+
 ## Indicator statistics 
 Spatial scale: By EPU and gridded for the entire shelf
 

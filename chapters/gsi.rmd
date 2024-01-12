@@ -30,6 +30,8 @@ The Gulf Stream Index suggest that recent years (2021-2022) the GS almost mainta
 ggplotObject <- ecodata::plot_gsi(report='MidAtlantic')
 print(ggplotObject)
 ```
+
+
 ## Indicator statistics 
 Spatial scale: Gulf Stream between 74°W and 55°W
 

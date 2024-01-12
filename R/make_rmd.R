@@ -53,6 +53,8 @@ make_rmd <- function(listobject){
   ### rchunk code to run plot functions from ecodata
   # gets a bit messy trying to check for function arguments
   # Find the names of the arguments to the function
+  at <- attributes(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname))))
+  
   functionArgs <- names(formals(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname)))))
   if (length(functionArgs) == 2) {
     # this is standard shadedRegion and report
@@ -124,9 +126,93 @@ make_rmd <- function(listobject){
     cat("",append=T,fill=T,file=con) # add space
     
         
+  } 
+  
+  if (length(at) == 3 & ("varName" %in% names(at)) ){
+    # make all plots of varName and report
+    for (arep in at$report) {
+      cat(paste0("### ",arep),append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      for (avar in at$varName) {
+        avarws <- gsub("\\s", "", avar)  
+        # create varName plots
+        cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,"}"),append=T,fill=T,file=con)
+        cat("# Plot indicator",append=T,fill=T,file=con)
+        cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"')"),append=T,fill=T,file=con)
+        cat("print(ggplotObject)",append=T,fill=T,file=con)
+        cat("```",append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+      }
+    }
+    
   }
   
+  if (length(at) == 3 & ("plottype" %in% names(at)) ){
+    # make all plots of plottype and report
+    for (arep in at$report) {
+      cat(paste0("### ",arep),append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      for (avar in at$plottype) {
+        avarws <- gsub("\\s", "", avar)  # remov whitespace from name
+        # create varName plots
+        cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,"}"),append=T,fill=T,file=con)
+        cat("# Plot indicator",append=T,fill=T,file=con)
+        cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', plottype= '",avar,"')"),append=T,fill=T,file=con)
+        cat("print(ggplotObject)",append=T,fill=T,file=con)
+        cat("```",append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+   
+      }
+    }
+    
+  }
 
+  if (length(at) == 4 & ("varName" %in% names(at)) ){
+    newV <- names(at)[which(!(names(at) %in% c("varName","srcref","report")))]
+    newVals <- at[[newV]]
+    # make all plots of plottype and report
+    for (arep in at$report) {
+      cat(paste0("### ",arep),append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      
+      for (avar in at$varName) {
+      
+        for (aval in newVals) {
+          avarws <- gsub("\\s", "", avar)  # remov whitespace from name
+          # create varName plots
+          cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,aval,"}"),append=T,fill=T,file=con)
+          cat("# Plot indicator",append=T,fill=T,file=con)
+          cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"' ,",newV,"= '",aval,"')"),append=T,fill=T,file=con)
+          cat("print(ggplotObject)",append=T,fill=T,file=con)
+          cat("```",append=T,fill=T,file=con)
+          cat("",append=T,fill=T,file=con) # add space
+          
+        }
+      }
+    }
+  }
+  
+  if (length(at) > 4 & (all(c("varName","plottype") %in% names(at))) ) {
+      # make all plots of plottype and report
+      for (arep in at$report) {
+        cat(paste0("### ",arep),append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+        for (avar in at$varName) {
+          for (atype in at$plottype) {
+            avarws <- gsub("\\s", "", avar)  # remov whitespace from name
+            # create varName plots
+            cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,atype,"}"),append=T,fill=T,file=con)
+            cat("# Plot indicator",append=T,fill=T,file=con)
+            cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"', plottype = '",atype,"')"),append=T,fill=T,file=con)
+            cat("print(ggplotObject)",append=T,fill=T,file=con)
+            cat("```",append=T,fill=T,file=con)
+            cat("",append=T,fill=T,file=con) # add space
+            
+          }
+        }
+      }
+    }
+  
   
   
   ### SPATIAL + TEMPORAL SCALE

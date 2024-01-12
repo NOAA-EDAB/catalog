@@ -25,6 +25,15 @@ The cold pool is seasonal feature in the Mid-Atlantic Bight that is defined by i
 ## Key Results and Visualizations
 Time series plots of the three cold pool indices. Cold pool index shows the mean temperature within the cold pool where positive values indicate a warming cold pool. Cold pool extent shows the change in maximum area relative to the historical mean, where negative values indicate a shrinking cold pool. Cold pool persistence measures the duration of the cold pool relative to the historical mean. Negative values indicate a shorter duration. In general the cold pool has been getting warmer, has persisted for a shorter duration, and has covered a smaller footprint since the 1960s.
 
+### MAB
+
+```{r plot_cold_poolMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_cold_pool(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
 ## Indicator statistics 
 Spatial scale: MAB
 

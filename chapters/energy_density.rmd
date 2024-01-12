@@ -30,6 +30,8 @@ Variable plotted are the mean energy density (kJ/g) for eight species across sea
 ggplotObject <- ecodata::plot_energy_density(report='MidAtlantic')
 print(ggplotObject)
 ```
+
+
 ## Indicator statistics 
 Spatial scale: Full shelf
 

@@ -26,6 +26,35 @@ E(S<sub>n</sub>) will predict the number of species consumed.
 ## Key Results and Visualizations
 Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas.  The only apparent trend in the data is from the Albatross time period in the Gulf of Maine.
 
+### MidAtlantic
+
+```{r plot_exp_nMidAtlanticfall}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'fall')
+print(ggplotObject)
+```
+
+```{r plot_exp_nMidAtlanticspring}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'spring')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_exp_nNewEnglandfall}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'fall')
+print(ggplotObject)
+```
+
+```{r plot_exp_nNewEnglandspring}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'spring')
+print(ggplotObject)
+```
+
+
 ## Indicator statistics 
 Spatial scale: By EPU
 

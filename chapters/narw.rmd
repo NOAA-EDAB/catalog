@@ -33,6 +33,35 @@ North Atlantic right whale calf counts have generally declined after 2009 to the
 This year, the Unusual Mortality Event (UME) for North Atlantic right whales continued. Since 2017, the total
 UME right whale mortalities includes 35 dead stranded whales, 14 in the US and 21 in Canada. When alive but seriously injured whales (22) and sublethal injuries or ill whales (37) are taken into account, 94 individual whales are included in the UME. Recent research suggests that many mortalities go unobserved and the true number of mortalities are about three times the count of the observed mortalities [3]. The primary cause of death is “human interaction” from entanglements or vessel strikes.
 
+### MidAtlantic
+
+```{r plot_narwMidAtlanticadult}
+# Plot indicator
+ggplotObject <- ecodata::plot_narw(report= 'MidAtlantic', varName= 'adult')
+print(ggplotObject)
+```
+
+```{r plot_narwMidAtlanticcalf}
+# Plot indicator
+ggplotObject <- ecodata::plot_narw(report= 'MidAtlantic', varName= 'calf')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_narwNewEnglandadult}
+# Plot indicator
+ggplotObject <- ecodata::plot_narw(report= 'NewEngland', varName= 'adult')
+print(ggplotObject)
+```
+
+```{r plot_narwNewEnglandcalf}
+# Plot indicator
+ggplotObject <- ecodata::plot_narw(report= 'NewEngland', varName= 'calf')
+print(ggplotObject)
+```
+
+
 ## Indicator statistics 
 Spatial scale: Full shelf and farther offshore corresponding to all EPUs and beyond
 
@@ -66,9 +95,10 @@ The UMEs are under investigation and are likely the result of multiple drivers. 
 3) Median=median estimate of right whale abundance in number of animals.  
 4) Upper95= upper 95% confidence interval value in number of animals.   
 5) Mean= mean estimate of right whale abundance in number of animals.   
-6) SD=standard deviation of estimate of right whale abundance in number of animals.  
-Palka_NARW_Calves_1980_2023.csv 1)	Year.  
-2) Tot.Calves = total number of right whale calves born that year in number of animals. "
+6) SD=standard deviation of estimate of right whale abundance in number of animals. 
+ Palka_NARW_Calves_1980_2023.csv 1)	Year.  
+2) Tot.Calves = total number of right whale calves born that year in number of animals. 
+"
 
 ```{r vars_narw}
 # Pull all var names

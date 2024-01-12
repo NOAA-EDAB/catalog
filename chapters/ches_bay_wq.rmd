@@ -39,11 +39,14 @@ Zhang Q, Murphy RR, Tian R, Forsyth MK, Trentacoste EM, Keisman J, et al. Chesap
 ## Key Results and Visualizations
 The indicator provides an integrated measure of Chesapeake Bay’s water quality condition (Figure 1). In 2019-2021, 28.1% of all tidal water segment-DU-criterion combinations are estimated to have met or exceeded applicable water quality criteria thresholds. Overall, the indicator has a positive and statistically significant trend between 1985-1987 and 2019-2021, which shows that Chesapeake Bay is on a positive trajectory toward recovery. This pattern has been statistically linked to total nitrogen reduction, indicating responsiveness of attainment status to management actions implemented to reduce nutrients (Zhang et al., 2018).
 
+### MAB
+
 ```{r plot_ches_bay_wqMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_ches_bay_wq(report='MidAtlantic')
 print(ggplotObject)
 ```
+
 
 ## Indicator statistics 
 Spatial scale: Chesapeake Bay
@@ -72,7 +75,8 @@ Patterns of attainment of individual designated uses are variable (Figure 2). Ac
 **Variable definitions**
 
 Period: Assessment period Year 1: Starting year of the assessment period 
-Year 2: Ending year of the assessment period Total: The overall attainment indicator 
+Year 2: Ending year of the assessment period 
+Total: The overall attainment indicator 
 MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 
 OW-DO: Estimated attainment of the dissolved oxygen criterion for the open water designated use 
 DW-DO: Estimated attainment of the dissolved oxygen criterion for the deep water designated use 

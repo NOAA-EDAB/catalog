@@ -25,17 +25,22 @@ The amount of forage fish available in the ecosystem combined with the energy co
 ## Key Results and Visualizations
 Variables plotted are Fall Forage Fish Biomass Estimate and Spring Forage Fish Biomass Estimate with error bands from Fall Forage Fish Biomass Estimate SE and Spring Forage Fish Biomass Estimate SE, respectively. Time series were extended back to 1982 and forward to 2022 in this update, but this did not change trends reported previously for 1985-2021.
 
+### MAB
+
 ```{r plot_forage_indexMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_forage_index(report='MidAtlantic')
 print(ggplotObject)
 ```
 
+### NE
+
 ```{r plot_forage_indexNE}
 # Plot indicator
 ggplotObject <- ecodata::plot_forage_index(report='NewEngland')
 print(ggplotObject)
 ```
+
 
 ## Indicator statistics 
 Spatial scale: by EPU and full shelf

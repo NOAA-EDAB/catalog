@@ -28,6 +28,47 @@ Diversity estimates have been developed for species landed by commercial vessels
 Commercial fishery fleet count and fleet diversity have been stable over time in the MAB, with current values near the long-term
 average (Fig. 15). This indicates similar commercial fleet composition and species targeting opportunities over time. Commercial fisheries are relying on fewer species relative to the mid-90s, although current species revenue diversity has recovered somewhat in the last year (Fig. 16).
 
+### MidAtlantic
+
+```{r plot_commercial_divMidAtlanticFleetcount}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet count')
+print(ggplotObject)
+```
+
+```{r plot_commercial_divMidAtlanticFleetdiversityinrevenue}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet diversity in revenue')
+print(ggplotObject)
+```
+
+```{r plot_commercial_divMidAtlanticPermitrevenuespeciesdiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Permit revenue species diversity')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_commercial_divNewEnglandFleetcount}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet count')
+print(ggplotObject)
+```
+
+```{r plot_commercial_divNewEnglandFleetdiversityinrevenue}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet diversity in revenue')
+print(ggplotObject)
+```
+
+```{r plot_commercial_divNewEnglandPermitrevenuespeciesdiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Permit revenue species diversity')
+print(ggplotObject)
+```
+
+
 ## Indicator statistics 
 Spatial scale: MA and NE
 

@@ -49,6 +49,7 @@ ggplotObject <- ecodata::plot_thermal_habitat_area(report='NewEngland',EPU='GOM'
 print(ggplotObject)
 ```
 
+
 ## Indicator statistics 
 Spatial scale: EPU
 

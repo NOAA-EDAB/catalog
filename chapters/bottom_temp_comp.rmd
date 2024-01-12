@@ -29,17 +29,22 @@ Anomalies are calculated using the 1990-2020 reference period.
 ## Key Results and Visualizations
 Time series plots for seasonal bottom temperature anomaly for each EPU shows a long-term warming trend. PSY forecasted data also included for comparison and indicates varying skill in predicting regional bottom temperature.
 
+### MAB
+
 ```{r plot_bottom_temp_compMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_comp(report='MidAtlantic')
 print(ggplotObject)
 ```
 
+### NE
+
 ```{r plot_bottom_temp_compNE}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_comp(report='NewEngland')
 print(ggplotObject)
 ```
+
 
 ## Indicator statistics 
 Spatial scale: EPU

@@ -7,7 +7,7 @@ rmd_files: ["index.Rmd",
 "chapters/SAV.rmd",
 
 "chapters/sectionHeaders/megafauna.rmd",
-"chapters/comdat.Rmd",
+"chapters/comdat.rmd",
 "chapters/aggregate_biomass.rmd",
 "chapters/condition.rmd",
 "chapters/energy_density.rmd",

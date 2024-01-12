@@ -60,6 +60,7 @@ ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GOM')
 print(ggplotObject)
 ```
 
+
 ## Indicator statistics 
 Spatial scale: The spatial scale for relative condition was on the EPU level.
 

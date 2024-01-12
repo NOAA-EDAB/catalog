@@ -35,6 +35,7 @@ ggplotObject <- ecodata::plot_stock_status(report='MidAtlantic')
 print(ggplotObject)
 ```
 
+
 ## Indicator statistics 
 Spatial scale: Stock-specific spatial scale, reported by Council
 
