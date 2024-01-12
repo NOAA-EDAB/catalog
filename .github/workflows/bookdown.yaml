@@ -2,7 +2,7 @@ name: bookdown
 
 on:
   push:
-    branches: master
+    branches: [master, operation_phoenix]
 
 
 jobs:
