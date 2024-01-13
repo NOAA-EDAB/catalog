@@ -223,6 +223,6 @@ Plankton consisting of small animals and the immature stages of larger animals, 
 
 
 ```{r neusmap1, message = FALSE, warning=FALSE, fig.align='center', fig.height=6, echo = F, fig.cap='(ref:neusmap)'}
-knitr::include_graphics(here::here("images/journal.pone.0146756.g002.PNG"))
+knitr::include_graphics("images/journal.pone.0146756.g002.PNG")
  
 ```
