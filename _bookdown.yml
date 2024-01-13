@@ -17,7 +17,7 @@ rmd_files: ["index.Rmd",
 "chapters/hms_landings.rmd",
 "chapters/hms_stock_status.rmd",
 "chapters/narw.rmd",
-"chapters/productivity_anomaly.rmd",
+#"chapters/productivity_anomaly.rmd",
 "chapters/seal_pups.rmd",
 
 "chapters/sectionHeaders/oceanographic.rmd",
