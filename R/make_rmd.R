@@ -245,7 +245,7 @@ make_rmd <- function(listobject){
   cat("",append=T,fill=T,file=con) # add space
   
   ### CONTACT PERSON
-  cat(paste0("**Point of contact**: [",listobject$poc,"](",listobject$poc,"){.email}"),append=T,fill=T,file=con)
+  cat(paste0("**Point of contact**: [",listobject$poc,"](mailto:",listobject$poc,"){.email}"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
   cat(paste0("**ecodata name**: `ecodata::",listobject$indicatorname,"`"),append=T,fill=T,file=con)
