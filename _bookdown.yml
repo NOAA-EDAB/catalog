@@ -41,6 +41,7 @@ rmd_files:
 
     -   "chapters/glossary.Rmd"
     -   "chapters/references.Rmd"
-delete_merged_file: false
+before_chapter_script: _common.R
+delete_merged_file: true
 output_dir: "_book"
-new_session: false # merge and knit as appose to knit and merge
+new_session: false #(if true all rmds need to be in root folder)

@@ -3,15 +3,12 @@ title: "Synthetic Indicator Catalogue"
 author: "Northeast Fisheries Science Center"
 date: "`r format(Sys.Date(), '%e %B %Y')`"
 site: bookdown::bookdown_site
-knit: "bookdown::render_book"
-#output: gitbook
-output: bookdown::bs4_book
-always_allow_html: true
 documentclass: book
 bibliography: 
     -   bibliography/introduction.bib
-geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
-#biblio-style: apalike
+#geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
+biblio-style: apalike
+csl: chicago-fullnote-bibliography.csl
 link-citations: true
 github-repo: NOAA-EDAB/catalog
 url: https://noaa-edab.github.io/catalog/
@@ -41,8 +38,6 @@ knitr::opts_chunk$set(echo = F,
 
  library(magrittr)
  library(dplyr)
-
-
  library(sf)
 
 
