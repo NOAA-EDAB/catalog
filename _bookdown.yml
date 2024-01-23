@@ -1,48 +1,47 @@
 book_filename: "catalog"
-rmd_files: ["index.Rmd",
-"chapters/sectionHeaders/ltl.rmd",
-"chapters/ches_bay_wq.rmd",
-"chapters/chl_pp.rmd",
-"chapters/habs.rmd",
-"chapters/SAV.rmd",
+rmd_files: 
+    -   "index.Rmd"
+    -   "chapters/sectionHeaders/ltl.rmd" 
+    -   "chapters/ches_bay_wq.rmd" 
+    -   "chapters/chl_pp.rmd" 
+    -   "chapters/habs.rmd" 
+    -   "chapters/SAV.rmd" 
 
-"chapters/sectionHeaders/megafauna.rmd",
-"chapters/comdat.rmd",
-"chapters/aggregate_biomass.rmd",
-"chapters/condition.rmd",
-"chapters/energy_density.rmd",
-"chapters/exp_n.rmd",
-"chapters/forage_index.rmd",
-"chapters/hms_cpue.rmd",
-"chapters/hms_landings.rmd",
-"chapters/hms_stock_status.rmd",
-"chapters/narw.rmd",
-#"chapters/productivity_anomaly.rmd",
-"chapters/seal_pups.rmd",
+    -   "chapters/sectionHeaders/megafauna.rmd" 
+    -   "chapters/comdat.rmd" 
+    -   "chapters/aggregate_biomass.rmd" 
+    -   "chapters/condition.rmd" 
+    -   "chapters/energy_density.rmd" 
+    -   "chapters/exp_n.rmd" 
+    -   "chapters/forage_index.rmd" 
+    -   "chapters/hms_cpue.rmd" 
+    -   "chapters/hms_landings.rmd" 
+    -   "chapters/hms_stock_status.rmd" 
+    -   "chapters/narw.rmd" 
+     #"chapters/productivity_anomaly.rmd" 
+    -   "chapters/seal_pups.rmd" 
 
-"chapters/sectionHeaders/oceanographic.rmd",
-"chapters/bottom_temp.rmd",
-"chapters/bottom_temp_comp.rmd",
-#"chapters/bottom_temp_glorys.rmd",
-#"chapters/bottom_temp_seasonal_gridded.rmd",
-"chapters/cold_pool.rmd",
-"chapters/gsi.rmd",
-"chapters/slopewater.rmd",
-"chapters/thermal_habitat_area.rmd",
-"chapters/thermal_habitat_persistence.rmd",
+    -   "chapters/sectionHeaders/oceanographic.rmd"
+    -   "chapters/bottom_temp.rmd" 
+    -   "chapters/bottom_temp_comp.rmd"
+#"chapters/bottom_temp_glorys.rmd" 
+#"chapters/bottom_temp_seasonal_gridded.rmd" 
+    -   "chapters/cold_pool.rmd"
+    -   "chapters/gsi.rmd"
+    -   "chapters/slopewater.rmd"
+    -   "chapters/thermal_habitat_area.rmd"
+    -   "chapters/thermal_habitat_persistence.rmd"
 
-"chapters/sectionHeaders/economic.rmd",
-"chapters/commercial_div.rmd",
-"chapters/ppr.rmd",
-"chapters/recdat.rmd",
-"chapters/abc.acl.rmd",
-"chapters/stock_status.rmd",
+    -   "chapters/sectionHeaders/economic.rmd"
+    -   "chapters/commercial_div.rmd"
+    -   "chapters/ppr.rmd"
+    -   "chapters/recdat.rmd"
+    -   "chapters/abc.acl.rmd"
+    -   "chapters/stock_status.rmd"
 
-
-
-
-"chapters/glossary.Rmd",
-"chapters/references.Rmd"]
-delete_merged_file: false
+    -   "chapters/glossary.Rmd"
+    -   "chapters/references.Rmd"
+before_chapter_script: _common.R
+delete_merged_file: true
 output_dir: "_book"
-new_session: false # merge and knit as appose to knit and merge
+new_session: false #(if true all rmds need to be in root folder)

@@ -3,15 +3,15 @@ title: "Synthetic Indicator Catalogue"
 author: "Northeast Fisheries Science Center"
 date: "`r format(Sys.Date(), '%e %B %Y')`"
 site: bookdown::bookdown_site
-knit: "bookdown::render_book"
-output: gitbook
-always_allow_html: true
 documentclass: book
-bibliography: ["bibliography/introduction.bib"]
-geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
-#biblio-style: apalike
+bibliography: 
+    -   bibliography/introduction.bib
+#geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
+biblio-style: apalike
+csl: chicago-fullnote-bibliography.csl
 link-citations: true
 github-repo: NOAA-EDAB/catalog
+url: https://noaa-edab.github.io/catalog/
 description: "This catalogue holds information on available datasets and indicators."
 ---
 
@@ -38,8 +38,6 @@ knitr::opts_chunk$set(echo = F,
 
  library(magrittr)
  library(dplyr)
-
-
  library(sf)
 
 
@@ -47,7 +45,7 @@ knitr::opts_chunk$set(echo = F,
 
 (ref:neusmap) Map of Northeast U.S. Continental Shelf Large Marine Ecosystem from @Hare2016.
 
-```{r neusmap, message = FALSE, warning=FALSE, fig.align='center', fig.height=6, echo = F, fig.cap='(ref:neusmap)'}
+```{r neusmap, message = FALSE, warning=FALSE, fig.align='center', echo = F, fig.cap='(ref:neusmap)'}
 knitr::include_graphics("images/journal.pone.0146756.g002.PNG")
 
 ```

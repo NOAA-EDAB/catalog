@@ -1,14 +1,19 @@
-# abc.acl
+# abc_acl
 
 **Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [X] Social
+- [ ] Oceanographic
+
+- [ ] Habitat
+
+- [ ] Lower trophic levels
+
+- [ ] Megafauna
+
+- [X] Social
+
 - [X] Economic
 
 **Contributor(s)**: Brandon Muffley, Jason, Didden, Julia Beaty, Jose Montanez, Karson Cisneros, Jessica Coakley, Hannah Hart, Kiley Dancy
@@ -61,8 +66,10 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
+- [X] Multiple System Drivers
+
+- [ ] Regime Shifts
+
 - [ ] Ecosystem Reorganization
 
 ```{r autostats_abc.acl}
@@ -80,8 +87,10 @@ Need to write later once updated data has been added to the data file.
 
 **Variable definitions**
 
-Catch - definition: total landings and dead discards; units - metric tons (MT) 
-Acceptable biological catch (ABC) - the annual catch level recommended for a stock or stock complex by the Scientific and Statistical Committee that could be equal to or less than the Overfishing Limit (OFL); units - metric tons (MT) 
+Catch - definition: total landings and dead discards; units - metric tons (MT)
+ 
+Acceptable biological catch (ABC) - the annual catch level recommended for a stock or stock complex by the Scientific and Statistical Committee that could be equal to or less than the Overfishing Limit (OFL); units - metric tons (MT)
+ 
 Annual Catch Limit (ACL) - sector specific total catch limits which can be equal to or less than the ABC; units - metric tons (MT)
 
 ```{r vars_abc.acl}
@@ -94,11 +103,16 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [ ] Published Methods
-- [ ] Extensive analysis, not yet published
-- [ ] Syntheses of published information
-- [ ] Database pull
-- [ ] Database pull with analysis
+- [ ] Published Methods
+
+- [ ] Extensive analysis, not yet published
+
+- [ ] Syntheses of published information
+
+- [ ] Database pull
+
+- [ ] Database pull with analysis
+
 - [X] Other
 
 **Indicator Category**:
