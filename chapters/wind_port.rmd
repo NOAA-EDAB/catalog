@@ -1,0 +1,102 @@
+# Community Port Landings and Revenue from Wind Energy Areas (WEAs)
+
+**Description**: NA
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [X] Social
+- [X] Economic
+
+**Contributor(s)**: Angela Silva, Doug Christel
+
+**Affiliations**: ?
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+NA
+
+## Key Results and Visualizations
+NA
+
+### MAB
+
+```{r plot_wind_portMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_port(report='MidAtlantic')
+print(ggplotObject)
+```
+
+### NE
+
+```{r plot_wind_portNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_port(report='NewEngland')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Full Shelf, broken down into Mid-Atlantic and New England communities
+
+Temporal scale: 2008-2022
+
+**Synthesis Theme**:
+
+- [ ] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_wind_port}
+# Either from Contributor or ecodata
+```
+
+## Implications
+NA
+
+## Get the data
+
+**Point of contact**: [Angela Silva (angela.silva@noaa.gov)](mailto:Angela Silva (angela.silva@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::wind_port`
+
+**Variable definitions**
+
+NA
+
+```{r vars_wind_port}
+# Pull all var names
+vars <- ecodata::wind_port |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [X] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/wind_port.html>
+
+## References
+

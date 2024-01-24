@@ -1,0 +1,99 @@
+# Harbor Porpoise Bycatch
+
+**Description**: The data presented here are time series of the species specific estimates of bycatch from U.S. North Atlantic commercial fisheries.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [X] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Debra Palka, Kristen Procoda, Marjorie Lyssikatos, Kimberly Murray
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Protected species include marine mammals protected under the Marine Mammal Protection Act, endangered and threatened species protected under the Endangered Species Act, and migratory birds protected under the Migratory Bird Treaty Act. In the Northeast U.S., endangered/threatened species include Atlantic salmon, Atlantic and shortnose sturgeon, all sea turtle species, and five baleen whales. Northeast U.S. marine mammals that are protected under currently active Take Reduction Teams under the Marine Mammal Protection Act include harbor porpoises, bottlenose dolphins, pilot whales, North Atlantic right whales and humpback whales. Fishery management objectives for protected species generally focus on reducing threats and on habitat conservation/restoration. Protected species objectives include managing bycatch to remain below potential biological removal (PBR) thresholds, recovering endangered populations, and monitoring unusual mortality events (UMEs). Here we report on the status of these actions as well as indicating the potential for future interactions driven by observed and predicted ecosystem changes in the Northeast U.S.
+
+## Key Results and Visualizations
+For each marine mammal species, variables plotted are the total estimated bycatch from all U.S. North Atlantic commercial fisheries by year (Fig. x). In 2022, a total of x marine mammals from 5 species was estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Estimates of seabird bycatch from these fisheries are currently being updated and can be reported next year. 
+Marine mammal species specific bycatch estimates from 2022 are below current PBR thresholds, thus meeting current management objectives (Fig. x). However, historically, bycatch was above PBR for harbor porpoises and pilot whales. More recently bycatch of gray seals has increased since 1995 and on average leveled out after 2010; however, there is a large amount of inter-annual variability (Fig. x).
+
+```{r plot_harborporpoiseMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_harborporpoise(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: US waters from North Carolina to Canada from the U.S. coastline to the U.S. exclusive economic zone, 200 nautical miles offshore, thus, including all EPU, the full shelf and beyond.
+
+Temporal scale: Annual from 1990 to 2022.
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_harborporpoise}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Bycatch reduction plans developed by Marine Mammal Protection Act’s Take Reduction Teams were needed to reduce the bycatch of harbor porpoises starting in 1997 (Fig. x) and reduce the bycatch of pilot whales starting in xxxx. The more recent reduction in harbor porpoise bycatch since 2010 is probably due not only to the Take Reduction Team’s bycatch mitigation plan but also related to a corresponding decrease in gillnet fishing effort and in seasonal shifts of harbor porpoises that appear to be related to climatic changes (see Fig xx).
+The high level of variability of the annual gray seal estimates may be due in part by variable gillnet landings, limited observer coverage, especially since 2019 due to Covid-19, and the effects of the Northeast pinniped unusual mortality event for harbor and gray seals that was declared in 2022. The unusual mortalities were mostly located off the coast Maine and considered to be due to infectious diseases.
+
+## Get the data
+
+**Point of contact**: [Debra Palka (debra.palka@noaa.gov); Kristin Precoda (kristin.precoda@noaa.gov)](mailto:Debra Palka (debra.palka@noaa.gov); Kristin Precoda (kristin.precoda@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::harborporpoise`
+
+**Variable definitions**
+
+1) pbr = Potential Biological Removal level. Unit = n (number of animals) 
+2) totalest1y = Total bycatch of 1 year annual estimate. Unit = n (number of animals) 
+3) totalest5y = Total bycatch of 5 year running average estimate. Unit = n (number of animals) 
+4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
+5) total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals) 
+6) Ratio1ytoPBR = ratio of the total bycatch of 1 year annual estimate relative to the corresponding annual pbr.
+
+```{r vars_harborporpoise}
+# Pull all var names
+vars <- ecodata::harborporpoise |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/harborporpoise.html>
+
+## References
+

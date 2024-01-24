@@ -1,0 +1,81 @@
+# persistent_hotspots
+
+**Description**: Integrated persistent annual hotspots derived from at-sea observations of seabirds, cetaceans and sea turtles collected on systematic ship and aerial surveys
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [X] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Timothy White, Jason Roberts
+
+**Affiliations**: BOEM
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Locations of high densities through time of seabirds, marine mammals, and sea turtles
+
+## Key Results and Visualizations
+NA
+
+
+## Indicator statistics 
+Spatial scale: Atlantic EEZ
+
+Temporal scale: Annual, all seasons
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_persistent_hotspots}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Persistent hotpots through time identify places where seabirds, marine mammals and sea turtles frequently aggregate to feed, and may indicate locations of seasonal and annual resilience. Individual hotspot richness maps represent annual persistent hotspots of 71 species and also common taxa challenging to identify to the species level on at-sea surveys but whose abundance and spatial patterns significantly contribute to richness and diversity on the Atlantic EEZ. The integrated maps represent very high densities and very high persistence; however, one or both parameters can be adjusted to identify other important locations, for example, to reveal areas of high density and moderate persistence.
+
+## Get the data
+
+**Point of contact**: [Timothy White (timothy.white@boem.gov)](mailto:Timothy White (timothy.white@boem.gov)){.email}
+
+**ecodata name**: `ecodata::persistent_hotspots`
+
+**Variable definitions**
+
+Persistence probability.
+
+
+No Data
+
+**Indicator Category**:
+
+- [ ] Published Methods
+- [X] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/persistent_hotspots.html>
+
+## References
+

@@ -1,0 +1,98 @@
+# Engagement, Reliance, and Environmental Justice in Top Fishing Communities
+
+**Description**: The data presented here are 2021 environmental justice indicators in top commercial and top recreational communities in Mid-Atlantic and New England regions, respectively.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [X] Social
+- [ ] Economic
+
+**Contributor(s)**: Lisa Colburn, Changhua Weng, Matt Cutler, Tanya Noteva
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+We report the top ten communities most engaged in, and/or reliant upon, commercial and recreational fisheries and the degree to which these communities may be vulnerable to environmental justice issues (i.e., Poverty, Population Composition, and Personal Disruption). To select and present these communities we developed indicators (or indices that inform the importance of fishing and relative social conditions in each community.
+
+The engagement and reliance indices demonstrate the importance of commercial and recreational fishing to a given community relative to other coastal communities in a region. Similarly, the environmental justice indices characterize different facets and levels of social vulnerability in a given community relative to other coastal communities in a region.
+
+## Key Results and Visualizations
+Results narratives are currently under review.
+
+
+## Indicator statistics 
+Spatial scale: Communities located in marine coastal counties in the U.S.
+
+Temporal scale: Year of 2021
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_engagement}
+# Either from Contributor or ecodata
+```
+
+## Implications
+These indicators are used to identify top fishing communities and those with environmental justice concerns based on 2021data. Highlighted communities may be vulnerable to changes in fishing patterns due to regulations and/or climate change. When any of these communities also experience environmental justice issues, they may have lower ability to successfully respond/adapt to change.
+
+## Get the data
+
+**Point of contact**: [Lisa Colburn (lisa.l.colburn@noaa.gov)](mailto:Lisa Colburn (lisa.l.colburn@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::engagement`
+
+**Variable definitions**
+
+1) Name: Community Name: name of the community. 
+2) Commercial Engagement Index: commercial engagement factor score. 
+3) Commercial Reliance Index: commercial reliance factor score. 
+4) Recreational Engagement Score: recreational engagement factor score. 
+5) Recreational Reliance Index: recreational reliance factor score. 
+6) EJ Rating: environmental justice categorical rankings. 
+7) Personal Disruption Index: personal disruption factor score. 
+8) Population Composition Index: population composition factor score. 
+9) Poverty Index: poverty index factor score. 
+10) 1std: 1 standard deviation. 
+11) 0.5 std: 0.5 standard deviation.
+
+```{r vars_engagement}
+# Pull all var names
+vars <- ecodata::engagement |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [ ] Syntheses of published information
+- [ ] Database pull
+- [X] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Contraints
+
+Please email lisa.l.colburnl@noaa.gov for further information and queries of fishing and environmental justice indicator source data.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/engagement.html>
+
+## References
+

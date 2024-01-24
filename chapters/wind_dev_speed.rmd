@@ -1,0 +1,92 @@
+# Speed and Scale of Offshore Wind Development in the Northeast
+
+**Description**: The footprint and timeline of offshore wind development in the Northeast by 2030
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [ ] Megafauna
+- [X] Social
+- [X] Economic
+
+**Contributor(s)**: Angela Silva
+
+**Affiliations**: ?
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The data presented here is a timeline of proposed construction in the Northeast of offshore wind development projects to 2030. The lease area color corresponds to the year of proposed development. Project componenet data (e.g., number of foundations, cable miles, GW, and acreage for each project are described in the table. Areas currently under planning for additional lease areas are outlined in red and totals reflected in the bottom of the table. This information is up to date as of December 2023 and project statistics come from Appendix E3 of the Revolution Wind Final Environmental Impact Statement Table E-1.
+
+## Key Results and Visualizations
+NA
+
+```{r plot_wind_dev_speedMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_dev_speed(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: NA
+
+Temporal scale: NA
+
+**Synthesis Theme**:
+
+- [ ] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_wind_dev_speed}
+# Either from Contributor or ecodata
+```
+
+## Implications
+NA
+
+## Get the data
+
+**Point of contact**: [Angela Silva (angela.silva@noaa.gov)](mailto:Angela Silva (angela.silva@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::wind_dev_speed`
+
+**Variable definitions**
+
+NA
+
+```{r vars_wind_dev_speed}
+# Pull all var names
+vars <- ecodata::wind_dev_speed |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [ ] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/wind_dev_speed.html>
+
+## References
+

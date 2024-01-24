@@ -1,0 +1,96 @@
+# Gulf of Maine Atlantic salmon
+
+**Description**: The data presented here are time series of documented Atlantic salmon returns to Gulf of Maine Rivers since 1972 and return rates for two sea winter returns from hatchery smolt stockings.
+
+**Indicator family**: 
+
+- [ ] Oceanographic
+- [ ] Habitat
+- [ ] Lower trophic levels
+- [X] Megafauna
+- [ ] Social
+- [ ] Economic
+
+**Contributor(s)**: Jon Kocik, Justin Stevens and Tim Sheehan
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+US Atlantic salmon historically ranged as far south as Long Island Sound but current populations are restricted to Maine. Populations south of Maine were extirpated in the 1800’s. The Gulf of Maine Atlantic Salmon Distinct Population Segment (GOM DPS) supported local commercial fisheries until a 1947 closure. Populations remained low (< 500) until the modern hatchery restoration programs started in the late 1960’s. This program led to relatively rapid population rebuilding (Figure ##).
+GOM Atlantic salmon abundance is tracked through adult counts at traps in large rivers and redd surveys in smaller coastal drainages (USASAC 2023). These fish typically return to freshwater to spawn after two winters at sea (2SW) with higher return rates than those spending one winter at sea (1SW) or longer. Most 2SW spawners are female hatchery-origin fish, making their return rate a crucial measure of marine productivity. Return rates are calculated from known smolt stocking numbers and locations and counts of returning hatchery adults to the Penobscot River (Stevens et al. 2019). Together, abundance and return rates allow monitoring of population status (Figure ##).
+
+## Key Results and Visualizations
+A significant and persistent decrease in marine productivity of North American Atlantic salmon populations occurred around 1990, which impacted U.S. adult spawner abundance (Figure ##). The GOM DPS was listed as Endangered under the ESA in 2000. Primary threats are dams, marine survival and climate change. Decreased productivity was linked to a regime shift that resulted in a cascading effect of ecosystem conditions driven by large scale oceanic changes.
+Atlantic salmon adult returns in 2022 were estimated at 1,520 with 85% originating from hatchery supplementation and 86% returning to the Penobscot River. Abundance remains critically low relative to recovery targets of 6,000 naturally-reared returns with only an estimated 218 natural returns. Return rate of Penobscot River hatchery origin 2SW salmon was 0.17%, over 2.5 times the rate for 2021 returns (Figure ##). While rates are comparable to the last decade they are significantly lower than in the past.
+
+```{r plot_gom_salmonMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_gom_salmon(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: EPU = Gulf of Maine
+
+Temporal scale: Annually 1972-2022
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [ ] Regime Shifts
+- [ ] Ecosystem Reorganization
+
+```{r autostats_gom_salmon}
+# Either from Contributor or ecodata
+```
+
+## Implications
+These large scale changes have impacted temperature, current patterns, and primary and secondary production dynamics throughout the Northwest Atlantic range of Atlantic salmon. Changes impacted the forage base overall and especially capelin where distribution, abundance, size and energy density changed rapidly. Although many ecosystem conditions in the Northwest Atlantic have reverted back to their pre-1990 conditions, a corresponding increase in U.S. Atlantic salmon marine productivity has not been noted.
+
+## Get the data
+
+**Point of contact**: [Jon Kocik (john.kocik@noaa.gov); Tim Sheehan (tim.sheehan@noaa.gov); Debra Palka (debra.palka@noaa.gov)](mailto:Jon Kocik (john.kocik@noaa.gov); Tim Sheehan (tim.sheehan@noaa.gov); Debra Palka (debra.palka@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::gom_salmon`
+
+**Variable definitions**
+
+1) Return Year.  
+2) GoM Salmon Total = number of documented Atlantic salmon returns to Gulf of Maine rivers in number of animals  
+3) PSAR -2SW = return rates for 2 sea winter returns from hatchery smolt stockings in percentage.
+
+```{r vars_gom_salmon}
+# Pull all var names
+vars <- ecodata::gom_salmon |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [ ] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [ ] Database pull
+- [ ] Database pull with analysis
+- [ ] Other
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/gom_salmon.html>
+
+## References
+
