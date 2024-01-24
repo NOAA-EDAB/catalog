@@ -41,7 +41,7 @@ make_rmd <- function(listobject){
   cat("```",append=T,fill=T,file=con)
   
   ### DESCRIPTION OF INDICATOR
-  cat("## Indroduction to Indicator",append=T,fill=T,file=con)
+  cat("## Introduction to Indicator",append=T,fill=T,file=con)
   cat(listobject$whatsthis,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
@@ -53,157 +53,148 @@ make_rmd <- function(listobject){
   ### rchunk code to run plot functions from ecodata
   # gets a bit messy trying to check for function arguments
   # Find the names of the arguments to the function
-  at <- attributes(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname))))
   
-  functionArgs <- names(formals(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname)))))
-  if (length(functionArgs) == 2) {
-    # this is standard shadedRegion and report
-    # check to see how many EPUs are listed in data object and/or they are "All" (shelfwide)
-    indicatorData <- eval(parse(text=paste0("ecodata::",listobject$indicatorname)))  
-    epus <- unique(indicatorData$EPU)
-    if (any(c("all","na") %in% tolower(epus)) | is.null(epus)) {
-      # plot just one map
-      cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
-      cat("# Plot indicator",append=T,fill=T,file=con)
-      cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
-      cat("print(ggplotObject)",append=T,fill=T,file=con)
-      cat("```",append=T,fill=T,file=con)
-      cat("",append=T,fill=T,file=con) # add space
-    } else {
-      if ("mab" %in% tolower(epus)) {
-        # plot MidAtlantic Report 
-        cat("### MAB",append=T,fill=T,file=con)
-        cat("",append=T,fill=T,file=con) # add space
+  if (exists(paste0("plot_",listobject$indicatorname))) {
+  
+    at <- attributes(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname))))
+    
+    functionArgs <- names(formals(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname)))))
+    if (length(functionArgs) == 2) {
+      # this is standard shadedRegion and report
+      # check to see how many EPUs are listed in data object and/or they are "All" (shelfwide)
+      indicatorData <- eval(parse(text=paste0("ecodata::",listobject$indicatorname)))  
+      epus <- unique(indicatorData$EPU)
+      if (any(c("all","na") %in% tolower(epus)) | is.null(epus)) {
+        # plot just one map
         cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
         cat("# Plot indicator",append=T,fill=T,file=con)
         cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
         cat("print(ggplotObject)",append=T,fill=T,file=con)
         cat("```",append=T,fill=T,file=con)
         cat("",append=T,fill=T,file=con) # add space
-      } 
-      if (any(c("gb","gom","ne") %in% tolower(epus))) {
-      # plot NewEngland Report
-        cat("### NE",append=T,fill=T,file=con)
-        cat("",append=T,fill=T,file=con) # add space
-        cat(paste0("```{r plot_",listobject$indicatorname,"NE}"),append=T,fill=T,file=con)
-        cat("# Plot indicator",append=T,fill=T,file=con)
-        cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland')"),append=T,fill=T,file=con)
-        cat("print(ggplotObject)",append=T,fill=T,file=con)
-        cat("```",append=T,fill=T,file=con)
-        cat("",append=T,fill=T,file=con) # add space
-      }
-    }
-
-  } else if (length(functionArgs) == 3 & ("EPU" %in% functionArgs )) {
-    # additional EPU argument. Create 3 plots, one for each EPU
-    cat("### MAB",append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con) # add space
-    cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
-    cat("# Plot indicator",append=T,fill=T,file=con)
-    cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
-    cat("print(ggplotObject)",append=T,fill=T,file=con)
-    cat("```",append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con) # add space
-    
-    ## GB
-    cat("### GB",append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con) # add space
-    cat(paste0("```{r plot_",listobject$indicatorname,"NEGB}"),append=T,fill=T,file=con)
-    cat("# Plot indicator",append=T,fill=T,file=con)
-    cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland',EPU='GB')"),append=T,fill=T,file=con)
-    cat("print(ggplotObject)",append=T,fill=T,file=con)
-    cat("```",append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con) # add space
-    
-    ## GOM
-    cat("### GOM",append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con) # add space
-    cat(paste0("```{r plot_",listobject$indicatorname,"NEGOM}"),append=T,fill=T,file=con)
-    cat("# Plot indicator",append=T,fill=T,file=con)
-    cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland',EPU='GOM')"),append=T,fill=T,file=con)
-    cat("print(ggplotObject)",append=T,fill=T,file=con)
-    cat("```",append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con) # add space
-    
-        
-  } 
-  
-  if (length(at) == 3 & ("varName" %in% names(at)) ){
-    # make all plots of varName and report
-    for (arep in at$report) {
-      cat(paste0("### ",arep),append=T,fill=T,file=con)
-      cat("",append=T,fill=T,file=con) # add space
-      for (avar in at$varName) {
-        avarws <- gsub("\\s", "", avar)  
-        # create varName plots
-        cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,"}"),append=T,fill=T,file=con)
-        cat("# Plot indicator",append=T,fill=T,file=con)
-        cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"')"),append=T,fill=T,file=con)
-        cat("print(ggplotObject)",append=T,fill=T,file=con)
-        cat("```",append=T,fill=T,file=con)
-        cat("",append=T,fill=T,file=con) # add space
-      }
-    }
-    
-  }
-  
-  if (length(at) == 3 & ("plottype" %in% names(at)) ){
-    # make all plots of plottype and report
-    for (arep in at$report) {
-      cat(paste0("### ",arep),append=T,fill=T,file=con)
-      cat("",append=T,fill=T,file=con) # add space
-      for (avar in at$plottype) {
-        avarws <- gsub("\\s", "", avar)  # remov whitespace from name
-        # create varName plots
-        cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,"}"),append=T,fill=T,file=con)
-        cat("# Plot indicator",append=T,fill=T,file=con)
-        cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', plottype= '",avar,"')"),append=T,fill=T,file=con)
-        cat("print(ggplotObject)",append=T,fill=T,file=con)
-        cat("```",append=T,fill=T,file=con)
-        cat("",append=T,fill=T,file=con) # add space
-   
-      }
-    }
-    
-  }
-
-  if (length(at) == 4 & ("varName" %in% names(at)) ){
-    newV <- names(at)[which(!(names(at) %in% c("varName","srcref","report")))]
-    newVals <- at[[newV]]
-    # make all plots of plottype and report
-    for (arep in at$report) {
-      cat(paste0("### ",arep),append=T,fill=T,file=con)
-      cat("",append=T,fill=T,file=con) # add space
-      
-      for (avar in at$varName) {
-      
-        for (aval in newVals) {
-          avarws <- gsub("\\s", "", avar)  # remov whitespace from name
-          # create varName plots
-          cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,aval,"}"),append=T,fill=T,file=con)
+      } else {
+        # stock_status has no EPU. non conforming data set
+        if ("mab" %in% tolower(epus)) {
+          # plot MidAtlantic Report 
+          cat("### MAB",append=T,fill=T,file=con)
+          cat("",append=T,fill=T,file=con) # add space
+          cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
           cat("# Plot indicator",append=T,fill=T,file=con)
-          cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"' ,",newV,"= '",aval,"')"),append=T,fill=T,file=con)
+          cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
           cat("print(ggplotObject)",append=T,fill=T,file=con)
           cat("```",append=T,fill=T,file=con)
           cat("",append=T,fill=T,file=con) # add space
-          
+        } 
+        if (any(c("gb","gom","ne") %in% tolower(epus))) {
+        # plot NewEngland Report
+          cat("### NE",append=T,fill=T,file=con)
+          cat("",append=T,fill=T,file=con) # add space
+          cat(paste0("```{r plot_",listobject$indicatorname,"NE}"),append=T,fill=T,file=con)
+          cat("# Plot indicator",append=T,fill=T,file=con)
+          cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland')"),append=T,fill=T,file=con)
+          cat("print(ggplotObject)",append=T,fill=T,file=con)
+          cat("```",append=T,fill=T,file=con)
+          cat("",append=T,fill=T,file=con) # add space
         }
       }
-    }
-  }
   
-  if (length(at) > 4 & (all(c("varName","plottype") %in% names(at))) ) {
-      # make all plots of plottype and report
+    } else if (length(functionArgs) == 3 & ("EPU" %in% functionArgs )) {
+      # additional EPU argument. Create 3 plots, one for each EPU
+      cat("### MAB",append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
+      cat("# Plot indicator",append=T,fill=T,file=con)
+      cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
+      cat("print(ggplotObject)",append=T,fill=T,file=con)
+      cat("```",append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      
+      ## GB
+      cat("### GB",append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      cat(paste0("```{r plot_",listobject$indicatorname,"NEGB}"),append=T,fill=T,file=con)
+      cat("# Plot indicator",append=T,fill=T,file=con)
+      cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland',EPU='GB')"),append=T,fill=T,file=con)
+      cat("print(ggplotObject)",append=T,fill=T,file=con)
+      cat("```",append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      
+      ## GOM
+      cat("### GOM",append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      cat(paste0("```{r plot_",listobject$indicatorname,"NEGOM}"),append=T,fill=T,file=con)
+      cat("# Plot indicator",append=T,fill=T,file=con)
+      cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland',EPU='GOM')"),append=T,fill=T,file=con)
+      cat("print(ggplotObject)",append=T,fill=T,file=con)
+      cat("```",append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      
+          
+    } 
+    
+    if (length(at) == 3 & ("varName" %in% names(at)) ){
+      # make all plots of varName and report
       for (arep in at$report) {
         cat(paste0("### ",arep),append=T,fill=T,file=con)
         cat("",append=T,fill=T,file=con) # add space
         for (avar in at$varName) {
-          for (atype in at$plottype) {
+          avarws <- gsub("\\s", "", avar)  
+          # create varName plots
+          cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,"}"),append=T,fill=T,file=con)
+          cat("# Plot indicator",append=T,fill=T,file=con)
+          cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"')"),append=T,fill=T,file=con)
+          cat("print(ggplotObject)",append=T,fill=T,file=con)
+          cat("```",append=T,fill=T,file=con)
+          cat("",append=T,fill=T,file=con) # add space
+        }
+      }
+      
+    }
+    
+    if (length(at) == 3 & ("plottype" %in% names(at)) ){
+      # make all plots of plottype and report
+      for (arep in at$report) {
+        cat(paste0("### ",arep),append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+        for (avar in at$plottype) {
+          avarws <- gsub("\\s", "", avar)  # remov whitespace from name
+          # create varName plots
+          cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,"}"),append=T,fill=T,file=con)
+          cat("# Plot indicator",append=T,fill=T,file=con)
+          cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', plottype= '",avar,"')"),append=T,fill=T,file=con)
+          cat("print(ggplotObject)",append=T,fill=T,file=con)
+          cat("```",append=T,fill=T,file=con)
+          cat("",append=T,fill=T,file=con) # add space
+     
+        }
+      }
+      
+    }
+  
+    if (length(at) == 4 & ("varName" %in% names(at)) ){
+      newV <- names(at)[which(!(names(at) %in% c("varName","srcref","report")))]
+      newVals <- at[[newV]]
+      # make all plots of plottype and report
+      for (arep in at$report) {
+        cat(paste0("### ",arep),append=T,fill=T,file=con)
+        cat("",append=T,fill=T,file=con) # add space
+        
+        for (avar in at$varName) {
+        
+          if (tolower(newV) == "epu") {
+            if (arep == "MidAtlantic") {
+              newVals <- "MAB"
+            } else {
+              newVals <- c("GB","GOM")
+            }
+          }
+          
+          for (aval in newVals) {
             avarws <- gsub("\\s", "", avar)  # remov whitespace from name
             # create varName plots
-            cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,atype,"}"),append=T,fill=T,file=con)
+            cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,aval,"}"),append=T,fill=T,file=con)
             cat("# Plot indicator",append=T,fill=T,file=con)
-            cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"', plottype = '",atype,"')"),append=T,fill=T,file=con)
+            cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"' ,",newV,"= '",aval,"')"),append=T,fill=T,file=con)
             cat("print(ggplotObject)",append=T,fill=T,file=con)
             cat("```",append=T,fill=T,file=con)
             cat("",append=T,fill=T,file=con) # add space
@@ -212,7 +203,28 @@ make_rmd <- function(listobject){
         }
       }
     }
-  
+    
+    if (length(at) > 4 & (all(c("varName","plottype") %in% names(at))) ) {
+        # make all plots of plottype and report
+        for (arep in at$report) {
+          cat(paste0("### ",arep),append=T,fill=T,file=con)
+          cat("",append=T,fill=T,file=con) # add space
+          for (avar in at$varName) {
+            for (atype in at$plottype) {
+              avarws <- gsub("\\s", "", avar)  # remov whitespace from name
+              # create varName plots
+              cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,atype,"}"),append=T,fill=T,file=con)
+              cat("# Plot indicator",append=T,fill=T,file=con)
+              cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"', plottype = '",atype,"')"),append=T,fill=T,file=con)
+              cat("print(ggplotObject)",append=T,fill=T,file=con)
+              cat("```",append=T,fill=T,file=con)
+              cat("",append=T,fill=T,file=con) # add space
+              
+            }
+          }
+        }
+      }
+  }
   
   
   ### SPATIAL + TEMPORAL SCALE
@@ -258,20 +270,28 @@ make_rmd <- function(listobject){
   # grabs the defined variables and writes out as an unordered list
   cat(unlist(strsplit(listobject$defineVariables,"\\n")),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
+
+  # check to see if data name exists. Some do not but need a catalog page
+  if (exists(paste0(listobject$indicatorname))) {  
+    # r code chunk to make table
+    cat(paste0("```{r vars_",listobject$indicatorname,"}"),append=T,fill=T,file=con)
+    cat("# Pull all var names",append=T,fill=T,file=con)
   
-  # r code chunk to make table
-  cat(paste0("```{r vars_",listobject$indicatorname,"}"),append=T,fill=T,file=con)
-  cat("# Pull all var names",append=T,fill=T,file=con)
-  cat(paste0("vars <- ecodata::",listobject$indicatorname," |>"),append=T,fill=T,file=con)
-  if (eval(parse(text=paste0("'Units' %in% names(ecodata::",listobject$indicatorname,")")))) {
-    cat("   dplyr::select(Var, Units) |>",append=T,fill=T,file=con)
+    cat(paste0("vars <- ecodata::",listobject$indicatorname," |>"),append=T,fill=T,file=con)
+    if (eval(parse(text=paste0("'Units' %in% names(ecodata::",listobject$indicatorname,")")))) {
+      cat("   dplyr::select(Var, Units) |>",append=T,fill=T,file=con)
+    } else {
+      cat("   dplyr::select(Var) |>",append=T,fill=T,file=con)
+    }
+    cat("   dplyr::distinct()",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    cat("DT::datatable(vars)",append=T,fill=T,file=con) # add space
+    cat("```",append=T,fill=T,file=con)
   } else {
-    cat("   dplyr::select(Var) |>",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    cat("No Data",append=T,fill=T,file=con) # add space
+    cat("",append=T,fill=T,file=con) # add space
   }
-  cat("   dplyr::distinct()",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  cat("DT::datatable(vars)",append=T,fill=T,file=con) # add space
-  cat("```",append=T,fill=T,file=con)
   
   ### INDICATOR CATEGORY
   cat("**Indicator Category**:",append=T,fill=T,file=con)
