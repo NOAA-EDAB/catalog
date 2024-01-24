@@ -1,16 +1,24 @@
 #' Parse a single Catalog submission issue from Github
 #' 
-#' @param repo character string. url to pull issues. (eg. 'https://api.github.com/repos/NOAA-EDAB/catalog/issues')
+#' @param issueData list. output from GitHub API pull of ALL issues
 #' @param issueNum numeric. The number of the issue as assigned by GitHub
+#' @param pull Boolean. Should pull directly from GitHub or use issueData
 #' 
 #' @return list of containing issue heading names with associated content
 #' 
 
-parse_single_issue <- function(repo,issueNum){
+parse_single_issue <- function(issueData,issueNum,pull=F){
   
   objectList <- list()
-  issue <- jsonlite::fromJSON(paste0(repo,"/",issueNum))
-  body <- issue$body
+  if (pull) {
+    repo <- 'https://api.github.com/repos/NOAA-EDAB/catalog/issues'
+    issue <- jsonlite::fromJSON(paste0(repo,"/",issueNum))
+    body <- issue$body
+  } else {
+    id <- which(issueData$issues$number==issueNum)
+    body <- issueData$issues[id,]$body
+  }
+  
   headings <- unlist(stringr::str_extract_all(body,"###\\s+[a-zA-Z (.)\"\\?,]+"))
   for (ahead in headings) {
     modifiedHead <- gsub("\\","",ahead,fixed=T)
