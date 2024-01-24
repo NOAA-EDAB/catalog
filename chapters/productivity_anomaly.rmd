@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The amount of young fish produced by a population tells us both about the health of individual populations and about the productivity throughout the ecosystem when we look across multiple stocks. This has implications for both managing fisheries (lower productivity often leads to lower harvest) and for other components of the ecosystem. 
 
 These indicators are based on the work of Charles Perretti et al. (2017). We updated the data used in that analysis to describe patterns of aggregate fish productivity in the Mid-Atlantic, Georges Bank, and Gulf of Maine by evaluating changes in reproductive output relative to adult population size across multiple stocks. Both survey information and stock assessment information is used in separate indicators.
@@ -35,43 +35,13 @@ ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varNam
 print(ggplotObject)
 ```
 
-```{r plot_productivity_anomalyMidAtlanticanomalyGB}
-# Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'anomaly' ,EPU= 'GB')
-print(ggplotObject)
-```
-
-```{r plot_productivity_anomalyMidAtlanticanomalyGOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'anomaly' ,EPU= 'GOM')
-print(ggplotObject)
-```
-
 ```{r plot_productivity_anomalyMidAtlanticassessmentMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'assessment' ,EPU= 'MAB')
 print(ggplotObject)
 ```
 
-```{r plot_productivity_anomalyMidAtlanticassessmentGB}
-# Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'assessment' ,EPU= 'GB')
-print(ggplotObject)
-```
-
-```{r plot_productivity_anomalyMidAtlanticassessmentGOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'assessment' ,EPU= 'GOM')
-print(ggplotObject)
-```
-
 ### NewEngland
-
-```{r plot_productivity_anomalyNewEnglandanomalyMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'MAB')
-print(ggplotObject)
-```
 
 ```{r plot_productivity_anomalyNewEnglandanomalyGB}
 # Plot indicator
@@ -82,12 +52,6 @@ print(ggplotObject)
 ```{r plot_productivity_anomalyNewEnglandanomalyGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'GOM')
-print(ggplotObject)
-```
-
-```{r plot_productivity_anomalyNewEnglandassessmentMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'assessment' ,EPU= 'MAB')
 print(ggplotObject)
 ```
 
@@ -124,13 +88,14 @@ The apparent decline in productivity across multiple managed species in the MAB,
 
 ## Get the data
 
-**Point of contact**: [Sarah.Gaichas@noaa.gov](Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
 
 **ecodata name**: `ecodata::productivity_anomaly`
 
 **Variable definitions**
 
-Variable names are organized using this format: [region] stock name - variable type and source  
+Variable names are organized using this format: 
+[region] stock name - variable type and source  
 Variables ending with "_Survey" are survey derived recruits/spawner anomalies 
 Variables ending with "-Assessment" are assessment derived quantities 
 Survey stock names are in ALL CAPS 

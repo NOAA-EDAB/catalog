@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 See "Thermal Habitat Persistence" for cell-based calculations. Many deep water benthic and demersal exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal presences may impair these processes. Two temperature thresholds (15 and 24 degrees C) were chosen based on cutoff points where demersal species are less commonly found. Thermal habitat area is calculated by identifying 1/12 degree cells within a given EPU that are greater than or equal to the temperature threshold then taking the sum of all cell areas. Data from 1993-01-01 to 2023-08-29 were obtained from the CMEMS' GLORYS12V1 global reanalysis product, and from 2023-08-30 to 2023-12-31 data were obtained from the CMEMS' PSY global forecasting product.
 
 ## Key Results and Visualizations
@@ -70,14 +70,15 @@ If a large proportion of species current habitat become thermally inhospitable, 
 
 ## Get the data
 
-**Point of contact**: [joseph.caracappa@noaa.gov](joseph.caracappa@noaa.gov){.email}
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
 **ecodata name**: `ecodata::thermal_habitat_area`
 
 **Variable definitions**
 
 Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) and PSY (CMEM’s PSY global forecast bottom temperature) 
-min.depth: minimum of depth band max.depth: maximum of depth band 
+min.depth: minimum of depth band 
+max.depth: maximum of depth band 
 temp.threshold: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature) 
 area: area exceeding temperature threshold (m2) 
 area.prop: proportion of EPU area exceeding temperature threshold

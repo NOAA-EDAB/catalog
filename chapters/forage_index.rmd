@@ -1,4 +1,4 @@
-# Forage Fish
+# Forage Fish Index
 
 **Description**: Aggregate forage fish biomass index from fish stomach contents
 
@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The amount of forage fish available in the ecosystem combined with the energy content of the forage species determines the amount of energy potentially available to predators in the ecosystem. Changes in the forage base could pose a risk to managed and protected species production. This spatially-explicit forage index estimated the combined biomass of 21 forage species using stomach contents information from 22 predatory fish species collected on bottom trawl surveys.
 
 ## Key Results and Visualizations
@@ -62,7 +62,7 @@ While the resulting indices show no long term trends in the Mid-Atlantic, they d
 
 ## Get the data
 
-**Point of contact**: [Sarah.Gaichas@noaa.gov](Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
 
 **ecodata name**: `ecodata::forage_index`
 

@@ -19,15 +19,37 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The T200-based Gulf Stream Index is calculated as the standardized first principal component time series from the empirical orthogonal function (EOF) analysis of the 200 m temperature time series at the 20 base points (selected along the climatological 15°C isotherm at 200 m between 74° and 55°W) and it represents the meridional fluctuation of the Gulf Stream North Wall (Joyce et al., 2019; Chi et al., 2019).
 
 ## Key Results and Visualizations
 The Gulf Stream Index suggest that recent years (2021-2022) the GS almost maintains its relative northward shift relative to the long-term mean.
 
-```{r plot_gsiMAB}
+### MidAtlantic
+
+```{r plot_gsiMidAtlanticgsi}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(report='MidAtlantic')
+ggplotObject <- ecodata::plot_gsi(report= 'MidAtlantic', varName= 'gsi')
+print(ggplotObject)
+```
+
+```{r plot_gsiMidAtlanticwestgsi}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(report= 'MidAtlantic', varName= 'westgsi')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_gsiNewEnglandgsi}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(report= 'NewEngland', varName= 'gsi')
+print(ggplotObject)
+```
+
+```{r plot_gsiNewEnglandwestgsi}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(report= 'NewEngland', varName= 'westgsi')
 print(ggplotObject)
 ```
 
@@ -52,7 +74,7 @@ The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stre
 
 ## Get the data
 
-**Point of contact**: [Zhuomin Chen (zhuomin.chen@uconn.edu)](Zhuomin Chen (zhuomin.chen@uconn.edu)){.email}
+**Point of contact**: [Zhuomin Chen (zhuomin.chen@uconn.edu)](mailto:Zhuomin Chen (zhuomin.chen@uconn.edu)){.email}
 
 **ecodata name**: `ecodata::gsi`
 

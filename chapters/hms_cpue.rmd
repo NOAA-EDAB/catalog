@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The Pelagic Observer Program (POP) is operated out of the Southeast Fisheries Science Center, but provides observers in all regions (including the high seas) where U.S. flagged and HMS-permitted vessels fish under regulations for the HMS pelagic longline fishery. Data from the POP is collected during trips on pelagic longline vessels that are generally targeting swordfish, and yellowfin and bigeye tunas. Once a set is retrieved, information like the length, dressed weight, sex, and tag number of each individual fish is recorded. There have been times and areas where the agency has required 100-percent coverage over specific times or areas such as during bluefin tuna spawning time period in the Gulf of Mexico for a number of years and in the Mid-Atlantic Bight. Between 2017 and 2021, observer coverage for the entire pelagic longline fleet (i.e., from Maine to Texas, and the U.S. Caribbean and high seas) ranged from 9 to 13 percent of total overall reported sets.
 
 ## Key Results and Visualizations
@@ -74,7 +74,7 @@ Pelagic observer data summarizes catch per unit effort information for a subset 
 
 ## Get the data
 
-**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::hms_cpue`
 

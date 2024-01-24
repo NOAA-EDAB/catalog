@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 To protect the aquatic living resources of Chesapeake Bay, the Chesapeake Bay Program (CBP) partnership has developed a guidance framework of ambient water quality criteria with designated uses and assessment procedures for dissolved oxygen, chlorophyll-a, and water clarity/submerged aquatic vegetation (SAV) (U.S. Environmental Protection Agency, 2003). To achieve consistent assessment over time and between jurisdictions, a multimetric indicator was proposed by the CBP partnership to provide a means for tracking the progress in all 92 management segments of Chesapeake Bay (Hernandez-Cordero et al., 2020; U.S. Environmental Protection Agency, 2017). This indicator has been computed for each three-year assessment period since 1985-1987, providing an integrated measure of Chesapeake Bay’s water quality condition over the last three decades.
 
 The multimetric indicator required monitoring data on dissolved oxygen (DO) concentrations, chlorophyll-a concentrations, water clarity, SAV acreage, water temperature, and salinity. SAV acreage has been measured by the Virginia Institute of Marine Science in collaboration with the CBP, which is available via http://web.vims.edu/bio/sav/StateSegmentAreaTable.htm. Data for all other parameters were obtained from the CBP Water Quality Database (http://www.chesapeakebay.net/data/downloads/cbp_water_quality_database_1984_present). These data have been routinely reported to the CBP by the Maryland Department of Natural Resources, Virginia Department of Environmental Quality, Old Dominion University, Virginia Institute of Marine Science, and citizen/volunteer monitoring initiatives.
@@ -68,13 +68,14 @@ Patterns of attainment of individual designated uses are variable (Figure 2). Ac
 
 ## Get the data
 
-**Point of contact**: [Qian Zhang, qzhang@chesapeakebay.net](Qian Zhang, qzhang@chesapeakebay.net){.email}
+**Point of contact**: [Qian Zhang, qzhang@chesapeakebay.net](mailto:Qian Zhang, qzhang@chesapeakebay.net){.email}
 
 **ecodata name**: `ecodata::ches_bay_wq`
 
 **Variable definitions**
 
-Period: Assessment period Year 1: Starting year of the assessment period 
+Period: Assessment period 
+Year 1: Starting year of the assessment period 
 Year 2: Ending year of the assessment period 
 Total: The overall attainment indicator 
 MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 

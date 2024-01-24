@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson et al. 2005. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
 
 ## Key Results and Visualizations
@@ -74,7 +74,7 @@ The annual fall surveys of Alexandrium cyst distribution and abundance in the Gu
 
 ## Get the data
 
-**Point of contact**: [Moe Nelson, david.moe.nelson@noaa.gov](Moe Nelson, david.moe.nelson@noaa.gov){.email}
+**Point of contact**: [Moe Nelson, david.moe.nelson@noaa.gov](mailto:Moe Nelson, david.moe.nelson@noaa.gov){.email}
 
 **ecodata name**: `ecodata::habs`
 

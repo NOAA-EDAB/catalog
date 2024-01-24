@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Temperature and salinity measurements are examined to assess the composition of the waters entering the Gulf of Maine through the deep Northeast Channel. The analysis closely follows the methodology described by David G. Mountain (2012a). This method assumes that the waters flowing into the Northeast Channel between 150 and 200 meters depth are composed of slope waters, originating offshore of the continental shelf, and shelf waters, originating on the continental shelf south of Nova Scotia.
 
 ## Key Results and Visualizations
@@ -54,7 +54,7 @@ _No response_
 
 ## Get the data
 
-**Point of contact**: [Paula Fratantoni (paula.fratantoni@noaa.gov)](Paula Fratantoni (paula.fratantoni@noaa.gov)){.email}
+**Point of contact**: [Paula Fratantoni (paula.fratantoni@noaa.gov)](mailto:Paula Fratantoni (paula.fratantoni@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::slopewater`
 

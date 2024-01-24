@@ -1,6 +1,6 @@
 # Stock Status
 
-**Description**: Summary of the most recent stock assessment results for each assessed species
+**Description**: Summary of the most recent stock status results for each assessed species
 
 **Indicator family**: 
 
@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Stock assessments are conducted regularly for fisheries managed by the New England and Mid-Atlantic Fishery Management Councils to support decisions on catch limits and to determine whether conservation objectives for each stock are being met. Single species management objectives include
 1. Maintaining biomass above minimum thresholds, and 
 2. Maintaining fishing mortality below overfishing limits. 
@@ -27,7 +27,7 @@ Stock assessments are conducted regularly for fisheries managed by the New Engla
 This indicator summarizes the most recent stock status, defined as stock assessment estimated current biomass (B) relative to the biomass threshold (1/2 B<sub>MSY</sub>) and biomass target (B<sub>MSY</sub>), and current fishing mortality (F) relative to the fishing mortality limit (F<sub>MSY</sub>).
 
 ## Key Results and Visualizations
-Single species management objectives (1. maintaining biomass above minimum thresholds and 2. maintaining fishing mortality below overfishing limits) are being met for all but one MAFMC managed species, though the status of six stocks is unknown. Single species management objectives are not being met for some NEFMC managed species.  Nine stocks are currently estimated to be below B<sub>MSY</sub>, while status relative to B<sub>MSY</sub> could not be assessed for 13 additional stocks.
+Single species management objectives (1. maintaining biomass above minimum thresholds and 2. maintaining fishing mortality below overfishing limits) are being met for all but two MAFMC managed species, though the status of six stocks is unknown. Single species management objectives are not being met for some NEFMC managed species.  Nine stocks are currently estimated to be below B<sub>MSY</sub>, while status relative to B<sub>MSY</sub> could not be assessed for 13 additional stocks.
 
 ```{r plot_stock_statusMAB}
 # Plot indicator
@@ -60,18 +60,23 @@ In New England, stock status and associated management constraints are likely co
 
 ## Get the data
 
-**Point of contact**: [Sarah.Gaichas@noaa.gov](Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
 
 **ecodata name**: `ecodata::stock_status`
 
 **Variable definitions**
 
-Variables in `ecodata::stock_status`  **Stock:**  Name of stock   
-**Last assessment:** Most recent assessment year for stock status  
+Variables in `ecodata::stock_status`  
+**Stock:**  Name of stock   
+**Last assessment:** Most recent assessment year for stock status 
+ 
 **Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both" 
- **Code:**  Short stock name for plotting corresponding to **Stock**        
+ 
+**Code:**  Short stock name for plotting corresponding to **Stock** 
+       
 **Var:**  "F.Fmsy" (Current year fishing mortality F relative to F<sub>MSY</sub>) "B.Bmsy" (Current year biomass B relative to B<sub>MSY</sub>) 
-       **Value:** Decimal value of Var  **Units:** Unitless
+       **Value:** Decimal value of Var  
+**Units:** Unitless
 
 ```{r vars_stock_status}
 # Pull all var names

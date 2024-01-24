@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Underwater grass beds are critical to the Chesapeake Bay ecosystem. They provide food and shelter to fish and wildlife, sequester carbon, add oxygen to the water, absorb nutrient pollution, reduce shoreline erosion and help suspended particles of sediment settle to the bottom. Because they are sensitive to pollution but quick to respond to improvements in water quality, underwater grass abundance is a good indicator of the Bay’s health. Before Europeans colonized the region, up to 600,000 acres of underwater grasses may have grown along the shorelines of the Bay and its tributaries. By the mid-1980s, nutrient and sediment pollution had weakened or eliminated many of these grass beds. While climate change, shoreline hardening and stressors that reduce water clarity will continue to impact our restoration success, many of these stressors can be managed with on-the-ground efforts to reduce pollution and research has shown that nutrient reductions made under the Chesapeake Bay Total Maximum Daily Load (Bay TMDL) have played a critical role in the overall underwater grass recovery documented since the Bay-wide aerial survey began in 1984.
 
 ## Key Results and Visualizations
@@ -59,7 +59,7 @@ The outlook toward achieving the outcome goal is uncertain.  Gains from 2021 to 
 
 ## Get the data
 
-**Point of contact**: [Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)](Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)){.email}
+**Point of contact**: [Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)](mailto:Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)){.email}
 
 **ecodata name**: `ecodata::SAV`
 

@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 There is interest in the stock status of predators and commercially or recreationally valuable Highly Migratory Species. The latest Highly Migratory Species Stock Assessment and Fishery Evaluation (SAFE) report provides a summary of stock assessment information and current stock statuses of HMS under domestic and applicable international stock thresholds. Some stocks use proxies for biomass, such as spawning stock biomass (e.g., bluefin and northern albacore tunas) and spawning stock fecundity or number of fish (e.g., sharks).
 
 ## Key Results and Visualizations
@@ -52,7 +52,7 @@ TBD – our assessment team has asked that the Kobe plots be redone, so please d
 
 ## Get the data
 
-**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::hms_stock_status`
 

@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Endangered North Atlantic right whales are approaching extinction. The latest population estimate for the beginning of 2022 indicates there 356 individuals remaining. The species has been experiencing an Unusual Mortality Event since 2017, which is ongoing.
 
 Primary threats to the species—and primary drivers of the Unusual Mortality Event—are entanglement in fishing gear and vessel strikes. Climate change is also affecting every aspect of their survival. It is changing their ocean habitat, their migratory patterns, the location and availability of their prey, and even their risk of becoming entangled in fishing gear or struck by vessels.
@@ -84,7 +84,7 @@ The UMEs are under investigation and are likely the result of multiple drivers. 
 
 ## Get the data
 
-**Point of contact**: [Daniel Linden (daniel.linden@noaa.gov), Danielle Cholewiak (danielle.cholewiak@noaa.gov), Debra Palka (debra.palka@noaa.gov)](Daniel Linden (daniel.linden@noaa.gov), Danielle Cholewiak (danielle.cholewiak@noaa.gov), Debra Palka (debra.palka@noaa.gov)){.email}
+**Point of contact**: [Daniel Linden (daniel.linden@noaa.gov), Danielle Cholewiak (danielle.cholewiak@noaa.gov), Debra Palka (debra.palka@noaa.gov)](mailto:Daniel Linden (daniel.linden@noaa.gov), Danielle Cholewiak (danielle.cholewiak@noaa.gov), Debra Palka (debra.palka@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::narw`
 

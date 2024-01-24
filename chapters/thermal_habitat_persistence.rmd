@@ -19,17 +19,11 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Many deep water benthic and demersal exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal presences may impair these processes. Data originate from GLORYS12V1 global reanalysis for 1993-01-01 to 2023-08-29, and from PSY forecasts from 2021-01-01 to 2023-12-31. Cells are mapped to 3 depth bins: 0-25m, 25-100m, and >100m. Two temperature thresholds are used representing a temperature where moderate (15C) and extreme (24C) thermal stresses are likely to occur across several species. GLORYS and PSY 1/12 degree grid is mapped to EPU_NOESTUARIES shape files by the center point of each grid cell.
 
 ## Key Results and Visualizations
 Maps of full NE shelf with cells shading gradient showing number of days exceeding temperature thresholds. For 15C threshold, much of the southern MAB experienced >100 days, as well as along the shelf break and around Nantucket Shoals. In 2023, only the southern and/or shallow portion of the MAB exceeded the 24C threshold.
-
-```{r plot_thermal_habitat_persistenceMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_persistence(report='MidAtlantic')
-print(ggplotObject)
-```
 
 
 ## Indicator statistics 
@@ -52,16 +46,18 @@ Using a high resolution bottom temperature product allows for localized heat str
 
 ## Get the data
 
-**Point of contact**: [joseph.caracappa@noaa.gov](joseph.caracappa@noaa.gov){.email}
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
 **ecodata name**: `ecodata::thermal_habitat_persistence`
 
 **Variable definitions**
 
 Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) and PSY (CMEM’s PSY global forecast bottom temperature) 
-min.depth: minimum of depth band max.depth: maximum of depth band 
+min.depth: minimum of depth band 
+max.depth: maximum of depth band 
 temp.threshold: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature) 
-longitude: longitude of cell center point latitude: latitude of cell center point 
+longitude: longitude of cell center point 
+latitude: latitude of cell center point 
 Ndays: number of days exceeding temp.threshold
 
 ```{r vars_thermal_habitat_persistence}

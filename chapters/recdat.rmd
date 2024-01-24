@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 We use total recreational harvest as an indicator of seafood production and total recreational trips and total recreational anglers as proxies for recreational value generated from the Mid-Atlantic and New England regions respectively. We estimate both recreational catch diversity in species managed by the Fisheries Management Councils; Mid-Atlantic (MAFMC), New England (NEFMC), South Atlantic (SAFMC) and Atlantic States (ASFMC), and fleet effort diversity using the effective Shannon index.
 
 ## Key Results and Visualizations
@@ -107,14 +107,15 @@ The increase in recreational species catch diversity in New England is due to re
 
 ## Get the data
 
-**Point of contact**: [Geret DePiper (geret.depiper@noaa.gov)](Geret DePiper (geret.depiper@noaa.gov)){.email}
+**Point of contact**: [Geret DePiper (geret.depiper@noaa.gov)](mailto:Geret DePiper (geret.depiper@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::recdat`
 
 **Variable definitions**
 
 Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1. 
- 1) Name: Recreational Seafood; Definition: Recreational Harvest; Units: lbs 
+ 
+1) Name: Recreational Seafood; Definition: Recreational Harvest; Units: lbs 
 2) Name: Recreational Effort; Definition: Recreational Trips; Units: Angler Trips 
 3) Name: Recreational Effort Diversity; Definition: Recreational fleet effort diversity across modes; Units: Effective Shannon Metric 
 4) Name: Recreational Catch Diversity; Definition: Recreational Diversity of Catch across managed species; Units: Effective Shannon Metric

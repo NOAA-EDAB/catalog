@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The health and well being of individual fish can be related to body shape condition indices (i.e.,
 weight at a given length) such as relative condition index, which is the ratio of observed weight to predicted weight based on length (Le Cren 1951). Heavier and fatter fish at a given length have higher relative condition which is expected to improve growth, reproductive output, and survival.
 
@@ -81,13 +81,14 @@ These changes in condition have direct implications for stock assessments, catch
 
 ## Get the data
 
-**Point of contact**: [Laurel.smith@noaa.gov](Laurel.smith@noaa.gov){.email}
+**Point of contact**: [Laurel.smith@noaa.gov](mailto:Laurel.smith@noaa.gov){.email}
 
 **ecodata name**: `ecodata::condition`
 
 **Variable definitions**
 
-Species: common name for fish species EPU: Ecological Production Unit 
+Species: common name for fish species 
+EPU: Ecological Production Unit 
 YEAR: year of condition data 
 MeanCond: annual mean by EPU and species of relative condition (unitless)
 

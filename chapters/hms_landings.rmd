@@ -19,11 +19,39 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 HMS landings and approximate value of landings are presented separately as an indicator, and are combined in several datasets presented in the SOE report (e.g., total commercial landings as discussed under “Seafood Production” and total commercial revenue as presented under “Commercial Profits”).
 
 ## Key Results and Visualizations
 TBD - recommend including a version of the plots or tables generated in the Technical Document / code that is linked. Pending finalization of the dataset for this year's report.
+
+### MidAtlantic
+
+```{r plot_hms_landingsMidAtlanticLandings}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(report= 'MidAtlantic', varName= 'Landings')
+print(ggplotObject)
+```
+
+```{r plot_hms_landingsMidAtlanticRevenue}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(report= 'MidAtlantic', varName= 'Revenue')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_hms_landingsNewEnglandLandings}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(report= 'NewEngland', varName= 'Landings')
+print(ggplotObject)
+```
+
+```{r plot_hms_landingsNewEnglandRevenue}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(report= 'NewEngland', varName= 'Revenue')
+print(ggplotObject)
+```
 
 
 ## Indicator statistics 
@@ -46,7 +74,7 @@ TBD – pending finalization of dataset for 2024 report
 
 ## Get the data
 
-**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::hms_landings`
 

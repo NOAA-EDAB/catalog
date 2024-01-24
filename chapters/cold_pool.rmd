@@ -19,17 +19,49 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The cold pool is seasonal feature in the Mid-Atlantic Bight that is defined by it's low temperature (< 10 deg C), relative freshness ( < 34 psu), and moderate depth (20 -200m). It is typically present between June and September. Cold pool dynamics can influence the recruitment and settlement of fish species. This indicator set shows the intensity, extent, and persistence of the cold pool each year based on gridded model and reanalysis products.
 
 ## Key Results and Visualizations
 Time series plots of the three cold pool indices. Cold pool index shows the mean temperature within the cold pool where positive values indicate a warming cold pool. Cold pool extent shows the change in maximum area relative to the historical mean, where negative values indicate a shrinking cold pool. Cold pool persistence measures the duration of the cold pool relative to the historical mean. Negative values indicate a shorter duration. In general the cold pool has been getting warmer, has persisted for a shorter duration, and has covered a smaller footprint since the 1960s.
 
-### MAB
+### MidAtlantic
 
-```{r plot_cold_poolMAB}
+```{r plot_cold_poolMidAtlanticcold_pool}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report='MidAtlantic')
+ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'cold_pool')
+print(ggplotObject)
+```
+
+```{r plot_cold_poolMidAtlanticpersistence}
+# Plot indicator
+ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'persistence')
+print(ggplotObject)
+```
+
+```{r plot_cold_poolMidAtlanticextent}
+# Plot indicator
+ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'extent')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_cold_poolNewEnglandcold_pool}
+# Plot indicator
+ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'cold_pool')
+print(ggplotObject)
+```
+
+```{r plot_cold_poolNewEnglandpersistence}
+# Plot indicator
+ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'persistence')
+print(ggplotObject)
+```
+
+```{r plot_cold_poolNewEnglandextent}
+# Plot indicator
+ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'extent')
 print(ggplotObject)
 ```
 
@@ -54,14 +86,15 @@ Changes in cold pool indicators can be signs of changes in regional/seasonal oce
 
 ## Get the data
 
-**Point of contact**: [joseph.caracappa@noaa.gov](joseph.caracappa@noaa.gov){.email}
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
 **ecodata name**: `ecodata::cold_pool`
 
 **Variable definitions**
 
 1) Source: ROMS (bias-corrected ROMS-NWA bottom temperature from du Pontavice et al, 2023), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-2) year 3) cold_pool_index: measure of mean temperature within cold pool 
+2) year 
+3) cold_pool_index: measure of mean temperature within cold pool 
 4) se_cold_pool_index: standard error of cold_pool_index 
 5) persistence_index: measure of duration of cold pool 
 6) se_persistence_index: standard error of persistence_index 

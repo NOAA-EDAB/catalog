@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The bottom temperature index incorporates near-bottom temperature measurements collected on Northeast Fisheries Science Center (NEFSC) surveys between 1977-present. Early measurements were made using surface bucket samples, mechanical bathythermographs and expendable bathythermograph probes, but by 1991 the CTD – an acronym for conductivity temperature and depth – became standard equipment on all NEFSC surveys. Near-bottom refers to the deepest observation at each station that falls within 10 m of the reported water depth. Observations encompass the entire continental shelf area extending from Cape Hatteras, NC to Nova Scotia, Canada, inclusive of the Gulf of Maine and Georges Bank.
 
 ## Key Results and Visualizations
@@ -62,7 +62,7 @@ _No response_
 
 ## Get the data
 
-**Point of contact**: [Paula.Fratantoni@noaa.gov](Paula.Fratantoni@noaa.gov){.email}
+**Point of contact**: [Paula.Fratantoni@noaa.gov](mailto:Paula.Fratantoni@noaa.gov){.email}
 
 **ecodata name**: `ecodata::bottom_temp`
 

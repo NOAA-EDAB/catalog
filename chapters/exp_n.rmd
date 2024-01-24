@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Diversity estimates have been developed to understand whether the overall structure of the ecosystem has remained stable or is changing. There are a large number of diversity indices that can be used to measure diversity; for the purposes of the State of the Ecosystem report we report on the expected number of species in a sample size (E(S<sub>n</sub>)).  These “rarefied” samples allow for comparisons between sample sites with varying number of species present. The estimate of (E(S<sub>n</sub>) is less biased than other diversity indices which usually increase with sample size. It also has a more meaningful biological interpretation than other indices. For example, if a predator eats 10 random individuals,  
 E(S<sub>n</sub>) will predict the number of species consumed.
 
@@ -75,7 +75,7 @@ Diversity is used as a proxy for stability.  Changes in ecological diversity ove
 
 ## Get the data
 
-**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
+**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](mailto:Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
 
 **ecodata name**: `ecodata::exp_n`
 

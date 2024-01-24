@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Gray seals were extirpated from the northeast U.S. coast by the mid-20th century due to local and statewide bounty systems (Andrews and Mott 1967; Lelli et al. 2009). Since the late 1980s, ground and aerial surveys have documented the recovery and recolonization of pupping sites in northeast U.S. waters (Wood et al. 2022). This recovery is due in large part to the protection provided by the Marine Mammal Protection Act (MMPA) of 1972.
 
 ## Key Results and Visualizations
@@ -55,7 +55,7 @@ These high rates of increase in gray seal pups born at US pupping sites provide 
 
 ## Get the data
 
-**Point of contact**: [Stephanie Wood (Stephanie.Wood@noaa.gov), Elizabeth Josephson (elizabeth.josephson@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)](Stephanie Wood (Stephanie.Wood@noaa.gov), Elizabeth Josephson (elizabeth.josephson@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)){.email}
+**Point of contact**: [Stephanie Wood (Stephanie.Wood@noaa.gov), Elizabeth Josephson (elizabeth.josephson@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)](mailto:Stephanie Wood (Stephanie.Wood@noaa.gov), Elizabeth Josephson (elizabeth.josephson@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::seal_pups`
 

@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The energy density of prey indicates the the amount of energy passing from lower trophic levels to higher predators. Changes in ecosystem productivity and/or bioenergetic demands (e.g. metabolic increases due to rising temperature) can impact energy density. Energy density of fishes can vary widely (several fold), particularly for some species that undergo seasonal cycles in energy allocation to reproduction, energy allocation to migration, or seasonal/ontogenetic shifts in energy storage. The value of forage species to higher trophic levels is a function of the their energy density.
 
 ## Key Results and Visualizations
@@ -52,7 +52,7 @@ _No response_
 
 ## Get the data
 
-**Point of contact**: [Mark Wuenschel (mark.wuenschel@noaa.gov)](Mark Wuenschel (mark.wuenschel@noaa.gov)){.email}
+**Point of contact**: [Mark Wuenschel (mark.wuenschel@noaa.gov)](mailto:Mark Wuenschel (mark.wuenschel@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::energy_density`
 

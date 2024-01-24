@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 The Ryther index is defined as total catch per unit area in the ecosystem ([JS Link and Watson 2019](https://noaa-edab.github.io/tech-doc/ecosystem-overfishing.html#ref-link2019eof)). The units are mt km^-2 year^-1. It measures the total removal of fish biomass by area in a Large Marine Ecosystem relative to how much that entire ecosystem can produce.  In general terms, the lower the Ryther index, the less likely an ecosystem will be experiencing ecosystem overfishing.
 
 The Fogarty index is defined as ratio of total catches to total primary productivity in an ecosystem ([JS Link and Watson 2019](https://noaa-edab.github.io/tech-doc/ecosystem-overfishing.html#ref-link2019eof)). The units are parts per thousand.
@@ -128,7 +128,7 @@ There is insufficient evidence to determine whether ecosystem overfishing in occ
 
 ## Get the data
 
-**Point of contact**: [andrew.beet@noaa.gov](andrew.beet@noaa.gov){.email}
+**Point of contact**: [andrew.beet@noaa.gov](mailto:andrew.beet@noaa.gov){.email}
 
 **ecodata name**: `ecodata::ppr`
 

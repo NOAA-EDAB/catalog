@@ -19,7 +19,7 @@
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
-## Indroduction to Indicator
+## Introduction to Indicator
 Diversity estimates have been developed to understand whether specialization, or alternatively stovepiping, is occurring in fisheries of the Northeastern Large Marine Ecosystem. We use the average effective Shannon indices for species revenue at the permit level, for all permits landing any amount of [NEFMC](https://www.nefmc.org/) or [MAFMC](http://www.mafmc.org/) Fishery Management Plan (FMP) species within a year (including both Monkfish and Spiny Dogfish). We also use the effective Shannon index of fleet revenue diversity and count of active fleets to assess the extent to which the distribution of fishing changes across fleet segments.
 
 ## Key Results and Visualizations
@@ -91,7 +91,7 @@ In the Mid-Atlantic, stability in commercial fleet diversity metrics suggests st
 
 ## Get the data
 
-**Point of contact**: [Geret DePiper (geret.depiper@noaa.gov)](Geret DePiper (geret.depiper@noaa.gov)){.email}
+**Point of contact**: [Geret DePiper (geret.depiper@noaa.gov)](mailto:Geret DePiper (geret.depiper@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::commercial_div`
 
