@@ -33,6 +33,7 @@ rmd_files:
     -   "chapters/gom_salmon.rmd" 
     -   "chapters/grayseal.rmd" 
     -   "chapters/seabird_ne.rmd" 
+    -   "chapters/species_groupings.rmd" 
 
 
 #################### OCEANOGRAPHIC ##################
@@ -40,7 +41,7 @@ rmd_files:
     -   "chapters/bottom_temp.rmd" 
     -   "chapters/bottom_temp_comp.rmd"
     -   "chapters/bottom_temp_glorys.rmd" 
-    #-   "chapters/bottom_temp_seasonal_gridded.rmd" 
+    -   "chapters/bottom_temp_seasonal_gridded.rmd" 
     -   "chapters/cold_pool.rmd"
     -   "chapters/gsi.rmd"
     -   "chapters/slopewater.rmd"
@@ -48,9 +49,9 @@ rmd_files:
     -   "chapters/thermal_habitat_persistence.rmd"
     -   "chapters/ch_bay_sal.rmd" 
     -   "chapters/ch_bay_temp.rmd" 
-    #-   "chapters/ches_bay_sst.rmd" 
+    -   "chapters/ches_bay_sst.rmd" 
     -   "chapters/heatwave.rmd" 
-    #-   "chapters/heatwave_year.rmd" 
+    -   "chapters/heatwave_year.rmd" 
     -   "chapters/ocean_acidification.rmd"
 
 
@@ -63,7 +64,7 @@ rmd_files:
     -   "chapters/abc_acl.rmd"
     -   "chapters/bennet.rmd"
     -   "chapters/stock_status.rmd"
-    #-   "chapters/engagement.rmd"
+    -   "chapters/engagement.rmd"
     -   "chapters/ocean_acidification.rmd"
     -   "chapters/wind_dev_speed.rmd"
     -   "chapters/wind_port.rmd"
