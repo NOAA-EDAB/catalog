@@ -273,20 +273,23 @@ make_rmd <- function(listobject){
 
   # check to see if data name exists. Some do not but need a catalog page
   if (exists(paste0(listobject$indicatorname))) {  
-    # r code chunk to make table
-    cat(paste0("```{r vars_",listobject$indicatorname,"}"),append=T,fill=T,file=con)
-    cat("# Pull all var names",append=T,fill=T,file=con)
-  
-    cat(paste0("vars <- ecodata::",listobject$indicatorname," |>"),append=T,fill=T,file=con)
-    if (eval(parse(text=paste0("'Units' %in% names(ecodata::",listobject$indicatorname,")")))) {
-      cat("   dplyr::select(Var, Units) |>",append=T,fill=T,file=con)
-    } else {
-      cat("   dplyr::select(Var) |>",append=T,fill=T,file=con)
+    # check to see if Var field exists
+    if ("Var" %in% names(eval(parse(text=paste0("ecodata::",listobject$indicatorname))))) {
+      # r code chunk to make table
+      cat(paste0("```{r vars_",listobject$indicatorname,"}"),append=T,fill=T,file=con)
+      cat("# Pull all var names",append=T,fill=T,file=con)
+    
+      cat(paste0("vars <- ecodata::",listobject$indicatorname," |>"),append=T,fill=T,file=con)
+      if (eval(parse(text=paste0("'Units' %in% names(ecodata::",listobject$indicatorname,")")))) {
+        cat("   dplyr::select(Var, Units) |>",append=T,fill=T,file=con)
+      } else {
+        cat("   dplyr::select(Var) |>",append=T,fill=T,file=con)
+      }
+      cat("   dplyr::distinct()",append=T,fill=T,file=con)
+      cat("",append=T,fill=T,file=con) # add space
+      cat("DT::datatable(vars)",append=T,fill=T,file=con) # add space
+      cat("```",append=T,fill=T,file=con)
     }
-    cat("   dplyr::distinct()",append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con) # add space
-    cat("DT::datatable(vars)",append=T,fill=T,file=con) # add space
-    cat("```",append=T,fill=T,file=con)
   } else {
     cat("",append=T,fill=T,file=con) # add space
     cat("No Data",append=T,fill=T,file=con) # add space
