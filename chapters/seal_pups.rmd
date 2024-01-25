@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Stephanie Wood; Elizabeth Josephson
 
@@ -42,9 +38,8 @@ Temporal scale: Annually 1988 to 1921. Survey is in January that corresponds to 
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_seal_pups}
 # Either from Contributor or ecodata

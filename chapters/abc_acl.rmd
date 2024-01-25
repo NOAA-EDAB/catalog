@@ -4,12 +4,9 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
 - [X] Social
-- [X] Economic
+- [X] Economic
+
 
 **Contributor(s)**: Brandon Muffley, Jason, Didden, Julia Beaty, Jose Montanez, Karson Cisneros, Jessica Coakley, Hannah Hart, Kiley Dancy
 
@@ -62,8 +59,7 @@ Temporal scale: Annual
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_abc_acl}
 # Either from Contributor or ecodata

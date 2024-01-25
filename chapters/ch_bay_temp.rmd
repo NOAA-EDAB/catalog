@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Oceanographic
+
 
 **Contributor(s)**: Charles Pellerin
 
@@ -41,9 +37,8 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_ch_bay_temp}
 # Either from Contributor or ecodata

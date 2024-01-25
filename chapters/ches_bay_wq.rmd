@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [X] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Lower trophic levels
+
 
 **Contributor(s)**: Qian Zhang, Richard Tian, and Peter Tango
 
@@ -55,9 +51,8 @@ Temporal scale: 3-year assessment period between 1985-1987 and 2019-2021.
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_ches_bay_wq}
 # Either from Contributor or ecodata

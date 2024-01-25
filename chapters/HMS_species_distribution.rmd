@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Sam Chavez, Elizabeth Josephson, Debra Palka
 
@@ -40,9 +36,9 @@ Temporal scale: By each of the 4 seasons in 2010 and in 2017.
 
 **Synthesis Theme**:
 
-- [ ] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
 
 ```{r autostats_HMS_species_distribution}
 # Either from Contributor or ecodata

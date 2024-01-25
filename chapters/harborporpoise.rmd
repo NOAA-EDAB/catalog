@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Debra Palka, Kristen Procoda, Marjorie Lyssikatos, Kimberly Murray
 
@@ -40,9 +36,8 @@ Temporal scale: Annual from 1990 to 2022.
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_harborporpoise}
 # Either from Contributor or ecodata

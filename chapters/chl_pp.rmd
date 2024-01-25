@@ -6,12 +6,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
 - [X] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Kimberly Hyde
 
@@ -114,8 +110,7 @@ Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to current yea
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_chl_pp}
 # Either from Contributor or ecodata

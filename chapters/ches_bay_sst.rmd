@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Oceanographic
+
 
 **Contributor(s)**: Ron Vogel, Bruce Vogt
 
@@ -39,9 +35,10 @@ Temporal scale: Only nighttime satellite overpasses are used in the seasonal ave
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
 
 ```{r autostats_ches_bay_sst}
 # Either from Contributor or ecodata

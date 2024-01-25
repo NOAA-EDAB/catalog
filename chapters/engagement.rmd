@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
 - [X] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Lisa Colburn, Changhua Weng, Matt Cutler, Tanya Noteva
 
@@ -27,6 +23,34 @@ The engagement and reliance indices demonstrate the importance of commercial and
 ## Key Results and Visualizations
 Results narratives are currently under review.
 
+### MidAtlantic
+
+```{r plot_engagementMidAtlanticCommercial}
+# Plot indicator
+ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial')
+print(ggplotObject)
+```
+
+```{r plot_engagementMidAtlanticRecreational}
+# Plot indicator
+ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_engagementNewEnglandCommercial}
+# Plot indicator
+ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial')
+print(ggplotObject)
+```
+
+```{r plot_engagementNewEnglandRecreational}
+# Plot indicator
+ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational')
+print(ggplotObject)
+```
+
 
 ## Indicator statistics 
 Spatial scale: Communities located in marine coastal counties in the U.S.
@@ -36,8 +60,7 @@ Temporal scale: Year of 2021
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_engagement}
 # Either from Contributor or ecodata
@@ -66,14 +89,6 @@ These indicators are used to identify top fishing communities and those with env
 10) 1std: 1 standard deviation. 
 11) 0.5 std: 0.5 standard deviation.
 
-```{r vars_engagement}
-# Pull all var names
-vars <- ecodata::engagement |>
-   dplyr::select(Var) |>
-   dplyr::distinct()
-
-DT::datatable(vars)
-```
 **Indicator Category**:
 
 - [ ] Published Methods

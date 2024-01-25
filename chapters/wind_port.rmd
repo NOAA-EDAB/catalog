@@ -4,12 +4,9 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [X] Social
-- [X] Economic
+- [X] Social
+- [X] Economic
+
 
 **Contributor(s)**: Angela Silva, Doug Christel
 
@@ -49,9 +46,8 @@ Temporal scale: 2008-2022
 
 **Synthesis Theme**:
 
-- [ ] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
+
 
 ```{r autostats_wind_port}
 # Either from Contributor or ecodata

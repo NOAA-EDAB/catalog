@@ -4,12 +4,9 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [X] Social
-- [X] Economic
+- [X] Social
+- [X] Economic
+
 
 **Contributor(s)**: John Walden, Geret DePiper, Sean Lucey
 
@@ -109,9 +106,10 @@ Temporal scale: The BI, PI and VI are all calculated on an Annual Basis.
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
 
 ```{r autostats_bennet}
 # Either from Contributor or ecodata

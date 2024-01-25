@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
 - [X] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Sarah Gaichas, James Gartland, Brian Smith, Anthony Wood, Elizabeth Ng, Michael Celestino, Katie Drew, Abigail Tyrell, and James Thorson
 
@@ -25,19 +21,31 @@ The amount of forage fish available in the ecosystem combined with the energy co
 ## Key Results and Visualizations
 Variables plotted are Fall Forage Fish Biomass Estimate and Spring Forage Fish Biomass Estimate with error bands from Fall Forage Fish Biomass Estimate SE and Spring Forage Fish Biomass Estimate SE, respectively. Time series were extended back to 1982 and forward to 2022 in this update, but this did not change trends reported previously for 1985-2021.
 
-### MAB
+### MidAtlantic
 
-```{r plot_forage_indexMAB}
+```{r plot_forage_indexMidAtlanticindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report='MidAtlantic')
+ggplotObject <- ecodata::plot_forage_index(report= 'MidAtlantic', varName= 'index')
 print(ggplotObject)
 ```
 
-### NE
-
-```{r plot_forage_indexNE}
+```{r plot_forage_indexMidAtlanticcog}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report='NewEngland')
+ggplotObject <- ecodata::plot_forage_index(report= 'MidAtlantic', varName= 'cog')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_forage_indexNewEnglandindex}
+# Plot indicator
+ggplotObject <- ecodata::plot_forage_index(report= 'NewEngland', varName= 'index')
+print(ggplotObject)
+```
+
+```{r plot_forage_indexNewEnglandcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_forage_index(report= 'NewEngland', varName= 'cog')
 print(ggplotObject)
 ```
 
@@ -50,8 +58,7 @@ Temporal scale: Spring (January-June), Fall (July-December)
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_forage_index}
 # Either from Contributor or ecodata

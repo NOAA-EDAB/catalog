@@ -6,10 +6,7 @@
 
 - [X] Oceanographic
 - [X] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Joe Caracappa
 
@@ -58,8 +55,7 @@ Temporal scale: daily
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_thermal_habitat_area}
 # Either from Contributor or ecodata

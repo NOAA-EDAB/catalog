@@ -4,12 +4,9 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
 - [X] Megafauna
-- [ ] Social
-- [X] Economic
+- [X] Economic
+
 
 **Contributor(s)**: Andrew Beet
 
@@ -117,7 +114,8 @@ Temporal scale: Annual
 
 - [X] Multiple System Drivers
 - [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Ecosystem Reorganization
+
 
 ```{r autostats_ppr}
 # Either from Contributor or ecodata

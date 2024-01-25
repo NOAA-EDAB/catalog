@@ -5,11 +5,7 @@
 **Indicator family**: 
 
 - [X] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Joseph Caracappa, Hubert duPontavice, Vincent Saba, Zhuomin Chen
 
@@ -54,8 +50,7 @@ Temporal scale: annual-seasonal
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_bottom_temp_comp}
 # Either from Contributor or ecodata

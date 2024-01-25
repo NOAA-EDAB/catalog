@@ -4,12 +4,9 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [X] Social
-- [X] Economic
+- [X] Social
+- [X] Economic
+
 
 **Contributor(s)**: Benjamin Galuardi, Geret DePiper, Dennis Corvi, Douglas Christel
 
@@ -85,9 +82,8 @@ Temporal scale: Annual from 2008-2022
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_wind_revenue}
 # Either from Contributor or ecodata

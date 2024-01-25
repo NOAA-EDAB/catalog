@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [X] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Lower trophic levels
+
 
 **Contributor(s)**: Christoper J. Patrick, David J. Wilcox, Jennifer R. Whiting, Anna K. Kenne, Erica R. Smith
 
@@ -41,9 +37,9 @@ Temporal scale: 1984-2022, annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
 
 ```{r autostats_SAV}
 # Either from Contributor or ecodata

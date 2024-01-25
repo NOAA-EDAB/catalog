@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Oceanographic
+
 
 **Contributor(s)**: Zhuomin Chen
 
@@ -61,9 +57,8 @@ Temporal scale: Monthly from 1954 to 2022
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_gsi}
 # Either from Contributor or ecodata

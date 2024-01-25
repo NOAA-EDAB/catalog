@@ -4,12 +4,9 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
 - [X] Social
-- [X] Economic
+- [X] Economic
+
 
 **Contributor(s)**: Sarah Gaichas, Andy Beet, Jeff Vieser, Chris Legault
 
@@ -29,9 +26,19 @@ This indicator summarizes the most recent stock status, defined as stock assessm
 ## Key Results and Visualizations
 Single species management objectives (1. maintaining biomass above minimum thresholds and 2. maintaining fishing mortality below overfishing limits) are being met for all but two MAFMC managed species, though the status of six stocks is unknown. Single species management objectives are not being met for some NEFMC managed species.  Nine stocks are currently estimated to be below B<sub>MSY</sub>, while status relative to B<sub>MSY</sub> could not be assessed for 13 additional stocks.
 
+### MAB
+
 ```{r plot_stock_statusMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_stock_status(report='MidAtlantic')
+print(ggplotObject)
+```
+
+### NE
+
+```{r plot_stock_statusNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_stock_status(report='NewEngland')
 print(ggplotObject)
 ```
 
@@ -44,8 +51,7 @@ Temporal scale: Annual update for the aggregate; individual stock status 1-5 yea
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_stock_status}
 # Either from Contributor or ecodata

@@ -5,11 +5,7 @@
 **Indicator family**: 
 
 - [X] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Grace Saba, Lori Garzio
 
@@ -77,8 +73,7 @@ Temporal scale: Seasonal progressions in the Mid-Atlantic (2023): Spring-Fall 20
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_ocean_acidification}
 # Either from Contributor or ecodata

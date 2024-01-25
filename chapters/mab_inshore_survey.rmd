@@ -10,12 +10,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: James Gartland, Matt Camisa, Rebecca Peters, Sean Lucey
 
@@ -47,9 +43,8 @@ Temporal scale: Spring and Fall
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_mab_inshore_survey}
 # Either from Contributor or ecodata

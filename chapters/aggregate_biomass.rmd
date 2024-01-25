@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
 
@@ -57,9 +53,8 @@ Temporal scale: Spring (March-May) and Fall (September-November)
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_aggregate_biomass}
 # Either from Contributor or ecodata

@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Oceanographic
+
 
 **Contributor(s)**: Paula Fratantoni; Chris Melrose; Tamara Holzwarth-Davis
 
@@ -49,9 +45,8 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [ ] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
+
 
 ```{r autostats_bottom_temp}
 # Either from Contributor or ecodata

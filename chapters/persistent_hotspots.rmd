@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
 - [X] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Timothy White, Jason Roberts
 
@@ -34,8 +30,7 @@ Temporal scale: Annual, all seasons
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_persistent_hotspots}
 # Either from Contributor or ecodata

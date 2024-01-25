@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
 - [X] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Jeffrey Runge, Emma Dullaert, Cameron Thompson, Rebecca Jones
 
@@ -43,7 +39,8 @@ Temporal scale: Monthly samples (with data gaps) between 2005-2022
 
 - [X] Multiple System Drivers
 - [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Ecosystem Reorganization
+
 
 ```{r autostats_wbts_mesozooplankton}
 # Either from Contributor or ecodata

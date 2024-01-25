@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Daniel Linden; Richard Pace; New England Aquarium
 
@@ -69,9 +65,9 @@ Temporal scale: Annual 1990 - 2022
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
 
 ```{r autostats_narw}
 # Either from Contributor or ecodata

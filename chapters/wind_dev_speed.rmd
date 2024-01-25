@@ -4,12 +4,9 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [X] Social
-- [X] Economic
+- [X] Social
+- [X] Economic
+
 
 **Contributor(s)**: Angela Silva
 
@@ -39,9 +36,8 @@ Temporal scale: NA
 
 **Synthesis Theme**:
 
-- [ ] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
+
 
 ```{r autostats_wind_dev_speed}
 # Either from Contributor or ecodata

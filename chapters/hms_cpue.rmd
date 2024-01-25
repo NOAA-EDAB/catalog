@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Jennifer Cudney, Tobey Curtis
 
@@ -61,9 +57,8 @@ Temporal scale: 1992-2022, Annual
 
 **Synthesis Theme**:
 
-- [ ] Multiple System Drivers
-- [X] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Regime Shifts
+
 
 ```{r autostats_hms_cpue}
 # Either from Contributor or ecodata

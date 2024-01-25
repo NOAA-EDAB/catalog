@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Heather Baertlein, Jackie Wilson, George Silva, Jennifer Cudney
 
@@ -61,9 +57,8 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [ ] Multiple System Drivers
-- [X] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Regime Shifts
+
 
 ```{r autostats_hms_landings}
 # Either from Contributor or ecodata

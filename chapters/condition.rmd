@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
 - [X] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Laurel Smith
 
@@ -70,7 +66,7 @@ Temporal scale: The temporal scale for relative condition was the fall NEFSC bot
 
 - [X] Multiple System Drivers
 - [X] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_condition}
 # Either from Contributor or ecodata

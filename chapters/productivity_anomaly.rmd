@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Sarah Gaichas, Andy Beet, Kimberly Bastille, Sean Lucey, and Charles Perretti.
 
@@ -75,9 +71,8 @@ Temporal scale: _No response_
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Multiple System Drivers
+
 
 ```{r autostats_productivity_anomaly}
 # Either from Contributor or ecodata

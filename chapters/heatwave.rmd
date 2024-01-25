@@ -5,11 +5,7 @@
 **Indicator family**: 
 
 - [X] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Vincent Saba, Joseph Caracappa
 
@@ -84,8 +80,7 @@ Temporal scale: Daily
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_heatwave}
 # Either from Contributor or ecodata

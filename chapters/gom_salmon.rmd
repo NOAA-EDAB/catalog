@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
 - [X] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Jon Kocik, Justin Stevens and Tim Sheehan
 
@@ -42,8 +38,7 @@ Temporal scale: Annually 1972-2022
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_gom_salmon}
 # Either from Contributor or ecodata

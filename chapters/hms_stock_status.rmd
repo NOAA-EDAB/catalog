@@ -4,12 +4,8 @@
 
 **Indicator family**: 
 
-- [ ] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [X] Megafauna
-- [ ] Social
-- [ ] Economic
+- [X] Megafauna
+
 
 **Contributor(s)**: Jennifer Cudney
 
@@ -39,9 +35,8 @@ Temporal scale: Annual summary of stock status
 
 **Synthesis Theme**:
 
-- [ ] Multiple System Drivers
-- [X] Regime Shifts
-- [ ] Ecosystem Reorganization
+- [X] Regime Shifts
+
 
 ```{r autostats_hms_stock_status}
 # Either from Contributor or ecodata

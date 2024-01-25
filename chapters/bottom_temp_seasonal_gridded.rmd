@@ -5,11 +5,7 @@
 **Indicator family**: 
 
 - [X] Oceanographic
-- [ ] Habitat
-- [ ] Lower trophic levels
-- [ ] Megafauna
-- [ ] Social
-- [ ] Economic
+
 
 **Contributor(s)**: Joseph Caracappa, Hubert du Pontavice, Vincent Saba, Zhuomin Chen
 
@@ -42,8 +38,7 @@ Temporal scale: Winter (Jan-Mar), Spring (April-June), Summer (July-Sept), Fall 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
-- [ ] Regime Shifts
-- [ ] Ecosystem Reorganization
+
 
 ```{r autostats_bottom_temp_seasonal_gridded}
 # Either from Contributor or ecodata
