@@ -104,8 +104,7 @@ Revenue is a key indicator of the State of the Ecosystem report. Revenue is larg
 
 **Variable definitions**
 
-*Landings*  
-1) Name: Landings; Definition: Total landings for a region; Units: metric tons.  
+*Landings*  1) Name: Landings; Definition: Total landings for a region; Units: metric tons.  
 2) Name: Seafood Landings; Definition: Total landings used for human consumption for a region; Units: metric tons. 
 3) Name: Guild Landings; Definition: Total landings for an aggregate group within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  For example "Benthivore Landings"; Units: metric tons 
 4) Name: Guild Landings - US only; Definition: Total landings from US flagged vessels for an aggregate group within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  For example "Benthivore Landings - US only"; Units: metric tons 
@@ -113,8 +112,7 @@ Revenue is a key indicator of the State of the Ecosystem report. Revenue is larg
 6) Name: Guild Management Body managed species - Landings weight; Definition: Total landings for an aggregate group of managed species within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Landings weight"; Units: metric tons 
 7) Name: Guild Management Body managed species - Landings weight - US only; Definition: Total landings from US flagged vessels for an aggregate group of managed species within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Landings weight - US only"; Units: metric tons 
 8) Name: Guild Management Body managed species - Seafood Landings; Definition: Total landings for an aggregate group of managed species within a region used for human consumption.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Seafood Landings"; Units: metric tons 
- *Revenue*  
-1) Name: Revenue; Definition: Total revenue for a region; Units: US dollars. 
+ *Revenue*  1) Name: Revenue; Definition: Total revenue for a region; Units: US dollars. 
 2) Name: Guild Revenue; Definition: Total revenue for an aggregate group within a region. Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. For example "Benthivore Revenue"; Units: US dollars 
 3) Name: Guild Management Body managed species - Revenue; Definition: Total revenue for an aggregate group of managed species within a region. Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Revenue"; Units: US dollars
 

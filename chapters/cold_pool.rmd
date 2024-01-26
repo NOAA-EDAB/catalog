@@ -88,13 +88,9 @@ Changes in cold pool indicators can be signs of changes in regional/seasonal oce
 **Variable definitions**
 
 1) Source: ROMS (bias-corrected ROMS-NWA bottom temperature from du Pontavice et al, 2023), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-2) year 
-3) cold_pool_index: measure of mean temperature within cold pool 
-4) se_cold_pool_index: standard error of cold_pool_index 
-5) persistence_index: measure of duration of cold pool 
-6) se_persistence_index: standard error of persistence_index 
-7) extent_index: measure of spatial extent of cold pool 
-8) se_extent_index: standard error of extent_index
+2) year 3) cold_pool_index: measure of mean temperature within cold pool 4) se_cold_pool_index: standard error of cold_pool_index 
+5) persistence_index: measure of duration of cold pool 6) se_persistence_index: standard error of persistence_index 
+7) extent_index: measure of spatial extent of cold pool 8) se_extent_index: standard error of extent_index
 
 ```{r vars_cold_pool}
 # Pull all var names

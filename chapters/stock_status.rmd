@@ -72,17 +72,11 @@ In New England, stock status and associated management constraints are likely co
 
 **Variable definitions**
 
-Variables in `ecodata::stock_status`  
-**Stock:**  Name of stock   
-**Last assessment:** Most recent assessment year for stock status 
- 
-**Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both" 
- 
-**Code:**  Short stock name for plotting corresponding to **Stock** 
-       
-**Var:**  "F.Fmsy" (Current year fishing mortality F relative to F<sub>MSY</sub>) "B.Bmsy" (Current year biomass B relative to B<sub>MSY</sub>) 
-       **Value:** Decimal value of Var  
-**Units:** Unitless
+Variables in `ecodata::stock_status`  **Stock:**  Name of stock   **Last assessment:** Most recent assessment year for stock status  
+**Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both"  
+**Code:**  Short stock name for plotting corresponding to **Stock**        
+**Var:**  "F.Fmsy" (Current year fishing mortality F relative to F<sub>MSY</sub>) "B.Bmsy" (Current year biomass B relative to B<sub>MSY</sub>)        
+**Value:** Decimal value of Var  **Units:** Unitless
 
 ```{r vars_stock_status}
 # Pull all var names

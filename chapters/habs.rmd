@@ -82,13 +82,10 @@ Alexandrium bloom events in the Gulf of Maine can result in Paralytic Shellfish 
 
 **Variable definitions**
 
-Alexandrium: 
-1) Year; Definition: calendar year; Units: yyyy. 
+Alexandrium: 1) Year; Definition: calendar year; Units: yyyy. 
 2) Name: Var; Definition: Gulf of Maine region (West, East, Bay of Fundy, All); Units: categories. 
-3) Name: Value; Definition: Estimated cyst abundance; Units: numbers of cells * 10 to the 16th power) 
- PSP: 1) Year; Definition: calendar year; Units: yyyy. 
-2) Name: State; Definition: MA, NH, or ME ; Units: categories. 
-3) Name: N_Rows; Definition: Number of sample events represented; Units: integer.  
+3) Name: Value; Definition: Estimated cyst abundance; Units: numbers of cells * 10 to the 16th power)  PSP: 1) Year; Definition: calendar year; Units: yyyy. 
+2) Name: State; Definition: MA, NH, or ME ; Units: categories. 3) Name: N_Rows; Definition: Number of sample events represented; Units: integer.  
 4) Name: PSP_Exceed_Threshold_Pct; Definition: Percentage of samples exceeding PSP threshold; Units: decimal number, 0-100.
 
 ```{r vars_habs}

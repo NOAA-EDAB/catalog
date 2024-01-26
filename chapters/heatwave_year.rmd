@@ -97,8 +97,7 @@ Implications of MHWs on living marine resources in the U.S.NES are currently bei
 
 **Variable definitions**
 
-1) MHW maximum Intensity (detrended) = degrees C 
-2) MHW duration = days.
+1) MHW maximum Intensity (detrended) = degrees C 2) MHW duration = days.
 
 ```{r vars_heatwave_year}
 # Pull all var names

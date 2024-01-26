@@ -69,15 +69,11 @@ Patterns of attainment of individual designated uses are variable (Figure 2). Ac
 
 **Variable definitions**
 
-Period: Assessment period 
-Year 1: Starting year of the assessment period 
-Year 2: Ending year of the assessment period 
-Total: The overall attainment indicator 
-MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 
+Period: Assessment period Year 1: Starting year of the assessment period Year 2: Ending year of the assessment period 
+Total: The overall attainment indicator MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 
 OW-DO: Estimated attainment of the dissolved oxygen criterion for the open water designated use 
 DW-DO: Estimated attainment of the dissolved oxygen criterion for the deep water designated use 
-DC-DO: Estimated attainment of the dissolved oxygen criterion for the deep channel designated use 
-OW-CHLA: Estimated attainment of the chlorophyll-a criterion 
+DC-DO: Estimated attainment of the dissolved oxygen criterion for the deep channel designated use OW-CHLA: Estimated attainment of the chlorophyll-a criterion 
 SW-Clarity/SAV: Estimated attainment of the bay grasses / water clarity criterion for the shallow water designated use
 
 ```{r vars_ches_bay_wq}

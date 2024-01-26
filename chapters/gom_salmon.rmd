@@ -55,8 +55,7 @@ These large scale changes have impacted temperature, current patterns, and prima
 
 **Variable definitions**
 
-1) Return Year.  
-2) GoM Salmon Total = number of documented Atlantic salmon returns to Gulf of Maine rivers in number of animals  
+1) Return Year.  2) GoM Salmon Total = number of documented Atlantic salmon returns to Gulf of Maine rivers in number of animals  
 3) PSAR -2SW = return rates for 2 sea winter returns from hatchery smolt stockings in percentage.
 
 ```{r vars_gom_salmon}
