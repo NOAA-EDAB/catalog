@@ -55,7 +55,8 @@ Shifting species distributions alter both species interactions and fishery inter
 
 **Variable definitions**
 
-1) Time=time period of centroid location.  2) species=cetacean species.  3) season.  4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
+1) Time=time period of centroid location.  2) species=cetacean species.  3) season.  
+4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
 
 ```{r vars_HMS_species_distribution}
 # Pull all var names
