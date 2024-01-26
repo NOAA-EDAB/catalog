@@ -102,12 +102,8 @@ No Data
 
 **Indicator Category**:
 
-- [ ] Published Methods
-- [ ] Extensive analysis, not yet published
 - [X] Syntheses of published information
-- [ ] Database pull
-- [ ] Database pull with analysis
-- [ ] Other
+
 
 ## Public Availability
 

@@ -70,11 +70,9 @@ DT::datatable(vars)
 **Indicator Category**:
 
 - [X] Published Methods
-- [ ] Extensive analysis, not yet published
 - [X] Syntheses of published information
-- [ ] Database pull
 - [X] Database pull with analysis
-- [ ] Other
+
 
 ## Public Availability
 

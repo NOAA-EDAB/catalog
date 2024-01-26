@@ -91,12 +91,8 @@ These indicators are used to identify top fishing communities and those with env
 
 **Indicator Category**:
 
-- [ ] Published Methods
-- [ ] Extensive analysis, not yet published
-- [ ] Syntheses of published information
-- [ ] Database pull
 - [X] Database pull with analysis
-- [ ] Other
+
 
 ## Public Availability
 
