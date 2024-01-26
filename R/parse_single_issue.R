@@ -1,40 +1,25 @@
-#' Parse a single Catalog submission issue from Github
+#' Pull a single issue from Github
 #' 
-#' @param issueData list. output from GitHub API pull of ALL issues
 #' @param issueNum numeric. The number of the issue as assigned by GitHub
-#' @param pull Boolean. Should pull directly from GitHub or use issueData
 #' 
-#' @return list of containing issue heading names with associated content
+#' @return list of containing issue
 #' 
 
-parse_single_issue <- function(issueData,issueNum,pull=F){
+pull_single_issue <- function(issueNum){
   
-  objectList <- list()
-  if (pull) {
-    repo <- 'https://api.github.com/repos/NOAA-EDAB/catalog/issues'
-    issue <- jsonlite::fromJSON(paste0(repo,"/",issueNum))
-    body <- issue$body
+  issueData <- list()
+  repo <- 'https://api.github.com/repos/NOAA-EDAB/catalog/issues'
+  issue <- jsonlite::fromJSON(paste0(repo,"/",issueNum))
+
+  if(issue$labels$name == "submission") {
+    submissions <- issueNum
   } else {
-    id <- which(issueData$issues$number==issueNum)
-    body <- issueData$issues[id,]$body
+    stop(paste0("This issue number (#",issueNum,") is not associated with GitHub issue tagged as a 'submission' and can not be parsed"))
   }
   
-  headings <- unlist(stringr::str_extract_all(body,"###\\s+[a-zA-Z (.)\"\\?,]+"))
-  for (ahead in headings) {
-    modifiedHead <- gsub("\\","",ahead,fixed=T)
-    modifiedHead <- gsub("(","\\(",modifiedHead,fixed=T)
-    modifiedHead <- gsub(")","\\)",modifiedHead,fixed=T)
-    modifiedHead <- gsub("?","\\?",modifiedHead,fixed=T)
-    byhead <- unlist(strsplit(body,modifiedHead))[2]
-    res <- unlist(strsplit(byhead,"###"))[1]
-    # remove beginning and trailing \n (line feed) and \r (carriage return)
-    modifiedRes <- trimws(res)
-    # modifiedRes <- sub("\\n+$","",modifiedRes)
-    # modifiedRes <- sub("^\\r\\n+","",modifiedRes)
-    # modifiedRes <- sub("\\r\\n+$","",modifiedRes)
-    objectList[ahead] <- modifiedRes
-  }
-  
-  return(objectList)
+  issueData$issues <- issue
+  issueData$submissions <- submissions
+
+  return(issueData)
   
 }
