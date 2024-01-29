@@ -1,0 +1,105 @@
+# Highly Migratory Species Landings
+
+**Description**: Aggregated Atlantic HMS landings data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2022.
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: Heather Baertlein, Jackie Wilson, George Silva, Jennifer Cudney
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+HMS landings and approximate value of landings are presented separately as an indicator, and are combined in several datasets presented in the SOE report (e.g., total commercial landings as discussed under “Seafood Production” and total commercial revenue as presented under “Commercial Profits”).
+
+## Key Results and Visualizations
+TBD - recommend including a version of the plots or tables generated in the Technical Document / code that is linked. Pending finalization of the dataset for this year's report.
+
+### MidAtlantic
+
+```{r plot_hms_landingsMidAtlanticLandings}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(report= 'MidAtlantic', varName= 'Landings')
+print(ggplotObject)
+```
+
+```{r plot_hms_landingsMidAtlanticRevenue}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(report= 'MidAtlantic', varName= 'Revenue')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_hms_landingsNewEnglandLandings}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(report= 'NewEngland', varName= 'Landings')
+print(ggplotObject)
+```
+
+```{r plot_hms_landingsNewEnglandRevenue}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_landings(report= 'NewEngland', varName= 'Revenue')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Regionally by EPU
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Regime Shifts
+
+
+```{r autostats_hms_landings}
+# Either from Contributor or ecodata
+```
+
+## Implications
+TBD – pending finalization of dataset for 2024 report
+
+## Get the data
+
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::hms_landings`
+
+**Variable definitions**
+
+Year: data are summarized/aggregated by year. EPU: region, Mid Atlantic Bight (MAB) or New England (NE). HMS_Group: Management group for HMS, as defined below in “Data Processing”. Var: description of data, whether total landings or revenue. Units: description of unit of measure for data. Value: Represents either metric tons of landings or dollar value of landings by year and region.
+
+```{r vars_hms_landings}
+# Pull all var names
+vars <- ecodata::hms_landings |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Contraints
+
+Data that has been properly screened to meet data standards and confidentiality are publicly available via the Fisheries of the United States (FUS) landings portal. Canadian landings information, which are included in this analysis, are not included in the FUS portal (https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings). Data should be aggregated to protect data confidentiality (raw data are lumped by year and species). Please email jennifer.cudney@noaa.gov for further information and queries of source data.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/hms_landings.html>
+
+## References
+

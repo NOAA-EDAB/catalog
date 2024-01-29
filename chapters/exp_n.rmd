@@ -1,0 +1,109 @@
+# Expected Number of Species
+
+**Description**: Diversity metric from the Northeast Fisheries Science Center (NEFSC) Bottom Trawl Surveys.
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Diversity estimates have been developed to understand whether the overall structure of the ecosystem has remained stable or is changing. There are a large number of diversity indices that can be used to measure diversity; for the purposes of the State of the Ecosystem report we report on the expected number of species in a sample size (E(S<sub>n</sub>)).  These “rarefied” samples allow for comparisons between sample sites with varying number of species present. The estimate of (E(S<sub>n</sub>) is less biased than other diversity indices which usually increase with sample size. It also has a more meaningful biological interpretation than other indices. For example, if a predator eats 10 random individuals,  
+E(S<sub>n</sub>) will predict the number of species consumed.
+
+## Key Results and Visualizations
+Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas.  The only apparent trend in the data is from the Albatross time period in the Gulf of Maine.
+
+### MidAtlantic
+
+```{r plot_exp_nMidAtlanticfall}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'fall')
+print(ggplotObject)
+```
+
+```{r plot_exp_nMidAtlanticspring}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'spring')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_exp_nNewEnglandfall}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'fall')
+print(ggplotObject)
+```
+
+```{r plot_exp_nNewEnglandspring}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'spring')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: By EPU
+
+Temporal scale: Spring (March-May) and Fall (September-November)
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+
+```{r autostats_exp_n}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Diversity is used as a proxy for stability.  Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management.  This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse.  Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored.
+
+## Get the data
+
+**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](mailto:Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
+
+**ecodata name**: `ecodata::exp_n`
+
+**Variable definitions**
+
+1) Name: Season Region Expected Number of Species - Vessel; Definition: The expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species - Albatross"; Units: n species per 1000 ind.  
+2) Name: Season Region Expected Number of Species Standard Deviation - Vessel; Definition: The variance around the expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species Standard Deviation - Albatross"; Units: n species per 1000 ind.
+
+```{r vars_exp_n}
+# Pull all var names
+vars <- ecodata::exp_n |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/exp_n.html>
+
+## References
+

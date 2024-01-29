@@ -1,0 +1,108 @@
+# Forage Fish Index
+
+**Description**: Aggregate forage fish biomass index from fish stomach contents
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: Sarah Gaichas, James Gartland, Brian Smith, Anthony Wood, Elizabeth Ng, Michael Celestino, Katie Drew, Abigail Tyrell, and James Thorson
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The amount of forage fish available in the ecosystem combined with the energy content of the forage species determines the amount of energy potentially available to predators in the ecosystem. Changes in the forage base could pose a risk to managed and protected species production. This spatially-explicit forage index estimated the combined biomass of 21 forage species using stomach contents information from 22 predatory fish species collected on bottom trawl surveys.
+
+## Key Results and Visualizations
+Variables plotted are Fall Forage Fish Biomass Estimate and Spring Forage Fish Biomass Estimate with error bands from Fall Forage Fish Biomass Estimate SE and Spring Forage Fish Biomass Estimate SE, respectively. Time series were extended back to 1982 and forward to 2022 in this update, but this did not change trends reported previously for 1985-2021.
+
+### MidAtlantic
+
+```{r plot_forage_indexMidAtlanticindex}
+# Plot indicator
+ggplotObject <- ecodata::plot_forage_index(report= 'MidAtlantic', varName= 'index')
+print(ggplotObject)
+```
+
+```{r plot_forage_indexMidAtlanticcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_forage_index(report= 'MidAtlantic', varName= 'cog')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_forage_indexNewEnglandindex}
+# Plot indicator
+ggplotObject <- ecodata::plot_forage_index(report= 'NewEngland', varName= 'index')
+print(ggplotObject)
+```
+
+```{r plot_forage_indexNewEnglandcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_forage_index(report= 'NewEngland', varName= 'cog')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: by EPU and full shelf
+
+Temporal scale: Spring (January-June), Fall (July-December)
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_forage_index}
+# Either from Contributor or ecodata
+```
+
+## Implications
+While the resulting indices show no long term trends in the Mid-Atlantic, they do show overall higher forage fish in fall relative to spring (Fig. \@ref(fig:MAforagebio)), with highest forage biomass during fall in the mid-1980s. In New England, the forage index shows an overall higher forage fish biomass in fall relative to spring (Fig. \@ref(fig:NEforagebio)). There is a long-term decreasing trend in the fall for GB and an increasing trend in the spring on GOM.  Changes in the distribution of forage biomass also affects predator distribution. Spatial subsets of this index were included in the bluefish research track stock assessment to investigate forage-driven changes in bluefish availability to recreational fisheries and surveys.
+
+## Get the data
+
+**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
+
+**ecodata name**: `ecodata::forage_index`
+
+**Variable definitions**
+
+Spring Forage Fish Biomass Estimate = aggregate forage fish biomass months 1-6, units relative grams per stomach 
+Spring Forage Fish Biomass Estimate SE = standard error of aggregate forage fish biomass months 1-6, units relative grams per stomach 
+Fall Forage Fish Biomass Estimate = aggregate forage fish biomass months 7-12, units relative grams per stomach 
+Fall Forage Fish Biomass Estimate SE = standard error of aggregate forage fish biomass months 7-12, units relative grams per stomach
+
+```{r vars_forage_index}
+# Pull all var names
+vars <- ecodata::forage_index |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/forage_index.html>
+
+## References
+

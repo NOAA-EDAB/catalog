@@ -1,0 +1,136 @@
+# Fishery Impacts from Offshore Wind Development
+
+**Description**: The data presented here include landings and revenue of managed species within existing offshore wind lease areas, Central Atlantic Bight final wind energy areas, and the Gulf of Maine draft wind energy area.
+
+**Indicator family**: 
+
+- [X] Social
+- [X] Economic
+
+
+**Contributor(s)**: Benjamin Galuardi, Geret DePiper, Dennis Corvi, Douglas Christel
+
+**Affiliations**: ?
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Estimates of landings and associated revenue of managed species within existing and proposed offshore wind lease areas provide an estimate of the potential socioeconomic impacts to fishery participants and fishing communities from regional offshore development projects. The presence of offshore wind project infrastructure could result in fishing effort displacement outside of lease areas, which could affect the scale, composition, and location of fishery landings and revenues and interactions with protected species. These data present absolute landings/revenue within lease areas, but also relative proportions of regional landings/revenue within lease areas to illustrate the scale of potential impacts to specific fisheries.
+
+## Key Results and Visualizations
+Figures include annual landings and revenue for each managed species caught within existing and proposed offshore wind lease areas. Tables include average annual landings and revenue for the top ten species caught within existing and proposed offshore wind lease areas and the maximum proportion of total annual regional landings and revenues for all managed species.
+
+### MidAtlantic
+
+```{r plot_wind_revenueMidAtlanticlandingfacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'landing' ,plottype= 'facets')
+print(ggplotObject)
+```
+
+```{r plot_wind_revenueMidAtlanticlandingnofacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'landing' ,plottype= 'nofacets')
+print(ggplotObject)
+```
+
+```{r plot_wind_revenueMidAtlanticvaluefacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'value' ,plottype= 'facets')
+print(ggplotObject)
+```
+
+```{r plot_wind_revenueMidAtlanticvaluenofacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'value' ,plottype= 'nofacets')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_wind_revenueNewEnglandlandingfacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'landing' ,plottype= 'facets')
+print(ggplotObject)
+```
+
+```{r plot_wind_revenueNewEnglandlandingnofacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'landing' ,plottype= 'nofacets')
+print(ggplotObject)
+```
+
+```{r plot_wind_revenueNewEnglandvaluefacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'value' ,plottype= 'facets')
+print(ggplotObject)
+```
+
+```{r plot_wind_revenueNewEnglandvaluenofacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'value' ,plottype= 'nofacets')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Offshore wind lease areas throughout the Exclusive Economic Zone from Maine through North Carolina
+
+Temporal scale: Annual from 2008-2022
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_wind_revenue}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Plots of annual landings and revenue within existing and proposed offshore wind lease areas show a general decline since 2008 for managed species with periodic spikes in both metrics. This suggests lower reliance on offshore wind lease areas for most fisheries, although some are more reliant upon these areas at large, particularly the longfin squid, surfclam, scallop, herring and skate fisheries. The Gulf of Maine draft wind energy area overlaps with a substantial portion of historic groundfish fishery landings/revenues, particularly for species such as redfish, pollock, white hake, and American plaice.
+
+## Get the data
+
+**Point of contact**: [Douglas Christel (douglas.christel@noaa.gov)](mailto:Douglas Christel (douglas.christel@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::wind_revenue`
+
+**Variable definitions**
+
+1) Managed species; Definition: Fishery species managed by the New England and Mid-Atlantic Fishery Management Councils or the Atlantic States Marine Fisheries Commission 
+2) Year; Definition: Calendar year in which fishery landings occurred  
+3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 
+4) Revenue; Definition: Total amount paid to the vessel for each species landed; Units: 2022 dollars 
+5) Percent GARFO Landings; Definition: Proportion of landings of each managed species from within existing/proposed offshore wind lease areas relative to the total landings of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage 
+6) Percent GARFO Revenue; Definition: Proportion of revenue of each managed species from within existing/proposed offshore wind lease areas relative to the total revenue of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage
+
+```{r vars_wind_revenue}
+# Pull all var names
+vars <- ecodata::wind_revenue |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Contraints
+
+Please email douglas.christel@noaa.gov for further information or request supporting data from nmfs.gar.data.requests@noaa.gov.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/wind_revenue.html>
+
+## References
+

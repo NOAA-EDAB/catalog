@@ -1,0 +1,119 @@
+# Seabird diet and productivity - New England
+
+**Description**: Common tern annual diet and productivity at seven Gulf of Maine colonies managed by the National Audubon Society’s Seabird Restoration Program
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: Don Lyons, Steve Kress, Paula Shannon, Sue Schubel
+
+**Affiliations**: National Audubon Society
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Seabird breeding colonies in the GOM are monitored and managed to promote recovery of formerly harvested species. Common terns are well-monitored and are considered good nearshore ecosystem indicators due to their wide distribution and generalist diet. Common terns breed on islands throughout the Gulf of Maine, feeding on a wide range of invertebrates and fish including Atlantic herring, juvenile (mainly white) hakes, and sand lance. As surface feeding birds, terns are sensitive to vertical distribution of prey as well as nearshore conditions in general, with a foraging distance of 10-20 km from a nesting colony.
+
+## Key Results and Visualizations
+GOM common tern average productivity (fledglings per nest) across 7 colonies has varied over time. The pattern is similar to that observed for fish condition (high before 2000, lower 2001-2009, higher/variable since 2010. Productivity is affected by both food and predation mortality. While data on predation is lacking, productivity lows in 2004-2006 were associated with euphausiids, and the 2018 productivity low with butterfish in tern diets. The presence of butterfish in tern diets reflects the extension of this warm water species into GOM. Due to their thin, deep body form, butterfish are often difficult for small seabird chicks to ingest and swallow, causing chicks to starve and/or parent birds to increase foraging effort. 2020 was a challenging year for terns raising chicks.  While diet composition was similar to the long term average, the quantity of food readily available was apparently less than normal, particularly around the time of chick hatching.  This may have been confounded by cold, wet weather when chicks would normally be close to fledging in mid-to-late July. Anecdotal observations showed that feeding rates were low at both those times.
+
+### MidAtlantic
+
+```{r plot_seabird_neMidAtlanticdiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'diversity')
+print(ggplotObject)
+```
+
+```{r plot_seabird_neMidAtlanticproductivity}
+# Plot indicator
+ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'productivity')
+print(ggplotObject)
+```
+
+```{r plot_seabird_neMidAtlanticprey}
+# Plot indicator
+ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'prey')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_seabird_neNewEnglanddiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'diversity')
+print(ggplotObject)
+```
+
+```{r plot_seabird_neNewEnglandproductivity}
+# Plot indicator
+ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'productivity')
+print(ggplotObject)
+```
+
+```{r plot_seabird_neNewEnglandprey}
+# Plot indicator
+ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'prey')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Gulf of Maine coastal areas
+
+Temporal scale: Spring and summer seabird breeding season
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_seabird_ne}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Declining productivity across multiple common tern colonies in the Gulf of Maine may indicate changes in the distribution, quality, and quantity of prey over time.
+
+## Get the data
+
+**Point of contact**: [Don Lyons, dlyons@audubon.org](mailto:Don Lyons, dlyons@audubon.org){.email}
+
+**ecodata name**: `ecodata::seabird_ne`
+
+**Variable definitions**
+
+Variable names include the code for the island, COTE (4 letter standard abbreviation for COmmon TErn), and either "Productivity" or a prey category.
+
+```{r vars_seabird_ne}
+# Pull all var names
+vars <- ecodata::seabird_ne |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Contraints
+
+Please email dlyons@audubon.org for further information and queries on this indicator source data.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/seabird_ne.html>
+
+## References
+

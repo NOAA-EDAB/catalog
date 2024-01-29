@@ -1,0 +1,105 @@
+# Highly Migratory Species POP Catch Per Unit Effort
+
+**Description**: CPUE from pelagic observer program (POP) observed hauls, presented as number of fish per haul, is provided for the northeast (i.e., the Northeast Coastal and Mid-Atlantic Bight fishing areas) by year/species from 1992-2022.
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: Jennifer Cudney, Tobey Curtis
+
+**Affiliations**: HMS
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The Pelagic Observer Program (POP) is operated out of the Southeast Fisheries Science Center, but provides observers in all regions (including the high seas) where U.S. flagged and HMS-permitted vessels fish under regulations for the HMS pelagic longline fishery. Data from the POP is collected during trips on pelagic longline vessels that are generally targeting swordfish, and yellowfin and bigeye tunas. Once a set is retrieved, information like the length, dressed weight, sex, and tag number of each individual fish is recorded. There have been times and areas where the agency has required 100-percent coverage over specific times or areas such as during bluefin tuna spawning time period in the Gulf of Mexico for a number of years and in the Mid-Atlantic Bight. Between 2017 and 2021, observer coverage for the entire pelagic longline fleet (i.e., from Maine to Texas, and the U.S. Caribbean and high seas) ranged from 9 to 13 percent of total overall reported sets.
+
+## Key Results and Visualizations
+TBD; data may not be correctly displayed in graphs.
+
+### MidAtlantic
+
+```{r plot_hms_cpueMidAtlanticshark}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_cpue(report= 'MidAtlantic', varName= 'shark')
+print(ggplotObject)
+```
+
+```{r plot_hms_cpueMidAtlantictuna}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_cpue(report= 'MidAtlantic', varName= 'tuna')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_hms_cpueNewEnglandshark}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_cpue(report= 'NewEngland', varName= 'shark')
+print(ggplotObject)
+```
+
+```{r plot_hms_cpueNewEnglandtuna}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_cpue(report= 'NewEngland', varName= 'tuna')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Data are extracted from the MAB and NEC fishing areas (see "Fishing Areas" figure)
+
+Temporal scale: 1992-2022, Annual
+
+**Synthesis Theme**:
+
+- [X] Regime Shifts
+
+
+```{r autostats_hms_cpue}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Pelagic observer data summarizes catch per unit effort information for a subset of total pelagic longline effort in the U.S. EEZ, and should not be interpreted as total interaction information for the northeast region pelagic longline fleet. CPUE trends can be used to evaluate whether the number of interactions with longline vessels has changed through time.
+
+## Get the data
+
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::hms_cpue`
+
+**Variable definitions**
+
+Year: year in which observations were made; Animal_Code: three letter abbreviation used by POP as a shorthand for species; Count: number of animals observed per year/species ; Haul_Num: number of observed hauls in the NE EEZ, in the two areas (NEC and MAB) within a given year (does not include damaged or incomplete sets). Num_per_haul: total # fish caught / total # hauls (for each species and year)
+
+```{r vars_hms_cpue}
+# Pull all var names
+vars <- ecodata::hms_cpue |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Contraints
+
+Pelagic observer data is considered confidential data, and must be screened to ensure that data meet requirements for "rule of three" at the set and vessel level before they can be distributed. Do not publish raw data.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/hms_cpue.html>
+
+## References
+

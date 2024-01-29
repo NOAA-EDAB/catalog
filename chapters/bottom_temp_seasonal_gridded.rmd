@@ -1,0 +1,87 @@
+# Bottom temperature - Seasonal Gridded
+
+**Description**: Seasonal mean bottom temperatures on the Northeast Continental Shelf between 1959 and 2023 in a 1/12° grid.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+
+
+**Contributor(s)**: Joseph Caracappa, Hubert du Pontavice, Vincent Saba, Zhuomin Chen
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The bottom temperature product is in a horizontal 1/12 degree grid between 1959 and 2022 and is made of daily bottom temperature estimates from:
+
+Bias-corrected ROMS-NWA between 1959 and 1992 which was regridded in the same 1/12degree grid as GLORYS using bilinear interpolation; Years 1993 through summer 2023 are from CMEMS GLORYS12V1 global reanalysis bottom temperature, and fall 2023 is from CMEMS PSY forecasting product.
+
+## Key Results and Visualizations
+Maps of seasonal mean bottom temperature across NE shelf.
+
+```{r plot_bottom_temp_seasonal_griddedMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_seasonal_gridded(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Whole shelf
+
+Temporal scale: Winter (Jan-Mar), Spring (April-June), Summer (July-Sept), Fall (Oct - Dec) from 1959-2023
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_bottom_temp_seasonal_gridded}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Bottom temperature is a key environmental parameter in defining the habitat and metabolic conditions of demersal and benthic species. Interannual and seasonal changes in bottom temperature can provide significant indicators of species productivity, spatial distributions, or mortality.  Long-term trends in bottom temperature are indicators of regional implications of global climate change and may be used in evaluating climate risk for fisheries management.
+
+## Get the data
+
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
+
+**ecodata name**: `ecodata::bottom_temp_seasonal_gridded`
+
+**Variable definitions**
+
+- Time: year - Lat: latitude - Lon: longitude - Variable: season - Value: bottom temperature (degrees Celcius)
+
+```{r vars_bottom_temp_seasonal_gridded}
+# Pull all var names
+vars <- ecodata::bottom_temp_seasonal_gridded |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/bottom_temp_seasonal_gridded.html>
+
+## References
+

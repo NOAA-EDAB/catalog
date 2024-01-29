@@ -1,0 +1,127 @@
+# Commercial Catch and Fleet Diversity
+
+**Description**: Permit-level species diversity and Council-level fleet diversity.
+
+**Indicator family**: 
+
+- [X] Social
+- [X] Economic
+
+
+**Contributor(s)**: Geret DePiper, Min-Yang Lee
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Diversity estimates have been developed to understand whether specialization, or alternatively stovepiping, is occurring in fisheries of the Northeastern Large Marine Ecosystem. We use the average effective Shannon indices for species revenue at the permit level, for all permits landing any amount of [NEFMC](https://www.nefmc.org/) or [MAFMC](http://www.mafmc.org/) Fishery Management Plan (FMP) species within a year (including both Monkfish and Spiny Dogfish). We also use the effective Shannon index of fleet revenue diversity and count of active fleets to assess the extent to which the distribution of fishing changes across fleet segments.
+
+## Key Results and Visualizations
+Diversity estimates have been developed for species landed by commercial vessels with New England permits, and fleets landing managed species. Over the course of the last three years, there has been a steep decline in the effective number of species being landed in the commercial fleet, and current diversity is near a low since records began (Fig. 15).  Commercial fishery fleet count has rebounded in recent years, although still at levels well below the historical average (Fig. 16). Here a fleet is defined as the combination of gear type (Scallop Dredge, Clam Dredge, Other Dredge, Gillnet, Hand Gear, Longline, Bottom Trawl, Midwater Trawl, Pot, or Purse Seine) and vessel length category (Less than 30 ft, 30 to 50 ft, 50 to 75 feet, 75 ft and above). 
+
+Commercial fishery fleet count and fleet diversity have been stable over time in the MAB, with current values near the long-term
+average (Fig. 15). This indicates similar commercial fleet composition and species targeting opportunities over time. Commercial fisheries are relying on fewer species relative to the mid-90s, although current species revenue diversity has recovered somewhat in the last year (Fig. 16).
+
+### MidAtlantic
+
+```{r plot_commercial_divMidAtlanticFleetcount}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet count')
+print(ggplotObject)
+```
+
+```{r plot_commercial_divMidAtlanticFleetdiversityinrevenue}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet diversity in revenue')
+print(ggplotObject)
+```
+
+```{r plot_commercial_divMidAtlanticPermitrevenuespeciesdiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Permit revenue species diversity')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_commercial_divNewEnglandFleetcount}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet count')
+print(ggplotObject)
+```
+
+```{r plot_commercial_divNewEnglandFleetdiversityinrevenue}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet diversity in revenue')
+print(ggplotObject)
+```
+
+```{r plot_commercial_divNewEnglandPermitrevenuespeciesdiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Permit revenue species diversity')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: MA and NE
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+
+```{r autostats_commercial_div}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Fleet diversity indices can be used to evaluate stability objectives as well as risks to fishery resilience and to maintaining equity in access to fishery resources [1]. In New England, the relatively low diversity estimates for the commercial fishery are likely driven by the continued reliance on a few species, sea scallops and lobster. This trend could diminish the capacity to respond to future fishing opportunities. 
+
+In the Mid-Atlantic, stability in commercial fleet diversity metrics suggests stable capacity to respond to the current range of fishing opportunities.
+
+## Get the data
+
+**Point of contact**: [Geret DePiper (geret.depiper@noaa.gov)](mailto:Geret DePiper (geret.depiper@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::commercial_div`
+
+**Variable definitions**
+
+1) Name: Permit revenue species diversity; Definition: Diversity of revenue across species averaged across permits; Units: effective Shannon.  
+2) Name: Fleet diversity in revenue; Definition: Diversity of revenue across fleet segments; Units: effective Shannon. 
+3) Name: Fleet count; Definition: Number of active fleets; Units: number of fleets.
+
+```{r vars_commercial_div}
+# Pull all var names
+vars <- ecodata::commercial_div |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Contraints
+
+Request data from GARFO
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/commercial_div.html>
+
+## References
+

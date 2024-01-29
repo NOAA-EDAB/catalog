@@ -1,0 +1,112 @@
+# ABC or ACL for Managed Stocks
+
+**Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
+
+**Indicator family**: 
+
+- [X] Social
+- [X] Economic
+
+
+**Contributor(s)**: Brandon Muffley, Jason, Didden, Julia Beaty, Jose Montanez, Karson Cisneros, Jessica Coakley, Hannah Hart, Kiley Dancy
+
+**Affiliations**: MAFMC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The ratio of total estimates catch (landings and dead discards) compared to the specified catch limit, either the Acceptable Biological Catch (ABC) or the Annual Catch Limit (ACL) by species and sector (e.g., commercial or recreational, if appropriate). This ratio can provide an understanding of management control to constrain total catch below the acceptable/specified limits through different management tools (e.g., trip limits, seasons, gear requirements etc.). Ratios above one can be an indicator of poor management control and/or uncertainties, or indicative that the catch limits in place are constraining on the fishery. Ratios below one could indicate greater management control and/or fewer uncertainties or that their may be other factors (e.g., markets, price, availability) may be limiting a sectors ability to reach its catch limits.
+
+## Key Results and Visualizations
+Catch divided by ABC/ACL for MAFMC managed fisheries. Red line indicates the median ratio across all fisheries. A secondary figure is also produced that provides the sum of catch limits across all MAFMC managed commercial (C) and recreational (R) fisheries.
+
+### MidAtlantic
+
+```{r plot_abc_aclMidAtlanticStacked}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report= 'MidAtlantic', plottype= 'Stacked')
+print(ggplotObject)
+```
+
+```{r plot_abc_aclMidAtlanticCatch}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report= 'MidAtlantic', plottype= 'Catch')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_abc_aclNewEnglandStacked}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report= 'NewEngland', plottype= 'Stacked')
+print(ggplotObject)
+```
+
+```{r plot_abc_aclNewEnglandCatch}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report= 'NewEngland', plottype= 'Catch')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Cape Hatteras, NC north to Maine
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_abc_acl}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Need to write later once updated data has been added to the data file.
+
+## Get the data
+
+**Point of contact**: [Brandon Muffley (bmuffley@mafmc.org)](mailto:Brandon Muffley (bmuffley@mafmc.org)){.email}
+
+**ecodata name**: `ecodata::abc_acl`
+
+**Variable definitions**
+
+Catch - definition: total landings and dead discards; units - metric tons (MT) 
+Acceptable biological catch (ABC) - the annual catch level recommended for a stock or stock complex by the Scientific and Statistical Committee that could be equal to or less than the Overfishing Limit (OFL); units - metric tons (MT) 
+Annual Catch Limit (ACL) - sector specific total catch limits which can be equal to or less than the ABC; units - metric tons (MT)
+
+```{r vars_abc_acl}
+# Pull all var names
+vars <- ecodata::abc_acl |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Other
+
+
+**Indicator Category**:
+
+Management reports (e.g., specification packages, fishery information documents), stock assessment reports, or data pulls from CAMS
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/abc_acl.html>
+
+## References
+

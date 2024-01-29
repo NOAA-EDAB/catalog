@@ -1,0 +1,107 @@
+# Gulf Stream Index
+
+**Description**: The monthly Gulf Stream North Wall Index presented here are based on the gridded EN.4.2.2 analyses dataset from 1954 to 2022 (https://www.metoffice.gov.uk/hadobs/en4/), calculated following Joyce et al. (2009).
+
+**Indicator family**: 
+
+- [X] Oceanographic
+
+
+**Contributor(s)**: Zhuomin Chen
+
+**Affiliations**: ?
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The T200-based Gulf Stream Index is calculated as the standardized first principal component time series from the empirical orthogonal function (EOF) analysis of the 200 m temperature time series at the 20 base points (selected along the climatological 15°C isotherm at 200 m between 74° and 55°W) and it represents the meridional fluctuation of the Gulf Stream North Wall (Joyce et al., 2019; Chi et al., 2019).
+
+## Key Results and Visualizations
+The Gulf Stream Index suggest that recent years (2021-2022) the GS almost maintains its relative northward shift relative to the long-term mean.
+
+### MidAtlantic
+
+```{r plot_gsiMidAtlanticgsi}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(report= 'MidAtlantic', varName= 'gsi')
+print(ggplotObject)
+```
+
+```{r plot_gsiMidAtlanticwestgsi}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(report= 'MidAtlantic', varName= 'westgsi')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_gsiNewEnglandgsi}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(report= 'NewEngland', varName= 'gsi')
+print(ggplotObject)
+```
+
+```{r plot_gsiNewEnglandwestgsi}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(report= 'NewEngland', varName= 'westgsi')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Gulf Stream between 74°W and 55°W
+
+Temporal scale: Monthly from 1954 to 2022
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_gsi}
+# Either from Contributor or ecodata
+```
+
+## Implications
+The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stream position on monthly timescale, which may affect the slope water properties intruding onto the continental shelf. The GSNW index is also suggested to be an good indicator for biomass distribution of multiple marine fishes (e.g., silver hake Nye et al., 2011).
+
+## Get the data
+
+**Point of contact**: [Zhuomin Chen (zhuomin.chen@uconn.edu)](mailto:Zhuomin Chen (zhuomin.chen@uconn.edu)){.email}
+
+**ecodata name**: `ecodata::gsi`
+
+**Variable definitions**
+
+Name: GSI; Definition: Gulf Stream North Wall Index (T200-based using EN4 datasets); Units: None.
+
+```{r vars_gsi}
+# Pull all var names
+vars <- ecodata::gsi |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/gsi.html>
+
+## References
+

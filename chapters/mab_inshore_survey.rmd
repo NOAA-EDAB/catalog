@@ -1,0 +1,92 @@
+# Inshore bottom trawl surveys
+
+**Description**: Biomass time series for aggregate species groups from *three* inshore bottom trawl surveys conducted throughout the NE US:
+
+- NEAMAP (mab_inshore_survey) from Cape Hatteras to RI
+
+- MA Inshore in MA state waters (mass_inshore_survey)
+
+- ME/NH Inshore in ME and NH state waters (ne_inshore_survey)
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: James Gartland, Matt Camisa, Rebecca Peters, Sean Lucey
+
+**Affiliations**: VIMS, Maine, NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Indicators from these inshore surveys are analagous to those produced by the NEFSC trawl survey in the `aggregate_biomass` indicator dataset
+
+## Key Results and Visualizations
+Each survey shows trends by aggregate group.
+
+### MAB
+
+```{r plot_mab_inshore_surveyMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_mab_inshore_survey(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Nearshore regions of the MAB and GOM
+
+Temporal scale: Spring and Fall
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_mab_inshore_survey}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Some trends match the NEFSC survey, some dont. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
+
+## Get the data
+
+**Point of contact**: [James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov; Sean Lucey (MA Inshore Survey), sean.lucey@rws.com](mailto:James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov; Sean Lucey (MA Inshore Survey), sean.lucey@rws.com){.email}
+
+**ecodata name**: `ecodata::mab_inshore_survey`
+
+**Variable definitions**
+
+See variable definitions for `aggregate_biomass`
+
+```{r vars_mab_inshore_survey}
+# Pull all var names
+vars <- ecodata::mab_inshore_survey |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/mab_inshore_survey.html>
+
+## References
+

@@ -1,0 +1,114 @@
+# Relative condition
+
+**Description**: NEFSC fall bottom trawl survey relative condition
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: Laurel Smith
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The health and well being of individual fish can be related to body shape condition indices (i.e.,
+weight at a given length) such as relative condition index, which is the ratio of observed weight to predicted weight based on length (Le Cren 1951). Heavier and fatter fish at a given length have higher relative condition which is expected to improve growth, reproductive output, and survival.
+
+Le Cren’s (1951) relative condition (Kn) is used in this study:
+Kn = W/W’
+Where W’ is the relative length-specific mean weight for the population in a given region. For this work, length-weight coefficients from Wigley et al. (2003) were used to calculate W’. Individual fish weights were total body weights from Northeast Fisheries Science Center (NEFSC) fall bottom trawl surveys. Most finfish species included in this study are spring or summer spawners, so the fall survey was chosen to reduce variability of gonad weights in the spring survey as the fish ramp up for spawning.
+
+Le Cren ED. The Length-Weight Relationship and Seasonal Cycle in Gonad Weight and Condition in the Perch (Perca fuviatilis). Journal of Animal Ecology. 1951;20: 201–219. doi:10.2307/1540
+
+Wigley, S.E., H.M. McBride, N.J. McHugh. 2003. Length-Weight Relationships for 74 Fish Species Collected during NEFSC Research Vessel Bottom Trawl Surveys, 1992-99. NOAA Tech. Memo. NMFS-NE-171.
+
+## Key Results and Visualizations
+Condition factor for fish species in the MAB based on fall NEFSC bottom trawl survey data. MAB data are missing for 2017 due to survey delays, and no survey was conducted in 2020.
+
+A pattern of generally good condition was observed across many MAB species prior to 2000, followed by a period of generally poor condition from 2001-2010, with a mix of good and poor condition from 2011-2019. Condition was again mixed in 2022, but a number of species improved in condition from the relatively low condition year in 2021 (Fig. 43). Preliminary results of synthetic analyses show that changes in temperature, zooplankton, fishing pressure, and population size influence the condition of different fish species.
+
+### MAB
+
+```{r plot_conditionMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_condition(report='MidAtlantic')
+print(ggplotObject)
+```
+
+### GB
+
+```{r plot_conditionNEGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GB')
+print(ggplotObject)
+```
+
+### GOM
+
+```{r plot_conditionNEGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GOM')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: The spatial scale for relative condition was on the EPU level.
+
+Temporal scale: The temporal scale for relative condition was the fall NEFSC bottom trawl survey (Sept.-Nov.).
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
+
+```{r autostats_condition}
+# Either from Contributor or ecodata
+```
+
+## Implications
+These changes in condition have direct implications for stock assessments, catch quotas and management, and may indirectly impact fish recruitment and mortality.
+
+## Get the data
+
+**Point of contact**: [Laurel.smith@noaa.gov](mailto:Laurel.smith@noaa.gov){.email}
+
+**ecodata name**: `ecodata::condition`
+
+**Variable definitions**
+
+Species: common name for fish species EPU: Ecological Production Unit YEAR: year of condition data 
+MeanCond: annual mean by EPU and species of relative condition (unitless)
+
+```{r vars_condition}
+# Pull all var names
+vars <- ecodata::condition |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/condition.html>
+
+## References
+

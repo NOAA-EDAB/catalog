@@ -1,0 +1,85 @@
+# Slopewater Proportions
+
+**Description**: This index gives the relative proportions of watermass type observed in the deep Northeast Channel (150-200 m water depth).
+
+**Indicator family**: 
+
+- [X] Oceanographic
+
+
+**Contributor(s)**: Paula Fratantoni
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Temperature and salinity measurements are examined to assess the composition of the waters entering the Gulf of Maine through the deep Northeast Channel. The analysis closely follows the methodology described by David G. Mountain (2012a). This method assumes that the waters flowing into the Northeast Channel between 150 and 200 meters depth are composed of slope waters, originating offshore of the continental shelf, and shelf waters, originating on the continental shelf south of Nova Scotia.
+
+## Key Results and Visualizations
+_No response_
+
+### NE
+
+```{r plot_slopewaterNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_slopewater(report='NewEngland')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Within the central Northeast Channel
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+
+
+
+```{r autostats_slopewater}
+# Either from Contributor or ecodata
+```
+
+## Implications
+_No response_
+
+## Get the data
+
+**Point of contact**: [Paula Fratantoni (paula.fratantoni@noaa.gov)](mailto:Paula Fratantoni (paula.fratantoni@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::slopewater`
+
+**Variable definitions**
+
+Name: LSW; Definition: Percent total that is Labrador Slope Water; Units: percent; Name: WSW: Definition: Percent total that is Warm Slope Water; Units: percent
+
+```{r vars_slopewater}
+# Pull all var names
+vars <- ecodata::slopewater |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/slopewater.html>
+
+## References
+

@@ -1,0 +1,92 @@
+# Feeding guilds by management bodies
+
+**Description**: Classification of species guild membership by management bodies.
+
+**Indicator family**: 
+
+- [X] Megafauna
+- [X] Economic
+
+
+**Contributor(s)**: Sarah Gaichas and Sean Lucey.
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Feeding guilds are groups of species that feed similarly. At the ecosystem level, the food web is likely stable if overall biomass of feeding groups is stable over time, even if populations of species within the groups may be changing. 
+
+We defined feeding guilds for fish and invertebrates captured by bottom trawl surveys using diet similarity, either from diet analysis or from literature. *add refs:* Garrison and Link 2000, Smith and Link 2010, [NEFSC food habits online](https://fwdp.shinyapps.io/tm2020/)
+
+## Key Results and Visualizations
+Each management body (MAFMC, NEFSC, State etc) has its managed species associated with different feeding guilds. This data set shows which managed species for each management body are in which guilds.
+
+### MidAtlantic
+
+```{r plot_species_groupingsMidAtlantic2024}
+# Plot indicator
+ggplotObject <- ecodata::plot_species_groupings(report= 'MidAtlantic', varName= '2024')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_species_groupingsNewEngland2024}
+# Plot indicator
+ggplotObject <- ecodata::plot_species_groupings(report= 'NewEngland', varName= '2024')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Coastwide
+
+Temporal scale: N/A
+
+**Synthesis Theme**:
+
+
+
+
+```{r autostats_species_groupings}
+# Either from Contributor or ecodata
+```
+
+## Implications
+We changed species groupings in response to comments over the years. The table shows feeding guilds used in the 2024 report.
+
+## Get the data
+
+**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
+
+**ecodata name**: `ecodata::species_groupings`
+
+**Variable definitions**
+
+1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024) 
+2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 
+3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 
+4. Joint = Jointly managed species by feeding guild 
+5. State or Other = Species managed by other bodies listed by feeding guild
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/species_groupings.html>
+
+## References
+

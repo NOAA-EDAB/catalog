@@ -1,0 +1,85 @@
+# Chesapeake Bay Salinity
+
+**Description**: This data is collected from the CBIBS buoy system.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+
+
+**Contributor(s)**: Charles Pellerin
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The indicator is the Water Temperature and the Water Salinity.
+
+## Key Results and Visualizations
+The key results are the state of the water temperature and the salinity
+
+### MAB
+
+```{r plot_ch_bay_salMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_ch_bay_sal(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Main stem of the Chesapeake Bay
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_ch_bay_sal}
+# Either from Contributor or ecodata
+```
+
+## Implications
+The changes in the temperature and salinity have implications in the habitat
+
+## Get the data
+
+**Point of contact**: [Charles Pellerin (charles.pellerin@noaa.gov](mailto:Charles Pellerin (charles.pellerin@noaa.gov){.email}
+
+**ecodata name**: `ecodata::ch_bay_sal`
+
+**Variable definitions**
+
+1) Salinity
+
+```{r vars_ch_bay_sal}
+# Pull all var names
+vars <- ecodata::ch_bay_sal |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/ch_bay_sal.html>
+
+## References
+

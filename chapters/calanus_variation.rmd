@@ -1,0 +1,121 @@
+# Seasonal Variation of Calanus finmarchicus
+
+**Description**: Abundance of late copepodid stages of the planktonic copepod, Calanus finmarchicus, measured during seasonal surveys between 1977 and 2019. Data from NOAA EcoMon/MARMAP program
+
+**Indicator family**: 
+
+- [X] Lower trophic levels
+
+
+**Contributor(s)**: Rubao Ji, Jeffrey Runge, NOAA EcoMon Survey Team
+
+**Affiliations**: UMS
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+This phenology indicator shows the change in abundance of the planktonic copepod, Calanus finmarchicus over a mean annual cycle in Wilkinson Basin, the primary overwintering habitat of this species in the western Gulf of Maine. The data are provided by the NOAA EcoMon/MARMAP survey, which has sampled stations along the Northeast U.S. Shelf, including the Gulf of Maine, seasonally (2-6 times per year) in nearly all years since 1977. The 333 µm mesh plankton nets used by the survey quantitatively capture only the late copepodid stages (C3-adult) of C. finmarchicus, but these stages nevertheless are representative of the seasonal variation in abundance of the population. This indicator serves as a baseline that can be used to interpret future changes in wGoM C. finmarchicus abundance.
+
+## Key Results and Visualizations
+Calanus finmarchicus phenology figure (uploaded with data) here
+
+Seasonal abundance (number m-3) of C. finmarchicus late copepodid stages (mostly stages CIII-CVI) in Wilkinson Basin. X-axis represents time of year, from 1 January (yearday 0) to 31 December (yearday 365). Background gray circles show individual MARMAP/EcoMon abundance data points in Wilkinson Basin between 1977-2019. Solid black line shows the seasonal pattern in mean abundance from the MARMAP/EcoMon data; dotted lines show 2x (top) and ½ (bottom) of the mean abundance. Colored horizontal lines show conceptual model of seasonally variable predominant drivers. Predominant drivers in winter (Jan-Mar: days 1-100) suggested to be a combination of predation mortality and advective loss.
+
+The abundance of late stage Calanus finmarchicus in the western Gulf of Maine is seasonally variable. The highest abundances are observed in May-June, the result of reproduction, the magnitude of which depends on the timing of food availability to females (Stage CVI) in late-winter through spring. By late summer, most of the C. finmarchicus population is present as Stage CV, which overwinters at depth in a dormant state. The number of stage CV and hence the overall population abundance dwindles depending on net losses from advection and vertebrate and invertebrate predators. The abundance reaches its nadir in February-March, when the population is in stage CV or newly molted adult females and males. Note the difference between the late winter and late spring mean abundances is about three orders of magnitude.
+
+
+## Indicator statistics 
+Spatial scale: Data from Wilkinson Basin, defined as the area under which bottom depth is >200m in the western Gulf of Maine.
+
+Temporal scale: NOAA EcoMon/MARMAP data between 1977 and 2019, collected during seasonal surveys in spring, summer, fall and winter, with particular emphasis on spring (April-May) and fall (September-November) time periods.
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+
+```{r autostats_calanus_variation}
+# Either from Contributor or ecodata
+```
+
+## Implications
+This is the first of several indicators of trends in Gulf of Maine mesozooplankton abundance and diversity that the NERACOOS MBON (J. Runge/ C. Thompson/ L. Karp-Boss) and NE Shelf LTER (R. Ji) intend to submit to the NOAA SOE process over the next several years. The mean phenology of Calanus finmarchicus based on the NOAA EcoMon/MARMAP data is a starting point, as it provides a baseline from which future change in C. finmarchicus abundance can be interpreted. We have found that it is important to take into account the strong seasonality in abundance associated with the Calanus life cycle (winter spring reproduction, overwintering in the lipid rich late preadult stage in late summer through mid winter) in order to understand abundance trends. The drivers controlling Calanus abundance vary with season and may be synegistic or counteracting in their influence on Calanus abundance, such that an annual index of abundance may mask ecologically important trends. For example, observations from the NERACOOS fixed station in Wilkinson Basin (WBTS) indicate an early timing of food availability in late-winter matching emergence of females from dormancy and resulting in higher spring abundances since 2010. However, advective supply of older copepodid stages into Wilkinson Basin in summer is lower, by as much as 70%, since 2010, reflecting changes in external supply of Calanus into the Gulf of Maine (Record et al. 2019; Meyer-Gutbrod et al. 2021) and perhaps also increased predation in the Maine Coastal Current, the proximal source of supply, in summer, associated with higher surface layer temperatures (Ji et al. 2021; Pershing and Kemberling 2023). 
+Below are notes submitted to SOE members in November, 2023. The results and discussion are based on a final report submitted by J. Runge and coauthors in fulfillment of an award from BOEM supporting NERACOOS ISMN-MBON plankton observations at two fixed stations, the Coastal Maine Time Series (established 2008, located in mid-coast Maine at the western margin of the Maine Coastal Current) and the Wilkinson Basin Time Series (established 2005, located in the northwest corner of Wilkinson Basin) Stations. We are in the process of analyzing and archiving data for submission to primary journals in 2024, and expect these data to be vetted and available for the SOE process in 2025. 
+
+NOTES:
+A NERACOOS-ISMN Marine Biodiversity Observation Network report: Status of the zooplankton in the Gulf of Maine 2023 with focus on Calanus finmarchicus as a sentinel indicator
+
+Implications for interpretation of zooplankton data
+o Copepods are the most abundant taxon in the mesozooplankton captured with 200-333µm mesh nets used in the AZMP, ISMN MBON and EcoMon surveys. 
+o In NW Atlantic, Calanus species dominate the mesozooplankton biomass in waters deeper than 70-100 m (Casault et al. 2023; Johnson et al. NW Atlantic Zooplankton Atlas, in prep.) 
+o The Calanus species found in the Gulf of Maine is Calanus finmarchicus. Apart from Paraeucheata norvegica, a very large carnivorous copepod, C. finmarchicus older stages are considerably larger than other copepods species found in the Gulf of Maine.
+o C. finmarchicus is supremely adapted to the subarctic North Atlantic. It ingests lipids manufactured by primary producers (especially diatoms) and accumulates them in an oil sac that is used to overwinter in stage CV, the last preadult stage. Most of the zooplankton lipidscape in the Gulf of Maine is in the Calanus late stages, available May-Dec (approx.)
+o In the decade since the shift in oceanographic conditions that occurred around 2010, C. finmarchicus abundance has declined to 30-40% of its 2005-2008 level in summer-fall in Wilkinson Basin, the center of C. finmarchicus abundance in the Gulf of Maine (Runge et al. 2023). The primary driver of this decline is hypothesized to be a shift in supply of water into the Gulf of Maine starting around 2010, from relatively Calanus rich Scotian Shelf water to relatively Calanus poor Atlantic Temperate Water adjacent to the Gulf Stream. In addition the Calanus abundance on the Scotian Shelf has declined since 2010 (Casault et al. 2023). The Calanus seed stock immigrating into the Gulf of Maine is amplified in the Maine Coastal Current, mitigating the reduction in supply, but there is nevertheless a reduction in abundance of the overwintering stock in Wilkinson Basin that is likely also negatively impacting by invertebrate and vertebrate predators.
+o While summer-winter abundance of C. finmarchicus has declined since 2010, its abundance in spring has not declined (Runge et al. 2023). Abundances were higher in the six years after 2010, before decreasing to pre-2010 levels in the early 2020s. The driver of spring abundance despite a lower overwintering stock is hypothesized to be increased food availability in late winter spring, driving higher reproductive rates generating the spring cohort.
+o In the period between 2011-2017, after the 2010 oceanographic shift, abundances of many other copepod species have increased (Dullaert et al. in prep), including Centropages typicus, a fall dominant and Pseudocalanus spp., both of which are also prey for North Atlantic right whales in the western Gulf of Maine in spring, before the appearance of abundant lipid-rich late stage Calanus. The likely driver has been the increase in phytoplankton biomass (as measured by Chl. a concentration) in fall and winter and well as increased temperature driving higher population growth rates. 
+o In the period between 2011 and 2017, abundance number of zooplankton taxa other than copepoda also increased (Dullaert et al. 2023), including Mollusca (pteropods), Ctenophora, Cheatognatha and siphonophores (from EcoMon and ISMN MBON data). The latter three taxa are predators on Calanus and other copepods. 
+o Despite increases in zooplankton other than Calanus, the total mesozooplankton biomass captured in ring net tows has declined, reflecting the predominance of C. finmarchicus. The decline in C. finmarchicus abundance and consequently zooplankton biomass represents lower availability of energy rich lipids to higher trophic levels, since there is no equivalent replacement to C. finmarchicus in the subarctic GoM food web (Runge et al. 2023). 
+o Declines in forage fish (herring condition, sand lance recruitment and NARW foraging) would be expected to follow the declining trend in C. finmarchicus (e.g. Suca et al.2021)
+o For these reasons, the seasonal indices in Calanus finmarchicus and other zooplankton abundance and biomass are important to track, as are the seasonal drivers: warming trend (surface and bottom waters), sources of external supply, predators and availability of phytoplankton food in late winter. Shifting abundances in zooplankton taxa have been observed in previous decades in the EcoMon survey (e.g. Pershing et al. 2005; Grieve et al. 2017). There has been no radical regime shift (e.g. a speculation that lipid-rich menhaden replace Calanus, with consequences for the structure of the higher trophic levels), but given the trend in increasing CO2 and ocean temperatures, close observation of change in the lower trophic levels in the GoM is warranted. 
+
+References
+Casault, B., C. Johnson, E. Devred, E. Head, and L. Beazley. 2023. Optical, Chemical, and
+Biological Oceanographic Conditions on the Scotian Shelf and in the eastern Gulf of Maine
+during 2021. DFO Can. Sci. Advis. Sec. Res. Doc. 2023/016. v + 74 p.
+
+Dullaert, E. et al. The response of the zooplankton community in the western Gulf of Maine to a shift in oceanographic conditions: 2005-2017. Manuscript in preparation.
+
+Grieve, B.D., Hare, J.A. and Saba, V.S., 2017. Projecting the effects of climate change on Calanus finmarchicus distribution within the US Northeast Continental Shelf. Scientific Reports, 7(1): 1-12.
+
+Ji, R., J. A. Runge, C.S. Davis and P. Wiebe. 2022. Drivers of variability of Calanus finmarchicus in the Gulf of Maine: roles of internal production and external exchange. ICES Journal of Marine Science. 79 (3): 775–784. https://doi.org/10.1093/icesjms/fsab147.
+
+Meyer-Gutbrod EL, Greene CH, Davies KTA, Johns DG. 2021. Ocean regime shift is driving collapse of the North Atlantic right whale population. Oceanography 34(3):22–31.
+
+Pershing, A.J., Greene, C.H., Jossi, J.W., O'Brien, L., Brodziak, J.K. and Bailey, B.A., 2005. Interdecadal variability in the Gulf of Maine zooplankton community, with potential impacts on fish recruitment. ICES Journal of Marine Science, 62(7): 1511-1523.
+
+Record, N.R., J.A. Runge, D.E. Pendleton, W.A. Balch, K.T.A. Davies, A.J. Pershing, C. Johnson, K. Stamieszkin, R. Ji, Z. Feng, S.D. Kraus, R.D. Kenney, C. Hudak, C.A. Mayo, C. Chen, J. Salisbury and C.R.S. 
+Thompson. 2019. Climate-driven circulation changes threaten conservation of endangered North Atlantic right whales. Oceanography. 32(2): 162-169. doi.org/10.5670/ oceanog.2019.201.
+
+Runge J, Karp Boss L, Dullaert E, Ji, R, Motyka J, Young-Morse R, Pugh, D, Shellito S, Vandemark D. 2023. Sustained monitoring of zooplankton populations at the Coastal Maine Time Series (CMTS) and Wilkinson Basin Time Series (WBTS) stations in the western Gulf of Maine: Results from 2005-2022. Sterling (VA): U.S. Department of the Interior, Bureau of Ocean Energy Management. 40 p. Report No.: OCS Study BOEM 2023-015. Contract No.: CA M19AC00022. 
+
+Runge, J., E. Dullaert, S. Shellito, L. Karp Boss, I. Honda, R. Ji, J. Motyka, D. Pugh, C. Thompson, R. Young-Morse and D. Vandemark. Fixed time series station observations of zooplankton responses to changing oceanographic conditions in the western Gulf of Maine: the Calanus Index. Manuscript in preparation. 
+
+Suca J., D. Wiley, T. Silva, A. Robuck, D. Richardson, S.Glancy, E. Clancey, T.Giandonato, A. Solow, M. Thompson, P. Hong, H. Baumann, L. Kaufman and J. Llopiz. 2021. Sensitivity of sand lance to shifting prey and hydrography indicates forthcoming change to the northeast US shelf forage fish complex. ICES Jour. Mar. Sci. 78(3): 1023-1037.
+
+## Get the data
+
+**Point of contact**: [Jeffrey Runge (jeffrey.runge@maine.edu](mailto:Jeffrey Runge (jeffrey.runge@maine.edu){.email}
+
+**ecodata name**: `ecodata::calanus_variation`
+
+**Variable definitions**
+
+Calanus finmarchicus abundance from 333 um mesh bongo tows; Units: number m^-3
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Extensive analysis, not yet published
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Contraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/calanus_variation.html>
+
+## References
+

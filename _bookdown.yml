@@ -1,65 +1,78 @@
 book_filename: "catalog"
-rmd_files: ["index.Rmd",
-#"chapters/template.Rmd",
-#"chapters/aggregate_groups.rmd",
-#"chapters/Annual_SST_cycle_indicator.Rmd",
-"chapters/Aquaculture_indicators.Rmd",
-"chapters/calanus_stage.Rmd",
-#"chapters/Catch_and_Fleet_Diversity_indicators.Rmd",
-"chapters/ches_bay_salinity.Rmd",
-"chapters/ches_bay_temp.Rmd",
-#"chapters/ches_bay_water_quality.Rmd",
-#"chapters/CHL_PPD_indicator.Rmd",
-"chapters/cold_pool_index.Rmd", 
-#"chapters/landings_data.Rmd",
-"chapters/comm_eng.Rmd",
-#"chapters/conceptualmodels.Rmd",
-#"chapters/Condition_indicator.Rmd",
-"chapters/diet_composition_analysis.Rmd",
-#"chapters/EPU.Rmd",
-"chapters/fishing_effects_model.Rmd",
-#"chapters/forage_energy_density.Rmd",
-"chapters/forage_index.Rmd",
-#"chapters/gulf_stream_index.Rmd",
-#"chapters/HP_indicator.Rmd", 
-#"chapters/hms_landings.Rmd",
-#"chapters/Ich_div_indicator.Rmd",
-#"chapters/inshore_bottom_trawl_surveys.Rmd",
-#"chapters/long_term_sst_indicator.Rmd",
-"chapters/habs_alexandrium.Rmd", 
-"chapters/habs_psp.Rmd",
-#"chapters/MAB_HABs_indicator.Rmd",
-#"chapters/NE_HABs_indicator.Rmd",
-"chapters/heatwave.Rmd", 
-"chapters/hudson_river_flow.Rmd",
-"chapters/NERRs.Rmd", 
-#"chapters/observer_data_indicator.Rmd",
-#"chapters/occupancy_indicator.Rmd",
-#"chapters/primary_production_required.Rmd",
-#"chapters/productivity_for_tech_memo.Rmd",
-#"chapters/Recreational_Data.Rmd",
-#"chapters/RW_indicator.rmd",
-"chapters/sandlance.Rmd",
-"chapters/temperature_clims.Rmd",
-#"chapters/SAFMC_spp.Rmd",
-#"chapters/seabird_ne.Rmd",
-#"chapters/Seabird_MAB.Rmd",
-#"chapters/Seasonal_SST_anomaly_maps_indicator.Rmd",
-#"chapters/singlespp_status_indicator.Rmd",
-#"chapters/slopewater_proportions.Rmd",
-#"chapters/Species_density_estimates.Rmd",
-#"chapters/Species_dist_indicators.Rmd",
-#"chapters/stom_fullness.Rmd",
-#"chapters/survey_data.rmd",
-#"chapters/Thermal_hab_proj_indicator.Rmd",
-#"chapters/HABs.Rmd",
-"chapters/Ocean_acidification.Rmd",
-#"chapters/Trend_analysis.Rmd",
-#"chapters/warm_core_rings.Rmd",
-#"chapters/wind_habitat_occupancy.Rmd",
-#"chapters/Zooplankton_indicators.Rmd",
-"chapters/glossary.Rmd",
-"chapters/references.Rmd"]
-delete_merged_file: false
+rmd_files: 
+    -   "index.Rmd"
+
+
+#################### LOWER TROPHIC ##################
+    -   "chapters/sectionHeaders/ltl.rmd" 
+    -   "chapters/ches_bay_wq.rmd" 
+    -   "chapters/chl_pp.rmd" 
+    #-   "chapters/annual_chl_pp.rmd"
+    -   "chapters/habs.rmd" 
+    -   "chapters/SAV.rmd" 
+    -   "chapters/calanus_variation.rmd" 
+    -   "chapters/wbts_mesozooplankton.rmd" 
+
+
+#################### MEGAFAUNA ##################
+    -   "chapters/sectionHeaders/megafauna.rmd" 
+    -   "chapters/aggregate_biomass.rmd" 
+    -   "chapters/mab_inshore_survey.rmd" 
+    -   "chapters/condition.rmd" 
+    -   "chapters/energy_density.rmd" 
+    -   "chapters/exp_n.rmd" 
+    -   "chapters/forage_index.rmd" 
+    -   "chapters/harborporpoise.rmd" 
+    -   "chapters/hms_cpue.rmd" 
+    -   "chapters/hms_landings.rmd" 
+    -   "chapters/hms_stock_status.rmd" 
+    -   "chapters/HMS_species_distribution.rmd" 
+    -   "chapters/narw.rmd" 
+    -   "chapters/productivity_anomaly.rmd" 
+    -   "chapters/seal_pups.rmd" 
+    -   "chapters/gom_salmon.rmd" 
+    -   "chapters/grayseal.rmd" 
+    -   "chapters/seabird_ne.rmd" 
+    -   "chapters/species_groupings.rmd" 
+
+
+#################### OCEANOGRAPHIC ##################
+    -   "chapters/sectionHeaders/oceanographic.rmd"
+    -   "chapters/bottom_temp.rmd" 
+    -   "chapters/bottom_temp_comp.rmd"
+    -   "chapters/bottom_temp_glorys.rmd" 
+    -   "chapters/bottom_temp_seasonal_gridded.rmd" 
+    -   "chapters/cold_pool.rmd"
+    -   "chapters/gsi.rmd"
+    -   "chapters/slopewater.rmd"
+    -   "chapters/thermal_habitat_area.rmd"
+    -   "chapters/thermal_habitat_persistence.rmd"
+    -   "chapters/ch_bay_sal.rmd" 
+    -   "chapters/ch_bay_temp.rmd" 
+    -   "chapters/ches_bay_sst.rmd" 
+    -   "chapters/heatwave.rmd" 
+    -   "chapters/heatwave_year.rmd" 
+    -   "chapters/ocean_acidification.rmd"
+
+
+######################## ECONOMIC ##################
+    -   "chapters/sectionHeaders/economic.rmd"
+    -   "chapters/comdat.rmd" 
+    -   "chapters/commercial_div.rmd"
+    -   "chapters/ppr.rmd"
+    -   "chapters/recdat.rmd"
+    -   "chapters/abc_acl.rmd"
+    -   "chapters/bennet.rmd"
+    -   "chapters/stock_status.rmd"
+    -   "chapters/engagement.rmd"
+    -   "chapters/ocean_acidification.rmd"
+    -   "chapters/wind_dev_speed.rmd"
+    -   "chapters/wind_port.rmd"
+    -   "chapters/wind_revenue.rmd"
+
+    -   "chapters/glossary.Rmd"
+    -   "chapters/references.Rmd"
+before_chapter_script: _common.R
+delete_merged_file: true
 output_dir: "_book"
-new_session: false # merge and knit as appose to knit and merge
+new_session: false #(if true all rmds need to be in root folder)
