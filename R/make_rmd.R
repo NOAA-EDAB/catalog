@@ -316,7 +316,7 @@ make_rmd <- function(listobject){
   cat(listobject$publicAvailability,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  cat("## Accessibility and Contraints",append=T,fill=T,file=con)
+  cat("## Accessibility and Constraints",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(listobject$accessibility,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
