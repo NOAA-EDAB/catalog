@@ -13,5 +13,5 @@ Depends:
 Suggests:
   downlit
 Remotes: 
-  NOAA-EDAB/ecodata@dev
+  NOAA-EDAB/ecodata
   
