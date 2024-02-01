@@ -27,11 +27,133 @@ body:
   - type: input
     id: data_name
     attributes:
-      label: Data Name
+      label: Data Name (This will be the displayed title in Catalog)
       description: Enter the name of the data set.
       placeholder: Ex. NE Shelf Annual Sea Surface Temperature
     validations:
       required: true
+      
+  - type: dropdown
+    id: indicator_name
+    attributes:
+      label: Indicator Name (as exists in ecodata)
+      description: Select from the drop down
+      options:
+        - ESP_gsi
+        - ESP_heatwave
+        - ESP_heatwave_cod
+        - ESP_seasonal_chl
+        - ESP_seasonal_oisst_anom
+        - ESP_seasonal_pp
+        - ESP_sf
+        - HMS_species_distribution
+        - SAV
+        - abc.acl
+        - aggregate_biomass
+        - aquaculture
+        - bennet
+        - blue_runner
+        - bottom_temp
+        - bottom_temp_comp
+        - bottom_temp_glorys
+        - bottom_temp_seasonal_gridded
+        - calanus_stage
+        - ch_bay_sal
+        - ch_bay_temp
+        - ches_bay_sf
+        - ches_bay_sst
+        - ches_bay_wq
+        - chl_pp
+        - coast
+        - cold_pool
+        - cold_pool_sf
+        - comdat
+        - commercial_div
+        - condition
+        - energy_density
+        - engagement
+        - epu_sf
+        - exp_n
+        - forage_anomaly
+        - forage_index
+        - grayseal
+        - gsi
+        - gsi_old
+        - habitat_diversity
+        - habitat_occupancy
+        - habitat_vulnerability
+        - habs
+        - harborporpoise
+        - heatwave
+        - heatwave_anom_gridded
+        - heatwave_peak_date
+        - heatwave_year
+        - hms_category
+        - hms_cpue
+        - hms_landings
+        - hms_stock_status
+        - hp_density
+        - hudson_river_flow
+        - ichthyo_diversity
+        - long_line_survey
+        - long_term_sst
+        - longlinesurvey_sf
+        - lps_sharks
+        - mab_inshore_survey
+        - mass_inshore_survey
+        - nao
+        - narw
+        - ne_inshore_survey
+        - ne_inshore_survey_species
+        - observed_sharks
+        - phyto_size
+        - ppr
+        - productivity_anomaly
+        - rec_hms
+        - recdat
+        - sandlance
+        - seabird_mab (seabird_MAB)
+        - seabird_ne
+        - seal_pups
+        - seasonal_bt_anomaly_gridded
+        - seasonal_oisst_anom
+        - seasonal_sst_anomaly_gridded
+        - slopewater
+        - species_dist
+        - species_groupings
+        - stock_status
+        - stom_fullness
+        - storminess
+        - survey_shannon
+        - trans_dates
+        - wcr
+        - wea_landings_rev
+        - wind_dev_speed
+        - wind_occupancy
+        - wind_port
+        - wind_revenue
+        - zoo_abundance_anom
+        - zoo_diversity
+        - zoo_regime
+        - zoo_strat_abun
+    validations:
+      required: true
+        
+  - type: checkboxes
+    id: family_name
+    attributes:
+      label: Family (Which group is this indicator associated with?)
+      description: Please check the group(s) that could apply to your indicator.
+      options:
+        - label: Oceanographic
+        - label: Habitat
+        - label: Lower trophic levels
+        - label: Megafauna
+        - label: Social
+        - label: Economic
+    validations:
+      required: true
+ 
   - type: textarea
     id: data_description
     attributes:
@@ -43,7 +165,7 @@ body:
   - type: textarea
     id: indicator_intro
     attributes:
-      label: Introduction to Indicator (i.e. "What is this?")
+      label: Introduction to Indicator (Please explain your indicator)
       description: Please introduce the indicator within an appropriate context.
       value: "Proceed as though this were a short summary of a typical introduction section in a paper."
     validations:
@@ -136,6 +258,19 @@ body:
       placeholder: Ex. Brandon Beltz (brandon.beltz@noaa.gov)
     validations:
       required: true
+      
+      
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Enter the name of your affiliation.
+      placeholder: Ex. NEFSC, GARFO, SMAST, MAFSC etc.
+    validations:
+      required: true
+      
+      
+      
   - type: dropdown
     id: public_availability
     attributes:

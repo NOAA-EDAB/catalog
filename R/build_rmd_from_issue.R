@@ -15,6 +15,7 @@ source(here::here("R/parse_issue.R"))
 source(here::here("R/create_listobject.R"))
 source(here::here("R/make_rmd.R"))
 source(here::here("R/pull_all_issues.R"))
+source(here::here("R/pull_single_issue.R"))
 library(ecodata)
 
 
