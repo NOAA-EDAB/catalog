@@ -97,7 +97,7 @@ These indicators are used to identify top fishing communities and those with env
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Please email lisa.l.colburnl@noaa.gov for further information and queries of fishing and environmental justice indicator source data.
 

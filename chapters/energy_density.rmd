@@ -73,7 +73,7 @@ DT::datatable(vars)
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Email mark.wuenschel@noaa.gov for further information. Data tables are beign created to make this readily available soon.
 

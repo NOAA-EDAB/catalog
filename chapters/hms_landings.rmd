@@ -94,7 +94,7 @@ DT::datatable(vars)
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Data that has been properly screened to meet data standards and confidentiality are publicly available via the Fisheries of the United States (FUS) landings portal. Canadian landings information, which are included in this analysis, are not included in the FUS portal (https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings). Data should be aggregated to protect data confidentiality (raw data are lumped by year and species). Please email jennifer.cudney@noaa.gov for further information and queries of source data.
 

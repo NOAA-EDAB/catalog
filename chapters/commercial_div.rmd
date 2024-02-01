@@ -116,7 +116,7 @@ DT::datatable(vars)
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Request data from GARFO
 

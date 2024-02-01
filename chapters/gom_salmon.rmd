@@ -77,7 +77,7 @@ DT::datatable(vars)
 
 Source data are publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 _No response_
 

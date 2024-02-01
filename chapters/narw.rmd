@@ -112,7 +112,7 @@ DT::datatable(vars)
 
 Source data are publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Source data are available from the New England Aquarium upon request. Estimates and derived source data available in Linden 2023.
 

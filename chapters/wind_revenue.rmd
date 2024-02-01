@@ -125,7 +125,7 @@ DT::datatable(vars)
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Please email douglas.christel@noaa.gov for further information or request supporting data from nmfs.gar.data.requests@noaa.gov.
 

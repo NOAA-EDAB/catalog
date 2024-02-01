@@ -101,7 +101,7 @@ Management reports (e.g., specification packages, fishery information documents)
 
 Source data are publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 _No response_
 

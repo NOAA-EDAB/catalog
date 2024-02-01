@@ -260,9 +260,13 @@ make_rmd <- function(listobject){
   cat(paste0("**Point of contact**: [",listobject$poc,"](mailto:",listobject$poc,"){.email}"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  cat(paste0("**ecodata name**: `ecodata::",listobject$indicatorname,"`"),append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
+  if (exists(paste0(listobject$indicatorname))) {
+    cat(paste0("**ecodata name**: `ecodata::",listobject$indicatorname,"`"),append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+  } else {
+    cat(paste0("**ecodata name**: No dataset"),append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con)
+  }
   ### VARIABLES FOUND IN DATA
   cat("**Variable definitions**",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
@@ -316,7 +320,7 @@ make_rmd <- function(listobject){
   cat(listobject$publicAvailability,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  cat("## Accessibility and Contraints",append=T,fill=T,file=con)
+  cat("## Accessibility and Constraints",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(listobject$accessibility,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space

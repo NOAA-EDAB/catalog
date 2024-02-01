@@ -7,6 +7,7 @@
 
 pull_single_issue <- function(issueNum){
   
+  message("Pulling from GitHub")
   issueData <- list()
   repo <- 'https://api.github.com/repos/NOAA-EDAB/catalog/issues'
   issue <- jsonlite::fromJSON(paste0(repo,"/",issueNum))

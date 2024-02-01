@@ -57,7 +57,7 @@ A value of the NERACOOS time series is the timely provision of plankton indicato
 
 **Point of contact**: [Jeffrey Runge (jeffrey.runge@maine.edu](mailto:Jeffrey Runge (jeffrey.runge@maine.edu){.email}
 
-**ecodata name**: `ecodata::wbts_mesozooplankton`
+**ecodata name**: No dataset
 
 **Variable definitions**
 
@@ -75,7 +75,7 @@ No Data
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 While some of the data (e.g. the biomass data) are publicly available, other accompanying data, eg. abundance of Calanus finmarchicus and other zooplankton and chlorophyll a time series are pending submission in 2024 for publication in the primary literature
 

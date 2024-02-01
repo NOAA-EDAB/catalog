@@ -1,0 +1,76 @@
+# Seasonal OISST Anomaly Map
+
+**Description**: Mapped seasonal sea surface temperature anomaly
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Habitat
+
+
+**Contributor(s)**: Brandon Beltz, Abigail Tyrell
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Sea surface temperature can be used as a proxy for overall thermal conditions in the system. Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. To These data extend from 1981 to present. Anomalies are calculate by subtracting the long-term mean temperature is calculated from 1982-2010 for each season, from the seasonal-annual mean SST. Gridded anomalies are presented on a map for each year.
+
+## Key Results and Visualizations
+Despite record setting ocean temperatures in 2023, the Northeast US shelf had both warm and cool sea surface temperature anomalies in each season.
+
+```{r plot_seasonal_sst_anomaly_griddedMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_sst_anomaly_gridded(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: EPUs on full shelf map
+
+Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summer (July - September), Fall (October - December)
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_seasonal_sst_anomaly_gridded}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system. Maps show how temperature change has been distributed in each EPU each year.
+
+## Get the data
+
+**Point of contact**: [Brandon.Beltz@noaa.gov](mailto:Brandon.Beltz@noaa.gov){.email}
+
+**ecodata name**: `ecodata::seasonal_sst_anomaly_gridded`
+
+**Variable definitions**
+
+Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1.
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/seasonal_sst_anomaly_gridded.html>
+
+## References
+
