@@ -4,8 +4,10 @@
 #' These issues are filtered and parsed then used to build catalog rmds.
 #' Each rmd will represent a catalog index
 #' 
-#' @param issuenum numeric. The GitHub issue number to be parsed  (Default = 1). If issuenum = NULL then 
-#' ALL issues will be pulled from GitHub (submission types and non submission types)
+#' @param pullAllIssues Boolean. Should all issues be pulled from Github (Default = F). When TRUE the pull is saved locally
+#' @param pullSingleIssue Boolean. should a single issue be pulled from Github (Default = F)
+#' @param issueNum numeric. The GitHub issue number to be parsed  (Default = 1). If issueNum = NULL then 
+#' ALL issues will be processed from a previous pull using (pullAllIssues = T) 
 #' 
 #' @return list
 #' \item{listobject}{list formatted in a way to pass to make_rmd function. Mainly used for debugging}
@@ -31,6 +33,13 @@ build_rmd_from_issue <- function(pullAllIssues=F,pullSingleIssue= F,issueNum = 1
     } else {
       # read in previously pulled set of GitHub Issues
       issueData <- readRDS(here::here("data-raw/submissionIssueNumbers.rds"))
+      if(is.null(issueNum)) {
+        # Process  all
+      } else {
+        # Process single issue
+        issueData$submissions <- issueNum
+      }
+        
     }
   }
   
