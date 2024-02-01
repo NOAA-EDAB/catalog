@@ -1,0 +1,87 @@
+# Aquaculture Production
+
+**Description**: Oyster production: number of oysters harvested from aquaculture.
+
+**Indicator family**: 
+
+- [X] Megafauna
+- [X] Social
+- [X] Economic
+
+
+**Contributor(s)**: Christopher Schillaci, Maine DMR, NH DES, MA DMF, RI CRMC, MD DNR
+
+**Affiliations**: NOAA
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Aquaculture can produce seafood as well as other products. Here we summarize available data on aquaculture production from Northeast US states.
+
+## Key Results and Visualizations
+Overall oyster production is increasing and production per area is also improving.  Aquaculture reporting is state specific and because of this can be difficult to collate in a meaningful way. However, this is improving year to year as aquaculture increases across the coast. The data included here only holds oyster numbers at this time.
+
+```{r plot_aquacultureMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_aquaculture(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Mid Atlantic and New England
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_aquaculture}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Aquaculture production contributes to overall seafood production in the Northeast US. This indicator provides only a portion of aquaculture production in the region, but increases in this portion are apparent.
+
+## Get the data
+
+**Point of contact**: [Chris Schillaci <christopher.schillaci@noaa.gov>](mailto:Chris Schillaci <christopher.schillaci@noaa.gov>){.email}
+
+**ecodata name**: `ecodata::aquaculture`
+
+**Variable definitions**
+
+Pieces: number of oysters produced (all regions)                 
+Shellfish lease Acres: area used for shellfish production (New England states only), acres  
+Production/Acre: Pieces divided by Shellfish lease acres (New England states only)
+
+```{r vars_aquaculture}
+# Pull all var names
+vars <- ecodata::aquaculture |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Syntheses of published information
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/aquaculture.html>
+
+## References
+

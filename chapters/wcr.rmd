@@ -1,0 +1,85 @@
+# Warm Core Rings
+
+**Description**: Number of warm core rings produced annually by the Gulf Stream off the Northeast US
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Habitat
+
+
+**Contributor(s)**: Avijit Gangopadhyay
+
+**Affiliations**: UMass
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Warm core rings are eddies formed from Gulf Stream meanders that transport warm Gulf Stream water into the cooler waters of the slope sea just off the Northeast US continental shelf. These rings transport both warm water and associated plankton and fish from the Gulf Stream towards the shelf, and may form important habitat for oceanic fishery species such as Illex squid. The indicator presented here extends published work [@gangopadhyay_observed_2019]; with updated counts of warm core rings.
+
+## Key Results and Visualizations
+Prior to 2000, an average of 18 warm core rings were formed by the Gulf Stream off the Northeast US shelf. From 2000-2017, an average of 33 warm core rings were formed. Annual numbers of warm core rings have been updated using the same methods for each year since 2017, but the regime shift analysis has not been updated.
+
+```{r plot_wcrMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_wcr(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Full shelf
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
+
+```{r autostats_wcr}
+# Either from Contributor or ecodata
+```
+
+## Implications
+The increased instability of the Gulf Stream position and warming of the Slope Sea may be connected to the regime shift increase in the number of warm core rings formed annually in the Northwest Atlantic [@gangopadhyay_observed_2019; @gangopadhyay_census_2020]. When warm core rings and eddies interact with the continental slope they can transport warm, salty water to the continental shelf [@chen_mesoscale_2022], which can alter the habitat and disrupt seasonal movements of fish [@gawarkiewicz_changing_2018]. Transport of offshore water onto the shelf is happening more frequently [@gawarkiewicz_changing_2018; @gawarkiewicz_increasing_nodate], and can contribute to marine heatwaves in the Mid-Atlantic Bight [@gawarkiewicz_characteristics_2019; @chen_mesoscale_2022] as well as the movement of shelf-break species inshore [@gawarkiewicz_changing_2018; @potter_horizontal_2011; @worm_predator_2003].
+
+## Get the data
+
+**Point of contact**: [Avijit Gangopadhyay avijit.gangopadhyay@umassd.edu](mailto:Avijit Gangopadhyay avijit.gangopadhyay@umassd.edu){.email}
+
+**ecodata name**: `ecodata::wcr`
+
+**Variable definitions**
+
+Warm Core Rings: number
+
+```{r vars_wcr}
+# Pull all var names
+vars <- ecodata::wcr |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Constraints
+
+Please contact Kimberly.Hyde@noaa.gov
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/wcr.html>
+
+## References
+

@@ -1,0 +1,79 @@
+# Chesapeake Bay 2023 Synthesis
+
+**Description**: Synthesis of Chesapeake Bay 2023 habitat conditions with implications for managed species
+
+**Indicator family**: 
+
+- [X] Habitat
+- [X] Megafauna
+
+
+**Contributor(s)**: Bruce Vogt
+
+**Affiliations**: NCBO
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Chesapeake Bay is the largest estuary in the US, providing important spawning, nursery, and feeding habitat for many managed species in the Northeast US. The combination of seasonal water temperature, precipitation, salinity, and oxygen conditions in Chesapeake Bay can represent favorable or unfavorable habitat for managed species. Each species responds differently, leading to changes in populations and communities within the Bay.
+
+## Key Results and Visualizations
+Water column habitat conditions (temperature, salinity, and dissolved oxygen) in the Chesapeake Bay for summer and fall 2023 were generally favorable for striped bass, summer flounder, oysters, and blue crabs. However, warmer temperatures in the winter and spring may have contributed to low production of juvenile striped bass.
+
+Salinities throughout the year were higher than average, likely a result of dry conditions that persisted from winter through fall. Higher salinities increase the area of available habitat for species such as croaker, spot, menhaden, and red drum—all marine-oriented species that prefer higher salinities—while restricting habitat area for invasive blue catfish. Salinities over about 15ppt are not tolerable by most size classes of invasive blue catfish. This may have limited their ability to occupy larger parts of tributaries and the Bay which would lessen their predation pressure on many species.    
+
+Higher salinities can also support improved oyster spawning success and spat set, but may increase disease prevalence. 
+
+[Hypoxia levels](https://www.chesapeakebay.net/news/pressrelease/the-2023-chesapeake-bay-dead-zone-is-the-smallest-on-record) in 2023 were the lowest on record (1985-2022) according to independent reports from the states of Maryland and Virginia. Low hypoxia increases the area of suitable habitat for species such as striped bass and summer flounder.
+
+
+## Indicator statistics 
+Spatial scale: Chesapeake Bay
+
+Temporal scale: Seasonal: Dec-Feb (winter), Mar-May (spring), Jun-Aug (summer), and Sep-Nov (fall)
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_ches_bay_synthesis}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Overall, there may have been more suitable habitat available for multiple finfish and benthic species due to cooler summer water temperatures, higher salinity, and record-low hypoxia in Chesapeake Bay in 2023. Higher salinity, likely driven by low precipitation, also restricted the habitat area available for invasive blue catfish, possibly limiting their spread and impact as predators in 2023.
+
+## Get the data
+
+**Point of contact**: [Bruce Vogt, bruce.vogt@noaa.gov](mailto:Bruce Vogt, bruce.vogt@noaa.gov){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+Synthesis of indicators Chesapeake Bay Salinity, Temperature, and Seasonal Sea Surface Temperature Anomaly
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/ches_bay_synthesis.html>
+
+## References
+

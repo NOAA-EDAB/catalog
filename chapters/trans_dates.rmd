@@ -1,0 +1,105 @@
+# Transition Dates
+
+**Description**: The date that cool winter conditions transition to warm stratified summer conditions.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+
+
+**Contributor(s)**: Kevin Friedland
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Transition dates are defned as the day of the year when surface temperatures changeover from cool to warm conditions in the spring and back to cool conditions in the fall.
+
+## Key Results and Visualizations
+Ocean summer length in Mid-Atlantic: the annual total number of days between the spring thermal transition date and the fall thermal transition date. The transition dates are defined as the day of the year when surface temperatures changeover from cool to warm conditions in the spring and back to cool conditions in the fall.
+
+### MidAtlantic
+
+```{r plot_trans_datesMidAtlantictiming}
+# Plot indicator
+ggplotObject <- ecodata::plot_trans_dates(report= 'MidAtlantic', varName= 'timing')
+print(ggplotObject)
+```
+
+```{r plot_trans_datesMidAtlanticlength}
+# Plot indicator
+ggplotObject <- ecodata::plot_trans_dates(report= 'MidAtlantic', varName= 'length')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_trans_datesNewEnglandtiming}
+# Plot indicator
+ggplotObject <- ecodata::plot_trans_dates(report= 'NewEngland', varName= 'timing')
+print(ggplotObject)
+```
+
+```{r plot_trans_datesNewEnglandlength}
+# Plot indicator
+ggplotObject <- ecodata::plot_trans_dates(report= 'NewEngland', varName= 'length')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: by EPU
+
+Temporal scale: Annual time series (1982 to 2023)
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_trans_dates}
+# Either from Contributor or ecodata
+```
+
+## Implications
+To be determined.
+
+## Get the data
+
+**Point of contact**: [kevin.friedland@noaa.gov](mailto:kevin.friedland@noaa.gov){.email}
+
+**ecodata name**: `ecodata::trans_dates`
+
+**Variable definitions**
+
+1. falltrans 2. sprtrans 3. maxday
+
+```{r vars_trans_dates}
+# Pull all var names
+vars <- ecodata::trans_dates |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/trans_dates.html>
+
+## References
+

@@ -1,0 +1,102 @@
+# Sea-surface temperature anomaly
+
+**Description**: Seasonal sea surface temperature anomaly
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Habitat
+
+
+**Contributor(s)**: Brandon Beltz, Abigail Tyrell
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Sea surface temperature can be used as a proxy for overall thermal conditions in the system. Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. To These data extend from 1981 to present. Anomalies are calculate by subtracting the long-term mean temperature is calculated from 1982-2010 for each season, from the seasonal-annual mean SST.
+
+## Key Results and Visualizations
+Since 1982, SST has been increasing in all seasons in all three EPUs. 2023 was the warmest winter SST in the GOM and MAB on record. All record warmest seasonal SST years have occurred on or after 2012. 2023 also saw relatively cooler summer temperatures in GB and the GOM and fall temperatures in all regions.
+
+### MAB
+
+```{r plot_seasonal_oisst_anomMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='MidAtlantic')
+print(ggplotObject)
+```
+
+### GB
+
+```{r plot_seasonal_oisst_anomNEGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='NewEngland',EPU='GB')
+print(ggplotObject)
+```
+
+### GOM
+
+```{r plot_seasonal_oisst_anomNEGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='NewEngland',EPU='GOM')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: EPU
+
+Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summer (July - September), Fall (October - December)
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_seasonal_oisst_anom}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system.
+
+## Get the data
+
+**Point of contact**: [brandon.beltz@noaa.gov](mailto:brandon.beltz@noaa.gov){.email}
+
+**ecodata name**: `ecodata::seasonal_oisst_anom`
+
+**Variable definitions**
+
+Time: year, Var: season, Value: temperature anomaly (degrees Celcius), EPU
+
+```{r vars_seasonal_oisst_anom}
+# Pull all var names
+vars <- ecodata::seasonal_oisst_anom |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom.html>
+
+## References
+

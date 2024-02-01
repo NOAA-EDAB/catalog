@@ -1,0 +1,83 @@
+# NE Shelf Annual Sea Surface Temperature (SST)
+
+**Description**: Average annual sea-surface temperatures from the NOAA extended reconstructed sea surface temperature data set (ERSST V5) on the Northeast Continental Shelf.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+
+
+**Contributor(s)**: Kevin Friedland, Brandon Beltz
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The data presented here are average annual sea-surface temperatures from the NOAA extended reconstructed sea surface temperature data set (ERSST V5) on the Northeast Continental Shelf.
+
+## Key Results and Visualizations
+Since the 1860’s, the Northeast US shelf sea surface temperature (SST) has exhibited an overall warming trend, with the past decade measuring well above the long term average.
+
+```{r plot_long_term_sstMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_long_term_sst(report='MidAtlantic')
+print(ggplotObject)
+```
+
+
+## Indicator statistics 
+Spatial scale: Full shelf
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_long_term_sst}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Long term SST demonstrates that the annual average sea surface temperatures observed during the most recent ten years are well above the historical average dating back to the 1860s.
+
+## Get the data
+
+**Point of contact**: [Brandon.Beltz@noaa.gov](mailto:Brandon.Beltz@noaa.gov){.email}
+
+**ecodata name**: `ecodata::long_term_sst`
+
+**Variable definitions**
+
+long-term sst  in  units of degreesC
+
+```{r vars_long_term_sst}
+# Pull all var names
+vars <- ecodata::long_term_sst |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/long_term_sst.html>
+
+## References
+
