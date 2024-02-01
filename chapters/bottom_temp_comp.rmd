@@ -25,19 +25,43 @@ Anomalies are calculated using the 1990-2020 reference period.
 ## Key Results and Visualizations
 Time series plots for seasonal bottom temperature anomaly for each EPU shows a long-term warming trend. PSY forecasted data also included for comparison and indicates varying skill in predicting regional bottom temperature.
 
-### MAB
+### MidAtlantic
 
-```{r plot_bottom_temp_compMAB}
+```{r plot_bottom_temp_compMidAtlanticseasonalMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_comp(report='MidAtlantic')
+ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'MidAtlantic', varName= 'seasonal' ,EPU= 'MAB')
 print(ggplotObject)
 ```
 
-### NE
-
-```{r plot_bottom_temp_compNE}
+```{r plot_bottom_temp_compMidAtlanticannualMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_comp(report='NewEngland')
+ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'MidAtlantic', varName= 'annual' ,EPU= 'MAB')
+print(ggplotObject)
+```
+
+### NewEngland
+
+```{r plot_bottom_temp_compNewEnglandseasonalGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'NewEngland', varName= 'seasonal' ,EPU= 'GB')
+print(ggplotObject)
+```
+
+```{r plot_bottom_temp_compNewEnglandseasonalGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'NewEngland', varName= 'seasonal' ,EPU= 'GOM')
+print(ggplotObject)
+```
+
+```{r plot_bottom_temp_compNewEnglandannualGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'NewEngland', varName= 'annual' ,EPU= 'GB')
+print(ggplotObject)
+```
+
+```{r plot_bottom_temp_compNewEnglandannualGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'NewEngland', varName= 'annual' ,EPU= 'GOM')
 print(ggplotObject)
 ```
 
@@ -91,7 +115,7 @@ DT::datatable(vars)
 
 Source data are publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 _No response_
 

@@ -83,7 +83,7 @@ DT::datatable(vars)
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 For seasonal SST anomaly data files (including the SST long-term climatology), and other inquiries, please contact Ron Vogel at ronald.vogel@noaa.gov The time series of daily SST, seasonal average SST, and other time intervals for 2007 – present, are available to the public at: https://www.star.nesdis.noaa.gov/pub/socd1/ecn/data/avhrr-viirs/sst-ngt More information about this SST data set is available at: https://eastcoast.coastwatch.noaa.gov/cw_avhrr-viirs_sst.php
 

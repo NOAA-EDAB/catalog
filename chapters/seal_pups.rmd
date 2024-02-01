@@ -75,7 +75,7 @@ DT::datatable(vars)
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Reach out to Stephanie Wood (stephanie.wood@noaa.gov) for data.
 

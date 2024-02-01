@@ -153,7 +153,7 @@ DT::datatable(vars)
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Please email andrew.beet@noaa.gov for further information and queries of source data.
 

@@ -161,7 +161,7 @@ Publicly available satellite data that are processed and analyzed
 
 Source data are publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 _No response_
 

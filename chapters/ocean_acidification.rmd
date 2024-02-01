@@ -88,7 +88,7 @@ The seasonal level resolution of data collected in the Mid-Atlantic Bight in 202
 
 **Point of contact**: [Grace Saba (saba@marine.rutgers.edu); Lori Garzio (lgarzio@marine.rutgers.edu)](mailto:Grace Saba (saba@marine.rutgers.edu); Lori Garzio (lgarzio@marine.rutgers.edu)){.email}
 
-**ecodata name**: `ecodata::ocean_acidification`
+**ecodata name**: No dataset
 
 **Variable definitions**
 
@@ -107,7 +107,7 @@ No Data
 
 Source data are publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 _No response_
 

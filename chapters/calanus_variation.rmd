@@ -90,7 +90,7 @@ Suca J., D. Wiley, T. Silva, A. Robuck, D. Richardson, S.Glancy, E. Clancey, T.G
 
 **Point of contact**: [Jeffrey Runge (jeffrey.runge@maine.edu](mailto:Jeffrey Runge (jeffrey.runge@maine.edu){.email}
 
-**ecodata name**: `ecodata::calanus_variation`
+**ecodata name**: No dataset
 
 **Variable definitions**
 
@@ -110,7 +110,7 @@ No Data
 
 Source data are publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 _No response_
 

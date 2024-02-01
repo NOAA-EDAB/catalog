@@ -72,7 +72,7 @@ DT::datatable(vars)
 
 Source data are publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 All stock assessment results are publicly available (see Data Sources). Summarized Atlantic HMS data are available in the Atlantic HMS SAFE Reports. Species with a range of uncertainty estimates for F/Fmsy and B/Bmsy and assessments completed very recently may not be included in Stock Smart queries.
 

@@ -150,7 +150,7 @@ DT::datatable(vars)
 
 Source data are NOT publicly available.
 
-## Accessibility and Contraints
+## Accessibility and Constraints
 
 Please email john.walden@noaa.gov for further information and queries of Bennet Indicator source data.
 
