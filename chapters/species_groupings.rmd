@@ -29,7 +29,7 @@ Each management body (MAFMC, NEFSC, State etc) has its managed species associate
 ```{r plot_species_groupingsMidAtlantic2024}
 # Plot indicator
 ggplotObject <- ecodata::plot_species_groupings(report= 'MidAtlantic', varName= '2024')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -37,7 +37,7 @@ print(ggplotObject)
 ```{r plot_species_groupingsNewEngland2024}
 # Plot indicator
 ggplotObject <- ecodata::plot_species_groupings(report= 'NewEngland', varName= '2024')
-print(ggplotObject)
+ggplotObject
 ```
 
 
