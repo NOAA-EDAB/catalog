@@ -5,10 +5,12 @@ date: "`r format(Sys.Date(), '%e %B %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: 
-    -   bibliography/introduction.bib
+    -   bibliography/StateOftheEcosystem.bib
 #geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
 biblio-style: apalike
-csl: chicago-fullnote-bibliography.csl
+#csl: chicago-fullnote-bibliography.csl
+csl: plos.csl
+always_allow_html: true
 link-citations: true
 github-repo: NOAA-EDAB/catalog
 url: https://noaa-edab.github.io/catalog/
