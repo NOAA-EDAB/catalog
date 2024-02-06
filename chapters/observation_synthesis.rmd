@@ -1,0 +1,78 @@
+# 2023 Observation Synthesis
+
+**Description**: Synthesis of multiple anomalous and extreme conditions observed in 2023 that should be noted and considered in future analyses.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Habitat
+- [X] Lower trophic levels
+
+
+**Contributor(s)**: Kimberly Hyde, Sarah Gaichas, Joe Caracappa
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Multiple anomalous conditions and extreme events were observed in 2023 that could have brief local effects and/or widespread long-term ecosystem, fishery and management implications. This section intends to provide a record of these observations, the implications they may have for other ecosystem processes, and a reflection on how they fit into our understanding of the ecosystem. Many of these observations are being actively studied but should be noted and considered in future analyses and management decisions.
+
+## Key Results and Visualizations
+
+
+
+## Indicator statistics 
+Spatial scale: NES
+
+Temporal scale: 2023
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_observation_synthesis}
+# Either from Contributor or ecodata
+```
+
+## Implications
+TBD
+
+## Get the data
+
+**Point of contact**: [kimberly.hyde@noaa.gov](mailto:kimberly.hyde@noaa.gov){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+NA
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Other
+
+
+**Indicator Category**:
+
+Synthesis of observations
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/observation_synthesis.html>
+
+## References
+

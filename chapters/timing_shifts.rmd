@@ -1,0 +1,75 @@
+# Timing shifts: Risks to Seasonal Management
+
+**Description**: Shifts in the timing of life-cycle events are a risk to meeting seasonal and temporal management objectives.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Habitat
+- [X] Lower trophic levels
+- [X] Megafauna
+
+
+**Contributor(s)**: Kimberly Hyde, Sarah Gaichas, Joe Carracappa
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Changes in phenology, the seasonal timing of recurring life-cycle events, are a primary indicator of species responses to climate change [@staudinger_its_2019] [(Staudinger et al., 2019)](https://www.zotero.org/google-docs/?D9HTN0). Observed phenological changes in the Northeast Shelf include spawning (REFS), migration [(Crear et al., 2023)](https://www.zotero.org/google-docs/?R9B79W), prey availability, and ...  The phenological responses are often species-specific and vary depending on the primary environmental driver [@staudinger_its_2019].
+
+## Key Results and Visualizations
+TBD
+
+
+## Indicator statistics 
+Spatial scale: NES
+
+Temporal scale: Seasonal
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_timing_shifts}
+# Either from Contributor or ecodata
+```
+
+## Implications
+In progress
+
+## Get the data
+
+**Point of contact**: [nefsc.soe.leads@noaa.gov](mailto:nefsc.soe.leads@noaa.gov){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+NA
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/timing_shifts.html>
+
+## References
+

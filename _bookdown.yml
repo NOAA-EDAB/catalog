@@ -61,6 +61,8 @@ rmd_files:
     -   "chapters/ches_bay_synthesis.rmd"
     -   "chapters/heatwave.rmd"
     -   "chapters/heatwave_year.rmd"
+    -   "chapters/timing_shifts.rmd"
+    -   "chapters/observation_synthesis.rmd"
     -   "chapters/ocean_acidification.rmd"
 # 
 # 
