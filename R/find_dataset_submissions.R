@@ -4,6 +4,8 @@
 #'
 #' @return character vector
 
+source(here::here("R/parse_issue.r"))
+
 find_dataset_submissions <- function(){
   
   issueData <- readRDS(here::here("data-raw/submissionIssueNumbers.rds"))
