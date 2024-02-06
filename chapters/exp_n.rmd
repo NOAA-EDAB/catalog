@@ -27,13 +27,13 @@ Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability t
 ```{r plot_exp_nMidAtlanticfall}
 # Plot indicator
 ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'fall')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_exp_nMidAtlanticspring}
 # Plot indicator
 ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'spring')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -41,13 +41,13 @@ print(ggplotObject)
 ```{r plot_exp_nNewEnglandfall}
 # Plot indicator
 ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'fall')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_exp_nNewEnglandspring}
 # Plot indicator
 ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'spring')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -68,7 +68,7 @@ Temporal scale: Spring (March-May) and Fall (September-November)
 ```
 
 ## Implications
-Diversity is used as a proxy for stability.  Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management.  This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse.  Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored.
+Diversity is used as a proxy for stability.  Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management [@friedland_changes_2020].  This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse.  Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored.
 
 ## Get the data
 
@@ -104,6 +104,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/exp_n.html>
-
-## References
 

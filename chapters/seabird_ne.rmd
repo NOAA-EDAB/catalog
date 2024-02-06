@@ -26,19 +26,19 @@ GOM common tern average productivity (fledglings per nest) across 7 colonies has
 ```{r plot_seabird_neMidAtlanticdiversity}
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'diversity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_seabird_neMidAtlanticproductivity}
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'productivity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_seabird_neMidAtlanticprey}
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'prey')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -46,19 +46,19 @@ print(ggplotObject)
 ```{r plot_seabird_neNewEnglanddiversity}
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'diversity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_seabird_neNewEnglandproductivity}
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'productivity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_seabird_neNewEnglandprey}
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'prey')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -114,6 +114,4 @@ Please email dlyons@audubon.org for further information and queries on this indi
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/seabird_ne.html>
-
-## References
 

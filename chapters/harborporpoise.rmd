@@ -25,7 +25,7 @@ Marine mammal species specific bycatch estimates from 2022 are below current PBR
 ```{r plot_harborporpoiseMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_harborporpoise(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -85,6 +85,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/harborporpoise.html>
-
-## References
 

@@ -31,25 +31,25 @@ In New England, recreational species catch diversity has been above the time ser
 ```{r plot_recdatMidAtlanticlandings}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(report= 'MidAtlantic', varName= 'landings')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_recdatMidAtlanticeffortdiversity}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(report= 'MidAtlantic', varName= 'effortdiversity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_recdatMidAtlanticcatchdiversity}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(report= 'MidAtlantic', varName= 'catchdiversity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_recdatMidAtlanticeffort}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(report= 'MidAtlantic', varName= 'effort')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -57,25 +57,25 @@ print(ggplotObject)
 ```{r plot_recdatNewEnglandlandings}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(report= 'NewEngland', varName= 'landings')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_recdatNewEnglandeffortdiversity}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(report= 'NewEngland', varName= 'effortdiversity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_recdatNewEnglandcatchdiversity}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(report= 'NewEngland', varName= 'catchdiversity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_recdatNewEnglandeffort}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(report= 'NewEngland', varName= 'effort')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -141,6 +141,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/recdat.html>
-
-## References
 

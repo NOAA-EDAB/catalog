@@ -27,7 +27,7 @@ Since 1982, SST has been increasing in all seasons in all three EPUs. 2023 was t
 ```{r plot_seasonal_oisst_anomMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### GB
@@ -35,7 +35,7 @@ print(ggplotObject)
 ```{r plot_seasonal_oisst_anomNEGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='NewEngland',EPU='GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### GOM
@@ -43,7 +43,7 @@ print(ggplotObject)
 ```{r plot_seasonal_oisst_anomNEGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='NewEngland',EPU='GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -97,6 +97,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom.html>
-
-## References
 

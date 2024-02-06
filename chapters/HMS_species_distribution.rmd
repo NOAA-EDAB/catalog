@@ -16,7 +16,9 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Marine species are being affected by global climate changes, where and in most cases the documented responses include distribution shifts from their historical habitat. In addition, human-caused drivers such as the noise and physical disturbances from oil and gas exploration, fishing, boat traffic and infrastructure such as offshore renewable energy developments, as well as other maritime activities could also result in shifts. Chavez-Rosales et al. (2022) used Northwest Atlantic cetacean location data collected in its changing environment to investigate if their habitats are changing, and if so, to what extent.
+Marine species are being affected by global climate changes, where and in most cases the documented responses include distribution shifts from their historical habitat. In addition, human-caused drivers such as the noise and physical disturbances from oil and gas exploration, fishing, boat traffic and infrastructure such as offshore renewable energy developments, as well as other maritime activities could also result in shifts. [@chavez-rosales_detection_2022] used Northwest Atlantic cetacean location data collected in its changing environment to investigate if their habitats are changing, and if so, to what extent.
+
+A climate vulnerability assessment is published for Atlantic and Gulf of Mexico marine mammal populations [@lettrich_vulnerability_2023].
 
 ## Key Results and Visualizations
 For seasons and cetacean species with the movements greater then 70 km, the season plots show the direction and magnitude of core habitat shifts. The locations of the tip and end of the arrow is the seasonal weighted centroid locations for 2010 (end of arrow) and 2017 (tip of arrow). The longer the arrow the more the seasonal shift in distribution. 
@@ -25,7 +27,7 @@ For species that showed a clear displacement of the weighted centroid, the avera
 ```{r plot_HMS_species_distributionMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_HMS_species_distribution(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -45,7 +47,7 @@ Temporal scale: By each of the 4 seasons in 2010 and in 2017.
 ```
 
 ## Implications
-Shifting species distributions alter both species interactions and fishery interactions. Those shifts affect the interaction of multiple system covariates and can result in ecosystem reorganization. In particular, shifting species distributions can alter expected management outcomes from spatial allocations and affect the efficacy of bycatch measures based on historical fish and protected species distributions.
+Shifting species distributions alter both species interactions and fishery interactions. Those shifts affect the interaction of multiple system covariates and can result in ecosystem reorganization. In particular, shifting species distributions can alter expected management outcomes from spatial allocations and affect the efficacy of bycatch measures based on historical fish and protected species distributions. A UME for minke whales began in 2017 and is pending closure in [2024](https://www.fisheries.noaa.gov/national/marine-life-distress/active-and-closed-unusual-mortality-events).
 
 ## Get the data
 
@@ -55,8 +57,8 @@ Shifting species distributions alter both species interactions and fishery inter
 
 **Variable definitions**
 
-1) Time=time period of centroid location.  2) species=cetacean species.  3) season.  
-4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
+1) Time=time period of centroid location.  2) species=cetacean species.  
+3) season.  4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
 
 ```{r vars_HMS_species_distribution}
 # Pull all var names
@@ -81,6 +83,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/HMS_species_distribution.html>
-
-## References
 

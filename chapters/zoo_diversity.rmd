@@ -19,7 +19,7 @@ library(ecodata)
 Zooplankton represent a critical trophic link from primary producers to fish in marine ecosystems. Trends in zooplankton community diversity may indicate changes in trophic stability over time.
 
 ## Key Results and Visualizations
-Zooplankton diversity is increasing in the Mid-Atlantic and on Georges Bank, but shows no trend in the Gulf of Maine.
+Zooplankton diversity is increasing in the Mid-Atlantic and on Georges Bank, but shows no trend in the Gulf of Maine. There is no vessel correction for this metric, so indices collected aboard the research vessel Albatross IV (up to 2008) and the research vessel Henry B. Bigelow (2009 - Present) are calculated separately (Fig. ).
 
 ### MAB
 
@@ -93,6 +93,4 @@ Request from Harvey Walsh, harvey.walsh@noaa.gov
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/zoo_diversity.html>
-
-## References
 

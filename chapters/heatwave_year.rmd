@@ -48,13 +48,13 @@ In 2023, the Middle Atlantic Bight did not experience any bottom MHWs. The stron
 ```{r plot_heatwave_yearMidAtlanticSurface}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report= 'MidAtlantic', varName= 'Surface')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_heatwave_yearMidAtlanticBottom}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report= 'MidAtlantic', varName= 'Bottom')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -62,13 +62,13 @@ print(ggplotObject)
 ```{r plot_heatwave_yearNewEnglandSurface}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report= 'NewEngland', varName= 'Surface')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_heatwave_yearNewEnglandBottom}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report= 'NewEngland', varName= 'Bottom')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -123,6 +123,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/heatwave_year.html>
-
-## References
 

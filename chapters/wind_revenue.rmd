@@ -27,25 +27,25 @@ Figures include annual landings and revenue for each managed species caught with
 ```{r plot_wind_revenueMidAtlanticlandingfacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'landing' ,plottype= 'facets')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_wind_revenueMidAtlanticlandingnofacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'landing' ,plottype= 'nofacets')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_wind_revenueMidAtlanticvaluefacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'value' ,plottype= 'facets')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_wind_revenueMidAtlanticvaluenofacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'value' ,plottype= 'nofacets')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -53,25 +53,25 @@ print(ggplotObject)
 ```{r plot_wind_revenueNewEnglandlandingfacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'landing' ,plottype= 'facets')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_wind_revenueNewEnglandlandingnofacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'landing' ,plottype= 'nofacets')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_wind_revenueNewEnglandvaluefacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'value' ,plottype= 'facets')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_wind_revenueNewEnglandvaluenofacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'value' ,plottype= 'nofacets')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -131,6 +131,4 @@ Please email douglas.christel@noaa.gov for further information or request suppor
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/wind_revenue.html>
-
-## References
 

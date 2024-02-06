@@ -27,7 +27,7 @@ For each EPU, bottom temperature data were separate by depth bin (0-25m; 25m-100
 ```{r plot_thermal_habitat_areaMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_thermal_habitat_area(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### GB
@@ -35,7 +35,7 @@ print(ggplotObject)
 ```{r plot_thermal_habitat_areaNEGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_thermal_habitat_area(report='NewEngland',EPU='GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### GOM
@@ -43,7 +43,7 @@ print(ggplotObject)
 ```{r plot_thermal_habitat_areaNEGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_thermal_habitat_area(report='NewEngland',EPU='GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -101,6 +101,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/thermal_habitat_area.html>
-
-## References
 

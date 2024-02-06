@@ -27,7 +27,7 @@ Mean rates of increase in the number of pups born at various times since 1988 at
 ```{r plot_seal_pupsNE}
 # Plot indicator
 ggplotObject <- ecodata::plot_seal_pups(report='NewEngland')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -81,6 +81,4 @@ Reach out to Stephanie Wood (stephanie.wood@noaa.gov) for data.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/seal_pups.html>
-
-## References
 

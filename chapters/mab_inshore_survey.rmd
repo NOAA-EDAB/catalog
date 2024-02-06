@@ -32,7 +32,7 @@ Each survey shows trends by aggregate group.
 ```{r plot_mab_inshore_surveyMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_mab_inshore_survey(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -87,6 +87,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/mab_inshore_survey.html>
-
-## References
 

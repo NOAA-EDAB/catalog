@@ -45,19 +45,19 @@ In the Mid-Atlantic region revenue was positive compared to 1982 levels for all 
 ```{r plot_bennetMidAtlanticguildMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'MidAtlantic', varName= 'guild' ,EPU= 'MAB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bennetMidAtlantictotalMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'MidAtlantic', varName= 'total' ,EPU= 'MAB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bennetMidAtlantictotal_guildMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'MidAtlantic', varName= 'total_guild' ,EPU= 'MAB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -65,37 +65,37 @@ print(ggplotObject)
 ```{r plot_bennetNewEnglandguildGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'guild' ,EPU= 'GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bennetNewEnglandguildGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'guild' ,EPU= 'GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bennetNewEnglandtotalGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'total' ,EPU= 'GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bennetNewEnglandtotalGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'total' ,EPU= 'GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bennetNewEnglandtotal_guildGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'total_guild' ,EPU= 'GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bennetNewEnglandtotal_guildGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'total_guild' ,EPU= 'GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -156,6 +156,4 @@ Please email john.walden@noaa.gov for further information and queries of Bennet 
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/bennet.html>
-
-## References
 

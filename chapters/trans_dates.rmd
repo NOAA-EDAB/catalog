@@ -26,13 +26,13 @@ Ocean summer length in Mid-Atlantic: the annual total number of days between the
 ```{r plot_trans_datesMidAtlantictiming}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(report= 'MidAtlantic', varName= 'timing')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_trans_datesMidAtlanticlength}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(report= 'MidAtlantic', varName= 'length')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -40,13 +40,13 @@ print(ggplotObject)
 ```{r plot_trans_datesNewEnglandtiming}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(report= 'NewEngland', varName= 'timing')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_trans_datesNewEnglandlength}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(report= 'NewEngland', varName= 'length')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -100,6 +100,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/trans_dates.html>
-
-## References
 

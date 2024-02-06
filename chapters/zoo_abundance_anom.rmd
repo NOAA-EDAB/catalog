@@ -31,9 +31,9 @@ ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'MidAtlantic', varName=
 ggplotObject
 ```
 
-```{r plot_zoo_abundance_anomMidAtlanticeuphasid}
+```{r plot_zoo_abundance_anomMidAtlanticeuphausid}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'MidAtlantic', varName= 'euphasid')
+ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'MidAtlantic', varName= 'euphausid')
 ggplotObject
 ```
 
@@ -45,9 +45,9 @@ ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'NewEngland', varName= 
 ggplotObject
 ```
 
-```{r plot_zoo_abundance_anomNewEnglandeuphasid}
+```{r plot_zoo_abundance_anomNewEnglandeuphausid}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'NewEngland', varName= 'euphasid')
+ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'NewEngland', varName= 'euphausid')
 ggplotObject
 ```
 
@@ -79,10 +79,11 @@ Check these. If they are correct, we could be seeing the less energy dense zoopl
 
 All are unitless anomalies from the 1977-2020 mean abundance for each taxon. 
 Variables are taxa names:  (to be described by contributors) "Calfin"         
-"LgCopepods"     "SmCopepods"     "Cyclopoida"     "Diplostraca"    "Ostracoda"      
-"Cirripedia"     "Euphausiacea"  "Gammaridea"     "Hyperiidea"     "Mysidacea"      
-"Decapoda"       "Polychaeta"     "Echinodermata"  "Mollusca"     "Pteropod"      
-"Chaetognatha"   "Cnidaria"       "Tunicate"       "Protozoa"
+"LgCopepods"     "SmCopepods"     "Cyclopoida"     "Diplostraca"    
+"Ostracoda"      "Cirripedia"     "Euphausiacea"  "Gammaridea"     
+"Hyperiidea"     "Mysidacea"      "Decapoda"       "Polychaeta"     
+"Echinodermata"  "Mollusca"     "Pteropod"      "Chaetognatha"   
+"Cnidaria"       "Tunicate"       "Protozoa"
 
 ```{r vars_zoo_abundance_anom}
 # Pull all var names
@@ -110,6 +111,4 @@ Request from Harvey Walsh, harvey.walsh@noaa.gov
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/zoo_abundance_anom.html>
-
-## References
 

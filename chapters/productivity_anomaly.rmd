@@ -28,13 +28,13 @@ The small fish per large fish anomaly indicator, derived from NEFSC bottom trawl
 ```{r plot_productivity_anomalyMidAtlanticanomalyMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'anomaly' ,EPU= 'MAB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_productivity_anomalyMidAtlanticassessmentMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'assessment' ,EPU= 'MAB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -42,25 +42,25 @@ print(ggplotObject)
 ```{r plot_productivity_anomalyNewEnglandanomalyGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_productivity_anomalyNewEnglandanomalyGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_productivity_anomalyNewEnglandassessmentGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'assessment' ,EPU= 'GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_productivity_anomalyNewEnglandassessmentGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'assessment' ,EPU= 'GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -123,6 +123,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/productivity_anomaly.html>
-
-## References
 

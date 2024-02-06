@@ -31,7 +31,7 @@ Single species management objectives (1. maintaining biomass above minimum thres
 ```{r plot_stock_statusMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_stock_status(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NE
@@ -39,7 +39,7 @@ print(ggplotObject)
 ```{r plot_stock_statusNE}
 # Plot indicator
 ggplotObject <- ecodata::plot_stock_status(report='NewEngland')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -103,6 +103,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/stock_status.html>
-
-## References
 

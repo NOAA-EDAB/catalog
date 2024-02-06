@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Changes in phenology, the seasonal timing of recurring life-cycle events, are a primary indicator of species responses to climate change [@staudinger_its_2019] [(Staudinger et al., 2019)](https://www.zotero.org/google-docs/?D9HTN0). Observed phenological changes in the Northeast Shelf include spawning (REFS), migration [(Crear et al., 2023)](https://www.zotero.org/google-docs/?R9B79W), prey availability, and ...  The phenological responses are often species-specific and vary depending on the primary environmental driver [@staudinger_its_2019].
+Changes in phenology, the seasonal timing of recurring life-cycle events, are a primary indicator of species responses to climate change [@staudinger_its_2019] (Staudinger et al., 2019). Observed phenological changes in the Northeast Shelf include spawning (REFS), migration [@crear_climate-influenced_2023] (Crear et al., 2023), prey availability, and ...  The phenological responses are often species-specific and vary depending on the primary environmental driver [@staudinger_its_2019].
 
 ## Key Results and Visualizations
 TBD
@@ -70,6 +70,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/timing_shifts.html>
-
-## References
 

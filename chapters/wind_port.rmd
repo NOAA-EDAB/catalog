@@ -20,14 +20,14 @@ library(ecodata)
 NA
 
 ## Key Results and Visualizations
-NA
+This figure links historic port revenue (2008-2022) from within all wind energy areas (including all lease areas, the Central Atlantic proposed lease areas A-2, B-1 and C-1, GOM Draft Wind Energy Area and secondary areas), as a proportion of a port’s total fisheries revenue based on vessel trip reports as described in the revenue and landings of species in the wind indicator above. The range (minimum and maximum) of total percent fisheries revenue from within wind energy areas is presented in the graph and ports are sorted from greatest to least fisheries revenue from within wind areas. Those communities that score Med-High or higher in at least one of the vulnerability indicators that address environmental justice concerns (i.e., Poverty, Population Composition, Personal Disruption; see indicator definitions) are noted with a triangle. Gentrification pressure is also highlighted here, with those communities that score Med-High or higher in one or more gentrification pressure indicators (i.e., Housing Disruption, Retiree Migration, Urban Sprawl) represented with a circle.
 
 ### MAB
 
 ```{r plot_wind_portMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_port(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NE
@@ -35,7 +35,7 @@ print(ggplotObject)
 ```{r plot_wind_portNE}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_port(report='NewEngland')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -89,6 +89,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/wind_port.html>
-
-## References
 

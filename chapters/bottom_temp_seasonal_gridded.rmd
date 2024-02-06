@@ -26,7 +26,7 @@ Maps of seasonal mean bottom temperature across NE shelf.
 ```{r plot_bottom_temp_seasonal_griddedMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_seasonal_gridded(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -83,6 +83,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/bottom_temp_seasonal_gridded.html>
-
-## References
 

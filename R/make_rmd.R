@@ -331,9 +331,9 @@ make_rmd <- function(listobject){
   cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  
-  cat("## References",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
+  # References are generated automatically  
+  # cat("## References",append=T,fill=T,file=con)
+  # cat("",append=T,fill=T,file=con) # add space
   
   
   #close the connection

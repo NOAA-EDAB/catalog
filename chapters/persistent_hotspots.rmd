@@ -69,5 +69,3 @@ _No response_
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/persistent_hotspots.html>
 
-## References
-

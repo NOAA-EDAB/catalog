@@ -26,13 +26,13 @@ The Gulf Stream Index suggest that recent years (2021-2022) the GS almost mainta
 ```{r plot_gsiMidAtlanticgsi}
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report= 'MidAtlantic', varName= 'gsi')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_gsiMidAtlanticwestgsi}
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report= 'MidAtlantic', varName= 'westgsi')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -40,13 +40,13 @@ print(ggplotObject)
 ```{r plot_gsiNewEnglandgsi}
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report= 'NewEngland', varName= 'gsi')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_gsiNewEnglandwestgsi}
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report= 'NewEngland', varName= 'westgsi')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -65,7 +65,7 @@ Temporal scale: Monthly from 1954 to 2022
 ```
 
 ## Implications
-The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stream position on monthly timescale, which may affect the slope water properties intruding onto the continental shelf. The GSNW index is also suggested to be an good indicator for biomass distribution of multiple marine fishes (e.g., silver hake Nye et al., 2011).
+The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stream position on monthly timescale, which may affect the slope water properties intruding onto the continental shelf. The GSNW index is also suggested to be an good indicator for biomass distribution of multiple marine fishes (e.g., silver hake Nye et al., 2011).  As the Gulf Stream has become less stable and shifted northward in the last decade (Fig. ), warmer ocean temperatures have been observed on the northeast shelf, and a higher proportion of Warm Slope Water has been present in the Gulf of Maine Northeast Channel, and sea surface height along the U.S. east coast has increased.
 
 ## Get the data
 
@@ -102,6 +102,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/gsi.html>
-
-## References
 

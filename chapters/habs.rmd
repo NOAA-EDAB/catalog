@@ -31,13 +31,13 @@ A three-tier column graph illustrates three different metrics of shellfish bed c
 ```{r plot_habsMidAtlanticAlexandrium}
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(report= 'MidAtlantic', varName= 'Alexandrium')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_habsMidAtlanticPSP}
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(report= 'MidAtlantic', varName= 'PSP')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -45,13 +45,13 @@ print(ggplotObject)
 ```{r plot_habsNewEnglandAlexandrium}
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(report= 'NewEngland', varName= 'Alexandrium')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_habsNewEnglandPSP}
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(report= 'NewEngland', varName= 'PSP')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -114,6 +114,4 @@ Data were provided by consultation with Yizhen Li.  Data are also used in operat
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/habs.html>
-
-## References
 

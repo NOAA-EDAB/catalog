@@ -18,23 +18,31 @@ library(ecodata)
 ## Introduction to Indicator
 We report the top ten communities most engaged in, and/or reliant upon, commercial and recreational fisheries and the degree to which these communities may be vulnerable to environmental justice issues (i.e., Poverty, Population Composition, and Personal Disruption). To select and present these communities we developed indicators (or indices that inform the importance of fishing and relative social conditions in each community.
 
-The engagement and reliance indices demonstrate the importance of commercial and recreational fishing to a given community relative to other coastal communities in a region. Similarly, the environmental justice indices characterize different facets and levels of social vulnerability in a given community relative to other coastal communities in a region.
+The engagement and reliance indices demonstrate the importance of commercial and recreational fishing to a given community relative to other coastal communities in a region. Similarly, the environmental justice indices characterize different facets and levels of social vulnerability in a given community relative to other coastal communities in a region.
+
+Environmental Justice is defined in Executive Order 12898 as federal actions intended to address disproportionately high and adverse human health and environmental effects of federal actions on minority and low-income populations. Three of the existing [NOAA Fisheries Community Social Vulnerability Indicators (CSVIs)](https://www.fisheries.noaa.gov/national/socioeconomics/social-indicators-coastal-communities), the Poverty Index, Population Composition Index, and Personal Disruption Index, can be used for mandated Environmental Justice analysis.
+
+Commercial fishing engagement measures the number of permits and dealers, and pounds and value landed in a community, while reliance expresses these numbers based on the level of fishing activity relative to the total population of a community. Recreational fishing engagement measures shore, private vessel, and for-hire fishing effort while reliance expresses these numbers based on fishing effort relative to the population of a community.
+
+In 2023, we reported the top ten most engaged, and top ten most reliant commercial and recreational fishing communities and their associated environmental justice vulnerability based on 2020 data. Here we apply the same selection standard for top ten fishing communities for both sectors using 2021 data, and again examine the environmental justice vulnerability in this updated set of communities. Changes in fishing activity between years changed community engagement and reliance rankings, and changes in vulnerability indicators changed environmental justice vulnerability scores.
+
+In the 2023 report, we presented environmental justice vulnerability as a dichotomous variable with categories for “medium-high to high” vulnerability and “all other communities.” For the 2024 report, we have broadened this rating to three categories, including now a middle classification to also highlight those communities with “medium” vulnerability. The increased level of detail in the environmental justice rating enables a more comprehensive and nuanced analysis with attention to those communities that fall in between the most and the least vulnerable, and which may see increased (or decreased) vulnerability in the future.
 
 ## Key Results and Visualizations
-Results narratives are currently under review.
+
 
 ### MidAtlantic
 
 ```{r plot_engagementMidAtlanticCommercial}
 # Plot indicator
 ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_engagementMidAtlanticRecreational}
 # Plot indicator
 ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -42,13 +50,13 @@ print(ggplotObject)
 ```{r plot_engagementNewEnglandCommercial}
 # Plot indicator
 ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_engagementNewEnglandRecreational}
 # Plot indicator
 ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -67,7 +75,9 @@ Temporal scale: Year of 2021
 ```
 
 ## Implications
-These indicators are used to identify top fishing communities and those with environmental justice concerns based on 2021data. Highlighted communities may be vulnerable to changes in fishing patterns due to regulations and/or climate change. When any of these communities also experience environmental justice issues, they may have lower ability to successfully respond/adapt to change.
+These indicators provide a snapshot of the presence of environmental justice issues in the most highly engaged and most highly reliant commercial and recreational fishing communities in the Mid-Atlantic and New England. These communities may be especially vulnerable to changes in fishing patterns due to regulations and/or climate change. Some changes occurred among the top fishing communities due to shifts in fishing activities, both commercial and recreational in the Mid Atlantic, and recreational in New England. Many of these communities, especially top commercial fishing communities, demonstrated medium to high environmental justice vulnerability indicating that they may be at a disadvantage responding to change.
+
+It is also important to note that factor scores and their associated categorical rankings can be disproportionately influenced by certain variables within each index depending upon the circumstances underlying those data in each community. By extension, the overall environmental justice rating presented in the SOE Report may also be disproportionately influenced by particular environmental justice indices that comprise the overall rating.  A community may have a medium-to-high score in Poverty or Personal Disruption, but a low score in Population Composition, suggesting that while such a community may not be as vulnerable in terms of racial, ethnic, and demographic representation, it still might face substantial socioeconomic challenges based on its level of poverty or unemployment. For example, in the 2023 SOE Report, Swan’s Island, ME, receives a “medium-high to high” environmental justice rating, and is therefore included alongside New Bedford and Boston, MA, as one of the three communities to receive such a rating in New England. Swan’s Island is a rural island town off the coast of Maine and is therefore very different from large cities, such as New Bedford and Boston, in terms of its social and economic structure. However, Swan’s Island scores medium-to-high in poverty and personal disruption, which indicates vulnerability related to high unemployment and low incomes and educational attainment among its residents. These are all important environmental justice concerns as well, especially as they relate to fishing-dependent communities in the New England region.
 
 ## Get the data
 
@@ -99,10 +109,8 @@ Source data are NOT publicly available.
 
 ## Accessibility and Constraints
 
-Please email lisa.l.colburnl@noaa.gov for further information and queries of fishing and environmental justice indicator source data.
+Please email lisa.l.colburn@noaa.gov for further information and queries of fishing and environmental justice indicator source data.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/engagement.html>
-
-## References
 

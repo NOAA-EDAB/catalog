@@ -37,7 +37,7 @@ A pattern of generally good condition was observed across many MAB species prior
 ```{r plot_conditionMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_condition(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### GB
@@ -45,7 +45,7 @@ print(ggplotObject)
 ```{r plot_conditionNEGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### GOM
@@ -53,7 +53,7 @@ print(ggplotObject)
 ```{r plot_conditionNEGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -110,6 +110,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/condition.html>
-
-## References
 

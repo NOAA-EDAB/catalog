@@ -40,7 +40,7 @@ The indicator provides an integrated measure of Chesapeake Bay’s water quality
 ```{r plot_ches_bay_wqMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_ches_bay_wq(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -70,7 +70,8 @@ Patterns of attainment of individual designated uses are variable (Figure 2). Ac
 **Variable definitions**
 
 Period: Assessment period Year 1: Starting year of the assessment period 
-Year 2: Ending year of the assessment period Total: The overall attainment indicator 
+Year 2: Ending year of the assessment period 
+Total: The overall attainment indicator 
 MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 
 OW-DO: Estimated attainment of the dissolved oxygen criterion for the open water designated use 
 DW-DO: Estimated attainment of the dissolved oxygen criterion for the deep water designated use 
@@ -101,6 +102,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/ches_bay_wq.html>
-
-## References
 

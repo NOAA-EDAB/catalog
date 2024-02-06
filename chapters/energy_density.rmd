@@ -1,6 +1,6 @@
 # Forage Fish Energy Density
 
-**Description**: The data presented are the seasonal (Spring and Fall) energy density (kJ/g) for eight important forage species; Alewife, Atlantic Herring, Silver Hake, Northern Sand Lance, Atlantic Mackerel, Butterfish, Northern Shortfin Squid, and Inshore Longfin Squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed int he lab to estimate energy content.
+**Description**: Energy density of alewife, butterfish, sand lance, and Atlantic mackerel varies seasonally, with seasonal estimates both higher and lower than estimates from previous decades. The data presented are the seasonal (Spring and Fall) energy density (kJ/g) for eight important forage species; Alewife, Atlantic Herring, Silver Hake, Northern Sand Lance, Atlantic Mackerel, Butterfish, Northern Shortfin Squid, and Inshore Longfin Squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed int he lab to estimate energy content.
 
 **Indicator family**: 
 
@@ -19,12 +19,12 @@ library(ecodata)
 The energy density of prey indicates the the amount of energy passing from lower trophic levels to higher predators. Changes in ecosystem productivity and/or bioenergetic demands (e.g. metabolic increases due to rising temperature) can impact energy density. Energy density of fishes can vary widely (several fold), particularly for some species that undergo seasonal cycles in energy allocation to reproduction, energy allocation to migration, or seasonal/ontogenetic shifts in energy storage. The value of forage species to higher trophic levels is a function of the their energy density.
 
 ## Key Results and Visualizations
-Variable plotted are the mean energy density (kJ/g) for eight species across seasons and years. The reference lines represent estimates from prior studies where available for comparison. The energy density of Atlantic Herring has been well below the available estimates from the 1980s and 1990s, but is showing some signs of improving.
+Variable plotted are the mean energy density (kJ/g) for eight species across seasons and years. The reference lines represent estimates from prior studies where available for comparison. The energy density of Atlantic Herring has been well below the available estimates from the 1980s and 1990s, but is showing some signs of improving. 2017-2022 are building toward a time series to evaluate trends (Fig. ). Data from the fall 2021 and spring 2022 survey measurements were consistent with previous reports:
 
 ```{r plot_energy_densityMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_energy_density(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -79,6 +79,4 @@ Email mark.wuenschel@noaa.gov for further information. Data tables are beign cre
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/energy_density.html>
-
-## References
 

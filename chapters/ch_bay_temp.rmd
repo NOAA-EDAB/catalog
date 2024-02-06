@@ -26,7 +26,7 @@ The key results are the state of the water temperature and the salinity
 ```{r plot_ch_bay_tempMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_ch_bay_temp(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -80,6 +80,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/ch_bay_temp.html>
-
-## References
 

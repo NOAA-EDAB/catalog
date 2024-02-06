@@ -33,37 +33,37 @@ Thresholds based on regional estimates of primary productivity, are not yet avai
 ```{r plot_pprMidAtlanticppglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'pp' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticppregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'pp' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticfogartyglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'fogarty' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticfogartyregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'fogarty' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticrytherglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'ryther' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticrytherregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'ryther' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -71,37 +71,37 @@ print(ggplotObject)
 ```{r plot_pprNewEnglandppglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'pp' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandppregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'pp' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandfogartyglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'fogarty' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandfogartyregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'fogarty' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandrytherglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'ryther' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandrytherregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'ryther' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -159,6 +159,4 @@ Please email andrew.beet@noaa.gov for further information and queries of source 
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/ppr.html>
-
-## References
 

@@ -26,7 +26,7 @@ Atlantic salmon adult returns in 2022 were estimated at 1,520 with 85% originati
 ```{r plot_gom_salmonMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_gom_salmon(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -83,6 +83,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/gom_salmon.html>
-
-## References
 

@@ -25,7 +25,7 @@ Despite record setting ocean temperatures in 2023, the Northeast US shelf had bo
 ```{r plot_seasonal_sst_anomaly_griddedMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_seasonal_sst_anomaly_gridded(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -71,6 +71,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/seasonal_sst_anomaly_gridded.html>
-
-## References
 

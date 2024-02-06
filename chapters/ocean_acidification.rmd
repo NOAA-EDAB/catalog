@@ -92,8 +92,9 @@ The seasonal level resolution of data collected in the Mid-Atlantic Bight in 202
 
 **Variable definitions**
 
-1) depth_interpolated meters 2) temperature degrees Celsius 3) chlorophyll_a µg L-1 
-4) oxygen_concentration_shifted_mgL mg L-1 5) pH_shifted 6) aragonite_saturation_state
+1) depth_interpolated meters 2) temperature degrees Celsius 
+3) chlorophyll_a µg L-1 4) oxygen_concentration_shifted_mgL mg L-1 
+5) pH_shifted 6) aragonite_saturation_state
 
 
 No Data
@@ -113,6 +114,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/ocean_acidification.html>
-
-## References
 

@@ -16,7 +16,9 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The cold pool is seasonal feature in the Mid-Atlantic Bight that is defined by it's low temperature (< 10 deg C), relative freshness ( < 34 psu), and moderate depth (20 -200m). It is typically present between June and September. Cold pool dynamics can influence the recruitment and settlement of fish species. This indicator set shows the intensity, extent, and persistence of the cold pool each year based on gridded model and reanalysis products.
+The cold pool is seasonal feature in the Mid-Atlantic Bight that is defined by it's low temperature (< 10 deg C), relative freshness ( < 34 psu), and moderate depth (20 -200m). It is typically present between June and September. Cold pool dynamics can influence the recruitment and settlement of fish species. This indicator set shows the intensity, extent, and persistence of the cold pool each year based on gridded model and reanalysis products.
+
+Changes in ocean temperature and circulation alter habitat features such as the seasonal cold pool, a 20–60 m thick band of cold, relatively uniform near-bottom water that persists from spring to fall over the mid and outer shelf of the MAB and southern flank of Georges Bank [@lentz_seasonal_2017; @chen_seasonal_2018]. The cold pool plays an essential role in the structuring of the MAB ecosystem. It is a reservoir of nutrients that feeds phytoplankton productivity, is essential fish spawning and nursery habitat, and affects fish distribution and behavior [@lentz_seasonal_2017; @miles_offshore_2021]. The average temperature of the cold pool is getting warmer over time [@miller_state-space_2016; @du_pontavice_incorporating_nodate], and the area is getting smaller [@friedland_middle_2022].
 
 ## Key Results and Visualizations
 Time series plots of the three cold pool indices. Cold pool index shows the mean temperature within the cold pool where positive values indicate a warming cold pool. Cold pool extent shows the change in maximum area relative to the historical mean, where negative values indicate a shrinking cold pool. Cold pool persistence measures the duration of the cold pool relative to the historical mean. Negative values indicate a shorter duration. In general the cold pool has been getting warmer, has persisted for a shorter duration, and has covered a smaller footprint since the 1960s.
@@ -26,19 +28,19 @@ Time series plots of the three cold pool indices. Cold pool index shows the mean
 ```{r plot_cold_poolMidAtlanticcold_pool}
 # Plot indicator
 ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'cold_pool')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_cold_poolMidAtlanticpersistence}
 # Plot indicator
 ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'persistence')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_cold_poolMidAtlanticextent}
 # Plot indicator
 ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'extent')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -46,19 +48,19 @@ print(ggplotObject)
 ```{r plot_cold_poolNewEnglandcold_pool}
 # Plot indicator
 ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'cold_pool')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_cold_poolNewEnglandpersistence}
 # Plot indicator
 ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'persistence')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_cold_poolNewEnglandextent}
 # Plot indicator
 ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'extent')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -77,7 +79,9 @@ Temporal scale: annual
 ```
 
 ## Implications
-Changes in cold pool indicators can be signs of changes in regional/seasonal oceanographic patterns. This may impact the recruitment and behavior of species dependent on the cold pool.
+Changes in cold pool indicators can be signs of changes in regional/seasonal oceanographic patterns. This may impact the recruitment and behavior of species dependent on the cold pool.
+
+Changes in the cold pool habitat can affect species distribution, recruitment, and migration timing for multiple federally managed species. Southern New England-Mid Atlantic yellowtail flounder recruitment and settlement are related to the strength of the cold pool [@miller_state-space_2016]. The settlement of pre-recruits during the cold pool event represents a bottleneck in yellowtail life history, during which a local and temporary increase in bottom temperature negatively impacts the survival of the settlers. Including the effect of cold pool variations on yellowtail recruitment reduced retrospective patterns and improved the skill of short-term forecasts in a stock assessment model [@du_pontavice_incorporating_nodate; @miller_state-space_2016]. The cold pool also provides habitat for the ocean quahog [@powell_ocean_2020; @friedland_middle_2022]. Growth rates of ocean quahogs in the MAB (southern portion of their range) have increased over the last 200 years whereas little to no change has been documented in the northern portion of their range in southern New England, likely a response to a warming and shrinking cold pool [@pace_two-hundred_2018].
 
 ## Get the data
 
@@ -119,6 +123,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/cold_pool.html>
-
-## References
 

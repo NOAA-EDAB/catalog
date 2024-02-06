@@ -24,7 +24,7 @@ For 2023, winter SST’s show conditions to be roughly 1 degree Celsius warmer t
 ```{r plot_ches_bay_sstMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_ches_bay_sst(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -89,6 +89,4 @@ For seasonal SST anomaly data files (including the SST long-term climatology), a
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/ches_bay_sst.html>
-
-## References
 

@@ -26,7 +26,7 @@ _No response_
 ```{r plot_slopewaterNE}
 # Plot indicator
 ggplotObject <- ecodata::plot_slopewater(report='NewEngland')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -80,6 +80,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/slopewater.html>
-
-## References
 

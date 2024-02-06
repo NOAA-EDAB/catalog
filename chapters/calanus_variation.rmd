@@ -16,6 +16,13 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
+Mesozooplankton (i.e. copepods), grazing on phytoplankton and smaller zooplankton, are the foundation of production for higher trophic levels. Early life stage copepods are the primary food source for fish larvae and variability in their abundance may contribute to fish recruitment success. Lipid-rich older copepods, most notably Calanus finmarchicus, are a primary food source for forage species (including herring, sand lance and krill) and the North Atlantic right whale. The seasonal abundance of C. finmarchicus (Fig. xx1) is an indicator of seasonality in mesozooplankton biomass.  
+
+Older stages of mesozooplankton nourish and influence condition of forage fish such as Atlantic herring, sand lance and Atlantic mackerel in the GOM.  In deeper waters of the GOM (>100m), the net-captured mesozooplankton biomass is dominated by the planktonic copepod, Calanus finmarchicus, a signature species of the subarctic ecosystem spanning the North Atlantic between the GOM in the south and west to the Norwegian and Barents Seas in the north and east.  Supremely adapted to the seasonality of the subarctic North Atlantic, C. finmarchicus reproduces in late winter/spring when chlorophyll a concentrations are > 0.5 µg liter-1 and its early life stages develop and grow throughout the spring phytoplankton bloom into summer, at which point its last preadult stage (stage CV) descend to deeper water and undergoes a diapause during fall and early winter. The diapausing CV emerge from diapause in later winter, molt into adults, and the cycle starts over.  Late winter-spring reproduction, especially influenced by the availability of phytoplankton,  results in a peak in abundance of earlier life stages in early summer. The decline in abundance of the older stages later in the season is especially influenced by upstream supply of individuals into the western GOM and by the abundance of both visual (e.g. herring) and invertebrate, non-visual predators (e.g. jellyfish, krill and carnivorous copepods like Paraeuchaeta norvegica).  A key feature of the Calanus life cycle is the accumulation of energy rich lipids, which the growing copepod acquires by grazing on lipid-manufacturing phytoplankton and then stores in an oil sac that attains its maximum volume, over half of its total body mass, during the preadult CV stage. The strong seasonality in Calanus abundance and in its drivers warrants consideration of seasonal indices (e.g. spring, summer, fall-winter) rather that an annual index, which would obscure interpretation of change in abundance patterns and linkage to higher trophic levels.
+
+Historically, the high abundance of C. finmarchicus in the GOM combined with the size of its older developmental stages, which are considerably larger than other planktonic copepod species, results in the dominance of this species in the biomass of net captured mesozooplankton in the GOM, such that the seasonal cycle of net-captured mesozooplankton biomass reflects the seasonal cycle of C. finmarchicus  abundance. 
+
+
 This phenology indicator shows the change in abundance of the planktonic copepod, Calanus finmarchicus over a mean annual cycle in Wilkinson Basin, the primary overwintering habitat of this species in the western Gulf of Maine. The data are provided by the NOAA EcoMon/MARMAP survey, which has sampled stations along the Northeast U.S. Shelf, including the Gulf of Maine, seasonally (2-6 times per year) in nearly all years since 1977. The 333 µm mesh plankton nets used by the survey quantitatively capture only the late copepodid stages (C3-adult) of C. finmarchicus, but these stages nevertheless are representative of the seasonal variation in abundance of the population. This indicator serves as a baseline that can be used to interpret future changes in wGoM C. finmarchicus abundance.
 
 ## Key Results and Visualizations
@@ -116,6 +123,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/calanus_variation.html>
-
-## References
 

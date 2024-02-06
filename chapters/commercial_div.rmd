@@ -30,19 +30,19 @@ average (Fig. 15). This indicates similar commercial fleet composition and speci
 ```{r plot_commercial_divMidAtlanticFleetcount}
 # Plot indicator
 ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet count')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_commercial_divMidAtlanticFleetdiversityinrevenue}
 # Plot indicator
 ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet diversity in revenue')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_commercial_divMidAtlanticPermitrevenuespeciesdiversity}
 # Plot indicator
 ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Permit revenue species diversity')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -50,19 +50,19 @@ print(ggplotObject)
 ```{r plot_commercial_divNewEnglandFleetcount}
 # Plot indicator
 ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet count')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_commercial_divNewEnglandFleetdiversityinrevenue}
 # Plot indicator
 ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet diversity in revenue')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_commercial_divNewEnglandPermitrevenuespeciesdiversity}
 # Plot indicator
 ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Permit revenue species diversity')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -83,7 +83,7 @@ Temporal scale: Annual
 ```
 
 ## Implications
-Fleet diversity indices can be used to evaluate stability objectives as well as risks to fishery resilience and to maintaining equity in access to fishery resources [1]. In New England, the relatively low diversity estimates for the commercial fishery are likely driven by the continued reliance on a few species, sea scallops and lobster. This trend could diminish the capacity to respond to future fishing opportunities. 
+Fleet diversity indices can be used to evaluate stability objectives as well as risks to fishery resilience and to maintaining equity in access to fishery resources [@gaichas_implementing_2018]. In New England, the relatively low diversity estimates for the commercial fishery are likely driven by the continued reliance on a few species, sea scallops and lobster. This trend could diminish the capacity to respond to future fishing opportunities. 
 
 In the Mid-Atlantic, stability in commercial fleet diversity metrics suggests stable capacity to respond to the current range of fishing opportunities.
 
@@ -122,6 +122,4 @@ Request data from GARFO
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/commercial_div.html>
-
-## References
 

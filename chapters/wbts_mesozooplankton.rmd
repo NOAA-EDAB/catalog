@@ -82,5 +82,3 @@ While some of the data (e.g. the biomass data) are publicly available, other acc
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/wbts_mesozooplankton.html>
 
-## References
-
