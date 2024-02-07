@@ -21,6 +21,7 @@ rmd_files:
     -   "chapters/aggregate_biomass.rmd"
     -   "chapters/mab_inshore_survey.rmd"
     -   "chapters/condition.rmd"
+    -   "chapters/habitat_diversity.rmd"
     -   "chapters/energy_density.rmd"
     -   "chapters/spawn_timing.rmd"
     -   "chapters/exp_n.rmd"

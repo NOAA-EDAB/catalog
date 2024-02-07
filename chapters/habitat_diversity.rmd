@@ -1,0 +1,106 @@
+# Species Richness
+
+**Description**: Abundance data were extracted from the NEFSC’s SVDBS database using Survdat for 55 fish species regularly sampled on spring and fall NEFSC bottom trawl surveys (see SOE Tech Doc for a list). Data were converted to presence/absence for species richness modeling.
+
+Species Richness was estimated using “joint” predictions of presence-absence in 100 randomly-drawn assemblages simulated by a joint species distribution model (part of the Northeast Regional Habitat Assessment), which was fitted to observations for 55 common species sampled by the NEFSC bottom trawl survey during the spring and fall of 2000-2019.  The model controls for differences in capture efficiency across survey vessels, permitting predictions on a common scale (here calibrated to the Albatross IV). See SOE Tech Doc for details of the model and environmental covariates included.
+
+**Indicator family**: 
+
+- [X] Habitat
+- [X] Megafauna
+
+
+**Contributor(s)**: Chris Haak, Laurel Smith and Tori Kentner
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Indices of species richness can indicate the health of the ecosystem as a metric of biodiversity. In this case, looking at a specified set of 55 species that are commonly caught in the NEFSC bottom trawl survey by year and EPU can indicate species distribution shifts as species richness declines in some areas and increases in others.
+
+## Key Results and Visualizations
+Trends of declining richness are seen in the more southerly regions (i.e., the Mid-Atlantic Bight) and increasing richness in more northerly regions (i.e., the Gulf of Maine). These patterns reflect the decreasing occurrence of cooler-water species in the south and the growing prevalence of warm-water species in the north, likely as a result of warming water temperatures.
+
+### MidAtlantic
+
+```{r plot_habitat_diversityMidAtlanticDiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_habitat_diversity(report= 'MidAtlantic', varName= 'Diversity')
+ggplotObject
+```
+
+```{r plot_habitat_diversityMidAtlanticRichness}
+# Plot indicator
+ggplotObject <- ecodata::plot_habitat_diversity(report= 'MidAtlantic', varName= 'Richness')
+ggplotObject
+```
+
+### NewEngland
+
+```{r plot_habitat_diversityNewEnglandDiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_habitat_diversity(report= 'NewEngland', varName= 'Diversity')
+ggplotObject
+```
+
+```{r plot_habitat_diversityNewEnglandRichness}
+# Plot indicator
+ggplotObject <- ecodata::plot_habitat_diversity(report= 'NewEngland', varName= 'Richness')
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: Species richness by EPU
+
+Temporal scale: Spring (March-May) and fall (September-November) NEFSC bottom trawl surveys from 2000-2019
+
+**Synthesis Theme**:
+
+- [X] Ecosystem Reorganization
+
+
+```{r autostats_habitat_diversity}
+# Either from Contributor or ecodata
+```
+
+## Implications
+This species richness index provides a summary of how commonly caught fish in the NEFSC bottom trawl survey are changing over time, while controlling for differences in capture efficiency across survey vessels. The shifts of declining species richness in the Mid-Atlantic Bight indicate that fisheries in this region may need to shift away from reliance on these species that may be at the southern edge of their distributions, and may need to expand fisheries to more southerly species. The increase of species richness in the northerly regions such as the Gulf of Maine indicates that there is a likely an influx of southerly species, and management quotas may need to be adjusted between regions. These are likely direct implications that warming water temperatures have on fisheries management.
+
+## Get the data
+
+**Point of contact**: [Laurel Smith (Laurel.smith@noaa.gov)](mailto:Laurel Smith (Laurel.smith@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::habitat_diversity`
+
+**Variable definitions**
+
+1) Name: Year, Definition: year of species richness data, 2) Name: Species Richness, Definition: Species richness
+
+```{r vars_habitat_diversity}
+# Pull all var names
+vars <- ecodata::habitat_diversity |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/habitat_diversity.html>
+
