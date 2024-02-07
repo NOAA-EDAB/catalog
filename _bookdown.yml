@@ -23,6 +23,7 @@ rmd_files:
     -   "chapters/mab_inshore_survey.rmd"
     -   "chapters/condition.rmd"
     -   "chapters/habitat_diversity.rmd"
+    -   "chapters/species_dist.rmd"
     -   "chapters/energy_density.rmd"
     -   "chapters/spawn_timing.rmd"
     -   "chapters/exp_n.rmd"
