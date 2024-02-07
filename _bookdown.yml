@@ -14,8 +14,8 @@ rmd_files:
     -   "chapters/wbts_mesozooplankton.rmd"
     -   "chapters/zoo_abundance_anom.rmd"
     -   "chapters/zoo_diversity.rmd"
-# 
-# 
+#
+#
 # #################### MEGAFAUNA ##################
     -   "chapters/sectionHeaders/megafauna.rmd"
     -   "chapters/aggregate_biomass.rmd"
@@ -38,8 +38,8 @@ rmd_files:
     -   "chapters/grayseal.rmd"
     -   "chapters/seabird_ne.rmd"
     -   "chapters/species_groupings.rmd"
-# 
-# 
+#
+#
 # #################### OCEANOGRAPHIC ##################
     -   "chapters/sectionHeaders/oceanographic.rmd"
     -   "chapters/bottom_temp.rmd"
@@ -65,8 +65,8 @@ rmd_files:
     -   "chapters/timing_shifts.rmd"
     -   "chapters/observation_synthesis.rmd"
     -   "chapters/ocean_acidification.rmd"
-# 
-# 
+#
+#
 # ######################## ECONOMIC ##################
     -   "chapters/sectionHeaders/economic.rmd"
     -   "chapters/comdat.rmd"
