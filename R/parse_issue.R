@@ -18,22 +18,24 @@ parse_issue <- function(issueData,issueNum){
     body <- issueData$issues[id,]$body
   }
   
-  headings <- unlist(stringr::str_extract_all(body,"###\\s+[a-zA-Z (.)\"\\?,]+"))
+  headings <- unlist(stringr::str_extract_all(body,"\n###\\s+[a-zA-Z (.)\"\\?,]+"))
+
   for (ahead in headings) {
     modifiedHead <- gsub("\\","",ahead,fixed=T)
     modifiedHead <- gsub("(","\\(",modifiedHead,fixed=T)
     modifiedHead <- gsub(")","\\)",modifiedHead,fixed=T)
     modifiedHead <- gsub("?","\\?",modifiedHead,fixed=T)
     byhead <- unlist(strsplit(body,modifiedHead))[2]
-    res <- unlist(strsplit(byhead,"###"))[1]
+    res <- unlist(strsplit(byhead,"\n### "))[1]
     # remove beginning and trailing \n (line feed) and \r (carriage return)
     modifiedRes <- trimws(res)
     # modifiedRes <- sub("\\n+$","",modifiedRes)
     # modifiedRes <- sub("^\\r\\n+","",modifiedRes)
     # modifiedRes <- sub("\\r\\n+$","",modifiedRes)
+    ahead <- trimws(ahead)
     objectList[ahead] <- modifiedRes
   }
-  
+
   return(objectList)
   
 }
