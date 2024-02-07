@@ -356,7 +356,7 @@ implications-37
 get-the-data-37
 public-availability-37
 accessibility-and-constraints-37
-persistent_hotspots
+persistent-annual-hotspots
 introduction-to-indicator-38
 key-results-and-visualizations-38
 indicator-statistics-38
@@ -542,6 +542,14 @@ accessibility-and-constraints-57
 engagement-reliance-and-environmental-justice-in-top-fishing-communities
 introduction-to-indicator-58
 key-results-and-visualizations-58
+mid-atlantic
+commercial
+recreational
+combined
+new-england
+commercial-1
+recreational-1
+combined-1
 midatlantic-25
 newengland-25
 indicator-statistics-58
