@@ -1,4 +1,4 @@
-# Marine Heatwaves - Bottom
+# Marine Heatwave Events
 
 **Description**: Surface and bottom MHWs for 2023.
 
@@ -33,7 +33,7 @@ Surface MHWs
 In 2023, the Gulf of Maine experienced two distinct surface MHWs beginning on July 19th (lasted 11 days) and September 7th (lasted 9 days). In terms of intensity, these two surface MHWs did not rank in the top 10%.
 
 Bottom MHWs
-In 2023, the Gulf of Maine did not experience any bottom MHWs. Of the identified 11 bottom MHWs in the Gulf of Maine between 1982 and 2023, the top four events in terms of maximum intensity occurred in the last decade.
+In 2023, the Gulf of Maine experienced a bottom MHW that started on Feb 16th, peaked on May 20th, and lasted 195 days until the end of the time series data on Aug 29th. Of the identified 12 bottom MHWs in the Gulf of Maine between 1982 and 2023, this bottom MHW ranked 2nd on record in terms of intensity. The top three bottom MHWs in the Gulf of Maine occurred over the last decade.
 
 Middle Atlantic Bight 
 

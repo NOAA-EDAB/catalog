@@ -65,7 +65,7 @@ Temporal scale: Monthly from 1954 to 2022
 ```
 
 ## Implications
-The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stream position on monthly timescale, which may affect the slope water properties intruding onto the continental shelf. The GSNW index is also suggested to be an good indicator for biomass distribution of multiple marine fishes (e.g., silver hake Nye et al., 2011).  As the Gulf Stream has become less stable and shifted northward in the last decade (Fig. ), warmer ocean temperatures have been observed on the northeast shelf, and a higher proportion of Warm Slope Water has been present in the Gulf of Maine Northeast Channel, and sea surface height along the U.S. east coast has increased.
+The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stream position on monthly timescale, which may affect the slope water properties intruding onto the continental shelf. The GSNW index is also suggested to be an good indicator for biomass distribution of multiple marine fishes (e.g., silver hake Nye et al., 2011).  As the Gulf Stream has become less stable and shifted northward in the last decade (Fig. ), warmer ocean temperatures have been observed on the northeast shelf @zhang_role_2007, and a higher proportion of Warm Slope Water has been present in the Gulf of Maine Northeast Channel @goddard_extreme_2015, and sea surface height along the U.S. east coast has increased. Since 2008, the Gulf Stream has moved closer to the Grand Banks, reducing the supply of cold, fresh, and oxygen-rich Labrador Current waters to the Northwest Atlantic Shelf @goncalves_neto_changes_2021
 
 ## Get the data
 

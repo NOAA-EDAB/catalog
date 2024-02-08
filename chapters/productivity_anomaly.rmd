@@ -89,11 +89,9 @@ The apparent decline in productivity across multiple managed species in the MAB,
 
 **Variable definitions**
 
-Variable names are organized using this format: 
-[region] stock name - variable type and source  
+Variable names are organized using this format: [region] stock name - variable type and source  
 Variables ending with "_Survey" are survey derived recruits/spawner anomalies 
-Variables ending with "-Assessment" are assessment derived quantities 
-Survey stock names are in ALL CAPS 
+Variables ending with "-Assessment" are assessment derived quantities Survey stock names are in ALL CAPS 
 NE LME prepended to a survey stock name means the anomalies are coastwide 
 Assessment stock names are in Sentence case  
 Units for survey variables are the Z score of (number of recruits in year+1/biomass of adults in year) 

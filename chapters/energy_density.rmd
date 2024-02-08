@@ -16,10 +16,12 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The energy density of prey indicates the the amount of energy passing from lower trophic levels to higher predators. Changes in ecosystem productivity and/or bioenergetic demands (e.g. metabolic increases due to rising temperature) can impact energy density. Energy density of fishes can vary widely (several fold), particularly for some species that undergo seasonal cycles in energy allocation to reproduction, energy allocation to migration, or seasonal/ontogenetic shifts in energy storage. The value of forage species to higher trophic levels is a function of the their energy density.
+The energy density of prey indicates the the amount of energy passing from lower trophic levels to higher predators. Changes in ecosystem productivity and/or bioenergetic demands (e.g. metabolic increases due to rising temperature) can impact energy density. Energy density of fishes can vary widely (several fold), particularly for some species that undergo seasonal cycles in energy allocation to reproduction, energy allocation to migration, or seasonal/ontogenetic shifts in energy storage. The value of forage species to higher trophic levels is a function of the their energy density. 
+
+Forage energy density measurements from NEFSC trawl surveys 2017-2022 are building toward a time series to evaluate trends
 
 ## Key Results and Visualizations
-Variable plotted are the mean energy density (kJ/g) for eight species across seasons and years. The reference lines represent estimates from prior studies where available for comparison. The energy density of Atlantic Herring has been well below the available estimates from the 1980s and 1990s, but is showing some signs of improving. 2017-2022 are building toward a time series to evaluate trends (Fig. ). Data from the fall 2021 and spring 2022 survey measurements were consistent with previous reports:
+Variable plotted are the mean energy density (kJ/g) for eight species across seasons and years. The reference lines represent estimates from prior studies where available for comparison. The energy content of Atlantic herring from the NEFSC trawl surveys has increased  to over 7 kJ/g wet weight in spring 2023, but is still well below that observed in the 1980s and 1990s (10.6-9.4 kJ/ g wet weight). Silver hake, longfin squid (Loligo in figure) and shortfin squid (Illex in figure) remain lower than previous estimates [@steimle_energy_1985; @lawson_important_1998]. Energy density of alewife, butterfish, sand lance, and Atlantic mackerel varies seasonally, with seasonal estimates both higher and lower than estimates from previous decades.
 
 ```{r plot_energy_densityMAB}
 # Plot indicator
@@ -44,7 +46,7 @@ Temporal scale: Spring and Fall Bottom Trawl Survey
 ```
 
 ## Implications
-_No response_
+The nutritional content of forage fish changes seasonally in response to ecosystem conditions, with apparent declines in energy density for Atlantic herring and *Illex* squid relative to the 1980s, but similar energy density for other forage species.
 
 ## Get the data
 

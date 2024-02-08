@@ -51,8 +51,7 @@ Using a high resolution bottom temperature product allows for localized heat str
 Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) and PSY (CMEM’s PSY global forecast bottom temperature) 
 min.depth: minimum of depth band max.depth: maximum of depth band 
 temp.threshold: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature) 
-longitude: longitude of cell center point 
-latitude: latitude of cell center point 
+longitude: longitude of cell center point latitude: latitude of cell center point 
 Ndays: number of days exceeding temp.threshold
 
 ```{r vars_thermal_habitat_persistence}

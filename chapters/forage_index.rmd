@@ -87,12 +87,9 @@ Fall Forage Fish Biomass Estimate = aggregate forage fish biomass months 7-12, u
 Fall Forage Fish Biomass Estimate SE = standard error of aggregate forage fish biomass months 7-12, units relative grams per stomach 
 Fall Eastward Forage Fish Center of Gravity =  average eastward location of forage fish biomass months 7-12, units kilometers      
 Fall Eastward Forage Fish Center of Gravity SE = standard error of average eastward location of forage fish biomass months 7-12, units kilometers 
-Fall Northward Forage Fish Center of Gravity =  
-Fall Northward Forage Fish Center of Gravity SE =  
-Spring Eastward Forage Fish Center of Gravity =  
-Spring Eastward Forage Fish Center of Gravity SE =  
-Spring Northward Forage Fish Center of Gravity =  
-Spring Northward Forage Fish Center of Gravity SE =
+Fall Northward Forage Fish Center of Gravity =  Fall Northward Forage Fish Center of Gravity SE =  
+Spring Eastward Forage Fish Center of Gravity =  Spring Eastward Forage Fish Center of Gravity SE =  
+Spring Northward Forage Fish Center of Gravity =  Spring Northward Forage Fish Center of Gravity SE =
 
 ```{r vars_forage_index}
 # Pull all var names

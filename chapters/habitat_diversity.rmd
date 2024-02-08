@@ -22,7 +22,7 @@ library(ecodata)
 Indices of species richness can indicate the health of the ecosystem as a metric of biodiversity. In this case, looking at a specified set of 55 species that are commonly caught in the NEFSC bottom trawl survey by year and EPU can indicate species distribution shifts as species richness declines in some areas and increases in others.
 
 ## Key Results and Visualizations
-Trends of declining richness are seen in the more southerly regions (i.e., the Mid-Atlantic Bight) and increasing richness in more northerly regions (i.e., the Gulf of Maine). These patterns reflect the decreasing occurrence of cooler-water species in the south and the growing prevalence of warm-water species in the north, likely as a result of warming water temperatures.
+Trends of declining richness are seen in the more southerly regions (i.e., the Mid-Atlantic Bight) and increasing richness in the more northerly regions (i.e., the Gulf of Maine). These patterns reflect the decreasing occurrence of cooler-water species in the south and the growing prevalence of warm-water species in the north, likely as a result of warming water temperatures.
 
 ### MidAtlantic
 

@@ -54,7 +54,7 @@ Temporal scale: 2008-2022
 ```
 
 ## Implications
-NA
+BOEM reports that cumulative offshore wind development (if all proposed projects are developed) could have moderate impacts on low-income members of environmental justice communities who work in the commercial fishing and for-hire fishing industry due to disruptions to fish populations, restrictions on navigation and increased vessel traffic as well as existing vulnerabilities of low-income workers to economic impacts @boem_vineyard_2020. impacts of offshore wind development may unevenly affect individual operators, with [permit-based revenue]([https://www.greateratlantic.fisheries.noaa.gov/ro/fso/reports/WIND/WIND_AREA_REPORTS/com/OCS_A_0486_Revolution_Wind_com.html#Percentage_of_Revenue_by_Permit](https://www.google.com/url?q=https://www.greateratlantic.fisheries.noaa.gov/ro/fso/reports/WIND/WIND_AREA_REPORTS/com/OCS_A_0486_Revolution_Wind_com.html%23Percentage_of_Revenue_by_Permit&sa=D&source=docs&ust=1707341641564496&usg=AOvVaw2ws51j_uyqjKtgIRFCpijd)) being much higher than the port-based mean for some permit holders
 
 ## Get the data
 

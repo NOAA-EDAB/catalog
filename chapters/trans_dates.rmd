@@ -65,7 +65,7 @@ Temporal scale: Annual time series (1982 to 2023)
 ```
 
 ## Implications
-To be determined.
+Prolonged fall temperatures have been linked to the increased number of cold-stunned Kemp’s ridley sea turtles found in Cape Cod Bay @griffin_warming_2019
 
 ## Get the data
 

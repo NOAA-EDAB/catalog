@@ -73,7 +73,7 @@ Temporal scale: Annual 1990 - 2022
 ```
 
 ## Implications
-Strong evidence exists to suggest that interactions between right whales and both the fixed gear fisheries in the U.S. and Canada and vessel strikes in the U.S. are contributing substantially to the decline of the species [@hayes_north_2018]. Further, right whale distribution has changed since 2010. New research suggests that recent climate driven changes in ocean circulation have resulted in right whale distribution changes driven by increased warm water influx through the Northeast Channel, which has reduced the primary right whale prey (Calanus fnmarchicus) in the central and eastern portions of the Gulf of Maine [@hayes_north_2018; @record_rapid_2019; @sorochan_north_2019]. Additional potential stressors include offshore wind development, which overlaps with important habitat areas used year-round by right whales, including mother and calf migration corridors and foraging habitat [@quintana-rizzo_residency_2021; @schick_striking_2009]. This area is also a primary right whale winter foraging habitat. Additional information can be found in the offshore wind section.
+Strong evidence exists to suggest that interactions between right whales and both the fixed gear fisheries in the U.S. and Canada and vessel strikes in the U.S. are contributing substantially to the decline of the species [@hayes_north_2018]. Further, right whale distribution has changed since 2010. New research suggests that recent climate driven changes in ocean circulation have resulted in right whale distribution changes driven by increased warm water influx through the Northeast Channel, which has reduced the primary right whale prey (Calanus fnmarchicus) in the central and eastern portions of the Gulf of Maine [@hayes_north_2018; @record_rapid_2019; @sorochan_north_2019]. Additional potential stressors include offshore wind development, which overlaps with important habitat areas used year-round by right whales, including mother and calf migration corridors and foraging habitat [@quintana-rizzo_residency_2021; @schick_striking_2009]. This area is also a primary right whale winter foraging habitat. Additional information can be found in the offshore wind section. Turbine presence and extraction of energy from the system could alter local oceanography @christiansen_emergence_2022. persistent foraging hotspots of right whales and seabirds overlap on Nantucket Shoals, where unique hydrography aggregates enhanced prey densities @white_spatial_2020 ;  @sorochan_north_2019.
 
 The UMEs are under investigation and are likely the result of multiple drivers. For all large whale UMEs, human interaction appears to have contributed to increased mortalities, although investigations are not complete.
 
@@ -90,10 +90,9 @@ The UMEs are under investigation and are likely the result of multiple drivers. 
 3) Median=median estimate of right whale abundance in number of animals.  
 4) Upper95= upper 95% confidence interval value in number of animals.   
 5) Mean= mean estimate of right whale abundance in number of animals.   
-6) SD=standard deviation of estimate of right whale abundance in number of animals. 
- Palka_NARW_Calves_1980_2023.csv 1)	Year.  
-2) Tot.Calves = total number of right whale calves born that year in number of animals. 
-"
+6) SD=standard deviation of estimate of right whale abundance in number of animals.  
+Palka_NARW_Calves_1980_2023.csv 1)	Year.  
+2) Tot.Calves = total number of right whale calves born that year in number of animals. "
 
 ```{r vars_narw}
 # Pull all var names

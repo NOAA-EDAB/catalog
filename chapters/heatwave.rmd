@@ -1,4 +1,4 @@
-# Marine Heatwaves - Surface
+# Annual Heatwave Intensity
 
 **Description**: Surface and bottom MHWs for 2023.
 
@@ -75,7 +75,7 @@ ggplotObject
 ## Indicator statistics 
 Spatial scale: EPU
 
-Temporal scale: Daily
+Temporal scale: Annual
 
 **Synthesis Theme**:
 
