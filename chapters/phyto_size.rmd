@@ -1,0 +1,118 @@
+# Phytoplankton Size Class
+
+**Description**: Satellite derived phytoplankton data including chlorophyll concentration, phytoplankton size class, and primary production for the Northeast Continental Shelf and ecological production units.
+
+(To be expanded)
+
+**Indicator family**: 
+
+- [X] Lower trophic levels
+
+
+**Contributor(s)**: Kimberly Hyde
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Phytoplankton are the foundation of the marine food web and are the primary food source for zooplankton and filter feeders such as shellfish. Numerous environmental and oceanographic factors interact to drive the abundance, composition, spatial distribution, and productivity of phytoplankton. Satellite derived measurements of chlorophyll, the dominant photosynthetic pigment in phytoplankton, are used to estimate phytoplankton biomass. Phytoplankton growth depends on the availability of carbon dioxide, sunlight and nutrients and their growth rates can be influenced by water temperature, water depth, wind, and grazing pressure.  Primary productivity is a measure of the amount of carbon produced by phytoplankton. The seasonal cycle of phytoplankton size distribution are typically dominated by larger-celled microplankton during the winter-spring and fall bloom periods, while smaller-celled nanoplankton dominate during the warmer summer months.
+
+(To be expanded)
+
+## Key Results and Visualizations
+(In development)
+
+### MAB
+
+```{r plot_phyto_sizeMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_phyto_size(report='MidAtlantic')
+ggplotObject
+```
+
+### GB
+
+```{r plot_phyto_sizeNEGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_phyto_size(report='NewEngland',EPU='GB')
+ggplotObject
+```
+
+### GOM
+
+```{r plot_phyto_sizeNEGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_phyto_size(report='NewEngland',EPU='GOM')
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: By EPU and gridded for the entire shelf
+
+Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to current year)
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_phyto_size}
+# Either from Contributor or ecodata
+```
+
+## Implications
+(In development)
+
+## Get the data
+
+**Point of contact**: [kimberly.hyde@noaa.gov](mailto:kimberly.hyde@noaa.gov){.email}
+
+**ecodata name**: `ecodata::phyto_size`
+
+**Variable definitions**
+
+1) Chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters; mg m^-3 
+2) Chlorophyll anomaly; Ratio of chlorophyll _a_ concentration to the long-term (1998 to present year) climatology; unitless (ratio) 
+3) Primary productivity; Daily net primary production of biomass expressed as carbon per unit volume in seawater per day; gCarbon m^-2 d^-1 
+4) Primary productivity anomaly;  Ratio of net primary production to the long-term (1998 to present year) climatology; unitless (ratio) 
+5) Microplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the microplankton (20-200 µm) fraction; mg m^-3 
+6) Nanoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the nanoplankton (2-20 µm) fraction; mg m^-3 
+7) Picoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the picoplankton (0.2-2 µm) fraction; mg m^-3 
+8) Microplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from microplankton (20-200 µm); (percent) 
+9) Nanoplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from nanoplankton (2-20 µm); (percent) 
+10) Picoplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from picoplankton (0.2-2 µm); (percent) 
+11) Annual summed primary production - TBD
+
+```{r vars_phyto_size}
+# Pull all var names
+vars <- ecodata::phyto_size |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Other
+
+
+**Indicator Category**:
+
+Publicly available satellite data that are processed and analyzed
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/phyto_size.html>
+

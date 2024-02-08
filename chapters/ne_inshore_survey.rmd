@@ -1,0 +1,90 @@
+# Inshore Survey (New England)
+
+**Description**: Biomass time series for aggregate species groups from *three* inshore bottom trawl surveys conducted throughout the NE US:
+
+- NEAMAP (mab_inshore_survey) from Cape Hatteras to RI
+
+- MA Inshore in MA state waters (mass_inshore_survey)
+
+- ME/NH Inshore in ME and NH state waters (ne_inshore_survey)
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: Rebecca Peters
+
+**Affiliations**: Maine
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Indicators from these inshore surveys are analagous to those produced by the NEFSC trawl survey in the `aggregate_biomass` indicator dataset
+
+## Key Results and Visualizations
+Each survey shows trends by aggregate group.
+
+### NE
+
+```{r plot_ne_inshore_surveyNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_ne_inshore_survey(report='NewEngland')
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: Nearshore regions of the MAB and GOM
+
+Temporal scale: Spring and Fall
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_ne_inshore_survey}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Some trends match the NEFSC survey, some dont. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
+
+## Get the data
+
+**Point of contact**: [Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov](mailto:Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov){.email}
+
+**ecodata name**: `ecodata::ne_inshore_survey`
+
+**Variable definitions**
+
+See variable definitions for `aggregate_biomass`
+
+```{r vars_ne_inshore_survey}
+# Pull all var names
+vars <- ecodata::ne_inshore_survey |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/ne_inshore_survey.html>
+
