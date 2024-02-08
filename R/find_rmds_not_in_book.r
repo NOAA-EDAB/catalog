@@ -23,7 +23,7 @@ find_rmds_not_in_book <- function(){
   # find the rmdfiles not referenced in the yml
   missingrmds <- setdiff(rmdfiles,rmdrefs)
   message("The following rmds are not found in the _bookdown.yml")
-  print(missingrmds)
+  #print(missingrmds)
   
   return(missingrmds)
   
