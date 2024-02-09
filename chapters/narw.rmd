@@ -90,9 +90,10 @@ The UMEs are under investigation and are likely the result of multiple drivers. 
 3) Median=median estimate of right whale abundance in number of animals.  
 4) Upper95= upper 95% confidence interval value in number of animals.   
 5) Mean= mean estimate of right whale abundance in number of animals.   
-6) SD=standard deviation of estimate of right whale abundance in number of animals.  
-Palka_NARW_Calves_1980_2023.csv 1)	Year.  
-2) Tot.Calves = total number of right whale calves born that year in number of animals. "
+6) SD=standard deviation of estimate of right whale abundance in number of animals. 
+ Palka_NARW_Calves_1980_2023.csv 1)	Year.  
+2) Tot.Calves = total number of right whale calves born that year in number of animals. 
+"
 
 ```{r vars_narw}
 # Pull all var names

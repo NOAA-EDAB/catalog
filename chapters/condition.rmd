@@ -18,7 +18,7 @@ library(ecodata)
 ## Introduction to Indicator
 The health and well being of individual fish can be related to body shape condition indices (i.e., weight at a given length) such as relative condition index, which is the ratio of observed weight to predicted weight based on length [@le_cren_length-weight_1951]. Heavier and fatter fish at a given length have higher relative condition which is expected to improve growth, reproductive output, and survival.
 
-Le Cren’s (1951) [@le_cren_length-weight_1951] relative condition (Kn) is used in this study:
+Le Cren’s [@le_cren_length-weight_1951] relative condition (Kn) is used in this study:
 
 Kn = W/W’
 
@@ -86,7 +86,8 @@ These changes in condition have direct implications for stock assessments, catch
 
 **Variable definitions**
 
-Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data 
+Species: common name for fish species  EPU: Ecological Production Unit 
+YEAR: year of condition data 
 MeanCond: annual mean by EPU and species of relative condition (unitless)
 
 ```{r vars_condition}

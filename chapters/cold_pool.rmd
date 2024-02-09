@@ -96,7 +96,8 @@ Changes in the cold pool habitat can affect species distribution, recruitment, a
 4) se_cold_pool_index: standard error of cold_pool_index 
 5) persistence_index: measure of duration of cold pool 
 6) se_persistence_index: standard error of persistence_index 
-7) extent_index: measure of spatial extent of cold pool 8) se_extent_index: standard error of extent_index
+7) extent_index: measure of spatial extent of cold pool 
+8) se_extent_index: standard error of extent_index
 
 ```{r vars_cold_pool}
 # Pull all var names

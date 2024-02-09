@@ -112,7 +112,8 @@ The increase in recreational species catch diversity in New England is due to re
 **Variable definitions**
 
 Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1. 
- 1) Name: Recreational Seafood; Definition: Recreational Harvest; Units: lbs 
+ 
+1) Name: Recreational Seafood; Definition: Recreational Harvest; Units: lbs 
 2) Name: Recreational Effort; Definition: Recreational Trips; Units: Angler Trips 
 3) Name: Recreational Effort Diversity; Definition: Recreational fleet effort diversity across modes; Units: Effective Shannon Metric 
 4) Name: Recreational Catch Diversity; Definition: Recreational Diversity of Catch across managed species; Units: Effective Shannon Metric
