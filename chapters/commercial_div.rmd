@@ -22,8 +22,7 @@ Diversity estimates have been developed to understand whether specialization, or
 ## Key Results and Visualizations
 Diversity estimates have been developed for species landed by commercial vessels with New England permits, and fleets landing managed species. Over the course of the last three years, there has been a steep decline in the effective number of species being landed in the commercial fleet, and current diversity is near a low since records began (Fig. 15).  Commercial fishery fleet count has rebounded in recent years, although still at levels well below the historical average (Fig. 16). Here a fleet is defined as the combination of gear type (Scallop Dredge, Clam Dredge, Other Dredge, Gillnet, Hand Gear, Longline, Bottom Trawl, Midwater Trawl, Pot, or Purse Seine) and vessel length category (Less than 30 ft, 30 to 50 ft, 50 to 75 feet, 75 ft and above). 
 
-Commercial fishery fleet count and fleet diversity have been stable over time in the MAB, with current values near the long-term
-average (Fig. 15). This indicates similar commercial fleet composition and species targeting opportunities over time. Commercial fisheries are relying on fewer species relative to the mid-90s, although current species revenue diversity has recovered somewhat in the last year (Fig. 16).
+Commercial fishery fleet count and fleet diversity have been stable over time in the MAB, with current values near the long-term average (Fig. 15). This indicates similar commercial fleet composition and species targeting opportunities over time. Commercial fisheries are relying on fewer species relative to the mid-90s, although current species revenue diversity has recovered somewhat in the last year (Fig. 16).
 
 ### MidAtlantic
 

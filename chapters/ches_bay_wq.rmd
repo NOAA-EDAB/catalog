@@ -61,7 +61,8 @@ Patterns of attainment of individual designated uses are variable (Figure 2). Ac
 
 **Variable definitions**
 
-Period: Assessment period Year 1: Starting year of the assessment period 
+Period: Assessment period 
+Year 1: Starting year of the assessment period 
 Year 2: Ending year of the assessment period 
 Total: The overall attainment indicator 
 MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 

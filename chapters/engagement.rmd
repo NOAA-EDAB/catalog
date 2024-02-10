@@ -160,7 +160,8 @@ It is also important to note that factor scores and their associated categorical
 7) Personal Disruption Index: personal disruption factor score. 
 8) Population Composition Index: population composition factor score. 
 9) Poverty Index: poverty index factor score. 
-10) 1std: 1 standard deviation. 11) 0.5 std: 0.5 standard deviation.
+10) 1std: 1 standard deviation. 
+11) 0.5 std: 0.5 standard deviation.
 
 **Indicator Category**:
 

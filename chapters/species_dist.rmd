@@ -78,8 +78,9 @@ Temperature change is a major driver of changing fish distributions [@friedland_
 
 **Variable definitions**
 
-"along-shelf distance"  "depth"                 "distance to coast"     
-"Latitude"              "Longitude"
+"along-shelf distance"  "depth"                 
+"distance to coast"     "Latitude"              
+"Longitude"
 
 ```{r vars_species_dist}
 # Pull all var names

@@ -93,7 +93,7 @@ Bottom temperature is an important driver for benthic and demersal species growt
 
 Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) 
 Subarea: EPU name 
-Source:  ROMS (bias-corrected ROMS-NWA bottom temperature from du Pontavice et al, 2023), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
+Source:  ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
 bt_temp : mean bottom temperature for each year/season across entire EPU 
 ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
 
