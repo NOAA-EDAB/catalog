@@ -1,4 +1,4 @@
-# Slopewater Proportions
+# Slopewater Proportions {#slopewater}
 
 **Description**: This index gives the relative proportions of watermass type observed in the deep Northeast Channel (150-200 m water depth).
 

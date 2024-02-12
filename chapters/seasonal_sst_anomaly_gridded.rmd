@@ -1,4 +1,4 @@
-# Seasonal OISST Anomaly Map
+# Seasonal OISST Anomaly Map {#seasonal_sst_anomaly_gridded}
 
 **Description**: Mapped seasonal sea surface temperature anomaly
 

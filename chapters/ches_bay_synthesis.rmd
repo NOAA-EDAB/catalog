@@ -1,4 +1,4 @@
-# Chesapeake Bay 2023 Synthesis
+# Chesapeake Bay 2023 Synthesis {#ches_bay_synthesis}
 
 **Description**: Synthesis of Chesapeake Bay 2023 habitat conditions with implications for managed species
 
@@ -71,7 +71,4 @@ Source data are publicly available.
 ## Accessibility and Constraints
 
 _No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/ches_bay_synthesis.html>
 

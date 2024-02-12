@@ -1,4 +1,4 @@
-# Timing shifts: Risks to Seasonal Management
+# Timing shifts: Risks to Seasonal Management {#timing_shifts}
 
 **Description**: Shifts in the timing of life-cycle events are a risk to meeting seasonal and temporal management objectives.
 
@@ -71,7 +71,4 @@ Source data are publicly available.
 ## Accessibility and Constraints
 
 _No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/timing_shifts.html>
 

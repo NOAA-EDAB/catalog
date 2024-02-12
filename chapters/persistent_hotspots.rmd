@@ -1,4 +1,4 @@
-# Persistent annual hotspots
+# Persistent annual hotspots {#persistent_hotspots}
 
 **Description**: Integrated persistent annual hotspots derived from at-sea observations of seabirds, cetaceans and sea turtles collected on systematic ship and aerial surveys
 
@@ -67,7 +67,4 @@ Source data are publicly available.
 ## Accessibility and Constraints
 
 _No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/persistent_hotspots.html>
 

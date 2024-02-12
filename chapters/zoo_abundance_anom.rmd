@@ -1,4 +1,4 @@
-# Zooplankton Abundance Anomalies
+# Zooplankton Abundance Anomalies {#zoo_abundance_anom}
 
 **Description**: Abundance anomalies for 20 zooplankton taxa
 
@@ -79,15 +79,13 @@ Check these. If they are correct, we could be seeing the less energy dense zoopl
 
 All are unitless anomalies from the 1977-2020 mean abundance for each taxon. 
 Variables are taxa names:  (to be described by contributors) 
-"Calfin"         "LgCopepods"     
-"SmCopepods"     "Cyclopoida"     
-"Diplostraca"    "Ostracoda"      
-"Cirripedia"     "Euphausiacea"  
-"Gammaridea"     "Hyperiidea"     
-"Mysidacea"      "Decapoda"       
-"Polychaeta"     "Echinodermata"  
-"Mollusca"     "Pteropod"      "Chaetognatha"   
-"Cnidaria"       "Tunicate"       "Protozoa"
+"Calfin"         "LgCopepods"     "SmCopepods"     
+"Cyclopoida"     "Diplostraca"    "Ostracoda"      
+"Cirripedia"     "Euphausiacea"  "Gammaridea"     
+"Hyperiidea"     "Mysidacea"      "Decapoda"       
+"Polychaeta"     "Echinodermata"  "Mollusca"     
+"Pteropod"      "Chaetognatha"   "Cnidaria"       
+"Tunicate"       "Protozoa"
 
 ```{r vars_zoo_abundance_anom}
 # Pull all var names

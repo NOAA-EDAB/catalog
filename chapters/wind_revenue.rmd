@@ -1,4 +1,4 @@
-# Fishery Impacts from Offshore Wind Development
+# Fishery Impacts from Offshore Wind Development {#wind_revenue}
 
 **Description**: The data presented here include landings and revenue of managed species within existing offshore wind lease areas, Central Atlantic Bight final wind energy areas, and the Gulf of Maine draft wind energy area.
 

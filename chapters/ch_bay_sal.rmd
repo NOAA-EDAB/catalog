@@ -1,4 +1,4 @@
-# Chesapeake Bay Salinity
+# Chesapeake Bay Salinity {#ch_bay_sal}
 
 **Description**: This data is collected from the CBIBS buoy system.
 

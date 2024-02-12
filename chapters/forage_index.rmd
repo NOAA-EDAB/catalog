@@ -1,4 +1,4 @@
-# Forage Fish Index
+# Forage Fish Index {#forage_index}
 
 **Description**: Aggregate forage fish biomass index from fish stomach contents
 

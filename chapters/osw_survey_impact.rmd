@@ -1,4 +1,4 @@
-# Survey Impacts from Offshore Wind Development
+# Survey Impacts from Offshore Wind Development {#osw_survey_impact}
 
 **Description**: Offshore wind development is expected to have several impacts on federal and state surveys.
 
@@ -70,7 +70,4 @@ Source data are publicly available.
 ## Accessibility and Constraints
 
 _No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/osw_survey_impact.html>
 

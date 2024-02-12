@@ -1,4 +1,4 @@
-# Thermal Habitat Area
+# Thermal Habitat Area {#thermal_habitat_area}
 
 **Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2023
 

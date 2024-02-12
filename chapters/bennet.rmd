@@ -1,4 +1,4 @@
-# Bennet Indicator
+# Bennet Indicator {#bennet}
 
 **Description**: The data presented here are changes in revenue ($ real) split into a price indicator and a volume indicator. The sum of the price and the volume indicator is equal to the revenue change relative to a base year, which is 1982.
 
@@ -17,21 +17,9 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The Bennet (1920) indicator (BI) was first used to show how a change in social welfare could be decomposed into a sum of a price and quantity change indicator (Cross and Färe 2009). It is called an indicator because it is based on differences in value between time periods, rather than ratios, which are referred to as indices. The BI is the indicator equivalent of the more popular Fisher index (Balk 2010), and has been used to examine revenue changes in Swedish pharmacies, productivity change in U.S. railroads (Lim and Lovell 2009), and dividend changes in banking operations (Grifell-Tatjé and Lovell 2004). An attractive feature of the BI is that the overall indicator is equal to the sum of its subcomponents (Balk 2010). This allows us to examine whether increasing (decreasing) volumes, increasing (decreasing) prices, or some combination of the two is responsible for revenue change between time periods. The volume and price indicators can be further decomposed allowing us to examine the extent to which changing quantities or prices of each output is driving revenue change. 
-Revenue in an EPU in a given year is the product of quantities landed times prices received from all species groups (or guilds) within the EPU. At time t, revenue (R) in an EPU is defined as:
+The Bennet (1920) indicator (BI) was first used to show how a change in social welfare could be decomposed into a sum of a price and quantity change indicator (@cross_value_2009). It is called an indicator because it is based on differences in value between time periods, rather than ratios, which are referred to as indices. The BI is the indicator equivalent of the more popular Fisher index (@balk_assumption-free_2010), and has been used to examine revenue changes in Swedish pharmacies, productivity change in U.S. railroads (@lim_profit_2009), and dividend changes in banking operations @grifell-tatje_decomposing_2004. An attractive feature of the BI is that the overall indicator is equal to the sum of its subcomponents @balk_assumption-free_2010. This allows us to examine whether increasing (decreasing) volumes, increasing (decreasing) prices, or some combination of the two is responsible for revenue change between time periods. The volume and price indicators can be further decomposed allowing us to examine the extent to which changing quantities or prices of each output is driving revenue change. 
 
-Rt=j=1Jpjtyjt
-where pj is the price for species group j, and yj is the quantity landed of species group j. Revenue change between any two time periods, say t+1 and t, is then Rt+1-Rt which can also be expressed as: 
-
-R=j=1Jpjt+1yjt+1-j=1Jpjtyjt.
-
-This change can be decomposed further, yielding a VI and PI. The VI is calculated using the following formula (Georgianna, Lee, and Walden 2017):
-
-VI=12(j=1Jpjt+1yjt+1-j=1Jpjt+1yjt+j=1Jpjtyjt+1-j=1Jpjtyjt)
-
-The price indicator (PI) is calculated as follows:
-
-PI=12(j=1Jyjt+1pjt+1-j=1Jyjt+1pjt+j=1Jyjtpjt+1-j=1Jyjtpjt)
+Revenue in an EPU in a given year is the product of quantities landed and prices received from all species groups (or guilds) within the EPU. The change in revenue between any two time points can be decomposed into a volume indicator (VI) and a price indicator (PI).
 
 The overall BI is the sum of the VI and PI, and is equal to the overall revenue change. Since revenue change is being driven by changes in the individual prices and quantities landed of each species group within an EPU, changes at the EPU level can be examined separately by taking advantage of the additive property of the indicator. For example, if there are five different species groups, the sum of each group’s VI will equal the overall EPU VI, and likewise, the sum of the PI for each group will equal the overall PI for the EPU.
 

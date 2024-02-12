@@ -1,4 +1,4 @@
-# Seasonal Variation of Calanus finmarchicus
+# Seasonal Variation of Calanus finmarchicus {#calanus_variation}
 
 **Description**: Abundance of late copepodid stages of the planktonic copepod, Calanus finmarchicus, measured during seasonal surveys between 1977 and 2019. Data from NOAA EcoMon/MARMAP program
 
@@ -96,7 +96,4 @@ Source data are publicly available.
 ## Accessibility and Constraints
 
 _No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/calanus_variation.html>
 

@@ -1,4 +1,4 @@
-# Cold Pool Index
+# Cold Pool Index {#cold_pool}
 
 **Description**: Three annual cold pool indices (and standard error) for ss1959 through 2023
 

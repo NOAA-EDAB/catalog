@@ -1,4 +1,4 @@
-# Mesozooplankton Biomass at Wilkson Basin
+# Mesozooplankton Biomass at Wilkson Basin {#wbts_mesozooplankton}
 
 **Description**: Mesozooplankton biomass at the Wilkinson Basin Time Series Station (WBTS): 2005-2022
 
@@ -78,7 +78,4 @@ Source data are NOT publicly available.
 ## Accessibility and Constraints
 
 While some of the data (e.g. the biomass data) are publicly available, other accompanying data, eg. abundance of Calanus finmarchicus and other zooplankton and chlorophyll a time series are pending submission in 2024 for publication in the primary literature
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/wbts_mesozooplankton.html>
 

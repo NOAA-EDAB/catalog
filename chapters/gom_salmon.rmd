@@ -1,4 +1,4 @@
-# Gulf of Maine Atlantic salmon
+# Gulf of Maine Atlantic salmon {#gom_salmon}
 
 **Description**: The data presented here are time series of documented Atlantic salmon returns to Gulf of Maine Rivers since 1972 and return rates for two sea winter returns from hatchery smolt stockings.
 
@@ -17,7 +17,7 @@ library(ecodata)
 ```
 ## Introduction to Indicator
 US Atlantic salmon historically ranged as far south as Long Island Sound but current populations are restricted to Maine. Populations south of Maine were extirpated in the 1800’s. The Gulf of Maine Atlantic Salmon Distinct Population Segment (GOM DPS) supported local commercial fisheries until a 1947 closure. Populations remained low (< 500) until the modern hatchery restoration programs started in the late 1960’s. This program led to relatively rapid population rebuilding (Figure ##).
-GOM Atlantic salmon abundance is tracked through adult counts at traps in large rivers and redd surveys in smaller coastal drainages (USASAC 2023). These fish typically return to freshwater to spawn after two winters at sea (2SW) with higher return rates than those spending one winter at sea (1SW) or longer. Most 2SW spawners are female hatchery-origin fish, making their return rate a crucial measure of marine productivity. Return rates are calculated from known smolt stocking numbers and locations and counts of returning hatchery adults to the Penobscot River (Stevens et al. 2019). Together, abundance and return rates allow monitoring of population status (Figure ##).
+GOM Atlantic salmon abundance is tracked through adult counts at traps in large rivers and redd surveys in smaller coastal drainages (USASAC 2023). These fish typically return to freshwater to spawn after two winters at sea (2SW) with higher return rates than those spending one winter at sea (1SW) or longer. Most 2SW spawners are female hatchery-origin fish, making their return rate a crucial measure of marine productivity. Return rates are calculated from known smolt stocking numbers and locations and counts of returning hatchery adults to the Penobscot River (@stevens_modeling_2019). Together, abundance and return rates allow monitoring of population status (Figure ##).
 
 ## Key Results and Visualizations
 A significant and persistent decrease in marine productivity of North American Atlantic salmon populations occurred around 1990, which impacted U.S. adult spawner abundance (Figure ##). The GOM DPS was listed as Endangered under the ESA in 2000. Primary threats are dams, marine survival and climate change. Decreased productivity was linked to a regime shift that resulted in a cascading effect of ecosystem conditions driven by large scale oceanic changes.

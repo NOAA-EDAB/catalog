@@ -1,4 +1,4 @@
-# Fish Productivity Indicators
+# Fish Productivity Indicators {#productivity_anomaly}
 
 **Description**: Amount of small fish produced per large fish biomass over time
 
