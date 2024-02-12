@@ -21,7 +21,7 @@ make_rmd <- function(listobject){
   # start to create the Rmd
   #cat(paste0("# ",stringr::str_to_title(indicator_name)),append=T,fill=T,file=con)  
   ### DESCRIPTION, CONTRIBUTORS, AFFILIATION, FAMILY
-  cat(paste0("# ",listobject$dataname),append=T,fill=T,file=con)    
+  cat(paste0("# ",listobject$dataname," {#",listobject$indicatorname,"}"),append=T,fill=T,file=con)    
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("**Description**: ",listobject$description),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
@@ -327,15 +327,19 @@ make_rmd <- function(listobject){
   cat("",append=T,fill=T,file=con) # add space
   
 
-  cat("**tech-doc link**",append=T,fill=T,file=con)
-  
-  cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
+  # write catalog link if ecodata data is present
+  if (exists(paste0(listobject$indicatorname))) {
+    cat("**tech-doc link**",append=T,fill=T,file=con)
+    
+    cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    
+  } else {
+    # No link since this is a synthesis type of page
+  }
   
   # References are generated automatically  
-  # cat("## References",append=T,fill=T,file=con)
-  # cat("",append=T,fill=T,file=con) # add space
-  
+
   
   #close the connection
   close(con)
