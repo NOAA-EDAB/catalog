@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Gray seals were extirpated from the northeast U.S. coast by the mid-20th century due to local and statewide bounty systems (Andrews and Mott 1967; Lelli et al. 2009). Since the late 1980s, ground and aerial surveys have documented the recovery and recolonization of pupping sites in northeast U.S. waters (Wood et al. 2022). This recovery is due in large part to the protection provided by the Marine Mammal Protection Act (MMPA) of 1972.
+Gray seals were extirpated from the northeast U.S. coast by the mid-20th century due to local and statewide bounty systems [@andrews_gray_1967;  @lelli_seal_2009]. Since the late 1980s, ground and aerial surveys have documented the recovery and recolonization of pupping sites in northeast U.S. waters [@wood_gray_2022]. This recovery is due in large part to the protection provided by the Marine Mammal Protection Act (MMPA) of 1972.
 
 ## Key Results and Visualizations
 The increase in bycatch of gray seals (Fig. x) since 1995 corresponds to an increase in numbers of gray seals in U.S. waters, which has risen dramatically in the last three decades. Based on a survey conducted in 2021, the size of the gray seal population in the U.S. during the breeding season was approximately 28,000 animals, while in Canada the population was estimated to be roughly 425,000. The population in Canada is increasing at roughly 4% per year, and contributing to rates of increase in the U.S., where the number of pupping sites has increased from one in 1988 to nine in 2019.

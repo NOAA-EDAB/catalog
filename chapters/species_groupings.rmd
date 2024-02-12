@@ -19,7 +19,7 @@ library(ecodata)
 ## Introduction to Indicator
 Feeding guilds are groups of species that feed similarly. At the ecosystem level, the food web is likely stable if overall biomass of feeding groups is stable over time, even if populations of species within the groups may be changing. 
 
-We defined feeding guilds for fish and invertebrates captured by bottom trawl surveys using diet similarity, either from diet analysis or from literature. *add refs:* Garrison and Link 2000, Smith and Link 2010, [NEFSC food habits online](https://fwdp.shinyapps.io/tm2020/)
+We defined feeding guilds for fish and invertebrates captured by bottom trawl surveys using diet similarity, either from diet analysis or from literature [@garrison_dietary_2000; @smith_trophic_2010], and see [NEFSC food habits online](https://fwdp.shinyapps.io/tm2020/)
 
 ## Key Results and Visualizations
 Each management body (MAFMC, NEFSC, State etc) has its managed species associated with different feeding guilds. This data set shows which managed species for each management body are in which guilds.

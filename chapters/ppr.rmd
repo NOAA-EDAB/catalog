@@ -132,8 +132,7 @@ There is insufficient evidence to determine whether ecosystem overfishing in occ
 
 **Variable definitions**
 
-1. Ryther; The Ryther index; mt km^-2 y^-1 
-2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
+1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
 3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
