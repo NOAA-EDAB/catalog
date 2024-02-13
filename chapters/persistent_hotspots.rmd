@@ -1,4 +1,4 @@
-# Persistent annual hotspots {#persistent_hotspots}
+# Persistent annual hotspots
 
 **Description**: Integrated persistent annual hotspots derived from at-sea observations of seabirds, cetaceans and sea turtles collected on systematic ship and aerial surveys
 

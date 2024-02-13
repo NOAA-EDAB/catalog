@@ -1,4 +1,4 @@
-# Commercial Catch and Fleet Diversity {#commercial_div}
+# Commercial Catch and Fleet Diversity
 
 **Description**: Permit-level species diversity and Council-level fleet diversity.
 

@@ -1,4 +1,4 @@
-# Spawning Timing {#spawn_timing}
+# Spawning Timing
 
 **Description**: Maturity information for groundfish is used to evaluate changes in spawning seasonality.
 
@@ -181,8 +181,7 @@ The post spawning Yellowtail Flounder would be expected to have lower relative c
 
 Variable names follow the convention "SEASON_Species_STOCK_Variable" where Variable and Units are: 
 meanTEMP: mean sampled bottom temperature in degrees C MF: number of mature females sampled 
-meanJDAY: mean julian day of year sampled 
-Developing: percent of mature females at developing (pre-spawning) stage 
+meanJDAY: mean julian day of year sampled Developing: percent of mature females at developing (pre-spawning) stage 
 Ripe: percent of mature females at ripe (spawning) stage 
 Spent: percent of mature females at spent (immediately post-spawning) stage 
 Resting: percent of mature females at resting (non-spawning) stage

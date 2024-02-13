@@ -1,4 +1,4 @@
-# Chesapeake Bay Temperature {#ch_bay_temp}
+# Chesapeake Bay Temperature
 
 **Description**: This data is collected from the CBIBS buoy system.
 

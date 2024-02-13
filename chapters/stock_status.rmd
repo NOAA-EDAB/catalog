@@ -1,4 +1,4 @@
-# Stock Status {#stock_status}
+# Stock Status
 
 **Description**: Summary of the most recent stock status results for each assessed species
 

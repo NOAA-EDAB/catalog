@@ -1,4 +1,4 @@
-# Sea-surface temperature anomaly {#seasonal_oisst_anom}
+# Sea-surface temperature anomaly
 
 **Description**: Seasonal sea surface temperature anomaly
 

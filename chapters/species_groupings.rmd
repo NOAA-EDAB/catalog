@@ -1,4 +1,4 @@
-# Feeding guilds by management bodies {#species_groupings}
+# Feeding guilds by management bodies
 
 **Description**: Classification of species guild membership by management bodies.
 

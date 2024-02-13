@@ -1,4 +1,4 @@
-# Transition Dates {#trans_dates}
+# Transition Dates
 
 **Description**: The date that cool winter conditions transition to warm stratified summer conditions.
 

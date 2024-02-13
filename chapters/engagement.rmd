@@ -1,4 +1,4 @@
-# Engagement, Reliance, and Environmental Justice in Top Fishing Communities {#engagement}
+# Engagement, Reliance, and Environmental Justice in Top Fishing Communities
 
 **Description**: The data presented here are 2021 environmental justice indicators in top commercial and top recreational communities in Mid-Atlantic and New England regions, respectively.
 
@@ -151,16 +151,14 @@ It is also important to note that factor scores and their associated categorical
 
 **Variable definitions**
 
-1) Name: Community Name: name of the community. 
-2) Commercial Engagement Index: commercial engagement factor score. 
+1) Name: Community Name: name of the community. 2) Commercial Engagement Index: commercial engagement factor score. 
 3) Commercial Reliance Index: commercial reliance factor score. 
 4) Recreational Engagement Score: recreational engagement factor score. 
 5) Recreational Reliance Index: recreational reliance factor score. 
 6) EJ Rating: environmental justice categorical rankings. 
 7) Personal Disruption Index: personal disruption factor score. 
-8) Population Composition Index: population composition factor score. 
-9) Poverty Index: poverty index factor score. 10) 1std: 1 standard deviation. 
-11) 0.5 std: 0.5 standard deviation.
+8) Population Composition Index: population composition factor score. 9) Poverty Index: poverty index factor score. 
+10) 1std: 1 standard deviation. 11) 0.5 std: 0.5 standard deviation.
 
 **Indicator Category**:
 

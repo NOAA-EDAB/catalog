@@ -1,4 +1,4 @@
-# Inshore Survey (New England) {#ne_inshore_survey}
+# Inshore Survey (New England)
 
 **Description**: Biomass time series for aggregate species groups from *three* inshore bottom trawl surveys conducted throughout the NE US:
 

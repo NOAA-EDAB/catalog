@@ -1,4 +1,4 @@
-# Gray Seal Pups {#seal_pups}
+# Gray Seal Pups
 
 **Description**: The data presented here are counts of gray seal pups at 4 U.S. haulout sites from 1988 to 2021.
 

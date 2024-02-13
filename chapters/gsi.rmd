@@ -1,4 +1,4 @@
-# Gulf Stream Index {#gsi}
+# Gulf Stream Index
 
 **Description**: The monthly Gulf Stream North Wall Index presented here are based on the gridded EN.4.2.2 analyses dataset from 1954 to 2022 (https://www.metoffice.gov.uk/hadobs/en4/), calculated following @joyce_relationship_2009.
 

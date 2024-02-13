@@ -1,4 +1,4 @@
-# Relative condition {#condition}
+# Relative condition
 
 **Description**: NEFSC fall bottom trawl survey relative condition
 
@@ -86,8 +86,7 @@ These changes in condition have direct implications for stock assessments, catch
 
 **Variable definitions**
 
-Species: common name for fish species  EPU: Ecological Production Unit 
-YEAR: year of condition data 
+Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data 
 MeanCond: annual mean by EPU and species of relative condition (unitless)
 
 ```{r vars_condition}

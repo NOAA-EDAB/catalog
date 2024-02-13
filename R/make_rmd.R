@@ -21,7 +21,8 @@ make_rmd <- function(listobject){
   # start to create the Rmd
   #cat(paste0("# ",stringr::str_to_title(indicator_name)),append=T,fill=T,file=con)  
   ### DESCRIPTION, CONTRIBUTORS, AFFILIATION, FAMILY
-  cat(paste0("# ",listobject$dataname," {#",listobject$indicatorname,"}"),append=T,fill=T,file=con)    
+#  cat(paste0("# ",listobject$dataname," {#",listobject$indicatorname,"}"),append=T,fill=T,file=con)    
+  cat(paste0("# ",listobject$dataname),append=T,fill=T,file=con)    
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("**Description**: ",listobject$description),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space

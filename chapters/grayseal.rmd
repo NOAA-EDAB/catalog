@@ -1,4 +1,4 @@
-# Gray Seal Bycatch {#grayseal}
+# Gray Seal Bycatch
 
 **Description**: The data presented here are time series of the species specific estimates of bycatch from U.S. North Atlantic commercial fisheries.
 

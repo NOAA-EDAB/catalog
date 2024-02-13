@@ -1,4 +1,4 @@
-# Expected Number of Species {#exp_n}
+# Expected Number of Species
 
 **Description**: Diversity metric from the Northeast Fisheries Science Center (NEFSC) Bottom Trawl Surveys.
 

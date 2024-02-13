@@ -1,4 +1,4 @@
-# Chesapeake Bay Seasonal Sea Surface Temperature Anomaly {#ches_bay_sst}
+# Chesapeake Bay Seasonal Sea Surface Temperature Anomaly
 
 **Description**: Chesapeake Bay Seasonal Sea Surface Temperature Anomaly
 
@@ -20,6 +20,12 @@ Seasonal spatial anomaly maps represent the difference between a seasonal averag
 
 ## Key Results and Visualizations
 For 2023, winter SST’s show conditions to be roughly 1 degree Celsius warmer than the prior 16-year average winter (2007-2022) throughout Chesapeake Bay. Spring conditions are average. Summer conditions are roughly 0.5 degree Celsius colder than the average summer. Fall conditions are mixed spatially but do not exceed 0.5 degree Celsius colder or warmer.
+
+```{r plot_ches_bay_sstMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_ches_bay_sst(report='MidAtlantic')
+ggplotObject
+```
 
 
 ## Indicator statistics 
@@ -55,8 +61,7 @@ In the fall season, there were warmer-than-average temperatures in the Western S
 
 **Variable definitions**
 
-1) sst: sea surface temperature 2023, Celsius 
-2) sst_climatol: sea surface temperature climatology 2007-2022, Celsius 
+1) sst: sea surface temperature 2023, Celsius 2) sst_climatol: sea surface temperature climatology 2007-2022, Celsius 
 3) sst_anomaly: sea surface temperature anomaly 2023 minus 2007-2022, Celsius
 
 ```{r vars_ches_bay_sst}

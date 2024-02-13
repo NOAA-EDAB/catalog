@@ -1,4 +1,4 @@
-# Bottom temperature - Seasonal Anomaly {#bottom_temp_comp}
+# Bottom temperature - Seasonal Anomaly
 
 **Description**: The data are seasonal bottom temperature anomaly time series for each EPU
 

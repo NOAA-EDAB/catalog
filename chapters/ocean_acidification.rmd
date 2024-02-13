@@ -1,4 +1,4 @@
-# Ocean Acidification and Other Stressors {#ocean_acidification}
+# Ocean Acidification and Other Stressors
 
 **Description**: Maps and variability of regional carbonate chemistry and other oceanographic properties
 

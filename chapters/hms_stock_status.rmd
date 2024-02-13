@@ -1,4 +1,4 @@
-# Highly Migratory Species Stock Status {#hms_stock_status}
+# Highly Migratory Species Stock Status
 
 **Description**: Summary of the most recent stock assessment results for each assessed Highly Migratory Species.
 

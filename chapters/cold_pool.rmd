@@ -1,4 +1,4 @@
-# Cold Pool Index {#cold_pool}
+# Cold Pool Index
 
 **Description**: Three annual cold pool indices (and standard error) for ss1959 through 2023
 
@@ -93,10 +93,8 @@ Changes in the cold pool habitat can affect species distribution, recruitment, a
 
 1) Source: ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
 2) year 3) cold_pool_index: measure of mean temperature within cold pool 
-4) se_cold_pool_index: standard error of cold_pool_index 
-5) persistence_index: measure of duration of cold pool 
-6) se_persistence_index: standard error of persistence_index 
-7) extent_index: measure of spatial extent of cold pool 
+4) se_cold_pool_index: standard error of cold_pool_index 5) persistence_index: measure of duration of cold pool 
+6) se_persistence_index: standard error of persistence_index 7) extent_index: measure of spatial extent of cold pool 
 8) se_extent_index: standard error of extent_index
 
 ```{r vars_cold_pool}

@@ -1,4 +1,4 @@
-# Bottom Temperature - in situ {#bottom_temp}
+# Bottom Temperature - in situ
 
 **Description**: The data presented here are time series of regional average bottom temperature anomalies from ship-based measurements made on the Northeast Continental Shelf.
 

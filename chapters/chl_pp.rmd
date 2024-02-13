@@ -1,4 +1,4 @@
-# Chlorophyll and Primary Production {#chl_pp}
+# Chlorophyll and Primary Production
 
 **Description**: Satellite derived phytoplankton data including chlorophyll concentration, phytoplankton size class, and primary production for the Northeast Continental Shelf and ecological production units.
 

@@ -1,4 +1,4 @@
-# NE Shelf Annual Sea Surface Temperature (SST) {#long_term_sst}
+# NE Shelf Annual Sea Surface Temperature (SST)
 
 **Description**: Average annual sea-surface temperatures from the NOAA extended reconstructed sea surface temperature data set (ERSST V5) on the Northeast Continental Shelf.
 

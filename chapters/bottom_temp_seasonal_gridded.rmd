@@ -1,4 +1,4 @@
-# Bottom temperature - Seasonal Gridded {#bottom_temp_seasonal_gridded}
+# Bottom temperature - Seasonal Gridded
 
 **Description**: Seasonal mean bottom temperatures on the Northeast Continental Shelf between 1959 and 2023 in a 1/12° grid.
 
@@ -22,6 +22,12 @@ Bias-corrected ROMS-NWA between 1959 and 1992 which was regridded in the same 1/
 
 ## Key Results and Visualizations
 Maps of seasonal mean bottom temperature across NE shelf.
+
+```{r plot_bottom_temp_seasonal_griddedMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_seasonal_gridded(report='MidAtlantic')
+ggplotObject
+```
 
 
 ## Indicator statistics 
@@ -49,8 +55,7 @@ Bottom temperature is a key environmental parameter in defining the habitat and 
 
 **Variable definitions**
 
-- Time: year - Lat: latitude - Lon: longitude - Variable: season 
-- Value: bottom temperature (degrees Celcius)
+- Time: year - Lat: latitude - Lon: longitude - Variable: season - Value: bottom temperature (degrees Celcius)
 
 ```{r vars_bottom_temp_seasonal_gridded}
 # Pull all var names

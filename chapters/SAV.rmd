@@ -1,4 +1,4 @@
-# Submerged Aquatic Vegetation {#SAV}
+# Submerged Aquatic Vegetation
 
 **Description**: The data provided here are the 1984-2022 area distribution and percent coverage of submerged aquatic vegetation in the Chesapeake Bay and its tributaries that area measured and calculated from photo-interpreted aerial imagery taken during surveys conducted in the growing season.
 

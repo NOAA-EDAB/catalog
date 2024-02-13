@@ -1,4 +1,4 @@
-# 2023 Observation Synthesis {#observation_synthesis}
+# 2023 Observation Synthesis
 
 **Description**: Synthesis of multiple anomalous and extreme conditions observed in 2023 that should be noted and considered in future analyses.
 

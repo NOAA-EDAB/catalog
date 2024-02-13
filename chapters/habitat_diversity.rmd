@@ -1,4 +1,4 @@
-# Species Richness {#habitat_diversity}
+# Species Richness
 
 **Description**: Abundance data were extracted from the NEFSC’s SVDBS database using Survdat for 55 fish species regularly sampled on spring and fall NEFSC bottom trawl surveys (see SOE Tech Doc for a list). Data were converted to presence/absence for species richness modeling.
 

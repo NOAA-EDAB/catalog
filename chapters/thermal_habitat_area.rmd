@@ -1,4 +1,4 @@
-# Thermal Habitat Area {#thermal_habitat_area}
+# Thermal Habitat Area
 
 **Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2023
 
@@ -75,8 +75,7 @@ If a large proportion of species current habitat become thermally inhospitable, 
 Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) and PSY (CMEM’s PSY global forecast bottom temperature) 
 min.depth: minimum of depth band max.depth: maximum of depth band 
 temp.threshold: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature) 
-area: area exceeding temperature threshold (m2) 
-area.prop: proportion of EPU area exceeding temperature threshold
+area: area exceeding temperature threshold (m2) area.prop: proportion of EPU area exceeding temperature threshold
 
 ```{r vars_thermal_habitat_area}
 # Pull all var names
