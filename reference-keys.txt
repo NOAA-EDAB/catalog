@@ -1,6 +1,6 @@
 fig:neusmap
 fig:neusmap1
-ches_bay_wq
+chesapeake-bay-water-quality-standards-attainment
 introduction-to-indicator
 key-results-and-visualizations
 mab
@@ -9,7 +9,7 @@ implications
 get-the-data
 public-availability
 accessibility-and-constraints
-chl_pp
+chlorophyll-and-primary-production
 introduction-to-indicator-1
 key-results-and-visualizations-1
 midatlantic
@@ -19,7 +19,7 @@ implications-1
 get-the-data-1
 public-availability-1
 accessibility-and-constraints-1
-phyto_size
+phytoplankton-size-class
 introduction-to-indicator-2
 key-results-and-visualizations-2
 mab-1
@@ -30,7 +30,7 @@ implications-2
 get-the-data-2
 public-availability-2
 accessibility-and-constraints-2
-habs
+harmful-algal-blooms
 introduction-to-indicator-3
 key-results-and-visualizations-3
 midatlantic-1
@@ -40,7 +40,7 @@ implications-3
 get-the-data-3
 public-availability-3
 accessibility-and-constraints-3
-SAV
+submerged-aquatic-vegetation
 introduction-to-indicator-4
 key-results-and-visualizations-4
 mab-2
@@ -49,7 +49,7 @@ implications-4
 get-the-data-4
 public-availability-4
 accessibility-and-constraints-4
-calanus_variation
+seasonal-variation-of-calanus-finmarchicus
 introduction-to-indicator-5
 key-results-and-visualizations-5
 indicator-statistics-5
@@ -57,7 +57,7 @@ implications-5
 get-the-data-5
 public-availability-5
 accessibility-and-constraints-5
-wbts_mesozooplankton
+mesozooplankton-biomass-at-wilkinson-basin
 introduction-to-indicator-6
 key-results-and-visualizations-6
 indicator-statistics-6
@@ -65,7 +65,7 @@ implications-6
 get-the-data-6
 public-availability-6
 accessibility-and-constraints-6
-zoo_abundance_anom
+zooplankton-abundance-anomalies
 introduction-to-indicator-7
 key-results-and-visualizations-7
 midatlantic-2
@@ -75,7 +75,7 @@ implications-7
 get-the-data-7
 public-availability-7
 accessibility-and-constraints-7
-zoo_diversity
+zooplankton-diversity
 introduction-to-indicator-8
 key-results-and-visualizations-8
 mab-3
@@ -85,7 +85,7 @@ implications-8
 get-the-data-8
 public-availability-8
 accessibility-and-constraints-8
-aggregate_biomass
+aggregate-survey-biomass
 introduction-to-indicator-9
 key-results-and-visualizations-9
 mab-4
@@ -96,7 +96,7 @@ implications-9
 get-the-data-9
 public-availability-9
 accessibility-and-constraints-9
-mab_inshore_survey
+inshore-survey-mid-atlantic
 introduction-to-indicator-10
 key-results-and-visualizations-10
 mab-5
@@ -105,7 +105,7 @@ implications-10
 get-the-data-10
 public-availability-10
 accessibility-and-constraints-10
-mass_inshore_survey
+inshore-survey-massachusetts
 introduction-to-indicator-11
 key-results-and-visualizations-11
 ne-1
@@ -114,7 +114,7 @@ implications-11
 get-the-data-11
 public-availability-11
 accessibility-and-constraints-11
-ne_inshore_survey
+inshore-survey-new-england
 introduction-to-indicator-12
 key-results-and-visualizations-12
 ne-2
@@ -123,7 +123,7 @@ implications-12
 get-the-data-12
 public-availability-12
 accessibility-and-constraints-12
-osw_survey_impact
+survey-impacts-from-offshore-wind-development
 introduction-to-indicator-13
 key-results-and-visualizations-13
 indicator-statistics-13
@@ -131,7 +131,7 @@ implications-13
 get-the-data-13
 public-availability-13
 accessibility-and-constraints-13
-condition
+relative-condition
 introduction-to-indicator-14
 key-results-and-visualizations-14
 mab-6
@@ -142,7 +142,7 @@ implications-14
 get-the-data-14
 public-availability-14
 accessibility-and-constraints-14
-habitat_diversity
+species-richness
 introduction-to-indicator-15
 key-results-and-visualizations-15
 midatlantic-3
@@ -152,7 +152,7 @@ implications-15
 get-the-data-15
 public-availability-15
 accessibility-and-constraints-15
-species_dist
+species-distribution-indicators
 introduction-to-indicator-16
 key-results-and-visualizations-16
 midatlantic-4
@@ -162,7 +162,7 @@ implications-16
 get-the-data-16
 public-availability-16
 accessibility-and-constraints-16
-energy_density
+forage-fish-energy-density
 introduction-to-indicator-17
 key-results-and-visualizations-17
 indicator-statistics-17
@@ -170,7 +170,7 @@ implications-17
 get-the-data-17
 public-availability-17
 accessibility-and-constraints-17
-spawn_timing
+spawning-timing
 introduction-to-indicator-18
 key-results-and-visualizations-18
 midatlantic-5
@@ -180,7 +180,7 @@ implications-18
 get-the-data-18
 public-availability-18
 accessibility-and-constraints-18
-exp_n
+expected-number-of-species
 introduction-to-indicator-19
 key-results-and-visualizations-19
 midatlantic-6
@@ -190,7 +190,7 @@ implications-19
 get-the-data-19
 public-availability-19
 accessibility-and-constraints-19
-forage_index
+forage-fish-index
 introduction-to-indicator-20
 key-results-and-visualizations-20
 midatlantic-7
@@ -200,7 +200,7 @@ implications-20
 get-the-data-20
 public-availability-20
 accessibility-and-constraints-20
-harborporpoise
+harbor-porpoise-bycatch
 introduction-to-indicator-21
 key-results-and-visualizations-21
 indicator-statistics-21
@@ -208,7 +208,7 @@ implications-21
 get-the-data-21
 public-availability-21
 accessibility-and-constraints-21
-hms_cpue
+highly-migratory-species-pop-catch-per-unit-effort
 introduction-to-indicator-22
 key-results-and-visualizations-22
 midatlantic-8
@@ -218,7 +218,7 @@ implications-22
 get-the-data-22
 public-availability-22
 accessibility-and-constraints-22
-hms_landings
+highly-migratory-species-landings
 introduction-to-indicator-23
 key-results-and-visualizations-23
 midatlantic-9
@@ -228,7 +228,7 @@ implications-23
 get-the-data-23
 public-availability-23
 accessibility-and-constraints-23
-hms_stock_status
+highly-migratory-species-stock-status
 introduction-to-indicator-24
 key-results-and-visualizations-24
 indicator-statistics-24
@@ -236,7 +236,7 @@ implications-24
 get-the-data-24
 public-availability-24
 accessibility-and-constraints-24
-HMS_species_distribution
+cetacean-distribution-shifts
 introduction-to-indicator-25
 key-results-and-visualizations-25
 indicator-statistics-25
@@ -244,7 +244,7 @@ implications-25
 get-the-data-25
 public-availability-25
 accessibility-and-constraints-25
-narw
+right-whale-abundance
 introduction-to-indicator-26
 key-results-and-visualizations-26
 midatlantic-10
@@ -254,7 +254,7 @@ implications-26
 get-the-data-26
 public-availability-26
 accessibility-and-constraints-26
-productivity_anomaly
+fish-productivity-indicators
 introduction-to-indicator-27
 key-results-and-visualizations-27
 midatlantic-11
@@ -264,7 +264,7 @@ implications-27
 get-the-data-27
 public-availability-27
 accessibility-and-constraints-27
-seal_pups
+gray-seal-pups
 introduction-to-indicator-28
 key-results-and-visualizations-28
 ne-3
@@ -273,7 +273,7 @@ implications-28
 get-the-data-28
 public-availability-28
 accessibility-and-constraints-28
-gom_salmon
+gulf-of-maine-atlantic-salmon
 introduction-to-indicator-29
 key-results-and-visualizations-29
 indicator-statistics-29
@@ -281,7 +281,7 @@ implications-29
 get-the-data-29
 public-availability-29
 accessibility-and-constraints-29
-grayseal
+gray-seal-bycatch
 introduction-to-indicator-30
 key-results-and-visualizations-30
 indicator-statistics-30
@@ -289,7 +289,7 @@ implications-30
 get-the-data-30
 public-availability-30
 accessibility-and-constraints-30
-seabird_ne
+seabird-diet-and-productivity---new-england
 introduction-to-indicator-31
 key-results-and-visualizations-31
 midatlantic-12
@@ -299,7 +299,7 @@ implications-31
 get-the-data-31
 public-availability-31
 accessibility-and-constraints-31
-species_groupings
+feeding-guilds-by-management-bodies
 introduction-to-indicator-32
 key-results-and-visualizations-32
 midatlantic-13
@@ -309,7 +309,7 @@ implications-32
 get-the-data-32
 public-availability-32
 accessibility-and-constraints-32
-bottom_temp
+bottom-temperature---in-situ
 introduction-to-indicator-33
 key-results-and-visualizations-33
 mab-7
@@ -319,7 +319,7 @@ implications-33
 get-the-data-33
 public-availability-33
 accessibility-and-constraints-33
-bottom_temp_comp
+bottom-temperature---seasonal-anomaly
 introduction-to-indicator-34
 key-results-and-visualizations-34
 midatlantic-14
@@ -329,7 +329,7 @@ implications-34
 get-the-data-34
 public-availability-34
 accessibility-and-constraints-34
-bottom_temp_seasonal_gridded
+bottom-temperature---seasonal-gridded
 introduction-to-indicator-35
 key-results-and-visualizations-35
 indicator-statistics-35
@@ -337,7 +337,7 @@ implications-35
 get-the-data-35
 public-availability-35
 accessibility-and-constraints-35
-seasonal_sst_anomaly_gridded
+seasonal-oisst-anomaly-map
 introduction-to-indicator-36
 key-results-and-visualizations-36
 indicator-statistics-36
@@ -345,7 +345,7 @@ implications-36
 get-the-data-36
 public-availability-36
 accessibility-and-constraints-36
-seasonal_oisst_anom
+sea-surface-temperature-anomaly
 introduction-to-indicator-37
 key-results-and-visualizations-37
 mab-8
@@ -356,7 +356,7 @@ implications-37
 get-the-data-37
 public-availability-37
 accessibility-and-constraints-37
-trans_dates
+transition-dates
 introduction-to-indicator-38
 key-results-and-visualizations-38
 midatlantic-15
@@ -366,7 +366,7 @@ implications-38
 get-the-data-38
 public-availability-38
 accessibility-and-constraints-38
-long_term_sst
+ne-shelf-annual-sea-surface-temperature-sst
 introduction-to-indicator-39
 key-results-and-visualizations-39
 indicator-statistics-39
@@ -374,7 +374,7 @@ implications-39
 get-the-data-39
 public-availability-39
 accessibility-and-constraints-39
-cold_pool
+cold-pool-index
 introduction-to-indicator-40
 key-results-and-visualizations-40
 midatlantic-16
@@ -384,7 +384,7 @@ implications-40
 get-the-data-40
 public-availability-40
 accessibility-and-constraints-40
-gsi
+gulf-stream-index
 introduction-to-indicator-41
 key-results-and-visualizations-41
 midatlantic-17
@@ -394,7 +394,7 @@ implications-41
 get-the-data-41
 public-availability-41
 accessibility-and-constraints-41
-slopewater
+slopewater-proportions
 introduction-to-indicator-42
 key-results-and-visualizations-42
 ne-5
@@ -403,7 +403,7 @@ implications-42
 get-the-data-42
 public-availability-42
 accessibility-and-constraints-42
-persistent_hotspots
+persistent-annual-hotspots
 introduction-to-indicator-43
 key-results-and-visualizations-43
 indicator-statistics-43
@@ -411,7 +411,7 @@ implications-43
 get-the-data-43
 public-availability-43
 accessibility-and-constraints-43
-wcr
+warm-core-rings
 introduction-to-indicator-44
 key-results-and-visualizations-44
 indicator-statistics-44
@@ -419,7 +419,7 @@ implications-44
 get-the-data-44
 public-availability-44
 accessibility-and-constraints-44
-thermal_habitat_area
+thermal-habitat-area
 introduction-to-indicator-45
 key-results-and-visualizations-45
 mab-9
@@ -430,7 +430,7 @@ implications-45
 get-the-data-45
 public-availability-45
 accessibility-and-constraints-45
-thermal_habitat_persistence
+thermal-habitat-persistence
 introduction-to-indicator-46
 key-results-and-visualizations-46
 indicator-statistics-46
@@ -438,7 +438,7 @@ implications-46
 get-the-data-46
 public-availability-46
 accessibility-and-constraints-46
-ch_bay_sal
+chesapeake-bay-salinity
 introduction-to-indicator-47
 key-results-and-visualizations-47
 mab-10
@@ -447,7 +447,7 @@ implications-47
 get-the-data-47
 public-availability-47
 accessibility-and-constraints-47
-ch_bay_temp
+chesapeake-bay-temperature
 introduction-to-indicator-48
 key-results-and-visualizations-48
 mab-11
@@ -456,7 +456,7 @@ implications-48
 get-the-data-48
 public-availability-48
 accessibility-and-constraints-48
-ches_bay_sst
+chesapeake-bay-seasonal-sea-surface-temperature-anomaly
 introduction-to-indicator-49
 key-results-and-visualizations-49
 indicator-statistics-49
@@ -464,7 +464,7 @@ implications-49
 get-the-data-49
 public-availability-49
 accessibility-and-constraints-49
-ches_bay_synthesis
+chesapeake-bay-2023-synthesis
 introduction-to-indicator-50
 key-results-and-visualizations-50
 indicator-statistics-50
@@ -472,7 +472,7 @@ implications-50
 get-the-data-50
 public-availability-50
 accessibility-and-constraints-50
-heatwave
+annual-heatwave-intensity
 introduction-to-indicator-51
 key-results-and-visualizations-51
 midatlantic-18
@@ -482,7 +482,7 @@ implications-51
 get-the-data-51
 public-availability-51
 accessibility-and-constraints-51
-heatwave_year
+marine-heatwave-events
 introduction-to-indicator-52
 key-results-and-visualizations-52
 midatlantic-19
@@ -492,7 +492,7 @@ implications-52
 get-the-data-52
 public-availability-52
 accessibility-and-constraints-52
-timing_shifts
+timing-shifts-risks-to-seasonal-management
 introduction-to-indicator-53
 key-results-and-visualizations-53
 indicator-statistics-53
@@ -500,7 +500,7 @@ implications-53
 get-the-data-53
 public-availability-53
 accessibility-and-constraints-53
-observation_synthesis
+observation-synthesis
 introduction-to-indicator-54
 key-results-and-visualizations-54
 shelf-wide-phenomena
@@ -510,7 +510,7 @@ implications-54
 get-the-data-54
 public-availability-54
 accessibility-and-constraints-54
-ocean_acidification
+ocean-acidification-and-other-stressors
 introduction-to-indicator-55
 key-results-and-visualizations-55
 indicator-statistics-55
@@ -518,7 +518,7 @@ implications-55
 get-the-data-55
 public-availability-55
 accessibility-and-constraints-55
-comdat
+commercial-landings-and-revenue
 introduction-to-indicator-56
 key-results-and-visualizations-56
 midatlantic-20
@@ -528,7 +528,7 @@ implications-56
 get-the-data-56
 public-availability-56
 accessibility-and-constraints-56
-commercial_div
+commercial-catch-and-fleet-diversity
 introduction-to-indicator-57
 key-results-and-visualizations-57
 midatlantic-21
@@ -538,7 +538,7 @@ implications-57
 get-the-data-57
 public-availability-57
 accessibility-and-constraints-57
-ppr
+ecosytem-overfishing
 introduction-to-indicator-58
 key-results-and-visualizations-58
 midatlantic-22
@@ -548,7 +548,7 @@ implications-58
 get-the-data-58
 public-availability-58
 accessibility-and-constraints-58
-recdat
+recreational-fishing-indicators
 introduction-to-indicator-59
 key-results-and-visualizations-59
 midatlantic-23
@@ -558,7 +558,7 @@ implications-59
 get-the-data-59
 public-availability-59
 accessibility-and-constraints-59
-abc_acl
+abc-or-acl-for-managed-stocks
 introduction-to-indicator-60
 key-results-and-visualizations-60
 midatlantic-24
@@ -568,7 +568,7 @@ implications-60
 get-the-data-60
 public-availability-60
 accessibility-and-constraints-60
-bennet
+bennet-indicator
 introduction-to-indicator-61
 key-results-and-visualizations-61
 midatlantic-25
@@ -578,7 +578,7 @@ implications-61
 get-the-data-61
 public-availability-61
 accessibility-and-constraints-61
-stock_status
+stock-status
 introduction-to-indicator-62
 key-results-and-visualizations-62
 mab-12
@@ -588,7 +588,7 @@ implications-62
 get-the-data-62
 public-availability-62
 accessibility-and-constraints-62
-engagement
+engagement-reliance-and-environmental-justice-in-top-fishing-communities
 introduction-to-indicator-63
 key-results-and-visualizations-63
 mid-atlantic
@@ -606,7 +606,7 @@ implications-63
 get-the-data-63
 public-availability-63
 accessibility-and-constraints-63
-aquaculture
+aquaculture-production
 introduction-to-indicator-64
 key-results-and-visualizations-64
 indicator-statistics-64
@@ -614,7 +614,7 @@ implications-64
 get-the-data-64
 public-availability-64
 accessibility-and-constraints-64
-wind_dev_speed
+speed-and-scale-of-offshore-wind-development-in-the-northeast
 introduction-to-indicator-65
 key-results-and-visualizations-65
 indicator-statistics-65
@@ -622,7 +622,7 @@ implications-65
 get-the-data-65
 public-availability-65
 accessibility-and-constraints-65
-wind_port
+community-port-landings-and-revenue-from-wind-energy-areas-weas
 introduction-to-indicator-66
 key-results-and-visualizations-66
 mab-13
@@ -632,7 +632,7 @@ implications-66
 get-the-data-66
 public-availability-66
 accessibility-and-constraints-66
-wind_revenue
+fishery-impacts-from-offshore-wind-development
 introduction-to-indicator-67
 key-results-and-visualizations-67
 midatlantic-27
