@@ -60,7 +60,7 @@ make_rmd <- function(listobject){
     
     functionArgs <- names(formals(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname)))))
 
-    if (length(functionArgs) == 2 | ((length(functionArgs) == 3) & ("year" %in% functionArgs))) {
+    if (length(functionArgs) == 2 | ((length(functionArgs) == 3) & (any(c("year","scale") %in% functionArgs)))) {
       # this is standard shadedRegion and report
       # check to see how many EPUs are listed in data object and/or they are "All" (shelfwide)
       indicatorData <- eval(parse(text=paste0("ecodata::",listobject$indicatorname)))  

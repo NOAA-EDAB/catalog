@@ -22,6 +22,12 @@ Sea surface temperature can be used as a proxy for overall thermal conditions in
 ## Key Results and Visualizations
 Despite record setting ocean temperatures in 2023, the Northeast US shelf had both warm and cool sea surface temperature anomalies in each season.
 
+```{r plot_seasonal_sst_anomaly_griddedMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_sst_anomaly_gridded(report='MidAtlantic')
+ggplotObject
+```
+
 
 ## Indicator statistics 
 Spatial scale: EPUs on full shelf map
