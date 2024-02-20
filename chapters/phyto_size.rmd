@@ -1,4 +1,4 @@
-# Chlorophyll and Primary Production
+# Phytoplankton Size Class
 
 **Description**: Satellite derived phytoplankton data including chlorophyll concentration, phytoplankton size class, and primary production for the Northeast Continental Shelf and ecological production units.
 
@@ -25,79 +25,27 @@ Phytoplankton are the foundation of the marine food web and are the primary food
 ## Key Results and Visualizations
 (In development)
 
-### MidAtlantic
+### MAB
 
-```{r plot_chl_ppMidAtlanticchlweekly}
+```{r plot_phyto_sizeMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'weekly')
+ggplotObject <- ecodata::plot_phyto_size(report='MidAtlantic')
 ggplotObject
 ```
 
-```{r plot_chl_ppMidAtlanticchlmonthly}
+### GB
+
+```{r plot_phyto_sizeNEGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'monthly')
+ggplotObject <- ecodata::plot_phyto_size(report='NewEngland',EPU='GB')
 ggplotObject
 ```
 
-```{r plot_chl_ppMidAtlanticchlanomaly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'anomaly')
-ggplotObject
-```
+### GOM
 
-```{r plot_chl_ppMidAtlanticppweekly}
+```{r plot_phyto_sizeNEGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'weekly')
-ggplotObject
-```
-
-```{r plot_chl_ppMidAtlanticppmonthly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'monthly')
-ggplotObject
-```
-
-```{r plot_chl_ppMidAtlanticppanomaly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'anomaly')
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_chl_ppNewEnglandchlweekly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'weekly')
-ggplotObject
-```
-
-```{r plot_chl_ppNewEnglandchlmonthly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'monthly')
-ggplotObject
-```
-
-```{r plot_chl_ppNewEnglandchlanomaly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'anomaly')
-ggplotObject
-```
-
-```{r plot_chl_ppNewEnglandppweekly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'weekly')
-ggplotObject
-```
-
-```{r plot_chl_ppNewEnglandppmonthly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'monthly')
-ggplotObject
-```
-
-```{r plot_chl_ppNewEnglandppanomaly}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'anomaly')
+ggplotObject <- ecodata::plot_phyto_size(report='NewEngland',EPU='GOM')
 ggplotObject
 ```
 
@@ -112,7 +60,7 @@ Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to current yea
 - [X] Multiple System Drivers
 
 
-```{r autostats_chl_pp}
+```{r autostats_phyto_size}
 # Either from Contributor or ecodata
 ```
 
@@ -123,7 +71,7 @@ Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to current yea
 
 **Point of contact**: [kimberly.hyde@noaa.gov](mailto:kimberly.hyde@noaa.gov){.email}
 
-**ecodata name**: `ecodata::chl_pp`
+**ecodata name**: `ecodata::phyto_size`
 
 **Variable definitions**
 
@@ -139,9 +87,9 @@ Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to current yea
 10) Picoplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from picoplankton (0.2-2 µm); (percent) 
 11) Annual summed primary production - TBD
 
-```{r vars_chl_pp}
+```{r vars_phyto_size}
 # Pull all var names
-vars <- ecodata::chl_pp |>
+vars <- ecodata::phyto_size |>
    dplyr::select(Var, Units) |>
    dplyr::distinct()
 
@@ -166,5 +114,5 @@ Source data are publicly available.
 _No response_
 
 **tech-doc link**
-<https://noaa-edab.github.io/tech-doc/chl_pp.html>
+<https://noaa-edab.github.io/tech-doc/phyto_size.html>
 

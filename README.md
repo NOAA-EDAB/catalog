@@ -1,12 +1,8 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
 
 # [Synthetic Indicator Catalog](https://noaa-edab.github.io/catalog/)
 
-![gitleaks](https://github.com/NOAA-EDAB/catalog/workflows/gitleaks/badge.svg)
+[![build-book](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml)
+[![gitleaks](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml)
 
 Catalog of indicators used in the State of the Ecosystem reports and
 other ecosystem assessment products.

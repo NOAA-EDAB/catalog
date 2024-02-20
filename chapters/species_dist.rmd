@@ -1,0 +1,106 @@
+# Species Distribution Indicators
+
+**Description**: Species mean depth, along-shelf distance, and distance to coastline
+
+**Indicator family**: 
+
+- [X] Habitat
+- [X] Megafauna
+
+
+**Contributor(s)**: Kevin Friedland, Brandon Beltz
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Distribution shifts for a suite of 48 commercially or ecologically important fish species were evaluated using center of gravity metrics based on NEFSC bottom trawl survey data.
+
+Along-shelf distance is a metric for quantifying the distribution of a species through time along the axis of the US Northeast Continental Shelf, which extends northeastward from the Outer Banks of North Carolina. Once mean distance is found, depth of occurrence and distance to coastline can be calculated for each species’ positional center.
+
+## Key Results and Visualizations
+The center of distribution for a suite of 48 commercially or ecologically important fish species along the entire Northeast Shelf continues to show movement towards the northeast and generally into deeper water.
+
+### MidAtlantic
+
+```{r plot_species_distMidAtlanticalong}
+# Plot indicator
+ggplotObject <- ecodata::plot_species_dist(report= 'MidAtlantic', varName= 'along')
+ggplotObject
+```
+
+```{r plot_species_distMidAtlanticdepth}
+# Plot indicator
+ggplotObject <- ecodata::plot_species_dist(report= 'MidAtlantic', varName= 'depth')
+ggplotObject
+```
+
+### NewEngland
+
+```{r plot_species_distNewEnglandalong}
+# Plot indicator
+ggplotObject <- ecodata::plot_species_dist(report= 'NewEngland', varName= 'along')
+ggplotObject
+```
+
+```{r plot_species_distNewEnglanddepth}
+# Plot indicator
+ggplotObject <- ecodata::plot_species_dist(report= 'NewEngland', varName= 'depth')
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: Shelfwide
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_species_dist}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Temperature change is a major driver of changing fish distributions [@friedland_event_2019].
+
+## Get the data
+
+**Point of contact**: [Kevin Friedland, kevin.friedland@noaa.gov](mailto:Kevin Friedland, kevin.friedland@noaa.gov){.email}
+
+**ecodata name**: `ecodata::species_dist`
+
+**Variable definitions**
+
+"along-shelf distance"  "depth"                 "distance to coast"     "Latitude"              "Longitude"
+
+```{r vars_species_dist}
+# Pull all var names
+vars <- ecodata::species_dist |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Constraints
+
+Contact Kevin Friedland, kevin.friedland@noaa.gov for data access
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/species_dist.html>
+

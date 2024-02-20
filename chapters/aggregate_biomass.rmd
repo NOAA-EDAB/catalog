@@ -26,7 +26,7 @@ Aggregate biomass levels have been relatively stable over time.
 ```{r plot_aggregate_biomassMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_aggregate_biomass(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### GB
@@ -34,7 +34,7 @@ print(ggplotObject)
 ```{r plot_aggregate_biomassNEGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_aggregate_biomass(report='NewEngland',EPU='GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### GOM
@@ -42,7 +42,7 @@ print(ggplotObject)
 ```{r plot_aggregate_biomassNEGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_aggregate_biomass(report='NewEngland',EPU='GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -108,6 +108,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/aggregate_biomass.html>
-
-## References
 

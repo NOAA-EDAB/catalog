@@ -1,4 +1,4 @@
-# persistent_hotspots
+# Persistent annual hotspots
 
 **Description**: Integrated persistent annual hotspots derived from at-sea observations of seabirds, cetaceans and sea turtles collected on systematic ship and aerial surveys
 
@@ -19,7 +19,9 @@ library(ecodata)
 Locations of high densities through time of seabirds, marine mammals, and sea turtles
 
 ## Key Results and Visualizations
-NA
+![North Atlantic Right Whale hotspots](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/NARW_hotspots_final_2024.jpg){width=100%}
+
+![Seabirds, Turtles, & marine mammals hotspots](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/SOE_2023_birds_mammals_turtles_2024.png){width=100%}
 
 
 ## Indicator statistics 
@@ -65,9 +67,4 @@ Source data are publicly available.
 ## Accessibility and Constraints
 
 _No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/persistent_hotspots.html>
-
-## References
 

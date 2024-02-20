@@ -1,0 +1,96 @@
+# Zooplankton Diversity
+
+**Description**: Effective Shannon diversity calculated using 42 zooplankton taxa collected from EcoMon cruises
+
+**Indicator family**: 
+
+- [X] Lower trophic levels
+
+
+**Contributor(s)**: Ryan Morse, Kevin Friedland, Harvey Walsh, Mike Jones
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Zooplankton represent a critical trophic link from primary producers to fish in marine ecosystems. Trends in zooplankton community diversity may indicate changes in trophic stability over time.
+
+## Key Results and Visualizations
+Zooplankton diversity is increasing in the Mid-Atlantic and on Georges Bank, but shows no trend in the Gulf of Maine. There is no vessel correction for this metric, so indices collected aboard the research vessel Albatross IV (up to 2008) and the research vessel Henry B. Bigelow (2009 - Present) are calculated separately (Fig. ).
+
+### MAB
+
+```{r plot_zoo_diversityMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_zoo_diversity(report='MidAtlantic')
+ggplotObject
+```
+
+### NE
+
+```{r plot_zoo_diversityNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_zoo_diversity(report='NewEngland')
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: by EPU
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_zoo_diversity}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Zooplankton community diversity varies with changes in dominance of taxa. Increasing zooplankton diversity in the Mid-Atlantic is due to increases in abundance of several taxa and stable or declining dominance of an important copepod species. This suggests a shift in the zooplankton community that warrants continued monitoring to determine if managed species are affected. 
+
+While still showing an overall increasing trend, the GB zooplankton community declined in diversity in 2021 due to the increase in abundance of the copepod *Centropages typicus* and salps. The GOM zooplankton community is usually dominated by *Calanus finmarchicus*, however their abundance decreased in 2021. This decrease plus an increase in abundance of other copepods (*C. typicus, Metridia lucens, Oithona spp.*), siphonophores, and pteropods resulted in high zooplankton diversity index in 2021.
+
+## Get the data
+
+**Point of contact**: [Ryan Morse, ryan.morse@noaa.gov; Harvey Walsh, harvey.walsh@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov](mailto:Ryan Morse, ryan.morse@noaa.gov; Harvey Walsh, harvey.walsh@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov){.email}
+
+**ecodata name**: `ecodata::zoo_diversity`
+
+**Variable definitions**
+
+Zoo_Shannon-Wiener_Diversity_index, unitless
+
+```{r vars_zoo_diversity}
+# Pull all var names
+vars <- ecodata::zoo_diversity |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Constraints
+
+Request from Harvey Walsh, harvey.walsh@noaa.gov
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/zoo_diversity.html>
+

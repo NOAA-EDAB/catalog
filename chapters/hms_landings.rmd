@@ -26,13 +26,13 @@ TBD - recommend including a version of the plots or tables generated in the Tech
 ```{r plot_hms_landingsMidAtlanticLandings}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(report= 'MidAtlantic', varName= 'Landings')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_hms_landingsMidAtlanticRevenue}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(report= 'MidAtlantic', varName= 'Revenue')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -40,13 +40,13 @@ print(ggplotObject)
 ```{r plot_hms_landingsNewEnglandLandings}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(report= 'NewEngland', varName= 'Landings')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_hms_landingsNewEnglandRevenue}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(report= 'NewEngland', varName= 'Revenue')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -65,7 +65,9 @@ Temporal scale: Annual
 ```
 
 ## Implications
-TBD – pending finalization of dataset for 2024 report
+TBD – pending finalization of dataset for 2024 report
+
+In 2021 the International Commission for the Conservation of Atlantic Tunas (ICCAT) finalized recommendations for a two-year retention ban for shortfin mako (ICCAT Rec. 21-09), which will also affect total overall landings of pelagic sharks in coming years.
 
 ## Get the data
 
@@ -100,6 +102,4 @@ Data that has been properly screened to meet data standards and confidentiality 
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/hms_landings.html>
-
-## References
 

@@ -1,0 +1,74 @@
+# Timing shifts: Risks to Seasonal Management
+
+**Description**: Shifts in the timing of life-cycle events are a risk to meeting seasonal and temporal management objectives.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Habitat
+- [X] Lower trophic levels
+- [X] Megafauna
+
+
+**Contributor(s)**: Kimberly Hyde, Sarah Gaichas, Joe Carracappa
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Changes in phenology, the seasonal timing of recurring life-cycle events, are a primary indicator of species responses to climate change [@staudinger_its_2019]. Observed phenological changes in the Northeast Shelf include spawning (REFS), migration [@crear_climate-influenced_2023], prey availability, and ...  The phenological responses are often species-specific and vary depending on the primary environmental driver [@staudinger_its_2019].
+
+## Key Results and Visualizations
+Migration timing of some tuna and large whale species has also changed. For example, tuna were caught in recreational fisheries 50 days earlier in the year in 2019 compared to 2002. [@crear_climate-influenced_2023]
+
+In Cape Cod Bay, peak spring habitat use by right and humpback whales has shifted 18-19 days later over time. [@pendleton_decadal-scale_2022]
+
+
+## Indicator statistics 
+Spatial scale: NES
+
+Temporal scale: Seasonal
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_timing_shifts}
+# Either from Contributor or ecodata
+```
+
+## Implications
+In progress
+
+Additionally, prolonged fall temperatures have been linked to the increased number of cold-stunned Kemp’s ridley sea turtles found in Cape Cod Bay [@griffin_warming_2019]
+
+## Get the data
+
+**Point of contact**: [nefsc.soe.leads@noaa.gov](mailto:nefsc.soe.leads@noaa.gov){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+NA
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+

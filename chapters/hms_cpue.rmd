@@ -26,13 +26,13 @@ TBD; data may not be correctly displayed in graphs.
 ```{r plot_hms_cpueMidAtlanticshark}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(report= 'MidAtlantic', varName= 'shark')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_hms_cpueMidAtlantictuna}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(report= 'MidAtlantic', varName= 'tuna')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -40,13 +40,13 @@ print(ggplotObject)
 ```{r plot_hms_cpueNewEnglandshark}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(report= 'NewEngland', varName= 'shark')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_hms_cpueNewEnglandtuna}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(report= 'NewEngland', varName= 'tuna')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -100,6 +100,4 @@ Pelagic observer data is considered confidential data, and must be screened to e
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/hms_cpue.html>
-
-## References
 

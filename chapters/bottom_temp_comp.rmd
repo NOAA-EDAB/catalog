@@ -30,13 +30,13 @@ Time series plots for seasonal bottom temperature anomaly for each EPU shows a l
 ```{r plot_bottom_temp_compMidAtlanticseasonalMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'MidAtlantic', varName= 'seasonal' ,EPU= 'MAB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bottom_temp_compMidAtlanticannualMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'MidAtlantic', varName= 'annual' ,EPU= 'MAB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -44,25 +44,25 @@ print(ggplotObject)
 ```{r plot_bottom_temp_compNewEnglandseasonalGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'NewEngland', varName= 'seasonal' ,EPU= 'GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bottom_temp_compNewEnglandseasonalGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'NewEngland', varName= 'seasonal' ,EPU= 'GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bottom_temp_compNewEnglandannualGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'NewEngland', varName= 'annual' ,EPU= 'GB')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_bottom_temp_compNewEnglandannualGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_comp(report= 'NewEngland', varName= 'annual' ,EPU= 'GOM')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -93,7 +93,7 @@ Bottom temperature is an important driver for benthic and demersal species growt
 
 Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) 
 Subarea: EPU name 
-Source:  ROMS (bias-corrected ROMS-NWA bottom temperature from du Pontavice et al, 2023), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
+Source:  ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
 bt_temp : mean bottom temperature for each year/season across entire EPU 
 ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
 
@@ -121,6 +121,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/bottom_temp_comp.html>
-
-## References
 

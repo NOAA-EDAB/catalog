@@ -26,7 +26,7 @@ SAV increased in the Mesohaline and Polyhaline zones, where SAV continued to rec
 ```{r plot_SAVMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_SAV(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -87,6 +87,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/SAV.html>
-
-## References
 

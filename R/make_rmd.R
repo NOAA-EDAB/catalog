@@ -21,6 +21,7 @@ make_rmd <- function(listobject){
   # start to create the Rmd
   #cat(paste0("# ",stringr::str_to_title(indicator_name)),append=T,fill=T,file=con)  
   ### DESCRIPTION, CONTRIBUTORS, AFFILIATION, FAMILY
+#  cat(paste0("# ",listobject$dataname," {#",listobject$indicatorname,"}"),append=T,fill=T,file=con)    
   cat(paste0("# ",listobject$dataname),append=T,fill=T,file=con)    
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("**Description**: ",listobject$description),append=T,fill=T,file=con)
@@ -59,7 +60,8 @@ make_rmd <- function(listobject){
     at <- attributes(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname))))
     
     functionArgs <- names(formals(eval(parse(text=paste0("ecodata::plot_",listobject$indicatorname)))))
-    if (length(functionArgs) == 2) {
+
+    if (length(functionArgs) == 2 | ((length(functionArgs) == 3) & (any(c("year","scale") %in% functionArgs)))) {
       # this is standard shadedRegion and report
       # check to see how many EPUs are listed in data object and/or they are "All" (shelfwide)
       indicatorData <- eval(parse(text=paste0("ecodata::",listobject$indicatorname)))  
@@ -69,7 +71,7 @@ make_rmd <- function(listobject){
         cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
         cat("# Plot indicator",append=T,fill=T,file=con)
         cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
-        cat("print(ggplotObject)",append=T,fill=T,file=con)
+        cat("ggplotObject",append=T,fill=T,file=con)
         cat("```",append=T,fill=T,file=con)
         cat("",append=T,fill=T,file=con) # add space
       } else {
@@ -81,7 +83,7 @@ make_rmd <- function(listobject){
           cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
           cat("# Plot indicator",append=T,fill=T,file=con)
           cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
-          cat("print(ggplotObject)",append=T,fill=T,file=con)
+          cat("ggplotObject",append=T,fill=T,file=con)
           cat("```",append=T,fill=T,file=con)
           cat("",append=T,fill=T,file=con) # add space
         } 
@@ -92,7 +94,7 @@ make_rmd <- function(listobject){
           cat(paste0("```{r plot_",listobject$indicatorname,"NE}"),append=T,fill=T,file=con)
           cat("# Plot indicator",append=T,fill=T,file=con)
           cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland')"),append=T,fill=T,file=con)
-          cat("print(ggplotObject)",append=T,fill=T,file=con)
+          cat("ggplotObject",append=T,fill=T,file=con)
           cat("```",append=T,fill=T,file=con)
           cat("",append=T,fill=T,file=con) # add space
         }
@@ -105,7 +107,7 @@ make_rmd <- function(listobject){
       cat(paste0("```{r plot_",listobject$indicatorname,"MAB}"),append=T,fill=T,file=con)
       cat("# Plot indicator",append=T,fill=T,file=con)
       cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='MidAtlantic')"),append=T,fill=T,file=con)
-      cat("print(ggplotObject)",append=T,fill=T,file=con)
+      cat("ggplotObject",append=T,fill=T,file=con)
       cat("```",append=T,fill=T,file=con)
       cat("",append=T,fill=T,file=con) # add space
       
@@ -115,7 +117,7 @@ make_rmd <- function(listobject){
       cat(paste0("```{r plot_",listobject$indicatorname,"NEGB}"),append=T,fill=T,file=con)
       cat("# Plot indicator",append=T,fill=T,file=con)
       cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland',EPU='GB')"),append=T,fill=T,file=con)
-      cat("print(ggplotObject)",append=T,fill=T,file=con)
+      cat("ggplotObject",append=T,fill=T,file=con)
       cat("```",append=T,fill=T,file=con)
       cat("",append=T,fill=T,file=con) # add space
       
@@ -125,7 +127,7 @@ make_rmd <- function(listobject){
       cat(paste0("```{r plot_",listobject$indicatorname,"NEGOM}"),append=T,fill=T,file=con)
       cat("# Plot indicator",append=T,fill=T,file=con)
       cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report='NewEngland',EPU='GOM')"),append=T,fill=T,file=con)
-      cat("print(ggplotObject)",append=T,fill=T,file=con)
+      cat("ggplotObject",append=T,fill=T,file=con)
       cat("```",append=T,fill=T,file=con)
       cat("",append=T,fill=T,file=con) # add space
       
@@ -143,7 +145,7 @@ make_rmd <- function(listobject){
           cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,"}"),append=T,fill=T,file=con)
           cat("# Plot indicator",append=T,fill=T,file=con)
           cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"')"),append=T,fill=T,file=con)
-          cat("print(ggplotObject)",append=T,fill=T,file=con)
+          cat("ggplotObject",append=T,fill=T,file=con)
           cat("```",append=T,fill=T,file=con)
           cat("",append=T,fill=T,file=con) # add space
         }
@@ -162,7 +164,7 @@ make_rmd <- function(listobject){
           cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,"}"),append=T,fill=T,file=con)
           cat("# Plot indicator",append=T,fill=T,file=con)
           cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', plottype= '",avar,"')"),append=T,fill=T,file=con)
-          cat("print(ggplotObject)",append=T,fill=T,file=con)
+          cat("ggplotObject",append=T,fill=T,file=con)
           cat("```",append=T,fill=T,file=con)
           cat("",append=T,fill=T,file=con) # add space
      
@@ -195,7 +197,7 @@ make_rmd <- function(listobject){
             cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,aval,"}"),append=T,fill=T,file=con)
             cat("# Plot indicator",append=T,fill=T,file=con)
             cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"' ,",newV,"= '",aval,"')"),append=T,fill=T,file=con)
-            cat("print(ggplotObject)",append=T,fill=T,file=con)
+            cat("ggplotObject",append=T,fill=T,file=con)
             cat("```",append=T,fill=T,file=con)
             cat("",append=T,fill=T,file=con) # add space
             
@@ -216,7 +218,7 @@ make_rmd <- function(listobject){
               cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,atype,"}"),append=T,fill=T,file=con)
               cat("# Plot indicator",append=T,fill=T,file=con)
               cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"', plottype = '",atype,"')"),append=T,fill=T,file=con)
-              cat("print(ggplotObject)",append=T,fill=T,file=con)
+              cat("ggplotObject",append=T,fill=T,file=con)
               cat("```",append=T,fill=T,file=con)
               cat("",append=T,fill=T,file=con) # add space
               
@@ -326,15 +328,19 @@ make_rmd <- function(listobject){
   cat("",append=T,fill=T,file=con) # add space
   
 
-  cat("**tech-doc link**",append=T,fill=T,file=con)
+  # write catalog link if ecodata data is present
+  if (exists(paste0(listobject$indicatorname))) {
+    cat("**tech-doc link**",append=T,fill=T,file=con)
+    
+    cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    
+  } else {
+    # No link since this is a synthesis type of page
+  }
   
-  cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
-  
-  cat("## References",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
+  # References are generated automatically  
+
   
   #close the connection
   close(con)

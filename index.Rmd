@@ -5,10 +5,12 @@ date: "`r format(Sys.Date(), '%e %B %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: 
-    -   bibliography/introduction.bib
+    -   bibliography/StateOftheEcosystem.bib
 #geometry: "left=1.0in, right=1.0in, top=1.0in, bottom=1.0in, includefoot"
 biblio-style: apalike
-csl: chicago-fullnote-bibliography.csl
+#csl: chicago-fullnote-bibliography.csl
+csl: plos.csl
+always_allow_html: true
 link-citations: true
 github-repo: NOAA-EDAB/catalog
 url: https://noaa-edab.github.io/catalog/
@@ -16,10 +18,6 @@ description: "This catalogue holds information on available datasets and indicat
 ---
 
 # Introduction {-}
-
-
-* THIS BOOK IS IN DEVELOPEMENT. *
-
 
 
 The purpose of this document is to collate the indicator information and methods used to inform the data driven products on the Northeast Shelf Large Marine Ecosystem by the Ecosystem Dynamics and Assessment Branch at the Northeast Fisheries Science Center (see figure, below). 
@@ -43,7 +41,7 @@ knitr::opts_chunk$set(echo = F,
 
 ```
 
-(ref:neusmap) Map of Northeast U.S. Continental Shelf Large Marine Ecosystem from @Hare2016.
+(ref:neusmap) Map of Northeast U.S. Continental Shelf Large Marine Ecosystem from @hare_vulnerability_2016
 
 ```{r neusmap, message = FALSE, warning=FALSE, fig.align='center',out.width="75%", echo = F, fig.cap='(ref:neusmap)'}
 knitr::include_graphics("images/journal.pone.0146756.g002.PNG")

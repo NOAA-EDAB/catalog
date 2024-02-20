@@ -29,25 +29,25 @@ Commercial revenue by managed species has generally been down.  The exception is
 ```{r plot_comdatMidAtlanticlandingstotal}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat(report= 'MidAtlantic', varName= 'landings', plottype = 'total')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_comdatMidAtlanticlandingsguild}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat(report= 'MidAtlantic', varName= 'landings', plottype = 'guild')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_comdatMidAtlanticrevenuetotal}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat(report= 'MidAtlantic', varName= 'revenue', plottype = 'total')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_comdatMidAtlanticrevenueguild}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat(report= 'MidAtlantic', varName= 'revenue', plottype = 'guild')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -55,25 +55,25 @@ print(ggplotObject)
 ```{r plot_comdatNewEnglandlandingstotal}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat(report= 'NewEngland', varName= 'landings', plottype = 'total')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_comdatNewEnglandlandingsguild}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat(report= 'NewEngland', varName= 'landings', plottype = 'guild')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_comdatNewEnglandrevenuetotal}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat(report= 'NewEngland', varName= 'revenue', plottype = 'total')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_comdatNewEnglandrevenueguild}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat(report= 'NewEngland', varName= 'revenue', plottype = 'guild')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -104,8 +104,7 @@ Revenue is a key indicator of the State of the Ecosystem report. Revenue is larg
 
 **Variable definitions**
 
-*Landings*  
-1) Name: Landings; Definition: Total landings for a region; Units: metric tons.  
+*Landings*  1) Name: Landings; Definition: Total landings for a region; Units: metric tons.  
 2) Name: Seafood Landings; Definition: Total landings used for human consumption for a region; Units: metric tons. 
 3) Name: Guild Landings; Definition: Total landings for an aggregate group within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  For example "Benthivore Landings"; Units: metric tons 
 4) Name: Guild Landings - US only; Definition: Total landings from US flagged vessels for an aggregate group within a region.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore.  For example "Benthivore Landings - US only"; Units: metric tons 
@@ -140,6 +139,4 @@ Please email Andrew.Beet@NOAA.gov for further questions.  Access to data will re
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/comdat.html>
-
-## References
 

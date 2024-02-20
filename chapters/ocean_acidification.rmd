@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Ocean acidification (OA) has caused measured declines in global ocean pH and is projected to continue declining by up to 0.30 pH units over the course of the 21st century if high carbon dioxide emissions continue (IPCC 2019). OA also changes the availability of minerals required by organisms to form calcified structures such as shells and other structures. Calcifying conditions in seawater can be determined by measuring aragonite saturation state (ΩArag or omega), the tendency of a common type of calcium carbonate, aragonite, to form or dissolve. When ΩArag is less than 1, shells and other calcium carbonate structures begin to dissolve. Typical surface ocean ΩArag is 2-4, but extremes can be <1 or >5. As the ocean absorbs carbon dioxide, both pH and ΩArag decrease and can cause organisms to respond with reduced survival, calcification rates, growth, and reproduction, as well as impaired development, and/or changes in energy allocation (reviewed in Kroeker et al. 2013, Saba et al. 2019). However, sensitivity levels vary, and some organisms exhibit negative responses to calcification and other processes when ΩArag is as low as 3.
+Ocean acidification (OA) has caused measured declines in global ocean pH and is projected to continue declining by up to 0.30 pH units over the course of the 21st century if high carbon dioxide emissions continue (IPCC 2019). OA also changes the availability of minerals required by organisms to form calcified structures such as shells and other structures. Calcifying conditions in seawater can be determined by measuring aragonite saturation state (ΩArag or omega), the tendency of a common type of calcium carbonate, aragonite, to form or dissolve. When ΩArag is less than 1, shells and other calcium carbonate structures begin to dissolve. Typical surface ocean ΩArag is 2-4, but extremes can be <1 or >5. As the ocean absorbs carbon dioxide, both pH and ΩArag decrease and can cause organisms to respond with reduced survival, calcification rates, growth, and reproduction, as well as impaired development, and/or changes in energy allocation (reviewed in @kroeker_impacts_2013, @saba_recommended_2019). However, sensitivity levels vary, and some organisms exhibit negative responses to calcification and other processes when ΩArag is as low as 3.
 
-The U.S. Northeast Shelf (NES) is prone not only to global rates of ocean acidification, but also to coastal processes that can act to exacerbate acidification, including freshwater sources (primarily riverine), eutrophication and photosynthesis‐respiration cycles, coastal upwelling, and other influences (Goldsmith et al. 2019, Wright-Fairbanks et al. 2020, Xu et al. 2020). Often times, other stressors such as ocean warming and/or low bottom water dissolved oxygen can co-occur. Dissolved oxygen concentrations at or below 5 mg/liter is considered problematic for marine life. Although concentrations between 3-5 mg/liter may not be low enough to directly cause death in many marine animals, research focused on marine species has identified other negative impacts such as reduced metabolism, feeding, growth, and reproduction at these levels. Lower hypoxic concentrations of dissolved oxygen (< 3 mg/liter) have been directly associated with mortalities in some organisms in other coastal regions around the world. 
+The U.S. Northeast Shelf (NES) is prone not only to global rates of ocean acidification, but also to coastal processes that can act to exacerbate acidification, including freshwater sources (primarily riverine), eutrophication and photosynthesis‐respiration cycles, coastal upwelling, and other influences (@goldsmith_scientific_2019, @wrightfairbanks_autonomous_2020, @xu_long-term_2020). Often times, other stressors such as ocean warming and/or low bottom water dissolved oxygen can co-occur. Dissolved oxygen concentrations at or below 5 mg/liter is considered problematic for marine life. Although concentrations between 3-5 mg/liter may not be low enough to directly cause death in many marine animals, research focused on marine species has identified other negative impacts such as reduced metabolism, feeding, growth, and reproduction at these levels. Lower hypoxic concentrations of dissolved oxygen (< 3 mg/liter) have been directly associated with mortalities in some organisms in other coastal regions around the world. 
 
 Any one stressor may not itself be an issue due to the resiliency of many coastal species to fluctuating natural environmental conditions. However, when more than one stressor occurs simultaneously, an organism may become unable to fully withstand changes. The impacts of multiple stressors occurring simultaneously on organism health is much less well known. The co-occurrence of low dissolved oxygen and pH may exacerbate negative responses in organisms or increase their susceptibility to either or both oxygen and pH. 
 
@@ -34,6 +34,8 @@ With high temporal resolution (> seasonal) glider sampling off the coast of New 
 
 Figure 1. Maps of four 2023 glider deployments on the coastal New Jersey shelf and the resulting vertical profiles of oceanographic parameters characterizing the evolution of temperature (in °C), chlorophyll, dissolved oxygen, pH, and aragonite saturation state (Omega) from Spring through Early Fall. Preliminary data presented here are the result of support provided by a grant from the New Jersey Research and Monitoring Initiative (RMI).
 
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/Figure1-GraceSaba_2024.png){width=100%}
+
 Summer 2023 multi-stressor event in the Mid-Atlantic
 
 From August-September 2023, much of the bottom water sampled from Sandy Hook, New Jersey south to Tuckerton, New Jersey and from nearshore (15 meter water depth) to deeper depths (60 meter water depth), exhibited dissolved oxygen concentrations less than 5 mg/L and pH values less than 7.75. Coast-wide, hypoxic levels of dissolved oxygen (concentrations < 3 mg/L) were observed at shallower, more inshore locations. Some of these locations were shallow enough to be observed in glider ru40, but much of these hypoxic levels were observed in a shallow glider (ru28, with a 50 m depth capacity) deployed at the same time. In addition to low pH measured in bottom waters by glider ru39, which is indicative of ocean acidification, aragonite saturation state (Omega) was calculated to be < 1 in several locations. Normal, more optimal levels in seawater typically include dissolved oxygen concentrations > 7 mg/liter, pH of ~8.1, and aragonite saturation states > 3.
@@ -45,8 +47,12 @@ Healthy dissolved oxygen, pH, and aragonite saturation state levels were restore
 
 Figure 2. Left: Mission tracks of three gliders (named ru28, ru39, ru40) deployed off the coast of New Jersey in August and September. Gliders ru39 and ru40 were deployed as a pair along the same mission track. All gliders had sensors measuring temperature and salinity. Gliders ru28 and ru40 each had an additional sensor measuring dissolved oxygen (no pH or aragonite saturation state), and glider ru39 had an additional sensor measuring pH (no dissolved oxygen). Right: Locations of hypoxic levels of dissolved oxygen (magenta; < 3 mg/liter) and low aragonite saturation state (cyan; < 1) measured along the glider mission tracks and locations of reported fish, lobster, and/or crab mortalities (red X). Preliminary data presented here are the result of support provided by grants from the New Jersey Research and Monitoring Initiative (RMI) and New Jersey Department of Environmental Protection’s Bureau of Marine Water Monitoring.
 
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/Figure2-GraceSaba_2024.png){width=100%}
 
 Figure 3. Complete cross-sections of dissolved oxygen concentrations (left top and bottom), pH (right top), and aragonite saturation state (omega, right bottom) measured along the associated mission tracks during the deployments of the three gliders (named ru28, ru39, ru40; see tracks in Figure 2) during August and September 2023. Dissolved oxygen concentrations between 3-5 mg/liters are expressed as orange & yellow, and hypoxic concentrations < 3 mg/liter are expressed as red. pH values < 7.75 and omega < 1 are highlighted in cyan. Preliminary data presented here are the result of support provided by grants from the New Jersey Research and Monitoring Initiative (RMI) and New Jersey Department of Environmental Protection’s Bureau of Marine Water Monitoring.
+
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/Figure3-GraceSaba_2024.png){width=100%}
+
 
 Summer-time bottom pH and aragonite saturation state on the U.S. Northeast Shelf
 
@@ -55,6 +61,8 @@ Using available quality-controlled vessel- and glider-based datasets accompanyin
 
 Figure 4. Bottom summer-time (June-August) pH (left panel) and aragonite saturation state (right panel) on the U.S. Northeast Shelf from 2007-2023 plotted from available quality-controlled vessel- and glider-based datasets.
 
+![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/Figure4-GraceSaba_2024.png){width=100%}
+
 Locations where species sensitivity levels for aragonite saturation state were reached 
 
 Using the bottom water aragonite saturation state data, maps depicting locations where summer-time bottom aragonite saturation state reached lab-derived sensitivity levels of designated target species were developed. The target species selected for the Mid-Atlantic were Atlantic sea scallop (Placopecten magellanicus) and longfin squid (Doryteuthis pealeii), and the target species selected for the Gulf of Maine were Atlantic cod (Gadus morhua) and American lobster (Homarus americanus). 
@@ -62,7 +70,9 @@ Using the bottom water aragonite saturation state data, maps depicting locations
 Because there were no additional 2023 bottom water aragonite saturation state data available in the Gulf of Maine to update this same product from the previous year’s report, maps for Atlantic cod and American lobster are not included in this year’s catalog page. However, the maps for the individual years between 2007-2022 and the combined map for this same time period are available for these species [here](https://marine.rutgers.edu/~lgarzio/cinar_soe/2024_submission/plots/summer_bottom_water_maps/omega_species_sensitivity/). Bottom water data collected during 2023 were incorporated to update this product for the Mid-Atlantic species, Atlantic sea scallop and longfin squid (available [here](https://marine.rutgers.edu/~lgarzio/cinar_soe/2024_submission/plots/summer_bottom_water_maps/omega_species_sensitivity/) and summarized below). Aragonite saturation state was at or below the sensitivity levels for both Atlantic sea scallop (Placopecten magellanicus) and longfin squid (Doryteuthis pealeii) within their habitat depth ranges in Long Island Sound and the nearshore and mid-shelf regions of the New Jersey/New York shelf. The sensitivity levels of bottom aragonite saturation state occurred during August 2016, July 2018, August 2019, and July-August 2023 for both species, and additionally in August 2021 and August 2022 for the Atlantic sea scallop. The comparison between the 2007-2022 and 2007-2023 maps reveals that the lower aragonite saturation state conditions that occurred in the Mid-Atlantic coastal shelf during summer 2023 increased the spatial range of potentially unfavorable habitat for Atlantic sea scallops and longfin squid compared to the observed past years.
 
 
-Figure 5. Locations where bottom aragonite saturation state (ΩArag; summer only: June-August) in the habitat depth range were at or below the laboratory-derived sensitivity level for Atlantic sea scallop (top panels) and longfin squid (bottom panels) for the time periods 2007-2022 (left panels) and 2007-2023 (right panels). The sensitivity value used for Atlantic sea scallop was ΩArag ≤ 1.1, based on reduced adult calcification rate observed at this level in Cameron et al. (2022). The sensitivity value used for longfin squid was ΩArag ≤ 0.96, based on embryo and paralarvae malformation, increased time to hatching and decreased hatching success, and changes to mantle length and statolith morphology observed at this level in Zafroff et al. (2019) and Zafroff & Mooney (2020). Gray circles indicate locations where carbonate chemistry samples were collected, but bottom ΩArag values were higher than sensitivity values determined for that species and/or samples were collected outside of the species depth range.
+Figure 5. Locations where bottom aragonite saturation state (ΩArag; summer only: June-August) in the habitat depth range were at or below the laboratory-derived sensitivity level for Atlantic sea scallop (top panels) and longfin squid (bottom panels) for the time periods 2007-2022 (left panels) and 2007-2023 (right panels). The sensitivity value used for Atlantic sea scallop was ΩArag ≤ 1.1, based on reduced adult calcification rate observed at this level in @cameron_effects_2022. The sensitivity value used for longfin squid was ΩArag ≤ 0.96, based on embryo and paralarvae malformation, increased time to hatching and decreased hatching success, and changes to mantle length and statolith morphology observed at this level in @zakroff_dose-dependence_2019 and @zakroff_antagonistic_2020. Gray circles indicate locations where carbonate chemistry samples were collected, but bottom ΩArag values were higher than sensitivity values determined for that species and/or samples were collected outside of the species depth range.
+
+![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/Figure5-GraceSaba_2024.png){width=100%}
 
 
 ## Indicator statistics 
@@ -92,8 +102,10 @@ The seasonal level resolution of data collected in the Mid-Atlantic Bight in 202
 
 **Variable definitions**
 
-1) depth_interpolated meters 2) temperature degrees Celsius 3) chlorophyll_a µg L-1 
-4) oxygen_concentration_shifted_mgL mg L-1 5) pH_shifted 6) aragonite_saturation_state
+1) depth_interpolated meters 
+2) temperature degrees Celsius 3) chlorophyll_a µg L-1 
+4) oxygen_concentration_shifted_mgL mg L-1 5) pH_shifted 
+6) aragonite_saturation_state
 
 
 No Data
@@ -110,9 +122,4 @@ Source data are publicly available.
 ## Accessibility and Constraints
 
 _No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/ocean_acidification.html>
-
-## References
 

@@ -1,4 +1,4 @@
-# Inshore Survey (Mid Atlantic)
+# Inshore Survey (New England)
 
 **Description**: Biomass time series for aggregate species groups from *three* inshore bottom trawl surveys conducted throughout the NE US:
 
@@ -13,9 +13,9 @@
 - [X] Megafauna
 
 
-**Contributor(s)**: James Gartland, Matt Camisa, Rebecca Peters, Sean Lucey
+**Contributor(s)**: Rebecca Peters
 
-**Affiliations**: VIMS, Maine, NEFSC
+**Affiliations**: Maine
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -27,11 +27,11 @@ Indicators from these inshore surveys are analagous to those produced by the NEF
 ## Key Results and Visualizations
 Each survey shows trends by aggregate group.
 
-### MAB
+### NE
 
-```{r plot_mab_inshore_surveyMAB}
+```{r plot_ne_inshore_surveyNE}
 # Plot indicator
-ggplotObject <- ecodata::plot_mab_inshore_survey(report='MidAtlantic')
+ggplotObject <- ecodata::plot_ne_inshore_survey(report='NewEngland')
 ggplotObject
 ```
 
@@ -46,7 +46,7 @@ Temporal scale: Spring and Fall
 - [X] Multiple System Drivers
 
 
-```{r autostats_mab_inshore_survey}
+```{r autostats_ne_inshore_survey}
 # Either from Contributor or ecodata
 ```
 
@@ -55,18 +55,18 @@ Some trends match the NEFSC survey, some dont. This is driven by different speci
 
 ## Get the data
 
-**Point of contact**: [James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov; Sean Lucey (MA Inshore Survey), sean.lucey@rws.com](mailto:James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov; Sean Lucey (MA Inshore Survey), sean.lucey@rws.com){.email}
+**Point of contact**: [Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov](mailto:Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov){.email}
 
-**ecodata name**: `ecodata::mab_inshore_survey`
+**ecodata name**: `ecodata::ne_inshore_survey`
 
 **Variable definitions**
 
 See variable definitions for `aggregate_biomass`
 
-```{r vars_mab_inshore_survey}
+```{r vars_ne_inshore_survey}
 # Pull all var names
-vars <- ecodata::mab_inshore_survey |>
-   dplyr::select(Var) |>
+vars <- ecodata::ne_inshore_survey |>
+   dplyr::select(Var, Units) |>
    dplyr::distinct()
 
 DT::datatable(vars)
@@ -86,5 +86,5 @@ Source data are publicly available.
 _No response_
 
 **tech-doc link**
-<https://noaa-edab.github.io/tech-doc/mab_inshore_survey.html>
+<https://noaa-edab.github.io/tech-doc/ne_inshore_survey.html>
 

@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson et al. 2005. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
+Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson [@anderson_identification_2005]. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
 
-These data represent the presence of PSP toxins in blue mussels (Mytilis edulis) sampled at coastal sites in Massachusetts (1972-2022), New Hampshire (2000-2022), and Maine (2005 to 2019). Results are summarized on an annual basis for each state. Variables include total number of samples, number of samples above and below a designated threshold (44ug STX equivalent / 100g tissue), and percentage of samples above the threshold. These data were provided by Yizhen Li, NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch, Silver Spring, MD. Original data for Maine were collected by Maine Department of Marine Resources, which tests coastal shellfish areas for biotoxins weekly, annually beginning in March and going through October or later when necessary. Original data for New Hampshire were collected by NH Department of Environmental Services, and original data for Massachusetts were collected by Massachusetts Division of Marine Fisheries.
+These data represent the presence of PSP toxins in blue mussels (Mytilis edulis) sampled at coastal sites in Massachusetts (1972-2022), New Hampshire (2000-2022), and Maine (2005 to 2019). Results are summarized on an annual basis for each state. Variables include [@li_noaanos_nodate] total number of samples, number of samples above and below a designated threshold (44ug STX equivalent / 100g tissue), and percentage of samples above the threshold. Original data for Maine were collected by Maine Department of Marine Resources, which tests coastal shellfish areas for biotoxins weekly, annually beginning in March and going through October or later when necessary. Original data for New Hampshire were collected by NH Department of Environmental Services, and original data for Massachusetts were collected by Massachusetts Division of Marine Fisheries.
 
 ## Key Results and Visualizations
 Visualizations of the data include an annual time series plot of estimated cyst abundance, and a time series of maps depicting the spatial and temporal variability in the Gulf of Maine.  Results are plotted as estimated total numbers of cells (10 to the 16th power) in Eastern Gulf of Maine (east of Penobscot Bay), Western Gulf of Maine (west of Penobscot Bay), Bay of Fundy (2003-2013 only), and entire Gulf of Maine.
@@ -31,13 +31,13 @@ A three-tier column graph illustrates three different metrics of shellfish bed c
 ```{r plot_habsMidAtlanticAlexandrium}
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(report= 'MidAtlantic', varName= 'Alexandrium')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_habsMidAtlanticPSP}
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(report= 'MidAtlantic', varName= 'PSP')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -45,13 +45,13 @@ print(ggplotObject)
 ```{r plot_habsNewEnglandAlexandrium}
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(report= 'NewEngland', varName= 'Alexandrium')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_habsNewEnglandPSP}
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(report= 'NewEngland', varName= 'PSP')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -70,9 +70,9 @@ Temporal scale: Alexandrium results are aggregated annually, and reported for 20
 ```
 
 ## Implications
-The annual fall surveys of Alexandrium cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year. Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales (Anderson et al. 2005, Li et al. 2009 & 2020, McGillicuddy et al. 2011). After strong cyst deposition events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2021. However, bloom events and shellfishery closures usually occur somewhere in any given year. Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (Jin and Hoagland 2008). Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 (Anderson et al. 1997).
+The annual fall surveys of Alexandrium cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year. Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales (@anderson_identification_2005, @li_investigation_2009, @li_dynamics_2020, @mcgillicuddy_suppression_2011). After strong cyst deposition events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2021. However, bloom events and shellfishery closures usually occur somewhere in any given year. Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (@jin_value_2008). Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 (@anderson_bloom_1997).
 
-Alexandrium bloom events in the Gulf of Maine can result in Paralytic Shellfish Poisoning (PSP) toxins accumulating in shellfish and other species. Bloom events and shellfishery closures usually occur somewhere in any given year, but vary greatly between years and among local areas. The presence of PSP toxins in shellfish, and shellfishery closures have been used as metrics for assessing the severity of PSP outbreaks (Kleindinst et al. 2014). Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (Jin and Hoagland 2008).
+Alexandrium bloom events in the Gulf of Maine can result in Paralytic Shellfish Poisoning (PSP) toxins accumulating in shellfish and other species. Bloom events and shellfishery closures usually occur somewhere in any given year, but vary greatly between years and among local areas. The presence of PSP toxins in shellfish, and shellfishery closures have been used as metrics for assessing the severity of PSP outbreaks (@kleindinst_categorizing_2014). Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (@@jin_value_2008).
 
 ## Get the data
 
@@ -84,9 +84,8 @@ Alexandrium bloom events in the Gulf of Maine can result in Paralytic Shellfish 
 
 Alexandrium: 1) Year; Definition: calendar year; Units: yyyy. 
 2) Name: Var; Definition: Gulf of Maine region (West, East, Bay of Fundy, All); Units: categories. 
-3) Name: Value; Definition: Estimated cyst abundance; Units: numbers of cells * 10 to the 16th power) 
- PSP: 1) Year; Definition: calendar year; Units: yyyy. 
-2) Name: State; Definition: MA, NH, or ME ; Units: categories. 
+3) Name: Value; Definition: Estimated cyst abundance; Units: numbers of cells * 10 to the 16th power)  PSP: 
+1) Year; Definition: calendar year; Units: yyyy. 2) Name: State; Definition: MA, NH, or ME ; Units: categories. 
 3) Name: N_Rows; Definition: Number of sample events represented; Units: integer.  
 4) Name: PSP_Exceed_Threshold_Pct; Definition: Percentage of samples exceeding PSP threshold; Units: decimal number, 0-100.
 
@@ -114,6 +113,4 @@ Data were provided by consultation with Yizhen Li.  Data are also used in operat
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/habs.html>
-
-## References
 

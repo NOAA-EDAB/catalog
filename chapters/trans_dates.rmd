@@ -26,13 +26,13 @@ Ocean summer length in Mid-Atlantic: the annual total number of days between the
 ```{r plot_trans_datesMidAtlantictiming}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(report= 'MidAtlantic', varName= 'timing')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_trans_datesMidAtlanticlength}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(report= 'MidAtlantic', varName= 'length')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -40,13 +40,13 @@ print(ggplotObject)
 ```{r plot_trans_datesNewEnglandtiming}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(report= 'NewEngland', varName= 'timing')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_trans_datesNewEnglandlength}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(report= 'NewEngland', varName= 'length')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -65,7 +65,7 @@ Temporal scale: Annual time series (1982 to 2023)
 ```
 
 ## Implications
-To be determined.
+Prolonged fall temperatures have been linked to the increased number of cold-stunned Kemp’s ridley sea turtles found in Cape Cod Bay @griffin_warming_2019
 
 ## Get the data
 
@@ -100,6 +100,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/trans_dates.html>
-
-## References
 

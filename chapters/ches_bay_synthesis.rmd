@@ -72,8 +72,3 @@ Source data are publicly available.
 
 _No response_
 
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/ches_bay_synthesis.html>
-
-## References
-

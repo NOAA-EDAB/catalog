@@ -17,14 +17,14 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The Ryther index is defined as total catch per unit area in the ecosystem ([JS Link and Watson 2019](https://noaa-edab.github.io/tech-doc/ecosystem-overfishing.html#ref-link2019eof)). The units are mt km^-2 year^-1. It measures the total removal of fish biomass by area in a Large Marine Ecosystem relative to how much that entire ecosystem can produce.  In general terms, the lower the Ryther index, the less likely an ecosystem will be experiencing ecosystem overfishing.
+The Ryther index is defined as total catch per unit area in the ecosystem [@link_global_2019]. The units are mt km^-2 year^-1. It measures the total removal of fish biomass by area in a Large Marine Ecosystem relative to how much that entire ecosystem can produce.  In general terms, the lower the Ryther index, the less likely an ecosystem will be experiencing ecosystem overfishing.
 
-The Fogarty index is defined as ratio of total catches to total primary productivity in an ecosystem ([JS Link and Watson 2019](https://noaa-edab.github.io/tech-doc/ecosystem-overfishing.html#ref-link2019eof)). The units are parts per thousand.
+The Fogarty index is defined as ratio of total catches to total primary productivity in an ecosystem [@link_global_2019]. The units are parts per thousand.
 
 A modification of the indices are used. Total landings are used in lieu of total catch. Accountng for total IUU (Illegal, unreported, and unregulated fishing) data, at the spatial footprint required, is not currently available. This will have the effect of reducing the value of the index (compared to using total catch, including IUU).
 
 ## Key Results and Visualizations
-Compared to thresholds based on global estimates of primary production and catch, the Ryther index shows elevated levels of fishing in the Gulf of Maine and the Mid Atlantic but not at a point considered "extreme" ([JS Link and Watson 2019](https://noaa-edab.github.io/tech-doc/ecosystem-overfishing.html#ref-link2019eof)). When accounting for regional primary prductivity the Fogarty index shows low levels of fishing relative to these global thresholds.
+Compared to thresholds based on global estimates of primary production and catch, the Ryther index shows elevated levels of fishing in the Gulf of Maine and the Mid Atlantic but not at a point considered "extreme" [@link_global_2019]. When accounting for regional primary productivity the Fogarty index shows low levels of fishing relative to these global thresholds.
 
 Thresholds based on regional estimates of primary productivity, are not yet available. This work is ongoing
 
@@ -33,37 +33,37 @@ Thresholds based on regional estimates of primary productivity, are not yet avai
 ```{r plot_pprMidAtlanticppglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'pp' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticppregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'pp' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticfogartyglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'fogarty' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticfogartyregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'fogarty' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticrytherglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'ryther' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprMidAtlanticrytherregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'ryther' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ### NewEngland
@@ -71,37 +71,37 @@ print(ggplotObject)
 ```{r plot_pprNewEnglandppglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'pp' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandppregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'pp' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandfogartyglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'fogarty' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandfogartyregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'fogarty' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandrytherglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'ryther' ,threshold= 'global')
-print(ggplotObject)
+ggplotObject
 ```
 
 ```{r plot_pprNewEnglandrytherregional}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'ryther' ,threshold= 'regional')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -132,8 +132,7 @@ There is insufficient evidence to determine whether ecosystem overfishing in occ
 
 **Variable definitions**
 
-1. Ryther; The Ryther index; mt km^-2 y^-1 
-2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
+1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
 3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
@@ -159,6 +158,4 @@ Please email andrew.beet@noaa.gov for further information and queries of source 
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/ppr.html>
-
-## References
 

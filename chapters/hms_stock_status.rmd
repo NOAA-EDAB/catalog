@@ -24,7 +24,7 @@ TBD – we have a meeting in mid-November to finalize decisions regarding this c
 ```{r plot_hms_stock_statusMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_stock_status(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -78,6 +78,4 @@ All stock assessment results are publicly available (see Data Sources). Summariz
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/hms_stock_status.html>
-
-## References
 

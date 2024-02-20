@@ -24,7 +24,7 @@ Since the 1860’s, the Northeast US shelf sea surface temperature (SST) has exh
 ```{r plot_long_term_sstMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_long_term_sst(report='MidAtlantic')
-print(ggplotObject)
+ggplotObject
 ```
 
 
@@ -78,6 +78,4 @@ _No response_
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/long_term_sst.html>
-
-## References
 
