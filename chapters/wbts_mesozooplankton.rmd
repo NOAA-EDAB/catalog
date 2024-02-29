@@ -1,4 +1,4 @@
-# Mesozooplankton Biomass at Wilkinson Basin
+# Mesozooplankton Biomass at Wilkinson Basin {#wbts_mesozooplankton}
 
 **Description**: Mesozooplankton biomass at the Wilkinson Basin Time Series Station (WBTS): 2005-2022
 
@@ -21,8 +21,6 @@ The Wilkinson Basin Time Series Station (WBTS: 257 m depth), located in the nort
 Data collected at the WBTS station include CTD- rosette measurements of salinity, temperature and chlorophyll a concentration, microscopic enumeration of phytoplankton species, bacterial and microplankton measurements using flow cytometer, eDNA measurements, measurement of total mesozooplankton biomass and microscopic enumeration of zooplankton species collected with a 0.75 m, 200µm ring net towed from near bottom to the surface. Only the mesozooplankton biomass data are reported for the 2024 SOE; a fuller reporting of the time series data awaits further vetting and publication of the data in the primary literature.
 
 ## Key Results and Visualizations
-Note: mesozooplankton biomass figure uploaded in data folder (not sure where to upload it)
-
 Planktonic copepods typically constituted the great majority of catch of the vertically integrated ring net tow. Larger microzooplankton, like euphausids and jellyfish, are underrepresented. Chaetognaths, round tentaculate ctenophores, notably Pleurobrachia, and salps were captured, although the latter tend to degrade in formaldehyde over time and are likely underrepresented. Given these limitations, the mesozooplankton dry mass data allow comparison of biomass across pelagic ecosystems where similar measurements have been taken. Notably, at WBTS, the copepodid stages of Calanus finmarchicus typically make up 50% or more of the total mesozooplankton biomass in spring through fall. 
 
 Following the seasonal life cycle of C. finmarchicus, mesozooplankton biomass is lowest in late winter and highest in summer. Biomass levels of 10-20 g m-2 observed in 2005-2008 in summer and winter were among the highest observed across the subarctic North Atlantic Ocean, including the Gulf of St. Lawrence (@de_lafontaine_pelagic_1991; @sorochan_north_2019), Scotian Shelf (@casault_optical_2022) and the Norwegian and Barents Seas (@melle_north_2014; @skjoldal_size-fractioned_2022). The mesozooplankton biomass collected at WBTS in late summer (Aug-Oct) and winter (Nov-Mar) has since declined significantly, by about 50%, between the start of the time series in 2005-2008 and 2021-2022 (see figure). The summer and winter biomass levels reflect the predominance of the larger, lipid rich late stage C. finmarchicus (CIV-CVI) as compared to spring, which is dominated by younger C. finmarchicus stages CI-CIV.

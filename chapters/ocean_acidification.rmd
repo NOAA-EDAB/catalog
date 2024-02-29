@@ -1,4 +1,4 @@
-# Ocean Acidification and Other Stressors
+# Ocean Acidification and Other Stressors {#ocean_acidification}
 
 **Description**: Maps and variability of regional carbonate chemistry and other oceanographic properties
 
@@ -102,10 +102,8 @@ The seasonal level resolution of data collected in the Mid-Atlantic Bight in 202
 
 **Variable definitions**
 
-1) depth_interpolated meters 
-2) temperature degrees Celsius 3) chlorophyll_a µg L-1 
-4) oxygen_concentration_shifted_mgL mg L-1 5) pH_shifted 
-6) aragonite_saturation_state
+1) depth_interpolated meters 2) temperature degrees Celsius 3) chlorophyll_a µg L-1 
+4) oxygen_concentration_shifted_mgL mg L-1 5) pH_shifted 6) aragonite_saturation_state
 
 
 No Data

@@ -1,4 +1,4 @@
-# Seasonal Variation of Calanus finmarchicus
+# Seasonal Variation of Calanus finmarchicus {#calanus_variation}
 
 **Description**: Abundance of late copepodid stages of the planktonic copepod, Calanus finmarchicus, measured during seasonal surveys between 1977 and 2019. Data from NOAA EcoMon/MARMAP program
 
@@ -26,8 +26,6 @@ Historically, the high abundance of C. finmarchicus in the GOM combined with the
 This phenology indicator shows the change in abundance of the planktonic copepod, Calanus finmarchicus over a mean annual cycle in Wilkinson Basin, the primary overwintering habitat of this species in the western Gulf of Maine. The data are provided by the NOAA EcoMon/MARMAP survey, which has sampled stations along the Northeast U.S. Shelf, including the Gulf of Maine, seasonally (2-6 times per year) in nearly all years since 1977. The 333 µm mesh plankton nets used by the survey quantitatively capture only the late copepodid stages (C3-adult) of C. finmarchicus, but these stages nevertheless are representative of the seasonal variation in abundance of the population. This indicator serves as a baseline that can be used to interpret future changes in wGoM C. finmarchicus abundance.
 
 ## Key Results and Visualizations
-Calanus finmarchicus phenology figure (uploaded with data) here
-
 Seasonal abundance (number m-3) of C. finmarchicus late copepodid stages (mostly stages CIII-CVI) in Wilkinson Basin. X-axis represents time of year, from 1 January (yearday 0) to 31 December (yearday 365). Background gray circles show individual MARMAP/EcoMon abundance data points in Wilkinson Basin between 1977-2019. Solid black line shows the seasonal pattern in mean abundance from the MARMAP/EcoMon data; dotted lines show 2x (top) and ½ (bottom) of the mean abundance. Colored horizontal lines show conceptual model of seasonally variable predominant drivers. Predominant drivers in winter (Jan-Mar: days 1-100) suggested to be a combination of predation mortality and advective loss.
 
 The abundance of late stage Calanus finmarchicus in the western Gulf of Maine is seasonally variable. The highest abundances are observed in May-June, the result of reproduction, the magnitude of which depends on the timing of food availability to females (Stage CVI) in late-winter through spring. By late summer, most of the C. finmarchicus population is present as Stage CV, which overwinters at depth in a dormant state. The number of stage CV and hence the overall population abundance dwindles depending on net losses from advection and vertebrate and invertebrate predators. The abundance reaches its nadir in February-March, when the population is in stage CV or newly molted adult females and males. Note the difference between the late winter and late spring mean abundances is about three orders of magnitude.

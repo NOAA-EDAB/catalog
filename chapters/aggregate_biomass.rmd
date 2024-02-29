@@ -1,4 +1,4 @@
-# Aggregate Survey Biomass
+# Aggregate Survey Biomass {#aggregate_biomass}
 
 **Description**: Aggregate biomass from Northeast Fisheries Science Center (NEFSC) bottom trawl survey.
 

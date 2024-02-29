@@ -1,4 +1,4 @@
-# Thermal Habitat Persistence
+# Thermal Habitat Persistence {#thermal_habitat_persistence}
 
 **Description**: The number of days per year per 1/12 degree cell that exceeds a temperature threshold.
 

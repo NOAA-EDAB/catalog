@@ -1,4 +1,4 @@
-# Engagement, Reliance, and Environmental Justice in Top Fishing Communities
+# Engagement, Reliance, and Environmental Justice in Top Fishing Communities {#engagement}
 
 **Description**: The data presented here are 2021 environmental justice indicators in top commercial and top recreational communities in Mid-Atlantic and New England regions, respectively.
 
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-We report the top ten communities most engaged in, and/or reliant upon, commercial and recreational fisheries and the degree to which these communities may be vulnerable to environmental justice issues (i.e., Poverty, Population Composition, and Personal Disruption). To select and present these communities we developed indicators (or indices that inform the importance of fishing and relative social conditions in each community.
+We report the top ten communities most engaged in, and/or reliant upon, commercial and recreational fisheries and the degree to which these communities may be vulnerable to environmental justice issues (i.e., Poverty, Population Composition, and Personal Disruption). To select and present these communities we developed indicators (or indices) that inform the importance of fishing and relative social conditions in each community.
 
 The engagement and reliance indices demonstrate the importance of commercial and recreational fishing to a given community relative to other coastal communities in a region. Similarly, the environmental justice indices characterize different facets and levels of social vulnerability in a given community relative to other coastal communities in a region.
 
@@ -145,7 +145,7 @@ It is also important to note that factor scores and their associated categorical
 
 ## Get the data
 
-**Point of contact**: [Lisa Colburn (lisa.l.colburn@noaa.gov)](mailto:Lisa Colburn (lisa.l.colburn@noaa.gov)){.email}
+**Point of contact**: [Lisa Colburn (lisa.l.colburn@noaa.gov); Changhua Weng (changhua.weng@noaa.gov)](mailto:Lisa Colburn (lisa.l.colburn@noaa.gov); Changhua Weng (changhua.weng@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::engagement`
 

@@ -1,4 +1,4 @@
-# Ecosytem overfishing
+# Ecosytem overfishing {#ppr}
 
 **Description**: Ecosystem overfishing is an ecological, and not legal, term that ultimately evaluates how much fish are caught in an ecosystem relative to how much can be produced. Several indices are used to evaluate ecosystem overfishing, the Ryther index, the Fogarty index, and primary production required.
 

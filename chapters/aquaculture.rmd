@@ -1,4 +1,4 @@
-# Aquaculture Production
+# Aquaculture Production {#aquaculture}
 
 **Description**: Oyster production: number of oysters harvested from aquaculture.
 

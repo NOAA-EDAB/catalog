@@ -1,4 +1,4 @@
-# Harmful Algal Blooms
+# Harmful Algal Blooms {#habs}
 
 **Description**: These data represent annual estimated abundance of Alexandrium catanella cysts in the Gulf of Maine and the presence of PSP toxins in blue mussels at coastal sites in the Gulf of Maine (MA, NH, ME), and shellfishery closures (MA).
 

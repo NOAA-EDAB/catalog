@@ -1,4 +1,4 @@
-# Chesapeake Bay Salinity
+# Chesapeake Bay Salinity {#ch_bay_sal}
 
 **Description**: This data is collected from the CBIBS buoy system.
 
@@ -49,7 +49,7 @@ The changes in the temperature and salinity have implications in the habitat
 
 ## Get the data
 
-**Point of contact**: [Charles Pellerin (charles.pellerin@noaa.gov](mailto:Charles Pellerin (charles.pellerin@noaa.gov){.email}
+**Point of contact**: [Charles Pellerin (charles.pellerin@noaa.gov)](mailto:Charles Pellerin (charles.pellerin@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::ch_bay_sal`
 

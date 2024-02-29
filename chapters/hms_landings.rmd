@@ -1,6 +1,6 @@
-# Highly Migratory Species Landings
+# Highly Migratory Species Landings {#hms_landings}
 
-**Description**: Aggregated Atlantic HMS landings data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2022.
+**Description**: Aggregated Atlantic highly migratory species landings data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2022.
 
 **Indicator family**: 
 

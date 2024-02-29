@@ -1,4 +1,4 @@
-# Chesapeake Bay 2023 Synthesis
+# Chesapeake Bay 2023 Synthesis {#ches_bay_synthesis}
 
 **Description**: Synthesis of Chesapeake Bay 2023 habitat conditions with implications for managed species
 

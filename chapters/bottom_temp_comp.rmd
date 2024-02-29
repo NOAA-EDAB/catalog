@@ -1,4 +1,4 @@
-# Bottom temperature - Seasonal Anomaly
+# Bottom temperature - Seasonal Anomaly {#bottom_temp_comp}
 
 **Description**: The data are seasonal bottom temperature anomaly time series for each EPU
 
@@ -7,7 +7,7 @@
 - [X] Oceanographic
 
 
-**Contributor(s)**: Joseph Caracappa, Hubert duPontavice, Vincent Saba, Zhuomin Chen
+**Contributor(s)**: Joseph Caracappa, Hubert du Pontavice, Vincent Saba, Zhuomin Chen
 
 **Affiliations**: NEFSC
 
