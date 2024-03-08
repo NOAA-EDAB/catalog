@@ -1,4 +1,4 @@
-# Inshore Survey (Mid Atlantic)
+# Inshore Survey (Mid Atlantic) {#mab_inshore_survey}
 
 **Description**: Biomass time series for aggregate species groups from *three* inshore bottom trawl surveys conducted throughout the NE US:
 

@@ -1,4 +1,4 @@
-# Bennet Indicator
+# Bennet Indicator {#bennet}
 
 **Description**: The data presented here are changes in revenue ($ real) split into a price indicator and a volume indicator. The sum of the price and the volume indicator is equal to the revenue change relative to a base year, which is 1982.
 

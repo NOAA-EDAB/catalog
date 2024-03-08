@@ -1,4 +1,4 @@
-# Engagement, Reliance, and Environmental Justice in Top Fishing Communities
+# Engagement, Reliance, and Environmental Justice in Top Fishing Communities {#engagement}
 
 **Description**: The data presented here are 2021 environmental justice indicators in top commercial and top recreational communities in Mid-Atlantic and New England regions, respectively.
 
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-We report the top ten communities most engaged in, and/or reliant upon, commercial and recreational fisheries and the degree to which these communities may be vulnerable to environmental justice issues (i.e., Poverty, Population Composition, and Personal Disruption). To select and present these communities we developed indicators (or indices that inform the importance of fishing and relative social conditions in each community.
+We report the top ten communities most engaged in, and/or reliant upon, commercial and recreational fisheries and the degree to which these communities may be vulnerable to environmental justice issues (i.e., Poverty, Population Composition, and Personal Disruption). To select and present these communities we developed indicators (or indices) that inform the importance of fishing and relative social conditions in each community.
 
 The engagement and reliance indices demonstrate the importance of commercial and recreational fishing to a given community relative to other coastal communities in a region. Similarly, the environmental justice indices characterize different facets and levels of social vulnerability in a given community relative to other coastal communities in a region.
 
@@ -33,9 +33,9 @@ In the 2023 report, we presented environmental justice vulnerability as a dichot
 
 ##### Commercial
 
-Barnegat Light, NJ, is the only community that scored high for both commercial engagement and reliance based on 2021 data. Cape May, NJ ranked high for both commercial engagement and commercial reliance based on 2020 data but decreased to medium-high for its commercial reliance in 2021. Reedville, VA ranked high for both commercial engagement and commercial reliance based on 2020 data but decreased to medium-high and medium, respectively, in 2021. Reedville, VA; Hatteras and Hobucken, NC are no longer listed as top ten commercial fishing communities, replaced by Hampton, VA; Swan Quarter, NC; Bowers and Little Creek, DE.
+Barnegat Light, NJ, and Reedville, VA are the only communities that scored high for both commercial engagement and reliance based on 2021 data. Cape May, NJ ranked high for both commercial engagement and commercial reliance based on 2020 data but decreased to medium-high for its commercial reliance in 2021.  Hatteras and Hobucken, NC are no longer listed as top ten commercial fishing communities, replaced by Hampton, VA; Swan Quarter, NC; Bowers and Little Creek, DE.
 
-Communities that ranked medium-high or above for one or more of the environmental justice indicators are highlighted in bright orange, including Hampton Bays/Shinnecock, NY; Atlantic City, NJ; Newport News, VA; Swan Quarter and Columbia, NC; Bower and Little Creek, DE. Communities that ranked medium for one or more of the environmental justice indicators are highlighted in purple, including Point Pleasant Beach, NJ; Hampton, VA; Beaufort and Wilmington, NC. 
+Communities that ranked medium-high or above for one or more of the environmental justice indicators are highlighted in bright orange, including Hampton Bays/Shinnecock, NY; Atlantic City, NJ; Swan Quarter and Columbia, NC; Bower and Little Creek, DE. Communities that ranked medium for one or more of the environmental justice indicators are highlighted in purple, including Point Pleasant Beach, NJ; Hampton, VA; Beaufort and Wilmington, NC. 
 
 Detailed scores of the three environmental justice indicators for the same communities plotted in spider plots. Communities are plotted clockwise in a descending order of commercial engagement scores from high to low, with the most highly engaged community, Cape May, NJ, listed on the top. Among these communities, ranked medium-high or above for environmental justice vulnerability, Atlantic City, NJ scored high for all of the three environmental justice indicators. 
 
@@ -145,7 +145,7 @@ It is also important to note that factor scores and their associated categorical
 
 ## Get the data
 
-**Point of contact**: [Lisa Colburn (lisa.l.colburn@noaa.gov)](mailto:Lisa Colburn (lisa.l.colburn@noaa.gov)){.email}
+**Point of contact**: [Lisa Colburn (lisa.l.colburn@noaa.gov); Changhua Weng (changhua.weng@noaa.gov)](mailto:Lisa Colburn (lisa.l.colburn@noaa.gov); Changhua Weng (changhua.weng@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::engagement`
 

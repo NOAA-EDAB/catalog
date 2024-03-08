@@ -1,4 +1,4 @@
-# Marine Heatwave Events
+# Marine Heatwave Events {#heatwave_year}
 
 **Description**: Surface and bottom MHWs for 2023.
 

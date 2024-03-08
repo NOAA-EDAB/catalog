@@ -79,6 +79,7 @@ rmd_files:
     -   "chapters/commercial_div.rmd"
     -   "chapters/ppr.rmd"
     -   "chapters/recdat.rmd"
+    -   "chapters/rec_hms.rmd"
     -   "chapters/abc_acl.rmd"
     -   "chapters/bennet.rmd"
     -   "chapters/stock_status.rmd"

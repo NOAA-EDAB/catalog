@@ -1,6 +1,6 @@
-# Forage Fish Energy Density
+# Forage Fish Energy Density {#energy_density}
 
-**Description**: Energy density of alewife, butterfish, sand lance, and Atlantic mackerel varies seasonally, with seasonal estimates both higher and lower than estimates from previous decades. The data presented are the seasonal (Spring and Fall) energy density (kJ/g) for eight important forage species; Alewife, Atlantic Herring, Silver Hake, Northern Sand Lance, Atlantic Mackerel, Butterfish, Northern Shortfin Squid, and Inshore Longfin Squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed int he lab to estimate energy content.
+**Description**: Energy density of alewife, butterfish, sand lance, and Atlantic mackerel varies seasonally, with seasonal estimates both higher and lower than estimates from previous decades. The data presented are the seasonal (Spring and Fall) energy density (kJ/g) for eight important forage species; Alewife, Atlantic Herring, Silver Hake, Northern Sand Lance, Atlantic Mackerel, Butterfish, Northern Shortfin Squid, and Inshore Longfin Squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed in the lab to estimate energy content.
 
 **Indicator family**: 
 
@@ -77,7 +77,7 @@ Source data are NOT publicly available.
 
 ## Accessibility and Constraints
 
-Email mark.wuenschel@noaa.gov for further information. Data tables are beign created to make this readily available soon.
+Email mark.wuenschel@noaa.gov for further information. Data tables are being created to make this readily available soon.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/energy_density.html>

@@ -1,8 +1,6 @@
-# Chlorophyll and Primary Production
+# Chlorophyll and Primary Production {#chl_pp}
 
-**Description**: Satellite derived phytoplankton data including chlorophyll concentration, phytoplankton size class, and primary production for the Northeast Continental Shelf and ecological production units.
-
-(To be expanded)
+**Description**: Satellite derived phytoplankton data including chlorophyll concentration, phytoplankton size class, and primary production for the Northeast Continental Shelf and ecological production units.
 
 **Indicator family**: 
 
@@ -18,12 +16,18 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Phytoplankton are the foundation of the marine food web and are the primary food source for zooplankton and filter feeders such as shellfish. Numerous environmental and oceanographic factors interact to drive the abundance, composition, spatial distribution, and productivity of phytoplankton. Satellite derived measurements of chlorophyll, the dominant photosynthetic pigment in phytoplankton, are used to estimate phytoplankton biomass. Phytoplankton growth depends on the availability of carbon dioxide, sunlight and nutrients and their growth rates can be influenced by water temperature, water depth, wind, and grazing pressure.  Primary productivity is a measure of the amount of carbon produced by phytoplankton. The seasonal cycle of phytoplankton size distribution are typically dominated by larger-celled microplankton during the winter-spring and fall bloom periods, while smaller-celled nanoplankton dominate during the warmer summer months.
+Phytoplankton are key biological regulators of the structure and function of most marine ecosystems. They are the foundation of the marine food web and are the primary food source for zooplankton and filter feeders such as shellfish. Numerous environmental and oceanographic factors interact to drive the abundance, composition, spatial distribution, seasonal timing and productivity of phytoplankton. Satellite derived measurements of chlorophyll, the dominant photosynthetic pigment in phytoplankton, are used to estimate total phytoplankton biomass. The size structure of the phytoplankton community influences important biogeochemical and ecological processes, including transfer of energy through the marine food web. Phytoplankton growth depends on the availability of carbon dioxide, sunlight and nutrients and their growth rates can be influenced by water temperature, water depth, wind, and grazing pressure.  Primary productivity is a measure of the amount of carbon produced by phytoplankton. 
 
-(To be expanded)
+The unique physical characteristics of the Northeast U.S. continental shelf help make it among the most productive continental shelf systems in the world influenced by both bottom-up (e.g. nutrient concentrations, light availability, and mixing/stratification) and top-down (e.g. grazing) controls. Phytoplankton biomass, composition, and productivity all have high spatial, seasonal and interannual variability. The most pronounced spatial pattern is the decrease in phytoplankton biomass from the coast to the shelf break. Georges Bank and Nantucket Shoals are shallow regions that are well mixed by tides. This mixing supplies sufficient nutrients to support phytoplankton growth throughout the year. In other regions, blooms of large diatom species occur on a seasonal cycle when growing conditions are ideal.
 
 ## Key Results and Visualizations
-(In development)
+The seasonal cycles of phytoplankton size distribution are typically dominated by larger-celled microplankton during the winter-spring and fall bloom periods, while smaller-celled nanoplankton dominate during the warmer summer months. In 2023, MAB total chlorophyll was below average in early spring, near average through the summer and above average throughout the fall. A peak in primary production occurred in summer, followed by an above average productivity associated with the early fall bloom. Phytoplankton size class distributions were near average for most of the year, except during the early fall bloom.
+
+Total chlorophyll concentrations on Georges Bank were above average for most of the year. The early winter bloom was most likely associated with diatoms, however the above average chlorophyll, primary production and microplankton fraction from April through August can be attributed to the dinoflagellate _Tripos muelleri_. 
+
+Total chlorophyll concentrations in the Gulf of Maine were above average for most of the year. The early winter bloom was most likely associated with diatoms, however the record high chlorophyll, primary production and microplankton fraction from April through August can be attributed to the dinoflagellate _Tripos muelleri_. 
+
+There is high interannual variability of the seasonal phytoplankton cycle.  At the monthly scale, MAB chlorophyll and primary production are increasing during January and there has been a decrease in September chlorophyll, likely due to extension of the [summer stratification](https://noaa-edab.github.io/catalog/transition-dates.html) and delayed fall turnover. Fall and winter chlorophyll and primary production are increasing on Georges Bank and Gulf of Maine.
 
 ### MidAtlantic
 
@@ -117,7 +121,7 @@ Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to current yea
 ```
 
 ## Implications
-(In development)
+Phytoplankton abundance, productivity, diversity, cell size, phenology, and carbon fluxes are regulated by the local physical and chemical environment and grazing. Interannual and climatological changes in temperature, freshwater inputs (due to ice sheet melting and/or enhanced river discharge), wind direction, and wind speed can alter the circulation patterns, upwelling conditions, and nutrient fluxes, directly affecting the timing, location, species composition of phytoplankton blooms in the NES. As the NES responds to warming, changing phenologies, changing chemistry, and changes in circulation patterns, we must understand how varying biophysical interactions control phytoplankton and subsequently affect fisheries, their habitats and the people, businesses and communities that depend on them.
 
 ## Get the data
 

@@ -1,4 +1,4 @@
-# ABC or ACL for Managed Stocks
+# ABC or ACL for Managed Stocks {#abc_acl}
 
 **Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
 

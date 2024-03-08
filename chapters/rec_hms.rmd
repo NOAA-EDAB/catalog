@@ -1,0 +1,91 @@
+# Recreational HMS {#rec_hms}
+
+**Description**: Recreational shark landings pulled from the Marine Recreational Information Program (MRIP).
+
+**Indicator family**: 
+
+- [X] Megafauna
+
+
+**Contributor(s)**: Brandon Beltz; Kim Bastille
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Recreational shark landings pulled from the MRIP database
+
+## Key Results and Visualizations
+Recreational landings of sharks are plotted. Sharks are categorized as large coastal, pelagic, prohibited and small coastal.
+
+### MAB
+
+```{r plot_rec_hmsMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_rec_hms(report='MidAtlantic')
+ggplotObject
+```
+
+### NE
+
+```{r plot_rec_hmsNE}
+# Plot indicator
+ggplotObject <- ecodata::plot_rec_hms(report='NewEngland')
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: by EPU
+
+Temporal scale: annually from 1981 to 2022
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_rec_hms}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Sharks are landed recreationally in quantities that are relevant to fisheries management. These landings should be considered when assessing the populations of sharks.
+
+## Get the data
+
+**Point of contact**: [Brandon Beltz (brandon.beltz@noaa.gov)](mailto:Brandon Beltz (brandon.beltz@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::rec_hms`
+
+**Variable definitions**
+
+See variables below
+
+```{r vars_rec_hms}
+# Pull all var names
+vars <- ecodata::rec_hms |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [X] Database pull
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/rec_hms.html>
+

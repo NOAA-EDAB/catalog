@@ -1,6 +1,6 @@
-# Gulf of Maine Atlantic salmon
+# Gulf of Maine Atlantic salmon {#gom_salmon}
 
-**Description**: The data presented here are time series of documented Atlantic salmon returns to Gulf of Maine Rivers since 1972 and return rates for two sea winter returns from hatchery smolt stockings.
+**Description**: The data presented here are time series of documented Atlantic salmon returns to Gulf of Maine rivers since 1972 and return rates for two sea winter returns from hatchery smolt stockings.
 
 **Indicator family**: 
 

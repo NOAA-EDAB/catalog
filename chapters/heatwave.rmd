@@ -1,4 +1,4 @@
-# Annual Heatwave Intensity
+# Annual Heatwave Intensity {#heatwave}
 
 **Description**: Surface and bottom MHWs for 2023.
 

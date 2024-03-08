@@ -1,4 +1,4 @@
-# Forage Fish Index
+# Forage Fish Index {#forage_index}
 
 **Description**: Aggregate forage fish biomass index from fish stomach contents
 
@@ -75,7 +75,7 @@ Changes in the distribution of forage biomass also affects predator distribution
 
 ## Get the data
 
-**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [Sarah Gaichas (Sarah.Gaichas@noaa.gov)](mailto:Sarah Gaichas (Sarah.Gaichas@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::forage_index`
 
