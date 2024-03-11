@@ -11,9 +11,9 @@ Depends:
   rmarkdown,
   tidyverse,
   DT,
-  ecodata@5.0.1
+  ecodata
 Suggests:
   downlit
 Remotes: 
-  NOAA-EDAB/ecodata@dev
+  NOAA-EDAB/ecodata@5.0.1
   
