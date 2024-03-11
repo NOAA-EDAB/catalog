@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Brandon Beltz; Kim Bastille
@@ -45,7 +45,7 @@ Temporal scale: annually from 1981 to 2022
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_rec_hms}
@@ -75,7 +75,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
+- [X] Database pull
 
 
 ## Public Availability

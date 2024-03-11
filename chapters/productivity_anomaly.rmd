@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Sarah Gaichas, Andy Beet, Kimberly Bastille, Sean Lucey, and Charles Perretti.
@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The amount of young fish produced by a population tells us both about the health of individual populations and about the productivity throughout the ecosystem when we look across multiple stocks. This has implications for both managing fisheries (lower productivity often leads to lower harvest) and for other components of the ecosystem. 
-
+The amount of young fish produced by a population tells us both about the health of individual populations and about the productivity throughout the ecosystem when we look across multiple stocks. This has implications for both managing fisheries (lower productivity often leads to lower harvest) and for other components of the ecosystem. 
+
 These indicators are based on the work of Perretti [@perretti_regime_2017]. We updated the data used in that analysis to describe patterns of aggregate fish productivity in the Mid-Atlantic, Georges Bank, and Gulf of Maine by evaluating changes in reproductive output relative to adult population size across multiple stocks. Both survey information and stock assessment information is used in separate indicators.
 
 ## Key Results and Visualizations
@@ -71,7 +71,7 @@ Temporal scale: _No response_
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_productivity_anomaly}
@@ -90,11 +90,9 @@ The apparent decline in productivity across multiple managed species in the MAB,
 **Variable definitions**
 
 Variable names are organized using this format: [region] stock name - variable type and source  
-Variables ending with "_Survey" are survey derived recruits/spawner anomalies 
-Variables ending with "-Assessment" are assessment derived quantities Survey stock names are in ALL CAPS 
-NE LME prepended to a survey stock name means the anomalies are coastwide 
-Assessment stock names are in Sentence case  
-Units for survey variables are the Z score of (number of recruits in year+1/biomass of adults in year) 
+Variables ending with "_Survey" are survey derived recruits/spawner anomalies Variables ending with "-Assessment" are assessment derived quantities 
+Survey stock names are in ALL CAPS NE LME prepended to a survey stock name means the anomalies are coastwide 
+Assessment stock names are in Sentence case  Units for survey variables are the Z score of (number of recruits in year+1/biomass of adults in year) 
 Units for plotted assessment variables are the Z score of (numbers of recruits per kg spawning biomass with recruits aligned to spawning biomass year using age at recruitment) 
 Other variables are available in the assessment derived dataset but are not plotted. To be added later.
 
@@ -108,7 +106,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
+- [X] Published Methods
 
 
 ## Public Availability

@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
+- [X] Oceanographic
 
 
 **Contributor(s)**: Paula Fratantoni; Chris Melrose; Tamara Holzwarth-Davis
@@ -45,7 +45,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_bottom_temp}
@@ -75,7 +75,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Extensive analysis, not yet published
+- [X] Extensive analysis, not yet published
 
 
 ## Public Availability

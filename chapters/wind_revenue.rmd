@@ -4,8 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Social
-- [X] Economic
+- [X] Social
+- [X] Economic
 
 
 **Contributor(s)**: Benjamin Galuardi, Geret DePiper, Dennis Corvi, Douglas Christel
@@ -82,7 +82,7 @@ Temporal scale: Annual from 2008-2022
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_wind_revenue}
@@ -117,8 +117,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+- [X] Syntheses of published information
+- [X] Database pull with analysis
 
 
 ## Public Availability

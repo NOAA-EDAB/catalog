@@ -4,8 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Social
-- [X] Economic
+- [X] Social
+- [X] Economic
 
 
 **Contributor(s)**: Angela Silva, Doug Christel
@@ -46,7 +46,7 @@ Temporal scale: 2008-2022
 
 **Synthesis Theme**:
 
-
+
 
 
 ```{r autostats_wind_port}
@@ -76,7 +76,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull with analysis
+- [X] Database pull with analysis
 
 
 ## Public Availability

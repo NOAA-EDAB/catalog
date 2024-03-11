@@ -4,8 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [X] Habitat
+- [X] Oceanographic
+- [X] Habitat
 
 
 **Contributor(s)**: Brandon Beltz, Abigail Tyrell
@@ -36,7 +36,7 @@ Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summe
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_seasonal_sst_anomaly_gridded}
@@ -58,7 +58,7 @@ Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow
 
 **Indicator Category**:
 
-- [X] Database pull with analysis
+- [X] Database pull with analysis
 
 
 ## Public Availability

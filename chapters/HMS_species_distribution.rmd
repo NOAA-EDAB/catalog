@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Sam Chavez, Elizabeth Josephson, Debra Palka
@@ -16,12 +16,12 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Marine species are being affected by global climate changes, and in most cases the documented responses include distribution shifts from their historical habitat. In addition, human-caused drivers such as the noise and physical disturbances from oil and gas exploration, fishing, boat traffic and infrastructure such as offshore renewable energy developments, as well as other maritime activities could also result in shifts. [@chavez-rosales_detection_2022] used Northwest Atlantic cetacean location data collected in its changing environment to investigate if their habitats are changing, and if so, to what extent.
-
+Marine species are being affected by global climate changes, and in most cases the documented responses include distribution shifts from their historical habitat. In addition, human-caused drivers such as the noise and physical disturbances from oil and gas exploration, fishing, boat traffic and infrastructure such as offshore renewable energy developments, as well as other maritime activities could also result in shifts. [@chavez-rosales_detection_2022] used Northwest Atlantic cetacean location data collected in its changing environment to investigate if their habitats are changing, and if so, to what extent.
+
 A climate vulnerability assessment is published for Atlantic and Gulf of Mexico marine mammal populations [@lettrich_vulnerability_2023].
 
 ## Key Results and Visualizations
-For seasons and cetacean species with the movements greater then 70 km, the season plots show the direction and magnitude of core habitat shifts. The locations of the tip and end of the arrow is the seasonal weighted centroid locations for 2010 (end of arrow) and 2017 (tip of arrow). The longer the arrow the more the seasonal shift in distribution. 
+For seasons and cetacean species with the movements greater then 70 km, the season plots show the direction and magnitude of core habitat shifts. The locations of the tip and end of the arrow is the seasonal weighted centroid locations for 2010 (end of arrow) and 2017 (tip of arrow). The longer the arrow the more the seasonal shift in distribution. 
 For species that showed a clear displacement of the weighted centroid, the average magnitude of the shift was 178 km shifted towards the northeast and into deeper waters. Bottlenose dolphin habitat showed the most drastic shift for all seasons except during winter: spring= 294 km, summer=505 km, fall= 753 km and winter = 211. There was a clear tendency where the proportion of the estimated population in southern latitudes decreased, while north of 35° the proportion of the estimated population increased, especially during summer 2017. Other species that on average, showed a moderate-to-no spatial shift included humpback whale, minke whale, white-sided dolphin, Sowerby’s beaked whale, and long-finned pilot.
 
 ```{r plot_HMS_species_distributionMAB}
@@ -38,8 +38,8 @@ Temporal scale: By each of the 4 seasons in 2010 and in 2017.
 
 **Synthesis Theme**:
 
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
 
 
 ```{r autostats_HMS_species_distribution}
@@ -57,8 +57,7 @@ Shifting species distributions alter both species interactions and fishery inter
 
 **Variable definitions**
 
-1) Time=time period of centroid location.  2) species=cetacean species.  3) season.  
-4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
+1) Time=time period of centroid location.  2) species=cetacean species.  3) season.  4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
 
 ```{r vars_HMS_species_distribution}
 # Pull all var names
@@ -70,7 +69,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
+- [X] Published Methods
 
 
 ## Public Availability

@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Heather Baertlein, Jackie Wilson, George Silva, Jennifer Cudney
@@ -57,7 +57,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Regime Shifts
+- [X] Regime Shifts
 
 
 ```{r autostats_hms_landings}
@@ -65,8 +65,8 @@ Temporal scale: Annual
 ```
 
 ## Implications
-TBD – pending finalization of dataset for 2024 report
-
+TBD – pending finalization of dataset for 2024 report
+
 In 2021 the International Commission for the Conservation of Atlantic Tunas (ICCAT) finalized recommendations for a two-year retention ban for shortfin mako (ICCAT Rec. 21-09), which will also affect total overall landings of pelagic sharks in coming years.
 
 ## Get the data
@@ -89,7 +89,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull with analysis
+- [X] Database pull with analysis
 
 
 ## Public Availability

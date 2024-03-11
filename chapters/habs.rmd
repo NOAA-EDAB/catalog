@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Lower trophic levels
+- [X] Lower trophic levels
 
 
 **Contributor(s)**: Yizhen Li, NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch, Silver Spring MD
@@ -16,14 +16,14 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson [@anderson_identification_2005]. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
-
+Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson [@anderson_identification_2005]. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
+
 These data represent the presence of PSP toxins in blue mussels (Mytilis edulis) sampled at coastal sites in Massachusetts (1972-2022), New Hampshire (2000-2022), and Maine (2005 to 2019). Results are summarized on an annual basis for each state. Variables include [@li_noaanos_nodate] total number of samples, number of samples above and below a designated threshold (44ug STX equivalent / 100g tissue), and percentage of samples above the threshold. Original data for Maine were collected by Maine Department of Marine Resources, which tests coastal shellfish areas for biotoxins weekly, annually beginning in March and going through October or later when necessary. Original data for New Hampshire were collected by NH Department of Environmental Services, and original data for Massachusetts were collected by Massachusetts Division of Marine Fisheries.
 
 ## Key Results and Visualizations
-Visualizations of the data include an annual time series plot of estimated cyst abundance, and a time series of maps depicting the spatial and temporal variability in the Gulf of Maine.  Results are plotted as estimated total numbers of cells (10 to the 16th power) in Eastern Gulf of Maine (east of Penobscot Bay), Western Gulf of Maine (west of Penobscot Bay), Bay of Fundy (2003-2013 only), and entire Gulf of Maine.
-
-A line graph depicts the percentage of samples that exceed the designated threshold (44ug STX equivalent / 100g tissue), in the samples that had some level of STX detected. The percentages may be affected by protocols on where and when to sample – e.g. sampling may be more intense during bloom events, and protocols may differ between the three states (MA, NH, ME).
+Visualizations of the data include an annual time series plot of estimated cyst abundance, and a time series of maps depicting the spatial and temporal variability in the Gulf of Maine.  Results are plotted as estimated total numbers of cells (10 to the 16th power) in Eastern Gulf of Maine (east of Penobscot Bay), Western Gulf of Maine (west of Penobscot Bay), Bay of Fundy (2003-2013 only), and entire Gulf of Maine.
+
+A line graph depicts the percentage of samples that exceed the designated threshold (44ug STX equivalent / 100g tissue), in the samples that had some level of STX detected. The percentages may be affected by protocols on where and when to sample – e.g. sampling may be more intense during bloom events, and protocols may differ between the three states (MA, NH, ME).
 A three-tier column graph illustrates three different metrics of shellfish bed closures in Massachusetts waters due to PSP, 1990-2022. Annual metrics include number of sites closed, mean number of days closed per site, and total closed area (acres). Bloom events in the early 1990s, 2005, and 2009 are evident in the closure metrics.
 
 ### MidAtlantic
@@ -62,7 +62,7 @@ Temporal scale: Alexandrium results are aggregated annually, and reported for 20
 
 **Synthesis Theme**:
 
-- [X] Regime Shifts
+- [X] Regime Shifts
 
 
 ```{r autostats_habs}
@@ -70,8 +70,8 @@ Temporal scale: Alexandrium results are aggregated annually, and reported for 20
 ```
 
 ## Implications
-The annual fall surveys of Alexandrium cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year. Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales (@anderson_identification_2005, @li_investigation_2009, @li_dynamics_2020, @mcgillicuddy_suppression_2011). After strong cyst deposition events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2021. However, bloom events and shellfishery closures usually occur somewhere in any given year. Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (@jin_value_2008). Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 (@anderson_bloom_1997).
-
+The annual fall surveys of Alexandrium cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year. Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales (@anderson_identification_2005, @li_investigation_2009, @li_dynamics_2020, @mcgillicuddy_suppression_2011). After strong cyst deposition events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2021. However, bloom events and shellfishery closures usually occur somewhere in any given year. Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (@jin_value_2008). Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 (@anderson_bloom_1997).
+
 Alexandrium bloom events in the Gulf of Maine can result in Paralytic Shellfish Poisoning (PSP) toxins accumulating in shellfish and other species. Bloom events and shellfishery closures usually occur somewhere in any given year, but vary greatly between years and among local areas. The presence of PSP toxins in shellfish, and shellfishery closures have been used as metrics for assessing the severity of PSP outbreaks (@kleindinst_categorizing_2014). Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (@@jin_value_2008).
 
 ## Get the data
@@ -99,8 +99,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
-- [X] Database pull with analysis
+- [X] Published Methods
+- [X] Database pull with analysis
 
 
 ## Public Availability
