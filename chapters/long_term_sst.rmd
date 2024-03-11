@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
+- [X] Oceanographic
 
 
 **Contributor(s)**: Kevin Friedland, Brandon Beltz
@@ -35,7 +35,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_long_term_sst}
@@ -65,7 +65,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
+- [X] Database pull
 
 
 ## Public Availability

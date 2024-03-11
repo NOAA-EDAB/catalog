@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Debra Palka, Kristen Procoda, Marjorie Lyssikatos, Kimberly Murray
@@ -19,7 +19,7 @@ library(ecodata)
 Protected species include marine mammals protected under the Marine Mammal Protection Act, endangered and threatened species protected under the Endangered Species Act, and migratory birds protected under the Migratory Bird Treaty Act. In the Northeast U.S., endangered/threatened species include Atlantic salmon, Atlantic and shortnose sturgeon, all sea turtle species, and five baleen whales. Northeast U.S. marine mammals that are protected under currently active Take Reduction Teams under the Marine Mammal Protection Act include harbor porpoises, bottlenose dolphins, pilot whales, North Atlantic right whales and humpback whales. Fishery management objectives for protected species generally focus on reducing threats and on habitat conservation/restoration. Protected species objectives include managing bycatch to remain below potential biological removal (PBR) thresholds, recovering endangered populations, and monitoring unusual mortality events (UMEs). Here we report on the status of these actions as well as indicating the potential for future interactions driven by observed and predicted ecosystem changes in the Northeast U.S.
 
 ## Key Results and Visualizations
-For each marine mammal species, variables plotted are the total estimated bycatch from all U.S. North Atlantic commercial fisheries by year (Fig. x). In 2022, a total of x marine mammals from 5 species was estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Estimates of seabird bycatch from these fisheries are currently being updated and can be reported next year. 
+For each marine mammal species, variables plotted are the total estimated bycatch from all U.S. North Atlantic commercial fisheries by year (Fig. x). In 2022, a total of x marine mammals from 5 species was estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Estimates of seabird bycatch from these fisheries are currently being updated and can be reported next year. 
 Marine mammal species specific bycatch estimates from 2022 are below current PBR thresholds, thus meeting current management objectives (Fig. x). However, historically, bycatch was above PBR for harbor porpoises and pilot whales. More recently bycatch of gray seals has increased since 1995 and on average leveled out after 2010; however, there is a large amount of inter-annual variability (Fig. x).
 
 ```{r plot_graysealMAB}
@@ -36,7 +36,7 @@ Temporal scale: Annual from 1990 to 2022.
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_grayseal}
@@ -44,7 +44,7 @@ Temporal scale: Annual from 1990 to 2022.
 ```
 
 ## Implications
-Bycatch reduction plans developed by Marine Mammal Protection Act’s Take Reduction Teams were needed to reduce the bycatch of harbor porpoises starting in 1997 (Fig. x) and reduce the bycatch of pilot whales starting in xxxx. The more recent reduction in harbor porpoise bycatch since 2010 is probably due not only to the Take Reduction Team’s bycatch mitigation plan but also related to a corresponding decrease in gillnet fishing effort and in seasonal shifts of harbor porpoises that appear to be related to climatic changes (see Fig xx).
+Bycatch reduction plans developed by Marine Mammal Protection Act’s Take Reduction Teams were needed to reduce the bycatch of harbor porpoises starting in 1997 (Fig. x) and reduce the bycatch of pilot whales starting in xxxx. The more recent reduction in harbor porpoise bycatch since 2010 is probably due not only to the Take Reduction Team’s bycatch mitigation plan but also related to a corresponding decrease in gillnet fishing effort and in seasonal shifts of harbor porpoises that appear to be related to climatic changes (see Fig xx).
 The high level of variability of the annual gray seal estimates may be due in part by variable gillnet landings, limited observer coverage, especially since 2019 due to Covid-19, and the effects of the Northeast pinniped unusual mortality event for harbor and gray seals that was declared in 2022. The unusual mortalities were mostly located off the coast Maine and considered to be due to infectious diseases.
 
 ## Get the data
@@ -72,7 +72,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Syntheses of published information
+- [X] Syntheses of published information
 
 
 ## Public Availability

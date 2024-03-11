@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
+- [X] Oceanographic
 
 
 **Contributor(s)**: Charles Pellerin
@@ -37,7 +37,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_ch_bay_temp}
@@ -67,7 +67,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
+- [X] Database pull
 
 
 ## Public Availability

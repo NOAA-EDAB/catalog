@@ -4,8 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [X] Habitat
+- [X] Oceanographic
+- [X] Habitat
 
 
 **Contributor(s)**: Avijit Gangopadhyay
@@ -36,8 +36,8 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
+- [X] Multiple System Drivers
+- [X] Regime Shifts
 
 
 ```{r autostats_wcr}
@@ -67,7 +67,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
+- [X] Published Methods
 
 
 ## Public Availability

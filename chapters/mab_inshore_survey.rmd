@@ -1,16 +1,16 @@
 # Inshore Survey (Mid Atlantic) {#mab_inshore_survey}
 
-**Description**: Biomass time series for aggregate species groups from *three* inshore bottom trawl surveys conducted throughout the NE US:
-
-- NEAMAP (mab_inshore_survey) from Cape Hatteras to RI
-
-- MA Inshore in MA state waters (mass_inshore_survey)
-
+**Description**: Biomass time series for aggregate species groups from *three* inshore bottom trawl surveys conducted throughout the NE US:
+
+- NEAMAP (mab_inshore_survey) from Cape Hatteras to RI
+
+- MA Inshore in MA state waters (mass_inshore_survey)
+
 - ME/NH Inshore in ME and NH state waters (ne_inshore_survey)
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: James Gartland, Matt Camisa, Rebecca Peters, Sean Lucey
@@ -43,7 +43,7 @@ Temporal scale: Spring and Fall
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_mab_inshore_survey}
@@ -73,8 +73,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Syntheses of published information
-- [X] Database pull
+- [X] Syntheses of published information
+- [X] Database pull
 
 
 ## Public Availability

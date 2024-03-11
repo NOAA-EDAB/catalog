@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Laurel Smith
@@ -16,23 +16,23 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The health and well being of individual fish can be related to body shape condition indices (i.e., weight at a given length) such as relative condition index, which is the ratio of observed weight to predicted weight based on length [@le_cren_length-weight_1951]. Heavier and fatter fish at a given length have higher relative condition which is expected to improve growth, reproductive output, and survival.
-
-Le Cren’s [@le_cren_length-weight_1951] relative condition (Kn) is used in this study:
-
-Kn = W/W’
-
+The health and well being of individual fish can be related to body shape condition indices (i.e., weight at a given length) such as relative condition index, which is the ratio of observed weight to predicted weight based on length [@le_cren_length-weight_1951]. Heavier and fatter fish at a given length have higher relative condition which is expected to improve growth, reproductive output, and survival.
+
+Le Cren’s [@le_cren_length-weight_1951] relative condition (Kn) is used in this study:
+
+Kn = W/W’
+
 Where W’ is the relative length-specific mean weight for the population in a given region. For this work, length-weight coefficients from Wigley et al. [@wigley_length-weight_2003] were used to calculate W’. Individual fish weights were total body weights from Northeast Fisheries Science Center (NEFSC) fall bottom trawl surveys. Most finfish species included in this study are spring or summer spawners, so the fall survey was chosen to reduce variability of gonad weights in the spring survey as the fish ramp up for spawning.
 
 ## Key Results and Visualizations
-MAB: Condition factor for fish species in the MAB based on fall NEFSC bottom trawl survey data. MAB data are missing for 2017 due to survey delays, and no survey was conducted in 2020.
-
-A pattern of generally good condition was observed across many MAB species prior to 2000, followed by a period of generally poor condition from 2001-2010, with a mix of good and poor condition from 2011-2019. Condition was again mixed in 2023, but a number of species improved in condition from the relatively low condition in 2021 
-
-GOM and GB: Condition factor for fish species in the GOM and on GB based on fall NEFSC bottom trawl survey data. No survey was conducted in 2020.
-
-A pattern of generally good condition was observed across many species in the GOM and GB regions prior to 2000, followed by a period of generally poor condition from 2001-2010, with a mix of good and poor condition from 2011-2019. Condition was again mixed in 2023, with many species in good condition on GB but a number of species with below avereage condition in the GOM
-
+MAB: Condition factor for fish species in the MAB based on fall NEFSC bottom trawl survey data. MAB data are missing for 2017 due to survey delays, and no survey was conducted in 2020.
+
+A pattern of generally good condition was observed across many MAB species prior to 2000, followed by a period of generally poor condition from 2001-2010, with a mix of good and poor condition from 2011-2019. Condition was again mixed in 2023, but a number of species improved in condition from the relatively low condition in 2021 
+
+GOM and GB: Condition factor for fish species in the GOM and on GB based on fall NEFSC bottom trawl survey data. No survey was conducted in 2020.
+
+A pattern of generally good condition was observed across many species in the GOM and GB regions prior to 2000, followed by a period of generally poor condition from 2001-2010, with a mix of good and poor condition from 2011-2019. Condition was again mixed in 2023, with many species in good condition on GB but a number of species with below avereage condition in the GOM
+
 Preliminary General Additive Models show that for many species, temperature and copepod size structure have the strongest associations with relative fish condition. Directional trends show that some species are improving in condition with increases in water temperature, likely as a result of increased metabolic rates with sufficient food availability. Whereas other species are declining in condition with increases in water temperature, likely as a result of food limitations with increased metabolic rates, or reaching thermal temperature maxims and having to move into less productive areas in search of suitable thermal habitat. These species may be more susceptible to climate change. Preliminary change point analyses show that the decline in relative condition in the 2000s that is seen across many species aligns with a period dominated by large bodied copepods. Perretti et al. [@perretti_regime_2017] found similar periods of copepod size structure changes, and found that periods dominated by large bodied copepods were associated with low recruitment in groundfish. Relative fish condition is likely the mechanism for these linkages, where poor body condition leads to low fish recruitment.
 
 ### MAB
@@ -67,8 +67,8 @@ Temporal scale: The temporal scale for relative condition was the fall NEFSC bot
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
+- [X] Multiple System Drivers
+- [X] Regime Shifts
 
 
 ```{r autostats_condition}
@@ -99,7 +99,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull with analysis
+- [X] Database pull with analysis
 
 
 ## Public Availability

@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Jennifer Cudney, Tobey Curtis
@@ -57,7 +57,7 @@ Temporal scale: 1992-2022, Annual
 
 **Synthesis Theme**:
 
-- [X] Regime Shifts
+- [X] Regime Shifts
 
 
 ```{r autostats_hms_cpue}
@@ -87,7 +87,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
+- [X] Database pull
 
 
 ## Public Availability

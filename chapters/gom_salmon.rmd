@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Jon Kocik, Justin Stevens and Tim Sheehan
@@ -16,11 +16,11 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-US Atlantic salmon historically ranged as far south as Long Island Sound but current populations are restricted to Maine. Populations south of Maine were extirpated in the 1800’s. The Gulf of Maine Atlantic Salmon Distinct Population Segment (GOM DPS) supported local commercial fisheries until a 1947 closure. Populations remained low (< 500) until the modern hatchery restoration programs started in the late 1960’s. This program led to relatively rapid population rebuilding (Figure ##).
+US Atlantic salmon historically ranged as far south as Long Island Sound but current populations are restricted to Maine. Populations south of Maine were extirpated in the 1800’s. The Gulf of Maine Atlantic Salmon Distinct Population Segment (GOM DPS) supported local commercial fisheries until a 1947 closure. Populations remained low (< 500) until the modern hatchery restoration programs started in the late 1960’s. This program led to relatively rapid population rebuilding (Figure ##).
 GOM Atlantic salmon abundance is tracked through adult counts at traps in large rivers and redd surveys in smaller coastal drainages (USASAC 2023). These fish typically return to freshwater to spawn after two winters at sea (2SW) with higher return rates than those spending one winter at sea (1SW) or longer. Most 2SW spawners are female hatchery-origin fish, making their return rate a crucial measure of marine productivity. Return rates are calculated from known smolt stocking numbers and locations and counts of returning hatchery adults to the Penobscot River (@stevens_modeling_2019). Together, abundance and return rates allow monitoring of population status (Figure ##).
 
 ## Key Results and Visualizations
-A significant and persistent decrease in marine productivity of North American Atlantic salmon populations occurred around 1990, which impacted U.S. adult spawner abundance (Figure ##). The GOM DPS was listed as Endangered under the ESA in 2000. Primary threats are dams, marine survival and climate change. Decreased productivity was linked to a regime shift that resulted in a cascading effect of ecosystem conditions driven by large scale oceanic changes.
+A significant and persistent decrease in marine productivity of North American Atlantic salmon populations occurred around 1990, which impacted U.S. adult spawner abundance (Figure ##). The GOM DPS was listed as Endangered under the ESA in 2000. Primary threats are dams, marine survival and climate change. Decreased productivity was linked to a regime shift that resulted in a cascading effect of ecosystem conditions driven by large scale oceanic changes.
 Atlantic salmon adult returns in 2022 were estimated at 1,520 with 85% originating from hatchery supplementation and 86% returning to the Penobscot River. Abundance remains critically low relative to recovery targets of 6,000 naturally-reared returns with only an estimated 218 natural returns. Return rate of Penobscot River hatchery origin 2SW salmon was 0.17%, over 2.5 times the rate for 2021 returns (Figure ##). While rates are comparable to the last decade they are significantly lower than in the past.
 
 ```{r plot_gom_salmonMAB}
@@ -37,7 +37,7 @@ Temporal scale: Annually 1972-2022
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_gom_salmon}
@@ -55,8 +55,7 @@ These large scale changes have impacted temperature, current patterns, and prima
 
 **Variable definitions**
 
-1) Return Year.  
-2) GoM Salmon Total = number of documented Atlantic salmon returns to Gulf of Maine rivers in number of animals  
+1) Return Year.  2) GoM Salmon Total = number of documented Atlantic salmon returns to Gulf of Maine rivers in number of animals  
 3) PSAR -2SW = return rates for 2 sea winter returns from hatchery smolt stockings in percentage.
 
 ```{r vars_gom_salmon}
@@ -69,8 +68,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
-- [X] Syntheses of published information
+- [X] Published Methods
+- [X] Syntheses of published information
 
 
 ## Public Availability

@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Lower trophic levels
+- [X] Lower trophic levels
 
 
 **Contributor(s)**: Christoper J. Patrick, David J. Wilcox, Jennifer R. Whiting, Anna K. Kenne, Erica R. Smith
@@ -37,8 +37,8 @@ Temporal scale: 1984-2022, annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
+- [X] Multiple System Drivers
+- [X] Regime Shifts
 
 
 ```{r autostats_SAV}
@@ -46,11 +46,11 @@ Temporal scale: 1984-2022, annual
 ```
 
 ## Implications
-Bay-wide: In 2022, 76,462 acres of SAV were mapped in the Chesapeake Bay.  This is 41% of the Bay SAV goal.
-•	Tidal Fresh Salinity Zone: 19,185 acres in 2022 achieving 93% of the area’s 20,602-acre goal.
-•	Oligohaline Salinity Zone: 7,145 acres in 2022 achieving 69% of the area’s 10,334-acre goal.
-•	Mesohaline Salinity Zone: 30,932 acres in 2022 achieving 26% of the area’s 120,306-acre goal.
-•	Polyhaline Salinity Zone: 19,200 acres in 2022 achieving 57% of the area’s 33,647-acre goal.
+Bay-wide: In 2022, 76,462 acres of SAV were mapped in the Chesapeake Bay.  This is 41% of the Bay SAV goal.
+•	Tidal Fresh Salinity Zone: 19,185 acres in 2022 achieving 93% of the area’s 20,602-acre goal.
+•	Oligohaline Salinity Zone: 7,145 acres in 2022 achieving 69% of the area’s 10,334-acre goal.
+•	Mesohaline Salinity Zone: 30,932 acres in 2022 achieving 26% of the area’s 120,306-acre goal.
+•	Polyhaline Salinity Zone: 19,200 acres in 2022 achieving 57% of the area’s 33,647-acre goal.
 The outlook toward achieving the outcome goal is uncertain.  Gains from 2021 to 2022 are positive, indicating an on-course trajectory, but these gains don’t yet offset the recent major declines observed in 2019.  Additional years of positive trajectory will help clarify whether this recent gain in 2022 is the start of a new positive trend toward higher levels of SAV across the Bay.
 
 ## Get the data
@@ -74,7 +74,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
+- [X] Published Methods
 
 
 ## Public Availability

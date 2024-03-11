@@ -1,7 +1,9 @@
-Package: placeholder
+Package: catalog
 Type: Book
-Title: Synthetic Indicator Cataloque
+Title: Synthetic Indicator Catalogue
 Description: Catalogue containing indicator used in the State of the Ecosystem Report and Beyond...
+Authors@R: c(person("Brandon", "Beltz", email = "brandon.beltz@noaa.gov", role = c("cre", "aut")),
+             person("Andy", "Beet", email = "andrew.beet@noaa.gov", role = "aut"))
 Version: 1.0.0
 License: file LICENSE
 Depends: 
@@ -9,7 +11,7 @@ Depends:
   rmarkdown,
   tidyverse,
   DT,
-  ecodata
+  ecodata@5.0.1
 Suggests:
   downlit
 Remotes: 

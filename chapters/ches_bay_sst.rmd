@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
+- [X] Oceanographic
 
 
 **Contributor(s)**: Ron Vogel, Bruce Vogt
@@ -35,9 +35,9 @@ Temporal scale: Only nighttime satellite overpasses are used in the seasonal ave
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
 
 
 ```{r autostats_ches_bay_sst}
@@ -45,12 +45,12 @@ Temporal scale: Only nighttime satellite overpasses are used in the seasonal ave
 ```
 
 ## Implications
-The warm water during the 2022-2023 winter were likely favorable to blue crabs (Callinectes sapidus) by reducing their overwintering mortality.
-
-The average temperatures of the spring season indicated favorable spawning, feeding, growth and recruitment conditions for key species such as striped bass (Morone saxatilis) and oysters (Crassostrea virginica). 
-
-The summer’s cooler than average conditions were likely favorable for striped bass by reducing temperature-driven stratification of the water that reduces oxygen solubility. Without the high stress of a stratified low-oxygen environment and temperatures that exceed suitability thresholds, striped bass may have experienced “normal” habitat occupancy, growth potential, and mortality. Similarly, cooler summer temperatures may have benefited Eelgrass (Zostera marina) which provide nursery habitats for many estuarine species (e.g., blue crab) by preventing heat-related die-backs of this critical foraging and nursery ground for many species. 
-
+The warm water during the 2022-2023 winter were likely favorable to blue crabs (Callinectes sapidus) by reducing their overwintering mortality.
+
+The average temperatures of the spring season indicated favorable spawning, feeding, growth and recruitment conditions for key species such as striped bass (Morone saxatilis) and oysters (Crassostrea virginica). 
+
+The summer’s cooler than average conditions were likely favorable for striped bass by reducing temperature-driven stratification of the water that reduces oxygen solubility. Without the high stress of a stratified low-oxygen environment and temperatures that exceed suitability thresholds, striped bass may have experienced “normal” habitat occupancy, growth potential, and mortality. Similarly, cooler summer temperatures may have benefited Eelgrass (Zostera marina) which provide nursery habitats for many estuarine species (e.g., blue crab) by preventing heat-related die-backs of this critical foraging and nursery ground for many species. 
+
 In the fall season, there were warmer-than-average temperatures in the Western Shore tributaries, but cooler-than-average temperatures on the Eastern Shore. Warmer conditions likely developed due to low precipitation, which leads to lower freshwater flow into the Bay. Relatively calm conditions may have contributed as well by reducing mixing. Warmer conditions on the Western Shore may have delayed migration of some species to marine waters.
 
 ## Get the data
@@ -61,8 +61,7 @@ In the fall season, there were warmer-than-average temperatures in the Western S
 
 **Variable definitions**
 
-1) sst: sea surface temperature 2023, Celsius 
-2) sst_climatol: sea surface temperature climatology 2007-2022, Celsius 
+1) sst: sea surface temperature 2023, Celsius 2) sst_climatol: sea surface temperature climatology 2007-2022, Celsius 
 3) sst_anomaly: sea surface temperature anomaly 2023 minus 2007-2022, Celsius
 
 ```{r vars_ches_bay_sst}
@@ -75,8 +74,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
-- [X] Database pull with analysis
+- [X] Published Methods
+- [X] Database pull with analysis
 
 
 ## Public Availability

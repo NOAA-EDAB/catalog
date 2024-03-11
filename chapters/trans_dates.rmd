@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
+- [X] Oceanographic
 
 
 **Contributor(s)**: Kevin Friedland
@@ -57,7 +57,7 @@ Temporal scale: Annual time series (1982 to 2023)
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_trans_dates}
@@ -87,7 +87,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
+- [X] Database pull
 
 
 ## Public Availability

@@ -1,0 +1,79 @@
+# test {#atestimages}
+
+**Description**: data
+
+**Indicator family**: 
+
+- [X] Oceanographic
+
+
+**Contributor(s)**: Ex: Brandon Beltz, Sarah Gaichas and Sean Lucey.
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+$R_t=j=p_{jt}y_{jt}$
+
+## Key Results and Visualizations
+testing images. Either option works. maybe straight markdown is cleaner since we get to see if the image appears in the issue
+
+NOTE: the path to the images is not intuitive. You need to specify the path with the `raw` "folder" in the url
+
+1. Using markdown: This works great.
+
+![Alexandrium cyst map](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/Alexandrium_distribution_2024.png){width=100%}
+
+2. Using rmarkdown: you can specify output width relative to space available. the image isnt rendered in this issue. Note again the path to the image has `raw` in the url
+
+```{r ,fig.align='center',out.width="100%"}
+knitr::include_graphics("https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/Alexandrium_distribution_2024.png")
+```
+
+
+## Indicator statistics 
+Spatial scale: _No response_
+
+Temporal scale: _No response_
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_atestimages}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Proceed as though this were a short summary of a typical discussion section in a paper.
+
+## Get the data
+
+**Point of contact**: [andrew.beet@noaa.gov](mailto:andrew.beet@noaa.gov){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1.
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
