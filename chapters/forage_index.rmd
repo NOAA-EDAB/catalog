@@ -1,10 +1,10 @@
-# Forage Fish Index
+# Forage Fish Index {#forage_index}
 
 **Description**: Aggregate forage fish biomass index from fish stomach contents
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Sarah Gaichas, James Gartland, Brian Smith, Anthony Wood, Elizabeth Ng, Michael Celestino, Katie Drew, Abigail Tyrell, and James Thorson
@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The amount of forage fish available in the ecosystem combined with the energy content of the forage species determines the amount of energy potentially available to predators in the ecosystem. Changes in the forage base could pose a risk to managed and protected species production. This spatially-explicit forage index estimated the combined biomass of 21 forage species using stomach contents information from 22 predatory fish species collected on bottom trawl surveys. 
-
+The amount of forage fish available in the ecosystem combined with the energy content of the forage species determines the amount of energy potentially available to predators in the ecosystem. Changes in the forage base could pose a risk to managed and protected species production. This spatially-explicit forage index estimated the combined biomass of 21 forage species using stomach contents information from 22 predatory fish species collected on bottom trawl surveys. 
+
 In addition to an index of forage abundance in each EPU, the coastwide center of gravity for the combined forage biomass was estimated. Consistent movement of the center of gravity towards the north or east indicates a distribution shift for combined forage fish.
 
 ## Key Results and Visualizations
@@ -59,7 +59,7 @@ Temporal scale: Spring (January-June), Fall (July-December)
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_forage_index}
@@ -67,15 +67,15 @@ Temporal scale: Spring (January-June), Fall (July-December)
 ```
 
 ## Implications
-The resulting indices for the Mid-Atlantic show a long term decrease in fall and overall higher forage fish in fall relative to spring (Fig. \@ref(fig:MAforagebio)), with highest forage biomass during fall in the early-1980s. 
-
-In New England, the forage index shows an overall higher forage fish biomass in fall relative to spring (Fig. \@ref(fig:NEforagebio)). There is a long-term increasing trend in the spring in GOM.  
-
+The resulting indices for the Mid-Atlantic show a long term decrease in fall and overall higher forage fish in fall relative to spring (Fig. \@ref(fig:MAforagebio)), with highest forage biomass during fall in the early-1980s. 
+
+In New England, the forage index shows an overall higher forage fish biomass in fall relative to spring (Fig. \@ref(fig:NEforagebio)). There is a long-term increasing trend in the spring in GOM.  
+
 Changes in the distribution of forage biomass also affects predator distribution. Since 1982, the fall center of gravity of forage fish has moved to the north and east. The spring forage center of gravity shows higher variability than fall, but no significant trend.
 
 ## Get the data
 
-**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [Sarah Gaichas (Sarah.Gaichas@noaa.gov)](mailto:Sarah Gaichas (Sarah.Gaichas@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::forage_index`
 
@@ -87,9 +87,9 @@ Fall Forage Fish Biomass Estimate = aggregate forage fish biomass months 7-12, u
 Fall Forage Fish Biomass Estimate SE = standard error of aggregate forage fish biomass months 7-12, units relative grams per stomach 
 Fall Eastward Forage Fish Center of Gravity =  average eastward location of forage fish biomass months 7-12, units kilometers      
 Fall Eastward Forage Fish Center of Gravity SE = standard error of average eastward location of forage fish biomass months 7-12, units kilometers 
-Fall Northward Forage Fish Center of Gravity =  Fall Northward Forage Fish Center of Gravity SE =  
-Spring Eastward Forage Fish Center of Gravity =  Spring Eastward Forage Fish Center of Gravity SE =  
-Spring Northward Forage Fish Center of Gravity =  Spring Northward Forage Fish Center of Gravity SE =
+Fall Northward Forage Fish Center of Gravity =  Fall Northward Forage Fish Center of Gravity SE =  Spring Eastward Forage Fish Center of Gravity =  
+Spring Eastward Forage Fish Center of Gravity SE =  Spring Northward Forage Fish Center of Gravity =  
+Spring Northward Forage Fish Center of Gravity SE =
 
 ```{r vars_forage_index}
 # Pull all var names
@@ -101,7 +101,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
+- [X] Published Methods
 
 
 ## Public Availability

@@ -1,10 +1,10 @@
-# Right Whale Abundance
+# Right Whale Abundance {#narw}
 
 **Description**: The data presented here are time series of the North Atlantic right whale population abundance estimates and calf abundance estimates.
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Daniel Linden; Richard Pace; New England Aquarium
@@ -16,16 +16,16 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Endangered North Atlantic right whales are approaching extinction. The latest population estimate for the beginning of 2022 indicates there 356 individuals remaining. The species has been experiencing an Unusual Mortality Event since 2017, which is ongoing.
-
+Endangered North Atlantic right whales are approaching extinction. The latest population estimate for the beginning of 2022 indicates there 356 individuals remaining. The species has been experiencing an Unusual Mortality Event since 2017, which is ongoing.
+
 Primary threats to the species—and primary drivers of the Unusual Mortality Event—are entanglement in fishing gear and [vessel strikes](https://www.fisheries.noaa.gov/national/marine-life-distress/2017-2024-north-atlantic-right-whale-unusual-mortality-event) . Climate change is also affecting every aspect of their survival. It is changing their ocean habitat, their migratory patterns, the location and availability of their prey, and even their risk of becoming entangled in fishing gear or struck by vessels.
 
 ## Key Results and Visualizations
-The North Atlantic right whale population was on a recovery trajectory until 2010, but has since declined (Fig. x).
-The most recent estimate of total population size in 2022 was 356 whales, with a 95% credible interval ranging from 346 to 363. The population continues to be in decline since 2011, though the short-term trend is equivocal due to the recent increase in survival. Reduced survival rates of adult females and diverging abundance trends between sexes have also been observed. 
-
-North Atlantic right whale calf counts have generally declined after 2009 to the point of having zero new calves observed in 2018 (Fig. x). However, since 2019, we have seen more calf births each year with 15 births in 2022 and 12 in 2023.
-
+The North Atlantic right whale population was on a recovery trajectory until 2010, but has since declined (Fig. x).
+The most recent estimate of total population size in 2022 was 356 whales, with a 95% credible interval ranging from 346 to 363. The population continues to be in decline since 2011, though the short-term trend is equivocal due to the recent increase in survival. Reduced survival rates of adult females and diverging abundance trends between sexes have also been observed. 
+
+North Atlantic right whale calf counts have generally declined after 2009 to the point of having zero new calves observed in 2018 (Fig. x). However, since 2019, we have seen more calf births each year with 15 births in 2022 and 12 in 2023.
+
 This year, the Unusual Mortality Event (UME) for North Atlantic right whales continued. Since 2017, the total UME right whale mortalities includes 36 dead stranded whales, 15 in the US and 21 in Canada. When alive but seriously injured whales (35) and sublethal injuries or ill whales (51) are taken into account, 122 individual whales are included in the UME. Recent research suggests that many mortalities go unobserved and the true number of mortalities are about three times the count of the observed mortalities [@pace_cryptic_2021]. The primary cause of death is “human interaction” from entanglements or vessel strikes.
 
 ### MidAtlantic
@@ -64,8 +64,8 @@ Temporal scale: Annual 1990 - 2022
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
+- [X] Multiple System Drivers
+- [X] Regime Shifts
 
 
 ```{r autostats_narw}
@@ -73,8 +73,8 @@ Temporal scale: Annual 1990 - 2022
 ```
 
 ## Implications
-Strong evidence exists to suggest that interactions between right whales and both the fixed gear fisheries in the U.S. and Canada and vessel strikes in the U.S. are contributing substantially to the decline of the species [@hayes_north_2018]. Further, right whale distribution has changed since 2010. New research suggests that recent climate driven changes in ocean circulation have resulted in right whale distribution changes driven by increased warm water influx through the Northeast Channel, which has reduced the primary right whale prey (Calanus fnmarchicus) in the central and eastern portions of the Gulf of Maine [@hayes_north_2018; @record_rapid_2019; @sorochan_north_2019]. Additional potential stressors include offshore wind development, which overlaps with important habitat areas used year-round by right whales, including mother and calf migration corridors and foraging habitat [@quintana-rizzo_residency_2021; @schick_striking_2009]. This area is also a primary right whale winter foraging habitat. Additional information can be found in the offshore wind section. Turbine presence and extraction of energy from the system could alter local oceanography @christiansen_emergence_2022. persistent foraging hotspots of right whales and seabirds overlap on Nantucket Shoals, where unique hydrography aggregates enhanced prey densities @white_spatial_2020 ;  @sorochan_north_2019.
-
+Strong evidence exists to suggest that interactions between right whales and both the fixed gear fisheries in the U.S. and Canada and vessel strikes in the U.S. are contributing substantially to the decline of the species [@hayes_north_2018]. Further, right whale distribution has changed since 2010. New research suggests that recent climate driven changes in ocean circulation have resulted in right whale distribution changes driven by increased warm water influx through the Northeast Channel, which has reduced the primary right whale prey (Calanus finmarchicus) in the central and eastern portions of the Gulf of Maine [@hayes_north_2018; @record_rapid_2019; @sorochan_north_2019]. Additional potential stressors include offshore wind development, which overlaps with important habitat areas used year-round by right whales, including mother and calf migration corridors and foraging habitat [@quintana-rizzo_residency_2021; @schick_striking_2009]. This area is also a primary right whale winter foraging habitat. Additional information can be found in the offshore wind section. Turbine presence and extraction of energy from the system could alter local oceanography @christiansen_emergence_2022. Persistent foraging hotspots of right whales and seabirds overlap on Nantucket Shoals, where unique hydrography aggregates enhanced prey densities @white_spatial_2020 ;  @sorochan_north_2019.
+
 The UMEs are under investigation and are likely the result of multiple drivers. For all large whale UMEs, human interaction appears to have contributed to increased mortalities, although investigations are not complete.
 
 ## Get the data
@@ -86,11 +86,10 @@ The UMEs are under investigation and are likely the result of multiple drivers. 
 **Variable definitions**
 
 "Palka_NARW_abundance_2023_10_02.csv 1)	Year.  2) lower95 = lower 95% confidence interval value in number of animals.  
-3) Median=median estimate of right whale abundance in number of animals.  
-4) Upper95= upper 95% confidence interval value in number of animals.   
+3) Median=median estimate of right whale abundance in number of animals.  4) Upper95= upper 95% confidence interval value in number of animals.   
 5) Mean= mean estimate of right whale abundance in number of animals.   
-6) SD=standard deviation of estimate of right whale abundance in number of animals.  Palka_NARW_Calves_1980_2023.csv 
-1)	Year.  2) Tot.Calves = total number of right whale calves born that year in number of animals. "
+6) SD=standard deviation of estimate of right whale abundance in number of animals.  Palka_NARW_Calves_1980_2023.csv 1)	Year.  
+2) Tot.Calves = total number of right whale calves born that year in number of animals. "
 
 ```{r vars_narw}
 # Pull all var names
@@ -102,7 +101,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
+- [X] Published Methods
 
 
 ## Public Availability

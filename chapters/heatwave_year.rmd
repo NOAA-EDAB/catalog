@@ -1,10 +1,10 @@
-# Marine Heatwave Events
+# Marine Heatwave Events {#heatwave_year}
 
 **Description**: Surface and bottom MHWs for 2023.
 
 **Indicator family**: 
 
-- [X] Oceanographic
+- [X] Oceanographic
 
 
 **Contributor(s)**: Vincent Saba, Joseph Caracappa
@@ -19,28 +19,28 @@ library(ecodata)
 Marine heatwaves (MHWs) measure not just temperature, but how long the ecosystem is subjected to the high temperature. They are driven by both atmospheric and oceanographic factors and can have dramatic impacts on marine ecosystems. Marine heatwaves are measured in terms of intensity (water temperature) and duration (the cumulative number of degree days) using measurements of sea surface temperature (surface MHWs) or models of bottom temperature (bottom MHWs). Recent research (@jacox_thermal_2020 and @jacox_global_2022) have modified the original MHW methodology,  @hobday_hierarchical_2016. The MHW indices for both surface and bottom use temperature time-series data that are detrended and the entire time-series are used as the climatology (e.g. 1982-2023 in this SOE). Surface MHW events are based on the criteria of a warming event that lasts for five or more days with sea surface temperatures above the 90th percentile of the historical daily climatology (1982-2023). Bottom MHW events are based on the criteria of a warming event that lasts for thirty or more days with bottom temperatures above the 90th percentile of the historical daily climatology (1982-2023). The longer time period criterion for bottom temperature is due to the longer persistence time of ocean bottom temperature anomalies in the U.S. northeast shelf (@chen_seasonal_2021). The new MHW indices can now discern extreme events that truly are “extreme” rather than occupying most of the year as was the case in the Gulf of Maine in 2021 (last year’s SOE). Because this approach moves from a fixed baseline to a shifting baseline by detrending ocean temperature data and using the entire time-series as a climatology, the global warming signal is removed and thus we are left with extremes in the variability of ocean temperature. To assess total heat stress on marine organisms, one can combine long-term ocean warming and MHWs. Therefore, the 2024 SOE also reports on long-term SST and bottom temperature time-series that clearly show the decadal ocean warming trend.
 
 ## Key Results and Visualizations
-Georges Bank 
-
-Surface MHWs
-In 2023, Georges Bank experienced three distinct surface MHWs beginning on January 26th (lasted 9 days), February 21st (lasted 15 days), and April 11th (lasted 9 days) respectively. In terms of intensity, these three surface MHWs did not rank in the top 10%.
-
-Bottom MHWs
-In 2023, Georges Bank did not experience any bottom MHWs. The strongest bottom MHW on record in Georges Bank was in the fall of 2016. Of the identified 13 bottom MHWs on Georges Bank between 1982 and 2023, four of the top five events in terms of maximum intensity occurred in the last decade.
-
-Gulf of Maine 
-
-Surface MHWs
-In 2023, the Gulf of Maine experienced two distinct surface MHWs beginning on July 19th (lasted 11 days) and September 7th (lasted 9 days). In terms of intensity, these two surface MHWs did not rank in the top 10%.
-
-Bottom MHWs
-In 2023, the Gulf of Maine experienced a bottom MHW that started on Feb 16th, peaked on May 20th, and lasted 195 days until the end of the time series data on Aug 29th. Of the identified 12 bottom MHWs in the Gulf of Maine between 1982 and 2023, this bottom MHW ranked 2nd on record in terms of intensity. The top three bottom MHWs in the Gulf of Maine occurred over the last decade.
-
-Middle Atlantic Bight 
-
-Surface MHWs
-In 2023, the Middle Atlantic Bight experienced two surface MHWs that began on July 8th (lasted 7 days) and September 7th (lasted 9 days). In terms of intensity, these two surface MHWs did not rank in the top 10%.
-
-Bottom MHWs
+Georges Bank 
+
+Surface MHWs
+In 2023, Georges Bank experienced three distinct surface MHWs beginning on January 26th (lasted 9 days), February 21st (lasted 15 days), and April 11th (lasted 9 days) respectively. In terms of intensity, these three surface MHWs did not rank in the top 10%.
+
+Bottom MHWs
+In 2023, Georges Bank did not experience any bottom MHWs. The strongest bottom MHW on record in Georges Bank was in the fall of 2016. Of the identified 13 bottom MHWs on Georges Bank between 1982 and 2023, four of the top five events in terms of maximum intensity occurred in the last decade.
+
+Gulf of Maine 
+
+Surface MHWs
+In 2023, the Gulf of Maine experienced two distinct surface MHWs beginning on July 19th (lasted 11 days) and September 7th (lasted 9 days). In terms of intensity, these two surface MHWs did not rank in the top 10%.
+
+Bottom MHWs
+In 2023, the Gulf of Maine experienced a bottom MHW that started on Feb 16th, peaked on May 20th, and lasted 195 days until the end of the time series data on Aug 29th. Of the identified 12 bottom MHWs in the Gulf of Maine between 1982 and 2023, this bottom MHW ranked 2nd on record in terms of intensity. The top three bottom MHWs in the Gulf of Maine occurred over the last decade.
+
+Middle Atlantic Bight 
+
+Surface MHWs
+In 2023, the Middle Atlantic Bight experienced two surface MHWs that began on July 8th (lasted 7 days) and September 7th (lasted 9 days). In terms of intensity, these two surface MHWs did not rank in the top 10%.
+
+Bottom MHWs
 In 2023, the Middle Atlantic Bight did not experience any bottom MHWs. The strongest bottom MHW occurred in the fall of 1985.
 
 ### MidAtlantic
@@ -79,7 +79,7 @@ Temporal scale: Daily
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_heatwave_year}
@@ -109,8 +109,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
-- [X] Database pull with analysis
+- [X] Published Methods
+- [X] Database pull with analysis
 
 
 ## Public Availability

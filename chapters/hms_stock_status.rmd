@@ -1,10 +1,10 @@
-# Highly Migratory Species Stock Status
+# Highly Migratory Species Stock Status {#hms_stock_status}
 
 **Description**: Summary of the most recent stock assessment results for each assessed Highly Migratory Species.
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Jennifer Cudney
@@ -35,7 +35,7 @@ Temporal scale: Annual summary of stock status
 
 **Synthesis Theme**:
 
-- [X] Regime Shifts
+- [X] Regime Shifts
 
 
 ```{r autostats_hms_stock_status}
@@ -65,7 +65,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Syntheses of published information
+- [X] Syntheses of published information
 
 
 ## Public Availability

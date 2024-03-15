@@ -1,10 +1,10 @@
-# Cold Pool Index
+# Cold Pool Index {#cold_pool}
 
 **Description**: Three annual cold pool indices (and standard error) for ss1959 through 2023
 
 **Indicator family**: 
 
-- [X] Oceanographic
+- [X] Oceanographic
 
 
 **Contributor(s)**: Joe Caracappa, Hubert du Pontavice, Vincent Saba, Zhuomin Chen
@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The cold pool is seasonal feature in the Mid-Atlantic Bight that is defined by it's low temperature (< 10 deg C), relative freshness ( < 34 psu), and moderate depth (20 -200m). It is typically present between June and September. Cold pool dynamics can influence the recruitment and settlement of fish species. This indicator set shows the intensity, extent, and persistence of the cold pool each year based on gridded model and reanalysis products.
-
+The cold pool is seasonal feature in the Mid-Atlantic Bight that is defined by it's low temperature (< 10 deg C), relative freshness ( < 34 psu), and moderate depth (20 -200m). It is typically present between June and September. Cold pool dynamics can influence the recruitment and settlement of fish species. This indicator set shows the intensity, extent, and persistence of the cold pool each year based on gridded model and reanalysis products.
+
 Changes in ocean temperature and circulation alter habitat features such as the seasonal cold pool, a 20–60 m thick band of cold, relatively uniform near-bottom water that persists from spring to fall over the mid and outer shelf of the MAB and southern flank of Georges Bank [@lentz_seasonal_2017; @chen_seasonal_2018]. The cold pool plays an essential role in the structuring of the MAB ecosystem. It is a reservoir of nutrients that feeds phytoplankton productivity, is essential fish spawning and nursery habitat, and affects fish distribution and behavior [@lentz_seasonal_2017; @miles_offshore_2021]. The average temperature of the cold pool is getting warmer over time [@miller_state-space_2016; @dupontavice_ocean_2022], and the area is getting smaller [@friedland_middle_2022].
 
 ## Key Results and Visualizations
@@ -71,7 +71,7 @@ Temporal scale: annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_cold_pool}
@@ -79,8 +79,8 @@ Temporal scale: annual
 ```
 
 ## Implications
-Changes in cold pool indicators can be signs of changes in regional/seasonal oceanographic patterns. This may impact the recruitment and behavior of species dependent on the cold pool.
-
+Changes in cold pool indicators can be signs of changes in regional/seasonal oceanographic patterns. This may impact the recruitment and behavior of species dependent on the cold pool.
+
 Changes in the cold pool habitat can affect species distribution, recruitment, and migration timing for multiple federally managed species. Southern New England-Mid Atlantic yellowtail flounder recruitment and settlement are related to the strength of the cold pool [@miller_state-space_2016]. The settlement of pre-recruits during the cold pool event represents a bottleneck in yellowtail life history, during which a local and temporary increase in bottom temperature negatively impacts the survival of the settlers. Including the effect of cold pool variations on yellowtail recruitment reduced retrospective patterns and improved the skill of short-term forecasts in a stock assessment model [@dupontavice_ocean_2022; @miller_state-space_2016]. The cold pool also provides habitat for the ocean quahog [@powell_ocean_2020; @friedland_middle_2022]. Growth rates of ocean quahogs in the MAB (southern portion of their range) have increased over the last 200 years whereas little to no change has been documented in the northern portion of their range in southern New England, likely a response to a warming and shrinking cold pool [@pace_two-hundred_2018].
 
 ## Get the data
@@ -92,10 +92,9 @@ Changes in the cold pool habitat can affect species distribution, recruitment, a
 **Variable definitions**
 
 1) Source: ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-2) year 3) cold_pool_index: measure of mean temperature within cold pool 
-4) se_cold_pool_index: standard error of cold_pool_index 5) persistence_index: measure of duration of cold pool 
-6) se_persistence_index: standard error of persistence_index 7) extent_index: measure of spatial extent of cold pool 
-8) se_extent_index: standard error of extent_index
+2) year 3) cold_pool_index: measure of mean temperature within cold pool 4) se_cold_pool_index: standard error of cold_pool_index 
+5) persistence_index: measure of duration of cold pool 6) se_persistence_index: standard error of persistence_index 
+7) extent_index: measure of spatial extent of cold pool 8) se_extent_index: standard error of extent_index
 
 ```{r vars_cold_pool}
 # Pull all var names
@@ -107,8 +106,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
-- [X] Syntheses of published information
+- [X] Published Methods
+- [X] Syntheses of published information
 
 
 ## Public Availability

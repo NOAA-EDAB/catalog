@@ -1,11 +1,11 @@
-# Speed and Scale of Offshore Wind Development in the Northeast
+# Speed and Scale of Offshore Wind Development in the Northeast {#wind_dev_speed}
 
 **Description**: The footprint and timeline of offshore wind development in the Northeast by 2030
 
 **Indicator family**: 
 
-- [X] Social
-- [X] Economic
+- [X] Social
+- [X] Economic
 
 
 **Contributor(s)**: Angela Silva
@@ -20,8 +20,8 @@ library(ecodata)
 The data presented here is a timeline of proposed construction in the Northeast of offshore wind development projects to 2030. The lease area color corresponds to the year of proposed development. Project componenet data (e.g., number of foundations, cable miles, GW, and acreage for each project are described in the table. Areas currently under planning for additional lease areas are outlined in red and totals reflected in the bottom of the table. This information is up to date as of December 2023 and project statistics come from Appendix E3 of the Revolution Wind Final Environmental Impact Statement Table E-1. This indicator does not reflect potential changes to schedules from recently terminated Power Purchase Agreements for some projects (Ocean Wind 1 and 2, Empire Wind 2, and Skipjack Wind).
 
 ## Key Results and Visualizations
-The colored chart in Fig.  also presents the offshore wind development timeline in the Greater Atlantic region with the estimated year that foundations would be constructed (matches the color of the wind areas). These timelines and data estimates are expected to shift, but represent the most recent information available as of July 2023. 
-
+The colored chart in Fig.  also presents the offshore wind development timeline in the Greater Atlantic region with the estimated year that foundations would be constructed (matches the color of the wind areas). These timelines and data estimates are expected to shift, but represent the most recent information available as of July 2023. 
+
 ![Speed of offshore wind development](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/Cumulative_Timeline_FullRegion_SoE2024_v2_2024.png){width=100%}
 
 ```{r plot_wind_dev_speedMAB}
@@ -38,7 +38,7 @@ Temporal scale: NA
 
 **Synthesis Theme**:
 
-
+
 
 
 ```{r autostats_wind_dev_speed}
@@ -68,7 +68,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Syntheses of published information
+- [X] Syntheses of published information
 
 
 ## Public Availability

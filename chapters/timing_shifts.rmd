@@ -1,13 +1,13 @@
-# Timing shifts: Risks to Seasonal Management
+# Timing shifts: Risks to Seasonal Management {#timing_shifts}
 
 **Description**: Shifts in the timing of life-cycle events are a risk to meeting seasonal and temporal management objectives.
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [X] Habitat
-- [X] Lower trophic levels
-- [X] Megafauna
+- [X] Oceanographic
+- [X] Habitat
+- [X] Lower trophic levels
+- [X] Megafauna
 
 
 **Contributor(s)**: Kimberly Hyde, Sarah Gaichas, Joe Carracappa
@@ -19,12 +19,14 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Changes in phenology, the seasonal timing of recurring life-cycle events, are a primary indicator of species responses to climate change [@staudinger_its_2019]. Observed phenological changes in the Northeast Shelf include spawning (REFS), migration [@crear_climate-influenced_2023], prey availability, and ...  The phenological responses are often species-specific and vary depending on the primary environmental driver [@staudinger_its_2019].
+Changes in phenology, the seasonal timing of recurring life-cycle events, are a primary indicator of species responses to climate change @staudinger_its_2019. Observed phenological changes in the Northeast Shelf include shifts in [spawning](https://noaa-edab.github.io/catalog/spawn_timing.html), migration @crear_climate-influenced_2023, prey availability, and seasonal phytoplankton bloom timing. Changes in the timing of physical drivers such as the onset of stratification and fall turnover timing directly and indirectly affect life-cycle events. The phenological responses are often species-specific and vary depending on the primary environmental driver @staudinger_its_2019.
 
 ## Key Results and Visualizations
-Migration timing of some tuna and large whale species has also changed. For example, tuna were caught in recreational fisheries 50 days earlier in the year in 2019 compared to 2002. [@crear_climate-influenced_2023]
-
-In Cape Cod Bay, peak spring habitat use by right and humpback whales has shifted 18-19 days later over time. [@pendleton_decadal-scale_2022]
+Migration timing of some tuna and large whale species has also changed. For example, tuna were caught in recreational fisheries 50 days earlier in the year in 2019 compared to 2002. [@crear_climate-influenced_2023]
+
+In Cape Cod Bay, peak spring habitat use by right and humpback whales has shifted 18-19 days later over time. [@pendleton_decadal-scale_2022] 
+
+Prolonged fall temperatures have been linked to the increased number of cold-stunned Kemp’s ridley sea turtles found in Cape Cod Bay [@griffin_warming_2019]
 
 
 ## Indicator statistics 
@@ -34,7 +36,7 @@ Temporal scale: Seasonal
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_timing_shifts}
@@ -42,9 +44,9 @@ Temporal scale: Seasonal
 ```
 
 ## Implications
-In progress
-
-Additionally, prolonged fall temperatures have been linked to the increased number of cold-stunned Kemp’s ridley sea turtles found in Cape Cod Bay [@griffin_warming_2019]
+Changes in phenology are key indicators of the effects of climate change on ecosystems and well documented in terrestrial ecosystems @cohen_global_2018. Trends in phenology are often not homogenous due to high variability in climate drivers and phenological responses @okeefe_forming_2013. Phenological changes are less well documented in marine ecosystems, but there are clear, documented shifts in the timing of seasonal marine abiotic factors including earlier [transitions](https://noaa-edab.github.io/catalog/trans_dates.html) from winter to spring temperatures in the Northeast Continental Shelf @friedland_changes_2020; @thomas_seasonal_2017. Lower trophic levels, phytoplankton and zooplankton, are able to quickly adapt to abiotic changes, which can lead to a mismatch with consumers and alter the food web structure. Differential shifts in phenology can drive population declines through increased predation or competition and/or declines in reproductive success @weiskopf_climate_2020
+
+From a management perspective, changes in species-specific phenology can alterfishery interactions and bycatch, as well as reduce the effectiveness of time/area closures to protect sensitive seasonal processes such as spawning. Highly migratory species are susceptible to incidental catch in a large number of fisheries using a variety of fishing gears @okeefe_forming_2013, and changes in migration timing may increase these unintended interactions if seasonal measures do not adjust to these changes.
 
 ## Get the data
 
@@ -61,7 +63,7 @@ No Data
 
 **Indicator Category**:
 
-- [X] Syntheses of published information
+- [X] Syntheses of published information
 
 
 ## Public Availability

@@ -1,11 +1,11 @@
-# Thermal Habitat Area
+# Thermal Habitat Area {#thermal_habitat_area}
 
 **Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2023
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [X] Habitat
+- [X] Oceanographic
+- [X] Habitat
 
 
 **Contributor(s)**: Joe Caracappa
@@ -54,7 +54,7 @@ Temporal scale: daily
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_thermal_habitat_area}
@@ -87,7 +87,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Extensive analysis, not yet published
+- [X] Extensive analysis, not yet published
 
 
 ## Public Availability

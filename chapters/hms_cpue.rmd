@@ -1,10 +1,10 @@
-# Highly Migratory Species POP Catch Per Unit Effort
+# Highly Migratory Species POP Catch Per Unit Effort {#hms_cpue}
 
 **Description**: CPUE from pelagic observer program (POP) observed hauls, presented as number of fish per haul, is provided for the northeast (i.e., the Northeast Coastal and Mid-Atlantic Bight fishing areas) by year/species from 1992-2022.
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Jennifer Cudney, Tobey Curtis
@@ -57,7 +57,7 @@ Temporal scale: 1992-2022, Annual
 
 **Synthesis Theme**:
 
-- [X] Regime Shifts
+- [X] Regime Shifts
 
 
 ```{r autostats_hms_cpue}
@@ -87,7 +87,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
+- [X] Database pull
 
 
 ## Public Availability

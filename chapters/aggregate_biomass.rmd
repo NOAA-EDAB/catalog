@@ -1,10 +1,10 @@
-# Aggregate Survey Biomass
+# Aggregate Survey Biomass {#aggregate_biomass}
 
 **Description**: Aggregate biomass from Northeast Fisheries Science Center (NEFSC) bottom trawl survey.
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
@@ -53,7 +53,7 @@ Temporal scale: Spring (March-May) and Fall (September-November)
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_aggregate_biomass}
@@ -94,8 +94,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
-- [X] Database pull with analysis
+- [X] Database pull
+- [X] Database pull with analysis
 
 
 ## Public Availability

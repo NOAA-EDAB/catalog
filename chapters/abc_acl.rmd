@@ -1,11 +1,11 @@
-# ABC or ACL for Managed Stocks
+# ABC or ACL for Managed Stocks {#abc_acl}
 
 **Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
 
 **Indicator family**: 
 
-- [X] Social
-- [X] Economic
+- [X] Social
+- [X] Economic
 
 
 **Contributor(s)**: Brandon Muffley, Jason, Didden, Julia Beaty, Jose Montanez, Karson Cisneros, Jessica Coakley, Hannah Hart, Kiley Dancy
@@ -58,7 +58,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_abc_acl}
@@ -66,7 +66,9 @@ Temporal scale: Annual
 ```
 
 ## Implications
-Need to write later once updated data has been added to the data file.
+Increasing/decreasing trends in the total ABC/ACL across all stocks can provide insights into potential changes to system productivity and fishing opportunities for Council managed species. While evaluating total estimated catch relative to the catch limit (ABC or ACL) can help provide insight into the degree of management control to constrain catch, limit overfishing, and identify potential underfishing situations (ie., not achieving the desired catch). 
+
+Since 2012, the total catch limits in the Mid-Atlantic have fluctuated slightly without any trend and the 2022 catch limit was similar to those set over the last four years. There is more variability at the species and sector level, but this suggests that overall stock abundance, productivity, and fishing opportunities have remained relatively stable within the Mid-Atlantic. Similarly, total estimated catch relative to the total catch limits in the Mid-Atlantic has fluctuated relatively little and without trend and has been below the total catch limit every year from 2012-2022 with a median of about 70 percent. This suggests that current catch limits are generally not constraining for most stocks and that there is some level of management control to ensure total catch remains below the catch limits to limit the risks of overfishing. In general, those fisheries where total catch exceeded the associated catch limit are associated with the recreational sector, particularly scup and black sea bass that have high biomass and availability.
 
 ## Get the data
 
@@ -90,7 +92,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Other
+- [X] Other
 
 
 **Indicator Category**:

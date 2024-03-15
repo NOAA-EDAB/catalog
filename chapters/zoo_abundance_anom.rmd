@@ -1,10 +1,10 @@
-# Zooplankton Abundance Anomalies
+# Zooplankton Abundance Anomalies {#zoo_abundance_anom}
 
 **Description**: Abundance anomalies for 20 zooplankton taxa
 
 **Indicator family**: 
 
-- [X] Lower trophic levels
+- [X] Lower trophic levels
 
 
 **Contributor(s)**: Ryan Morse, Kevin Friedland, Harvey Walsh, Mike Jones
@@ -19,8 +19,8 @@ library(ecodata)
 Zooplankton represent a critical trophic link from primary producers to fish in marine ecosystems.
 
 ## Key Results and Visualizations
-Abundance anomalies of small and large copepods have varied over time by EPU.
-Small bodied copepods and cnidarians show increasing trends in all EPUs. 
+Abundance anomalies of small and large copepods have varied over time by EPU.
+Small bodied copepods and cnidarians show increasing trends in all EPUs. 
 Large bodied copepods and euphausiids show no significant trend in any EPU.
 
 ### MidAtlantic
@@ -59,7 +59,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_zoo_abundance_anom}
@@ -77,11 +77,10 @@ Check these. If they are correct, we could be seeing the less energy dense zoopl
 
 **Variable definitions**
 
-All are unitless anomalies from the 1977-2020 mean abundance for each taxon. 
-Variables are taxa names:  (to be described by contributors) "Calfin"         "LgCopepods"     "SmCopepods"     
-"Cyclopoida"     "Diplostraca"    "Ostracoda"      "Cirripedia"     "Euphausiacea"  "Gammaridea"     
-"Hyperiidea"     "Mysidacea"      "Decapoda"       "Polychaeta"     "Echinodermata"  "Mollusca"     
-"Pteropod"      "Chaetognatha"   "Cnidaria"       "Tunicate"       "Protozoa"
+All are unitless anomalies from the 1977-2020 mean abundance for each taxon. Variables are taxa names:  (to be described by contributors) 
+"Calfin"         "LgCopepods"     "SmCopepods"     "Cyclopoida"     "Diplostraca"    "Ostracoda"      "Cirripedia"     "Euphausiacea"  
+"Gammaridea"     "Hyperiidea"     "Mysidacea"      "Decapoda"       "Polychaeta"     "Echinodermata"  "Mollusca"     "Pteropod"      
+"Chaetognatha"   "Cnidaria"       "Tunicate"       "Protozoa"
 
 ```{r vars_zoo_abundance_anom}
 # Pull all var names
@@ -93,10 +92,10 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
-- [X] Extensive analysis, not yet published
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+- [X] Published Methods
+- [X] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [X] Database pull with analysis
 
 
 ## Public Availability

@@ -1,11 +1,11 @@
-# Ecosytem overfishing
+# Ecosytem overfishing {#ppr}
 
 **Description**: Ecosystem overfishing is an ecological, and not legal, term that ultimately evaluates how much fish are caught in an ecosystem relative to how much can be produced. Several indices are used to evaluate ecosystem overfishing, the Ryther index, the Fogarty index, and primary production required.
 
 **Indicator family**: 
 
-- [X] Megafauna
-- [X] Economic
+- [X] Megafauna
+- [X] Economic
 
 
 **Contributor(s)**: Andrew Beet
@@ -17,15 +17,15 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The Ryther index is defined as total catch per unit area in the ecosystem [@link_global_2019]. The units are mt km^-2 year^-1. It measures the total removal of fish biomass by area in a Large Marine Ecosystem relative to how much that entire ecosystem can produce.  In general terms, the lower the Ryther index, the less likely an ecosystem will be experiencing ecosystem overfishing.
-
-The Fogarty index is defined as ratio of total catches to total primary productivity in an ecosystem [@link_global_2019]. The units are parts per thousand.
-
+The Ryther index is defined as total catch per unit area in the ecosystem [@link_global_2019]. The units are mt km^-2 year^-1. It measures the total removal of fish biomass by area in a Large Marine Ecosystem relative to how much that entire ecosystem can produce.  In general terms, the lower the Ryther index, the less likely an ecosystem will be experiencing ecosystem overfishing.
+
+The Fogarty index is defined as ratio of total catches to total primary productivity in an ecosystem [@link_global_2019]. The units are parts per thousand.
+
 A modification of the indices are used. Total landings are used in lieu of total catch. Accountng for total IUU (Illegal, unreported, and unregulated fishing) data, at the spatial footprint required, is not currently available. This will have the effect of reducing the value of the index (compared to using total catch, including IUU).
 
 ## Key Results and Visualizations
-Compared to thresholds based on global estimates of primary production and catch, the Ryther index shows elevated levels of fishing in the Gulf of Maine and the Mid Atlantic but not at a point considered "extreme" [@link_global_2019]. When accounting for regional primary productivity the Fogarty index shows low levels of fishing relative to these global thresholds.
-
+Compared to thresholds based on global estimates of primary production and catch, the Ryther index shows elevated levels of fishing in the Gulf of Maine and the Mid Atlantic but not at a point considered "extreme" [@link_global_2019]. When accounting for regional primary productivity the Fogarty index shows low levels of fishing relative to these global thresholds.
+
 Thresholds based on regional estimates of primary productivity, are not yet available. This work is ongoing
 
 ### MidAtlantic
@@ -112,9 +112,9 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
 
 
 ```{r autostats_ppr}
@@ -132,8 +132,7 @@ There is insufficient evidence to determine whether ecosystem overfishing in occ
 
 **Variable definitions**
 
-1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
-3. PP; Primary Production; mtC region^-1 year^-1
+1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
 # Pull all var names
@@ -145,7 +144,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
+- [X] Published Methods
 
 
 ## Public Availability

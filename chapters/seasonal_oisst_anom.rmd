@@ -1,11 +1,11 @@
-# Sea-surface temperature anomaly
+# Sea-surface temperature anomaly {#seasonal_oisst_anom}
 
 **Description**: Seasonal sea surface temperature anomaly
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [X] Habitat
+- [X] Oceanographic
+- [X] Habitat
 
 
 **Contributor(s)**: Brandon Beltz, Abigail Tyrell
@@ -54,7 +54,7 @@ Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summe
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_seasonal_oisst_anom}
@@ -84,7 +84,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull with analysis
+- [X] Database pull with analysis
 
 
 ## Public Availability

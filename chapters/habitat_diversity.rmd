@@ -1,13 +1,13 @@
-# Species Richness
+# Species Richness {#habitat_diversity}
 
-**Description**: Abundance data were extracted from the NEFSC’s SVDBS database using Survdat for 55 fish species regularly sampled on spring and fall NEFSC bottom trawl surveys (see SOE Tech Doc for a list). Data were converted to presence/absence for species richness modeling.
-
+**Description**: Abundance data were extracted from the NEFSC’s SVDBS database using Survdat for 55 fish species regularly sampled on spring and fall NEFSC bottom trawl surveys (see SOE Tech Doc for a list). Data were converted to presence/absence for species richness modeling.
+
 Species Richness was estimated using “joint” predictions of presence-absence in 100 randomly-drawn assemblages simulated by a joint species distribution model (part of the Northeast Regional Habitat Assessment), which was fitted to observations for 55 common species sampled by the NEFSC bottom trawl survey during the spring and fall of 2000-2019.  The model controls for differences in capture efficiency across survey vessels, permitting predictions on a common scale (here calibrated to the Albatross IV). See SOE Tech Doc for details of the model and environmental covariates included.
 
 **Indicator family**: 
 
-- [X] Habitat
-- [X] Megafauna
+- [X] Habitat
+- [X] Megafauna
 
 
 **Contributor(s)**: Chris Haak, Laurel Smith and Tori Kentner
@@ -26,12 +26,6 @@ Trends of declining richness are seen in the more southerly regions (i.e., the M
 
 ### MidAtlantic
 
-```{r plot_habitat_diversityMidAtlanticDiversity}
-# Plot indicator
-ggplotObject <- ecodata::plot_habitat_diversity(report= 'MidAtlantic', varName= 'Diversity')
-ggplotObject
-```
-
 ```{r plot_habitat_diversityMidAtlanticRichness}
 # Plot indicator
 ggplotObject <- ecodata::plot_habitat_diversity(report= 'MidAtlantic', varName= 'Richness')
@@ -39,12 +33,6 @@ ggplotObject
 ```
 
 ### NewEngland
-
-```{r plot_habitat_diversityNewEnglandDiversity}
-# Plot indicator
-ggplotObject <- ecodata::plot_habitat_diversity(report= 'NewEngland', varName= 'Diversity')
-ggplotObject
-```
 
 ```{r plot_habitat_diversityNewEnglandRichness}
 # Plot indicator
@@ -60,7 +48,7 @@ Temporal scale: Spring (March-May) and fall (September-November) NEFSC bottom tr
 
 **Synthesis Theme**:
 
-- [X] Ecosystem Reorganization
+- [X] Ecosystem Reorganization
 
 
 ```{r autostats_habitat_diversity}
@@ -90,7 +78,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull with analysis
+- [X] Database pull with analysis
 
 
 ## Public Availability

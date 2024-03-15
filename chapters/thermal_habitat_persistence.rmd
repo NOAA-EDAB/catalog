@@ -1,11 +1,11 @@
-# Thermal Habitat Persistence
+# Thermal Habitat Persistence {#thermal_habitat_persistence}
 
 **Description**: The number of days per year per 1/12 degree cell that exceeds a temperature threshold.
 
 **Indicator family**: 
 
-- [X] Oceanographic
-- [X] Habitat
+- [X] Oceanographic
+- [X] Habitat
 
 
 **Contributor(s)**: Joe Caracappa
@@ -36,7 +36,7 @@ Temporal scale: annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_thermal_habitat_persistence}
@@ -57,8 +57,7 @@ Using a high resolution bottom temperature product allows for localized heat str
 Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) and PSY (CMEM’s PSY global forecast bottom temperature) 
 min.depth: minimum of depth band max.depth: maximum of depth band 
 temp.threshold: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature) 
-longitude: longitude of cell center point latitude: latitude of cell center point 
-Ndays: number of days exceeding temp.threshold
+longitude: longitude of cell center point latitude: latitude of cell center point Ndays: number of days exceeding temp.threshold
 
 ```{r vars_thermal_habitat_persistence}
 # Pull all var names
@@ -70,7 +69,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Extensive analysis, not yet published
+- [X] Extensive analysis, not yet published
 
 
 ## Public Availability

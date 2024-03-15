@@ -1,10 +1,10 @@
-# Survey Impacts from Offshore Wind Development
+# Survey Impacts from Offshore Wind Development {#osw_survey_impact}
 
 **Description**: Offshore wind development is expected to have several impacts on federal and state surveys.
 
 **Indicator family**: 
 
-- [X] Social
+- [X] Social
 
 
 **Contributor(s)**: Douglas Christel
@@ -29,7 +29,7 @@ Temporal scale: Decadal
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_osw_survey_impact}
@@ -37,13 +37,13 @@ Temporal scale: Decadal
 ```
 
 ## Implications
-Proposed wind development areas interact with the region’s federal scientific surveys @friedland_spatial_2023. Scientific surveys are impacted by offshore wind in four ways:
- 1)  Exclusion of NOAA Fisheries’ sampling platforms from the wind development area due to operational and safety limitations;
- 2)  Impacts on the random-stratified statistical design that is the basis for scientific assessments, advice, and analyses; 
-3) Alteration of benthic and pelagic habitats, and airspace in and around the wind energy development, requiring new designs and methods to sample new habitats; and, 
-4) Reduced sampling productivity through navigation impacts of wind energy infrastructure on aerial and vessel survey operations. 
-
-Increased vessel transit between stations may decrease data collections that are already limited by annual days-at-sea day allocations. The total survey area overlap ranges from 1-70% for all Greater Atlantic federal surveys. The Gulf of Maine Cooperative Research Bottom Longline Survey (41%) and the Shrimp Survey (70%) have the largest percent overlap with the draft Gulf of Maine Wind Energy Areas. The remaining surveys range from 1-16% overlap.  Individual survey strata have significant interaction with wind, including the sea scallop survey (up to 96% of individual strata) and the bottom trawl survey (BTS, up to 60% strata overlap). Additionally, up to 50% of the southern New England North Atlantic right whale survey’s area overlaps with proposed project areas and  A region-wide survey mitigation program is underway @northeast_fisheries_science_center_us_fall_2022
+Proposed wind development areas interact with the region’s federal scientific surveys @friedland_spatial_2023. Scientific surveys are impacted by offshore wind in four ways:
+ 1)  Exclusion of NOAA Fisheries’ sampling platforms from the wind development area due to operational and safety limitations;
+ 2)  Impacts on the random-stratified statistical design that is the basis for scientific assessments, advice, and analyses; 
+3) Alteration of benthic and pelagic habitats, and airspace in and around the wind energy development, requiring new designs and methods to sample new habitats; and, 
+4) Reduced sampling productivity through navigation impacts of wind energy infrastructure on aerial and vessel survey operations. 
+
+Increased vessel transit between stations may decrease data collections that are already limited by annual days-at-sea day allocations. The total survey area overlap ranges from 1-70% for all Greater Atlantic federal surveys. The Gulf of Maine Cooperative Research Bottom Longline Survey (41%) and the Shrimp Survey (70%) have the largest percent overlap with the draft Gulf of Maine Wind Energy Areas. The remaining surveys range from 1-16% overlap.  Individual survey strata have significant interaction with wind, including the sea scallop survey (up to 96% of individual strata) and the bottom trawl survey (BTS, up to 60% strata overlap). Additionally, up to 50% of the southern New England North Atlantic right whale survey’s area overlaps with proposed project areas and a region-wide survey mitigation program is underway @northeast_fisheries_science_center_us_fall_2022
 
 ## Get the data
 
@@ -60,7 +60,7 @@ No Data
 
 **Indicator Category**:
 
-- [X] Syntheses of published information
+- [X] Syntheses of published information
 
 
 ## Public Availability

@@ -1,12 +1,12 @@
-# Aquaculture Production
+# Aquaculture Production {#aquaculture}
 
 **Description**: Oyster production: number of oysters harvested from aquaculture.
 
 **Indicator family**: 
 
-- [X] Megafauna
-- [X] Social
-- [X] Economic
+- [X] Megafauna
+- [X] Social
+- [X] Economic
 
 
 **Contributor(s)**: Christopher Schillaci, Maine DMR, NH DES, MA DMF, RI CRMC, MD DNR
@@ -37,7 +37,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_aquaculture}
@@ -69,7 +69,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Syntheses of published information
+- [X] Syntheses of published information
 
 
 ## Public Availability
