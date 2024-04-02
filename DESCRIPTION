@@ -1,6 +1,6 @@
 Package: catalog
 Type: Book
-Title: Synthetic Indicator Catalog
+Title: Northeast U.S. Ecosystem Indicator Catalog
 Description: Catalog containing indicator used in the State of the Ecosystem Report and Beyond...
 Authors@R: c(person("Brandon", "Beltz", email = "brandon.beltz@noaa.gov", role = c("cre", "aut")),
              person("Andy", "Beet", email = "andrew.beet@noaa.gov", role = "aut"))

@@ -1,5 +1,5 @@
 
-# [Synthetic Indicator Catalog](https://noaa-edab.github.io/catalog/)
+# [Northeast U.S. Ecosystem Indicator Catalog](https://noaa-edab.github.io/catalog/)
 
 [![build-book](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml)
 [![gitleaks](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml)

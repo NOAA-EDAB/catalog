@@ -40,7 +40,7 @@ bookdown::epub_book: default
 #     toc: 
 #       collapse: section
 #       before: |
-#         <li><a href="./">Synthetic Indicator Catalog</a></li>
+#         <li><a href="./">Northeast U.S. Ecosystem Indicator Catalog</a></li>
 #       after: |
 #         <li><a href="https://github.com/NOAA-EDAB/catalog" target="blank">github repo</a></li>
 # #    edit: https://github.com/andybeet/test-doc/edit/master/%s
