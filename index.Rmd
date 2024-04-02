@@ -1,5 +1,5 @@
 ---
-title: "Synthetic Indicator Catalogue"
+title: "Synthetic Indicator Catalog"
 author: "Northeast Fisheries Science Center"
 date: "`r format(Sys.Date(), '%e %B %Y')`"
 site: bookdown::bookdown_site
@@ -14,7 +14,7 @@ always_allow_html: true
 link-citations: true
 github-repo: NOAA-EDAB/catalog
 url: https://noaa-edab.github.io/catalog/
-description: "This catalogue holds information on available datasets and indicators."
+description: "This catalog holds information on available datasets and indicators."
 ---
 
 # Introduction {-}
