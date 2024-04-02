@@ -19,12 +19,11 @@ description: "This catalog holds information on available datasets and indicator
 
 # Introduction {-}
 
+The purpose of this document is to house information about the indicators that are developed and used for integrated ecosystem assessment on the Northeast Shelf Large Marine Ecosystem by the Ecosystem Dynamics and Assessment Branch at the Northeast Fisheries Science Center (see figure, below). Many of the pages included in this document expand upon the indicators that are featured in the State of the Ecosystem reports produced for the Mid-Atlantic and New England regions.
 
-The purpose of this document is to collate the indicator information and methods used to inform the data driven products on the Northeast Shelf Large Marine Ecosystem by the Ecosystem Dynamics and Assessment Branch at the Northeast Fisheries Science Center (see figure, below). 
+The information included in this document is contributed by a large variety of collaborators and contact information is available in each chapter. When possible, provided data is available in `ecodata`, an R package that holds the latest version of the data available. 
 
-The information included in this document is contributed by a large variety of callaborators and contact information is available in each chapter. When possible, provided data is available in `ecodata`, an R package that holds the lastest version of the data available. 
-
-The metadata for each indicator (in accordance with the [Public Access to Research Results (PARR) directive](http://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)) and the methods used to construct each indicator are described in the subsequent chapters or in the Technical Documentation, with each chapter title corresponding to an indicator or analysis.
+The metadata for each indicator (in accordance with the [Public Access to Research Results (PARR) directive](http://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)) are described in the subsequent chapters, with each chapter title corresponding to an indicator or analysis. The methods used to develop each indicator can be found in the Technical Documentation ([tech-doc](https://noaa-edab.github.io/tech-doc/)).
 
 
 ```{r setup, echo=FALSE, message = FALSE, warning = FALSE}
