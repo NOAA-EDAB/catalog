@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Lower trophic levels
+- [X] Lower trophic levels
 
 
 **Contributor(s)**: Jeffrey Runge, Emma Dullaert, Cameron Thompson, Rebecca Jones
@@ -16,15 +16,17 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The Wilkinson Basin Time Series Station (WBTS: 257 m depth), located in the northwest corner of Wilkinson Basin, was established in December, 2004. For about fifteen years it was maintained by PIs at the University of New Hampshire and University of Maine, funded through various short term research projects with several funding gaps in coverage. In 2019, with funding from BOEM and NOPP, the time series was integrated into the Gulf of Maine Marine Biodiversity Observation Network (GoM MBON), administered by NERACOOS. The WBTS station was favored because of the existing time series data, the proximity to coastal ports allowing single-day missions to collect samples and its strategic importance representing the deep western GoM overwintering habitat for the planktonic copepod, Calanus finmarchicus, a key sentinel variable in the GoM pelagic food web.
-
+The Wilkinson Basin Time Series Station (WBTS: 257 m depth), located in the northwest corner of Wilkinson Basin, was established in December, 2004. For about fifteen years it was maintained by PIs at the University of New Hampshire and University of Maine, funded through various short term research projects with several funding gaps in coverage. In 2019, with funding from BOEM and NOPP, the time series was integrated into the Gulf of Maine Marine Biodiversity Observation Network (GoM MBON), administered by NERACOOS. The WBTS station was favored because of the existing time series data, the proximity to coastal ports allowing single-day missions to collect samples and its strategic importance representing the deep western GoM overwintering habitat for the planktonic copepod, Calanus finmarchicus, a key sentinel variable in the GoM pelagic food web.
+
 Data collected at the WBTS station include CTD- rosette measurements of salinity, temperature and chlorophyll a concentration, microscopic enumeration of phytoplankton species, bacterial and microplankton measurements using flow cytometer, eDNA measurements, measurement of total mesozooplankton biomass and microscopic enumeration of zooplankton species collected with a 0.75 m, 200µm ring net towed from near bottom to the surface. Only the mesozooplankton biomass data are reported for the 2024 SOE; a fuller reporting of the time series data awaits further vetting and publication of the data in the primary literature.
 
 ## Key Results and Visualizations
-Planktonic copepods typically constituted the great majority of catch of the vertically integrated ring net tow. Larger microzooplankton, like euphausids and jellyfish, are underrepresented. Chaetognaths, round tentaculate ctenophores, notably Pleurobrachia, and salps were captured, although the latter tend to degrade in formaldehyde over time and are likely underrepresented. Given these limitations, the mesozooplankton dry mass data allow comparison of biomass across pelagic ecosystems where similar measurements have been taken. Notably, at WBTS, the copepodid stages of Calanus finmarchicus typically make up 50% or more of the total mesozooplankton biomass in spring through fall. 
-
-Following the seasonal life cycle of C. finmarchicus, mesozooplankton biomass is lowest in late winter and highest in summer. Biomass levels of 10-20 g m-2 observed in 2005-2008 in summer and winter were among the highest observed across the subarctic North Atlantic Ocean, including the Gulf of St. Lawrence (@de_lafontaine_pelagic_1991; @sorochan_north_2019), Scotian Shelf (@casault_optical_2022) and the Norwegian and Barents Seas (@melle_north_2014; @skjoldal_size-fractioned_2022). The mesozooplankton biomass collected at WBTS in late summer (Aug-Oct) and winter (Nov-Mar) has since declined significantly, by about 50%, between the start of the time series in 2005-2008 and 2021-2022 (see figure). The summer and winter biomass levels reflect the predominance of the larger, lipid rich late stage C. finmarchicus (CIV-CVI) as compared to spring, which is dominated by younger C. finmarchicus stages CI-CIV.
-
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/master/workshop/images/WBTS_Mesozooplankton_BIomass_2005-2022_Runge_Dullaert-Jeffrey_Runge_2024.jpg){width=100%}
+
+Planktonic copepods typically constituted the great majority of catch of the vertically integrated ring net tow. Larger microzooplankton, like euphausids and jellyfish, are underrepresented. Chaetognaths, round tentaculate ctenophores, notably Pleurobrachia, and salps were captured, although the latter tend to degrade in formaldehyde over time and are likely underrepresented. Given these limitations, the mesozooplankton dry mass data allow comparison of biomass across pelagic ecosystems where similar measurements have been taken. Notably, at WBTS, the copepodid stages of Calanus finmarchicus typically make up 50% or more of the total mesozooplankton biomass in spring through fall. 
+
+Following the seasonal life cycle of C. finmarchicus, mesozooplankton biomass is lowest in late winter and highest in summer. Biomass levels of 10-20 g m-2 observed in 2005-2008 in summer and winter were among the highest observed across the subarctic North Atlantic Ocean, including the Gulf of St. Lawrence (@de_lafontaine_pelagic_1991; @sorochan_north_2019), Scotian Shelf (@casault_optical_2022) and the Norwegian and Barents Seas (@melle_north_2014; @skjoldal_size-fractioned_2022). The mesozooplankton biomass collected at WBTS in late summer (Aug-Oct) and winter (Nov-Mar) has since declined significantly, by about 50%, between the start of the time series in 2005-2008 and 2021-2022 (see figure). The summer and winter biomass levels reflect the predominance of the larger, lipid rich late stage C. finmarchicus (CIV-CVI) as compared to spring, which is dominated by younger C. finmarchicus stages CI-CIV.
+
 The interannual pattern by season of zooplankton dry weight at the WBTS stations reflect a decline in abundance of C. finmarchicus, which because of its large size relative to other planktonic copepods, brings the recent biomass levels down despite increases in other, smaller planktonic copepod species, like species of Centropages, Pseudocalanus, Metridia and Oithona @runge_sustained_2023.
 
 
@@ -35,9 +37,9 @@ Temporal scale: Monthly samples (with data gaps) between 2005-2022
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
 
 
 ```{r autostats_wbts_mesozooplankton}
@@ -45,10 +47,10 @@ Temporal scale: Monthly samples (with data gaps) between 2005-2022
 ```
 
 ## Implications
-A prominent result of the WBTS time series is confirmation of substantial reduction mesozooplankton biomass, reflecting a decline in abundance of the energy-rich stages of the planktonic copepod, Calanus finmarchicus, in the Gulf of Maine. Mean surface layer temperatures in the Gulf of Maine were at a record high in 2021, and the recent data indicate a shift in planktonic biodiversity away from the Calanus-dominated subarctic food web that has been the historic foundation for Gulf of Maine ecosystem services @runge_sustained_2023.
-
-The primary drivers of C. finmarchicus abundance in the Gulf of Maine, analyzed by @ji_drivers_2022, are local production in spring and early summer, external supply from the surface layer Nova Scotia Current and deep water through the Northeast Channel, and predation from both visual (e.g. herring, sandlance) and non-visual (e.g. euphausids, chaetognaths, jellyfish and other invertebrates) predators. The WBTS time series data here indicate a shifting phenology toward higher phytoplankton biomass available in fall, winter and early spring, supporting local production in spring and early summer not only for C. finmarchicus, but also for other, smaller mesozooplankton species (e.g. copepods in the genera Oithona, Pseudocalanus, Centropages and Metridia). This shifting phenology, allowing local late winter-early spring copepod reproduction, is consistent with observations of sustained C. finmarchicus abundance in spring. However, a combination of summer-fall predation and reduced external supply, associated with a shift in transport away from cold, Calanus-rich subarctic water to warm, Calanus-poor Atlantic slope water is likely responsible for the substantial reduction in the energy-rich stock of C. finmarchicus in the western Gulf of Maine in summer and fall, the period during which forage fish (e.g. herring and sand lance) as well as North Atlantic right whales, accumulate lipids to sustain their growth and reproduction. 
-
+A prominent result of the WBTS time series is confirmation of substantial reduction mesozooplankton biomass, reflecting a decline in abundance of the energy-rich stages of the planktonic copepod, Calanus finmarchicus, in the Gulf of Maine. Mean surface layer temperatures in the Gulf of Maine were at a record high in 2021, and the recent data indicate a shift in planktonic biodiversity away from the Calanus-dominated subarctic food web that has been the historic foundation for Gulf of Maine ecosystem services @runge_sustained_2023.
+
+The primary drivers of C. finmarchicus abundance in the Gulf of Maine, analyzed by @ji_drivers_2022, are local production in spring and early summer, external supply from the surface layer Nova Scotia Current and deep water through the Northeast Channel, and predation from both visual (e.g. herring, sandlance) and non-visual (e.g. euphausids, chaetognaths, jellyfish and other invertebrates) predators. The WBTS time series data here indicate a shifting phenology toward higher phytoplankton biomass available in fall, winter and early spring, supporting local production in spring and early summer not only for C. finmarchicus, but also for other, smaller mesozooplankton species (e.g. copepods in the genera Oithona, Pseudocalanus, Centropages and Metridia). This shifting phenology, allowing local late winter-early spring copepod reproduction, is consistent with observations of sustained C. finmarchicus abundance in spring. However, a combination of summer-fall predation and reduced external supply, associated with a shift in transport away from cold, Calanus-rich subarctic water to warm, Calanus-poor Atlantic slope water is likely responsible for the substantial reduction in the energy-rich stock of C. finmarchicus in the western Gulf of Maine in summer and fall, the period during which forage fish (e.g. herring and sand lance) as well as North Atlantic right whales, accumulate lipids to sustain their growth and reproduction. 
+
 A value of the NERACOOS time series is the timely provision of plankton indicators at seasonal scales. For example, data from summer 2022 indicate a rebound in Calanus abundance (@runge_sustained_2023) which has implications for the present condition of North Atlantic right whale foraging habitat as well as for forage fish recruitment and condition in the Gulf of Maine. Further monitoring and analysis of hydrographic and other data is needed to understand whether 2022 conditions represent a longer term shift or whether external supply continues to constrain C. finmarchicus abundance in the Gulf of Maine. While time series samples will indicate the abundance trends of some invertebrate predators (e.g. carnivorous copepods and chaetognaths), supplemental data are needed to understand trends in euphausids, jellyfish, and visual predators.
 
 ## Get the data
@@ -66,7 +68,7 @@ No Data
 
 **Indicator Category**:
 
-- [X] Extensive analysis, not yet published
+- [X] Extensive analysis, not yet published
 
 
 ## Public Availability
