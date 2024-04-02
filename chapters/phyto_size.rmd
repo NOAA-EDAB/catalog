@@ -1,12 +1,10 @@
 # Phytoplankton Size Class {#phyto_size}
 
-**Description**: Satellite derived phytoplankton data including chlorophyll concentration, phytoplankton size class, and primary production for the Northeast Continental Shelf and ecological production units.
-
-(To be expanded)
+**Description**: Satellite derived phytoplankton size class for the Northeast Continental Shelf and ecological production units.
 
 **Indicator family**: 
 
-- [X] Lower trophic levels
+- [X] Lower trophic levels
 
 
 **Contributor(s)**: Kimberly Hyde
@@ -18,18 +16,16 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Phytoplankton are key biological regulators of the structure and function of most marine ecosystems. They are the foundation of the marine food web and are the primary food source for zooplankton and filter feeders such as shellfish. Numerous environmental and oceanographic factors interact to drive the abundance, composition, spatial distribution, seasonal timing and productivity of phytoplankton. Satellite derived measurements of chlorophyll, the dominant photosynthetic pigment in phytoplankton, are used to estimate total phytoplankton biomass. The size structure of the phytoplankton community influences important biogeochemical and ecological processes, including transfer of energy through the marine food web. Phytoplankton growth depends on the availability of carbon dioxide, sunlight and nutrients and their growth rates can be influenced by water temperature, water depth, wind, and grazing pressure. Primary productivity is a measure of the amount of carbon produced by phytoplankton.
-
+Phytoplankton are key biological regulators of the structure and function of most marine ecosystems. They are the foundation of the marine food web and are the primary food source for zooplankton and filter feeders such as shellfish. Numerous environmental and oceanographic factors interact to drive the abundance, composition, spatial distribution, seasonal timing and productivity of phytoplankton. The size structure of the phytoplankton community influences important biogeochemical and ecological processes, including transfer of energy through the marine food web.
+
 The unique physical characteristics of the Northeast U.S. continental shelf help make it among the most productive continental shelf systems in the world influenced by both bottom-up (e.g. nutrient concentrations, light availability, and mixing/stratification) and top-down (e.g. grazing) controls. Phytoplankton biomass, composition, and productivity all have high spatial, seasonal and interannual variability. The most pronounced spatial pattern is the decrease in phytoplankton biomass from the coast to the shelf break. Georges Bank and Nantucket Shoals are shallow regions that are well mixed by tides. This mixing supplies sufficient nutrients to support phytoplankton growth throughout the year. In other regions, blooms of large diatom species occur on a seasonal cycle when growing conditions are ideal.
 
 ## Key Results and Visualizations
-The seasonal cycles of phytoplankton size distribution are typically dominated by larger-celled microplankton during the winter-spring and fall bloom periods, while smaller-celled nanoplankton dominate during the warmer summer months. In 2023, MAB total chlorophyll was below average in early spring, near average through the summer and above average throughout the fall. A peak in primary production occurred in summer, followed by an above average productivity associated with the early fall bloom. Phytoplankton size class distributions were near average for most of the year, except during the early fall bloom.
-
-Total chlorophyll concentrations on Georges Bank were above average for most of the year. The early winter bloom was most likely associated with diatoms, however the above average chlorophyll, primary production and microplankton fraction from April through August can be attributed to the dinoflagellate Tripos muelleri.
-
-Total chlorophyll concentrations in the Gulf of Maine were above average for most of the year. The early winter bloom was most likely associated with diatoms, however the record high chlorophyll, primary production and microplankton fraction from April through August can be attributed to the dinoflagellate Tripos muelleri.
-
-There is high interannual variability of the seasonal phytoplankton cycle. At the monthly scale, MAB chlorophyll and primary production are increasing during January and there has been a decrease in September chlorophyll, likely due to extension of the [summer stratification](https://noaa-edab.github.io/catalog/transition-dates.html) and delayed fall turnover. Fall and winter chlorophyll and primary production are increasing on Georges Bank and Gulf of Maine.
+The seasonal cycles of phytoplankton size distribution are typically dominated by larger-celled microplankton during the winter-spring and fall bloom periods, while smaller-celled nanoplankton dominate during the warmer summer months. Phytoplankton size class distributions were near average for most of the year, except during the early fall bloom.
+
+On Georges Bank, the early winter bloom was most likely associated with diatoms, however the above average microplankton fraction from April through August can be attributed to the dinoflagellate Tripos muelleri.
+
+In the Gulf of Maine, the early winter bloom was most likely associated with diatoms, however the record high microplankton fraction from April through August can be attributed to the dinoflagellate Tripos muelleri.
 
 ### MAB
 
@@ -63,7 +59,7 @@ Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to current yea
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_phyto_size}
@@ -81,17 +77,9 @@ Phytoplankton abundance, productivity, diversity, cell size, phenology, and carb
 
 **Variable definitions**
 
-1) Chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters; mg m^-3 
-2) Chlorophyll anomaly; Ratio of chlorophyll _a_ concentration to the long-term (1998 to present year) climatology; unitless (ratio) 
-3) Primary productivity; Daily net primary production of biomass expressed as carbon per unit volume in seawater per day; gCarbon m^-2 d^-1 
-4) Primary productivity anomaly;  Ratio of net primary production to the long-term (1998 to present year) climatology; unitless (ratio) 
-5) Microplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the microplankton (20-200 µm) fraction; mg m^-3 
-6) Nanoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the nanoplankton (2-20 µm) fraction; mg m^-3 
-7) Picoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the picoplankton (0.2-2 µm) fraction; mg m^-3 
-8) Microplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from microplankton (20-200 µm); (percent) 
-9) Nanoplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from nanoplankton (2-20 µm); (percent) 
-10) Picoplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from picoplankton (0.2-2 µm); (percent) 
-11) Annual summed primary production - TBD
+1) Microplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from microplankton (20-200 µm); (percent) 
+2) Nanoplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from nanoplankton (2-20 µm); (percent) 
+3) Picoplankton fraction; The fraction of total chlorophyll concentration in the near surface (first euphotic depth) waters from picoplankton (0.2-2 µm); (percent)
 
 ```{r vars_phyto_size}
 # Pull all var names
@@ -103,8 +91,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
-- [X] Other
+- [X] Published Methods
+- [X] Other
 
 
 **Indicator Category**:
