@@ -8,11 +8,24 @@ body:
     attributes:
       value: |
         Please use the fields below to identify the bug and provide related information we can use to troubleshoot. Thanks.
-  - type: input
-    id: contact1
+  - type: textarea
+    id: bugdesc
     attributes:
-      label: Primary Contact
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@noaa.gov
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
     validations:
       required: true
+  - type: textarea
+    id: bugdisc
+    attributes:
+      label: Describe the situation
+      description: How did you discover this bug? What were you trying to accomplish?
+    validations:
+      required: true
+  - type: textarea
+    id: addinfo
+    attributes:
+      label: Additional information
+      description: Add any other information about the problem here.
+    validations:
+      required: false
