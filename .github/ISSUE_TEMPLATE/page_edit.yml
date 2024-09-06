@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for contributing to the State of the Ecosystem reports! Please reach out to nefsc.soe.leads@noaa.gov with any questions or concerns.
+        Please use this form to suggest edits to an indicator catalog page.
   - type: input
     id: contact1
     attributes:
@@ -16,124 +16,106 @@ body:
       placeholder: ex. email@noaa.gov
     validations:
       required: true
-  - type: input
-    id: contact2
-    attributes:
-      label: Secondary Contact
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@noaa.gov
-    validations:
-      required: false
-  - type: input
-    id: data_name
-    attributes:
-      label: Data Name (This will be the displayed title in Catalog)
-      description: Enter the name of the data set.
-      placeholder: Ex. NE Shelf Annual Sea Surface Temperature
-    validations:
-      required: true
   - type: dropdown
-    id: indicator_name
+    id: catalog_page
     attributes:
-      label: Indicator Name (as exists in ecodata)
+      label: Choose a catalog page to suggest edits
       description: Select from the drop down
       options:
-        - ESP_gsi
-        - ESP_heatwave
-        - ESP_heatwave_cod
-        - ESP_seasonal_chl
-        - ESP_seasonal_oisst_anom
-        - ESP_seasonal_pp
-        - ESP_sf
-        - HMS_species_distribution
-        - SAV
-        - abc.acl
-        - aggregate_biomass
-        - aquaculture
-        - bennet
-        - blue_runner
-        - bottom_temp
-        - bottom_temp_comp
-        - bottom_temp_glorys
-        - bottom_temp_seasonal_gridded
-        - calanus_stage
-        - ch_bay_sal
-        - ch_bay_temp
-        - ches_bay_sf
-        - ches_bay_sst
-        - ches_bay_wq
-        - chl_pp
-        - coast
-        - cold_pool
-        - cold_pool_sf
-        - comdat
-        - commercial_div
-        - condition
-        - energy_density
-        - engagement
-        - epu_sf
-        - exp_n
-        - forage_anomaly
-        - forage_index
-        - grayseal
-        - gsi
-        - gsi_old
-        - habitat_diversity
-        - habitat_occupancy
-        - habitat_vulnerability
-        - habs
-        - harborporpoise
-        - heatwave
-        - heatwave_anom_gridded
-        - heatwave_peak_date
-        - heatwave_year
-        - hms_category
-        - hms_cpue
-        - hms_landings
-        - hms_stock_status
-        - hp_density
-        - hudson_river_flow
-        - ichthyo_diversity
-        - long_line_survey
-        - long_term_sst
-        - longlinesurvey_sf
-        - lps_sharks
-        - mab_inshore_survey
-        - mass_inshore_survey
-        - nao
-        - narw
-        - ne_inshore_survey
-        - ne_inshore_survey_species
-        - observed_sharks
-        - phyto_size
-        - ppr
-        - productivity_anomaly
-        - rec_hms
-        - recdat
-        - sandlance
-        - seabird_mab (seabird_MAB)
-        - seabird_ne
-        - seal_pups
-        - seasonal_bt_anomaly_gridded
-        - seasonal_oisst_anom
-        - seasonal_sst_anomaly_gridded
-        - slopewater
-        - species_dist
-        - species_groupings
-        - stock_status
-        - stom_fullness
-        - storminess
-        - survey_shannon
-        - trans_dates
-        - wcr
-        - wea_landings_rev
-        - wind_dev_speed
-        - wind_occupancy
-        - wind_port
-        - wind_revenue
-        - zoo_abundance_anom
-        - zoo_diversity
-        - zoo_regime
-        - zoo_strat_abun
+        - Introduction
+        - 1 Chesapeake Bay Water Quality Standards Attainment
+        - 2 Chlorophyll and Primary Production
+        - 3 Phytoplankton Size Class
+        - 4 Harmful Algal Blooms
+        - 5 Submerged Aquatic Vegetation
+        - 6 Seasonal Variation of Calanus finmarchicus
+        - 7 Mesozooplankton Biomass at Wilkinson Basin
+        - 8 Zooplankton Abundance Anomalies
+        - 9 Zooplankton Diversity
+        - 10 Aggregate Survey Biomass
+        - 11 Inshore Survey (Mid Atlantic)
+        - 12 Inshore Survey (Massachusetts)
+        - 13 Inshore Survey (New England)
+        - 14 Survey Impacts from Offshore Wind Development
+        - 15 Relative condition
+        - 16 Species Richness
+        - 17 Species Distribution Indicators
+        - 18 Forage Fish Energy Density
+        - 19 Spawning Timing
+        - 20 Expected Number of Species
+        - 21 Forage Fish Index
+        - 22 Harbor Porpoise Bycatch
+        - 23 Highly Migratory Species POP Catch Per Unit Effort
+        - 24 Highly Migratory Species Landings
+        - 25 Highly Migratory Species Stock Status
+        - 26 Cetacean Distribution Shifts
+        - 27 Right Whale Abundance
+        - 28 Fish Productivity Indicators
+        - 29 Gray Seal Pups
+        - 30 Gulf of Maine Atlantic salmon
+        - 31 Gray Seal Bycatch
+        - 32 Seabird diet and productivity - New England
+        - 33 Feeding guilds by management bodies
+        - 34 Bottom Temperature - in situ
+        - 35 Bottom temperature - Seasonal Anomaly
+        - 36 Bottom temperature - Seasonal Gridded
+        - 37 Seasonal OISST Anomaly Map
+        - 38 Sea-surface temperature anomaly
+        - 39 Transition Dates
+        - 40 NE Shelf Annual Sea Surface Temperature (SST)
+        - 41 Cold Pool Index
+        - 42 Gulf Stream Index
+        - 43 Slopewater Proportions
+        - 44 Persistent annual hotspots
+        - 45 Warm Core Rings
+        - 46 Thermal Habitat Area
+        - 47 Thermal Habitat Persistence
+        - 48 Chesapeake Bay Salinity
+        - 49 Chesapeake Bay Temperature
+        - 50 Chesapeake Bay Seasonal Sea Surface Temperature Anomaly
+        - 51 Chesapeake Bay 2023 Synthesis
+        - 52 Annual Heatwave Intensity
+        - 53 Marine Heatwave Events
+        - 54 Timing Shifts Risks to Seasonal Management 
+        - 55 2023 Observation Synthesis
+        - 56 Ocean Acidification and Other Stressors
+        - 57 Commercial Landings and Revenue
+        - 58 Commercial Catch and Fleet Diversity
+        - 59 Ecosytem overfishing
+        - 60 Recreational Fishing Indicators
+        - 61 Recreational HMS
+        - 62 ABC or ACL for Managed Stocks
+        - 63 Bennet Indicator
+        - 64 Stock Status
+        - 65 Engagement, Reliance, and Environmental Justice in Top Fishing Communities
+        - 66 Aquaculture Production
+        - 67 Speed and Scale of Offshore Wind Development in the Northeast
+        - 68 Community Port Landings and Revenue from Wind Energy Areas (WEAs)
+        - 69 Fishery Impacts from Offshore Wind Development
+        - 70 State of the Ecosystem Plain Language Glossary
     validations:
       required: true
+  - type: textarea
+    id: edit1
+    attributes:
+      label: Page Edit 1
+      description: Please identify the edit you want to suggest and the where it belongs.
+      placeholder: Type your edit here.
+    validations:
+      required: true
+  - type: textarea
+    id: edit2
+    attributes:
+      label: Page Edit 2 (if applicable)
+      description: Please identify the edit you want to suggest and the where it belongs.
+      placeholder: Type your edit here.
+    validations:
+      required: false
+  - type: textarea
+    id: edit3
+    attributes:
+      label: Page Edit 3 (if applicable)
+      description: Please identify the edit you want to suggest and the where it belongs.
+      placeholder: Type your edit here.
+    validations:
+      required: false
