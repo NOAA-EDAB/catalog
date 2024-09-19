@@ -1,0 +1,121 @@
+name: State of the Ecosystem - Edit Catalog Page
+description: Use this issue template to suggest an edit to a page in the State of the Ecosystem indicator catalog.
+title: "[Catalog Page Edit]: "
+labels: ["page edit"]
+assignees: "BBeltz1"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use this form to suggest edits to an indicator catalog page.
+  - type: input
+    id: contact1
+    attributes:
+      label: Primary Contact
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@noaa.gov
+    validations:
+      required: true
+  - type: dropdown
+    id: catalog_page
+    attributes:
+      label: Choose a catalog page to suggest edits
+      description: Select from the drop down
+      options:
+        - Introduction
+        - 1 Chesapeake Bay Water Quality Standards Attainment
+        - 2 Chlorophyll and Primary Production
+        - 3 Phytoplankton Size Class
+        - 4 Harmful Algal Blooms
+        - 5 Submerged Aquatic Vegetation
+        - 6 Seasonal Variation of Calanus finmarchicus
+        - 7 Mesozooplankton Biomass at Wilkinson Basin
+        - 8 Zooplankton Abundance Anomalies
+        - 9 Zooplankton Diversity
+        - 10 Aggregate Survey Biomass
+        - 11 Inshore Survey (Mid Atlantic)
+        - 12 Inshore Survey (Massachusetts)
+        - 13 Inshore Survey (New England)
+        - 14 Survey Impacts from Offshore Wind Development
+        - 15 Relative condition
+        - 16 Species Richness
+        - 17 Species Distribution Indicators
+        - 18 Forage Fish Energy Density
+        - 19 Spawning Timing
+        - 20 Expected Number of Species
+        - 21 Forage Fish Index
+        - 22 Harbor Porpoise Bycatch
+        - 23 Highly Migratory Species POP Catch Per Unit Effort
+        - 24 Highly Migratory Species Landings
+        - 25 Highly Migratory Species Stock Status
+        - 26 Cetacean Distribution Shifts
+        - 27 Right Whale Abundance
+        - 28 Fish Productivity Indicators
+        - 29 Gray Seal Pups
+        - 30 Gulf of Maine Atlantic salmon
+        - 31 Gray Seal Bycatch
+        - 32 Seabird diet and productivity - New England
+        - 33 Feeding guilds by management bodies
+        - 34 Bottom Temperature - in situ
+        - 35 Bottom temperature - Seasonal Anomaly
+        - 36 Bottom temperature - Seasonal Gridded
+        - 37 Seasonal OISST Anomaly Map
+        - 38 Sea-surface temperature anomaly
+        - 39 Transition Dates
+        - 40 NE Shelf Annual Sea Surface Temperature (SST)
+        - 41 Cold Pool Index
+        - 42 Gulf Stream Index
+        - 43 Slopewater Proportions
+        - 44 Persistent annual hotspots
+        - 45 Warm Core Rings
+        - 46 Thermal Habitat Area
+        - 47 Thermal Habitat Persistence
+        - 48 Chesapeake Bay Salinity
+        - 49 Chesapeake Bay Temperature
+        - 50 Chesapeake Bay Seasonal Sea Surface Temperature Anomaly
+        - 51 Chesapeake Bay 2023 Synthesis
+        - 52 Annual Heatwave Intensity
+        - 53 Marine Heatwave Events
+        - 54 Timing Shifts Risks to Seasonal Management 
+        - 55 2023 Observation Synthesis
+        - 56 Ocean Acidification and Other Stressors
+        - 57 Commercial Landings and Revenue
+        - 58 Commercial Catch and Fleet Diversity
+        - 59 Ecosytem overfishing
+        - 60 Recreational Fishing Indicators
+        - 61 Recreational HMS
+        - 62 ABC or ACL for Managed Stocks
+        - 63 Bennet Indicator
+        - 64 Stock Status
+        - 65 Engagement, Reliance, and Environmental Justice in Top Fishing Communities
+        - 66 Aquaculture Production
+        - 67 Speed and Scale of Offshore Wind Development in the Northeast
+        - 68 Community Port Landings and Revenue from Wind Energy Areas (WEAs)
+        - 69 Fishery Impacts from Offshore Wind Development
+        - 70 State of the Ecosystem Plain Language Glossary
+    validations:
+      required: true
+  - type: textarea
+    id: edit1
+    attributes:
+      label: Page Edit 1
+      description: Please identify the edit you want to suggest and the where it belongs.
+      placeholder: Type your edit here.
+    validations:
+      required: true
+  - type: textarea
+    id: edit2
+    attributes:
+      label: Page Edit 2 (if applicable)
+      description: Please identify the edit you want to suggest and the where it belongs.
+      placeholder: Type your edit here.
+    validations:
+      required: false
+  - type: textarea
+    id: edit3
+    attributes:
+      label: Page Edit 3 (if applicable)
+      description: Please identify the edit you want to suggest and the where it belongs.
+      placeholder: Type your edit here.
+    validations:
+      required: false
