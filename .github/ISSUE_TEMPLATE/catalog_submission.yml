@@ -39,6 +39,7 @@ body:
       label: Indicator Name (as exists in ecodata)
       description: Select from the drop down
       options:
+        - New Indicator
         - ESP_gsi
         - ESP_heatwave
         - ESP_heatwave_cod
@@ -136,6 +137,7 @@ body:
         - zoo_diversity
         - zoo_regime
         - zoo_strat_abun
+        - Other
     validations:
       required: true
         
