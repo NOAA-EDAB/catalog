@@ -12,8 +12,9 @@ rmd_files:
     -   "chapters/habs.rmd"
     -   "chapters/SAV.rmd"
     -   "chapters/zooplankton_index.rmd"
-    -   "chapters/calanus_variation.rmd"
-    -   "chapters/wbts_mesozooplankton.rmd"
+    #-   "chapters/calanus_variation.rmd"
+    #-   "chapters/wbts_mesozooplankton.rmd"
+    -   "chapters/sentinel_zoo.rmd"
     -   "chapters/zoo_abundance_anom.rmd"
     -   "chapters/zoo_diversity.rmd"
 #
