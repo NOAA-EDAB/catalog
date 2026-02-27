@@ -28,7 +28,8 @@ pull_all_issues <- function() {
     if (length(current_batch) == 0) {
       pulling <- FALSE
     } else {
-      # Filter out anything that has a 'pull_request' element
+      # Filter out anything that has a 'pull_request' element.
+      # Github treat PRs as issues too!
       if ("pull_request" %in% names(current_batch)) {
         pure_issues_ind <- is.na(current_batch$pull_request$url)
         pure_issues <- current_batch[pure_issues_ind, ]
@@ -38,11 +39,10 @@ pull_all_issues <- function() {
         pure_issues <- current_batch
       }
 
-      print(dim(pure_issues))
       # make sure it has the "submission" tag associated with it
       indices <- which(unlist(lapply(pure_issues$labels, function(x) {
         if (length(x$name) == 0) {
-          F
+          FALSE
         } else {
           x$name == "submission"
         }
