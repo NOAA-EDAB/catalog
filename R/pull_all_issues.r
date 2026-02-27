@@ -28,18 +28,29 @@ pull_all_issues <- function() {
     if (length(current_batch) == 0) {
       pulling <- FALSE
     } else {
+      # Filter out anything that has a 'pull_request' element
+      if ("pull_request" %in% names(current_batch)) {
+        pure_issues_ind <- is.na(current_batch$pull_request$url)
+        pure_issues <- current_batch[pure_issues_ind, ]
+        pure_issues <- pure_issues |>
+          dplyr::select(-pull_request, -draft)
+      } else {
+        pure_issues <- current_batch
+      }
+
+      print(dim(pure_issues))
       # make sure it has the "submission" tag associated with it
-      indices <- which(unlist(lapply(current_batch$labels, function(x) {
+      indices <- which(unlist(lapply(pure_issues$labels, function(x) {
         if (length(x$name) == 0) {
           F
         } else {
           x$name == "submission"
         }
       })))
-      subs <- current_batch$number[indices]
+      subs <- pure_issues$number[indices]
       # store
-      issues <- dplyr::bind_rows(issues, current_batch)
-      issueList[[page]] <- current_batch
+      issues <- dplyr::bind_rows(issues, pure_issues)
+      #issueList[[page]] <- pure_issues
 
       submissions <- c(submissions, subs)
       page <- page + 1
