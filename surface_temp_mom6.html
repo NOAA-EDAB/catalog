@@ -112,7 +112,7 @@
 <li><a class="" href="gom_salmon.html"><span class="header-section-number">35</span> Gulf of Maine Atlantic salmon</a></li>
 <li><a class="" href="grayseal.html"><span class="header-section-number">36</span> Gray Seal Bycatch</a></li>
 <li><a class="" href="seabird_ne.html"><span class="header-section-number">37</span> Seabird diet and productivity - New England</a></li>
-<li><a class="" href="cetacean_acoustic.html"><span class="header-section-number">38</span> Cetacean Weekly Acoustic Presence</a></li>
+<li><a class="" href="cetacean_acoustic.html"><span class="header-section-number">38</span> Cetacean Passive Acoustic Monitoring</a></li>
 <li><a class="" href="wea_sound.html"><span class="header-section-number">39</span> Ambient Sounds Levels in the NE</a></li>
 <li><a class="" href="species_groupings.html"><span class="header-section-number">40</span> Feeding guilds by management bodies</a></li>
 <li><a class="" href="persistent_hotspots.html"><span class="header-section-number">41</span> Persistent annual hotspots</a></li>
@@ -181,6 +181,9 @@
 </h1>
 <p><strong>Description</strong>: The data presented here are seasonal sea surface temperature anomalies for the period 1993-2019 from the MOM6 hindcast ocean model for the Northwest Atlantic. Also shown here are 10-year forecasts of sea surface temperature anomalies (2023-2033) from the MOM6 decadal forecast ocean model for the Northwest Atlantic.</p>
 <p><strong>Indicator family</strong>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" checked>Oceanographic</label></li>
+</ul>
 <p><strong>Contributor(s)</strong>: Laura Gruenburg, Vimal Koul</p>
 <p><strong>Affiliations</strong>: NEFSC</p>
 <div id="introduction-to-indicator-46" class="section level2" number="47.1">
@@ -194,8 +197,8 @@
 <h2>
 <span class="header-section-number">47.2</span> Key Results and Visualizations<a class="anchor" aria-label="anchor" href="#key-results-and-visualizations-46"><i class="fas fa-link"></i></a>
 </h2>
-<p>Here we show seasonal sea surface temperature anomalies in the Mid Atlantic Bight (MAB), Georges Bank (GB) and Gulf of Maine (GOM) EPUs. Data from 1993 through 2019 are from NWA MOM6 (<span class="citation">[<a href="#ref-ross_high-resolution_2023">54</a>]</span>) with a base period for the climatology of 1993 through 2010. We do not compare these anomalies to those from observed OISST as the base period for that dataset is 1982-2010.</p>
-<p>We also show the 10-year forecast for annual sea surface temperature anomalies in the MAB, GB, and GOM. This forecast is from the decadal forecast of NWA MOM6 (<span class="citation">[<a href="#ref-koul_predicted_2024">27</a>]</span>), which was initialized in 2022 and ran for 10 years. The forecast indicates a stagnation in surface temperature warming over the next ten years. Retrospective forecasts, where a forecast is initiated in the past and output is compared to observations, have shown that the NWA MOM6 decadal forecast is able to correctly predict periods of temperature stability and rapid warming in this region (<span class="citation">[<a href="#ref-koul_predicted_2024">27</a>]</span>).</p>
+<p>Here we show seasonal sea surface temperature anomalies in the Mid-Atlantic Bight (MAB), Georges Bank (GB) and Gulf of Maine (GOM) EPUs. Data from 1993 through 2019 are from NWA MOM6 (<span class="citation">[<a href="#ref-ross_high-resolution_2023">66</a>]</span>) with a base period for the climatology of 1993 through 2010. We do not compare these anomalies to those from observed OISST as the base period for that dataset is 1982-2010.</p>
+<p>We also show the 10-year forecast for annual sea surface temperature anomalies in the MAB, GB, and GOM. This forecast is from the decadal forecast of NWA MOM6 (<span class="citation">[<a href="#ref-koul_predicted_2024">37</a>]</span>), which was initialized in 2022 and ran for 10 years. The forecast indicates a stagnation in surface temperature warming over the next ten years. Retrospective forecasts, where a forecast is initiated in the past and output is compared to observations, have shown that the NWA MOM6 decadal forecast is able to correctly predict periods of temperature stability and rapid warming in this region (<span class="citation">[<a href="#ref-koul_predicted_2024">37</a>]</span>).</p>
 </div>
 <div id="indicator-statistics-46" class="section level2" number="47.3">
 <h2>
@@ -204,6 +207,9 @@
 <p>Spatial scale: The model data is on a roughly 1/12 degree grid. Here we show the data averaged by EPU.</p>
 <p>Temporal scale: Winter (January, February, March), Spring (April, May, June), Summer (July, August, September), Fall (October, November, December), and Annual</p>
 <p><strong>Synthesis Theme</strong>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" checked>Multiple System Drivers</label></li>
+</ul>
 </div>
 <div id="implications-46" class="section level2" number="47.4">
 <h2>
@@ -215,15 +221,19 @@
 <h2>
 <span class="header-section-number">47.5</span> Get the data<a class="anchor" aria-label="anchor" href="#get-the-data-46"><i class="fas fa-link"></i></a>
 </h2>
-<p><strong>Point of contact</strong>: <a href="mailto:Laura%20Gruenburg%20(laura.gruenburg@noaa.gov)" class="email">Laura Gruenburg (laura.gruenburg@noaa.gov)</a></p>
+<p><strong>Point of contact</strong>: <a href="mailto:EDAB,%20edab.data@noaa.gov" class="email">EDAB, edab.data@noaa.gov</a></p>
 <p><strong>ecodata name</strong>: <code>ecodata::surface_temp_mom6</code></p>
 <p><strong>Variable definitions</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Time: Year; Season: 1 - Winter starting from month 1 (Jan, Feb, Mar), 4 - Spring starting from month 4 (Apr, May, Jun), 7 - Summer starting from month 7 (Jul, Aug, Sep), 10 - Fall starting from month 10 (Oct, Nov, Dec); Value: Sea Surface Temperature Anomaly value; EPU: Mid Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); Unit: degrees C</p></li>
-<li><p>Time: Year; Val: Annual Sea Surface Temperature Anomaly; EPU: Mid Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); e_member: ensemble member, 1-10 or ensemble mean; Unit: degrees C</p></li>
+<li><p>Time: Year; Season: 1 - Winter starting from month 1 (Jan, Feb, Mar), 4 - Spring starting from month 4 (Apr, May, Jun), 7 - Summer starting from month 7 (Jul, Aug, Sep), 10 - Fall starting from month 10 (Oct, Nov, Dec); Value: Sea Surface Temperature Anomaly value; EPU: Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); Unit: degrees C</p></li>
+<li><p>Time: Year; Val: Annual Sea Surface Temperature Anomaly; EPU: Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); e_member: ensemble member, 1-10 or ensemble mean; Unit: degrees C</p></li>
 </ol>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-5494e04748c2bd18b381" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-5494e04748c2bd18b381">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],["forecast-1","forecast-2","forecast-3","forecast-4","forecast-5","forecast-6","forecast-7","forecast-8","forecast-9","forecast-10","forecast-Ensemble Mean","Winter-hindcast","Spring-hindcast","Summer-hindcast","Fall-hindcast"],["degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-29c7e6eea980ef358cb0" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-29c7e6eea980ef358cb0">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],["forecast-1","forecast-2","forecast-3","forecast-4","forecast-5","forecast-6","forecast-7","forecast-8","forecast-9","forecast-10","forecast-Ensemble Mean","Winter-hindcast","Spring-hindcast","Summer-hindcast","Fall-hindcast"],["degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C","degrees C"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked>Syntheses of published information</label></p></li>
+<li><p><label><input type="checkbox" checked>Database pull with analysis</label></p></li>
+</ul>
 </div>
 <div id="public-availability-46" class="section level2" number="47.6">
 <h2>
@@ -244,13 +254,13 @@
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body">
 <div id="ref-koul_predicted_2024" class="csl-entry">
-<div class="csl-left-margin">27. </div>
+<div class="csl-left-margin">37. </div>
 <div class="csl-right-inline">Koul V, Ross AC, Stock C, Zhang L, Delworth T, Wittenberg A. A <span>Predicted</span> <span>Pause</span> in the <span>Rapid</span> <span>Warming</span> of the <span>Northwest</span> <span>Atlantic</span> <span>Shelf</span> in the <span>Coming</span> <span>Decade</span>. Geophysical Research Letters. 2024;51: e2024GL110946. doi:<a href="https://doi.org/10.1029/2024GL110946">10.1029/2024GL110946</a>
 </div>
 </div>
 <div id="ref-ross_high-resolution_2023" class="csl-entry">
-<div class="csl-left-margin">54. </div>
-<div class="csl-right-inline">Ross AC, Stock CA, Adcroft A, Curchitser E, Hallberg R, Harrison MJ, et al. A high-resolution physical-biogeochemical model for marine resource applications in the northwest <span>Atlantic</span> (<span>MOM6</span>-<span>COBALT</span>-<span>NWA12</span> v1. 0). Geoscientific Model Development Discussions. 2023;2023: 1–65. </div>
+<div class="csl-left-margin">66. </div>
+<div class="csl-right-inline">Ross AC, Stock CA, Adcroft A, Curchitser E, Hallberg R, Harrison MJ, et al. A high-resolution physical-biogeochemical model for marine resource applications in the northwest <span>Atlantic</span> (<span>MOM6</span>-<span>COBALT</span>-<span>NWA12</span> v1. 0). Geoscientific Model Development Discussions. Göttingen, Germany; 2023;2023: 1–65. </div>
 </div>
 </div>
   <div class="chapter-nav">
@@ -284,7 +294,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 10 April 2026.</p>
+    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 28 April 2026.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

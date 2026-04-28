@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>9 Zooplankton Abundance Anomalies - Principal Components | Northeast US Ecosystem Indicator Catalog</title>
 <meta name="author" content="Northeast Fisheries Science Center">
-<meta name="description" content="Description: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis. Indicator family:...">
+<meta name="description" content="Description: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis. Indicator family: Lower...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="9 Zooplankton Abundance Anomalies - Principal Components | Northeast US Ecosystem Indicator Catalog">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://noaa-edab.github.io/catalog/zoo_community.html">
-<meta property="og:description" content="Description: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis. Indicator family:...">
+<meta property="og:description" content="Description: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis. Indicator family: Lower...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="9 Zooplankton Abundance Anomalies - Principal Components | Northeast US Ecosystem Indicator Catalog">
-<meta name="twitter:description" content="Description: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis. Indicator family:...">
+<meta name="twitter:description" content="Description: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis. Indicator family: Lower...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.10.0/transition.js"></script><script src="libs/bs3compat-0.10.0/tabs.js"></script><script src="libs/bs3compat-0.10.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -112,7 +112,7 @@
 <li><a class="" href="gom_salmon.html"><span class="header-section-number">35</span> Gulf of Maine Atlantic salmon</a></li>
 <li><a class="" href="grayseal.html"><span class="header-section-number">36</span> Gray Seal Bycatch</a></li>
 <li><a class="" href="seabird_ne.html"><span class="header-section-number">37</span> Seabird diet and productivity - New England</a></li>
-<li><a class="" href="cetacean_acoustic.html"><span class="header-section-number">38</span> Cetacean Weekly Acoustic Presence</a></li>
+<li><a class="" href="cetacean_acoustic.html"><span class="header-section-number">38</span> Cetacean Passive Acoustic Monitoring</a></li>
 <li><a class="" href="wea_sound.html"><span class="header-section-number">39</span> Ambient Sounds Levels in the NE</a></li>
 <li><a class="" href="species_groupings.html"><span class="header-section-number">40</span> Feeding guilds by management bodies</a></li>
 <li><a class="" href="persistent_hotspots.html"><span class="header-section-number">41</span> Persistent annual hotspots</a></li>
@@ -181,20 +181,22 @@
 </h1>
 <p><strong>Description</strong>: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis.</p>
 <p><strong>Indicator family</strong>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" checked>Lower trophic levels</label></li>
+</ul>
 <p><strong>Contributor(s)</strong>: Ryan Morse, Harvey Walsh</p>
 <p><strong>Affiliations</strong>: NEFSC</p>
 <div id="introduction-to-indicator-8" class="section level2" number="9.1">
 <h2>
 <span class="header-section-number">9.1</span> Introduction to Indicator<a class="anchor" aria-label="anchor" href="#introduction-to-indicator-8"><i class="fas fa-link"></i></a>
 </h2>
-<p>Principal component analysis (PCA) is a technique used to reduce complexity in ecological data. We ran a PCA on the annual abundance anomalies of the dominant zooplankton taxa for each EPU and for the Northeast Shelf as a whole. The abundance anomalies were calculated similarly to Kane (2007) by first log transforming the zooplankton abundance data and then estimating a daily expected abundance value for each taxa using an annual spline based on all years of data. To determine the abundance anomalies, the expected abundance value on the day the sample was collected was subtracted from the observed abundance value for each taxa for each EPU. These values were aggregated by EPU and year. The PCA scores from the first and second principal components of the annual abundance anomalies area shown in these figures. PCA scores range from positive to negative values. However, there is no distinct or implied meaning of either ‘positive’ or ‘negative’ values. Instead, when plotted as a time series and the series crosses the horizontal axis Y=0 line, this may represent an implied change in state. Major changes in zooplankton community composition, sometime referred to as regime shifts, may be represented by a change in the state of the PCA series.</p>
+<p>Principal component analysis (PCA) is a technique used to reduce complexity in ecological data. We ran a PCA on the annual abundance anomalies of the dominant zooplankton taxa for each EPU and for the Northeast Shelf as a whole. The abundance anomalies were calculated similarly to Kane (<span class="citation">[<a href="#ref-kane_zooplankton_2007">28</a>]</span>) by first log transforming the zooplankton abundance data and then estimating a daily expected abundance value for each taxa using an annual spline based on all years of data. To determine the abundance anomalies, the expected abundance value on the day the sample was collected was subtracted from the observed abundance value for each taxa for each EPU. These values were aggregated by EPU and year. The PCA scores from the first and second principal components of the annual abundance anomalies area shown in these figures. PCA scores range from positive to negative values. However, there is no distinct or implied meaning of either ‘positive’ or ‘negative’ values. Instead, when plotted as a time series and the series crosses the horizontal axis Y=0 line, this may represent an implied change in state. Major changes in zooplankton community composition, sometime referred to as regime shifts, may be represented by a change in the state of the PCA series.</p>
 </div>
 <div id="key-results-and-visualizations-8" class="section level2" number="9.2">
 <h2>
 <span class="header-section-number">9.2</span> Key Results and Visualizations<a class="anchor" aria-label="anchor" href="#key-results-and-visualizations-8"><i class="fas fa-link"></i></a>
 </h2>
 <p>For the GOM, PC1 changed from a positive to a negative during 2023, which may indicate a major structural change in community composition. Previous changes in the state of PC1 (1990, 2001, 2011) have coincided with identified regime shifts in zooplankton, fish recruitment patterns, and changes in fish condition. The amount of variability within the GOM zooplankton community explained by PC1 and PC2 is 45% and 12%, respectively.</p>
-<div class="inline-figure"><img width="639" height="505" alt="Image" src="https://github.com/user-attachments/assets/04810530-eeb7-4bd9-ade3-97f2a1d5a2c8"></div>
 The loadings for PC1 and PC2 in the GOM are:
 
 
@@ -440,7 +442,6 @@ td
 </tbody>
 </table></div>
 <p>For GB, both PC1 and PC2 changed from a positive to a negative during 2023, which may indicate a major structural change in community composition. PC1 was in a previous positive phase since 2010, while PC has vacillated between positive and negative phases since 2015. Previous changes in the state of PC1 (1992 2002, 2010) have coincided with identified regime shifts in zooplankton, fish recruitment patterns, and changes in fish condition. The amount of variability within the GB zooplankton community explained by PC1 and PC2 is 37% and 13%, respectively.</p>
-<div class="inline-figure"><img width="639" height="505" alt="Image" src="https://github.com/user-attachments/assets/6b98830a-5dab-4878-ba84-49919aa26b8c"></div>
 The loadings for PC1 and PC2 on GB are:
 
 
@@ -683,7 +684,6 @@ td
 </tbody>
 </table></div>
 <p>In the MAB, a long term decline in PC1 resulted in a phase change from positve to negative around the year 1997. PC2 was mostly positive from 1985-2002, after which variability was high and PC2 switched between positive and negative phases multiple times over a 10 year period. Both PC1 and PC2 currently remain in a negative phase since 2019. Taxa contributing to this negative phase include a low abundance for Pseudocalanus spp., and higher abundance of hyperiid amphipods, and echinoderms. The amount of variability explained by PC1 and PC2 in the MAB is 32% and 15%, respectively.</p>
-<div class="inline-figure"><img width="639" height="505" alt="Image" src="https://github.com/user-attachments/assets/3bcf70c3-d05f-4a8c-90b0-d867456bff43"></div>
 The loadings for PC1 and PC2 in the MAB are:
 
 
@@ -940,6 +940,11 @@ user-select: text;white-space:pre-wrap !important"></span></span></span></span><
 <p>Spatial scale: by EPU and full Northeast Shelf</p>
 <p>Temporal scale: Annual</p>
 <p><strong>Synthesis Theme</strong>:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked>Multiple System Drivers</label></p></li>
+<li><p><label><input type="checkbox" checked>Regime Shifts</label></p></li>
+<li><p><label><input type="checkbox" checked>Ecosystem Reorganization</label></p></li>
+</ul>
 </div>
 <div id="implications-8" class="section level2" number="9.4">
 <h2>
@@ -957,8 +962,12 @@ user-select: text;white-space:pre-wrap !important"></span></span></span></span><
 <ol style="list-style-type: decimal">
 <li>Name: Comp.1; Definition: Principal Component 1 score; Units: unitless. 2) Name: Comp.2; Definition: Principal Component 2 score; Units: unitless.</li>
 </ol>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-6944bcbfd2b54763d2eb" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-6944bcbfd2b54763d2eb">{"x":{"filter":"none","vertical":false,"data":[["1","2"],["Comp.1","Comp.2"],["Principal Component 1","Principal Component 2"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-db8b75b43cacdd858aaa" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-db8b75b43cacdd858aaa">{"x":{"filter":"none","vertical":false,"data":[["1","2"],["Comp.1","Comp.2"],["Principal Component 1","Principal Component 2"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked>Published Methods</label></p></li>
+<li><p><label><input type="checkbox" checked>Extensive analysis, not yet published</label></p></li>
+</ul>
 </div>
 <div id="public-availability-8" class="section level2" number="9.6">
 <h2>
@@ -974,6 +983,14 @@ user-select: text;white-space:pre-wrap !important"></span></span></span></span><
 <p><strong>tech-doc link</strong>
 <a href="https://noaa-edab.github.io/tech-doc/zoo_community.html" class="uri">https://noaa-edab.github.io/tech-doc/zoo_community.html</a></p>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body">
+<div id="ref-kane_zooplankton_2007" class="csl-entry">
+<div class="csl-left-margin">28. </div>
+<div class="csl-right-inline">Kane J. Zooplankton abundance trends on <span>Georges</span> <span>Bank</span>, 1977-2004. ICES Journal of Marine Science. 2007;64: 909–919. doi:<a href="https://doi.org/10.1093/icesjms/fsm066">10.1093/icesjms/fsm066</a>
+</div>
 </div>
 </div>
   <div class="chapter-nav">
@@ -1007,7 +1024,7 @@ user-select: text;white-space:pre-wrap !important"></span></span></span></span><
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 10 April 2026.</p>
+    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 28 April 2026.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

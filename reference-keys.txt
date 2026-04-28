@@ -2,7 +2,10 @@ fig:neusmap
 fig:neusmap1
 ches_bay_wq
 introduction-to-indicator
+data-sources
+criteria-attainment-assessment
 key-results-and-visualizations
+indicator-calculation
 indicator-statistics
 implications
 get-the-data
@@ -637,6 +640,9 @@ accessibility-and-constraints-78
 communities_at_sea
 introduction-to-indicator-79
 key-results-and-visualizations-79
+fishing-community-change-and-gear-type-composition
+fisher-days-change-by-gear-type
+community-adaptive-capacity
 indicator-statistics-79
 implications-79
 get-the-data-79

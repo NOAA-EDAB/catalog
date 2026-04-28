@@ -112,7 +112,7 @@
 <li><a class="" href="gom_salmon.html"><span class="header-section-number">35</span> Gulf of Maine Atlantic salmon</a></li>
 <li><a class="" href="grayseal.html"><span class="header-section-number">36</span> Gray Seal Bycatch</a></li>
 <li><a class="" href="seabird_ne.html"><span class="header-section-number">37</span> Seabird diet and productivity - New England</a></li>
-<li><a class="" href="cetacean_acoustic.html"><span class="header-section-number">38</span> Cetacean Weekly Acoustic Presence</a></li>
+<li><a class="" href="cetacean_acoustic.html"><span class="header-section-number">38</span> Cetacean Passive Acoustic Monitoring</a></li>
 <li><a class="" href="wea_sound.html"><span class="header-section-number">39</span> Ambient Sounds Levels in the NE</a></li>
 <li><a class="" href="species_groupings.html"><span class="header-section-number">40</span> Feeding guilds by management bodies</a></li>
 <li><a class="" href="persistent_hotspots.html"><span class="header-section-number">41</span> Persistent annual hotspots</a></li>
@@ -181,13 +181,17 @@
 </h1>
 <p><strong>Description</strong>: The data set presented here covers three waves of survey questions and responses pertaining to commercial crew and hired captains’ health, well-being, satisfaction, and demographics for the entire Northeast region from 2012, 2018, and 2023/24.</p>
 <p><strong>Indicator family</strong>:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked>Social</label></p></li>
+<li><p><label><input type="checkbox" checked>Economic</label></p></li>
+</ul>
 <p><strong>Contributor(s)</strong>: Kiera Morrill, Matthew Cutler</p>
 <p><strong>Affiliations</strong>: NEFSC</p>
 <div id="introduction-to-indicator-80" class="section level2" number="81.1">
 <h2>
 <span class="header-section-number">81.1</span> Introduction to Indicator<a class="anchor" aria-label="anchor" href="#introduction-to-indicator-80"><i class="fas fa-link"></i></a>
 </h2>
-<p>This data was collected using a mixed-methods and intercept-style approach across threes waves of the survey, 2012, 2018, and 2023. The data was conducted among ports throughout the Northeast coast with survey questions focused on fishers’ health, well-being, and livelihood. Risks identified in this study reflect broader systemic challenges related to low entry numbers and the rising average age of crew known as the “graying of the fleet,” major shifts in fisheries activity, and key findings of job-related satisfaction to a participants’ Basic Needs, Self-Actualization, and Social and Psychological health. Results from this research expose the relationship of these and other related threats as they emerge alongside waterfront development, gentrification, climate change related hazards, and shifting fish populations.</p>
+<p>This data was collected using a mixed-methods and intercept-style approach across three waves of the survey, 2012, 2018, and 2023. The data was conducted among ports throughout the Northeast coast with survey questions focused on fishers’ health, well-being, and livelihood. Risks identified in this study reflect broader systemic challenges related to low entry numbers and the rising average age of crew known as the “graying of the fleet,” major shifts in fisheries activity, and key findings of job-related satisfaction to a participants’ Basic Needs, Self-Actualization, and Social and Psychological health. Results from this research expose the relationship of these and other related threats as they emerge alongside waterfront development, gentrification, climate change related hazards, and shifting fish populations.</p>
 </div>
 <div id="key-results-and-visualizations-80" class="section level2" number="81.2">
 <h2>
@@ -216,6 +220,9 @@
 <p>Spatial scale: Data was collected along fishing ports from Maine to North Carolina</p>
 <p>Temporal scale: Data collection was implemented over three waves in 2012, 2018/19, and 2023/24</p>
 <p><strong>Synthesis Theme</strong>:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" checked>Multiple System Drivers</label></li>
+</ul>
 </div>
 <div id="implications-80" class="section level2" number="81.4">
 <h2>
@@ -231,25 +238,15 @@
 <p><strong>ecodata name</strong>: <code><a href="https://noaa-edab.github.io/ecodata/reference/crew_survey.html">ecodata::crew_survey</a></code></p>
 <p><strong>Variable definitions</strong></p>
 <ol style="list-style-type: decimal">
-<li>Name: survey_wave; Definition: which iteration the survey was implemented.<br>
+<li>Name: survey_wave; Definition: which iteration the survey was implemented. 2) Name: primary_port; Definition: main port for participant to fish from.<br>
 </li>
-<li>Name: primary_port; Definition: main port for participant to fish from.<br>
+<li>Name: fishery_category; Definition: what is their main fishery. 4) Name: age_category; Definition: age of survey participant.<br>
 </li>
-<li>Name: fishery_category; Definition: what is their main fishery.<br>
+<li>Name: education_combined; Defined: a combination of participant’s education attainment. 6) Name: race; Defined: participants’ self-described race.<br>
 </li>
-<li>Name: age_category; Definition: age of survey participant.<br>
+<li>Name: hispanic; Definition: yes or no. 7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.<br>
 </li>
-<li>Name: education_combined; Defined: a combination of participant’s education attainment.<br>
-</li>
-<li>Name: race; Defined: participants’ self-described race.<br>
-</li>
-<li>Name: hispanic; Definition: yes or no.<br>
-</li>
-<li>Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.<br>
-</li>
-<li>Name: health_insurance; Definition: does the participant have health insurance or not.<br>
-</li>
-<li>Name: marital_status; Definition: are they married or not.<br>
+<li>Name: health_insurance; Definition: does the participant have health insurance or not. 9) Name: marital_status; Definition: are they married or not.<br>
 </li>
 <li>Name: years_in_commercial_fishing_categorical; Definition: a participant’s time spent in commercial fishing.<br>
 </li>
@@ -289,8 +286,12 @@
 </li>
 <li>Name: regulations_too_restrictive; Definition: a participant’s opinion on whether or not regulations are appropriately strict.</li>
 </ol>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-9d29e8fccb376b38cbec" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-9d29e8fccb376b38cbec">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],["Age","Education","Primary_Fishery","Primary port region","Wave","Years_in_Fishing","Adventure_Satisfaction","Challenge_Satisfaction","Healthfulness_Satisfaction","Safety_Satisfaction","Own_Boss_Satisfaction","Physical_Fatigue_Satisfaction","Predicatable_Earnings_Satisfaction","Time_Away_Satisfaction","Earnings_Satisfaction"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-06a91c8a2f89f6ed51f4" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-06a91c8a2f89f6ed51f4">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],["Age","Education","Primary_Fishery","Primary port region","Wave","Years_in_Fishing","Adventure_Satisfaction","Challenge_Satisfaction","Healthfulness_Satisfaction","Safety_Satisfaction","Own_Boss_Satisfaction","Physical_Fatigue_Satisfaction","Predicatable_Earnings_Satisfaction","Time_Away_Satisfaction","Earnings_Satisfaction"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox" checked>Extensive analysis, not yet published</label></p></li>
+<li><p><label><input type="checkbox" checked>Syntheses of published information</label></p></li>
+</ul>
 </div>
 <div id="public-availability-80" class="section level2" number="81.6">
 <h2>
@@ -339,7 +340,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 10 April 2026.</p>
+    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 28 April 2026.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
