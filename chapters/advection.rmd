@@ -4,7 +4,8 @@
 
 **Indicator family**: 
 
-
+- [x] Oceanographic
+- [x] Lower trophic levels
 
 
 **Contributor(s)**: Zhitao Yu and Laurel Smith
@@ -77,7 +78,9 @@ Temporal scale: Advection indices are by month from March to June
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
 
 
 ```{r autostats_advection}
@@ -95,10 +98,8 @@ Different fish species inhabit different depth ranges of the water column for sp
 
 **Variable definitions**
 
-1) Year  2) Month  3) Var: Transport in the top 15m  4) Value: Transport in the top 15m  
-5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  7) Var: Transport 40m to sea floor  
-8) Value: Transport 40m to sea floor  
-9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  10) Units: 10^6 m^3/s
+1) Year  2) Month  3) Var: Transport in the top 15m  4) Value: Transport in the top 15m  5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  7) Var: Transport 40m to sea floor  
+8) Value: Transport 40m to sea floor  9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  10) Units: 10^6 m^3/s
 
 ```{r vars_advection}
 # Pull all var names
@@ -110,7 +111,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Extensive analysis, not yet published
+- [x] Database pull with analysis
 
 
 ## Public Availability

@@ -6,7 +6,8 @@ Note, the Mid-Atlantic analysis for the PCFA Indicator does not include data fro
 
 **Indicator family**: 
 
-
+- [x] Social
+- [x] Economic
 
 
 **Contributor(s)**: Robert Murphy, Tanya Noteva, Changhua Weng
@@ -61,7 +62,7 @@ Temporal scale: PCFA Indicator = Annual from 2007-2024;  CSVI = 2023
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_engagement}
@@ -80,16 +81,14 @@ By integrating the Community Social Vulnerability Indicators, we highlight munic
 
 **Variable definitions**
 
-1.	Community: name of the municipality identified as a community in the CSVIs. 
-2.	personal_disruption_rank: CSVI personal disruption factor score ranking. Low, moderate, moderate high, high 
+1.	Community: name of the municipality identified as a community in the CSVIs. 2.	personal_disruption_rank: CSVI personal disruption factor score ranking. Low, moderate, moderate high, high 
 3.	pop_composition_rank: CSVI population composition factor score ranking. Low, moderate, moderate high, high 
 4.	poverty_rank: CSVI poverty factor score ranking. Low, moderate, moderate high, high 
 5.	labor_force_str_rank: CSVI labor force structure factor score ranking. Low, moderate, moderate high, high 
 6.	housing_characteristics_rank: CSVI housing characteristics factor score ranking. Low, moderate, moderate high, high 
 7.	housing_disrupt__rank: CSVI housing disruption factor score ranking. Low, moderate, moderate high, high 
 8.	retiree_migration_rank: CSVI retiree migration factor score ranking. Low, moderate, moderate high, high 
-9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 
-10.	PORT_NAME: fishing data port name 11.	STATE_ABB: fishing data port state abbreviation 
+9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 10.	PORT_NAME: fishing data port name 11.	STATE_ABB: fishing data port state abbreviation 
 12.	place_id: fishing data port and state abbreviation combined 13.	YEAR: the year of fishing data 
 14.	fishing_mean_score: composite Port Commercial Fishing Activity Indicator score (range between 0 and 1)
 
@@ -103,7 +102,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

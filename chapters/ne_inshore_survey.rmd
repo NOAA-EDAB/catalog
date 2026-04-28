@@ -59,10 +59,8 @@ Indices for each trophic group have varied over time but have, for the most part
 
 **Variable definitions**
 
-1)	Name: Apex Predator; Definition: Stratified mean biomass of apex predators; Units: kg tow^-1 
-2)	Name: Benthivore; Definition: Stratified mean biomass of benthivores; Units: kg tow^-1 
-3)	Name: Benthos; Definition: Stratified mean biomass of benthos species; Units: kg tow^-1 
-4)	Name: Piscivore; Definition: Stratified mean biomass of piscivores; Units: kg tow^-1 
+1)	Name: Apex Predator; Definition: Stratified mean biomass of apex predators; Units: kg tow^-1 2)	Name: Benthivore; Definition: Stratified mean biomass of benthivores; Units: kg tow^-1 
+3)	Name: Benthos; Definition: Stratified mean biomass of benthos species; Units: kg tow^-1 4)	Name: Piscivore; Definition: Stratified mean biomass of piscivores; Units: kg tow^-1 
 5)	Name: Planktivore; Definition: Stratified mean biomass of planktivores; Units: kg tow^-1 
 6)	Name: Other; Definition: Stratified mean biomass of species that did not fit into the other five categories; Units: kg tow^-1
 

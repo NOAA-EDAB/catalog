@@ -10,7 +10,7 @@
 
 **Contributor(s)**: Angela Silva
 
-**Affiliations**: GARFO
+**Affiliations**: NEFSC
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -38,13 +38,13 @@ ggplotObject
 
 
 ## Indicator statistics 
-Spatial scale: NA
+Spatial scale: Greater Atlantic region
 
 Temporal scale: NA
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_wind_dev_speed}

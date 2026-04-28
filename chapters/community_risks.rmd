@@ -1,10 +1,11 @@
 # Community Risks Indicators (CEVRI) {#community_risks}
 
-**Description**: The dataset contains by year by community scores for community sensitivity to temperature, ocean acidification, stock size/status, total sensitivity, and total vulnerability based on Hare et al. 2016 species vulnerability and community dependency. Reciprocal Simpson's Diversity scores for each community, Regional Quotients, and Regional climate vulnerability scores are also included.
+**Description**: The dataset contains by year by community scores for community sensitivity to temperature, ocean acidification, stock size/status, total sensitivity, and total vulnerability based on Hare et al. 2016 [@hare_vulnerability_2016] and Loughran et al. 2025 [@loughran_climate_2025] species vulnerability and community dependency. Reciprocal Simpson's Diversity scores for each community, Regional Quotients, and Regional climate vulnerability scores are also included.
 
 **Indicator family**: 
 
-
+- [x] Social
+- [x] Economic
 
 
 **Contributor(s)**: Tarsila Seara, Patricia Clay, Changhua Weng
@@ -209,7 +210,7 @@ Temporal scale: Yearly 2000-2022; Maps: 5year average 2018-2022
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_community_risks}
@@ -239,7 +240,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

@@ -19,7 +19,7 @@ library(ecodata)
 Salinity data from the Chesapeake Bay Interpretive Buoy System (CBIBS) are used to monitor water conditions and identify conditions capable of impacting the Chesapeake Bay marine ecosystem.
 
 ## Key Results and Visualizations
-The salinity data, when compared to the 2010-2023 historical average reveals a distinct pattern. Salinity observations are lower than the historical averages from February to October and higher than historical averages during the fall (around October to November). This variation in salinity is likely due to increased rain events and freshwater input during spring and early summer. Spring 2024 salinity observations exceeded historical minimum salinity values, and remained below average throughout the summer. In early Fall, 2024 averages surpassed historical averages.
+The salinity data, when compared to the 2010-2023 historical average reveals a distinct pattern. In 2024, Salinity observations are lower than the historical averages from February to October and higher than historical averages during the fall (around October to November). This variation in salinity is likely due to increased rain events and freshwater input during spring and early summer. Spring 2024 salinity observations exceeded historical minimum salinity values, and remained below average throughout the summer. In early Fall, 2024 averages surpassed historical averages.
 
 ```{r plot_ch_bay_salMidAtlantic}
 # Plot indicator
@@ -61,7 +61,7 @@ Salinity averages during the 2024 season were consistently lower than historical
 
 **Variable definitions**
 
-1) Salinity
+1) Salinity 2) Time; year
 
 ```{r vars_ch_bay_sal}
 # Pull all var names

@@ -8,7 +8,7 @@
 - [X] Economic
 
 
-**Contributor(s)**: Sarah Gaichas and Sean Lucey.
+**Contributor(s)**: Sarah Gaichas, Sean Lucey
 
 **Affiliations**: NEFSC
 
@@ -44,7 +44,9 @@ Temporal scale: N/A
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
 
 
 ```{r autostats_species_groupings}
@@ -56,18 +58,15 @@ We changed species groupings in response to comments over the years. The table s
 
 ## Get the data
 
-**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::species_groupings`
 
 **Variable definitions**
 
-1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024-2025) 
-2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 
-3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 
-4. Joint = Jointly managed species by feeding guild 
-5. State or Other = Species managed by other bodies listed by feeding guild 
-6. FMP = Fishery Management Plan for Council managed species
+1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024-2025) 2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 
+3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 4. Joint = Jointly managed species by feeding guild 
+5. State or Other = Species managed by other bodies listed by feeding guild 6. FMP = Fishery Management Plan for Council managed species
 
 **Indicator Category**:
 

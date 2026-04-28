@@ -8,7 +8,7 @@
 - [X] Economic
 
 
-**Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
+**Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas
 
 **Affiliations**: NEFSC
 
@@ -94,7 +94,7 @@ Revenue is a key indicator of the State of the Ecosystem report. Revenue is larg
 
 ## Get the data
 
-**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](mailto:Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::comdat`
 

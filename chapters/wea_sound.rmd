@@ -1,10 +1,11 @@
 # Ambient Sounds Levels in the NE {#wea_sound}
 
-**Description**: Passive acoustic monitoring (PAM) simultaneously captures the biological, anthropogenic, climatological, and geological sounds occurring in an area. PAM provides continuous sampling effort in areas that are otherwise difficult to access, resulting in long-term, robust datasets. Ambient sound (soundscape) metrics show the distribution of acoustic energy across frequencies. Peaks in sound levels within particular frequency bins indicate louder sounds at those frequencies, with frequencies below 1000 Hz typically representing contributions from baleen whales, vessel traffic, and soniferous fishes. Therefore, soundscapes can be used as an indicator of ecosystem health and to identify changes to sound sources, which could be indicative of changes in phenology, species distributions, storm activity, and human activity.
+**Description**: Passive acoustic monitoring (PAM) simultaneously captures the biological, anthropogenic, climatological, and geological sounds occurring in an area. PAM provides continuous sampling effort in areas that are otherwise difficult to access, resulting in long-term, robust datasets. Ambient sound (soundscape) metrics show the distribution of acoustic energy across frequencies. Peaks in sound levels within particular frequency bins indicate louder sounds at those frequencies, with frequencies below 1000 Hz typically representing contributions from baleen whales, vessel traffic, and noise-generating fishes. Therefore, soundscapes can be used as an indicator of ecosystem health and to identify changes to sound sources, which could be indicative of changes in phenology, species distributions, storm activity, and human activity.
 
 **Indicator family**: 
 
-
+- [x] Oceanographic
+- [x] Habitat
 
 
 **Contributor(s)**: Renea Briner, Amanda Holdman, Genevieve Davis, Rhett Finley, Sophie Ferguson, Leila Hatch, Samara Haver, Jessica McCordic, Xavier Mouy, Anita Murray, Maricarmen Serna, Anne Smith, Erin Summers, Lindsey Transue, Christopher Tremblay, Annabel Westell, Rebecca Vanhoeck,  Sofie Van Parijs, Isabella Garfield, Joel Bell, Amy Engelhaupt
@@ -16,9 +17,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The first indicator examined hybrid millidecade sound pressure levels in the Gulf of Maine. The indicator stems from data collected across four and a half years (2020-2024) and nine recording sites. The metrics allow for an improved understanding of the dominant sound sources and whether these sound sources exhibited spatial or seasonal patterns in their activity within the region. A full description is in preparation for publication.
-
-The second indicator examined hybrid millidecade sound pressure levels in the Mid-Atlantic Bight. The indicator stems from data collected across two years (2022-2024) and nine recording sites. The metrics allow for an improved understanding of the dominant sound sources and whether these sound sources exhibited spatial or seasonal patterns in their activity within the region. A full description is in preparation for publication.
+This indicator examines hybrid millidecade sound pressure levels. In the Gulf of Maine, data were collected across four and a half years (2020-2024) and nine recording sites. In the Mid-Atlantic Bight, data were collected across two years (2022-2024) and nine recording sites. The metrics allow for an improved understanding of the dominant sound sources and whether these sound sources exhibited spatial or seasonal patterns in their activity within the region. A full description is in preparation for publication.
 
 ## Key Results and Visualizations
 This figure summarizes hybrid millidecade sound pressure levels throughout the Gulf of Maine, derived from data collected across four and a half years (2020-2024) and nine recording sites.
@@ -35,7 +34,7 @@ Temporal scale: In the Gulf of Maine, acoustic data were summarized from a four-
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_wea_sound}
@@ -71,7 +70,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

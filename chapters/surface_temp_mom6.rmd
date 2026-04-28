@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-
+- [x] Oceanographic
 
 
 **Contributor(s)**: Laura Gruenburg, Vimal Koul
@@ -21,7 +21,7 @@ This indicator shows seasonal sea surface temperature anomalies from a regional 
 This indicator also shows 10-year forecasts of annual sea surface temperature anomalies from the decadal forecast of the MOM6 Northwest Atlantic regional ocean model. Understanding how temperatures might change in the future can help us anticipate potential shifts in marine communities.
 
 ## Key Results and Visualizations
-Here we show seasonal sea surface temperature anomalies in the Mid Atlantic Bight (MAB), Georges Bank (GB) and Gulf of Maine (GOM) EPUs.  Data from 1993 through 2019 are from NWA MOM6 (@ross_high-resolution_2023) with a base period for the climatology of 1993 through 2010.  We do not compare these anomalies to those from observed OISST as the base period for that dataset is 1982-2010.  
+Here we show seasonal sea surface temperature anomalies in the Mid-Atlantic Bight (MAB), Georges Bank (GB) and Gulf of Maine (GOM) EPUs.  Data from 1993 through 2019 are from NWA MOM6 (@ross_high-resolution_2023) with a base period for the climatology of 1993 through 2010.  We do not compare these anomalies to those from observed OISST as the base period for that dataset is 1982-2010.  
 
 We also show the 10-year forecast for annual sea surface temperature anomalies in the MAB, GB, and GOM.  This forecast is from the decadal forecast of NWA MOM6 (@koul_predicted_2024), which was initialized in 2022 and ran for 10 years.  The forecast indicates a stagnation in surface temperature warming over the next ten years.  Retrospective forecasts, where a forecast is initiated in the past and output is compared to observations, have shown that the NWA MOM6 decadal forecast is able to correctly predict periods of temperature stability and rapid warming in this region (@koul_predicted_2024).
 
@@ -33,7 +33,7 @@ Temporal scale: Winter (January, February, March), Spring (April, May, June), Su
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_surface_temp_mom6}
@@ -45,15 +45,15 @@ Sea surface temperature is important for many marine species that have specific 
 
 ## Get the data
 
-**Point of contact**: [Laura Gruenburg (laura.gruenburg@noaa.gov)](mailto:Laura Gruenburg (laura.gruenburg@noaa.gov)){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::surface_temp_mom6`
 
 **Variable definitions**
 
-1) Time: Year; Season: 1 - Winter starting from month 1 (Jan, Feb, Mar), 4 - Spring starting from month 4 (Apr, May, Jun), 7 - Summer starting from month 7 (Jul, Aug, Sep), 10 - Fall starting from month 10 (Oct, Nov, Dec); Value: Sea Surface Temperature Anomaly value; EPU: Mid Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); Unit: degrees C 
+1) Time: Year; Season: 1 - Winter starting from month 1 (Jan, Feb, Mar), 4 - Spring starting from month 4 (Apr, May, Jun), 7 - Summer starting from month 7 (Jul, Aug, Sep), 10 - Fall starting from month 10 (Oct, Nov, Dec); Value: Sea Surface Temperature Anomaly value; EPU: Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); Unit: degrees C 
  
-2) Time: Year; Val: Annual Sea Surface Temperature Anomaly; EPU: Mid Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); e_member: ensemble member, 1-10 or ensemble mean; Unit: degrees C
+2) Time: Year; Val: Annual Sea Surface Temperature Anomaly; EPU: Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); e_member: ensemble member, 1-10 or ensemble mean; Unit: degrees C
 
 ```{r vars_surface_temp_mom6}
 # Pull all var names
@@ -65,7 +65,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Syntheses of published information
+- [x] Database pull with analysis
 
 
 ## Public Availability

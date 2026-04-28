@@ -66,7 +66,7 @@ ggplotObject
 ## Indicator statistics 
 Spatial scale: Full shelf and farther offshore corresponding to all EPUs and beyond
 
-Temporal scale: Annual 1990 - 2024
+Temporal scale: Annual 1990 - present
 
 **Synthesis Theme**:
 
@@ -93,12 +93,10 @@ For all large whale UMEs, human interaction appears to have contributed to incre
 
 **Variable definitions**
 
-NARW Abundance 1) Year 2) lower95 = lower 95% confidence interval value in number of animals.  
-3) Median=median estimate of right whale abundance in number of animals.  
-4) Upper95= upper 95% confidence interval value in number of animals.   
-5) Mean= mean estimate of right whale abundance in number of animals.   
-6) SD=standard deviation of estimate of right whale abundance in number of animals.  NARW Calves 
-1) Year 2) Tot.Calves = total number of right whale calves born that year in number of animals.
+NARW Abundance 1) Year 2) lower95 = lower 95% confidence interval value in number of animals.  3) Median=median estimate of right whale abundance in number of animals.  
+4) Upper95= upper 95% confidence interval value in number of animals.   5) Mean= mean estimate of right whale abundance in number of animals.   
+6) SD=standard deviation of estimate of right whale abundance in number of animals.  NARW Calves 1) Year 
+2) Tot.Calves = total number of right whale calves born that year in number of animals.
 
 ```{r vars_narw}
 # Pull all var names
@@ -120,7 +118,7 @@ Source data are publicly available.
 ## Accessibility and Constraints
 
 Source data are available from the New England Aquarium upon request.
-Estimates and derived source data available in @Linden_narw_pop_TM.
+Analysis is based on methods by Pace, Corkeron, and Kraus 2017 [@pace_statespace_2017], as documented most recently by Linden 2025 [@linden_using_2025].
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/narw.html>

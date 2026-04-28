@@ -77,12 +77,10 @@ In 2021 the International Commission for the Conservation of Atlantic Tunas (ICC
 
 **Variable definitions**
 
-Year: data are summarized/aggregated by year.  
-EPU: region, “Mid-Atlantic Bight” or “New England”.  
-HMS_Group: Management group for HMS, as defined below in “Data Processing”.  
-Var_wt: description of data (HMS Revenue or HMS Landings).  
-Units_WT: description of unit of measure for data (metric tons whole weight of landings, or U.S. dollars).  
-Value: Represents either metric tons of landings (round weight) or dollar value of landings by year and region.
+1. Year: data are summarized/aggregated by year.  2. EPU: region, “Mid-Atlantic Bight” or “New England”.  
+3. HMS_Group: Management group for HMS, as defined below in “Data Processing”.  4. Var_wt: description of data (HMS Revenue or HMS Landings).  
+5. Units_WT: description of unit of measure for data (metric tons whole weight of landings, or U.S. dollars).  
+6. Value: Represents either metric tons of landings (round weight) or dollar value of landings by year and region.
 
 ```{r vars_hms_landings}
 # Pull all var names

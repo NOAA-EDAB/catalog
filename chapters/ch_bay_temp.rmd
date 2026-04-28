@@ -61,7 +61,7 @@ Surface water temperatures during 2024 were mostly at or above historical averag
 
 **Variable definitions**
 
-1) Temperature; degree C
+1) Temperature; degree C 2) Time; year
 
 ```{r vars_ch_bay_temp}
 # Pull all var names

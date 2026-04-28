@@ -63,8 +63,7 @@ Surface water temperatures exceeded suitable temperatures for juvenile summer fl
 
 **Variable definitions**
 
-1) sst: sea surface temperature 2025, Celsius  
-2) sst_climatol: sea surface temperature climatology 2007-2024, Celsius  
+1) sst: sea surface temperature 2025, Celsius  2) sst_climatol: sea surface temperature climatology 2007-2024, Celsius  
 3) sst_anomaly: sea surface temperature anomaly 2025 minus 2007-2024, Celsius
 
 ```{r vars_ches_bay_sst}

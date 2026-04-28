@@ -90,8 +90,7 @@ Long-term oceanographic projections forecast a temporary pause in warming over t
 
 **Variable definitions**
 
-"along-shelf distance"  "depth"                 "distance to coast"     "Latitude"              
-"Longitude"
+"along-shelf distance"  "depth"                 "distance to coast"     "Latitude"              "Longitude"
 
 ```{r vars_species_dist}
 # Pull all var names

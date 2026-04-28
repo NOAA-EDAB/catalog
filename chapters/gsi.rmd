@@ -9,7 +9,7 @@
 
 **Contributor(s)**: Zhuomin Chen
 
-**Affiliations**: Department of Marine Sciences, University of Connecticut
+**Affiliations**: Gulf of Maine Research Institute
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -65,7 +65,7 @@ The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stre
 
 ## Get the data
 
-**Point of contact**: [Zhuomin Chen (zhuomin.chen@uconn.edu)](mailto:Zhuomin Chen (zhuomin.chen@uconn.edu)){.email}
+**Point of contact**: [Zhuomin Chen (zchen@gmri.org)](mailto:Zhuomin Chen (zchen@gmri.org)){.email}
 
 **ecodata name**: `ecodata::gsi`
 

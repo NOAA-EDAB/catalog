@@ -7,9 +7,9 @@
 - [X] Lower trophic levels
 
 
-**Contributor(s)**: Yizhen Li, NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch, Silver Spring MD
+**Contributor(s)**: Yizhen Li, Moe Nelson
 
-**Affiliations**: ?
+**Affiliations**: NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -65,21 +65,20 @@ The annual fall surveys of Alexandrium cyst distribution and abundance in the Gu
 
 ## Get the data
 
-**Point of contact**: [Moe Nelson, david.moe.nelson@noaa.gov](mailto:Moe Nelson, david.moe.nelson@noaa.gov){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::habs`
 
 **Variable definitions**
 
-Alexandrium: 1) Name: Year; Definition: Calendar year; Units: Integer. 
-2) Name: West_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Western Gulf of Maine; Units: Decimal number. 
-3) Name: East_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Eastern Gulf of Maine; Units: Decimal number. 
-4) Name: Bay_of_Fundy; Definition: Estimated total numbers of cells (x10 to the 16th power) in Bay of Fundy; Units: Decimal number. 
-5) Name: Gulf_of Maine_All; Definition: Estimated total numbers of cells (x10 to the 16th power) in entire Gulf of Maine; Units: Decimal number. 
- PSP: 1) Year; Definition: calendar year; Units: yyyy. 
-2) Name: State; Definition: MA, NH, or ME ; Units: categories. 
-3) Name: N_Rows; Definition: Number of sample events represented; Units: integer.  
-4) Name: PSP_Exceed_Threshold_Pct; Definition: Percentage of samples exceeding PSP threshold; Units: decimal number, 0-100.
+Alexandrium:  1. Name: Year; Definition: Calendar year; Units: Integer. 
+2. Name: West_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Western Gulf of Maine; Units: Decimal number. 
+3. Name: East_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Eastern Gulf of Maine; Units: Decimal number. 
+4. Name: Bay_of_Fundy; Definition: Estimated total numbers of cells (x10 to the 16th power) in Bay of Fundy; Units: Decimal number. 
+5. Name: Gulf_of Maine_All; Definition: Estimated total numbers of cells (x10 to the 16th power) in entire Gulf of Maine; Units: Decimal number.  PSP:  
+1. Year; Definition: calendar year; Units: yyyy. 2. Name: State; Definition: MA, NH, or ME ; Units: categories. 
+3. Name: N_Rows; Definition: Number of sample events represented; Units: integer.  
+4. Name: PSP_Exceed_Threshold_Pct; Definition: Percentage of samples exceeding PSP threshold; Units: decimal number, 0-100.
 
 ```{r vars_habs}
 # Pull all var names

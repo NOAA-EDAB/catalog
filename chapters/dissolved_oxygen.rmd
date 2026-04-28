@@ -4,7 +4,8 @@
 
 **Indicator family**: 
 
-
+- [x] Oceanographic
+- [x] Habitat
 
 
 **Contributor(s)**: Coming soon
@@ -35,7 +36,7 @@ Temporal scale: Coming soon
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_dissolved_oxygen}

@@ -59,7 +59,7 @@ Long term SST demonstrates that the annual average sea surface temperatures obse
 
 **Variable definitions**
 
-long-term sst  in  units of degreesC
+1) time: units of year 2) long-term sst; units of degreesC
 
 ```{r vars_long_term_sst}
 # Pull all var names

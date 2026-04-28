@@ -1,6 +1,6 @@
 # Annual Heatwave Intensity {#heatwave}
 
-**Description**: Surface and bottom MHWs for 2023.
+**Description**: Surface and bottom marine heatwaves (MHWs) for 2023.
 
 **Indicator family**: 
 
@@ -35,13 +35,13 @@ In 2024, the Gulf of Maine experienced a surface MHW that started on May 29th an
 Bottom MHWs
 In 2024, the Gulf of Maine did not experience any bottom MHWs.
 
-Middle Atlantic Bight
+Mid-Atlantic Bight
 
 Surface MHWs
-In 2024, the Middle Atlantic Bight did not experience any surface MHWs.
+In 2024, the Mid-Atlantic Bight did not experience any surface MHWs.
 
 Bottom MHWs
-In 2024, the Middle Atlantic Bight did not experience any bottom MHWs. The strongest bottom MHW occurred in the fall of 1985.
+In 2024, the Mid-Atlantic Bight did not experience any bottom MHWs. The strongest bottom MHW occurred in the fall of 1985.
 
 ```{r plot_heatwaveSurfaceMidAtlantic}
 # Plot indicator
@@ -93,7 +93,7 @@ Implications of MHWs on living marine resources in the U.S.NES are currently bei
 
 **Variable definitions**
 
-1) MHW maximum Intensity (detrended) = degrees C 2) MHW duration = days.
+1. MHW maximum Intensity (detrended) = degrees C 2. MHW duration = days.
 
 ```{r vars_heatwave}
 # Pull all var names

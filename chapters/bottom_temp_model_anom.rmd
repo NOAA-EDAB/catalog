@@ -9,7 +9,7 @@
 
 **Contributor(s)**: Joseph Caracappa, Vincent Saba, Zhuomin Chen, Laura Gruenburg, Andrew Ross
 
-**Affiliations**: NEFSC
+**Affiliations**: NEFSC, GFDL
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -87,17 +87,15 @@ Bottom temperature is an important driver for benthic and demersal species growt
 
 ## Get the data
 
-**Point of contact**: [joseph.caracappa@noaa.gov; laura.gruenburg@noaa.gov](mailto:joseph.caracappa@noaa.gov; laura.gruenburg@noaa.gov){.email}
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
 **ecodata name**: `ecodata::bottom_temp_model_anom`
 
 **Variable definitions**
 
-Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) 
-Subarea: EPU name 
+Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) Subarea: EPU name 
 Source:  ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-bt_temp : mean bottom temperature for each year/season across entire EPU 
-ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
+bt_temp : mean bottom temperature for each year/season across entire EPU ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
 
 ```{r vars_bottom_temp_model_anom}
 # Pull all var names

@@ -1,6 +1,6 @@
 # Marine Heatwave Events {#heatwave_year}
 
-**Description**: Surface and bottom MHWs for 2025.
+**Description**: Surface and bottom marine heatwaves (MHWs) for 2025.
 
 **Indicator family**: 
 

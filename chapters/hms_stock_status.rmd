@@ -63,16 +63,12 @@ This summarizes information in the HMS SAFE Report, which itself is intended to 
 
 **Variable definitions**
 
-Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  
-Bmsy = biomass at maximum sustainable yield  
-Threshold = the threshold identified in respective assessments to indicate status (e.g., overfished, not overfished, overfishing is occurring, overfishing is not occurring) 
-Stock status,  
-Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
-Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  
-Stock = the name of the stock assessed  
-Last Assessment Year = the year in which the latest assessment was finalized  
-Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  
-Notes = additional information.  Shark Stock = the name of the stock assessed
+1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  2. Bmsy = biomass at maximum sustainable yield  
+3. Threshold = the threshold identified in respective assessments to indicate status (e.g., overfished, not overfished, overfishing is occurring, overfishing is not occurring) 
+4. Stock status,  5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
+6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  7. Stock = the name of the stock assessed  
+8. Last Assessment Year = the year in which the latest assessment was finalized  9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  
+10. Notes = additional information.  11. Shark Stock = the name of the stock assessed
 
 ```{r vars_hms_stock_status}
 # Pull all var names

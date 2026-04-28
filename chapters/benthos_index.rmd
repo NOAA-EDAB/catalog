@@ -7,7 +7,7 @@
 - [X] Lower trophic levels
 
 
-**Contributor(s)**: Sarah Gaichas, James Gartland, Brian E. Smith, Sarah Weisberg, Sean Lucey
+**Contributor(s)**: Maxwell Grezlik, Sarah Gaichas, James Gartland, Brian E. Smith, Sarah Weisberg, Sean Lucey
 
 **Affiliations**: NEFSC
 
@@ -29,9 +29,9 @@ In addition to an index of benthic invertebrate biomass in each EPU, the coastwi
 ## Key Results and Visualizations
 Time series extend from 1980-2023.  Macrobenthos and Megabenthos are included on separate plots for each EPU.
 
-Variables plotted are Fall Macrobenthos or Megabenthos Biomass Estimate and Spring Macrobenthos or Megabenthos Biomass Estimate with error bands from Fall Macrobenthos or Megabenthos Biomass Estimate SE and Spring Macrobenthos or Megabenthos Biomass Estimate SE, respectively. 
+Variables plotted are seasonal (Fall or Spring) Macrobenthos or Megabenthos Biomass Estimates with standard error bands.
 
-Eastward and Northward components of the Center of Gravity, along with the Center of Gravity SE are plotted for Fall and Spring Macrobenthos or Megabenthos Biomass.
+Eastward and Northward components of the Center of Gravity, along with the Center of Gravity SE, are plotted for Fall and Spring Macrobenthos or Megabenthos Biomass.
 
 ```{r plot_benthos_indexMidAtlanticMegabenthosindex}
 # Plot indicator
@@ -103,36 +103,36 @@ Center of gravity indicators show recent trends towards the north and east in sp
 
 ## Get the data
 
-**Point of contact**: [Sarah Gaichas (Sarah.Gaichas@noaa.gov)](mailto:Sarah Gaichas (Sarah.Gaichas@noaa.gov)){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::benthos_index`
 
 **Variable definitions**
 
-Spring Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 1-6, units relative grams per stomach 
-Spring Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 1-6, units relative grams per stomach 
-Fall Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
-Fall Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
-Fall Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 7-12, units kilometers 
-Fall Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 7-12, units kilometers 
-Fall Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 7-12, units kilometers 
-Fall Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 7-12, units kilometers 
-Spring Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 1-6, units kilometers 
-Spring Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 1-6, units kilometers 
-Spring Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 1-6, units kilometers 
-Spring Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 1-6, units kilometers 
-Spring Megabenthos Biomass Estimate = aggregate megabenthos biomass months 1-6, units relative grams per stomach 
-Spring Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 1-6, units relative grams per stomach 
-Fall Megabenthos Biomass Estimate = aggregate megabenthos biomass months 7-12, units relative grams per stomach 
-Fall Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 7-12, units relative grams per stomach 
-Fall Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 7-12, units kilometers 
-Fall Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 7-12, units kilometers 
-Fall Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 7-12, units kilometers 
-Fall Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 7-12, units kilometers 
-Spring Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 1-6, units kilometers 
-Spring Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 1-6, units kilometers 
-Spring Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 1-6, units kilometers 
-Spring Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 1-6, units kilometers
+1. Spring Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 1-6, units relative grams per stomach 
+2. Spring Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 1-6, units relative grams per stomach 
+3. Fall Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
+4. Fall Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
+5. Fall Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 7-12, units kilometers 
+6. Fall Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 7-12, units kilometers 
+7. Fall Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 7-12, units kilometers 
+8. Fall Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 7-12, units kilometers 
+9. Spring Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 1-6, units kilometers 
+10. Spring Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 1-6, units kilometers 
+11. Spring Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 1-6, units kilometers 
+12. Spring Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 1-6, units kilometers 
+13. Spring Megabenthos Biomass Estimate = aggregate megabenthos biomass months 1-6, units relative grams per stomach 
+14. Spring Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 1-6, units relative grams per stomach 
+15. Fall Megabenthos Biomass Estimate = aggregate megabenthos biomass months 7-12, units relative grams per stomach 
+16. Fall Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 7-12, units relative grams per stomach 
+17. Fall Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 7-12, units kilometers 
+18. Fall Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 7-12, units kilometers 
+19. Fall Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 7-12, units kilometers 
+20. Fall Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 7-12, units kilometers 
+21. Spring Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 1-6, units kilometers 
+22. Spring Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 1-6, units kilometers 
+23. Spring Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 1-6, units kilometers 
+24. Spring Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 1-6, units kilometers
 
 ```{r vars_benthos_index}
 # Pull all var names

@@ -7,7 +7,7 @@
 - [X] Lower trophic levels
 
 
-**Contributor(s)**: Sarah Gaichas and Harvey Walsh
+**Contributor(s)**: Abigail Tyrell, Sarah Gaichas, Harvey Walsh
 
 **Affiliations**: NEFSC
 
@@ -206,22 +206,21 @@ Temporal scale: Spring (January-June), Fall (July-December)
 ## Implications
 Fluctuations in zooplankton community composition can affect both the consumption of phytoplankton vs the export of energy to the benthos, as well as the availability of prey for zooplankton feeding forage fish, marine mammals, and seabirds. 
 
-The relative dominance of large and small copepods in Northeast US ecosystems has been liked to changes in fish productivity  [@perretti_regime_2017; @Morse2017].
+The relative dominance of large and small copepods in Northeast US ecosystems has been liked to changes in fish productivity  [@perretti_regime_2017; morse_distinct_2017].
 
 Distribution shifts for zooplankton may result in mismatches with zooplankton feeding fish, marine mammal, and seabirds.
 
 ## Get the data
 
-**Point of contact**: [Sarah Gaichas, Sarah.Gaichas@noaa.gov](mailto:Sarah Gaichas, Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::zooplankton_index`
 
 **Variable definitions**
 
-Naming key * *Calanus finmarchicus* (calfin_100m3) = “calfin” , 
-* Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL”, 
-* Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” and 
-* Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”.
+Naming key:  1) *Calanus finmarchicus* (calfin_100m3) = “calfin” 2) Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL” 
+3) Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” 
+4) Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”
 
 ```{r vars_zooplankton_index}
 # Pull all var names

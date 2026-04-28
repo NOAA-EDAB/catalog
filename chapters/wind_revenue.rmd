@@ -97,8 +97,7 @@ The figures generally depict periodic fluctuations in fishery landings and reven
 **Variable definitions**
 
 1) Managed species; Definition: Fishery species managed by the New England and Mid-Atlantic Fishery Management Councils or the Atlantic States Marine Fisheries Commission 
-2) Year; Definition: Calendar year in which fishery landings occurred  
-3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 
+2) Year; Definition: Calendar year in which fishery landings occurred  3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 
 4) Revenue; Definition: Total amount paid to the vessel for each species landed; Units: 2022 dollars 
 5) Percent GARFO Landings; Definition: Proportion of landings of each managed species from within existing/proposed offshore wind lease areas relative to the total landings of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage 
 6) Percent GARFO Revenue; Definition: Proportion of revenue of each managed species from within existing/proposed offshore wind lease areas relative to the total revenue of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage

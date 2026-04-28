@@ -55,7 +55,7 @@ While still showing an overall increasing trend, the GB zooplankton community de
 
 ## Get the data
 
-**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov){.email}
+**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov){.email}
 
 **ecodata name**: `ecodata::zoo_diversity`
 

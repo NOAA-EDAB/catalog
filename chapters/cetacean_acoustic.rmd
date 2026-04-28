@@ -1,4 +1,4 @@
-# Cetacean Weekly Acoustic Presence {#cetacean_acoustic}
+# Cetacean Passive Acoustic Monitoring {#cetacean_acoustic}
 
 **Description**: Passive acoustic monitoring (PAM) is a non-invasive method for studying cetaceans, relying on the detection of the unique vocalizations that cetaceans produce. PAM provides continuous sampling effort in areas that are otherwise difficult to access and provides information on multiple species simultaneously. The resulting long-term, robust datasets allow for insights into species distributions, behavior, and habitat use. Furthermore, PAM can be used from a management perspective to implement risk mitigation efforts, assess the cumulative impacts of stressors, and evaluate potential behavioral and distributional changes resulting from climate change or anthropogenic activity.
 
@@ -16,9 +16,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The first indicator examined the weekly acoustic presence of eight cetacean species (harbor porpoise and sperm, humpback, minke, North Atlantic right, sei, fin, and blue whales) and one cetacean family (delphinid spp.) in the Gulf of Maine. The indicator stems from data collected across four years (2019-2023) and thirty recording sites. This summary allows for an improved understanding of how frequently each of the species was acoustically active and whether they exhibited seasonal patterns in their activity within the region. This data serves as a baseline summary for a region experiencing unprecedented warming and environmental change. A full description is in preparation for publication.
-
-The second indicator examined the weekly acoustic presence of six baleen whale species (North Atlantic right, sei, humpback, fin, blue, and minke whales) in the Mid-Atlantic Bight. The indicator stems from data collected across two years (2022-2024)  and thirteen recording sites. This summary allows for an improved understanding of how frequently each of the species was acoustically active and whether they exhibited seasonal patterns in their activity within the region. This data serves as a baseline summary for a previously understudied region that has historically been viewed as a migratory corridor for baleen species. A full description is in preparation for publication.
+In the Gulf of Maine, we examined the weekly acoustic presence of eight cetacean species (harbor porpoise and sperm, humpback, minke, North Atlantic right, sei, fin, and blue whales) and one cetacean family (delphinid spp.). Data were collected across four years (2019-2023) and thirty recording sites. In the Mid-Atlantic Bight, we examined the weekly acoustic presence of six baleen whale species (North Atlantic right, sei, humpback, fin, blue, and minke whales). Data were collected across two years (2022-2024) and thirteen recording sites. This summary allows for an improved understanding of how frequently each of the species was acoustically active and whether they exhibited seasonal patterns in their activity within the region. This data serves as a baseline summary for a previously understudied region that has historically been viewed as a migratory corridor for baleen species. A full description is in preparation for publication.
 
 ## Key Results and Visualizations
 This figure summarizes the weekly acoustic presence of eight cetacean species and one cetacean family in the Gulf of Maine, derived from data collected across four years (2019-2023) and thirty recording sites.
@@ -84,7 +82,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

@@ -63,8 +63,7 @@ The number of recreationally landed large coastal sharks has declined since recr
 
 **Variable definitions**
 
-Year = estimates of shark landings are calculated on a yearly basis. 
-Data Columns = MRIP and LPS landings data (# sharks x 1000) are summarized by region. 
+Year = estimates of shark landings are calculated on a yearly basis. Data Columns = MRIP and LPS landings data (# sharks x 1000) are summarized by region. 
  Large Coastal = summed MRIP estimates of annual landings of large coastal sharks, which include blacktip, bull, hammerheads (scalloped, great, and smooth), lemon, nurse, sandbar, silky, spinner, and tiger sharks. 
 Small Coastal = summed MRIP estimates of annual landings of large coastal sharks, which include blacknose, finetooth, Atlantic sharpnose, and bonnethead sharks. 
 Prohibited = summed MRIP estimates of annual landings of prohibited sharks, which include Atlantic angel, basking, bigeye sand tiger, bigeye sixgill, bigeye thresher, bignose, Caribbean reef, Caribbean sharpnose, dusky, Galapagos, longfin mako, narrowtooth, night, oceanic whitetip, sand tiger, sevengill, shortfin mako, sixgill, smalltail, whale and white sharks.  

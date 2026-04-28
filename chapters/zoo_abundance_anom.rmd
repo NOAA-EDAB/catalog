@@ -67,18 +67,15 @@ Check these. If they are correct, we could be seeing the less energy dense zoopl
 
 ## Get the data
 
-**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov){.email}
+**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov){.email}
 
 **ecodata name**: `ecodata::zoo_abundance_anom`
 
 **Variable definitions**
 
-All are unitless anomalies from the 1977-2020 mean abundance for each taxon. 
-Variables are taxa names:  (to be described by contributors) "Calfin"         "LgCopepods"     
-"SmCopepods"     "Cyclopoida"     "Diplostraca"    "Ostracoda"      "Cirripedia"     
-"Euphausiacea"  "Gammaridea"     "Hyperiidea"     "Mysidacea"      "Decapoda"       
-"Polychaeta"     "Echinodermata"  "Mollusca"     "Pteropod"      "Chaetognatha"   "Cnidaria"       
-"Tunicate"       "Protozoa"
+All are unitless anomalies from the 1977-2020 mean abundance for each taxon. Variables are taxa names:  (to be described by contributors) "Calfin"         "LgCopepods"     "SmCopepods"     
+"Cyclopoida"     "Diplostraca"    "Ostracoda"      "Cirripedia"     "Euphausiacea"  "Gammaridea"     "Hyperiidea"     "Mysidacea"      "Decapoda"       "Polychaeta"     "Echinodermata"  
+"Mollusca"     "Pteropod"      "Chaetognatha"   "Cnidaria"       "Tunicate"       "Protozoa"
 
 ```{r vars_zoo_abundance_anom}
 # Pull all var names

@@ -66,10 +66,8 @@ It is important to note/caveat that some of the previous estimates of forage fis
 
 **Variable definitions**
 
-Line plot: By species-year-season: Mean Energy Density (kJ/g)  Bubble Plot: 
-By species-year-season-EPU: Mean energy density (ED; kJ/g wet weight) 
-Mean catch per (representative) tow (kg) 
-Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
+Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 2) Mean energy density (ED; kJ/g wet weight) 
+3) Mean catch per (representative) tow (kg) 4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
 
 ```{r vars_energy_density}
 # Pull all var names

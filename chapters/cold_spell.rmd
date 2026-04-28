@@ -1,6 +1,6 @@
 # Marine Cold Spell Events {#cold_spell}
 
-**Description**: Surface and bottom MCSs for 2025.
+**Description**: Surface and bottom marine cold spells (MCSs) for 2025.
 
 **Indicator family**: 
 
@@ -95,7 +95,7 @@ Cooler than average conditions in the US NES.  Both surface and bottom cold spel
 
 **Variable definitions**
 
-1) MCS maximum Intensity (detrended) = degrees C 2) MCS duration = days.
+1. MCS maximum Intensity (detrended) = degrees C 2. MCS duration = days.
 
 
 No Data

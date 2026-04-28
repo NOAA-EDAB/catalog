@@ -186,20 +186,13 @@ At the EPU scale, there was little evidence for long-term linear trends in trait
 
 **Variable definitions**
 
-**Grouping variables** 
-- region: Categorical variable for either the whole NE shelf or each of the four EPU's. 
-- est_year: Year at which the values were estimated.  
-- season: Season for which the values were estimated. Only spring and fall are represented.  
-**CWM Trait values** 
+**Grouping variables** - region: Categorical variable for either the whole NE shelf or each of the four EPU's. - est_year: Year at which the values were estimated.  
+- season: Season for which the values were estimated. Only spring and fall are represented.  **CWM Trait values** 
 Each of the following variables are community weighted mean (CWM) estimates for the particular trait at either the scale of the EPU and the whole NE Shelf. In all cases, a species is represented by a single trait value. For instance, all cod fish in the data set are assigned a common trophic level that is invariant with body size, time, season, etc. This data represents *inter*specific variation in traits, and does not account for *intra*specific variation. Please see methods for where we sourced trait estimates. 
-- trophic_level: Trophic level - offspring_size: Average estimated size of offspring (mm) 
-- age_maturity: Average estimated age at 50% maturity (years). 
-- length_maturity: Average estimated length at 50% maturity (cm). 
-- fecundity: Average number of offspring produced per spawning adult.  
-- l_inf: Infinite length parameter for the species Von Bertalanffy growth equation. 
-- k: Growth parameter for the species Von Bertalanffy growth equation. 
-- max_obs_length: Maximum observed length recorded in FishBase or related databases.  
-**CWM Trait Ordinations**  
+- trophic_level: Trophic level - offspring_size: Average estimated size of offspring (mm) - age_maturity: Average estimated age at 50% maturity (years). 
+- length_maturity: Average estimated length at 50% maturity (cm). - fecundity: Average number of offspring produced per spawning adult.  
+- l_inf: Infinite length parameter for the species Von Bertalanffy growth equation. - k: Growth parameter for the species Von Bertalanffy growth equation. 
+- max_obs_length: Maximum observed length recorded in FishBase or related databases.  **CWM Trait Ordinations**  
 - PC1: CWM for the first principle component axis that explains ~61% of the variance. Due to trait loading we consider this axis representative of "Pace of Life".  
 - PC2: CWM for the second principle component axis that explains ~19% of the variance. Due to trait loading we consider this axis representative of "Fecundity" and/or reproductive investment.  
 - PC3: CWM for the third principle component axis that explains ~9% of the variance. The only trait that loads strongly on this axis is trophic level. However, species do not appear to sort strongly by trophic position along this axis and we do not recommend that users consider this reflective of changes in trophic position without further consideration.

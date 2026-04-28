@@ -4,7 +4,11 @@
 
 **Indicator family**: 
 
-
+- [x] Oceanographic
+- [x] Habitat
+- [x] Lower trophic levels
+- [x] Megafauna
+- [x] Social
 
 
 **Contributor(s)**: 
@@ -23,6 +27,7 @@ The Northeast U.S. region experienced colder than average ocean temperatures, de
 
 #### Global 
 According to the [2025 NOAA NCEI Global Temperature Analysis](https://www.ncei.noaa.gov/news/global-climate-202513), global upper ocean (0-700 meters) heat content was record high in 2025, surpassing the previous record set in 2024. Ocean heat content is a key climate indicator because the oceans store 90% of the excess heat in the Earth system. The 0–700 m global ocean heat content, which has been tracked globally since 1955, has experienced a steady upward trend since about 1970. 2025 is the fifth consecutive year for which OHC has experienced its highest value. Additional notable global annual highlights include:
+
 - 2025 was the third-warmest year in the NOAA global temperature record, which dates back to 1850.
 - Annual sea ice extent for both the Arctic and Antarctic regions ranked among the three lowest years on record.
 - The Northern Hemisphere snow cover extent was the third lowest on record.
@@ -67,12 +72,14 @@ Mid-Atlantic scallops in the Elephant Trunk region are showing positive signs fo
 
 #### Fishing observations
 Several members of the fishing community noted changes in species composition, distribution, and timing in their typical fishing grounds and attributed it to the cooler temperatures. We worked with the Cooperative Research Branch, the [Marine Resource Education Program](https://mrep.gmri.org/) (MREP) and the Fishery Management Councils to solicit information from the fishing community. We asked:
+
 - Are you seeing species where they shouldn't be?
 - Are you seeing species at different times than normal?
 - Are water temperatures or colors looking off?
 - Are you catching anything weird?
 
-We received 27 responses and the summarized observations listed below. Note, these observations may not fully represent the entire ecosystem, but provide local context to recent events that may not be represented in other indicators. 
+We received 27 responses and the summarized observations listed below. Note, these observations may not fully represent the entire ecosystem, but provide local context to recent events that may not be represented in other indicators:
+
 - Several members of the fishing industry reported that it was a “very good year” for billfish. According to the Large Pelagic Survey, it was a record year for white marlin with more than 23,000 fish caught and released. Billfish effort may have been higher than usual due to the closure of the recreational bluefin tuna fishery in August 2025.
 - Chesapeake Bay anglers reported good catch of red drum in 2024, followed by low catch and even cold stunned red drum and spotted sea trout in 2025. Scientists working with charter captains in Chesapeake Bay reported low catch rates of striped bass and red drum from June-September, but higher catch rates in the early spring and fall.
 - Fishers attributed the delayed migration of black sea bass inshore, and scup migrating south for the winter using similar routes as in the early 1970s due to the cooler temperatures.
@@ -93,7 +100,7 @@ Temporal scale: 2025
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_observation_synthesis_2025}
@@ -118,7 +125,7 @@ No Data
 
 **Indicator Category**:
 
-
+- [x] Other
 
 
 **Indicator Category**:

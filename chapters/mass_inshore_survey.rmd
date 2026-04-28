@@ -9,7 +9,7 @@
 
 **Contributor(s)**: Sean Lucey
 
-**Affiliations**: RWS
+**Affiliations**: NEFSC
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -35,7 +35,7 @@ ggplotObject
 
 
 ## Indicator statistics 
-Spatial scale: Nearshore regions of the MAB and GOM
+Spatial scale: Nearshore regions of Massachusetts
 
 Temporal scale: Spring and Fall
 
@@ -53,7 +53,7 @@ The trends in the Massachusetts inshore survey vary compared to the NEFSC survey
 
 ## Get the data
 
-**Point of contact**: [Sean Lucey (MA Inshore Survey), sean.lucey@rws.com](mailto:Sean Lucey (MA Inshore Survey), sean.lucey@rws.com){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::mass_inshore_survey`
 

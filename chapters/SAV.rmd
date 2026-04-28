@@ -50,11 +50,12 @@ Temporal scale: 1984-2024, annual
 ```
 
 ## Implications
-Bay-wide: In 2024, 82,778 acres of SAV were mapped in the Chesapeake Bay.  This is 45% of the Bay SAV goal. 
-•	Tidal Fresh Salinity Zone: 20,218 acres in 2024 achieving 98% of the area’s 20,602-acre goal.
-•	Oligohaline Salinity Zone: 4,730 acres in 2024 achieving 46% of the area’s 10,334-acre goal.
-•	Mesohaline Salinity Zone: 33,031 acres in 2024 achieving 27% of the area’s 120,306-acre goal.
-•	Polyhaline Salinity Zone: 24,800 acres in 2024 achieving 74% of the area’s 33,647-acre goal.
+Bay-wide: In 2024, 82,778 acres of SAV were mapped in the Chesapeake Bay.  This is 45% of the Bay SAV goal:
+
+- Tidal Fresh Salinity Zone: 20,218 acres in 2024 achieving 98% of the area’s 20,602-acre goal.
+- Oligohaline Salinity Zone: 4,730 acres in 2024 achieving 46% of the area’s 10,334-acre goal.
+- Mesohaline Salinity Zone: 33,031 acres in 2024 achieving 27% of the area’s 120,306-acre goal.
+- Polyhaline Salinity Zone: 24,800 acres in 2024 achieving 74% of the area’s 33,647-acre goal.
 
 The outlook toward achieving the outcome goal is off course. Significant increases and simultaneous decreases in different regions of the Bay resulted in little net change in total SAV coverage between 2023 and 2024 (1% decline, -260 hectares, -641 acres). It is unlikely that we will meet the interim goal of 130,000 acres by 2025.
 
@@ -66,8 +67,9 @@ The outlook toward achieving the outcome goal is off course. Significant increas
 
 **Variable definitions**
 
-1) Name: Year; Definition: SAV growing season; year. 2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres. 3)  Name: Oligohaline Total 
-; Definition: SAV area in the Oligohaline Zone; Units: acres. 4) Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres. 5) Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres. 5) Name: Baywide Total; Definition: Total SAV area in Chesapeake Bay; Units: acres.
+1) Name: Year; Definition: SAV growing season; year 2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres 
+3) Name: Oligohaline Total; Definition: SAV area in the Oligohaline Zone; Units: acres 4) Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres 
+5) Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres 6) Name: Baywide Total; Definition: Total SAV area in Chesapeake Bay; Units: acres
 
 ```{r vars_SAV}
 # Pull all var names

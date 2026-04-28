@@ -61,7 +61,7 @@ Temporal scale: Annual, 1996 to 2024
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_effective_sweptarea}
@@ -85,10 +85,6 @@ Total area swept in km2
 
 - [X] Database pull with analysis
 
-
-**Indicator Category**:
-
-Effective area swept; habitat
 
 ## Public Availability
 

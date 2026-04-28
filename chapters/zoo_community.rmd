@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-
+- [x] Lower trophic levels
 
 
 **Contributor(s)**: Ryan Morse, Harvey Walsh
@@ -16,12 +16,10 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Principal component analysis (PCA) is a technique used to reduce complexity in ecological data. We ran a PCA on the annual abundance anomalies of the dominant zooplankton taxa for each EPU and for the Northeast Shelf as a whole. The abundance anomalies were calculated similarly to Kane (2007) by first log transforming the zooplankton abundance data and  then estimating a daily expected abundance value for each taxa using an annual spline based on all years of data. To determine the abundance anomalies, the expected abundance value on the day the sample was collected was subtracted from the observed abundance value for each taxa for each EPU. These values were aggregated by EPU and year. The PCA scores from the first and second principal components of the annual abundance anomalies area shown in these figures. PCA scores range from positive to negative values. However, there is no distinct or implied meaning of either 'positive' or 'negative' values. Instead, when plotted as a time series and the series crosses the horizontal axis Y=0 line, this may represent an implied change in state. Major changes in zooplankton community composition, sometime referred to as regime shifts, may be represented by a change in the state of the PCA series.
+Principal component analysis (PCA) is a technique used to reduce complexity in ecological data. We ran a PCA on the annual abundance anomalies of the dominant zooplankton taxa for each EPU and for the Northeast Shelf as a whole. The abundance anomalies were calculated similarly to Kane (@kane_zooplankton_2007) by first log transforming the zooplankton abundance data and  then estimating a daily expected abundance value for each taxa using an annual spline based on all years of data. To determine the abundance anomalies, the expected abundance value on the day the sample was collected was subtracted from the observed abundance value for each taxa for each EPU. These values were aggregated by EPU and year. The PCA scores from the first and second principal components of the annual abundance anomalies area shown in these figures. PCA scores range from positive to negative values. However, there is no distinct or implied meaning of either 'positive' or 'negative' values. Instead, when plotted as a time series and the series crosses the horizontal axis Y=0 line, this may represent an implied change in state. Major changes in zooplankton community composition, sometime referred to as regime shifts, may be represented by a change in the state of the PCA series.
 
 ## Key Results and Visualizations
 For the GOM, PC1 changed from a positive to a negative during 2023, which may indicate a major structural change in community composition. Previous changes in the state of PC1 (1990, 2001, 2011) have coincided with identified regime shifts in zooplankton, fish recruitment patterns, and changes in fish condition. The amount of variability within the GOM zooplankton community explained by PC1 and PC2 is 45% and 12%, respectively. 
-
-<img width="639" height="505" alt="Image" src="https://github.com/user-attachments/assets/04810530-eeb7-4bd9-ade3-97f2a1d5a2c8" />
 
 The loadings for PC1 and PC2 in the GOM are:
 <html xmlns:v="urn:schemas-microsoft-com:vml"
@@ -129,8 +127,6 @@ gas_100m3 | 0.26 |   | acarspp_100m3 | 0.44
 
 For GB, both PC1 and PC2 changed from a positive to a negative during 2023, which may indicate a major structural change in community composition. PC1 was in a previous positive phase since 2010, while PC has vacillated between positive and negative phases since 2015. Previous changes in the state of PC1 (1992 2002, 2010) have coincided with identified regime shifts in zooplankton, fish recruitment patterns, and changes in fish condition. The amount of variability within the GB zooplankton community explained by PC1 and PC2 is 37% and 13%, respectively. 
 
-<img width="639" height="505" alt="Image" src="https://github.com/user-attachments/assets/6b98830a-5dab-4878-ba84-49919aa26b8c" />
-
 The loadings for PC1 and PC2 on GB are:
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
@@ -233,8 +229,6 @@ siph_100m3 | 0.28 |   | ctyp_100m3 | 0.35
 </html>
 
 In the MAB, a long term decline in PC1 resulted in a phase change from positve to negative around the year 1997. PC2 was mostly positive from 1985-2002, after which variability was high and PC2 switched between positive and negative phases multiple times over a 10 year period. Both PC1 and PC2 currently remain in a negative phase since 2019. Taxa contributing to this negative phase include a low abundance for Pseudocalanus spp., and higher abundance of hyperiid amphipods, and echinoderms. The amount of variability explained by PC1 and PC2 in the MAB is 32% and 15%, respectively.
-
-<img width="639" height="505" alt="Image" src="https://github.com/user-attachments/assets/3bcf70c3-d05f-4a8c-90b0-d867456bff43" />
 
 The loadings for PC1 and PC2 in the MAB are:
 <html xmlns:v="urn:schemas-microsoft-com:vml"
@@ -365,7 +359,9 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
 
 
 ```{r autostats_zoo_community}
@@ -395,7 +391,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

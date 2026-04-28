@@ -7,7 +7,7 @@
 - [X] Oceanographic
 
 
-**Contributor(s)**: Kevin Friedland
+**Contributor(s)**: Brandon Beltz, Kimberly Bastille, Kevin Friedland
 
 **Affiliations**: NEFSC
 
@@ -49,7 +49,7 @@ ggplotObject
 ## Indicator statistics 
 Spatial scale: by EPU
 
-Temporal scale: Annual time series (1982 to 2023)
+Temporal scale: Annual time series (1982 to present)
 
 **Synthesis Theme**:
 
@@ -65,13 +65,13 @@ Prolonged fall temperatures have been linked to the increased number of cold-stu
 
 ## Get the data
 
-**Point of contact**: [kevin.friedland@noaa.gov](mailto:kevin.friedland@noaa.gov){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::trans_dates`
 
 **Variable definitions**
 
-1. falltrans 2. sprtrans 3. maxday
+1. falltrans: fall transition day 2. sprtrans: spring transition day 3. maxday: max sst day
 
 ```{r vars_trans_dates}
 # Pull all var names

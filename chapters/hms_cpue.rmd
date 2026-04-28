@@ -73,8 +73,8 @@ Pelagic observer data summarizes catch per unit effort information for a subset 
 
 **Variable definitions**
 
-Year: year in which observations were made. 
-Each column provides CPUE per species or management group as total # fish caught / total # hauls. This includes Large Coastal Shark CPUE, Small Coastal Shark CPUE, Pelagic Shark CPUE, Prohibited Shark CPUE, Blue Marlin (BUM) CPUE, Swordfish (SWO) CPUE, White Marlin (WHM) CPUE, Sailfish (SAI) CPUE, Albacore Tuna (ALB) CPUE, Skipjack Tuna (SKJ) CPUE, Bigeye Tuna (BET) CPUE, Bluefin Tuna (BFT) CPUE, and Yellowfin Tuna (YFT) CPUE.
+1) Year: year in which observations were made. 
+2) CPUE per species or management group; total # fish caught / total # hauls; Includes Large Coastal Shark, Small Coastal Shark, Pelagic Shark, Prohibited Shark, Blue Marlin (BUM), Swordfish (SWO), White Marlin (WHM), Sailfish (SAI), Albacore Tuna (ALB), Skipjack Tuna (SKJ), Bigeye Tuna (BET), Bluefin Tuna (BFT), and Yellowfin Tuna (YFT).
 
 ```{r vars_hms_cpue}
 # Pull all var names

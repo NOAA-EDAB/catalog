@@ -66,10 +66,8 @@ If a large proportion of species current habitat become thermally inhospitable, 
 
 **Variable definitions**
 
-Time: Date EPU: EPU name Depth: Depth category Var: Temperature Category 
-Value: Proportion of area above temp.threshold 
-Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  year: year 
-Units: Proportion
+Time: Date EPU: EPU name Depth: Depth category Var: Temperature Category Value: Proportion of area above temp.threshold 
+Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  year: year Units: Proportion
 
 ```{r vars_thermal_habitat_area}
 # Pull all var names

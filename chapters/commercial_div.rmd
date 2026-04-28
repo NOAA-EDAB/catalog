@@ -62,7 +62,7 @@ ggplotObject
 
 
 ## Indicator statistics 
-Spatial scale: MA and NE
+Spatial scale: Mid-Atlantic and New England
 
 Temporal scale: Annual
 
@@ -84,7 +84,7 @@ In the Mid-Atlantic, stability in commercial fleet diversity metrics suggests st
 
 ## Get the data
 
-**Point of contact**: [Geret DePiper (geret.depiper@noaa.gov)](mailto:Geret DePiper (geret.depiper@noaa.gov)){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::commercial_div`
 

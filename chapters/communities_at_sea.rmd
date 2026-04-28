@@ -4,7 +4,8 @@
 
 **Indicator family**: 
 
-
+- [x] Social
+- [x] Economic
 
 
 **Contributor(s)**: Kevin St. Martin
@@ -19,7 +20,7 @@ library(ecodata)
 The following information was developed using the Communities at Sea (CaS) database developed at Rutgers University. CaS is derived from Vessel Trip Reports and Permit data for the period 1996-2023. The basic unit of analysis available through CaS are peer groups of vessels that are active in the same port and share the same general gear type. In the case of groundfish trawlers, vessel length is also considered. For each port, CaS computes the presence of (3 or more) active vessels grouped by: dredge, gillnet, groundfish/trawl less than 65 feet, groundfish/trawl greater than 65 feet, lobster, longline, other pots and traps, midwater seine, and shrimp trawl gear types. The aggregate activity of these peer groups of vessels (aka communities) inform a variety of indices indicating community change, precarity, and adaptive capacity.
 
 ## Key Results and Visualizations
-IFishing Community Change and Gear Type Composition
+#### Fishing Community Change and Gear Type Composition
 
 Counts of peer groups of vessels over time demonstrate the region-wide transformation of fishing ports and livelihoods in the last twenty years. While each community (as defined here) may or may not dominate their respective local or municipal economy, their presence or absence has significant implications for social and cultural continuity, and employment opportunities in fishing and related industries.
 
@@ -37,7 +38,7 @@ We note, however, that the lobster fishery’s VTR reporting requirements and co
 
 ![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_compositionfaceted.png){width=100%}
 
-Fisher Days Change by Gear Type
+#### Fisher Days Change by Gear Type
 
 Data representing fisher days (a measure of labor equal to trip length x crew size) provides insight into the overall effort expended by a community in a given time period (and territory). While this indicator does not measure fisher employment per se, it does measure overall employment opportunity by community. Fisher days, in most cases, parallels other measures of fishing effort (e.g. value or pounds landed) but, unlike those measures, it directly relates fishing effort to employment opportunity and, therefore, the viability of community-based livelihoods.
 
@@ -55,7 +56,7 @@ Declines in total number of large trawler fisher days, and hence employment oppo
 
 ![Figure 7](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_fisherdaysbygearfaceted2.png){width=100%}
 
-Community Adaptive Capacity
+#### Community Adaptive Capacity
 
 To understand how fishing communities in the Northeast US might respond to changing ocean conditions and shifting availability of target species, we assessed their historical capacity to change what they catch and where they fish. We developed quantitative indicators of catch flexibility, catch switching, and fishing ground mobility using the Communities at Sea (CaS) database derived from permit records and vessel trip reports 1996-2019. We find that the capacity for fishing communities to change catch composition or shift fishing grounds differed by gear type but communities using the same gear type varied in the extent to which they could utilize each strategy. The plot below highlights how communities vary in their fishing ground mobility and catch flexibility, highlighting both common traits and divergence for vessels using the same gear type. The contour lines and filled shapes provide a measure of the variation in adaptive strategies by gear type calculated as a 2d kernel density estimate of >=5 and >=10 communities in each gear group. 
 
@@ -69,7 +70,7 @@ Temporal scale: _No response_
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_communities_at_sea}
@@ -87,7 +88,7 @@ These indicators provide insight into the fate of commercial fishing communities
 
 **Variable definitions**
 
-Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1.
+
 
 
 No Data

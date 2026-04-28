@@ -59,10 +59,8 @@ A bycatch reduction plan developed by the Take Reduction Team was needed to redu
 
 **Variable definitions**
 
-1. pbr = Potential Biological Removal level. Unit = n (number of animals) 
-2. totalest1y = Total bycatch estimate over all gear types per year 
-3. totalest5y = Total bycatch estimate over all gear types as a 5-year running average 
-4. total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
+1. pbr = Potential Biological Removal level. Unit = n (number of animals) 2. totalest1y = Total bycatch estimate over all gear types per year 
+3. totalest5y = Total bycatch estimate over all gear types as a 5-year running average 4. total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
 5. total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_harborporpoise}

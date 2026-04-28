@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-
+- [x] Lower trophic levels
 
 
 **Contributor(s)**: Ryan Morse, Harvey Walsh
@@ -41,7 +41,9 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
 
 
 ```{r autostats_calanus_stage}
@@ -71,7 +73,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

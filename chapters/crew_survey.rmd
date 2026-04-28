@@ -4,7 +4,8 @@
 
 **Indicator family**: 
 
-
+- [x] Social
+- [x] Economic
 
 
 **Contributor(s)**: Kiera Morrill, Matthew Cutler
@@ -16,7 +17,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-This data was collected using a mixed-methods and intercept-style approach across threes waves of the survey, 2012, 2018, and 2023. The data was conducted among ports throughout the Northeast coast with survey questions focused on fishers’ health, well-being, and livelihood. Risks identified in this study reflect broader systemic challenges related to low entry numbers and the rising average age of crew known as the “graying of the fleet,” major shifts in fisheries activity, and key findings of job-related satisfaction to a participants’ Basic Needs, Self-Actualization, and Social and Psychological health. Results from this research expose the relationship of these and other related threats as they emerge alongside waterfront development, gentrification, climate change related hazards, and shifting fish populations.
+This data was collected using a mixed-methods and intercept-style approach across three waves of the survey, 2012, 2018, and 2023. The data was conducted among ports throughout the Northeast coast with survey questions focused on fishers’ health, well-being, and livelihood. Risks identified in this study reflect broader systemic challenges related to low entry numbers and the rising average age of crew known as the “graying of the fleet,” major shifts in fisheries activity, and key findings of job-related satisfaction to a participants’ Basic Needs, Self-Actualization, and Social and Psychological health. Results from this research expose the relationship of these and other related threats as they emerge alongside waterfront development, gentrification, climate change related hazards, and shifting fish populations.
 
 ## Key Results and Visualizations
 Results of this research express evidence for the phenomenon the “graying of the fleet” as the average age for a crew member steadily increased in age category “55 or older” over the three survey waves. Additionally, results expose a decline in entrants into the fishing sector with years in commercial fishing escalating among survey participants, suggesting less people are getting involved and those who are involved are increasing their cumulative years in this career. 
@@ -41,7 +42,7 @@ Temporal scale: Data collection was implemented over three waves in 2012, 2018/1
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_crew_survey}
@@ -59,16 +60,11 @@ Managers and policy makers have a responsibility to consider the effects of mana
 
 **Variable definitions**
 
-1) Name: survey_wave; Definition: which iteration the survey was implemented.  
-2) Name: primary_port; Definition: main port for participant to fish from.  
-3) Name: fishery_category; Definition: what is their main fishery.  
-4) Name: age_category; Definition: age of survey participant.  
-5) Name: education_combined; Defined: a combination of participant’s education attainment.  
-6) Name: race; Defined: participants’ self-described race.  
-7) Name: hispanic; Definition: yes or no.  
-7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.  
-8) Name: health_insurance; Definition: does the participant have health insurance or not.  
-9) Name: marital_status; Definition: are they married or not.  
+1) Name: survey_wave; Definition: which iteration the survey was implemented.  2) Name: primary_port; Definition: main port for participant to fish from.  
+3) Name: fishery_category; Definition: what is their main fishery.  4) Name: age_category; Definition: age of survey participant.  
+5) Name: education_combined; Defined: a combination of participant’s education attainment.  6) Name: race; Defined: participants’ self-described race.  
+7) Name: hispanic; Definition: yes or no.  7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.  
+8) Name: health_insurance; Definition: does the participant have health insurance or not.  9) Name: marital_status; Definition: are they married or not.  
 10) Name: years_in_commercial_fishing_categorical; Definition: a participant’s time spent in commercial fishing.  
 11) Name: owner_operator_status; Definition: is the participant an owner of a vessel of which they operate a business.  
 12) Name: position_on_current_vessel; Definition: what position do they hold.  
@@ -99,7 +95,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Extensive analysis, not yet published
+- [x] Syntheses of published information
 
 
 ## Public Availability
