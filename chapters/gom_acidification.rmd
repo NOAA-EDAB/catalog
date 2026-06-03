@@ -19,9 +19,9 @@ library(ecodata)
 The pCO2 represents the partial pressure of carbon dioxide resulting from the combination of water mass mixing, air-sea exchange, and biogeochemical processes.  Omega-a represents the saturation of calcium carbonate, an important mineral for many shell-building marine species and commonly-sed indicator of ocean acidification condition.
 
 ## Key Results and Visualizations
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_gom_acidification_pCO2.png){width=100%}
+![](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_gom_acidification_pCO2.png){width=100%}
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_gom_acidification_omega.png){width=100%}
+![](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_gom_acidification_omega.png){width=100%}
 
 In 2025, pCO2 followed the general pattern of elevated levels in the fall and winter and reduced levels in the spring and early summer. A data gap is present when the buoy was removed for service.  Omega-a reflected the pCO2, with lower levels in the fall and winter and elevated levels in spring and early summer. This pattern is generally due to a combination of seasonal temperature shifts and the cyclical spring phytoplankton bloom. However, the levels of pCO2 at the beginning and end of 2025 were generally above the climatological mean, and Omega-a was similarly low. This pattern was also seen in 2024; however, the salinity in 2025 was not abnormally low as in 2024. This may indicate that other factors are contributing to the higher pCO2 and lower Omega-a in the early and late stages of both years.
 
@@ -52,7 +52,8 @@ Ocean acidification conditions were pronounced for extended periods early and la
 
 **Variable definitions**
 
-1) pCO2; Definition: partial pressure of carbon dioxide; Units: microatmospheres 2)Omega-a; Definition: Saturation state of calcium carbonate as aragonite; Units: unitless
+1) pCO2; Definition: partial pressure of carbon dioxide; Units: microatmospheres 
+2)Omega-a; Definition: Saturation state of calcium carbonate as aragonite; Units: unitless
 
 
 No Data
