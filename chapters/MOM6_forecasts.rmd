@@ -1,35 +1,41 @@
 # MOM6 Forecasts {#MOM6_forecasts}
 
-**Description**: Coming soon
+**Description**: Seasonal and decadal bottom temperature predictions for the Northeast US shelf.
 
 **Indicator family**: 
 
 - [x] Oceanographic
 
 
-**Contributor(s)**: Coming soon
+**Contributor(s)**: Andrew Ross
 
-**Affiliations**: NEFSC
+**Affiliations**: OAR/GFDL
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Coming soon
+This indicator consists of predictions of bottom temperature from a high-resolution regional ocean model, MOM6-NWA12, that is regularly run at NOAA GFDL to produce seasonal (next year) and decadal (next ten years) forecasts for the Northwest Atlantic Ocean. Both predictions are created by forcing the regional ocean model with boundary conditions from GFDL's Seamless System for Prediction and EArth System Research (SPEAR), a global model. This "downscaling" of SPEAR with MOM6-NWA12 results in high-resolution forecasts that resolve many of the important details of the Northeast US region. 10 ensemble members are downscaled for each forecast to produce better predictions and an estimate of uncertainty. 
+
+The seasonal prediction maps show whether bottom temperature is most likely to be cooler than average, near average, or warmer than average, or if no category is particularly likely. These averages are based on historical bottom temperatures during 1994--2023. The categories are defined as terciles of the historical conditions: cooler than average conditions are in the lowest 1/3 of historical values, near average are in the middle 1/3, and above average are in the highest 1/3. Each model grid point is plotted with a matching color if the probability of bottom temperature being in one of these categories is 50% or more. If no category has a probability of at least 50%, the grid point is shaded gray for uncertain. The probabilities are determined using extended logistic regression, which uses historical forecasts and observations to calibrate the forecasts.
+
+The decadal prediction plot shows  annual bottom temperature anomalies averaged over the Northeast US shelf region. The anomalies are calculated from historical forecasts for years 1993--2022. The ensemble mean prediction is plotted as a line, and uncertainty is indicated by shading ±1 ensemble standard deviation. In addition to the most recent forecast, historical forecasts from previous years are shown to help visualize the forecast accuracy.
 
 ## Key Results and Visualizations
-Coming soon
+The  seasonal forecast from January 2026 predicts that cooler than average bottom temperatures will persist across much of the deeper Northeast US shelf, with near average conditions in some shallower regions. There is not a strong signal in the forecast for summer, but warmer than normal conditions are predicted to emerge in most shallow regions in the fall.
+
+The decadal forecast from January 2025 predicts a return to near average bottom temperatures over the next few years, with a fair amount of uncertainty. Past forecasts were able to accurately predict the rapid warming that begain in the mid-2000s and the recent cooling, raising confidence in the accuracy of the predictions.
 
 
 ## Indicator statistics 
-Spatial scale: Coming soon
+Spatial scale: The MOM6 ocean model runs at 1/12° horizontal resolution. For the seasonal forecasts, the data are shown at this resolution for the Northeast US shelf region. For the decadal forecasts, the data are averaged over the Northeast US shelf.
 
-Temporal scale: Coming soon
+Temporal scale: Seasonal averages (January-March, April-June, July-September, October-December) over the next year for seasonal forecasts. Annual averages over the next ten years for decadal forecasts.
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_MOM6_forecasts}
@@ -37,29 +43,30 @@ Temporal scale: Coming soon
 ```
 
 ## Implications
-Coming soon
+These forecasts are from the first seasonal to decadal prediction system capable of resolving many of the important oceanographic features of the Northeast US shelf. Additional research is needed to determine whether predictable oceanographic changes on seasonal to decadal time scales can be linked to predictable ecosystem changes.
 
 ## Get the data
 
-**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
+**Point of contact**: [Andrew Ross (andrew.c.ross@noaa.gov)](mailto:Andrew Ross (andrew.c.ross@noaa.gov)){.email}
 
 **ecodata name**: No dataset
 
 **Variable definitions**
 
-Coming soon
+Name: tob_anom; Definition: Bottom temperature anomaly; Units: °C
 
 
 No Data
 
 **Indicator Category**:
 
-
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability
 
-Source data are publicly available.
+Source data are publicly available from the [CEFI data portal](https://psl.noaa.gov/cefi_portal/).
 
 ## Accessibility and Constraints
 
