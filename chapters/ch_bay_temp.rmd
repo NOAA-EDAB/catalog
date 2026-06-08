@@ -27,12 +27,6 @@ ggplotObject <- ecodata::plot_ch_bay_temp(report = 'MidAtlantic')
 ggplotObject
 ```
 
-```{r plot_ch_bay_tempNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_ch_bay_temp(report = 'NewEngland')
-ggplotObject
-```
-
 
 ## Indicator statistics 
 Spatial scale: Main stem of the Chesapeake Bay

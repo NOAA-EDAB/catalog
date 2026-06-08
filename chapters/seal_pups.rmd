@@ -28,12 +28,6 @@ ggplotObject <- ecodata::plot_seal_pups(report = 'MidAtlantic')
 ggplotObject
 ```
 
-```{r plot_seal_pupsNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_seal_pups(report = 'NewEngland')
-ggplotObject
-```
-
 
 ## Indicator statistics 
 Spatial scale: Haul out sites off New England (Maine to New York) that correspond roughly to EPU’s Gulf of Maine (GOM) and Mid-Atlantic Bight (MAB).

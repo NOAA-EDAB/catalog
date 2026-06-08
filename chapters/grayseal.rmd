@@ -27,12 +27,6 @@ ggplotObject <- ecodata::plot_grayseal(report = 'MidAtlantic')
 ggplotObject
 ```
 
-```{r plot_graysealNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_grayseal(report = 'NewEngland')
-ggplotObject
-```
-
 
 ## Indicator statistics 
 Spatial scale: Spatial scale: U.S. waters from North Carolina to Canada from the U.S. coastline to the U.S. exclusive economic zone 200 nautical miles offshore, thus including all EPUs, the full shelf and beyond.
@@ -59,8 +53,10 @@ Under the MMPA, if bycatch exceeds PBR levels, Take Reduction Teams may be conve
 
 **Variable definitions**
 
-1) pbr = Potential Biological Removal level. Unit = n (number of animals) 2) totalest1y = Total bycatch of 1 year annual estimate. Unit = n (number of animals) 
-3) totalest5y = Total bycatch of 5 year running average estimate. Unit = n (number of animals) 4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
+1) pbr = Potential Biological Removal level. Unit = n (number of animals) 
+2) totalest1y = Total bycatch of 1 year annual estimate. Unit = n (number of animals) 
+3) totalest5y = Total bycatch of 5 year running average estimate. Unit = n (number of animals) 
+4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
 5) total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_grayseal}
