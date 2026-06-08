@@ -17,7 +17,7 @@
 <meta name="twitter:description" content="Description: The data provided here are the 1984-2024 area distribution and percent coverage of submerged aquatic vegetation in the Chesapeake Bay and its tributaries that area measured and...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.10.0/transition.js"></script><script src="libs/bs3compat-0.10.0/tabs.js"></script><script src="libs/bs3compat-0.10.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 <script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
 <script src="libs/datatables-binding-0.34.0/datatables.js"></script><link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -131,7 +131,7 @@
 <li><a class="" href="wcr.html"><span class="header-section-number">53</span> Warm Core Rings</a></li>
 <li><a class="" href="advection.html"><span class="header-section-number">54</span> Advection</a></li>
 <li><a class="" href="thermal_habitat_area.html"><span class="header-section-number">55</span> Thermal Habitat Area</a></li>
-<li><a class="" href="thermal_habitat_gridded.html"><span class="header-section-number">56</span> Thermal Habitat Persistence</a></li>
+<li><a class="" href="thermal_habitat_gridded.html"><span class="header-section-number">56</span> Thermal Habitat Gridded</a></li>
 <li><a class="" href="ch_bay_sal.html"><span class="header-section-number">57</span> Chesapeake Bay Salinity</a></li>
 <li><a class="" href="ch_bay_temp.html"><span class="header-section-number">58</span> Chesapeake Bay Temperature</a></li>
 <li><a class="" href="ches_bay_sst.html"><span class="header-section-number">59</span> Chesapeake Bay Seasonal Sea Surface Temperature Anomaly</a></li>
@@ -198,7 +198,6 @@
 </h2>
 <p>Significant increases and simultaneous decreases in different regions of the bay resulted in little net change in total SAV coverage between 2023 and 2024 (1% decline, -216 hectares, -533 acres). The Polyhaline and Oligohaline zones saw significant increases in SAV, there was a modest increase in the Tidal Fresh zone, and the Mesohaline zone suffered significant declines. The Polyhaline zone increased 14% relative to 2023 (1,212 hectares, 2,996 acres). Segments across the Polyhaline all increased with the largest gains (hectares/acres) occurring in Mobjack Bay, Poquoson Flats, and nearby Western Shore areas. Significantly, this is most SAV reported in the Polyhaline Zone in the history of the survey, surpassing the previous record set in 1993 by 317 hectares (783 acres). These gains, largely attributable to eelgrass, add to a pattern of consecutive year over year increases in the Polyhaline since the 2019 crash and extension of the meadows into deeper waters. This may indicate improved water clarity in this area of the Bay. The Tidal Fresh Zone was stable, exhibiting a 2% increase (149 hectares, 369 acres) and the Oligohaline Zone showed a 46% increase (584 hectares, 1,442 acres), driven by simultaneous recoveries in multiple areas including the Sassafras, Gunpowder, Back, and Middle Rivers, as well as increases in observed SAV in the Potomac River. In contrast, the Mesohaline underwent a 14% decline (-2,161 hectares, -5,340 acres), which largely occurred along the Eastern Shore of Maryland in the Choptank (-895 hectares, -2,212 acres) and Little Choptank Rivers (-302 hectares, -746 acres) as well as Tangier Sound (-801 hectares, -1,979 acres). The declines in the Choptank mirror measured reductions in water quality within the river, highlighting the strong coupling between water quality and SAV within the Chesapeake Bay, and down-bay declines in Tangier Sound may be connected. These contrasting changes observed throughout the system reflect the incredible diversity of geographic regions, land-use regimes, SAV species, and local environmental conditions that contribute in aggregate to Baywide SAV status each year.</p>
 <div class="inline-figure"><img src="catalog_files/figure-html/plot_SAVMidAtlantic-1.png" alt="" width="672"></div>
-<div class="inline-figure"><img src="catalog_files/figure-html/plot_SAVNewEngland-1.png" alt="" width="672"></div>
 </div>
 <div id="indicator-statistics-3" class="section level2" number="4.3">
 <h2>
@@ -234,11 +233,13 @@
 <p><strong>Variable definitions</strong></p>
 <ol style="list-style-type: decimal">
 <li>Name: Year; Definition: SAV growing season; year 2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres</li>
-<li>Name: Oligohaline Total; Definition: SAV area in the Oligohaline Zone; Units: acres 4) Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres</li>
-<li>Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres 6) Name: Baywide Total; Definition: Total SAV area in Chesapeake Bay; Units: acres</li>
+<li>Name: Oligohaline Total; Definition: SAV area in the Oligohaline Zone; Units: acres</li>
+<li>Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres</li>
+<li>Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres</li>
+<li>Name: Baywide Total; Definition: Total SAV area in Chesapeake Bay; Units: acres</li>
 </ol>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-2ec337dd2b128c49bf4a" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-2ec337dd2b128c49bf4a">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],["Tidal","Oligohaline","Mesohaline","Polyhaline","Baywide"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-d13912fcaf05618744f6" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d13912fcaf05618744f6">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],["Tidal","Oligohaline","Mesohaline","Polyhaline","Baywide"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
 <ul class="task-list">
 <li><label><input type="checkbox" checked>Published Methods</label></li>
 </ul>
@@ -290,7 +291,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 28 April 2026.</p>
+    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 8 June 2026.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
