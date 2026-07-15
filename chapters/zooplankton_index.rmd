@@ -35,14 +35,9 @@ The zooplankton groups in the model include:
 **Zooplankton volume** a metric of total zooplankton; all groups combined displacement volume in the collection net
 
 ## Key Results and Visualizations
-**Abundance**
-Large and small copepod groups are mainly fluctuating without trend in both spring and fall across the EPUs. However, a significant long term decrease in small copepods was apparent in the MAB during fall, and a recent decrease during spring. Similarly, zooplankton volume is fluctuating without long term trends over time. A recent significant decline was detected for Spring zooplankton volume in the MAB. 
+**Abundance** Large and small copepod groups are mainly fluctuating without trend in both spring and fall across the EPUs. Large copepod biomass has a short-term decline in the spring in both the GOM and GB. Small copepods have a long-term decline in the MAB in fall, and a long-term increase in the GOM in the spring. Euphausiid show increasing trends over time in all regions during fall. Zooplankton volume is fluctuating without long term trends over time.
 
-Euphausiids, in contrast, show increasing trends over time in all regions during fall, and in the MAB during spring. In addition, a significant recent increase was detected in the GOM in Fall. 
-
-
-**Center of Gravity**
-Small copepods in fall are trending northeast similar to forage fish and aggregated survey species. Small copepods in spring are trending north. Large copepods in fall are trending west, similar to benthos. No significant change for Calfin, Euphausiids, or Zooplankton volume center of gravity over time.
+**Center of Gravity** Small copepods in fall are trending northeast similar to forage fish and aggregated survey species. Small copepods in spring are trending north. There is a short-term westward trend for Calanus finmarchicus in the spring. There has been no other significant change for Calanus finmarchicus, large copepods, euphausiids, or zooplankton volume center of gravity over time.
 
 ```{r plot_zooplankton_indexMidAtlanticCalfinindex}
 # Plot indicator
@@ -206,7 +201,7 @@ Temporal scale: Spring (January-June), Fall (July-December)
 ## Implications
 Fluctuations in zooplankton community composition can affect both the consumption of phytoplankton vs the export of energy to the benthos, as well as the availability of prey for zooplankton feeding forage fish, marine mammals, and seabirds. 
 
-The relative dominance of large and small copepods in Northeast US ecosystems has been liked to changes in fish productivity  [@perretti_regime_2017; morse_distinct_2017].
+The relative dominance of large and small copepods in Northeast US ecosystems has been liked to changes in fish productivity  [@perretti_regime_2017].
 
 Distribution shifts for zooplankton may result in mismatches with zooplankton feeding fish, marine mammal, and seabirds.
 
