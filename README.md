@@ -3,6 +3,7 @@
 
 [![build-book](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml)
 [![gitleaks](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml)
+[![Run PR Checks](https://github.com/NOAA-EDAB/catalog/actions/workflows/verify_pr.yml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/verify_pr.yml)
 
 Catalog of indicators used in the State of the Ecosystem reports and
 other ecosystem assessment products.

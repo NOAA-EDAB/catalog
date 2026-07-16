@@ -8,7 +8,7 @@
 - [X] Economic
 
 
-**Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
+**Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas
 
 **Affiliations**: NEFSC
 
@@ -24,63 +24,51 @@ Landings have fluctuated over time in all regions.  In the two northern regions,
 
 Commercial revenue by managed species has generally been down.  The exception is on Georges Bank where there is a cyclical nature to revenue arising from rotational scallop management.  Total fisheries revenue in the Gulf of Maine has been increasing while total revenue has declined in the Mid-Atlantic.
 
-### MidAtlantic
-
-
-```{r plot_comdatMidAtlanticlandingstotal}
+```{r plot_comdatMidAtlanticlandingstotal2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report= 'MidAtlantic', varName= 'landings', plottype = 'total',n=10)
+ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'landings', plottype = 'total', NAFOyear = '2019', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_comdatMidAtlanticlandingsguild}
+```{r plot_comdatNewEnglandlandingstotal2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report= 'MidAtlantic', varName= 'landings', plottype = 'guild',n=10)
+ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'landings', plottype = 'total', NAFOyear = '2019', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_comdatMidAtlanticrevenuetotal}
+```{r plot_comdatMidAtlanticrevenuetotal2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report= 'MidAtlantic', varName= 'revenue', plottype = 'total',n=10)
+ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'revenue', plottype = 'total', NAFOyear = '2019', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_comdatMidAtlanticrevenueguild}
+```{r plot_comdatNewEnglandrevenuetotal2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report= 'MidAtlantic', varName= 'revenue', plottype = 'guild',n=10)
+ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'revenue', plottype = 'total', NAFOyear = '2019', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-
-```{r plot_comdatNewEnglandlandingstotal}
+```{r plot_comdatMidAtlanticlandingsguild2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report= 'NewEngland', varName= 'landings', plottype = 'total',n=10)
+ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'landings', plottype = 'guild', NAFOyear = '2019', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_comdatNewEnglandlandingsguild}
+```{r plot_comdatNewEnglandlandingsguild2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report= 'NewEngland', varName= 'landings', plottype = 'guild',n=10)
+ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'landings', plottype = 'guild', NAFOyear = '2019', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_comdatNewEnglandrevenuetotal}
+```{r plot_comdatMidAtlanticrevenueguild2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report= 'NewEngland', varName= 'revenue', plottype = 'total',n=10)
+ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'revenue', plottype = 'guild', NAFOyear = '2019', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_comdatNewEnglandrevenueguild}
+```{r plot_comdatNewEnglandrevenueguild2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report= 'NewEngland', varName= 'revenue', plottype = 'guild',n=10)
+ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'revenue', plottype = 'guild', NAFOyear = '2019', n = 10)
 ggplotObject
 ```
 
@@ -106,7 +94,7 @@ Revenue is a key indicator of the State of the Ecosystem report. Revenue is larg
 
 ## Get the data
 
-**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](mailto:Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::comdat`
 

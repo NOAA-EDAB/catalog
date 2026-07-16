@@ -36,31 +36,27 @@ Published distribution metrics for highly migratory species are also available f
 
 The center of distribution for a suite of 48 commercially or ecologically important fish species along the entire Northeast Shelf continues to show movement towards the northeast and generally into deeper water.
 
-### MidAtlantic
-
-```{r plot_species_distMidAtlanticalong}
+```{r plot_species_distalongMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_species_dist(report= 'MidAtlantic', varName= 'along',n=10)
+ggplotObject <- ecodata::plot_species_dist(varName = 'along', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-```{r plot_species_distMidAtlanticdepth}
+```{r plot_species_distdepthMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_species_dist(report= 'MidAtlantic', varName= 'depth',n=10)
+ggplotObject <- ecodata::plot_species_dist(varName = 'depth', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-```{r plot_species_distNewEnglandalong}
+```{r plot_species_distalongNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_species_dist(report= 'NewEngland', varName= 'along',n=10)
+ggplotObject <- ecodata::plot_species_dist(varName = 'along', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-```{r plot_species_distNewEnglanddepth}
+```{r plot_species_distdepthNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_species_dist(report= 'NewEngland', varName= 'depth',n=10)
+ggplotObject <- ecodata::plot_species_dist(varName = 'depth', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 

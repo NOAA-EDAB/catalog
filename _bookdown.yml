@@ -12,9 +12,10 @@ rmd_files:
     -   "chapters/habs.rmd"
     -   "chapters/SAV.rmd"
     -   "chapters/zooplankton_index.rmd"
-    -   "chapters/calanus_variation.rmd"
-    -   "chapters/wbts_mesozooplankton.rmd"
+    -   "chapters/wbts_zoo.rmd"
+    -   "chapters/preyfield_energy.rmd"
     -   "chapters/zoo_abundance_anom.rmd"
+    -   "chapters/zoo_community.rmd"
     -   "chapters/zoo_diversity.rmd"
 #
 #
@@ -33,6 +34,7 @@ rmd_files:
     -   "chapters/spawn_timing.rmd"
     -   "chapters/exp_n.rmd"
     -   "chapters/survey_shannon.rmd"
+    -   "chapters/effective_sweptarea.rmd"
     -   "chapters/forage_index.rmd"
     -   "chapters/benthos_index.rmd"
     -   "chapters/harborporpoise.rmd"
@@ -49,6 +51,7 @@ rmd_files:
     -   "chapters/cetacean_acoustic.rmd"
     -   "chapters/wea_sound.rmd"
     -   "chapters/species_groupings.rmd"
+    -   "chapters/persistent_hotspots.rmd"
 #
 #
 # #################### OCEANOGRAPHIC ##################
@@ -64,8 +67,8 @@ rmd_files:
     -   "chapters/cold_pool.rmd"
     -   "chapters/gsi.rmd"
     -   "chapters/slopewater.rmd"
-    -   "chapters/persistent_hotspots.rmd"
     -   "chapters/wcr.rmd"
+    -   "chapters/advection.rmd"
     -   "chapters/thermal_habitat_area.rmd"
     -   "chapters/thermal_habitat_gridded.rmd"
     -   "chapters/ch_bay_sal.rmd"
@@ -74,9 +77,10 @@ rmd_files:
     -   "chapters/ches_bay_synthesis.rmd"
     -   "chapters/heatwave.rmd"
     -   "chapters/heatwave_year.rmd"
+    -   "chapters/cold_spell.rmd"
     -   "chapters/timing_shifts.rmd"
-    -   "chapters/observation_synthesis_2023.rmd"
-    -   "chapters/observation_synthesis_2024.rmd"
+    -   "chapters/MOM6_forecasts.rmd"
+    -   "chapters/dissolved_oxygen.rmd"
     -   "chapters/ocean_acidification.rmd"
     -   "chapters/gom_acidification.rmd"
 #
@@ -84,6 +88,7 @@ rmd_files:
 # ######################## ECONOMIC ##################
     -   "chapters/sectionHeaders/economic.rmd"
     -   "chapters/comdat.rmd"
+    -   "chapters/comdat_profit.rmd"
     -   "chapters/commercial_div.rmd"
     -   "chapters/ppr.rmd"
     -   "chapters/recdat.rmd"
@@ -92,14 +97,28 @@ rmd_files:
     -   "chapters/bennet.rmd"
     -   "chapters/stock_status.rmd"
     -   "chapters/engagement.rmd"
-    -   "chapters/community_climate_vulnerability.rmd"
-    -   "chapters/aquaculture.rmd"
+    -   "chapters/community_risks.rmd"
+    -   "chapters/communities_at_sea.rmd"
+    -   "chapters/crew_survey.rmd"
+    #-   "chapters/aquaculture.rmd"
     -   "chapters/ocean_acidification.rmd"
     -   "chapters/wind_dev_speed.rmd"
     -   "chapters/wind_port.rmd"
     -   "chapters/wind_revenue.rmd"
-
+#
+#
+# #################### OBSERVATIONS ##################
+    -   "chapters/sectionHeaders/observations.rmd"
+    -   "chapters/observation_synthesis_2023.rmd"
+    -   "chapters/observation_synthesis_2024.rmd"
+    -   "chapters/observation_synthesis_2025.rmd"
+    -   "chapters/fishing_observations_2024.rmd"
+#
+#
+# #################### RESOURCES ##################
+    -   "chapters/sectionHeaders/resources.rmd"
     -   "chapters/glossary.Rmd"
+    -   "chapters/changelog.rmd"
     -   "chapters/references.Rmd"
 before_chapter_script: _common.R
 delete_merged_file: true

@@ -1,13 +1,13 @@
-# Cetacean Weekly Acoustic Presence {#cetacean_acoustic}
+# Cetacean Passive Acoustic Monitoring {#cetacean_acoustic}
 
-**Description**: This figure shows a summary of weekly acoustic presence of eight cetacean species summarized across two years at four recording sites in southern New England.
+**Description**: Passive acoustic monitoring (PAM) is a non-invasive method for studying cetaceans, relying on the detection of the unique vocalizations that cetaceans produce. PAM provides continuous sampling effort in areas that are otherwise difficult to access and provides information on multiple species simultaneously. The resulting long-term, robust datasets allow for insights into species distributions, behavior, and habitat use. Furthermore, PAM can be used from a management perspective to implement risk mitigation efforts, assess the cumulative impacts of stressors, and evaluate potential behavioral and distributional changes resulting from climate change or anthropogenic activity.
 
 **Indicator family**: 
 
 - [X] Megafauna
 
 
-**Contributor(s)**: Sofie Van Parijs, Annamaria DeAngelis, Tyler Aldrich, Rochelle Gordon, Amanda Holdman, Xavier Mouy, Tim Rowell, Sara Tennant, Annabel Westell, and Genevieve Davis
+**Contributor(s)**: Renea Briner, Amanda Holdman, Daryll Carlson, Genevieve Davis, Rhett Finley, Sophie Ferguson, Leila Hatch, Katie Kowarski, Bruce Martin, Jessica McCordic, Jennifer Miksis-Olds, Hilary Moors-Murphy, Xavier Mouy, Anita Murray, Maricarmen Serna, Erin Summers, Joy Stanistreet, Lindsey Transue, Christopher Tremblay, Annabel Westell, Rebecca Vanhoeck, Emma Vergow, Sofie Van Parijs, Mark Baumgartner, Joel Bell, Amy Engelhaupt, Paige Hanson, Hana Koilpillai, Melinda Rekdahl, Howard Rosenbaum, Julianne Wilder
 
 **Affiliations**: NEFSC
 
@@ -16,18 +16,20 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Passive acoustic monitoring (PAM) is a non-invasive method that provides continuous sampling effort in areas that are otherwise difficult to observe species presence and provides information on multiple species simultaneously. PAM allows for understanding trends in species distribution, habitat use, cumulative impacts and risk mitigation, and evaluating potential behavioral and distributional changes resulting from climate change or anthropogenic activity. 
-
-This indicator examined the weekly acoustic presence of eight cetacean species summarized across two years. This summary allows for an improved understanding of how frequently each of the species/family were acoustically active and whether they exhibit seasonal patterns in their activity within the region. This data serves as a baseline summary prior to construction of the southern New England Offshore Wind Energy Areas and full description of the research is available in Van Parijs et al. 2023[@vanparijs_establishing_2023].
+In the Gulf of Maine, we examined the weekly acoustic presence of eight cetacean species (harbor porpoise and sperm, humpback, minke, North Atlantic right, sei, fin, and blue whales) and one cetacean family (delphinid spp.). Data were collected across four years (2019-2023) and thirty recording sites. In the Mid-Atlantic Bight, we examined the weekly acoustic presence of six baleen whale species (North Atlantic right, sei, humpback, fin, blue, and minke whales). Data were collected across two years (2022-2024) and thirteen recording sites. This summary allows for an improved understanding of how frequently each of the species was acoustically active and whether they exhibited seasonal patterns in their activity within the region. This data serves as a baseline summary for a previously understudied region that has historically been viewed as a migratory corridor for baleen species. A full description is in preparation for publication.
 
 ## Key Results and Visualizations
-![Figure 1](https://github.com/user-attachments/assets/e3602f2a-a991-40c7-8511-110f878ec393){width=100%}
+This figure summarizes the weekly acoustic presence of eight cetacean species and one cetacean family in the Gulf of Maine, derived from data collected across four years (2019-2023) and thirty recording sites.
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_cetacean_acoustic_GOM.png){width=100%}
+
+This figure summarizes the weekly acoustic presence of six baleen whale species in the Mid-Atlantic Bight, derived from data collected across two years (2022-2024) and thirteen recording sites.
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_cetacean_acoustic_MAB.png){width=100%}
 
 
 ## Indicator statistics 
-Spatial scale: A total of four PAM units were located on Cox Ledge and west of Nantucket shoals in southern New England near the boundaries of the MA-RI Offshore Wind Energy Areas. The Distance between recorders was a maximum of 100km East-West, and 50 km North-South.
+Spatial scale: A total of thirty PAM units were located throughout the Gulf of Maine spanning the coastal shelf, deep basins, and offshore banks. A total of thirteen PAM units were located throughout the US Mid-Atlantic Bight shelf area of the Northwestern Atlantic Ocean. The southernmost recorders were located off the mouth of the Chesapeake Bay and the northernmost recorders were located south of Long Island, NY. Recorders were arranged in transects spanning the continental shelf.
 
-Temporal scale: Acoustic data were summarized from a two-year continuous sampling period spanning 2020 - 2022.
+Temporal scale: In the Gulf of Maine, acoustic data were summarized from a four-year continuous sampling period spanning September 2019 to September 2023. In the Mid-Atlantic Bight, acoustic data were summarized from a two-year continuous sampling period spanning June 2022 to November 2024.
 
 **Synthesis Theme**:
 
@@ -39,30 +41,36 @@ Temporal scale: Acoustic data were summarized from a two-year continuous samplin
 ```
 
 ## Implications
-Acoustic summaries show that Southern New England is an important habitat for cetaceans, with eight species/families present for at least 9 months of the year. 
+Acoustic summaries show that the Gulf of Maine and Mid-Atlantic Bight are important habitats for cetaceans, with many species detected year-round. Peak acoustic presence varied by species/family, with all groups exhibiting seasonal presence patterns. More fine-scale analyses reveal interannual and subregional differences in cetacean acoustic presence, highlighting the dynamic nature of the region.
 
-Winter Presence: Harbor porpoise, North Atlantic right whale, fin, and humpback whales all showed consistent presence throughout the winter months and a decrease in summer months. 
+Gulf of Maine
 
-Summer Presence: Sperm whale acoustic presence was also seasonal in nature with a peak in late spring and summer (May to July) with a maximum of 4 d a week of presence. There was sporadic presence of between 1 and 2 d a week across all other months except for March when no acoustic activity was heard. 
+Continuous Presence: Harbor porpoises, delphinids, humpback whales, and fin whales were acoustically present most days of the week year-round, with a slight decrease in harbor porpoise and fin whale detections in the summer (May-July) and a slight decrease in humpback whale detections in the late-winter (February) and summer (June-August).
+Winter Presence: Blue whales were detected most weeks throughout the fall and winter (September-February).
 
-Spring Presence: Sei whales showed a peak in late winter and early spring (February to May) with sporadic presence throughout all other months. 
+Summer Absence: Sei whales were detected throughout the fall, winter, and spring, but had fewer days with detections in the summer (June-August). Sei whale acoustic presence particularly peaked in the spring (March-May) and fall (October-November). North Atlantic right whale acoustic presence followed similar trends to sei whale acoustic presence, with the least days with detections in the summer, and more days with detections throughout the fall, winter, and spring. However, right whales had fewer detections than sei whales throughout the fall and early-winter, and right whale acoustic presence peaked earlier in the spring (March) than sei whale acoustic presence.
 
-Spring and Fall/Autumn Presence: Minke whales saw increased activity in the spring, with a maximum of 2 d a week of presence (April/May) and a prolonged increase in summer through fall (July to November) with a maximum of 4 d a week of call presences. 
+Highly Variable: Minke whale acoustic presence greatly varied, but was generally consistent with some days each week detected throughout the spring, summer, and fall (March-November). Sperm whales were detected year-round, but were highly variable in the number of days with detections each week. Variability is likely driven by interannual and subregional differences, as this indicator covers multiple habitat types.
 
-Continuous Seasonal Presence: Delphinids showed no seasonal pattern and were acoustically active 7 d a week, with only a slight decrease in activity in March and April. 
+Mid-Atlantic Bight
 
-Occasional Presence: Blue whales were only present on a few occasions in the winter (January/ February).
+Winter Presence: Humpback, North Atlantic right, and fin whales were all detected most weeks throughout the winter (November-February). Leading into and out of the winter months, fall and spring acoustic presence varied between the three species, with North Atlantic right whales having the shortest peak detection window (December-January). Blue whales were also acoustically present on a few occasions in the winter.
+Spring Presence: Sei whales showed a peak in detections in spring (April-May) with sporadic acoustic presence in other months.
+
+Summer Presence: No species were consistently detected in summer months (June-July); however, humpback, minke, North Atlantic right, sei, and fin whales were all detected at least once.
+
+Highly Variable: Minke whale acoustic presence greatly varied by site and year, but generally peaked in spring (March-April) and late summer into fall (August-October).
 
 ## Get the data
 
-**Point of contact**: [Rebecca Van Hoeck (rebecca.vanhoeck@noaa.gov); Genevieve Davis (genevieve.davis@noaa.gov)](mailto:Rebecca Van Hoeck (rebecca.vanhoeck@noaa.gov); Genevieve Davis (genevieve.davis@noaa.gov)){.email}
+**Point of contact**: [Sofie Van Parijs (sofie.vanparijs@noaa.gov)](mailto:Sofie Van Parijs (sofie.vanparijs@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::cetacean_acoustic`
 
 **Variable definitions**
 
-Name: Acoustic presence; Definition: At least 1 species-specific call was observed on a given day. For North Atlantic right whale acoustic presence is defined as 3 species-specific calls observed on a given day.  
-Name: Weekly acoustic presence; Definition: median number of days of acoustic presence per calendar week across all data at four recording sites
+1) Acoustic presence; Definition: At least 1 species-specific call was observed on a given day. For North Atlantic right whale acoustic presence is defined as 3 species-specific calls observed on a given day.  
+2) Weekly acoustic presence: Definition: median number of days of acoustic presence per calendar week across all data at four recording sites
 
 ```{r vars_cetacean_acoustic}
 # Pull all var names
@@ -74,7 +82,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

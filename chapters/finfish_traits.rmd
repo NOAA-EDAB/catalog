@@ -9,7 +9,7 @@
 
 **Contributor(s)**: Bart DiFiore, Kathy Mills, Scott Large
 
-**Affiliations**: GMRI
+**Affiliations**: Massachusetts
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -25,139 +25,135 @@ Here, we compiled eight key functional traits and three aggregate trait ordinati
 
 I'm happy to share the code used to produce these figures from the data linked above.
 
-### MidAtlantic
-
 ```{r plot_finfish_traitsMidAtlantictrophic_level}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'trophic_level',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'trophic_level', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsNewEnglandtrophic_level}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'trophic_level', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsMidAtlanticoffspring_size}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'offspring_size',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlanticage_maturity}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'age_maturity',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlanticlength_maturity}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'length_maturity',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlanticfecundity}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'fecundity',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlanticl_inf}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'l_inf',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlantick}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'k',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlanticmax_obs_length}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'max_obs_length',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlanticPC1}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'PC1',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlanticPC2}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'PC2',n=10)
-ggplotObject
-```
-
-```{r plot_finfish_traitsMidAtlanticPC3}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'MidAtlantic', varName= 'PC3',n=10)
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_finfish_traitsNewEnglandtrophic_level}
-# Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'trophic_level',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'offspring_size', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandoffspring_size}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'offspring_size',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'offspring_size', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlanticage_maturity}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'age_maturity', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandage_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'age_maturity',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'age_maturity', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlanticlength_maturity}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'length_maturity', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandlength_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'length_maturity',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'length_maturity', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlanticfecundity}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'fecundity', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandfecundity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'fecundity',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'fecundity', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlanticl_inf}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'l_inf', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandl_inf}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'l_inf',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'l_inf', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlantick}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'k', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandk}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'k',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'k', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlanticmax_obs_length}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'max_obs_length', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandmax_obs_length}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'max_obs_length',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'max_obs_length', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlanticPC1}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC1', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandPC1}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'PC1',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC1', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlanticPC2}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC2', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandPC2}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'PC2',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC2', n = 10)
+ggplotObject
+```
+
+```{r plot_finfish_traitsMidAtlanticPC3}
+# Plot indicator
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC3', n = 10)
 ggplotObject
 ```
 
 ```{r plot_finfish_traitsNewEnglandPC3}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report= 'NewEngland', varName= 'PC3',n=10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC3', n = 10)
 ggplotObject
 ```
 
@@ -184,7 +180,7 @@ At the EPU scale, there was little evidence for long-term linear trends in trait
 
 ## Get the data
 
-**Point of contact**: [Bart DiFiore (bdifiore@gmri.org)](mailto:Bart DiFiore (bdifiore@gmri.org)){.email}
+**Point of contact**: [Bart DiFiore (bartholomew.p.difiore@mass.gov)](mailto:Bart DiFiore (bartholomew.p.difiore@mass.gov)){.email}
 
 **ecodata name**: `ecodata::finfish_traits`
 

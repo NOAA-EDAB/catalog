@@ -1,0 +1,116 @@
+# Marine Cold Spell Events {#cold_spell}
+
+**Description**: Surface and bottom marine cold spells (MCSs) for 2025.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+
+
+**Contributor(s)**: Vincent Saba
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Marine cold spells.
+
+## Key Results and Visualizations
+Georges Bank 
+
+Surface MCSs (Marine Cold Spells) 
+
+Three surface MCSs occurred in 2025, one of which was the 11th strongest on record starting on Nov 7th and peaking on Nov 21st. 
+
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GB_Surface_MCS.png){width=100%}
+
+Bottom MCSs (Marine Cold Spells)
+
+Two bottom MCSs occurred in 2025, one of which was the 9th strongest on record starting on Aug 11th, peaking on Sep 15th, and might still be ongoing (BT data ends 9/15).  The other bottom MCS started on Feb 8th, peaking on Feb 25th, and lasting 71 days.
+
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GB_Bottom_MCS.png){width=100%}
+
+Gulf of Maine 
+
+Surface MCSs (Marine Cold Spells) 
+
+Five surface MCSs occurred in 2025.  The fifth strongest cold spell on record started on Feb. 6th, peaked on Feb. 20th, and lasted 42 days (ended March 20th).  The average sea surface temperature (SST) during this MCS was 4.50 oC, almost 1 oC cooler than the average SST (5.47 oC) for the Gulf of Maine from 2016-2025 during this same time-period (Feb. 6th to Mar 20th)*.  The seventh strongest on record started in April 2nd, peaked on April 15th, and lasted 37 days. 
+
+*These are raw temperature values and are not de-trended (but MCSs are based on detrended data).
+
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GOM_Surface_MCS_2025.png){width=100%}
+
+Bottom MCSs (Marine Cold Spells) 
+
+Three bottom MCSs occurred in the Gulf of Maine in 2025, one of which was the 5th strongest on record starting on Dec 24th 2024, peaking on Jan 13th 2025 and lasted 83 days.  The average bottom temperature in the Gulf of Maine was 7.5 oC* during this MCS, which is over 1 oC  cooler than the average bottom temperature (8.6 oC) in the Gulf of Maine for this same time-period (Dec 24th to Mar 17th).
+
+*These are raw temperature values and are not de-trended (but MCSs are based on detrended data).
+
+The 6th strongest MCS occurred on Aug 11th, peaked on Sep 10th and might still be ongoing (BT data ends 9/15).
+
+![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GOM_Bottom_MCS.png){width=100%}
+
+Middle Atlantic Bight 
+
+Surface MCSs (Marine Cold Spells) 
+
+Six surface MCSs occurred in Middle Atlantic Bight in 2025, one of which was the 8th strongest on record starting on Feb 6th, peaking on Feb 23st, and lasting 31 days.
+
+![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_MAB_Surface_MCS.png){width=100%}
+
+Bottom MCSs (Marine Cold Spells) 
+
+One bottom MCSs occurred in the Middle Atlantic Bight in 2025, which was the 5th strongest on record starting on Jan 9th, peaking on Jan 25th 2025 and lasted 57 days.  The average bottom temperature in the Middle Atlantic Bight was 7.2 oC* during this MCS, which is almost 2 oC  cooler than the average bottom temperature (9.0 oC) in the Middle Atlantic Bight for this same time-period (Jan 9th to Mar 7th).
+
+*These are raw temperature values and are not de-trended (but MCSs are based on detrended data).
+
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_MAB_Bottom_MCS.png){width=100%}
+
+
+## Indicator statistics 
+Spatial scale: EPU
+
+Temporal scale: Daily
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_cold_spell}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Cooler than average conditions in the US NES.  Both surface and bottom cold spells were observed with one bottom cold spell almost 2C below average in the MAB.
+
+## Get the data
+
+**Point of contact**: [Vincent Saba (vincent.saba@noaa.gov)](mailto:Vincent Saba (vincent.saba@noaa.gov)){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+1. MCS maximum Intensity (detrended) = degrees C 2. MCS duration = days.
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+

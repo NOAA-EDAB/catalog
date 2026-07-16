@@ -24,9 +24,15 @@ A climate vulnerability assessment is published for Atlantic and Gulf marine mam
 For seasons and cetacean species with movements greater than 70 km, the season plots show the direction and magnitude of core habitat shifts. The locations of the tip and end of the arrow is the seasonal weighted centroid locations for 2010 (end of arrow) and 2017 (tip of arrow). The longer the arrow the more the seasonal shift in distribution. 
 For species that showed a clear displacement of the weighted centroid, the average magnitude of the shift was 178 km shifted towards the northeast and into deeper waters. Bottlenose dolphin habitat showed the most drastic shift for all seasons except during winter: spring= 294 km, summer=505 km, fall= 753 km and winter = 211. There was a clear tendency where the proportion of the estimated population in southern latitudes decreased, while north of 35° the proportion of the estimated population increased, especially during summer 2017. Other species that on average, showed a moderate-to-no spatial shift included humpback whale, minke whale, white-sided dolphin, Sowerby’s beaked whale, and long-finned pilot.
 
-```{r plot_cetacean_distMAB}
+```{r plot_cetacean_distMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_cetacean_dist(report='MidAtlantic')
+ggplotObject <- ecodata::plot_cetacean_dist(report = 'MidAtlantic')
+ggplotObject
+```
+
+```{r plot_cetacean_distNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_cetacean_dist(report = 'NewEngland')
 ggplotObject
 ```
 

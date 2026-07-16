@@ -1,0 +1,257 @@
+# Community Risks Indicators (CEVRI) {#community_risks}
+
+**Description**: The dataset contains by year by community scores for community sensitivity to temperature, ocean acidification, stock size/status, total sensitivity, and total vulnerability based on Hare et al. 2016 [@hare_vulnerability_2016] and Loughran et al. 2025 [@loughran_climate_2025] species vulnerability and community dependency. Reciprocal Simpson's Diversity scores for each community, Regional Quotients, and Regional climate vulnerability scores are also included.
+
+**Indicator family**: 
+
+- [x] Social
+- [x] Economic
+
+
+**Contributor(s)**: Tarsila Seara, Patricia Clay, Changhua Weng
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Coastal fishing communities are greatly affected by climate change, both because of their physical location and because of their frequent social, cultural, and economic dependence on fishing. These impacts are expected to become more pressing as climatic changes become more extensive. Changes in ocean temperature and acidification affecting marine life have the potential to directly impact fisheries and fishery dependent livelihoods. Coastal fishing communities worldwide have or are likely to experience social, economic, and cultural impacts from climate change, both negative (e.g., loss of infrastructure, fish stock decline) and positive (e.g., increased abundance of valuable species). Changes in marine fisheries as a consequence of climate change will require adaptation by coastal fishing communities and fisheries managers alike. The Community Climate Change Vulnerability Indicators were developed to help examine trends in climate change vulnerability in U.S. coastal fishing communities in the Northeast Region using indicators developed to understand fishing community level risk to climate change as based on species dependency.
+
+## Key Results and Visualizations
+Regional level analyses (maps); Community level analysis (community profiles)
+
+```{r plot_community_risksMidAtlanticoaSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandoaSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlantictempSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandtempSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticstckSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandstckSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticsensSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandsensSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticvulnSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandvulnSumpropcomm}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'propcomm', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticoaSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandoaSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlantictempSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandtempSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticstckSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandstckSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticsensSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandsensSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticvulnSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandvulnSumregionrev}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'regionrev', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticoaSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandoaSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlantictempSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandtempSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticstckSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandstckSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticsensSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandsensSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksMidAtlanticvulnSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+```{r plot_community_risksNewEnglandvulnSumregionland}
+# Plot indicator
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'regionland', n = 10)
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: By community (not port) in all NE region
+
+Temporal scale: Yearly 2000-2022; Maps: 5year average 2018-2022
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
+```{r autostats_community_risks}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Not included.
+
+## Get the data
+
+**Point of contact**: [Tarsila Seara (tarsila.seara@noaa.gov)](mailto:Tarsila Seara (tarsila.seara@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::community_risks`
+
+**Variable definitions**
+
+See codebook in dataset
+
+```{r vars_community_risks}
+# Pull all var names
+vars <- ecodata::community_risks |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/community_risks.html>
+

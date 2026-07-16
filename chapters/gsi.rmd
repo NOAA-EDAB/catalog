@@ -9,7 +9,7 @@
 
 **Contributor(s)**: Zhuomin Chen
 
-**Affiliations**: Department of Marine Sciences, University of Connecticut
+**Affiliations**: Gulf of Maine Research Institute
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -21,31 +21,27 @@ The T200-based Gulf Stream Index is calculated as the standardized first princip
 ## Key Results and Visualizations
 The Gulf Stream Index suggests that recent years (2021-2022) the GS almost maintains its relative northward shift relative to the long-term mean. Since Aug. 2023, the Gulf Stream is suggested to move southward, which is mainly due to its eastern part (east of 65°W). The Western Gulf Stream Index maintains its relative northward position during the past months since Aug. 2023.
 
-### MidAtlantic
-
 ```{r plot_gsiMidAtlanticgsi}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(report= 'MidAtlantic', varName= 'gsi',n=10)
+ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'gsi', n = 10)
+ggplotObject
+```
+
+```{r plot_gsiNewEnglandgsi}
+# Plot indicator
+ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'gsi', n = 10)
 ggplotObject
 ```
 
 ```{r plot_gsiMidAtlanticwestgsi}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(report= 'MidAtlantic', varName= 'westgsi',n=10)
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_gsiNewEnglandgsi}
-# Plot indicator
-ggplotObject <- ecodata::plot_gsi(report= 'NewEngland', varName= 'gsi',n=10)
+ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'westgsi', n = 10)
 ggplotObject
 ```
 
 ```{r plot_gsiNewEnglandwestgsi}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(report= 'NewEngland', varName= 'westgsi',n=10)
+ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'westgsi', n = 10)
 ggplotObject
 ```
 
@@ -69,7 +65,7 @@ The Gulf Stream North Wall Index indicates the meridional shift of the Gulf Stre
 
 ## Get the data
 
-**Point of contact**: [Zhuomin Chen (zhuomin.chen@uconn.edu)](mailto:Zhuomin Chen (zhuomin.chen@uconn.edu)){.email}
+**Point of contact**: [Zhuomin Chen (zchen@gmri.org)](mailto:Zhuomin Chen (zchen@gmri.org)){.email}
 
 **ecodata name**: `ecodata::gsi`
 

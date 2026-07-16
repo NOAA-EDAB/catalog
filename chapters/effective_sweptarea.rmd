@@ -1,0 +1,99 @@
+# Trends in effective area swept and revenue per km2 by EPU and gear {#effective_sweptarea}
+
+**Description**: Data presented here represent a summary of total area swept derived from VTR information, e.g. gear type, gear sweep, vessel size, number of tows, etc. and represents a complete census of commercial fishing trips reported by dealers, either from VTR or imputed data.  Assumptions about the effect on habitat by gear components (sweeps, cables, doors, dredges, traps, gillnets, and longlines) are made and documented.
+
+**Indicator family**: 
+
+- [X] Habitat
+
+
+**Contributor(s)**: Andrew Applegate, Michelle Bachman, Geret DePiper
+
+**Affiliations**: NEFMC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Effective swept area is a measure of the force of the gear on bottom habitat, including the effects of the net sweep, dredge width, trawl cables, and trawl doors.  Trends reflect the total amount of effort reported for trips reported by dealers and on vessel trip reports.  Due to the nature of the gear, the duration of tows, and amount of vessels fishing, otter trawls have the largest amount of area swept.
+
+These data were derived from a combination of dealer, vessel trip report (VTR), and observer data, including information about the number and duration of tows, the gear width, as well as estimates of cable length and door width based on vessel size. Where these data from VTRs are unavailable, an imputation was conducted by the CAMS system to assign values for unmatched trips reported by dealers.
+
+## Key Results and Visualizations
+Gulf of Maine 
+
+Effective area swept has generally declined since the late 1990s for mobile fishing gear (trawls and dredges), while it has varied without trend for many fixed gears (traps and gillnets etc). The decline in area swept by mobile fishing gears is due to a variety of factors, including vessel buy backs and retirement, fewer tows per trip, habitat area closures, and more efficient fishing coupled with hard limits on catch. Despite lower total landings revenue, the revenue per area swept has increased because total effective area swept has declined more than revenue.
+
+In the Gulf of Maine, gill net and otter trawl effort saw large declines from 1996-2023.  Otter trawl effort has been declining more gradually since 2012.  Raised (small-mesh) trawl effort has also been declining since 2010, while scallop dredge general category effort, while comparatively low, has been increasing since 2009. Squid trawl effort has been episodic without trend.  The low level of (lobster) trap effort since 2004 is probably caused by changes in imputed values by the CAMS system.
+
+While fishing effort (effective area swept) has been decreasing for many gears, revenue per area swept (in adjusted 2023 dollars) has increased, especially for otter trawls, raised footrope (small-mesh) trawls scallop dredge general category, squid trawls, and (primarily lobster) traps.
+
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_GOM.png){width=100%}
+
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_GOM.png){width=100%}
+
+Georges Bank
+
+Gillnet and otter trawl fishing effort on Georges Bank has exhibited significant declines over 1996-2023, while hydraulic clam dredge and raised (small-mesh) trawl effort has increased. Scallop limited access effort is episodic (related to area rotation policies), but has generally increased. Scallop general category effort has risen since 2010. Trap fishing effort (lobster and crab) has been trending down since 2007.
+
+Commercial fishing revenue (adjusted 2023 dollars) has risen for most gears, most notably for gillnets, otter trawls, raised (small-mesh) trawls, and (lobster and crab) traps. Gillnet and trap revenue per km2 is high because the gears cover a relatively small amount of bottom (letting fish come to the gear), while scallop dredge revenue is high because of the high relative value of sea scallops.
+
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_GB.png){width=100%}
+
+![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_GB.png){width=100%}
+
+Southern New England and Mid-Atlantic EPU
+
+In the Southern New England and Mid-Atlantic EPU, downward trends in effort are apparent. Gillnet, longline, otter trawl, scallop dredge limited access effort has declined by a considerable amount. Clam dredge effort has declined since 2013.  Scallop general category, squid trawl, and trap (lobster and crab) effort have varied without trend.
+
+For most gears used in the Southern New England and Mid-Atlantic EPU, revenue (adjusted 2023 dollars) per area swept has risen, most notably for longlines, otter trawls, squid trawls, scallop dredges, and (lobster and crab) traps. The values are high for longlines and traps due to the low amount of area affected by the gear (catching fish that come to the gear).  Scallop values are high due to the relatively high value per pound of sea scallops.
+
+![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_MAB.png){width=100%}
+
+![Figure 6](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_MAB.png){width=100%}
+
+
+## Indicator statistics 
+Spatial scale: Northeast region by EPU
+
+Temporal scale: Annual, 1996 to 2024
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
+```{r autostats_effective_sweptarea}
+# Either from Contributor or ecodata
+```
+
+## Implications
+These effort data are used in the region's habitat fishing effects model, which accounts for the effects on various types of bottom habitat. The distribution of effort is also important and has been affected by protective area restrictions on bottom-tending mobile fishing gears.
+
+## Get the data
+
+**Point of contact**: [Andrew Applegate (aapplegate@nefmc.org)](mailto:Andrew Applegate (aapplegate@nefmc.org)){.email}
+
+**ecodata name**: `ecodata::effective_sweptarea`
+
+**Variable definitions**
+
+Total area swept in km2
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are NOT publicly available.
+
+## Accessibility and Constraints
+
+Must have access to confidential data and CAMS on the GARFO server
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/effective_sweptarea.html>
+

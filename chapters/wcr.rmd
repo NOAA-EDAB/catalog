@@ -22,9 +22,15 @@ Warm core rings are eddies formed from Gulf Stream meanders that transport warm 
 ## Key Results and Visualizations
 Prior to 2000, an average of 18 warm core rings were formed by the Gulf Stream off the Northeast US shelf. From 2000-2017, an average of 33 warm core rings were formed. Annual numbers of warm core rings have been updated using the same methods for each year since 2017, but the regime shift analysis has not been updated.
 
-```{r plot_wcrMAB}
+```{r plot_wcrMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_wcr(report='MidAtlantic',n=10)
+ggplotObject <- ecodata::plot_wcr(report = 'MidAtlantic', n = 10)
+ggplotObject
+```
+
+```{r plot_wcrNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_wcr(report = 'NewEngland', n = 10)
 ggplotObject
 ```
 

@@ -35,27 +35,21 @@ A pattern of generally good condition was observed across many species in the GO
 
 Preliminary General Additive Models show that for many species, temperature and copepod size structure have the strongest associations with relative fish condition. Directional trends show that some species are improving in condition with increases in water temperature, likely as a result of increased metabolic rates with sufficient food availability. Whereas other species are declining in condition with increases in water temperature, likely as a result of food limitations with increased metabolic rates, or reaching thermal temperature maxims and having to move into less productive areas in search of suitable thermal habitat. These species may be more susceptible to climate change. Preliminary change point analyses show that the decline in relative condition in the 2000s that is seen across many species aligns with a period dominated by large bodied copepods. Perretti et al. [@perretti_regime_2017] found similar periods of copepod size structure changes, and found that periods dominated by large bodied copepods were associated with low recruitment in groundfish. Relative fish condition is likely the mechanism for these linkages, where poor body condition leads to low fish recruitment.
 
-### MAB
-
-```{r plot_conditionMAB}
+```{r plot_conditionMABMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(report='MidAtlantic')
+ggplotObject <- ecodata::plot_condition(EPU = 'MAB', report = 'MidAtlantic')
 ggplotObject
 ```
 
-### GB
-
-```{r plot_conditionNEGB}
+```{r plot_conditionGBNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GB')
+ggplotObject <- ecodata::plot_condition(EPU = 'GB', report = 'NewEngland')
 ggplotObject
 ```
 
-### GOM
-
-```{r plot_conditionNEGOM}
+```{r plot_conditionGOMNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(report='NewEngland',EPU='GOM')
+ggplotObject <- ecodata::plot_condition(EPU = 'GOM', report = 'NewEngland')
 ggplotObject
 ```
 

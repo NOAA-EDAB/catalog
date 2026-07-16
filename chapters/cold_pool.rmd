@@ -23,43 +23,21 @@ Changes in ocean temperature and circulation alter habitat features such as the 
 ## Key Results and Visualizations
 Time series plots of the three cold pool indices. Cold pool index shows the mean temperature within the cold pool where positive values indicate a warming cold pool. Cold pool extent shows the change in maximum area relative to the historical mean, where negative values indicate a shrinking cold pool. Cold pool persistence measures the duration of the cold pool relative to the historical mean. Negative values indicate a shorter duration. In general the cold pool has been getting warmer, has persisted for a shorter duration, and has covered a smaller footprint since the 1960s.
 
-### MidAtlantic
-
 ```{r plot_cold_poolMidAtlanticcold_pool}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'cold_pool',n=10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'cold_pool', n = 10)
 ggplotObject
 ```
 
 ```{r plot_cold_poolMidAtlanticpersistence}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'persistence',n=10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'persistence', n = 10)
 ggplotObject
 ```
 
 ```{r plot_cold_poolMidAtlanticextent}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report= 'MidAtlantic', varName= 'extent',n=10)
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_cold_poolNewEnglandcold_pool}
-# Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'cold_pool',n=10)
-ggplotObject
-```
-
-```{r plot_cold_poolNewEnglandpersistence}
-# Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'persistence',n=10)
-ggplotObject
-```
-
-```{r plot_cold_poolNewEnglandextent}
-# Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report= 'NewEngland', varName= 'extent',n=10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'extent', n = 10)
 ggplotObject
 ```
 
@@ -92,8 +70,9 @@ Changes in the cold pool habitat can affect species distribution, recruitment, a
 **Variable definitions**
 
 1) Source: ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-2) year 3) cold_pool_index: measure of mean temperature within cold pool 4) se_cold_pool_index: standard error of cold_pool_index 5) persistence_index: measure of duration of cold pool 
-6) se_persistence_index: standard error of persistence_index 7) extent_index: measure of spatial extent of cold pool 8) se_extent_index: standard error of extent_index
+2) year 3) cold_pool_index: measure of mean temperature within cold pool 4) se_cold_pool_index: standard error of cold_pool_index 
+5) persistence_index: measure of duration of cold pool 6) se_persistence_index: standard error of persistence_index 
+7) extent_index: measure of spatial extent of cold pool 8) se_extent_index: standard error of extent_index
 
 ```{r vars_cold_pool}
 # Pull all var names

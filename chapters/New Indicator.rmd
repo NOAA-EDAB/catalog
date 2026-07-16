@@ -1,89 +1,0 @@
-# Thermal Habitat - Frequency {#New Indicator}
-
-**Description**: Metrics related to spatial and temporal frequency and magnitude of bottom temperature habitat.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-- [X] Habitat
-
-
-**Contributor(s)**: Joseph Caracappa
-
-**Affiliations**: NEFSC
-
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-See "Thermal Habitat Gridded" for cell-based calculations. Many deep water benthic and demersal exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal presences may impair these processes. Temperature thresholds between 0.5C and 30C at 0.5C intervals. Data from 1993-01-01 to 2024-09-10 were obtained from the CMEMS' GLORYS12V1 global reanalysis product. Daily cell-based metrics include: the number of days exceeding a temperature limit (nDays), the number of consecutive days exceeding a temperature limit (nDays_consecutive), the sum of temperatures above a temperature limit (degree_days), and the proportion of each area that exceeds a temperature limit (percent_area). These daily metrics are summarized with a minimum (_min), maximum (_max), mean (_mean), median (_median), and standard deviation (_sd).
-
-## Key Results and Visualizations
-Proceed as though this were a short summary of a typical results section in a paper.
-
-
-## Indicator statistics 
-Spatial scale: by EPU and full shelf (All)
-
-Temporal scale: Annual
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_New Indicator}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Proceed as though this were a short summary of a typical discussion section in a paper.
-
-## Get the data
-
-**Point of contact**: [Joseph Caracappa (joseph.caracappa@noa.gov)](mailto:Joseph Caracappa (joseph.caracappa@noa.gov)){.email}
-
-**ecodata name**: No dataset
-
-**Variable definitions**
-
-year: year temperature_limit: temperature cutoff used in calculations 
-epu: EPU name or ALL for shelf-wide 
-nDays_min: minimum number of days in a year where a cell's temperature exceeded temperature_limit 
-nDays_max: maximum number of days in a year where a cell's temperature exceeded temperature_limit 
-nDays_mean: mean number of days in a year where a cell's temperature exceeded temperature_limit 
-nDays_median: median number of days in a year where a cell's temperature exceeded temperature_limit 
-nDays_sd: standard deviation of number of days in a year where a cell's temperature exceeded temperature_limit 
-nDays_consecutive_min: minimum consecutive days in a year where a cell's temperature exceeded temperature_limit 
-nDays_consecutive_max: maximum consecutive days in a year where a cell's temperature exceeded temperature_limit 
-nDays_consecutive_mean: mean consecutive days in a year where a cell's temperature exceeded temperature_limit 
-nDays_consecutive_median: median consecutive days in a year where a cell's temperature exceeded temperature_limit 
-nDays_consecutive_sd: standard deviation of consecutive days in a year where a cell's temperature exceeded temperature_limit 
-degree_day_min: minimum degree days in a year where a cell's temperature exceeded temperature_limit 
-degree_day_max: maximum degree days in a year where a cell's temperature exceeded temperature_limit 
-degree_day_mean: mean degree days in a year where a cell's temperature exceeded temperature_limit 
-degree_day_median: median degree days in a year where a cell's temperature exceeded temperature_limit 
-degree_day_sd: standard deviation of degree days in a year where a cell's temperature exceeded temperature_limit 
-percent_area_min: minimum daily percent of an area where cell's temperature exceeded temperature_limit 
-percent_area_max: maximum daily percent of an area where cell's temperature exceeded temperature_limit 
-percent_area_mean: mean daily percent of an area where cell's temperature exceeded temperature_limit 
-percent_area_median: median daily percent of an area where cell's temperature exceeded temperature_limit 
-percent_area_sd: standard deviation of daily percent of an area where cell's temperature exceeded temperature_limit
-
-
-No Data
-
-**Indicator Category**:
-
-- [X] Extensive analysis, not yet published
-
-
-## Public Availability
-
-Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-

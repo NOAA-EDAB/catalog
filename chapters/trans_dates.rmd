@@ -7,7 +7,7 @@
 - [X] Oceanographic
 
 
-**Contributor(s)**: Kevin Friedland
+**Contributor(s)**: Brandon Beltz, Kimberly Bastille, Kevin Friedland
 
 **Affiliations**: NEFSC
 
@@ -21,31 +21,27 @@ Transition dates are defined as the day of the year when surface temperatures ch
 ## Key Results and Visualizations
 Ocean summer length in Mid-Atlantic: the annual total number of days between the spring thermal transition date and the fall thermal transition date. The transition dates are defined as the day of the year when surface temperatures changeover from cool to warm conditions in the spring and back to cool conditions in the fall.
 
-### MidAtlantic
-
-```{r plot_trans_datesMidAtlantictiming}
+```{r plot_trans_datestimingMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_trans_dates(report= 'MidAtlantic', varName= 'timing',n=10)
+ggplotObject <- ecodata::plot_trans_dates(varName = 'timing', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-```{r plot_trans_datesMidAtlanticlength}
+```{r plot_trans_dateslengthMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_trans_dates(report= 'MidAtlantic', varName= 'length',n=10)
+ggplotObject <- ecodata::plot_trans_dates(varName = 'length', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-```{r plot_trans_datesNewEnglandtiming}
+```{r plot_trans_datestimingNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_trans_dates(report= 'NewEngland', varName= 'timing',n=10)
+ggplotObject <- ecodata::plot_trans_dates(varName = 'timing', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-```{r plot_trans_datesNewEnglandlength}
+```{r plot_trans_dateslengthNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_trans_dates(report= 'NewEngland', varName= 'length',n=10)
+ggplotObject <- ecodata::plot_trans_dates(varName = 'length', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
@@ -53,7 +49,7 @@ ggplotObject
 ## Indicator statistics 
 Spatial scale: by EPU
 
-Temporal scale: Annual time series (1982 to 2023)
+Temporal scale: Annual time series (1982 to present)
 
 **Synthesis Theme**:
 
@@ -69,13 +65,13 @@ Prolonged fall temperatures have been linked to the increased number of cold-stu
 
 ## Get the data
 
-**Point of contact**: [kevin.friedland@noaa.gov](mailto:kevin.friedland@noaa.gov){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::trans_dates`
 
 **Variable definitions**
 
-1. falltrans 2. sprtrans 3. maxday
+1. falltrans: fall transition day 2. sprtrans: spring transition day 3. maxday: max sst day
 
 ```{r vars_trans_dates}
 # Pull all var names

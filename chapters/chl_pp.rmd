@@ -16,138 +16,128 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
+Phytoplankton are key biological regulators of the structure and function of most marine ecosystems. They are the foundation of the marine food web and are the primary food source for zooplankton and filter feeders such as shellfish. Numerous environmental and oceanographic factors interact to drive the abundance, composition, spatial distribution, seasonal timing and productivity of phytoplankton. Satellite derived measurements of chlorophyll, the dominant photosynthetic pigment in phytoplankton, are used to estimate total phytoplankton biomass. Phytoplankton growth depends on the availability of carbon dioxide, sunlight and nutrients and their growth rates can be influenced by water temperature, water depth, wind, and grazing pressure.  Primary productivity is a measure of the amount of carbon produced by phytoplankton. The size structure of the phytoplankton community influences important biogeochemical and ecological processes, including transfer of energy through the marine food web.
 
+The unique physical characteristics of the Northeast U.S. continental shelf help make it among the most productive continental shelf systems in the world influenced by both bottom-up (e.g. nutrient concentrations, light availability, and mixing/stratification) and top-down (e.g. grazing) controls. Phytoplankton biomass, productivity, and composition all have high spatial, seasonal and interannual variability. The most pronounced spatial pattern is the decrease in phytoplankton biomass from the coast to the shelf break. Georges Bank and Nantucket Shoals are shallow regions that are well mixed by tides. This mixing supplies sufficient nutrients to support phytoplankton growth throughout the year. In other regions, blooms of large diatom species occur on a seasonal cycle when growing conditions are ideal.
 
 ## Key Results and Visualizations
-The seasonal cycle of phytoplankton biomass typically includes peaks during the winter-spring and fall seasons and minimums during the summer months, however exact bloom timing varies by region. Primary productivity, increases during bloom periods due to increased biomass, but peaks during the summer months when daylight and temperatures are greatest. In 2024, concentrations of chlorophyll _a_ (a proxy for biomass) were above average during the winter-spring and fall bloom periods in all regions. There was no evidence of a repeat of the widespread _Tripos muelleri_ [bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2023.html) observed in [2023](https://doi.org/10.25923/f8xc-hj17). There was, however, an atypical localized [coccolithophore bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2024.html#key-results-and-visualizations-61) south of Long Island, New York in late June to early July.
+The seasonal cycle of phytoplankton biomass (shown as chlorophyll _a_) typically includes peaks during the winter-spring and fall seasons and minimums during the summer months, however exact bloom timing varies by region. Primary productivity, increases during bloom periods due to increased biomass, but peaks during the summer months when daylight and temperatures are greatest. 
 
-Mid-Atlantic primary production peaked in early summer in 2024 and was above average in late fall, which is attributed to the above average late fall bloom. Georges Bank fall productivity was also above average due to the abnormally large fall phytoplankton bloom. Conversely, the Gulf of Maine spring bloom accounted for the largest above average spike in that region. 
-
-The seasonal cycles of phytoplankton size distribution are typically dominated by larger-celled microplankton (> 20 um) during the winter-spring and fall bloom periods, while smaller-celled nanoplankton (0.2-20 um) dominate during the warmer summer months. The smallest phytoplankton group, picoplankton (<0.2 um), represent the smallest fraction of the phytoplankton community in the region. Phytoplankton size class distributions were near average for most of the year, except during the early fall bloom. The 2024 phytoplankton size class distribution was near the seasonal climatology in all regions except during the above average phytoplankton bloom periods.
+The seasonal cycles of phytoplankton size distribution are typically dominated by larger-celled microplankton (> 20 um) during the winter-spring and fall bloom periods, while smaller-celled nanoplankton (0.2-20 um) dominate during the warmer summer months. The smallest phytoplankton group, picoplankton (<0.2 um), represent the smallest fraction of the phytoplankton community in the region. Phytoplankton size class distributions were near average for most of the year, except during the early fall bloom. 
 
 There is high interannual variability of the seasonal phytoplankton cycle. At the monthly scale, MAB chlorophyll and primary production are increasing during January, suggesting that the fall bloom period is extending into early winter. The significant decrease in MAB chlorophyll in September chlorophyll is likely related to warmer temperatures persisting into early fall and increased nutrient limitation. Fall and winter chlorophyll and primary production are increasing on Georges Bank and Gulf of Maine.
 
-### MidAtlantic
+#### 2025
+Concentrations of chlorophyll _a_ (a proxy for biomass) were below average during the winter-spring bloom periods in all regions. Fall bloom concentrations were above average on Georges Bank in late fall (November-December) and below average in the Gulf of Maine and Mid-Atlantic Bight. There was no evidence of atypical blooms such as the widespread _Tripos muelleri_ [bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2023.html) observed in [2023](https://doi.org/10.25923/f8xc-hj17) or the [2024 coccolithophore bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2024.html#key-results-and-visualizations-61) south of Long Island, New York. Primary productivity was at or below average for most of the year in all regions due to the below average phytoplankton biomass. Similarly, microplankton, which typically dominate during bloom periods, were also below average throughout most of the year. The one exception was above average concentrations on Georges Bank in the fall.
 
+#### 2024
+Concentrations of chlorophyll _a_ (a proxy for biomass) were above average during the winter-spring and fall bloom periods in all regions. There was no evidence of a repeat of the widespread _Tripos muelleri_ [bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2023.html) observed in [2023](https://doi.org/10.25923/f8xc-hj17). There was, however, an atypical localized [coccolithophore bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2024.html#key-results-and-visualizations-61) south of Long Island, New York in late June to early July. Mid-Atlantic primary production peaked in early summer in 2024 and was above average in late fall, which is attributed to the above average late fall bloom. Georges Bank fall productivity was also above average due to the abnormally large fall phytoplankton bloom. Conversely, the Gulf of Maine spring bloom accounted for the largest above average spike in that region. The 2024 phytoplankton size class distribution was near the seasonal climatology in all regions except during the above average phytoplankton bloom periods.
 
 ```{r plot_chl_ppMidAtlanticchlweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'chl', plottype = 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
-
-
-```{r plot_chl_ppMidAtlanticchlmonthlyMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'chl', plottype = 'monthly',n=10)
-ggplotObject
-```
-
 
 ```{r plot_chl_ppMidAtlanticppweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'pp', plottype = 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
-
-
-```{r plot_chl_ppMidAtlanticppmonthlyMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'pp', plottype = 'monthly',n=10)
-ggplotObject
-```
-
 
 ```{r plot_chl_ppMidAtlanticsizeweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'size', plottype = 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+```{r plot_chl_ppMidAtlanticchlmonthlyMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'monthly', EPU = 'MAB', n = 10)
+ggplotObject
+```
+
+```{r plot_chl_ppMidAtlanticppmonthlyMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'monthly', EPU = 'MAB', n = 10)
+ggplotObject
+```
 
 ```{r plot_chl_ppMidAtlanticsizemonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'size', plottype = 'monthly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'monthly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-
 ```{r plot_chl_ppNewEnglandchlweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'chl', plottype = 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandppweeklyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandsizeweeklyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandchlmonthlyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandppmonthlyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandsizemonthlyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
 ```{r plot_chl_ppNewEnglandchlweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'chl', plottype = 'weekly',n=10)
-ggplotObject
-```
-
-
-```{r plot_chl_ppNewEnglandchlmonthlyGB}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'chl', plottype = 'monthly',n=10)
-ggplotObject
-```
-
-```{r plot_chl_ppNewEnglandchlmonthlyGOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'chl', plottype = 'monthly',n=10)
-ggplotObject
-```
-
-
-```{r plot_chl_ppNewEnglandppweeklyGB}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'pp', plottype = 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
 ```{r plot_chl_ppNewEnglandppweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'pp', plottype = 'weekly',n=10)
-ggplotObject
-```
-
-
-```{r plot_chl_ppNewEnglandppmonthlyGB}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'pp', plottype = 'monthly',n=10)
-ggplotObject
-```
-
-```{r plot_chl_ppNewEnglandppmonthlyGOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'pp', plottype = 'monthly',n=10)
-ggplotObject
-```
-
-
-```{r plot_chl_ppNewEnglandsizeweeklyGB}
-# Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'size', plottype = 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
 ```{r plot_chl_ppNewEnglandsizeweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'size', plottype = 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_chl_ppNewEnglandsizemonthlyGB}
+```{r plot_chl_ppNewEnglandchlmonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'size', plottype = 'monthly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GOM', n = 10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandppmonthlyGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
 ```{r plot_chl_ppNewEnglandsizemonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'size', plottype = 'monthly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 

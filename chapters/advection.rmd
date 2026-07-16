@@ -1,0 +1,128 @@
+# Advection {#advection}
+
+**Description**: The advection data is an integrated mass transport through transects along the shelf break
+
+**Indicator family**: 
+
+- [x] Oceanographic
+- [x] Lower trophic levels
+
+
+**Contributor(s)**: Zhitao Yu and Laurel Smith
+
+**Affiliations**: NMFS
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Advection is important to the retention of larval fish on the Northeast U.S. Continental Shelf.
+
+## Key Results and Visualizations
+Advection indices are presented monthly (March-June) by three depth ranges (less than 15m, 15--40m and 40m to sea floor) from 1994-2024. Positive values are a net water movement onto the U.S. continental shelf and negative values are net advection of water off of the shelf. The region of study was transects along the shelf from Hudson Canyon north to  the eastern edge of Georges Bank for the Georges Bank/Gulf of Maine index and Hudson Canyon south to the northern edge of North Carolina for the Mid-Atlantic Bight index. Advection was largely offshore throughout the time series in both regions. In the Georges Bank/Gulf of Maine region, there was a shift in the deepest water to more onshore transport starting in 2016 and a strengthening in offshore advection in the shallowest layer around the same time. In the Mid-Atlantic Bight, there was stable offshore advection in the deepest layer over time, but there were periods of stronger onshore transport during the mid-1990s and stronger offshore transport in the deepest layer in 2014 and 2015.
+
+```{r plot_advectionMidAtlantic3}
+# Plot indicator
+ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '3', n = 10)
+ggplotObject
+```
+
+```{r plot_advectionNewEngland3}
+# Plot indicator
+ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '3', n = 10)
+ggplotObject
+```
+
+```{r plot_advectionMidAtlantic4}
+# Plot indicator
+ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '4', n = 10)
+ggplotObject
+```
+
+```{r plot_advectionNewEngland4}
+# Plot indicator
+ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '4', n = 10)
+ggplotObject
+```
+
+```{r plot_advectionMidAtlantic5}
+# Plot indicator
+ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '5', n = 10)
+ggplotObject
+```
+
+```{r plot_advectionNewEngland5}
+# Plot indicator
+ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '5', n = 10)
+ggplotObject
+```
+
+```{r plot_advectionMidAtlantic6}
+# Plot indicator
+ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '6', n = 10)
+ggplotObject
+```
+
+```{r plot_advectionNewEngland6}
+# Plot indicator
+ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '6', n = 10)
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: Georges Bank/Gulf of Maine and Mid-Atlantic Bight
+
+Temporal scale: Advection indices are by month from March to June
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
+
+
+```{r autostats_advection}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Different fish species inhabit different depth ranges of the water column for spawning and recruitment. In years where there is strong advection off of the shelf, we would expect lower retention of the recuits that use that depth layer. Fish that are advected off the shelf as recruits would likely have low survivorship.
+
+## Get the data
+
+**Point of contact**: [Zhitao Yu (Zhitao.Yu@noaa.gov)](mailto:Zhitao Yu (Zhitao.Yu@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::advection`
+
+**Variable definitions**
+
+1) Year  2) Month  3) Var: Transport in the top 15m  4) Value: Transport in the top 15m  5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  7) Var: Transport 40m to sea floor  
+8) Value: Transport 40m to sea floor  9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  10) Units: 10^6 m^3/s
+
+```{r vars_advection}
+# Pull all var names
+vars <- ecodata::advection |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+- [x] Extensive analysis, not yet published
+- [x] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/advection.html>
+

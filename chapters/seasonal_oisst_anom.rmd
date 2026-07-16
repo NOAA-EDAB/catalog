@@ -22,27 +22,21 @@ Sea surface temperature can be used as a proxy for overall thermal conditions in
 ## Key Results and Visualizations
 Since 1982, SST has been increasing in all seasons in all three EPUs. 2023 was the warmest winter SST in the GOM and GB on record. All record warmest seasonal SST years have occurred on or after 2012. 2023 also saw relatively cooler summer temperatures in GB and the GOM and fall temperatures in all regions.
 
-### MAB
-
-```{r plot_seasonal_oisst_anomMAB}
+```{r plot_seasonal_oisst_anomMABMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='MidAtlantic',n=10)
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'MAB', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### GB
-
-```{r plot_seasonal_oisst_anomNEGB}
+```{r plot_seasonal_oisst_anomGBNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='NewEngland',EPU='GB',n=10)
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'GB', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-### GOM
-
-```{r plot_seasonal_oisst_anomNEGOM}
+```{r plot_seasonal_oisst_anomGOMNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom(report='NewEngland',EPU='GOM',n=10)
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'GOM', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 

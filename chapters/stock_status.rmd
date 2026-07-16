@@ -26,19 +26,15 @@ This indicator summarizes the most recent stock status, defined as stock assessm
 ## Key Results and Visualizations
 Single species management objectives (1. maintaining biomass above minimum thresholds and 2. maintaining fishing mortality below overfishing limits) are being met for all but three MAFMC managed species, though the status of six stocks is unknown. Single species management objectives are not being met for some NEFMC managed species.  Eight stocks are currently estimated to be below B<sub>MSY</sub>, while status relative to B<sub>MSY</sub> could not be assessed for 13 additional stocks.
 
-### MAB
-
-```{r plot_stock_statusMAB}
+```{r plot_stock_statusMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_stock_status(report='MidAtlantic')
+ggplotObject <- ecodata::plot_stock_status(report = 'MidAtlantic')
 ggplotObject
 ```
 
-### NE
-
-```{r plot_stock_statusNE}
+```{r plot_stock_statusNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_stock_status(report='NewEngland')
+ggplotObject <- ecodata::plot_stock_status(report = 'NewEngland')
 ggplotObject
 ```
 
@@ -73,7 +69,8 @@ In New England, stock status and associated management constraints are likely co
 **Variable definitions**
 
 Variables in `ecodata::stock_status`  **Stock:**  Name of stock   **Last assessment:** Most recent assessment year for stock status  
-**Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both"  **Code:**  Short stock name for plotting corresponding to **Stock**        
+**Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both"  
+**Code:**  Short stock name for plotting corresponding to **Stock**        
 **Var:**  "F.Fmsy" (Current year fishing mortality F relative to F<sub>MSY</sub>) "B.Bmsy" (Current year biomass B relative to B<sub>MSY</sub>)        **Value:** Decimal value of Var  
 **Units:** Unitless
 

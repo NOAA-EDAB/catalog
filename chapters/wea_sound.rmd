@@ -1,13 +1,14 @@
-# Ambient sound levels SNE wind energy areas {#wea_sound}
+# Ambient Sounds Levels in the NE {#wea_sound}
 
-**Description**: Annual decidecade sound pressure levels from Southern New England Wind Energy Areas
+**Description**: Passive acoustic monitoring (PAM) simultaneously captures the biological, anthropogenic, climatological, and geological sounds occurring in an area. PAM provides continuous sampling effort in areas that are otherwise difficult to access, resulting in long-term, robust datasets. Ambient sound (soundscape) metrics show the distribution of acoustic energy across frequencies. Peaks in sound levels within particular frequency bins indicate louder sounds at those frequencies, with frequencies below 1000 Hz typically representing contributions from baleen whales, vessel traffic, and noise-generating fishes. Therefore, soundscapes can be used as an indicator of ecosystem health and to identify changes to sound sources, which could be indicative of changes in phenology, species distributions, storm activity, and human activity.
 
 **Indicator family**: 
 
-
+- [x] Oceanographic
+- [x] Habitat
 
 
-**Contributor(s)**: Sofie M. Van Parijs, Annamaria I. DeAngelis , Tyler Aldrich, Rochelle Gordon, Amanda Holdman , Xavier Mouy, Timothy J. Rowell, Sara Tennant, Annabel Westell and Genevieve E. Davis
+**Contributor(s)**: Renea Briner, Amanda Holdman, Genevieve Davis, Rhett Finley, Sophie Ferguson, Leila Hatch, Samara Haver, Jessica McCordic, Xavier Mouy, Anita Murray, Maricarmen Serna, Anne Smith, Erin Summers, Lindsey Transue, Christopher Tremblay, Annabel Westell, Rebecca Vanhoeck,  Sofie Van Parijs, Isabella Garfield, Joel Bell, Amy Engelhaupt
 
 **Affiliations**: NEFSC
 
@@ -16,20 +17,24 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Decidecade sound pressure levels show the distribution of acoustic energy across frequencies. Peaks in sound levels within particular decidecade frequency bins indicate louder sounds at those frequencies, with frequencies below 1000 Hz typically representing contributions from baleen whales, vessel traffic, and soniferous fishes.
+This indicator examines hybrid millidecade sound pressure levels. In the Gulf of Maine, data were collected across four and a half years (2020-2024) and nine recording sites. In the Mid-Atlantic Bight, data were collected across two years (2022-2024) and nine recording sites. The metrics allow for an improved understanding of the dominant sound sources and whether these sound sources exhibited spatial or seasonal patterns in their activity within the region. A full description is in preparation for publication.
 
 ## Key Results and Visualizations
-By comparing the distribution of ambient sound across frequencies, we can assess any temporal changes within sites and spatial patterns across sites. These data provide a representation of approximately 2 years of baseline ambient sound metrics prior to the construction of offshore wind turbines in Southern New England. Sources of sound above ambient background noise were largely below 1 kHz.
+This figure summarizes hybrid millidecade sound pressure levels throughout the Gulf of Maine, derived from data collected across four and a half years (2020-2024) and nine recording sites.
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_ambient_sound_GOM.png){width=100%}
+
+This figure summarizes hybrid millidecade sound pressure levels throughout the Mid-Atlantic Bight, derived from data collected across two years (2022-2024) and nine recording sites.
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_ambient_sound_MAB.png){width=100%}
 
 
 ## Indicator statistics 
-Spatial scale: Third octave level metrics are provided from 7 sites throughout the Southern New England Wind Energy Areas, with recording locations primarily on Cox’s Ledge and Nantucket Shoals.
+Spatial scale: Hybrid millidecade metrics are provided for nine sites throughout the Gulf of Maine. Sites broadly cluster into three subregions: coastal Gulf of Maine (Lubec, MDR, Monhegan, Portland, and York), Stellwagen Bank National Marine Sanctuary (SB03), and the edge of George’s Bank in the offshore Gulf of Maine (USTR01, USTR03, and USTR11). Hybrid millidecade metrics are provided for nine sites throughout the Mid-Atlantic Bight. The southernmost recorders were located off the mouth of the Chesapeake Bay and the northernmost recorders were located off the mouth of the Delaware Bay. Recorders were arranged in transects spanning the continental shelf, with inshore sites ending in “01” and offshore sites in “03”.
 
-Temporal scale: Annual
+Temporal scale: In the Gulf of Maine, acoustic data were summarized from a four-and-a-half-year continuous sampling period spanning January 2020 to July 2024. In the Mid-Atlantic Bight, acoustic data were summarized from a two-year continuous sampling period spanning June 2022 to November 2024.
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_wea_sound}
@@ -37,11 +42,17 @@ Temporal scale: Annual
 ```
 
 ## Implications
-Long-term time series of ambient sound metrics may provide a rapid indicator of changes in the soundscape, including increasing anthropogenic noise, shifting species ranges, phenological changes, or increased storm activity.
+Gulf of Maine
+
+Ambient sound metrics show that the Gulf of Maine is a dynamic region with dominant sound sources varying spatially and temporally. At coastal sites, like Lubec, tidal flow noise strongly influences the year-round soundscape, demonstrated by repetitive patterns of increased sound below 40 Hz that coincide with the semidiurnal tidal cycle. At sites within Stellwagen Bank National Marine Sanctuary and the offshore Gulf of Maine, fin whale vocalizations seasonally contribute to the soundscape, demonstrated by peaks around 20 Hz throughout the fall and into the spring (September-March).
+
+Mid-Atlantic Bight
+
+Ambient sound metrics show that the Mid-Atlantic Bight is an important habitat for numerous soniferous fish populations, as the dominant sound source in the region is fish choruses. The contributions of fish choruses varied spatially and temporally, with the highest chorus sound levels recorded at the three inshore sites (i.e. DB01, ES01, and CB01) throughout the summer and into fall, with at least three choruses observed. Each chorus peaked in distinct octave level (OL) bands, occupying the 500, 1000, and 2000 Hz OLs most significantly.
 
 ## Get the data
 
-**Point of contact**: [Sofie Van Parijs (sofie.vanparijs@noaa.gov); SOE Leads (nefsc.soe.leads@noaa.gov)](mailto:Sofie Van Parijs (sofie.vanparijs@noaa.gov); SOE Leads (nefsc.soe.leads@noaa.gov)){.email}
+**Point of contact**: [Renea Briner (renea.briner@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)](mailto:Renea Briner (renea.briner@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::wea_sound`
 
@@ -59,7 +70,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

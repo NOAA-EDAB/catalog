@@ -26,61 +26,57 @@ Recreational effort (angler trips) in New England increased during 1980-2010, bu
 
 In New England, recreational species catch diversity has been above the time series average since 2008 with a long-term positive trend. In the Mid-Atlantic, recreational species catch diversity has no long term trend so is considered stable, and has been at or above the long term average in 9 of the last 10 years.
 
-### MidAtlantic
-
-```{r plot_recdatMidAtlanticlandings}
+```{r plot_recdatlandingsMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(report= 'MidAtlantic', varName= 'landings',n=10)
+ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-```{r plot_recdatMidAtlanticeffortdiversity}
+```{r plot_recdateffortdiversityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(report= 'MidAtlantic', varName= 'effortdiversity',n=10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-```{r plot_recdatMidAtlanticcatchdiversity}
+```{r plot_recdatcatchdiversityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(report= 'MidAtlantic', varName= 'catchdiversity',n=10)
+ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-```{r plot_recdatMidAtlanticeffort}
+```{r plot_recdateffortMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(report= 'MidAtlantic', varName= 'effort',n=10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-```{r plot_recdatNewEnglandlandings}
+```{r plot_recdatlandingsNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(report= 'NewEngland', varName= 'landings',n=10)
+ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-```{r plot_recdatNewEnglandeffortdiversity}
+```{r plot_recdateffortdiversityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(report= 'NewEngland', varName= 'effortdiversity',n=10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-```{r plot_recdatNewEnglandcatchdiversity}
+```{r plot_recdatcatchdiversityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(report= 'NewEngland', varName= 'catchdiversity',n=10)
+ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-```{r plot_recdatNewEnglandeffort}
+```{r plot_recdateffortNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(report= 'NewEngland', varName= 'effort',n=10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
 
 ## Indicator statistics 
-Spatial scale: MA and NE
+Spatial scale: Mid-Atlantic and New England
 
 Temporal scale: Annual
 
@@ -104,7 +100,7 @@ The increase in recreational species catch diversity in New England is due to re
 
 ## Get the data
 
-**Point of contact**: [Geret DePiper (geret.depiper@noaa.gov)](mailto:Geret DePiper (geret.depiper@noaa.gov)){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::recdat`
 

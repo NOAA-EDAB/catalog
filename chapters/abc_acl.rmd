@@ -8,7 +8,7 @@
 - [X] Economic
 
 
-**Contributor(s)**: Brandon Muffley, Jason, Didden, Julia Beaty, Jose Montanez, Karson Cisneros, Jessica Coakley, Hannah Hart, Kiley Dancy
+**Contributor(s)**: Brandon Muffley, Jason, Didden, Julia Beaty, Jose Montanez, Karson Cisneros, Jessica Coakley, Hannah Hart, Kiley Dancy, Hayden Dubniczki
 
 **Affiliations**: MAFMC
 
@@ -24,35 +24,27 @@ Catch divided by ABC/ACL for MAFMC managed fisheries. Red line indicates the med
 
 High points in the catch divided by ABC/ACL are recreational black sea bass (up to 2021) and scup (2022). No significant overages in 2023 were similar to the high ones in 2021 and 2022, but a number were slightly over in 2023 - recreational and commercial scup, recreational sea bass, recreational and commercial blueline tilefish, and spiny dogfish.
 
-### MidAtlantic
-
 ```{r plot_abc_aclMidAtlanticStacked}
 # Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report= 'MidAtlantic', plottype= 'Stacked')
-ggplotObject <- ecodata::plot_abc_acl(report= 'MidAtlantic', plottype= 'Stacked')
+ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Stacked')
+ggplotObject
+```
+
+```{r plot_abc_aclNewEnglandStacked}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Stacked')
 ggplotObject
 ```
 
 ```{r plot_abc_aclMidAtlanticCatch}
 # Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report= 'MidAtlantic', plottype= 'Catch')
-ggplotObject <- ecodata::plot_abc_acl(report= 'MidAtlantic', plottype= 'Catch')
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_abc_aclNewEnglandStacked}
-# Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report= 'NewEngland', plottype= 'Stacked')
-ggplotObject <- ecodata::plot_abc_acl(report= 'NewEngland', plottype= 'Stacked')
+ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Catch')
 ggplotObject
 ```
 
 ```{r plot_abc_aclNewEnglandCatch}
 # Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report= 'NewEngland', plottype= 'Catch')
-ggplotObject <- ecodata::plot_abc_acl(report= 'NewEngland', plottype= 'Catch')
+ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Catch')
 ggplotObject
 ```
 

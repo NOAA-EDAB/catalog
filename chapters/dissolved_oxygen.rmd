@@ -1,0 +1,82 @@
+# Dissolved Oxygen {#dissolved_oxygen}
+
+**Description**: Coming soon
+
+**Indicator family**: 
+
+- [x] Oceanographic
+- [x] Habitat
+
+
+**Contributor(s)**: Coming soon
+
+**Affiliations**: Coming soon
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Coming soon
+
+## Key Results and Visualizations
+Coming soon
+
+```{r plot_dissolved_oxygen}
+# Plot indicator
+ggplotObject <- ecodata::plot_dissolved_oxygen()
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: Coming soon
+
+Temporal scale: Coming soon
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
+```{r autostats_dissolved_oxygen}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Coming soon
+
+## Get the data
+
+**Point of contact**: [Coming soon](mailto:Coming soon){.email}
+
+**ecodata name**: `ecodata::dissolved_oxygen`
+
+**Variable definitions**
+
+Coming soon
+
+```{r vars_dissolved_oxygen}
+# Pull all var names
+vars <- ecodata::dissolved_oxygen |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/dissolved_oxygen.html>
+

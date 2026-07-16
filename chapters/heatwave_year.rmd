@@ -1,6 +1,6 @@
 # Marine Heatwave Events {#heatwave_year}
 
-**Description**: Surface and bottom MHWs for 2024.
+**Description**: Surface and bottom marine heatwaves (MHWs) for 2025.
 
 **Indicator family**: 
 
@@ -21,53 +21,55 @@ Marine heatwaves (MHWs) measure not just temperature, but how long the ecosystem
 ## Key Results and Visualizations
 Georges Bank 
 
-Surface MHWs
-In 2024, Georges Bank did not experience any surface MHWs.
+Surface MHWs (Marine Heatwaves)
 
-Bottom MHWs
-In 2024, Georges Bank did not experience any bottom MHWs. The strongest bottom MHW on record in Georges Bank was in the fall of 2016. Of the identified 13 bottom MHWs on Georges Bank between 1982 and 2023, four of the top five events in terms of maximum intensity occurred in the last decade.
+There were no surface MHWs observed in Georges Bank in 2025.
+
+Bottom MHWs (Marine Heatwaves)
+
+There were no bottom MHWs observed in Georges Bank in 2025.
 
 Gulf of Maine 
 
-Surface MHWs
-In 2024, the Gulf of Maine experienced a surface MHW that started on May 29th and lasted 12 days.
+Surface MHWs (Marine Heatwaves)
 
-Bottom MHWs
-In 2024, the Gulf of Maine did not experience any bottom MHWs.
+There were no surface MHWs observed in the Gulf of Maine in 2025.
+
+Bottom MHWs (Marine Heatwaves)
+
+There were no bottom MHWs observed in the Gulf of Maine in 2025.
 
 Middle Atlantic Bight 
 
-Surface MHWs
-In 2024, the Middle Atlantic Bight did not experience any surface MHWs.
+Surface MHWs (Marine Heatwaves)
 
-Bottom MHWs
-In 2024, the Middle Atlantic Bight did not experience any bottom MHWs. The strongest bottom MHW occurred in the fall of 1985.
+One surface MHW occurred in the Middle Atlantic Bight in 2025.  The MHW started on July 15th, peaked on July 17th and lasted only seven days.
 
-### MidAtlantic
+Bottom MHWs (Marine Heatwaves)
+
+There were no bottom MHWs observed in the Middle Atlantic Bight in 2025.
 
 ```{r plot_heatwave_yearMidAtlanticSurface}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave_year(report= 'MidAtlantic', varName= 'Surface')
+ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Surface')
+ggplotObject
+```
+
+```{r plot_heatwave_yearNewEnglandSurface}
+# Plot indicator
+ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Surface')
 ggplotObject
 ```
 
 ```{r plot_heatwave_yearMidAtlanticBottom}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave_year(report= 'MidAtlantic', varName= 'Bottom')
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_heatwave_yearNewEnglandSurface}
-# Plot indicator
-ggplotObject <- ecodata::plot_heatwave_year(report= 'NewEngland', varName= 'Surface')
+ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Bottom')
 ggplotObject
 ```
 
 ```{r plot_heatwave_yearNewEnglandBottom}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave_year(report= 'NewEngland', varName= 'Bottom')
+ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Bottom')
 ggplotObject
 ```
 

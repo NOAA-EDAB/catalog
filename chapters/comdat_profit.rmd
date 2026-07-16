@@ -1,0 +1,147 @@
+# Comdat Profitability Indices {#comdat_profit}
+
+**Description**: Coming soon
+
+**Indicator family**: 
+
+- [x] Economic
+
+
+**Contributor(s)**: Coming soon
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Coming soon
+
+## Key Results and Visualizations
+Coming soon
+
+```{r plot_comdat_profitallMidAtlanticMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'MidAtlantic', EPU = 'MAB', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitprofit_indexMidAtlanticMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitcost_indexMidAtlanticMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitrevenue_indexMidAtlanticMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitallNewEnglandGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'NewEngland', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitprofit_indexNewEnglandGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'NewEngland', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitcost_indexNewEnglandGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'NewEngland', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitrevenue_indexNewEnglandGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'NewEngland', EPU = 'GB', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitallNewEnglandGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'NewEngland', EPU = 'GOM', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitprofit_indexNewEnglandGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'NewEngland', EPU = 'GOM', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitcost_indexNewEnglandGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'NewEngland', EPU = 'GOM', n = 10)
+ggplotObject
+```
+
+```{r plot_comdat_profitrevenue_indexNewEnglandGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'NewEngland', EPU = 'GOM', n = 10)
+ggplotObject
+```
+
+
+## Indicator statistics 
+Spatial scale: Coming soon
+
+Temporal scale: Coming soon
+
+**Synthesis Theme**:
+
+
+
+
+```{r autostats_comdat_profit}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Coming soon
+
+## Get the data
+
+**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::comdat_profit`
+
+**Variable definitions**
+
+Coming soon
+
+```{r vars_comdat_profit}
+# Pull all var names
+vars <- ecodata::comdat_profit |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/comdat_profit.html>
+

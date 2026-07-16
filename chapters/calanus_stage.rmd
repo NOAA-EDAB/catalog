@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-
+- [x] Lower trophic levels
 
 
 **Contributor(s)**: Ryan Morse, Harvey Walsh
@@ -21,19 +21,15 @@ Calanus finmarchicus is a dominant large-bodied copepod and serves as an importa
 ## Key Results and Visualizations
 Abundance anomalies for Calanus finmarchicus adult and stage C5 copepodite in the GOM were positive for 2023, following two years of negative anomalies
 
-### MAB
-
-```{r plot_calanus_stageMAB}
+```{r plot_calanus_stageMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_calanus_stage(report='MidAtlantic')
+ggplotObject <- ecodata::plot_calanus_stage(report = 'MidAtlantic')
 ggplotObject
 ```
 
-### NE
-
-```{r plot_calanus_stageNE}
+```{r plot_calanus_stageNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_calanus_stage(report='NewEngland')
+ggplotObject <- ecodata::plot_calanus_stage(report = 'NewEngland')
 ggplotObject
 ```
 
@@ -45,7 +41,9 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
 
 
 ```{r autostats_calanus_stage}
@@ -75,7 +73,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability

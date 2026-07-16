@@ -9,7 +9,7 @@
 
 **Contributor(s)**: Joseph Caracappa, Vincent Saba, Zhuomin Chen, Laura Gruenburg, Andrew Ross
 
-**Affiliations**: NEFSC
+**Affiliations**: NEFSC, GFDL
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -31,87 +31,39 @@ Here we show the seasonal temperature anomalies in the Mid Atlantic Bight (MAB),
 
 The MOM6 model hindcast does a good job at reproducing seasonal bottom temperature anomalies calculated from GLORYS12 reanalysis data. Because the 1959 through 1992 ROMS was biased corrected using the GLORYS12 dataset, calculating seasonal climatologies using primarily MOM6 data introduces a new, different bias. The differing ability of the model to accurately reproduce bottom temperature during different seasons also likely contributes to the discrepancies between the two time series in the annual bottom temperature plots.
 
-### MidAtlantic
-
-
-```{r plot_bottom_temp_model_anomMidAtlanticseasonalGLORYSMAB}
+```{r plot_bottom_temp_model_anomMABMidAtlanticseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'MidAtlantic', EPU = 'MAB', varName= 'seasonal', plottype = 'GLORYS',n=10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'seasonal', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_bottom_temp_model_anomMidAtlanticseasonalMOM6MAB}
+```{r plot_bottom_temp_model_anomGBNewEnglandseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'MidAtlantic', EPU = 'MAB', varName= 'seasonal', plottype = 'MOM6',n=10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_bottom_temp_model_anomMidAtlanticannualGLORYSMAB}
+```{r plot_bottom_temp_model_anomGOMNewEnglandseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'MidAtlantic', EPU = 'MAB', varName= 'annual', plottype = 'GLORYS',n=10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
-
-```{r plot_bottom_temp_model_anomMidAtlanticannualMOM6MAB}
+```{r plot_bottom_temp_model_anomMABMidAtlanticannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'MidAtlantic', EPU = 'MAB', varName= 'annual', plottype = 'MOM6',n=10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'annual', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-
-```{r plot_bottom_temp_model_anomNewEnglandseasonalGLORYSGB}
+```{r plot_bottom_temp_model_anomGBNewEnglandannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GB', varName= 'seasonal', plottype = 'GLORYS',n=10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
-```{r plot_bottom_temp_model_anomNewEnglandseasonalGLORYSGOM}
+```{r plot_bottom_temp_model_anomGOMNewEnglandannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GOM', varName= 'seasonal', plottype = 'GLORYS',n=10)
-ggplotObject
-```
-
-
-```{r plot_bottom_temp_model_anomNewEnglandseasonalMOM6GB}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GB', varName= 'seasonal', plottype = 'MOM6',n=10)
-ggplotObject
-```
-
-```{r plot_bottom_temp_model_anomNewEnglandseasonalMOM6GOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GOM', varName= 'seasonal', plottype = 'MOM6',n=10)
-ggplotObject
-```
-
-
-```{r plot_bottom_temp_model_anomNewEnglandannualGLORYSGB}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GB', varName= 'annual', plottype = 'GLORYS',n=10)
-ggplotObject
-```
-
-```{r plot_bottom_temp_model_anomNewEnglandannualGLORYSGOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GOM', varName= 'annual', plottype = 'GLORYS',n=10)
-ggplotObject
-```
-
-
-```{r plot_bottom_temp_model_anomNewEnglandannualMOM6GB}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GB', varName= 'annual', plottype = 'MOM6',n=10)
-ggplotObject
-```
-
-```{r plot_bottom_temp_model_anomNewEnglandannualMOM6GOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GOM', varName= 'annual', plottype = 'MOM6',n=10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
@@ -135,7 +87,7 @@ Bottom temperature is an important driver for benthic and demersal species growt
 
 ## Get the data
 
-**Point of contact**: [joseph.caracappa@noaa.gov; laura.gruenburg@noaa.gov](mailto:joseph.caracappa@noaa.gov; laura.gruenburg@noaa.gov){.email}
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
 **ecodata name**: `ecodata::bottom_temp_model_anom`
 

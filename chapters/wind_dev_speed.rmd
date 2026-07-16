@@ -10,7 +10,7 @@
 
 **Contributor(s)**: Angela Silva
 
-**Affiliations**: ?
+**Affiliations**: NEFSC
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -22,23 +22,29 @@ The data presented here is a timeline of proposed construction in the Northeast 
 ## Key Results and Visualizations
 The colored chart below also presents the offshore wind development timeline in the Greater Atlantic region with the estimated year that foundations would be constructed (matches the color of the wind areas). These timelines and data estimates are expected to shift, but represent the most recent information available as of July 2023. 
 
-![Speed of offshore wind development](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/SoE2025_TimelineandFootprint_Sept2024-AngelaSilva_2025.png){width=100%}
+![Speed of offshore wind development](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/Offshore_Wind_Development_V5_NicoleMucci.png){width=100%}
 
-```{r plot_wind_dev_speedMAB}
+```{r plot_wind_dev_speedMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_dev_speed(report='MidAtlantic')
+ggplotObject <- ecodata::plot_wind_dev_speed(report = 'MidAtlantic')
+ggplotObject
+```
+
+```{r plot_wind_dev_speedNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_dev_speed(report = 'NewEngland')
 ggplotObject
 ```
 
 
 ## Indicator statistics 
-Spatial scale: NA
+Spatial scale: Greater Atlantic region
 
 Temporal scale: NA
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_wind_dev_speed}

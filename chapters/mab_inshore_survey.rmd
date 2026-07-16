@@ -9,7 +9,7 @@
 
 **Contributor(s)**: James Gartland, Matt Camisa, Rebecca Peters, Sean Lucey
 
-**Affiliations**: VIMS, Maine, NEFSC
+**Affiliations**: VIMS, Maine
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -21,17 +21,21 @@ Indicators from these inshore surveys are analogous to those produced by the NEF
 ## Key Results and Visualizations
 Each survey shows trends by aggregate group.
 
-### MAB
-
-```{r plot_mab_inshore_surveyMAB}
+```{r plot_mab_inshore_surveyMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_mab_inshore_survey(report='MidAtlantic',n=10)
+ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'MidAtlantic', n = 10)
+ggplotObject
+```
+
+```{r plot_mab_inshore_surveyNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
 
 ## Indicator statistics 
-Spatial scale: Nearshore regions of the MAB and GOM
+Spatial scale: Nearshore regions of the MAB
 
 Temporal scale: Spring and Fall
 
@@ -49,7 +53,7 @@ The trends in the NEAMAP inshore survey vary compared to the NEFSC survey. This 
 
 ## Get the data
 
-**Point of contact**: [James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov; Sean Lucey (MA Inshore Survey), sean.lucey@rws.com](mailto:James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov; Sean Lucey (MA Inshore Survey), sean.lucey@rws.com){.email}
+**Point of contact**: [James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov](mailto:James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov){.email}
 
 **ecodata name**: `ecodata::mab_inshore_survey`
 

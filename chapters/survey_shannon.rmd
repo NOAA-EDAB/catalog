@@ -21,19 +21,15 @@ Diversity metrics may be useful in determining shifts in species composition thr
 ## Key Results and Visualizations
 A significant long term decline in the diversity metric is apparent in Georges Bank in both the Spring and the Fall. This is not seen in Gulf of Maine or the Mid Atlantic
 
-### MAB
-
-```{r plot_survey_shannonMAB}
+```{r plot_survey_shannonMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_survey_shannon(report='MidAtlantic',n=10)
+ggplotObject <- ecodata::plot_survey_shannon(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NE
-
-```{r plot_survey_shannonNE}
+```{r plot_survey_shannonNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_survey_shannon(report='NewEngland',n=10)
+ggplotObject <- ecodata::plot_survey_shannon(report = 'NewEngland', n = 10)
 ggplotObject
 ```
 

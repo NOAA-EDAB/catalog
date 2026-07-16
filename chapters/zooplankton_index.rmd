@@ -7,7 +7,7 @@
 - [X] Lower trophic levels
 
 
-**Contributor(s)**: Sarah Gaichas and Harvey Walsh
+**Contributor(s)**: Abigail Tyrell, Sarah Gaichas, Harvey Walsh
 
 **Affiliations**: NEFSC
 
@@ -35,160 +35,151 @@ The zooplankton groups in the model include:
 **Zooplankton volume** a metric of total zooplankton; all groups combined displacement volume in the collection net
 
 ## Key Results and Visualizations
-**Abundance**
-Large and small copepod groups are mainly fluctuating without trend in both spring and fall across the EPUs. However, a significant long term decrease in small copepods was apparent in the MAB during fall, and a recent decrease during spring. Similarly, zooplankton volume is fluctuating without long term trends over time. A recent significant decline was detected for Spring zooplankton volume in the MAB. 
+**Abundance** Large and small copepod groups are mainly fluctuating without trend in both spring and fall across the EPUs. Large copepod biomass has a short-term decline in the spring in both the GOM and GB. Small copepods have a long-term decline in the MAB in fall, and a long-term increase in the GOM in the spring. Euphausiid show increasing trends over time in all regions during fall. Zooplankton volume is fluctuating without long term trends over time.
 
-Euphausiids, in contrast, show increasing trends over time in all regions during fall, and in the MAB during spring. In addition, a significant recent increase was detected in the GOM in Fall. 
-
-
-**Center of Gravity**
-Small copepods in fall are trending northeast similar to forage fish and aggregated survey species. Small copepods in spring are trending north. Large copepods in fall are trending west, similar to benthos. No significant change for Calfin, Euphausiids, or Zooplankton volume center of gravity over time.
-
-### MidAtlantic
+**Center of Gravity** Small copepods in fall are trending northeast similar to forage fish and aggregated survey species. Small copepods in spring are trending north. There is a short-term westward trend for Calanus finmarchicus in the spring. There has been no other significant change for Calanus finmarchicus, large copepods, euphausiids, or zooplankton volume center of gravity over time.
 
 ```{r plot_zooplankton_indexMidAtlanticCalfinindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Calfin' ,plottype= 'index',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Calfin', plottype = 'index', n = 10)
 ggplotObject
 ```
 
-```{r plot_zooplankton_indexMidAtlanticCalfincog}
+```{r plot_zooplankton_indexNewEnglandCalfinindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Calfin' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Calfin', plottype = 'index', n = 10)
 ggplotObject
 ```
 
 ```{r plot_zooplankton_indexMidAtlanticEuphindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Euph' ,plottype= 'index',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticEuphcog}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Euph' ,plottype= 'cog',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticSmallcopesoeindex}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Smallcopesoe' ,plottype= 'index',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticSmallcopesoecog}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Smallcopesoe' ,plottype= 'cog',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticLgcopeallindex}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Lgcopeall' ,plottype= 'index',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticLgcopeallcog}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Lgcopeall' ,plottype= 'cog',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticZoopvolindex}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Zoopvol' ,plottype= 'index',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticZoopvolcog}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Zoopvol' ,plottype= 'cog',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticSmallcopeallindex}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Smallcopeall' ,plottype= 'index',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexMidAtlanticSmallcopeallcog}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'MidAtlantic', varName= 'Smallcopeall' ,plottype= 'cog',n=10)
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_zooplankton_indexNewEnglandCalfinindex}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Calfin' ,plottype= 'index',n=10)
-ggplotObject
-```
-
-```{r plot_zooplankton_indexNewEnglandCalfincog}
-# Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Calfin' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Euph', plottype = 'index', n = 10)
 ggplotObject
 ```
 
 ```{r plot_zooplankton_indexNewEnglandEuphindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Euph' ,plottype= 'index',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Euph', plottype = 'index', n = 10)
 ggplotObject
 ```
 
-```{r plot_zooplankton_indexNewEnglandEuphcog}
+```{r plot_zooplankton_indexMidAtlanticSmallcopesoeindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Euph' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Smallcopesoe', plottype = 'index', n = 10)
 ggplotObject
 ```
 
 ```{r plot_zooplankton_indexNewEnglandSmallcopesoeindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Smallcopesoe' ,plottype= 'index',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Smallcopesoe', plottype = 'index', n = 10)
 ggplotObject
 ```
 
-```{r plot_zooplankton_indexNewEnglandSmallcopesoecog}
+```{r plot_zooplankton_indexMidAtlanticLgcopeallindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Smallcopesoe' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Lgcopeall', plottype = 'index', n = 10)
 ggplotObject
 ```
 
 ```{r plot_zooplankton_indexNewEnglandLgcopeallindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Lgcopeall' ,plottype= 'index',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Lgcopeall', plottype = 'index', n = 10)
 ggplotObject
 ```
 
-```{r plot_zooplankton_indexNewEnglandLgcopeallcog}
+```{r plot_zooplankton_indexMidAtlanticZoopvolindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Lgcopeall' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Zoopvol', plottype = 'index', n = 10)
 ggplotObject
 ```
 
 ```{r plot_zooplankton_indexNewEnglandZoopvolindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Zoopvol' ,plottype= 'index',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Zoopvol', plottype = 'index', n = 10)
 ggplotObject
 ```
 
-```{r plot_zooplankton_indexNewEnglandZoopvolcog}
+```{r plot_zooplankton_indexMidAtlanticSmallcopeallindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Zoopvol' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Smallcopeall', plottype = 'index', n = 10)
 ggplotObject
 ```
 
 ```{r plot_zooplankton_indexNewEnglandSmallcopeallindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Smallcopeall' ,plottype= 'index',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Smallcopeall', plottype = 'index', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexMidAtlanticCalfincog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Calfin', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexNewEnglandCalfincog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Calfin', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexMidAtlanticEuphcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Euph', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexNewEnglandEuphcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Euph', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexMidAtlanticSmallcopesoecog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Smallcopesoe', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexNewEnglandSmallcopesoecog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Smallcopesoe', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexMidAtlanticLgcopeallcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Lgcopeall', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexNewEnglandLgcopeallcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Lgcopeall', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexMidAtlanticZoopvolcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Zoopvol', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexNewEnglandZoopvolcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Zoopvol', plottype = 'cog', n = 10)
+ggplotObject
+```
+
+```{r plot_zooplankton_indexMidAtlanticSmallcopeallcog}
+# Plot indicator
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Smallcopeall', plottype = 'cog', n = 10)
 ggplotObject
 ```
 
 ```{r plot_zooplankton_indexNewEnglandSmallcopeallcog}
 # Plot indicator
-ggplotObject <- ecodata::plot_zooplankton_index(report= 'NewEngland', varName= 'Smallcopeall' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Smallcopeall', plottype = 'cog', n = 10)
 ggplotObject
 ```
 
@@ -210,21 +201,21 @@ Temporal scale: Spring (January-June), Fall (July-December)
 ## Implications
 Fluctuations in zooplankton community composition can affect both the consumption of phytoplankton vs the export of energy to the benthos, as well as the availability of prey for zooplankton feeding forage fish, marine mammals, and seabirds. 
 
-The relative dominance of large and small copepods in Northeast US ecosystems has been liked to changes in fish productivity  [@perretti_regime_2017; @Morse2017].
+The relative dominance of large and small copepods in Northeast US ecosystems has been liked to changes in fish productivity  [@perretti_regime_2017].
 
 Distribution shifts for zooplankton may result in mismatches with zooplankton feeding fish, marine mammal, and seabirds.
 
 ## Get the data
 
-**Point of contact**: [Sarah Gaichas, Sarah.Gaichas@noaa.gov](mailto:Sarah Gaichas, Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::zooplankton_index`
 
 **Variable definitions**
 
-Naming key * *Calanus finmarchicus* (calfin_100m3) = “calfin” , * Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL”, 
-* Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” and 
-* Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”.
+Naming key:  1) *Calanus finmarchicus* (calfin_100m3) = “calfin” 2) Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL” 
+3) Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” 
+4) Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”
 
 ```{r vars_zooplankton_index}
 # Pull all var names

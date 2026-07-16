@@ -22,31 +22,27 @@ E(S<sub>n</sub>) will predict the number of species consumed.
 ## Key Results and Visualizations
 Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas. There is an apparent trend in the data from the Albatross time period in the Gulf of Maine. There is a declining trend in the Mid-Atlantic data from the spring Bigelow period.
 
-### MidAtlantic
-
-```{r plot_exp_nMidAtlanticfall}
+```{r plot_exp_nfallMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'fall',n=10)
+ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-```{r plot_exp_nMidAtlanticspring}
+```{r plot_exp_nspringMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'spring',n=10)
+ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-```{r plot_exp_nNewEnglandfall}
+```{r plot_exp_nfallNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'fall',n=10)
+ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-```{r plot_exp_nNewEnglandspring}
+```{r plot_exp_nspringNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'spring',n=10)
+ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
@@ -72,7 +68,7 @@ Diversity is used as a proxy for stability. Changes in ecological diversity over
 
 ## Get the data
 
-**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](mailto:Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
 **ecodata name**: `ecodata::exp_n`
 

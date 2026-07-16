@@ -1,0 +1,122 @@
+# Fishing Community Ecosystem Observations {#fishing_observations_2024}
+
+**Description**: The information presented here were provided by members of the fishing community in response to the question "what unusual conditions or events did you observe during 2024?". Submissions were provided by 11 different fishermen ranging from Maine to Virginia.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Lower trophic levels
+- [X] Megafauna
+
+
+**Contributor(s)**: Information from 11 fishermen synthesized by Anna Mercer
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+The information presented here were provided by members of the fishing community in response to the question "what unusual conditions or events did you observe during 2024?". Submissions were provided by 11 different fishermen ranging from Maine to Virginia.
+
+## Key Results and Visualizations
+Below are several summary points derived from the observations of fishing community members. 
+
+The water between Montauk, NY and Nantucket Shoals exhibited signs of increased mixing and productivity,  as well as unique color, in summer months.
+Convergence of cold water and warm water from Chesapeake Bay created a convergence zone at the mouth of the Chesapeake Bay, where cold and warm water met. 
+Unusual aggregation of fin whales around Norfolk Canyon in May/June.
+Mackerel markedly more abundant and widely distributed than in recent years, including large schools/carpets of Atlantic mackerel on northern and southern edges of George’s Bank for most of March and April, off southern NJ in April, around Long Island in July/August, and outside of Gloucester, MA and Watch Hill, RI in November.
+Black sea bass migration inshore was delayed by two months (moved inshore in July instead of May)
+Longfin squid migration inshore was delayed and abundance in inshore grounds (south of Nantucket) was lower than in previous years, but the squid showed up in high abundance offshore New Jersey in September (unusual location and timing)
+Haddock came inshore late in Gulf of Maine (usually come in April/May, but didn’t come inshore until June/July), and stayed offshore in fall/winter.
+Bluefin tuna stayed farther east this year and had bellies full of unusual prey (dogfish, skates, instead of squid, baitfish)
+
+Below are the more detailed observations provided by fishing community members:
+There was a crazy turquoise water color off Montauk, Block island to Noman's this spring and early summer which hasn’t been seen before.
+Besides that cold pool that seemed to hang off coast of NJ almost all summer, we have seen a high amount of southern species the past few years cobia, sheepshead, spanish mackerel just to name some. 
+The loligo squid season was pretty poor off Nantucket but this fall Sept-Oct off Cape May was some of the biggest fishing recorded and it last 2-3 weeks. 
+Observed large aggregation of whales for a few years now and the Hudson Canyon around the Texas Tower (NW of the tip of the Hudson Canyon). Whatever the whales feed on they gather up in big numbers there.
+Black sea bass catch slower in 2024 than in previous years, possibly due to colder water
+Off of Virginia, cold water on surface in spring and early summer
+Convergence of cold water and warm water from Chesapeake Bay created a convergence zone at the mouth of the Chesapeake Bay, where cold and warm water met. 
+Dolphins, menhaden, and other species moved across the convergence zone, but it was visually startling (a line in the water)
+Unusual aggregation of fin whales around Norfolk Canyon in May/June - was not super warm on the surface (50F), but there was lots of bait for the whales to chase.
+Everything seemed to get back to normal off of VA by the end of August, other than that it was not as hot as previous years
+Shrimp season ended early this year (early fall, usually extends to late fall) and those vessels switched to dogfishing
+Croaker started early in Chesapeake Bay - showed up at the beginning of May instead of the end of May
+Black sea bass late to come into Vineyard Sound and Buzzard’s Bay (July instead of May)
+Black sea bass usually follow the squid in, and the squid were late to move into the Sound and Bay as well (July instead of May)
+Haddock to came inshore late in Gulf of Maine (usually come in April/May, but didn’t come inshore until June/July), and stayed offshore in fall/winter
+Pollock typically from Jeffries Ledge to NH waters, but stayed farther north and east this year. 
+Water in “the claw” near Vineyard Wind appeared to have more mixing, waters looking more turquoise and cloudy
+Bonito and bluefish stayed farther east (Nantucket Shoals) than usual, likely following bait fish 
+Lots of small (4-6 inches) Atlantic mackerel off of Montauk (north side and south side, 6-12 miles out) in summer and early fall (July - September)
+Bluefin tuna off of Montauk at same time as small mackerel 
+Very few chub mackerel off Montauk this summer/fall
+Adult bunker didn’t come thick into Montauk harbors this summer/fall
+Slow down in southern fish (for example, chub mackerel) around Montauk
+Mackerel markedly more abundant and widely distributed than in recent years
+Large schools of Atlantic mackerel outside of Gloucester in November
+Large schools of Atlantic mackerel off of Watch Hill, RI in November
+Mackerel ranged from small (4-6 inches) to large (12+ inches)
+Large swaths/carpets of Atlantic mackerel on northern and southern edges of George’s Bank for most of March and April - much more abundant and widely distributed than in recent years
+Absence of warm core rings, eddies, and streamers and other features (strong fronts in canyons/slop sea)  to target swordfish - lower swordfish catch this summer and fall 
+Atlantic mackerel off of Ocean City, MD and Atlantic City, NJ in April ( in <20 fathom)
+Bluefin tuna stayed farther east than usual (possibly to find warmer water) and had bellies full of dogfish and skates, rather than the typical squid and baitfish
+The market for these bluefin was low because the fat content was low, likely due to the different diet from other year
+Northern shrimp more abundant and setting stuck in lobster gear in Gulf of Maine in 2024
+Scallops in Rhode Island Sound and Block Island Sound had poor quality meat quality in summer 2024 - usually meat quality is good until they spawn in the early fall
+Unusual pulse of longfin in September in mid-Atlantic canyons, appeared to be two cohorts, one being pushed in from off the bank, and one coming from inshore summer squid grounds 
+Giant (10+ inch mantle length) longfin squid south of Long Island in late October and early November
+
+
+## Indicator statistics 
+Spatial scale: Gulf of Maine to Virginia, general locations
+
+Temporal scale: Year round
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+
+```{r autostats_fishing_observations_2024}
+# Either from Contributor or ecodata
+```
+
+## Implications
+2024 was a markedly different from previous year, both in terms of oceanography and fishery productivity. Colder water conditions resulted in delayed migration of many species from offshore to inshore (longfin squid, black sea bass), redistribution of some species (haddock, pollock, bluefin tuna, Atlantic mackerel, bluefish, bonito), and proliferation of some species that have been less abundant in previous years (Atlantic mackerel). Given that many of these changes were most evident in summer months, it is highly unlikely that spring/fall survey data will characterize the changes observed in 2024.
+
+## Get the data
+
+**Point of contact**: [anna.mercer@noaa.gov](mailto:anna.mercer@noaa.gov){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+NA
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Other
+
+
+**Indicator Category**:
+
+New source of information from the fishing fleet
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+

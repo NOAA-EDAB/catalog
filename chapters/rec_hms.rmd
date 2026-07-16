@@ -1,13 +1,13 @@
 # Recreational HMS {#rec_hms}
 
-**Description**: Recreational shark landings pulled from the Marine Recreational Information Program (MRIP).
+**Description**: Recreational shark landings estimates by management group (large coastal, small coastal, prohibited, pelagic) in numbers of sharks (x1000) by year.
 
 **Indicator family**: 
 
 - [X] Megafauna
 
 
-**Contributor(s)**: Brandon Beltz; Kim Bastille
+**Contributor(s)**: Jennifer Cudney (OSF/HMS), Cliff Hutt (OSF/HMS)
 
 **Affiliations**: NEFSC
 
@@ -16,32 +16,32 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Recreational shark landings pulled from the MRIP database
+These indicators track HMS recreational landings estimates for four management groups of sharks. Data come from two sources - MRIP (large coastal, small coastal, and prohibited sharks) and LPS (pelagic sharks). These data are extrapolated estimates of catch based on average catch rates calculated from program survey data and estimates of total fishing effort. 
+ 
+MRIP was initiated in 2008 as a state-regional-federal partnership that develops, implements and continuously improves a national network of recreational fishing surveys to estimate total marine recreational catch in the United States.  
+
+LPS, which began in 2001, collects information regarding the recreational fishery directed at large pelagic species (e.g., tunas, billfishes, swordfish, sharks, wahoo, dolphinfish, amberjack) in the offshore waters from Maine through Virginia from June through October. The purpose of LPS is to collect more precise estimates of fishing effort and catch for large pelagic species that are rarely encountered in the general MRIP surveys.
 
 ## Key Results and Visualizations
-Recreational landings of sharks are plotted. Sharks are categorized as large coastal, prohibited and small coastal.
+Graphs plot the estimated number of shark landings by year. Due to the large range of landings and outliers across the time series, the estimated number of sharks landed are scaled and depicted as the number of landings (1000s). For example, in 1983 the estimated number of large coastal sharks landed was 195.498. When scaled up by 1000, the estimated number of large coastal sharks landed is 195,498. Recreational shark landings from MRIP are graphed separately from pelagic shark landings, which are from the LPS. Gray boxes highlight the last 10 years of data, and linear trend lines are provided.
 
-### MAB
-
-```{r plot_rec_hmsMAB}
+```{r plot_rec_hmsMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_rec_hms(report='MidAtlantic',n=10)
+ggplotObject <- ecodata::plot_rec_hms(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NE
-
-```{r plot_rec_hmsNE}
+```{r plot_rec_hmsNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_rec_hms(report='NewEngland',n=10)
+ggplotObject <- ecodata::plot_rec_hms(report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
 
 ## Indicator statistics 
-Spatial scale: by EPU
+Spatial scale: “Northeast”, “New England, or “NE” is data collected by Marine Recreational Information Program (MRIP) or Large Pelagic Survey (LPS) samplers from Maine to Connecticut. “MidAtlantic” or “MAB” is data collected by MRIP or LPS samplers from New York to Virginia.
 
-Temporal scale: annually from 1981 to 2022
+Temporal scale: MRIP sampling is year-round. LPS Sampling is conducted from June through October.
 
 **Synthesis Theme**:
 
@@ -53,17 +53,21 @@ Temporal scale: annually from 1981 to 2022
 ```
 
 ## Implications
-Sharks are landed recreationally in quantities that are relevant to fisheries management. These landings should be considered when assessing the populations of sharks.
+The number of recreationally landed large coastal sharks has declined since recreational fisheries surveys have been initiated. Decreases in landings of the prohibited shark species group, which was established in the FMP in 1997, are to be expected as  retention bans on popular species were enforced (i.e., high landings early in the time series dropped off through the late 1990s). A recent peak in 2018 of New England prohibited shark landings was driven by an unusually high landings estimate for sand tiger sharks; otherwise there have been little to no landings for prohibited sharks in recent years. Additional species have been added through time to the prohibited shark management unit, including dusky shark and oceanic whitetip. Minimal landings of small coastal sharks are not surprising, as most of these species are distributed south of the Northeast and Mid-Atlantic sample frame analyzed for this report. Pelagic shark landings (LPS) are largely driven by fishing for shortfin mako through time, however retention bans were implemented in 2018 to comply with ICCAT recommendations.
 
 ## Get the data
 
-**Point of contact**: [Brandon Beltz (brandon.beltz@noaa.gov)](mailto:Brandon Beltz (brandon.beltz@noaa.gov)){.email}
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::rec_hms`
 
 **Variable definitions**
 
-See variables below
+Year = estimates of shark landings are calculated on a yearly basis. Data Columns = MRIP and LPS landings data (# sharks x 1000) are summarized by region. 
+ Large Coastal = summed MRIP estimates of annual landings of large coastal sharks, which include blacktip, bull, hammerheads (scalloped, great, and smooth), lemon, nurse, sandbar, silky, spinner, and tiger sharks. 
+Small Coastal = summed MRIP estimates of annual landings of large coastal sharks, which include blacknose, finetooth, Atlantic sharpnose, and bonnethead sharks. 
+Prohibited = summed MRIP estimates of annual landings of prohibited sharks, which include Atlantic angel, basking, bigeye sand tiger, bigeye sixgill, bigeye thresher, bignose, Caribbean reef, Caribbean sharpnose, dusky, Galapagos, longfin mako, narrowtooth, night, oceanic whitetip, sand tiger, sevengill, shortfin mako, sixgill, smalltail, whale and white sharks.  
+Pelagic = summed LPS estimates of annual landings of pelagic sharks, which include blue, porbeagle, shortfin mako, and common thresher sharks.
 
 ```{r vars_rec_hms}
 # Pull all var names
@@ -84,7 +88,7 @@ Source data are publicly available.
 
 ## Accessibility and Constraints
 
-_No response_
+MRIP cautions use of the estimate in fisheries management when the PSE is over 30, and does not support use of the estimate when the PSE exceeds 50. Many of the PSEs for Atlantic sharks are high due to the rare-event nature of the fishery.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/rec_hms.html>

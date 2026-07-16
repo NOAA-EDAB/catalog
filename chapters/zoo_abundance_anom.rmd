@@ -7,7 +7,7 @@
 - [X] Lower trophic levels
 
 
-**Contributor(s)**: Ryan Morse, Kevin Friedland, Harvey Walsh, Mike Jones
+**Contributor(s)**: Harvey Walsh, Ryan Morse, Kevin Friedland, Mike Jones
 
 **Affiliations**: NEFSC
 
@@ -19,35 +19,31 @@ library(ecodata)
 Zooplankton represent a critical trophic link from primary producers to fish in marine ecosystems.
 
 ## Key Results and Visualizations
-Abundance anomalies of small and large copepods have varied over time by EPU.
-Small bodied copepods and cnidarians show increasing trends in all EPUs. 
+Abundance anomalies of small and large copepods have varied over time by EPU.
+Small bodied copepods and cnidarians show increasing trends in all EPUs. 
 Large bodied copepods and euphausiids show no significant trend in any EPU.
 
-### MidAtlantic
-
-```{r plot_zoo_abundance_anomMidAtlanticcopepod}
+```{r plot_zoo_abundance_anomcopepodMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'MidAtlantic', varName= 'copepod',n=10)
+ggplotObject <- ecodata::plot_zoo_abundance_anom(varName = 'copepod', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-```{r plot_zoo_abundance_anomMidAtlanticeuphausid}
+```{r plot_zoo_abundance_anomeuphausidMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'MidAtlantic', varName= 'euphausid',n=10)
+ggplotObject <- ecodata::plot_zoo_abundance_anom(varName = 'euphausid', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-```{r plot_zoo_abundance_anomNewEnglandcopepod}
+```{r plot_zoo_abundance_anomcopepodNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'NewEngland', varName= 'copepod',n=10)
+ggplotObject <- ecodata::plot_zoo_abundance_anom(varName = 'copepod', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-```{r plot_zoo_abundance_anomNewEnglandeuphausid}
+```{r plot_zoo_abundance_anomeuphausidNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_abundance_anom(report= 'NewEngland', varName= 'euphausid',n=10)
+ggplotObject <- ecodata::plot_zoo_abundance_anom(varName = 'euphausid', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
@@ -71,15 +67,15 @@ Check these. If they are correct, we could be seeing the less energy dense zoopl
 
 ## Get the data
 
-**Point of contact**: [Ryan Morse, ryan.morse@noaa.gov; Harvey Walsh, harvey.walsh@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov](mailto:Ryan Morse, ryan.morse@noaa.gov; Harvey Walsh, harvey.walsh@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov){.email}
+**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov){.email}
 
 **ecodata name**: `ecodata::zoo_abundance_anom`
 
 **Variable definitions**
 
-All are unitless anomalies from the 1977-2020 mean abundance for each taxon. Variables are taxa names:  (to be described by contributors) "Calfin"         "LgCopepods"     "SmCopepods"     
-"Cyclopoida"     "Diplostraca"    "Ostracoda"      "Cirripedia"     "Euphausiacea"  "Gammaridea"     "Hyperiidea"     "Mysidacea"      "Decapoda"       "Polychaeta"     "Echinodermata"  
-"Mollusca"     "Pteropod"      "Chaetognatha"   "Cnidaria"       "Tunicate"       "Protozoa"
+All are unitless anomalies from the 1977-2020 mean abundance for each taxon. Variables are taxa names:  (to be described by contributors) "Calfin"         "LgCopepods"     "SmCopepods"     
+"Cyclopoida"     "Diplostraca"    "Ostracoda"      "Cirripedia"     "Euphausiacea"  "Gammaridea"     "Hyperiidea"     "Mysidacea"      "Decapoda"       "Polychaeta"     "Echinodermata"  
+"Mollusca"     "Pteropod"      "Chaetognatha"   "Cnidaria"       "Tunicate"       "Protozoa"
 
 ```{r vars_zoo_abundance_anom}
 # Pull all var names

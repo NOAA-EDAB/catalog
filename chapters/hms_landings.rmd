@@ -1,13 +1,13 @@
-# Highly Migratory Species Landings {#hms_landings}
+# HMS Commercial Landings and Revenue Data {#hms_landings}
 
-**Description**: Aggregated Atlantic HMS landings data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2023.
+**Description**: Aggregated Atlantic Highly Migratory Species (HMS) landings and revenue data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2024.
 
 **Indicator family**: 
 
 - [X] Megafauna
 
 
-**Contributor(s)**: Heather Baertlein, Jackie Wilson, George Silva, Jennifer Cudney
+**Contributor(s)**: Heather Baertlein, George Silva, Jackie Wilson, Jennifer Cudney
 
 **Affiliations**: NEFSC
 
@@ -16,44 +16,44 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-This indicator provides a comprehensive summary of commercial landings information for HMS fisheries that target or retain tunas, swordfish, and sharks. These data can be evaluated independently, and can also be included in overall estimates of commercial fisheries landings in the northeast region.
+There are 53 species managed under the Highly Migratory Species (HMS) Fishery Management Plan. Aggregated Atlantic HMS landings data of swordfish, sharks, bluefin tuna, and BAYS (bigeye, albacore, yellowfin, skipjack) tunas were prepared for the Fisheries of the United States (FUS) report,  were used for the Status of the Ecosystem report, spanning 2015-2024. FUS is considered to be the annual NOAA Fisheries yearbook of fisheries statistics. It provides a snapshot of data, primarily at the national level, on U.S. recreational catch and commercial fisheries landings and value. The FUS process has since been the vehicle used by HMS staff to QA/QC shark, swordfish,  the “BAYS” tunas (bigeye, albacore, yellowfin and skipjack), and bluefin tuna data for all future HMS Division products. Economic data produced for this report forms the basis for all economic data used in other reports or products. This indicator therefore provides the best comprehensive summary of commercial landings and revenue information for HMS fisheries that target or retain tunas, swordfish, and sharks. These data can be evaluated independently, and can also be included in overall estimates of commercial fisheries landings in the northeast region.
 
 ## Key Results and Visualizations
-Data are provided to SOE editors to generate the visualizations.
+An additional year of data (2024) has been added to the HMS commercial landings time series. 
 
-### MidAtlantic
+In the Mid-Atlantic region (Connecticut to North Carolina), the species or management categories with the greatest amount of landings (in metric tons whole weight) include the BAYS tunas, smoothhound, and swordfish. There has been a steady increase in the landings of bluefin tuna since 2015. The species producing the greatest commercial revenue (in thousands of dollars) in the northeast include the BAYS tunas, swordfish and bluefin tuna.
 
-```{r plot_hms_landingsMidAtlanticLandings}
+In the New England region (Massachusetts to Maine, and Canada), the species or management categories with the greatest amount of landings (in metric tons whole weight) include bluefin tuna, BAYS tunas, and swordfish.  The species producing the greatest commercial revenue (in thousands of dollars) in the northeast include the bluefin tuna, BAYS tunas, and swordfish.
+
+```{r plot_hms_landingsLandingsMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(report= 'MidAtlantic', varName= 'Landings')
+ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'MidAtlantic')
 ggplotObject
 ```
 
-```{r plot_hms_landingsMidAtlanticRevenue}
+```{r plot_hms_landingsRevenueMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(report= 'MidAtlantic', varName= 'Revenue')
+ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'MidAtlantic')
 ggplotObject
 ```
 
-### NewEngland
-
-```{r plot_hms_landingsNewEnglandLandings}
+```{r plot_hms_landingsLandingsNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(report= 'NewEngland', varName= 'Landings')
+ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'NewEngland')
 ggplotObject
 ```
 
-```{r plot_hms_landingsNewEnglandRevenue}
+```{r plot_hms_landingsRevenueNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(report= 'NewEngland', varName= 'Revenue')
+ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'NewEngland')
 ggplotObject
 ```
 
 
 ## Indicator statistics 
-Spatial scale: Regionally by EPU
+Spatial scale: States where landings occurred were grouped regionally. “New England” includes Maine, New Hampshire, and Massachusetts, as well as landings from Canada. The “Mid-Atlantic Bight” includes states from Rhode Island to North Carolina. Landings in states outside of these ecological production units were excluded from analysis.
 
-Temporal scale: Annual
+Temporal scale: Annually; data spans from 2015-2024
 
 **Synthesis Theme**:
 
@@ -65,9 +65,9 @@ Temporal scale: Annual
 ```
 
 ## Implications
-HMS landings data are summarized and presented in the annual HMS Stock Assessment and Fishery Evaluation (SAFE) report.
+HMS landings data are summarized and presented in the Fisheries of the United States Report and the annual HMS Stock Assessment and Fishery Evaluation (SAFE) report.
 
-In 2021 the International Commission for the Conservation of Atlantic Tunas (ICCAT) finalized recommendations for a two-year retention ban for shortfin mako (ICCAT Rec. 21-09), which will also affect total overall landings of pelagic sharks in coming years.
+In 2021 the International Commission for the Conservation of Atlantic Tunas (ICCAT) finalized recommendations for a two-year retention ban for shortfin mako (ICCAT Rec. 21-09), which will also affect total overall landings of pelagic sharks in coming years.  In response, NOAA Fisheries finalized a rule establishing a shortfin mako shark retention limit of 0 until further notice (87 FR 39373; July 1, 2022. See 50 CFR 635.22(c)(8)). There have been no commercial landings of shortfin mako recently due to these restrictions.
 
 ## Get the data
 
@@ -77,7 +77,10 @@ In 2021 the International Commission for the Conservation of Atlantic Tunas (ICC
 
 **Variable definitions**
 
-Year: data are summarized/aggregated by year. EPU: region, Mid Atlantic Bight (MAB) or New England (NE). HMS_Group: Management group for HMS, as defined below in “Data Processing”. Var: description of data, whether total landings or revenue. Units: description of unit of measure for data. Value: Represents either metric tons of landings or dollar value of landings by year and region.
+1. Year: data are summarized/aggregated by year.  2. EPU: region, “Mid-Atlantic Bight” or “New England”.  
+3. HMS_Group: Management group for HMS, as defined below in “Data Processing”.  4. Var_wt: description of data (HMS Revenue or HMS Landings).  
+5. Units_WT: description of unit of measure for data (metric tons whole weight of landings, or U.S. dollars).  
+6. Value: Represents either metric tons of landings (round weight) or dollar value of landings by year and region.
 
 ```{r vars_hms_landings}
 # Pull all var names
@@ -98,7 +101,7 @@ Source data are NOT publicly available.
 
 ## Accessibility and Constraints
 
-Confidential data may be released in “any aggregate or summary form which does not directly or indirectly disclose the identity or business of any person who submits such information” (Magnuson-Stevens Act § 402(b)(3); 16 U.S.C. 1881a(b)(3)). NOAA Fisheries presents such information only if it can be aggregated or summarized at a temporal and/or spatial level to maintain confidentiality of individuals, businesses, and related business information. Data that has been properly screened to meet data standards and confidentiality are publicly available via the Fisheries of the United States (FUS) landings portal. Canadian landings information, which are included in this analysis, are not included in the FUS portal (https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings). Data should be aggregated to protect data confidentiality (raw data are lumped by year and species). Data were included in the final summary unless there were 2 or less dealers involved in the landings, 2 or less vessels, or if any one dealer or vessel purchased/landed more than 2/3 of the total amount for that data unit. Please email jennifer.cudney@noaa.gov for further information and queries of source data.
+NOAA Fisheries releases collected information only if it can be done so in “aggregate or summary form which does not directly or indirectly disclose the identity or business of any person who submits such information” (Magnuson-Stevens Act § 402(b)(3); 16 U.S.C. 1881a(b)(3)). HMS and other fisheries landings data that have been properly screened to meet data standards and confidentiality are publicly available via the [Fisheries of the United States (FUS) landings portal](https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings). Canadian landings information, which are included in this analysis if they reflect landings by U.S. vessels permitted to fish for HMS, are not included in the FUS portal. For this analysis, data were aggregated by year, area, and species and were included in the final summary unless there were less than 3 dealers involved in the landings.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/hms_landings.html>

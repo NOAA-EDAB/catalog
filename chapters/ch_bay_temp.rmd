@@ -21,11 +21,9 @@ Temperature data from the Chesapeake Bay Interpretive Buoy System (CBIBS) are us
 ## Key Results and Visualizations
 Surface water temperatures at Gooses Reef show a distinct seasonal pattern. The 2024 daily temperature averages closely align with the historical averages throughout the year. However, 2024 daily temperature averages were above the historical averages during the Spring and mid Fall.
 
-### MAB
-
-```{r plot_ch_bay_tempMAB}
+```{r plot_ch_bay_tempMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_ch_bay_temp(report='MidAtlantic')
+ggplotObject <- ecodata::plot_ch_bay_temp(report = 'MidAtlantic')
 ggplotObject
 ```
 
@@ -57,7 +55,7 @@ Surface water temperatures during 2024 were mostly at or above historical averag
 
 **Variable definitions**
 
-1) Temperature; degree C
+1) Temperature; degree C 2) Time; year
 
 ```{r vars_ch_bay_temp}
 # Pull all var names

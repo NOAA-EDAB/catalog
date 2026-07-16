@@ -7,7 +7,7 @@
 - [X] Lower trophic levels
 
 
-**Contributor(s)**: Ryan Morse, Kevin Friedland, Harvey Walsh, Mike Jones
+**Contributor(s)**: Harvey Walsh, Ryan Morse, Kevin Friedland, Mike Jones
 
 **Affiliations**: NEFSC
 
@@ -21,19 +21,15 @@ Zooplankton represent a critical trophic link from primary producers to fish in 
 ## Key Results and Visualizations
 Zooplankton diversity is increasing in the Mid-Atlantic and on Georges Bank, but shows no trend in the Gulf of Maine. There is no vessel correction for this metric, so indices collected aboard the research vessel Albatross IV (up to 2008) and the research vessel Henry B. Bigelow (2009 - Present) are calculated separately.
 
-### MAB
-
-```{r plot_zoo_diversityMAB}
+```{r plot_zoo_diversityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_diversity(report='MidAtlantic',n=10)
+ggplotObject <- ecodata::plot_zoo_diversity(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NE
-
-```{r plot_zoo_diversityNE}
+```{r plot_zoo_diversityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_diversity(report='NewEngland',n=10)
+ggplotObject <- ecodata::plot_zoo_diversity(report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
@@ -59,7 +55,7 @@ While still showing an overall increasing trend, the GB zooplankton community de
 
 ## Get the data
 
-**Point of contact**: [Ryan Morse, ryan.morse@noaa.gov; Harvey Walsh, harvey.walsh@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov](mailto:Ryan Morse, ryan.morse@noaa.gov; Harvey Walsh, harvey.walsh@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov){.email}
+**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov){.email}
 
 **ecodata name**: `ecodata::zoo_diversity`
 

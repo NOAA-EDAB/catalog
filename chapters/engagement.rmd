@@ -1,13 +1,16 @@
 # Community Social Vulnerability Indicators (CSVI) {#engagement}
 
-**Description**: The data presented here are 2022 community social vulnerability indicators in top commercial and top recreational communities in Mid-Atlantic and New England regions.
+**Description**: The data here consist of two sources; 1) Port Commercial Fishing Activity Indicator scores which is comprised of commercial fishing landings and permit data from 2007 through 2024 summarized to indicate port-level activity in commercial fishing. 2) Community Social Vulnerability Indicators (CSVI) generated from 2023 American Community Survey 5-yr estimates Dataset in the U.S. Census American Community Survey (ACS) for coastal communities at the Census Designated Place or County Subdivision level.
+
+Note, the Mid-Atlantic analysis for the PCFA Indicator does not include data from North Carolina (NC) given delays in receiving data from the Southeast region. NC ports land a significant portion of fish from Southeast managed species and thus, we elected to not include NC to avoid the risk of underestimation.
 
 **Indicator family**: 
 
-
+- [x] Social
+- [x] Economic
 
 
-**Contributor(s)**: Robert Murphy, Changhua Weng, Tanya Noteva
+**Contributor(s)**: Robert Murphy, Tanya Noteva, Changhua Weng
 
 **Affiliations**: NEFSC
 
@@ -16,140 +19,50 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-We report the top ten communities most engaged in (both in an absolute and relative sense) commercial and recreational fisheries and the degree to which these communities may be vulnerable to change based on their socio-demographic conditions (i.e., poverty index, population composition index, and personal disruption index) using data for the most recent available year (2022).
+We report the top ten ports with the highest relative participation in commercial fishing for 2024 and each top port’s history of relative participation (2007-2024). This is a new indicator named the ‘Port Commercial Fishing Activity (PCFA) Indicator’ and is an adaptation of the previous fishing engagement indicator from the CSVIs. The new PCFA indicator provides a relative metric of the activity of a specific port in commercial fishing and utilizes the same data sources as previously included in the CSVI engagement indicator; the number of commercial fishing permits, the number of permitted dealers, the pounds of landed fish, and the value of landed fish. Instead of conducting an annual Principal Components Analysis, this new indicator method simply normalizes each column of data (across all years) using a min-max scaling approach (range = 0 – 1) and then takes the mean of each column to create a composite average score for each port by year. Note, the value of landed fish data is first normalized by year to account for inflation over time. The PCFA analysis is conducted for each region (MA and NE) separately such that scores are comparable within region only.
 
-The engagement indices demonstrate the importance of commercial and recreational fishing to a given community relative to other coastal communities in a region. In particular, the commercial fishing engagement index measures the number of permits and dealers, and pounds and value of fish landed in a community. Recreational fishing engagement measures shore, private vessel, and for-hire fishing effort. Population relative engagement indices express these numbers based on fishing effort relative to the population of a community. Note that we recast commercial and recreational reliance indicators (from previous reports) as relative engagement indicators given that they are a proxy for how engaged each community is in fishing relative to its total population size and many more factors ultimately contribute to a fishing community's reliance on fishing. Importantly, the calculation of these indicators remains the same.
-
-Social vulnerability indicators measure social factors that shape a community’s ability to adapt to change. These are derived from the NOAA Fisheries Community Social Vulnerability Indicators (CSVIs) which characterize aspects of well-being for coastal communities engaged in fishing activities. Three of the existing NOAA CSVIs - the poverty index, population composition Index, and personal disruption Index - can be used to specifically examine key aspects of socio-demographic conditions. The personal disruption index includes several variables that aim characterize factors that may make it particularly challenging to respond to change because of personal circumstances affecting family life such as unemployment or educational level. The poverty index includes different metrics of poverty (e.g., families below poverty level and percent receiving cash public assistance income) such that a high score would indicate a community with a lower financial standing relative to other communities. The population composition index characterizes socio-demographic groups within communities that are traditionally thought to be increasingly vulnerable to change such as non-English speakers and female heads of households.
-
-For this report, we selected the top ten communities with the highest engagement scores, the top ten communities with the highest population relative engagement scores, and focused on three socio-demographic indicators within the CSVI toolset (poverty, personal disruption, population composition). Sometimes, a community will appear on both lists (i.e., top ten highest engagement AND population relative engagement scores) such that the total report top communities will sum to less than 20. Here we apply the same selection standard for top fishing communities for both sectors using 2022 data, and again examine several CSVIs in this updated set of communities.
+The Community Social Vulnerability Indicators utilize U.S. Census American Community Survey data and, as such, describe social characteristics at the municipality level (i.e., not just the fishing community). This includes metrics related to poverty, housing characteristics, and urban sprawl. In the SOE, we explore the CSVI scores as context for social attributes of the municipalities utilized by commercial fishing industry participants. In particular, we focus our analysis on three socio-demographic indicators; personal disruption, poverty, and population composition. The personal disruption index includes several variables that aim to characterize factors that may make it particularly challenging to respond to change because of personal circumstances affecting family life such as unemployment or educational level. The poverty index includes different metrics of poverty (e.g., families below poverty level and percent receiving cash public assistance income) such that a high score would indicate a community with a lower financial standing relative to other communities. The population composition index characterizes socio-demographic groups within communities that are traditionally thought to be increasingly vulnerable to change such as non-English speakers and female heads of households.
 
 ## Key Results and Visualizations
-#### Mid Atlantic
+The key results include two figures (one for each region) showing scores for the new PCFA indicator over time for the 2024 top fishing ports. Tables are also included that report CSVI results for 2023 (most recent year of data) generated from the U.S. Census American Community Survey for coastal municipalities. These CSVI tables provide important social characteristics at the municipality level. The municipalities house the top fishing ports identified in the PCFA analysis. 
 
-In 2022, several communities stood out as having a particularly high engagement in commercial fishing including Cape May, NJ; Reedville, VA; and Montauk, NY. Additionally, Barnegat Light, NJ is much more engaged in commercial fishing relative to its population size when compared to other communities in the Mid-Atlantic. Cape May, NJ also ranked medium on the population composition index (calculated based on proportions of non-white, non-English speaking, and younger populations), suggesting that this important commercial fishing community may be more vulnerable to change in the future. Several other top ranked commercial fishing communities have socio-demographic concerns that could predispose these places to increased impacts including Little Creek, DE; Hampton, VA; Newport News, VA; Bronx/City Island, NY; Quinby, VA; Point Pleasant Beach, NJ; and Hampton Bays/Shinnecock, NY.
+New England: Temporal comparisons of the new Port Commercial Fishing Activity Indicator (PCFA) revealed notable trends across several top fishing ports. For example, both New Bedford and Boston, MA have seen similar declines in fishing activity over the last two decades, whereby their 2024 PCFA scores are over 20% lower than their average scores from 2007-2011 (from hereon, percentage changes are reported in this same format). Gloucester, MA and Portland, ME have suffered even more precipitous 45% and 39% declines, respectively, in port activity. Importantly, New Bedford and Boston rank moderate or higher for all three socio-demographic CSVIs as well, suggesting that fishing industry participants that live in and/or utilize resources in this municipality may more vulnerable to change. Opposite trends (i.e., positive growth in fishing activity) were identified for several top communities including Chatham, MA and Stonington, Harpswell, and Friendship, ME; the latter of which benefited from a 95% increase in PCFA scores over time.
 
-Barnegat Light, NJ also stood out as being much more engaged in recreational fishing relative to its population size when compared to other communities in the Mid-Atlantic, although it did not rank medium or higher on the socio-demographic indices. Of those included in the top-ranked recreational communities, both Bivalve, MD and Morehead City, NC had medium or higher ranks for two of three socio-demographic indicators examined here (poverty, personal disruption, population composition). This suggests that future changes to recreational fishing conditions may disproportionately affect these places. Two other top recreational fishing communities had ranked medium or high for one socio-demographic index: Stevensville, MD and Cape May, NJ.
+Mid-Atlantic: Temporal comparisons of the new Port Commercial Fishing Activity Indicator (PCFA) revealed notable trends across several top fishing ports. Six of the top 2024 communities experienced declines in PCFA scores from 15% - 35% compared to their average scores from 2007-2011 (from hereon, percentage changes are reported in this same format); Point Pleasant Beach, NJ; Ocean City, MD; Bronx, NY; Barnegat Light, NJ; Newport News, VA; Cape May, NJ. Of particular concern, the municipalities that house Bronx, NY and Newport News, VA both rank moderate or higher for all three socio-demographic CSVIs as well, suggesting that fishing industry participants that live in and/or utilize resources in this municipality may more vulnerable to change. Opposite trends (i.e., positive growth in fishing activity) were identified for the other four top communities, most notably Hampton Bays/Shinnecock, NY benefited from a 84% increase in PCFA scores over time.
 
-Several communities ranked in the top communities for both commercial and recreational indices; Montauk, NY, Cape May, Barnegat Light, NJ: and Point Pleasant Beach, NJ; meaning these communities may be impacted simultaneously (to a greater degree than others) by commercial and recreational regulatory and ecosystem changes.  
-
-#### New England
-
-In 2022, New Bedford, MA stands out as having a particularly high engagement in commercial fishing, while Frenchboro, ME is much more engaged in commercial fishing relative to its population size when compared to other communities in the Northeast. Of particular concern among top commercial fishing communities are New Bedford and Boston, MA as they both have medium or higher scores for all three socio-demographic indicators, while Port Clyde-Tenants Harbor, ME ranked medium for two of the three indicators. Swans Island, ME - another top ranked commercial fishing community -ranked medium on the personal disruption index suggesting that circumstances affecting family life like unemployment or educational level may result in increased vulnerability.
-
-Duxbury, MA was the most engaged place in recreational fishing relative to its population size when compared to other communities in New England, followed closely by Harwich Port, MA, although neither ranked medium or higher on the socio-demographic indices. Of those included in the top ranked recreational communities, only Provincetown, MA had medium or higher ranks for more than one socio-demographic indicator examined. This suggests that future changes to recreational fishing conditions may disproportionately affect Provincetown. Three other top recreational fishing communities ranked medium or high for one socio-demographic index: New Shoreham, RI; Seabrook, NH; and Barnstable Town, MA.
-
-Narragansett/Point Judith, RI ranked as a top community for both commercial and recreational indices, suggesting that it may be impacted simultaneously (to a greater degree than others) by commercial and recreational regulatory changes
-
-### MidAtlantic
-
-```{r plot_engagementMidAtlanticCommercialplot}
+```{r plot_engagementMidAtlanticCommercial}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'plot')
+ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Commercial')
 ggplotObject
 ```
 
-```{r plot_engagementMidAtlanticCommercialSocial}
+```{r plot_engagementNewEnglandCommercial}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'Social')
+ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Commercial')
 ggplotObject
 ```
 
-```{r plot_engagementMidAtlanticCommercialEconomic}
+```{r plot_engagementMidAtlanticRecreational}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'Economic')
+ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Recreational')
 ggplotObject
 ```
 
-```{r plot_engagementMidAtlanticCommercialGentrification}
+```{r plot_engagementNewEnglandRecreational}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'Gentrification')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticRecreationalplot}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'plot')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticRecreationalSocial}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'Social')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticRecreationalEconomic}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'Economic')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticRecreationalGentrification}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'Gentrification')
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_engagementNewEnglandCommercialplot}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'plot')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandCommercialSocial}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'Social')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandCommercialEconomic}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'Economic')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandCommercialGentrification}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'Gentrification')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandRecreationalplot}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'plot')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandRecreationalSocial}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'Social')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandRecreationalEconomic}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'Economic')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandRecreationalGentrification}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'Gentrification')
+ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Recreational')
 ggplotObject
 ```
 
 
 ## Indicator statistics 
-Spatial scale: Communities located in marine coastal counties in the U.S.
+Spatial scale: Greater Atlantic region fishing ports and coastal municipalities
 
-Temporal scale: Year of 2022
+Temporal scale: PCFA Indicator = Annual from 2007-2024;  CSVI = 2023
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_engagement}
@@ -157,7 +70,8 @@ Temporal scale: Year of 2022
 ```
 
 ## Implications
-These indicators provide a snapshot of the presence of socio-demographic concerns in the most highly engaged commercial and recreational fishing communities in the Mid-Atlantic and New England. These communities may be especially vulnerable to changes in fishing patterns due to regulations and/or ecosystem changes. Many of these communities, especially top commercial fishing communities, demonstrated medium to high vulnerability indicating that they may be at a disadvantage responding to change.
+A new composite indicator – the ‘Port Commercial Fishing Activity (PCFA) Indicator’ – utilizes NOAA data on dealers, fish landings, and commercial permits to explore trends in commercial fishing activity over time in top ports. This information can be used to understand how changes in fish stocks, regulations, and other social-ecological factors may have disparately impacted ports throughout the Greater Atlantic region.
+By integrating the Community Social Vulnerability Indicators, we highlight municipalities with relatively concerning socio-demographic conditions. As such, fishing industry participants that live in and/or utilize resources in these municipalities may be more vulnerable to changes.
 
 ## Get the data
 
@@ -167,16 +81,16 @@ These indicators provide a snapshot of the presence of socio-demographic concern
 
 **Variable definitions**
 
-1) Name: Community Name: name of the community. 
-2) Commercial Engagement Index: commercial engagement factor score. 
-3) Commercial Relative Engagement Index: commercial relative engagement factor score. 
-4) Recreational Engagement Score: recreational engagement factor score. 
-5) Recreational Relative Engagement Index: recreational relative engagement factor score. 
-6) Social vulnerabilities: categorical rankings of social vulnerability. 
-7) Personal Disruption Index: personal disruption factor score. 
-8) Population Composition Index: population composition factor score. 
-9) Poverty Index: poverty index factor score. 10) 1 std: 1 standard deviation. 
-11) 0.5 std: 0.5 standard deviation.
+1.	Community: name of the municipality identified as a community in the CSVIs. 2.	personal_disruption_rank: CSVI personal disruption factor score ranking. Low, moderate, moderate high, high 
+3.	pop_composition_rank: CSVI population composition factor score ranking. Low, moderate, moderate high, high 
+4.	poverty_rank: CSVI poverty factor score ranking. Low, moderate, moderate high, high 
+5.	labor_force_str_rank: CSVI labor force structure factor score ranking. Low, moderate, moderate high, high 
+6.	housing_characteristics_rank: CSVI housing characteristics factor score ranking. Low, moderate, moderate high, high 
+7.	housing_disrupt__rank: CSVI housing disruption factor score ranking. Low, moderate, moderate high, high 
+8.	retiree_migration_rank: CSVI retiree migration factor score ranking. Low, moderate, moderate high, high 
+9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 10.	PORT_NAME: fishing data port name 11.	STATE_ABB: fishing data port state abbreviation 
+12.	place_id: fishing data port and state abbreviation combined 13.	YEAR: the year of fishing data 
+14.	fishing_mean_score: composite Port Commercial Fishing Activity Indicator score (range between 0 and 1)
 
 ```{r vars_engagement}
 # Pull all var names
@@ -188,7 +102,8 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
 
 
 ## Public Availability
@@ -197,7 +112,7 @@ Source data are NOT publicly available.
 
 ## Accessibility and Constraints
 
-_No response_
+Please email Robert Murphy (robert.murphy@noaa.gov) for further information and queries of fishing and vulnerability indicator source data.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/engagement.html>

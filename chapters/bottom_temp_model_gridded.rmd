@@ -23,9 +23,15 @@ Bias-corrected ROMS-NWA between 1959 and 1992 which was regridded in the same 1/
 ## Key Results and Visualizations
 Maps of seasonal mean bottom temperature across NE shelf.
 
-```{r plot_bottom_temp_model_griddedMAB}
+```{r plot_bottom_temp_model_griddedMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report='MidAtlantic')
+ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'MidAtlantic')
+ggplotObject
+```
+
+```{r plot_bottom_temp_model_griddedNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'NewEngland')
 ggplotObject
 ```
 

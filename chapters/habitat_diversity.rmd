@@ -22,19 +22,15 @@ Species richness can indicate the health of the ecosystem as a metric of biodive
 ## Key Results and Visualizations
 An overall trend of declining richness can be seen in the more southerly Mid-Atlantic Bight (MAB) region during the modeled time period (2000-2019), while the more northerly regions (i.e., the Gulf of Maine and Georges Bank) are characterized by concurrent gains in richness. These patterns reflect the increasingly rare occurrence of cooler-water species (e.g., Atlantic cod, American plaice, and Atlantic pollock) in southern waters and the growing prevalence of warmer-water species (e.g., weakfish, spotted hake, and black sea bass) in the north, likely as a direct result of warming ocean temperatures.
 
-### MidAtlantic
-
-```{r plot_habitat_diversityMidAtlanticRichness}
+```{r plot_habitat_diversityRichnessMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_habitat_diversity(report= 'MidAtlantic', varName= 'Richness')
+ggplotObject <- ecodata::plot_habitat_diversity(varName = 'Richness', report = 'MidAtlantic')
 ggplotObject
 ```
 
-### NewEngland
-
-```{r plot_habitat_diversityNewEnglandRichness}
+```{r plot_habitat_diversityRichnessNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_habitat_diversity(report= 'NewEngland', varName= 'Richness')
+ggplotObject <- ecodata::plot_habitat_diversity(varName = 'Richness', report = 'NewEngland')
 ggplotObject
 ```
 

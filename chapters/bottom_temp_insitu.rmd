@@ -21,19 +21,15 @@ The bottom temperature index incorporates near-bottom temperature measurements c
 ## Key Results and Visualizations
 _No response_
 
-### MAB
-
-```{r plot_bottom_temp_insituMAB}
+```{r plot_bottom_temp_insituMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_insitu(report='MidAtlantic',n=10)
+ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### NE
-
-```{r plot_bottom_temp_insituNE}
+```{r plot_bottom_temp_insituNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_insitu(report='NewEngland',n=10)
+ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'NewEngland', n = 10)
 ggplotObject
 ```
 

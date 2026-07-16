@@ -7,7 +7,7 @@
 - [X] Megafauna
 
 
-**Contributor(s)**: Jennifer Cudney
+**Contributor(s)**: Jennifer Cudney, Heather Baertlein, Jackie Wilson, George Silva
 
 **Affiliations**: NEFSC
 
@@ -16,26 +16,32 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-This section summarizes Highly Migratory Species Stock Status as it is presented in the latest (2023) Atlantic Highly Migratory Species Stock Assessment and Fishery Evaluation (SAFE) report. Stock assessments for Atlantic HMS are completed through one of three processes. Most Atlantic HMS stocks that are managed internationally under the authority of the MSA and ATCA (tunas, billfish, and swordfish) are assessed by the ICCAT SCRS. Given their migratory nature and because of their interactions with ICCAT fisheries, some pelagic sharks are also assessed by the ICCAT SCRS. Other shark stocks that do not interact with ICCAT fisheries are assessed via the SouthEast Data Assessment and Review (SEDAR) process. SEDAR assessments are completed for domestically managed HMS shark stocks. Sharks may also be assessed through an independent stock assessment is completed by a third party and approved for use in management by NOAA Fisheries (“external assessments”). Unless otherwise indicated, most assessments presented herein are done through either the ICCAT or SEDAR process. Illustrations of Kobe plots describing domestic and international thresholds are provided.
+This section summarizes Highly Migratory Species Stock Status as it is presented in the most recent Atlantic Highly Migratory Species Stock Assessment and Fishery Evaluation (SAFE) report (2024-2025). Stock assessments for Atlantic HMS are completed through one of three processes. Most Atlantic HMS stocks that are managed internationally under the authority of the MSA and ATCA (tunas, billfish, swordfish, some pelagic sharks) are assessed by the International Commission for the Conservation of Atlantic Tunas’ Standing Committee on Research and Statistics (ICCAT SCRS). Sharks managed domestically under the MSA are assessed through the SouthEast Data Assessment and Review (SEDAR) process. Sharks may also be assessed through an independent stock assessment is completed by a third party and approved for use in management by NOAA Fisheries (“external assessments”). Most HMS assessments are completed through either the ICCAT or SEDAR process.  Separate tables summarize thresholds and stock status for all species or stocks assessed through these pathways (and for which the results have been accepted for use in management), and provide information on the timing of upcoming assessments.
 
 ## Key Results and Visualizations
-The domestic and international status of 28 species or stocks are described in the most recent HMS SAFE report. International and domestic HMS stock status may not be identical, based on different thresholds and status determination criteria used at the domestic and international levels (see Figures). 
+The domestic and international status of 28 species or stocks are described in the most recent HMS SAFE report. 
 
-Overfishing and Non Overfishing Stock Status: , overfishing is either not likely to be occurring or not occurring for 1 and 17 species/stocks, respectively. Overfishing is occurring for 6 species/stocks. Overfishing is unknown for 4 stocks. 
+Based on the thresholds identifying whether a stock is considered “overfished” in the HMS FMP, 13 species or stocks are not considered overfished, 10 species or stocks are considered overfished, and 5 species or stocks have unknown status. 
 
-Overfished and Non-Overfished Stock Status: 5 species/stocks are either unspecified or unknown, 12 species/stocks are not overfished, and 11 species/stocks are considered overfished.
+Based on the thresholds identifying whether a stock is experiencing “overfishing” in the HMS FMP, overfishing is not occurring (or not likely occurring) for 19 species or stocks, overfishing is occurring for 5 species or stocks, and the status of 4 species or stocks is unknown.
 
-```{r plot_hms_stock_statusMAB}
+```{r plot_hms_stock_statusMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_stock_status(report='MidAtlantic')
+ggplotObject <- ecodata::plot_hms_stock_status(report = 'MidAtlantic')
+ggplotObject
+```
+
+```{r plot_hms_stock_statusNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_hms_stock_status(report = 'NewEngland')
 ggplotObject
 ```
 
 
 ## Indicator statistics 
-Spatial scale: Species-specific; depends on the extent of the managed stock. Can be regional (e.g., Mid-Atlantic Bight or Atlantic blacktip shark) or could be basin-wide (e.g., North Atlantic swordfish, Western Atlantic bluefin)
+Spatial scale: Species-specific; depends on the extent of the managed stock. Can be regional (e.g., Gulf of America or Atlantic blacktip shark) or could be basin-wide (e.g., North Atlantic swordfish, Western Atlantic bluefin)
 
-Temporal scale: Stock status is stock specific with regards to temporal nature of thresholds
+Temporal scale: Stock status as of December 2025. Status is stock-specific with regards to temporal nature of thresholds, estimated rebuilding times, and data analyzed for stock assessments.
 
 **Synthesis Theme**:
 
@@ -47,7 +53,7 @@ Temporal scale: Stock status is stock specific with regards to temporal nature o
 ```
 
 ## Implications
-This section in the HMS SAFE Report is intended to summarize stock status information only. Specific implications of stock status trends through time may be available in the latest assessments.
+This summarizes information in the HMS SAFE Report, which itself is intended to provide a high-level summary of stock status information. Specific implications of stock status trends through time are available in the latest assessments.
 
 ## Get the data
 
@@ -57,16 +63,12 @@ This section in the HMS SAFE Report is intended to summarize stock status inform
 
 **Variable definitions**
 
-Current Relative Biomass level =  finalized biomass estimate provided in latest stock assessments Bmsy = biomass at maximum sustainable yield 
-Threshold = the threshold identified in respective assessments to indicate overfished vs. overfishing 
-International Stock Status, Domestic Stock Status, Years to Rebuild = estimate if provided in assessments Rebuilding Start Date (End Date) = estimate if provided in assessments. 
-Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment 
-International Stock Status, Domestic Stock Status. Stock = the name of the stock assessed Last Assessment Year = the year in which the latest assessment was finalized 
-Upcoming Assessment = Year that the next assessment is anticipated (if scheduled) Notes = additional information. Shark Stock = the name of the stock assessed 
-Last Assessment Year = the year the latest assessment was finalized 
-Last Assessment Type = unless otherwise indicated, this identifies the type of SEDAR assessment used (typically “Benchmark”, “Standard”, or “Update”). This is subject to change as SEDAR adjusts their assessment types. 
-Upcoming Assessment = year of upcoming assessment, if scheduled. Upcoming Assessment Type = unless otherwise indicated this identifies the type of SEDAR assessment used. 
-Notes = Relevant information concerning the domestic assessments.
+1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  2. Bmsy = biomass at maximum sustainable yield  
+3. Threshold = the threshold identified in respective assessments to indicate status (e.g., overfished, not overfished, overfishing is occurring, overfishing is not occurring) 
+4. Stock status,  5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
+6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  7. Stock = the name of the stock assessed  
+8. Last Assessment Year = the year in which the latest assessment was finalized  9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  
+10. Notes = additional information.  11. Shark Stock = the name of the stock assessed
 
 ```{r vars_hms_stock_status}
 # Pull all var names
@@ -87,7 +89,7 @@ Source data are publicly available.
 
 ## Accessibility and Constraints
 
-Information is publicly available in the most recent Atlantic HMS Stock Assessment and Fishery Evaluation (SAFE) report. Found [here](https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/atlantic-highly-migratory-species-stock-assessment-and-fisheries-evaluation-reports).
+None; this information is publicly available
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/hms_stock_status.html>

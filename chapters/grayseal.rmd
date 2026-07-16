@@ -16,22 +16,22 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Gray seals, like all marine mammals, are protected under the Marine Mammal Protection Act (MMPA). The goal of the MMPA is to obtain and maintain optimum sustainable populations (OSP) of marine mammals, because they were recognized as significant functioning elements of marine ecosystems. To help prevent populations from falling below their OSP levels, managers set limits on the level of incidental mortality and serious injury occurring in commercial fisheries, and also monitor unusual mortality events (UMEs). Here we report on levels of gray seal incidental mortality in commercial fisheries over time relative to the limits set on this mortality, otherwise known as the Potential Biological Removal (PBR) level. We also report on the potential for future interactions driven by observed and predicted ecosystem changes in the Northeast US in other areas of this document.
+Gray seals, like all marine mammals, are protected under the Marine Mammal Protection Act (MMPA). The goal of the MMPA is to obtain and maintain optimum sustainable populations (OSP) of marine mammals, because they were recognized as significant functioning elements of marine ecosystems. To help prevent populations from falling below their OSP levels, managers set limits on the level of incidental mortality and serious injury occurring in commercial fisheries, and also monitor unusual mortality events (UMEs). We report on levels of gray seal incidental mortality in commercial fisheries over time relative to the limits set on this mortality, otherwise known as the Potential Biological Removal (PBR) level. Gray seals use both U.S. and Canadian waters and their abundance and PBR on a range-wide basis should take into account portions of the population that are in U.S. as well as Canadian waters.
 
 ## Key Results and Visualizations
-For gray seals, the total estimated annual bycatch and 5-year rolling mean with 95% confidence intervals from U.S. North Atlantic commercial fisheries is shown by year (Fig. x). Gear types include bottom gillnets, bottom trawls, midwater trawls, and pair trawls. The Potential Biological Removal (PBR) for the US portion of the stock is indicated by the red reference line. The 5-year mean estimates of bycatch increased from 2000 to around 2012, decreased to 2016, and then trended upward between 2016 and 2021 before declining slightly in 2022. While the 5-year mean has remained below the PBR level, and thus meets management objectives, the annual estimate of bycatch exceeded PBR in 2019. Bycatch levels, therefore, may exceed conservation targets in single years due to inter-annual variability.
+For gray seals in U.S. waters, the total estimated annual bycatch and 5-year rolling mean with 95% confidence intervals from U.S. North Atlantic commercial fisheries is shown by year. Gear types include bottom gillnets, bottom trawls, midwater trawls, and pair trawls. The Potential Biological Removal (PBR) for the U.S. portion of the stock is indicated by the red reference line. The 5-year mean estimates of bycatch increased from 2000 to around 2012 and has showed inter-annual variability since. The U.S. PBR decreased in the draft 2024 SAR from 1512 to 756 in recognition of the unknowns in the stock structure, abundance, and rate of exchange between U.S. and Canadian waters. The annual and 5-year mean estimates are above the new U.S. PBR but far below the range-wide draft PBR of 12,052.
 
-```{r plot_graysealMAB}
+```{r plot_graysealMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_grayseal(report='MidAtlantic')
+ggplotObject <- ecodata::plot_grayseal(report = 'MidAtlantic')
 ggplotObject
 ```
 
 
 ## Indicator statistics 
-Spatial scale: Spatial scale: US waters from North Carolina to Canada from the U.S. coastline to the U.S. exclusive economic zone 200 nautical miles offshore, thus including all EPUs, the full shelf and beyond.
+Spatial scale: Spatial scale: U.S. waters from North Carolina to Canada from the U.S. coastline to the U.S. exclusive economic zone 200 nautical miles offshore, thus including all EPUs, the full shelf and beyond.
 
-Temporal scale: Annual from 1990 to 2022.
+Temporal scale: Annual from 1990 to present
 
 **Synthesis Theme**:
 
@@ -43,11 +43,11 @@ Temporal scale: Annual from 1990 to 2022.
 ```
 
 ## Implications
-Under the MMPA, if bycatch exceeds PBR levels, Take Reduction Teams may be convened to develop plans to reduce incidental mortality and serious injury from commercial fishing to less than the PBR level. While gray seal bycatch exceeded the PBR level for the US portion of the stock in 2019, the 5-year mean level of bycatch has remained below PBR and the stock is not considered strategic.
+Under the MMPA, if bycatch exceeds PBR levels, Take Reduction Teams may be convened to develop plans to reduce incidental mortality and serious injury from commercial fishing to less than the PBR level. While gray seal bycatch in U.S. waters exceeds the PBR level for the U.S. portion of the stock, it does not exceed the range-wide PBR. If complete range-wide information were available, human-caused mortality and serious injury would be unlikely to exceed the range-wide PBR for this stock. Thus, this stock is not considered strategic.
 
 ## Get the data
 
-**Point of contact**: [Kimberly Murray (kimberly.murray@noaa.gov); Kristin Precoda (kristin.precoda@noaa.gov)](mailto:Kimberly Murray (kimberly.murray@noaa.gov); Kristin Precoda (kristin.precoda@noaa.gov)){.email}
+**Point of contact**: [Debra Palka (debra.palka@noaa.gov)](mailto:Debra Palka (debra.palka@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::grayseal`
 
@@ -57,8 +57,7 @@ Under the MMPA, if bycatch exceeds PBR levels, Take Reduction Teams may be conve
 2) totalest1y = Total bycatch of 1 year annual estimate. Unit = n (number of animals) 
 3) totalest5y = Total bycatch of 5 year running average estimate. Unit = n (number of animals) 
 4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
-5) total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals) 
-6) Ratio1ytoPBR = ratio of the total bycatch of 1 year annual estimate relative to the corresponding annual pbr.
+5) total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_grayseal}
 # Pull all var names
@@ -79,7 +78,7 @@ Source data are publicly available.
 
 ## Accessibility and Constraints
 
-_No response_
+Source data are available in public [stock assessment reports](https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-stock-assessment-reports-region) and [CRDs](https://www.fisheries.noaa.gov/new-england-mid-atlantic/science-data/northeast-fisheries-science-center-publications).
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/grayseal.html>

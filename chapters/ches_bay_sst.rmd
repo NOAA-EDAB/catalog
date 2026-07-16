@@ -7,9 +7,9 @@
 - [X] Oceanographic
 
 
-**Contributor(s)**: Ron Vogel, Bruce Vogt
+**Contributor(s)**: Ron Vogel, Bruce Vogt, Julie Reichert-Nguyen
 
-**Affiliations**: University of Maryland, Cooperative Institute for Satellite Earth System Studies
+**Affiliations**: University of Maryland, Cooperative Institute for Satellite Earth System Studies, NOAA Chesapeake Bay Office
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
@@ -19,11 +19,17 @@ library(ecodata)
 Seasonal spatial anomaly maps represent the difference between a seasonal average sea surface temperature (SST) and a long-term average SST for that season. For the Chesapeake Bay, the long-term average is derived from the SST time series from 2007 to the year immediately prior to the current year (max(Year) - 1). This reference period serves as a benchmark for comparing current observations. Hence, the anomaly represents the degree to which the current seasonal average departs from historical average, either colder or warmer, indicating whether the current temperature conditions may be favorable or unfavorable for marine species.
 
 ## Key Results and Visualizations
-For 2024, winter SST’s show conditions to be roughly 1 – 1.5 degrees Celsius warmer than the prior 17-year average winter (2007-2023) throughout Chesapeake Bay. Spring conditions are similar: roughly 0.5 – 1.5 degrees Celsius warmer than average. Summer data are not consistent with Chesapeake Bay buoy data (when comparing to long-term averages), so those values are not shown and are currently under investigation. Fall conditions are mixed spatially but do not exceed 0.5 degrees Celsius colder or warmer.
+For 2025, winter sea surface temperatures showed conditions to be generally cooler (~0.5-1.5 degrees Celsius) throughout the Chesapeake Bay when compared to the 2007-2024 long-term average. The exception was the northern part of the bay around Susquehanna Flats where normal to slightly higher-than-average water temperatures (~0.5-1.0 degrees Celsius) were observed. Spring conditions exhibited average sea surface temperatures that deviated both above and below the 2007-2024 long-term average. These anomalies were greatest in the southern and southeastern regions (where water temperatures were slightly warmer with most areas not having more than a 0.5 degrees Celsius change) and in the northern Bay (where temperatures were slightly cooler with a change around 1.0-1.5 degrees Celsius). In the summer, anomalies were slightly warmer than average in southern parts of the bay (less than 0.5 degrees Celsius change). Conversely, in the fall, the lower bay exhibited cooler conditions than the 2007-2024 long-term average (~1.0-1.5 degrees Celsius). The northern part of the bay showed slightly warmer temperature anomalies (~0.5-1.0 degrees Celsius).
 
-```{r plot_ches_bay_sstMAB}
+```{r plot_ches_bay_sstMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_ches_bay_sst(report='MidAtlantic')
+ggplotObject <- ecodata::plot_ches_bay_sst(report = 'MidAtlantic')
+ggplotObject
+```
+
+```{r plot_ches_bay_sstNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_ches_bay_sst(report = 'NewEngland')
 ggplotObject
 ```
 
@@ -45,17 +51,20 @@ Temporal scale: Only nighttime satellite overpasses are used in the seasonal ave
 ```
 
 ## Implications
-The warm water during the 2024 winter (Dec 2023 – Feb 2024) was likely favorable to blue crabs (Callinectes sapidus) by reducing their overwintering mortality. Followed by a warm spring, the blue crabs may have benefited from an extended growing season (warm water earlier in the spring), but striped bass may be experiencing a shortening of their spawning season. In summer, water temperature exceeded typical values for the early part of the summer (based on buoy data, satellite data not shown here), and fall temperatures, with roughly average conditions, may have benefited most of the tracked fishery species.
+Although winter 2025 experienced colder-than-average sea surface temperatures (which would benefit striped bass recruitment), the sporadic and lower flow observed in winter 2025 and at the beginning of spring 2025 may diminish striped bass spawning and recruitment success by altering the spatial coincidence of striped bass larvae and their preferred zooplankton prey. It is possible that the lower-than-average sea water temperatures in the winter (which dipped below the 38.12°F threshold) increased the overwintering mortality rate for blue crabs across the Chesapeake Bay.  
+
+Surface water temperatures exceeded suitable temperatures for juvenile summer flounder for most of the summer. Suitable thermal habitat for juvenile summer flounder is defined as waters with temperatures less than 25.9°C (78.6°F). Temperatures exceeding this threshold negatively affect growth of juvenile fish. Additionally information on the implications can be found in the [seasonal summaries webpage of the Chesapeake Bay Interpretive Buoy System’s website](https://buoybay.noaa.gov/explore/seasonal-summaries).
 
 ## Get the data
 
-**Point of contact**: [Ron Vogel (ronald.vogel@noaa.gov)](mailto:Ron Vogel (ronald.vogel@noaa.gov)){.email}
+**Point of contact**: [Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)](mailto:Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::ches_bay_sst`
 
 **Variable definitions**
 
-1) sst: sea surface temperature 2023, Celsius 2) sst_climatol: sea surface temperature climatology 2007-2022, Celsius 3) sst_anomaly: sea surface temperature anomaly 2023 minus 2007-2022, Celsius
+1) sst: sea surface temperature 2025, Celsius  2) sst_climatol: sea surface temperature climatology 2007-2024, Celsius  
+3) sst_anomaly: sea surface temperature anomaly 2025 minus 2007-2024, Celsius
 
 ```{r vars_ches_bay_sst}
 # Pull all var names
@@ -77,7 +86,7 @@ Source data are NOT publicly available.
 
 ## Accessibility and Constraints
 
-The seasonal SST anomaly data files (including the SST long-term climatology) are available from Ron Vogel at ronald.vogel@noaa.gov. The time series of daily SST, seasonal average SST, and other time intervals for 2007 – present, are available to the public at: https://www.star.nesdis.noaa.gov/pub/socd1/ecn/data/avhrr-viirs/sst-ngt. For more information about this SST data set, see: https://eastcoast.coastwatch.noaa.gov/cw_avhrr-viirs_sst.php. For other inquiries about this data set, contact Ron Vogel at ronald.vogel@noaa.gov.
+The seasonal SST anomaly data files (including the SST long-term climatology) are available from Julie Reichert-Nguyen at julie.reichert-nguyen@noaa.gov. The time series of daily SST, seasonal average SST, and other time intervals for 2007 – present, are available to the public at: https://www.star.nesdis.noaa.gov/pub/socd1/ecn/data/avhrr-viirs/sst-ngt. For more information about this SST data set, see: https://eastcoast.coastwatch.noaa.gov/cw_avhrr-viirs_sst.php. For other inquiries about this data set, contact Julie Reichert-Nguyen at julie.reichert-nguyen@noaa.gov.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/ches_bay_sst.html>

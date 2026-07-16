@@ -1,0 +1,135 @@
+# Western GOM Sentinel Zooplankton Indicators {#wbts_zoo}
+
+**Description**: The data presented here is from the NERACOOS-MBON Wilkinson Basin Time Series (WBTS) station. Runge et al. 2025 [@runge_zooplankton_2025] analysis initially included observations from 2005 up through March of 2023, this update follows the same methods and now includes observations up to November 2025.
+
+**Indicator family**: 
+
+- [x] Lower trophic levels
+
+
+**Contributor(s)**: Jeffrey A. Runge, Cameron R.S. Thompson, Shawn Shellito, Emma C. Dullaert, Isabel A. Honda, Douglas Vandemark, Dylan Pugh, Riley Young-Morse, Jackie Motyka, Rebecca J. Jones, Lee Karp Boss, Rubao Ji
+
+**Affiliations**: UMS
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Mesozooplankton (predominantly copepods) graze on phytoplankton and smaller zooplankton and serve as the foundation of production for higher trophic levels. In deeper waters of the Gulf of Maine (>100 m), the net-captured mesozooplankton biomass is dominated by the planktonic copepod, *Calanus finmarchicus*, a signature species of the subarctic ecosystem spanning the North Atlantic between the Gulf of Maine in the south and west to the Norwegian and Barents Seas in the north and east. Supremely adapted to the seasonality of the subarctic North Atlantic, the lipid-rich older stages of mesozooplankton nourish and influence condition of forage fish such as Atlantic herring, sand lance and Atlantic mackerel, as well as serve as the primary prey for the critically endangered North Atlantic right whale, whose fecundity is dependent on sufficient availability of *C. finmarchicus* in late spring through fall.
+
+While the EcoMON/MARMAP surveys provide valuable observations of mesozooplankton abundance and composition across the Northeast shelf over time, the regional observing community has recognized the need for more frequent water column sampling to better document and understand changes in phenology and seasonal abundance of the mesozooplankton community. This is particularly important for the sentinel species *C. finmarchicus*, given its foundational role in the ecosystem and seasonally varying primary drivers (@ji_marine_2010; @runge_integrated_2012; NERACOOS, 2016; @ji_drivers_2022). 
+
+The Wilkinson Basin Time Series Station (WBTS: 257 m depth), located in the northwest corner of Wilkinson Basin, was established in December 2004 to address this need. Initially maintained by PIs at the University of New Hampshire and University of Maine through various short-term research projects with several funding gaps in coverage, the time series was integrated into the Gulf of Maine Marine Biodiversity Observation Network (GoM MBON) in 2019 with funding from BOEM and the National Oceanographic Partnership Program. In 2020, the station was successfully entered into the U.S. Marine Biodiversity Observation Network (MBON), and is now administered by the Northeastern Regional Association of Coastal Ocean Observing Systems (NERACOOS), a part of the U.S. IOOS program, placing it on more secure footing (@runge_sustained_2023).
+
+The WBTS station was selected for its existing time series data, proximity to coastal ports allowing single-day missions from Portsmouth, NH aboard the R/V Gulf Challenger, and its strategic importance representing the deep western Gulf of Maine overwintering habitat for *C. finmarchicus*. The station is also upstream and advectively connected to the Stellwagen Bank National Marine Sanctuary, as well as the North Atlantic right whale foraging habitat in Cape Cod Bay and southern New England waters, including those of the Nantucket Shoals adjacent to the offshore wind development areas [@thompson_modeling_2025].
+
+Data collected at the WBTS station include CTD-rosette measurements of salinity, temperature and chlorophyll a concentration, microscopic enumeration of phytoplankton species, measurements of pico- and nanoscale plankton and bacteria with a flow cytometer, microplankton abundance measurements using FlowCam, eDNA measurements, total mesozooplankton biomass, and microscopic enumeration of zooplankton species collected with a 0.75 m, 200 µm ring net towed from near bottom to the surface. Here we report on the mesozooplankton biomass, as well as *C. finmarchicus* population stage structure and late stage abundance.
+
+***Calanus Abundance Index:*** This index tracks the abundance of late copepodid stages (C3 through adult C6) of *C. finmarchicus* at the WBTS station. The index is restricted to late copepodid stages to make it comparable with NOAA EcoMon data, which are collected with a 333 µm mesh net that allows escape of younger stages C1-C2. These are also the stages which accumulate lipids and are preyed upon by focus species including the North Atlantic Right Whale. 
+
+***Copepodite Stage Index (CSI):*** The CSI represents the weighted mean copepodite stage composition of the *C. finmarchicus* population, calculated as the sum of each stage number multiplied by its abundance, divided by total abundance across all stages (C1-C6). A larger CSI value indicates a population dominated by older stages, while a smaller value indicates a younger-stage population. 
+
+***Total Mesozooplankton Biomass:*** This index measures the total dry weight (g m^-2^) of mesozooplankton captured in the 200 µm mesh net tows, providing an integrated measure of the entire mesozooplankton community. At the WBTS station, biomass reflects the predominance of *C. finmarchicus* in the Gulf of Maine mesozooplankton community, with the species contributing 40-80% of total biomass depending on season. 
+
+***Data Analysis and Index Development:***
+
+Using General Additive Models (GAMs), we analyzed the seasonal and interannual patterns of *C. finmarchicus* abundance, stage structure, and mesozooplankton biomass at the WBTS station. For each time series measurement dataset, an annual climatology GAM was specified with a cyclic cubic spline for the day of the year and a spline for year with an autoregressive term to address autocorrelation. Using the same specification, a GAM was then fit to time series measurements by filtering the dataset according to seasonal periods to examine interannual trends within a season (i.e., data for all years in that specified season).
+
+To better understand subannual change and relationships to primary drivers, we divided the year into four seasons based on the life cycle of *C. finmarchicus* :
+
+- **Winter** (1 January–15 March): transition from the predominant diapausing stage C5 to adult males and females and the start of a new generation
+- **Spring** (16 March–27 May): presence and growth of a new cohort, consisting mainly of copepodid stages C1-C4
+- **Summer** (28 May–4 September): population growth continues due to new production and advective supply in, with the cohort increasingly dominated by stage C5 copepodids beginning to enter diapause
+- **Fall** (5 September–31 December): population is in steady decline due to mortality and advective loss, and consists predominantly of diapausing stage C5 copepods 
+
+Time series indices of *C. finmarchicus* stage structure (CSI), abundance of copepodid stages (C3-C6), and total mesozooplankton biomass at the WBTS station are presented in the following format: The accepted (statistically significant and adhering to model assumptions) GAM of each time series variable is used to estimate the expected average value and confidence interval to depict climatology over an annual time period or to depict the trend in each season over multiple years. These estimated expected average values are the indices for each variable and can be calculated for any combination of year and day of year. For depicting the annual climatology, the year is set to 2012 while days range from 1 to 365. For depicting interannual trends within a season, a single day is set within each season, while years vary from 2005 to 2023. Where necessary, a transformation by the square root or log<sub>10</sub> was applied to achieve a normal distribution for the analysis, and in the depicted figures these values are displayed by their untransformed values.
+
+## Key Results and Visualizations
+***Calanus Abundance Index***
+
+![Figure 1a](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_CI_phenology.png){width=100%}
+
+![Figure 1b](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_CI_seasonal.png){width=100%}
+
+Abundance (no. m^-2^) of C. finmarchicus stages C3-C6 estimated from 200 μm mesh vertical ring net tows. Individual data points with fitted lines show GAM predictions and 95% confidence intervals (shaded areas) when significant. (A) WBTS station annual cycle climatology (January 2005–November 2025). Data from 2004–2010: green circles; 2011–2022: blue triangles; 2023: purple diamonds; 2024: gold stars; 2025: red squares. (B) WBTS station seasonal abundance time series for spring, summer, fall, and winter. Vertical lines in (A) denote season boundaries shown in (B). If the seasonal abundance time series is significant, GAM predictions are calculated with day of year set to 37, 110, 197, and 306 for winter, spring, summer, and fall, respectively.
+
+The annual climatology graph (Fig. 1A) shows the change in abundance of C. finmarchicus over a mean annual cycle in Wilkinson Basin, representing the western Gulf of Maine. The annual life cycle is consistent with previous studies across the North Atlantic, characterized by pronounced seasonal variation in the composition of developmental stages. Abundance is highest in spring and early summer, when young stages are prevalent, and lowest in March, when the population comprises mostly adults surviving diapause. The difference between the nadir and peak in abundance (7,000 m^-2^ on March 20 and 83,000 m^-2^ on May 29: GAM fit for 2012) is an order of magnitude.
+
+There was no significant trend in abundance of stages C3-C6 in Wilkinson Basin in spring between 2005 and 2025 (Fig. 1B). In summer, stage C3-C6 abundances peaked around 2014 at nearly 260,000 m^-2^, representing an increase from 2005 abundances of just over 190,000 m^-2^; by 2025, abundance has returned to approximately 2005 levels. Runge et al. 2025 [@runge_zooplankton_2025] found significant and dramatic declines of C. finmarchicus late-stage abundance in fall and winter. Between 2005 and 2015, abundance declined by 55% and 80% in fall and winter, respectively, and in recent years abundance has remained at or near these reduced levels.
+
+***Copepodite Stage Index (CSI)***
+
+![Figure 2a](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_CSI_phenology.png){width=100%}
+
+![Figure 2b](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_CSI_seasonal.png){width=100%}
+
+The CSI shows the mean *C. finmarchicus*s C1-C6 stage composition estimated from 200 μm mesh vertical ring net tows at each sampling date. Individual data points with fitted lines show GAM predictions and 95% confidence intervals (shaded areas) when significant. (A) WBTS station annual cycle climatology (January 2005–November 2025). Data from 2004–2010: green circles; 2011–2022: blue triangles; 2023: purple diamonds; 2024: gold stars; 2025: red squares. (B) WBTS station seasonal time series for spring, summer, fall, and winter. Vertical lines in (A) denote season boundaries shown in (B). If the seasonal time series is significant, GAM predictions are calculated with day of year set to 37, 110, 197, and 306 for winter, spring, summer, and fall, respectively.
+
+The annual life cycle of *C. finmarchicus*, as represented by its CSI climatology (Fig. 2A) at the WBTS station, is consistent with previous studies across the North Atlantic, characterized by pronounced seasonal variation in the composition of developmental stages. GAM analysis of the CSI data reveals multiannual changes in stage structure with significant trends in some seasons but not others. At the beginning of the time series in 2005, observations show that the spring population comprised a mix of both older and younger copepodid stages, but during 2010–2017 younger stages became relatively more abundant. Recently, and especially in 2024, the spring population has shifted back toward a composition with relatively more late-stage copepodids.
+
+***Total Mesozooplankton Biomass***
+
+![Figure 3a](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_biomass_phenology.png){width=100%}
+
+![Figure 3b](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_biomass_seasonal.png){width=100%}
+
+Total Mesozooplankton biomass time series data represented by total dry weight (g m^−2^) measured from samples collected with 200-μm mesh vertical ring net tows. Individual data points with fitted lines show GAM predictions and 95% confidence intervals (shaded areas) when significant. (A) WBTS station annual cycle climatology (January 2005–November 2025). Data from 2004–2010: green circles; 2011–2022: blue triangles; 2023: purple diamonds; 2024: gold stars; 2025: red squares. (B) WBTS station seasonal abundance time series for spring, summer, fall, and winter. Vertical lines in (A) denote season boundaries shown in (B). If the seasonal abundance time series is significant, GAM predictions are calculated with day of year set to 37, 110, 197, and 306 for winter, spring, summer, and fall, respectively.
+
+The annual cycle of mesozooplankton biomass (Fig. 3A) reflects the predominance of *C. finmarchicus* in the GoM mesozooplankton community. The estimated mean contribution of *C. finmarchicus* stages C1–C6 to the total mesozooplankton biomass at the WBTS station ranges among years from 40% to 80% in winter to 50%–60% in spring and summer (Runge et al. 2023). The lowest biomass (2.51 g m^−2^: 2012 GAM fit) occurs on March 20th, the same day as the nadir in *C. finmarchicus* abundance. The biomass peak (14.25 g m^−2^: 2012 GAM fit) occurs on August 14th. High biomass is sustained throughout the late summer by the increasing proportion of the larger and heavier *C. finmarchicus* stage C5 as well as increased abundance of smaller zooplankton and invertebrate predators.
+
+Longer-term trends in mesozooplankton biomass at the WBTS station show significant declines that mirror the seasonal trends in *C. finmarchicus* abundance. Runge et al. 2025 [@runge_zooplankton_2025] showed that GAM estimates of fall and winter biomass declined by 64% and 79%, respectively, between 2005 and 2015 (Fig. 4D and E; Table S2). In this update with data through 2025, winter biomass remains low, and fall biomass has declined further—to 73% below 2005 levels. A GAM has also been fit to summer data, indicating that, like the summer abundance of *C. finmarchicus*, biomass increased from 2005 to 2014 before reversing trend with a GAM-estimated decline of 37% from 2005 to 2025. Biomass in 2024 was especially low starting in the spring and remained low through the fall likely contributing to these recent trends.
+
+
+## Indicator statistics 
+Spatial scale: Wilkinson Basin, representing the western Gulf of Maine
+
+Temporal scale: Spring, summer, fall, winter: 2005-2025
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+
+
+```{r autostats_wbts_zoo}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Historically, Wilkinson Basin in the western Gulf of Maine has harbored one of the most abundant shelf populations of C. finmarchicus across its biogeographic range, particularly during the late summer-winter overwintering period (@melle_north_2014). The high numbers of *C. finmarchicus* in the western Gulf of Maine represent the fortuitous consequence of several geographic features and processes, including a circulation that provides supply from *Calanus* rich waters to the north, optimal temperature and food availability in summer in the Maine Coastal Current and a basin well situated to receive local production, deep enough to support overwintering but too shallow for mesopelagic predators residing in the adjacent North Atlantic Ocean. The primary drivers of the high abundance are seasonal in their prominence (@ji_drivers_2022): food availability for local production, external advective supply from inflowing waters in the Nova Scotia Current and/or deep water through the Northeast Channel, and predation from both visual (e.g. herring, sand lance) and non-visual (e.g., carnivorous copepods, euphausids, chaetognaths, jellyfish and hyperiid amphipods) predators. 
+
+The 20-year time series at the WBTS station spanned a major shift in oceanographic conditions occurring around 2010 (@record_rapid_2019; @meyer-gutbrod_ocean_2021; @townsend_warming_2023; @runge_zooplankton_2025). Trends in *C. finmarchicus* stage structure and abundance and environmental drivers show the response of this species to this shift.  In spring of the years following 2010, early copepodid stages appeared sooner and were more abundant.  In fall and winter, late-stage *C. finmarchicus*  abundance declined by  60-80% between 2005 and 2023 (Fig. 1b). Overall, these results corroborate previously published analyses of NOAA EcoMon and CPR data in the eastern GoM (@record_rapid_2019; @meyer-gutbrod_ocean_2021; @ji_drivers_2022; @shank_bridging_2024) and western Gulf of Maine (@pershing_decadal_2023; @honda_shifting_2024). 
+
+This update of the indicators with observations through November 2025 show that the overall trend remains consistent with lower late stage *C. finmarchicus* abundance and total mesozooplankton biomass in the fall and winter compared to years prior to 2010. Despite the highly unusual bloom of the dinoflagellate *Tripos mulleri* in 2023, which dominated the western GoM, the indicators here were broadly in line with what has been observed in recent years. However, the anomalously low CSI observed in spring 2024 followed by low total mesozooplankton biomass signals a significant shift in the drivers of *C. finmarchicus* abundance. Seemingly, this particular shift was temporary as 2025 observations reflect the general post 2010 pattern, but there are hints of other changes which may be longer lasting.  We are now beginning to see an interannual decline during the summer season which follows an increase from 2005 to 2014. 
+
+A value of the NERACOOS time series is the timely provision of plankton indicators at seasonal scales which has implications for the present condition of North Atlantic right whale foraging habitat as well as for forage fish recruitment and condition in the Gulf of Maine. Further monitoring and analysis of hydrographic and other data is needed to better understand the drivers of *C. finmarchicus* population variability including external supply from upstream waters, late winter phytoplankton growth and its control over secondary production, and the role of invertebrate predators.
+
+## Get the data
+
+**Point of contact**: [Cameron Thompson (cameron@neracoos.org)](mailto:Cameron Thompson (cameron@neracoos.org)){.email}
+
+**ecodata name**: `ecodata::wbts_zoo`
+
+**Variable definitions**
+
+1) *Calanus finmarchicus* abundance WBTS station: number of *Calanus finmarchicus* stages C3-C6 m^-2^ 
+2) *Calanus finmarchicus* stage composition WBTS station: mean stage composition of *Calanus finmarchicus* stages C1-C6  
+3) Total mesozooplankton biomass WBTS station: total dry weight (g m^−2^) of  samples collected with 200-μm mesh vertical ring net tows
+
+**Indicator Category**:
+
+- [x] Published Methods
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+NERACOOS-MBON time series data are hosted via ERDDAP and updated following sample processing, QA/QC, and data management.
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/wbts_zoo.html>
+

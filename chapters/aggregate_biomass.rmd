@@ -21,27 +21,21 @@ The NEFSC has been conducting bi-annual bottom trawl surveys along the Northeast
 ## Key Results and Visualizations
 Aggregate biomass levels have been relatively stable over time. Black points represent data from the Northeast Fisheries Science Center (NEFSC) bottom trawl survey. Red points represent data from the NEAMAP inshore survey.
 
-### MAB
-
-```{r plot_aggregate_biomassMAB}
+```{r plot_aggregate_biomassMABMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_aggregate_biomass(report='MidAtlantic',n=10)
+ggplotObject <- ecodata::plot_aggregate_biomass(EPU = 'MAB', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
-### GB
-
-```{r plot_aggregate_biomassNEGB}
+```{r plot_aggregate_biomassGBNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_aggregate_biomass(report='NewEngland',EPU='GB',n=10)
+ggplotObject <- ecodata::plot_aggregate_biomass(EPU = 'GB', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
-### GOM
-
-```{r plot_aggregate_biomassNEGOM}
+```{r plot_aggregate_biomassGOMNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_aggregate_biomass(report='NewEngland',EPU='GOM',n=10)
+ggplotObject <- ecodata::plot_aggregate_biomass(EPU = 'GOM', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 

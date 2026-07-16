@@ -28,61 +28,57 @@ Breaking down the VI and PI further for Georges Bank shows that the negative VI 
 Gulf of Maine revenue has generally exceeded 1982 levels except for very short time periods, the last being 2004 and 2006. Generally, revenue has been higher due to increasing prices (PI). Since 2010, both increasing volumes (VI) and prices (PI) have contributed to positive revenue change. The VI indicator showed a cyclical type of pattern between 1982 and 2023 with the VI being mostly influenced by the Benthivore and Benthos categories. After 2010, the Benthivore category was the biggest influence on the VI.  This was likely due to increases in lobster landings. The PI was positive for the entire time period, and this was due to increase in the Benthivore category. The Piscivore and “Other” categories showed positive prices throughout the time-period, while the Benthos category was generally negative before turning positive after 2015. 
 In the Mid-Atlantic region prices were higher than 1982 levels with the exception of four years prior to 2000. Examination of the VI in more detail showed positive contributions to revenue gains from all categories peaking in 2003, followed by declines in subsequent years. The PI showed a positive trend for most of the years in the time series with the indicator increasing from 1999 through 2016, before declining. The PI gain after 1999 was mainly due to the Benthos category.
 
-### MidAtlantic
-
 ```{r plot_bennetMidAtlanticguildMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'MidAtlantic', varName= 'guild' ,EPU= 'MAB')
+ggplotObject <- ecodata::plot_bennet(report = 'MidAtlantic', varName = 'guild', EPU = 'MAB')
 ggplotObject
 ```
 
 ```{r plot_bennetMidAtlantictotalMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'MidAtlantic', varName= 'total' ,EPU= 'MAB')
+ggplotObject <- ecodata::plot_bennet(report = 'MidAtlantic', varName = 'total', EPU = 'MAB')
 ggplotObject
 ```
 
 ```{r plot_bennetMidAtlantictotal_guildMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'MidAtlantic', varName= 'total_guild' ,EPU= 'MAB')
+ggplotObject <- ecodata::plot_bennet(report = 'MidAtlantic', varName = 'total_guild', EPU = 'MAB')
 ggplotObject
 ```
-
-### NewEngland
 
 ```{r plot_bennetNewEnglandguildGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'guild' ,EPU= 'GB')
-ggplotObject
-```
-
-```{r plot_bennetNewEnglandguildGOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'guild' ,EPU= 'GOM')
+ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'guild', EPU = 'GB')
 ggplotObject
 ```
 
 ```{r plot_bennetNewEnglandtotalGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'total' ,EPU= 'GB')
-ggplotObject
-```
-
-```{r plot_bennetNewEnglandtotalGOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'total' ,EPU= 'GOM')
+ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'total', EPU = 'GB')
 ggplotObject
 ```
 
 ```{r plot_bennetNewEnglandtotal_guildGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'total_guild' ,EPU= 'GB')
+ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'total_guild', EPU = 'GB')
+ggplotObject
+```
+
+```{r plot_bennetNewEnglandguildGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'guild', EPU = 'GOM')
+ggplotObject
+```
+
+```{r plot_bennetNewEnglandtotalGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'total', EPU = 'GOM')
 ggplotObject
 ```
 
 ```{r plot_bennetNewEnglandtotal_guildGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_bennet(report= 'NewEngland', varName= 'total_guild' ,EPU= 'GOM')
+ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'total_guild', EPU = 'GOM')
 ggplotObject
 ```
 

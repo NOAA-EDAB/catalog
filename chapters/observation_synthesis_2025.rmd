@@ -1,0 +1,142 @@
+# 2025 Observation Synthesis {#observation_synthesis_2025}
+
+**Description**: Synthesis of noteworthy observations reported in 2025 across the Northeast U.S. region that should be recorded and considered in future analyses.
+
+**Indicator family**: 
+
+- [x] Oceanographic
+- [x] Habitat
+- [x] Lower trophic levels
+- [x] Megafauna
+- [x] Social
+
+
+**Contributor(s)**: 
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+This synthesis intends to provide a record of noteworthy observations reported in 2025 across the Northeast U.S. region. Observations were solicited from contributors to the State of the Ecosystem reports, colleagues at the Northeast Fisheries Science Center, academic and management partners, and the fishing industry. An email account ([northeast.ecosystem.highlights@noaa.gov](mailto:northeast.ecosystem.highlights@noaa.gov)) is available so that anyone can provide observations to the SOE team. Items selected for inclusion in the synthesis include observations that were at or near their respective time series record (high or low) or had a large departure from the recent trends, were reported by multiple contributors, affected fishing efforts, or were considered newsworthy. The observations included in the synthesis are not exhaustive and the full ecosystem and fisheries impacts are still to be determined. They should, however, be noted and considered in future analyses and management decisions.
+
+## Key Results and Visualizations
+The Northeast U.S. region experienced colder than average ocean temperatures, despite record warm [global](https://www.ncei.noaa.gov/news/global-climate-202513) ocean and air temperatures. Similar to 2024, oceanographic and ecological conditions in 2025 reflected cooler water and changing species abundance, distribution, and timing.
+
+#### Global 
+According to the [2025 NOAA NCEI Global Temperature Analysis](https://www.ncei.noaa.gov/news/global-climate-202513), global upper ocean (0-700 meters) heat content was record high in 2025, surpassing the previous record set in 2024. Ocean heat content is a key climate indicator because the oceans store 90% of the excess heat in the Earth system. The 0–700 m global ocean heat content, which has been tracked globally since 1955, has experienced a steady upward trend since about 1970. 2025 is the fifth consecutive year for which OHC has experienced its highest value. Additional notable global annual highlights include:
+
+- 2025 was the third-warmest year in the NOAA global temperature record, which dates back to 1850.
+- Annual sea ice extent for both the Arctic and Antarctic regions ranked among the three lowest years on record.
+- The Northern Hemisphere snow cover extent was the third lowest on record.
+- There were 101 named tropical storms across the globe in 2025, which was above average.
+
+#### Northwest Atlantic Phenomena
+The [below average temperatures observed in 2024](https://noaa-edab.github.io/catalog/observation_synthesis_2024.html?q=highlight#observation_synthesis_2024) persisted into 2025, however, near-normal salinities suggest a shift in underlying oceanographic drivers compared to the low-salinity signal of 2024. [Surface temperatures](https://noaa-edab.github.io/catalog/seasonal_oisst_anom.html?q=tem#seasonal_oisst_anom) were anomalously cold throughout the region in winter, slightly above average in spring and early summer, and mostly below average from August to December, although there were local exceptions to this pattern. Offshore between the shelf-break and Gulf Stream, surface temperatures were below average for much of the year. 
+
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_SST_anomaly_panels_KHyde.png){width=100%}
+
+Winter [bottom temperatures](https://noaa-edab.github.io/catalog/bottom_temp_model_anom.html) were also below average across much of the Northeast Shelf. Above average March to May temperatures in the southern Mid-Atlantic are likely attributed to northward moving Gulf Stream water that entered the shelf near Cape Hatteras. The above average May and June temperatures on the eastern edge of Georges Bank are associated with a Warm Core Ring. The mechanisms driving the August to October above average bottom temperatures in the Mid-Atlantic Bight are currently unknown. 
+
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_BT_anomaly_panels_KHyde.png){width=100%}
+
+Multiple large scale oceanographic and atmospheric factors can contribute to these cooler conditions including the position of the [Gulf Stream](https://noaa-edab.github.io/catalog/gsi.html) and the [proportions of Labrador Slope and Scotian Shelf water](https://noaa-edab.github.io/catalog/slopewater.html) entering the system (Gonçalves Neto et al. 2021). The Gulf Stream position in 2024 and 2025 was the most southernly since 2007 and was relatively flat (i.e. there were fewer meanders) between -76<sup>o</sup> and -64<sup>o</sup> West. [Warm core rings](https://noaa-edab.github.io/catalog/wcr.html?q=warm%20#wcr) form from Gulf Stream meanders. In 2025 there were ~25 warm core rings and the majority formed east of 65<sup>o</sup>W.  
+
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GSI_KHyde.png){width=100%}
+
+Hurricane Erin was one of the most notable storms of the 2025 and caused significant shoreside and oceanographic disturbances despite not making landfall in the Northeast ([National Climate Report](https://www.ncei.noaa.gov/access/monitoring/monthly-report/national/202513)). On August 16th, Erin underwent rapid intensification, with its central pressure dropping 78 millibars in 24 hours, the third largest pressure drop on record in the Atlantic basin. Although Erin remained offshore of the continental United States, its expansive wind field and large size resulted in widespread impacts. Along the Northeast coastline, Erin generated waves up to 20 feet (6 m) along the Outer Banks of North Carolina from August 19th to the 22th. The highest wind gusts in coastal parts of New Jersey, Delaware, and Maryland ranged from 40 to 50 mph. Many beaches from Maryland to Maine were closed due to rough surf, large waves, and rip currents, while coastal flooding led to road closures and several water rescues, particularly in New Jersey. Beach erosion was significant in some locations. Hurricane Erin's strong winds and large size caused mixing and weakened stratification throughout the Mid-Atlantic resulting in cooler than average surface waters across the shelf and into the Slope Sea. 
+
+#### Northeast Shelf
+No [marine heatwaves](https://noaa-edab.github.io/catalog/heatwave_year.html?q=marine%20heatw#heatwave_year) were observed in either Georges Bank or the Gulf of Maine in 2025 and only one short lived (7 days) heatwave was was observed in the Mid-Atlantic. In contrast, several [marine cold spells](https://noaa-edab.github.io/catalog/cold_spell.html?q=cold%20sp#cold_spell), extended periods of extreme colder than average temperatures, occurred in 2025. 
+
+Five surface marine cold spells occurred in the Gulf of Maine in 2025. The fifth strongest surface cold spell on record started on February 6th and lasted 42 days. The average sea surface temperature was 4.50 <sup>o</sup>C, almost 1 <sup>o</sup>C cooler than the 2016-2025 Gulf of Maine average surface temperature (5.47 <sup>o</sup>C) during this same time period (February 6 to March 20). Three bottom marine cold spells occurred in the Gulf of Maine in 2025. The 5th strongest on record started on December 24, 2024, peaked on January 13, 2025, and lasted 83 days. The average bottom temperature in the Gulf of Maine was 7.5 <sup>o</sup>C, which is over 1 <sup>o</sup>C cooler than the average Gulf of Maine bottom temperature (8.6 <sup>o</sup>C) for this same time period (December 24 to March 17).
+
+Three surface marine cold spells occurred on Georges Bank, the most notable was in November, which ranked as the 11th strongest on record. The 9th strongest bottom cold spell started on August 11th, peaked on Sep 15th, and likely continued throughout the fall (final analyses are still pending).  
+
+Six surface marine cold spells occurred in the Mid-Atlantic Bight in 2025, the most notable occurred in February. It was the 8th strongest on record and lasted 31 days. One bottom cold spell occurred in the Mid-Atlantic in January. It was the 5th strongest on record and lasted 57 days. The average bottom temperature during the cold spell was 7.2 <sup>o</sup>C, which is almost 2 <sup>o</sup>C cooler than the climatological average bottom temperature (9.0 <sup>o</sup>C) for this same time-period (January 9th to March 7th).
+
+The cooler bottom water temperatures contributed to a well established [Mid-Atlantic Cold Pool](https://noaa-edab.github.io/catalog/cold_pool.html) in 2024 and 2025. The spatial extent of the Cold Pool was above average, while the duration and mean temperature were near the long-term mean. This deviates from the long-term trends of smaller, shorter and warm annual cold pool indices.
+
+2025 total primary production was below average in Georges Bank and the Mid-Atlantic due to lower phytoplankton biomass and cooler sea surface temperatures. [Phytoplankton](https://noaa-edab.github.io/catalog/chl_pp.html?q=phytop#chl_pp) biomass (shown as chlorophyll a concentration) was also below average for much of 2025. In particular, the winter-spring bloom period, which typically accounts for a significant proportion to total annual phytoplankton production, was shorter in duration and lower in magnitude across the entire Northeast shelf region. The fall bloom period was above average in the Gulf of Maine and Georges Bank, but near average in the Mid-Atlantic. 
+
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_CHLA_anomaly_KHyde.png){width=100%}
+
+The shift to cooler waters in 2024-2025 is likely linked to multiple observations across the Northeast Shelf including the uncommon presence of Arctic zooplankton species in the Gulf of Maine, delayed migration of many species, and redistribution of some species. These shifts could affect the availability of some species to surveys or fishing, although aggregate species distributions in the cooler 2024-2025 period are tracking on the long-term trend towards northward and deeper waters.
+
+#### Local Phenomena
+In Chesapeake Bay, colder than average winter 2025 temperatures were reported by state agencies as a likely cause of higher blue crab mortality rates compared to the previous winter. Colder winters are generally indicative of good conditions for striped bass spawning and while there was a slight improvement in the striped bass juvenile index, it was still well below the long-term average. Several years of low striped bass recruitment is a growing concern of fisheries managers. Factors that could be influencing striped bass include lower than average freshwater flow in the late winter and early spring and the combination of higher than average water temperatures and lower dissolved oxygen values below optimal survival thresholds during the summer. Other Chesapeake Bay management concerns include the continued presence of invasive blue catfish and the effect they are having on blue crab, alosines, menhaden, and striped bass populations. 
+
+Mid-Atlantic scallops in the Elephant Trunk region are showing positive signs following the documented die-off. Two-year olds observed in 2024 had good survival into the 2025 survey. The Elephant Trunk region is scheduled to reopen in 2026. There was also good survival of the 2024 recruits in the southeastern Nantucket Lightship Area in 2025. In contrast, large numbers of the scallop predator Asterias vulgaris sea stars were linked to an increased sea scallop mortality in 2024 and 2025 on Georges Bank.  
+
+#### Fishing observations
+Several members of the fishing community noted changes in species composition, distribution, and timing in their typical fishing grounds and attributed it to the cooler temperatures. We worked with the Cooperative Research Branch, the [Marine Resource Education Program](https://mrep.gmri.org/) (MREP) and the Fishery Management Councils to solicit information from the fishing community. We asked:
+
+- Are you seeing species where they shouldn't be?
+- Are you seeing species at different times than normal?
+- Are water temperatures or colors looking off?
+- Are you catching anything weird?
+
+We received 27 responses and the summarized observations listed below. Note, these observations may not fully represent the entire ecosystem, but provide local context to recent events that may not be represented in other indicators:
+
+- Several members of the fishing industry reported that it was a “very good year” for billfish. According to the Large Pelagic Survey, it was a record year for white marlin with more than 23,000 fish caught and released. Billfish effort may have been higher than usual due to the closure of the recreational bluefin tuna fishery in August 2025.
+- Chesapeake Bay anglers reported good catch of red drum in 2024, followed by low catch and even cold stunned red drum and spotted sea trout in 2025. Scientists working with charter captains in Chesapeake Bay reported low catch rates of striped bass and red drum from June-September, but higher catch rates in the early spring and fall.
+- Fishers attributed the delayed migration of black sea bass inshore, and scup migrating south for the winter using similar routes as in the early 1970s due to the cooler temperatures.
+- Members of the bluefish fishery in Rhode Island reported very low landings in 2025 attributed to changes in seasonal migration path or timing. 
+- Some species, such as Atlantic mackerel, Illex squid and sandlance, were observed in higher abundance and wider distributions compared to recent years.
+- Fishers in the Gulf of Maine and Georges Bank had mixed reports of lobsters and good catch of sea scallops. 
+- Fishers reported fewer warm water species in 2025 along the New Jersey coast. Others, however, noted more new species (e.g., pomapano, spadefish, triggerfish, Spanish and king mackerel) in Delaware Bay. 
+- Anglers also observed low spring and summer catches of gamefish in Mid-Atlantic bays and on the shelf, and high concentrations of shark species near the coast.
+
+#### Offshore Wind
+[Active offshore wind projects](https://noaa-edab.github.io/catalog/wind_dev_speed.html) continue to be developed throughout the region. In Southern New England, South Fork Wind Farm remains the first and only commercial scale project under operation (12 turbines). Vineyard Wind 1 and Revolution Wind continued construction, and Empire Wind 1 in the New York Bight and Sunrise Wind began offshore construction in 2025. Coastal Virginia Offshore Wind (CVOW) also continued construction in the Mid-Atlantic. All projects currently under construction are anticipated to be complete by the end of 2026. New London, CT and New Bedford, MA have expanded dedicated space and infrastructure for the offshore wind industry with increased port activity for the first projects under construction in southern New England. There are eight additional projects that have Construction and Operations Plan (COP) approvals (three in Southern New England and five in the Mid-Atlantic/New York Bight) that could begin construction in 2026. However, construction schedules are highly uncertain at this time.
+
+
+## Indicator statistics 
+Spatial scale: NES
+
+Temporal scale: 2025
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
+```{r autostats_observation_synthesis_2025}
+# Either from Contributor or ecodata
+```
+
+## Implications
+2024 and 2025 were a markedly different from recent years, both in terms of oceanography and fishing. Observations from multiple sources helped identify events that may not show up in all spatially and temporally aggregated data. The implications of these events are still to be determined, but should be noted for future analyses. It is unknown if the conditions observed in 2024 and 2025 were a short term event or if they will continue into 2026.
+
+## Get the data
+
+**Point of contact**: [kimberly.hyde@noaa.gov](mailto:kimberly.hyde@noaa.gov){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+NA
+
+
+No Data
+
+**Indicator Category**:
+
+- [x] Other
+
+
+**Indicator Category**:
+
+Observations
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+

@@ -21,43 +21,39 @@ Seabird breeding colonies in the Gulf of Maine (GOM) are monitored and managed t
 ## Key Results and Visualizations
 GOM common tern average productivity (fledglings per nest) across 7 colonies has varied over time. The pattern is similar to that observed for fish condition (high before 2000, lower 2001-2009, higher/variable since 2010. Productivity is affected by both food and predation mortality. While data on predation is lacking, productivity lows in 2004-2006 were associated with the abundance of euphausiids, and the 2018 productivity low with butterfish in tern diets. The presence of butterfish in tern diets reflects the extension of this warm water species into GOM. Due to their thin, deep body form, butterfish are often difficult for small seabird chicks to ingest and swallow, causing chicks to starve and/or parent birds to increase foraging effort. 2020 was a challenging year for terns raising chicks.  While diet composition was similar to the long term average, the quantity of food readily available was apparently less than normal, particularly around the time of chick hatching.  This may have been confounded by cold, wet weather when chicks would normally be close to fledging in mid-to-late July. Anecdotal observations showed that feeding rates were low at both those times.
 
-### MidAtlantic
-
 ```{r plot_seabird_neMidAtlanticdiversity}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'diversity',n=10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'diversity', n = 10)
+ggplotObject
+```
+
+```{r plot_seabird_neNewEnglanddiversity}
+# Plot indicator
+ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'diversity', n = 10)
 ggplotObject
 ```
 
 ```{r plot_seabird_neMidAtlanticproductivity}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'productivity',n=10)
-ggplotObject
-```
-
-```{r plot_seabird_neMidAtlanticprey}
-# Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report= 'MidAtlantic', varName= 'prey',n=10)
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_seabird_neNewEnglanddiversity}
-# Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'diversity',n=10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'productivity', n = 10)
 ggplotObject
 ```
 
 ```{r plot_seabird_neNewEnglandproductivity}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'productivity',n=10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'productivity', n = 10)
+ggplotObject
+```
+
+```{r plot_seabird_neMidAtlanticprey}
+# Plot indicator
+ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'prey', n = 10)
 ggplotObject
 ```
 
 ```{r plot_seabird_neNewEnglandprey}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report= 'NewEngland', varName= 'prey',n=10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'prey', n = 10)
 ggplotObject
 ```
 

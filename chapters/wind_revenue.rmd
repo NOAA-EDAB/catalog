@@ -1,6 +1,6 @@
 # Fishery Impacts from Offshore Wind Development {#wind_revenue}
 
-**Description**: The data presented here include landings and revenue of species managed by the New England and Mid-Atlantic Fishery Management Councils within existing offshore wind lease areas.
+**Description**: The data presented here are annual fishery landings and ex-vessel revenues of species managed by the New England and Mid-Atlantic Fishery Management Councils by vessels issued a NMFS Greater Atlantic Regional Fisheries Office permit when fishing in offshore wind projects that are operational or currently under construction (Coastal Virginia Offshore Wind, Sunrise Wind, Revolution Wind, Vineyard Wind 1, South Fork Wind, and Empire Wind).
 
 **Indicator family**: 
 
@@ -8,69 +8,65 @@
 - [X] Economic
 
 
-**Contributor(s)**: Douglas Christel, Benjamin Galuardi, Nicole Morgan
+**Contributor(s)**: Douglas Christel, Benjamin Galuardi
 
-**Affiliations**: ?
+**Affiliations**: GARFO
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Estimates of landings and associated revenue of managed species within existing offshore wind lease areas provide an estimate of the potential socioeconomic impacts to fishery participants and fishing communities from regional offshore development projects. The presence of offshore wind project infrastructure could result in fishing effort displacement outside of lease areas, which could affect the scale, composition, and location of fishery landings and revenues and interactions with protected species. These data present absolute landings/revenue within lease areas, but also relative proportions of regional landings/revenue within lease areas to illustrate the scale of potential impacts to specific fisheries.
+Historic fishery landings and revenue from trips that occurred within operational offshore wind projects and those under construction may be displaced and future fishing effort, landings, and revenue may change (increase or decrease) due to the presence of structures, construction and maintenance operations, and changes to species composition and distribution affected by project infrastructure and operations.  These data highlight the scale and potential fisheries, gear types, and ports that may be affected by changes to historic fishing patterns as a result of offshore wind projects.
 
 ## Key Results and Visualizations
-Figures include annual landings and revenue for each managed species caught within existing offshore wind lease areas. Tables include average annual landings and revenue for the top ten species caught within existing and proposed offshore wind lease areas and the maximum proportion of total annual regional landings and revenues for all managed species.
+Figures illustrate annual fishery landings and revenue trends from trips operating within operational wind projects and those currently under construction along with the proportion of annual regional fishery landings and revenue that has historically been harvested from within these projects.
 
-### MidAtlantic
-
-```{r plot_wind_revenueMidAtlanticlandingfacets}
+```{r plot_wind_revenuelandingMidAtlanticfacets}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'landing' ,plottype= 'facets',n=10)
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'facets', n = 10)
 ggplotObject
 ```
 
-```{r plot_wind_revenueMidAtlanticlandingnofacets}
+```{r plot_wind_revenuevalueMidAtlanticfacets}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'landing' ,plottype= 'nofacets',n=10)
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'facets', n = 10)
 ggplotObject
 ```
 
-```{r plot_wind_revenueMidAtlanticvaluefacets}
+```{r plot_wind_revenuelandingNewEnglandfacets}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'value' ,plottype= 'facets',n=10)
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'facets', n = 10)
 ggplotObject
 ```
 
-```{r plot_wind_revenueMidAtlanticvaluenofacets}
+```{r plot_wind_revenuevalueNewEnglandfacets}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(report= 'MidAtlantic', varName= 'value' ,plottype= 'nofacets',n=10)
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'facets', n = 10)
 ggplotObject
 ```
 
-### NewEngland
-
-```{r plot_wind_revenueNewEnglandlandingfacets}
+```{r plot_wind_revenuelandingMidAtlanticnofacets}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'landing' ,plottype= 'facets',n=10)
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'nofacets', n = 10)
 ggplotObject
 ```
 
-```{r plot_wind_revenueNewEnglandlandingnofacets}
+```{r plot_wind_revenuevalueMidAtlanticnofacets}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'landing' ,plottype= 'nofacets',n=10)
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'nofacets', n = 10)
 ggplotObject
 ```
 
-```{r plot_wind_revenueNewEnglandvaluefacets}
+```{r plot_wind_revenuelandingNewEnglandnofacets}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'value' ,plottype= 'facets',n=10)
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'nofacets', n = 10)
 ggplotObject
 ```
 
-```{r plot_wind_revenueNewEnglandvaluenofacets}
+```{r plot_wind_revenuevalueNewEnglandnofacets}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(report= 'NewEngland', varName= 'value' ,plottype= 'nofacets',n=10)
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'nofacets', n = 10)
 ggplotObject
 ```
 
@@ -78,7 +74,7 @@ ggplotObject
 ## Indicator statistics 
 Spatial scale: Offshore wind lease areas throughout the Exclusive Economic Zone from Maine through North Carolina
 
-Temporal scale: Annual from 2008-2023
+Temporal scale: Annual from 2008-2024
 
 **Synthesis Theme**:
 
@@ -90,7 +86,7 @@ Temporal scale: Annual from 2008-2023
 ```
 
 ## Implications
-Plots of annual landings and revenue within existing and proposed offshore wind lease areas show a general decline since 2008 for managed species with periodic spikes in both metrics. This suggests lower reliance on offshore wind lease areas for most fisheries, although some are more reliant upon these areas at large, particularly the longfin squid, surfclam, scallop, herring, yellowtail flounder, pollock, redfish, black sea bass, and skate fisheries. The Gulf of Maine lease areas overlap with a substantial portion of historic groundfish fishery landings/revenues, with haddock landings/revenues increasingly overlapping with existing lease areas in recent years.
+The figures generally depict periodic fluctuations in fishery landings and revenue from withing active offshore wind projects with both parameters generally decreasing over time for most species. Fishery landings and revenue within active offshore wind projects represent a very low proportion of regional fishery landings and revenue for managed species, suggesting that fishery impacts may not be substantial and that effort displacement outside of active offshore wind project areas may not substantially affect fishing operations or resources in other areas.
 
 ## Get the data
 
