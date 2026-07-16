@@ -113,8 +113,12 @@ rmd_files:
     -   "chapters/observation_synthesis_2024.rmd"
     -   "chapters/observation_synthesis_2025.rmd"
     -   "chapters/fishing_observations_2024.rmd"
-
+#
+#
+# #################### RESOURCES ##################
+    -   "chapters/sectionHeaders/resources.rmd"
     -   "chapters/glossary.Rmd"
+    -   "chapters/changelog.Rmd"
     -   "chapters/references.Rmd"
 before_chapter_script: _common.R
 delete_merged_file: true

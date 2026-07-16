@@ -1,0 +1,31 @@
+# Changelog {.unnumbered}
+
+## catalog 3.0.0 {.unnumbered}
+
+Date: 07/16/2026
+
+Release includes automation processes and .Rmd files used to build the version of the Northeast Ecosystem Indicator Catalog referenced in the 2026 State of the Ecosystem reports. Uses ecodata v7.0.0 (https://github.com/NOAA-EDAB/ecodata/releases/tag/v7.0.0).
+
+## catalog 2.0.0 {.unnumbered}
+
+Date: 09/18/2025
+
+Release includes automation processes and .Rmd files used to build the version of the Synthetic Indicator Catalog referenced in the 2025 State of the Ecosystem reports. Uses ecodata 6.0.1 (https://github.com/NOAA-EDAB/ecodata/releases/tag/6.0.1).
+
+## catalog 1.1.0 {.unnumbered}
+
+Date: 10/07/2024
+
+Changed `ecodata` dependency to v5.0.2
+
+## catalog 1.0.0 {.unnumbered}
+
+Date: 03/15/2024
+
+Release includes automation processes and .Rmd files used to build the version of the Synthetic Indicator Catalog referenced in the 2024 State of the Ecosystem reports submitted to the MAFMC SSC. Uses ecodata 5.0.1 (https://github.com/NOAA-EDAB/ecodata/releases/tag/5.0.1).
+
+## catalog 0.1.0 {.unnumbered}
+
+Date: 08/01/2023
+
+Catalog pre-release.
