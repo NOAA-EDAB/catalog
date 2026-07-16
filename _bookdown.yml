@@ -118,7 +118,7 @@ rmd_files:
 # #################### RESOURCES ##################
     -   "chapters/sectionHeaders/resources.rmd"
     -   "chapters/glossary.Rmd"
-    -   "chapters/changelog.Rmd"
+    -   "chapters/changelog.rmd"
     -   "chapters/references.Rmd"
 before_chapter_script: _common.R
 delete_merged_file: true
