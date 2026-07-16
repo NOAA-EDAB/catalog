@@ -28,39 +28,93 @@ Compared to thresholds based on global estimates of primary production and catch
 
 Thresholds based on regional estimates of primary productivity, are not yet available. This work is ongoing
 
-```{r plot_pprMidAtlanticppglobal}
+```{r plot_pprMidAtlanticMABppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'pp', threshold = 'global')
 ggplotObject
 ```
 
-```{r plot_pprNewEnglandppglobal}
+```{r plot_pprNewEnglandGBppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'pp', threshold = 'global')
 ggplotObject
 ```
 
-```{r plot_pprMidAtlanticfogartyglobal}
+```{r plot_pprNewEnglandGOMppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'pp', threshold = 'global')
 ggplotObject
 ```
 
-```{r plot_pprNewEnglandfogartyglobal}
+```{r plot_pprMidAtlanticMABfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'fogarty', threshold = 'global')
 ggplotObject
 ```
 
-```{r plot_pprMidAtlanticrytherglobal}
+```{r plot_pprNewEnglandGBfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'fogarty', threshold = 'global')
 ggplotObject
 ```
 
-```{r plot_pprNewEnglandrytherglobal}
+```{r plot_pprNewEnglandGOMfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'fogarty', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprMidAtlanticMABrytherglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ryther', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprNewEnglandGBrytherglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ryther', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprNewEnglandGOMrytherglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ryther', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprMidAtlanticMABpprglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ppr', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprNewEnglandGBpprglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ppr', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprNewEnglandGOMpprglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ppr', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprMidAtlanticMABmtlglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'mtl', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprNewEnglandGBmtlglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'mtl', threshold = 'global')
+ggplotObject
+```
+
+```{r plot_pprNewEnglandGOMmtlglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'mtl', threshold = 'global')
 ggplotObject
 ```
 

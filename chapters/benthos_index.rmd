@@ -27,7 +27,7 @@ The indices developed here use similar methods to the [Forage Fish Index](https:
 In addition to an index of benthic invertebrate biomass in each EPU, the coastwide center of gravity for the combined benthic biomass was estimated to evaluate whether distributions of benthic invertebrate biomass have changed over time.
 
 ## Key Results and Visualizations
-Time series extend from 1980-2023.  Macrobenthos and Megabenthos are included on separate plots for each EPU.
+Time series extend from 1980-2024.  Macrobenthos and Megabenthos are included on separate plots for each EPU.
 
 Variables plotted are seasonal (Fall or Spring) Macrobenthos or Megabenthos Biomass Estimates with standard error bands.
 
@@ -97,13 +97,13 @@ Temporal scale: Spring (January-June), Fall (July-December)
 ```
 
 ## Implications
-Macrobenthos indices show long term declines in spring in all EPUs. In contrast, Megabenthos indices show long term increases in fall in GOM and GB, and in spring in MAB. Megabenthos indices also show a recent trend in spring in GB.
+Macrobenthos indices show long term declines in spring in all EPUs. In contrast, Megabenthos indices show long term increases in fall in all EPUs. Megabenthos indices also show a recent trend in spring in GB.
 
-Center of gravity indicators show recent trends towards the north and east in spring for Megabenthos in all EPUs. Macrobenthos center of gravity shows a significant long term trend towards the west over time. This is the opposite direction observed for aggregate forage fish and surveyed fish species in aggregate.
+Center of gravity indicators show recent trends towards the east in spring for Megabenthos in all EPUs. Macrobenthos center of gravity shows a significant long term trend towards the west and south in spring over time. This is the opposite direction observed for aggregate forage fish and surveyed fish species in aggregate.
 
 ## Get the data
 
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
+**Point of contact**: [Maxwell Grezlik (maxwell.grezlik@noaa.gov)](mailto:Maxwell Grezlik (maxwell.grezlik@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::benthos_index`
 
@@ -149,7 +149,9 @@ DT::datatable(vars)
 
 ## Public Availability
 
-Source data are publicly available. All data and code available on GitHub at https://github.com/NOAA-EDAB/benthosindex
+Source data are publicly available.
+Initial model development (used in the SOE published in 2023-2025) is available at: https://github.com/NOAA-EDAB/benthos_index.html
+Code for data updates (used in the SOE published in 2026-present) is available at: https://github.com/NEFSC/READ-EDAB-VAST_indices/tree/main/benthos
 
 ## Accessibility and Constraints
 

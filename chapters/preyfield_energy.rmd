@@ -1,13 +1,13 @@
 # Copepod Preyfield Energy Density {#preyfield_energy}
 
-**Description**: Coming soon
+**Description**: These data show the estimated average preyfield energy available to foraging North Atlantic Right Whales on the shelf waters of the US northeast coast.
 
 **Indicator family**: 
 
-
+- [x] Lower trophic levels
 
 
-**Contributor(s)**: Coming soon
+**Contributor(s)**: Gregory Ellis, Chris Orphanides, Jordan Katz, Harvey Walsh
 
 **Affiliations**: NEFSC
 
@@ -16,20 +16,20 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Coming soon
+The shelf waters of the northwest Atlantic are a principal feeding area of North Atlantic Right Whales. This visualization product uses interpolated abundance data from the forty year Ecomon zooplankton sampling database along with species specific per-animal energy estimates for three main NARW dietary components (Calanus finmarchicus, Centropages typicus, and Pseudocalanus spp) to show average monthly prey field energy levels available to these animals off the northeast coast.
 
 ## Key Results and Visualizations
-Coming soon
+The data show that available energy varies strongly between seasons and that maximum levels broadly coincide with periods of maximum habitat utilization by Right Whales.
 
 
 ## Indicator statistics 
-Spatial scale: Coming soon
+Spatial scale: Shelf waters from Cape Hatteras to the Canadian Maritimes
 
-Temporal scale: Coming soon
+Temporal scale: Maps are resolved on a monthly scale based on the average abundances observed across the entire Ecomon sampling period (1980-present). They are neither representative nor predictive of any specific year and should not be treated as such.
 
 **Synthesis Theme**:
 
-
+- [x] Multiple System Drivers
 
 
 ```{r autostats_preyfield_energy}
@@ -37,17 +37,17 @@ Temporal scale: Coming soon
 ```
 
 ## Implications
-Coming soon
+The product presented here provides a background for examining both long-term and interannual changes to prey availability for North Atlantic Right Whales as well as assisting in targeting limited sampling resources for future assessments.
 
 ## Get the data
 
-**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
+**Point of contact**: [Gregory Ellis (gregory.ellis@noaa.gov)](mailto:Gregory Ellis (gregory.ellis@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::preyfield_energy`
 
 **Variable definitions**
 
-Coming soon
+The variable shown here is preyfield energy in joules per cubic meter of seawater. It is derived by interpolating the abundance of the target species, multiplying each by a per-animal energy estimate, and then summing the resultant matrices together.
 
 ```{r vars_preyfield_energy}
 # Pull all var names
@@ -59,7 +59,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-
+- [x] Database pull with analysis
 
 
 ## Public Availability
