@@ -19,9 +19,9 @@ library(ecodata)
 Locations of high densities through time of seabirds, marine mammals, and sea turtles
 
 ## Key Results and Visualizations
-![North Atlantic Right Whale hotspots](https://github.com/NOAA-EDAB/ecodata/raw/master/data-raw/workshop/images/NARW_hotspots_final_2024.jpg){width=100%}
+![North Atlantic Right Whale hotspots](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/NARW_hotspots_final_2024.jpg){width=100%}
 
-![Seabirds, Turtles, & marine mammals hotspots](https://github.com/NOAA-EDAB/ecodata/raw/master/data-raw/workshop/images/SOE_2023_birds_mammals_turtles_2024.png){width=100%}
+![Seabirds, Turtles, & marine mammals hotspots](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2023_birds_mammals_turtles_2024.png){width=100%}
 
 
 ## Indicator statistics 
