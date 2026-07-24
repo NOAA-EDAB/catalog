@@ -29,9 +29,9 @@ In the Gulf of Maine, gill net and otter trawl effort saw large declines from 19
 
 While fishing effort (effective area swept) has been decreasing for many gears, revenue per area swept (in adjusted 2023 dollars) has increased, especially for otter trawls, raised footrope (small-mesh) trawls scallop dredge general category, squid trawls, and (primarily lobster) traps.
 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_GOM.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_GOM.png){width=100%}
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_GOM.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_GOM.png){width=100%}
 
 Georges Bank
 
@@ -39,9 +39,9 @@ Gillnet and otter trawl fishing effort on Georges Bank has exhibited significant
 
 Commercial fishing revenue (adjusted 2023 dollars) has risen for most gears, most notably for gillnets, otter trawls, raised (small-mesh) trawls, and (lobster and crab) traps. Gillnet and trap revenue per km2 is high because the gears cover a relatively small amount of bottom (letting fish come to the gear), while scallop dredge revenue is high because of the high relative value of sea scallops.
 
-![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_GB.png){width=100%}
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_GB.png){width=100%}
 
-![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_GB.png){width=100%}
+![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_GB.png){width=100%}
 
 Southern New England and Mid-Atlantic EPU
 
@@ -49,9 +49,9 @@ In the Southern New England and Mid-Atlantic EPU, downward trends in effort are 
 
 For most gears used in the Southern New England and Mid-Atlantic EPU, revenue (adjusted 2023 dollars) per area swept has risen, most notably for longlines, otter trawls, squid trawls, scallop dredges, and (lobster and crab) traps. The values are high for longlines and traps due to the low amount of area affected by the gear (catching fish that come to the gear).  Scallop values are high due to the relatively high value per pound of sea scallops.
 
-![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_MAB.png){width=100%}
+![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_effective_sweptarea_areabytrip_MAB.png){width=100%}
 
-![Figure 6](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_MAB.png){width=100%}
+![Figure 6](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_effective_sweptarea_revenuebytrip_MAB.png){width=100%}
 
 
 ## Indicator statistics 
