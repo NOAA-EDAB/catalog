@@ -21,10 +21,10 @@ This indicator examines hybrid millidecade sound pressure levels. In the Gulf of
 
 ## Key Results and Visualizations
 This figure summarizes hybrid millidecade sound pressure levels throughout the Gulf of Maine, derived from data collected across four and a half years (2020-2024) and nine recording sites.
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_ambient_sound_GOM.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_ambient_sound_GOM.png){width=100%}
 
 This figure summarizes hybrid millidecade sound pressure levels throughout the Mid-Atlantic Bight, derived from data collected across two years (2022-2024) and nine recording sites.
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_ambient_sound_MAB.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_ambient_sound_MAB.png){width=100%}
 
 
 ## Indicator statistics 
