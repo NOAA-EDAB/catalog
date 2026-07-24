@@ -30,13 +30,13 @@ For the New England region overall, there are declines in the number of active f
 
 We note, however, that the lobster fishery’s VTR reporting requirements and compliance raises questions about our ability to track change in lobster communities. Other anecdotal evidence, however, also points to increased opportunities in lobstering over the last decade. 
 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_commsbygear.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_commsbygear.png){width=100%}
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_commsbygearfaceted.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_commsbygearfaceted.png){width=100%}
 
-![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_composition.png){width=100%}
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_composition.png){width=100%}
 
-![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_compositionfaceted.png){width=100%}
+![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_compositionfaceted.png){width=100%}
 
 #### Fisher Days Change by Gear Type
 
@@ -44,7 +44,7 @@ Data representing fisher days (a measure of labor equal to trip length x crew si
 
 Currently active fishing communities demonstrate varying employment opportunities based on gear type. While the number of communities composed of trawling vessels (both large and small) have consistently declined over the time period, employment opportunities (Fisher Days) in the remaining communities exhibit divergent trajectories. Communities composed of large trawlers offer fewer employment opportunities whereas those composed of small trawlers offer more employment opportunities. A two decade increasing employment opportunity trend in lobstering communities displays a slowing or opposite trend in recent years.
 
-![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_fisherdaysbygear.png){width=100%}
+![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_fisherdaysbygear.png){width=100%}
 
 Small trawler fishing communities in MA, ME, and NH show steep declines in both the total number of communities and total fisher days, with ME demonstrating an earlier and more precipitous decline (Figure 6). Small trawler communities (with 3 or more active vessels) no longer exist in NH beyond 2020, and employment opportunities on small trawlers in MA and ME exist in only a handful of communities, down from a high of 27 and 25 communities respectively. There is, however, little change in the average fisher days for those remaining communities when compared to the historical record.
 
@@ -52,15 +52,15 @@ Small trawler communities in RI (with most activity likely concentrated in Point
 
 Declines in total number of large trawler fisher days, and hence employment opportunities, are evident in MA, ME, and RI (Figure 7). The number of large trawler communities in MA declines along with fisher days, whereas ME registers only one large, and now much less active, trawler community throughout the time period. RI’s relatively few large trawler communities inconsistently appear as active, suggesting the presence of few large trawlers in each port (and hence not always meeting the 3 or more threshold). While the average number of fisher days per community appears stable for all communities in MA, ME, and RI, it is worth nothing that total and average fisher days in the one community in ME (Portland) is negligible.
 
-![Figure 6](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_fisherdaysbygearfaceted.png){width=100%}
+![Figure 6](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_fisherdaysbygearfaceted.png){width=100%}
 
-![Figure 7](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_fisherdaysbygearfaceted2.png){width=100%}
+![Figure 7](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_fisherdaysbygearfaceted2.png){width=100%}
 
 #### Community Adaptive Capacity
 
 To understand how fishing communities in the Northeast US might respond to changing ocean conditions and shifting availability of target species, we assessed their historical capacity to change what they catch and where they fish. We developed quantitative indicators of catch flexibility, catch switching, and fishing ground mobility using the Communities at Sea (CaS) database derived from permit records and vessel trip reports 1996-2019. We find that the capacity for fishing communities to change catch composition or shift fishing grounds differed by gear type but communities using the same gear type varied in the extent to which they could utilize each strategy. The plot below highlights how communities vary in their fishing ground mobility and catch flexibility, highlighting both common traits and divergence for vessels using the same gear type. The contour lines and filled shapes provide a measure of the variation in adaptive strategies by gear type calculated as a 2d kernel density estimate of >=5 and >=10 communities in each gear group. 
 
-![Figure 8](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_communities_at_sea_adaptability.png){width=100%}
+![Figure 8](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_adaptability.png){width=100%}
 
 
 ## Indicator statistics 
