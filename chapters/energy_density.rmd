@@ -25,11 +25,11 @@ The line plots depict the mean energy density (kJ/g wet weight) for eight specie
 
 New in the 2026 SOE forage fish energy density indicator are split-panel bubble plots to illustrate spatiotemporal trends in forage species abundance and energy density across four ecological production units (EPUs): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS). The split-panels provide seasonal comparisons (Spring: left; Fall: right). Catch data from NEFSC bottom trawl surveys were aggregated to derive the mean catch (kg) per representative tow and mean energy density (kJ/g wet weight) for each species-year-season-EPU combination. Bubble size scales with mean catch, while fill intensity represents mean energy density (darker hues indicate higher values).
 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_ED_Figure_GB.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_ED_Figure_GB.png){width=100%}
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_Figure_GOM.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_Figure_GOM.png){width=100%}
 
-![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_Figure_MAB.png){width=100%}
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_Figure_MAB.png){width=100%}
 
 ```{r plot_energy_densityMidAtlantic}
 # Plot indicator
@@ -66,8 +66,9 @@ It is important to note/caveat that some of the previous estimates of forage fis
 
 **Variable definitions**
 
-Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 2) Mean energy density (ED; kJ/g wet weight) 
-3) Mean catch per (representative) tow (kg) 4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
+Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 
+2) Mean energy density (ED; kJ/g wet weight) 3) Mean catch per (representative) tow (kg) 
+4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
 
 ```{r vars_energy_density}
 # Pull all var names
