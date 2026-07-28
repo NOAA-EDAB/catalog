@@ -22,7 +22,7 @@ The data presented here is a timeline of proposed construction in the Northeast 
 ## Key Results and Visualizations
 The colored chart below also presents the offshore wind development timeline in the Greater Atlantic region with the estimated year that foundations would be constructed (matches the color of the wind areas). These timelines and data estimates are expected to shift, but represent the most recent information available as of July 2023. 
 
-![Speed of offshore wind development](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/Offshore_Wind_Development_V5_NicoleMucci.png){width=100%}
+![Speed of offshore wind development](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/Offshore_Wind_Development_V5_NicoleMucci.png){width=100%}
 
 ```{r plot_wind_dev_speedMidAtlantic}
 # Plot indicator

@@ -25,13 +25,13 @@ Surface MCSs (Marine Cold Spells)
 
 Three surface MCSs occurred in 2025, one of which was the 11th strongest on record starting on Nov 7th and peaking on Nov 21st. 
 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GB_Surface_MCS.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_GB_Surface_MCS.png){width=100%}
 
 Bottom MCSs (Marine Cold Spells)
 
 Two bottom MCSs occurred in 2025, one of which was the 9th strongest on record starting on Aug 11th, peaking on Sep 15th, and might still be ongoing (BT data ends 9/15).  The other bottom MCS started on Feb 8th, peaking on Feb 25th, and lasting 71 days.
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GB_Bottom_MCS.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_GB_Bottom_MCS.png){width=100%}
 
 Gulf of Maine 
 
@@ -41,7 +41,7 @@ Five surface MCSs occurred in 2025.  The fifth strongest cold spell on record st
 
 *These are raw temperature values and are not de-trended (but MCSs are based on detrended data).
 
-![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GOM_Surface_MCS_2025.png){width=100%}
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_GOM_Surface_MCS_2025.png){width=100%}
 
 Bottom MCSs (Marine Cold Spells) 
 
@@ -51,7 +51,7 @@ Three bottom MCSs occurred in the Gulf of Maine in 2025, one of which was the 5t
 
 The 6th strongest MCS occurred on Aug 11th, peaked on Sep 10th and might still be ongoing (BT data ends 9/15).
 
-![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_GOM_Bottom_MCS.png){width=100%}
+![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_GOM_Bottom_MCS.png){width=100%}
 
 Middle Atlantic Bight 
 
@@ -59,7 +59,7 @@ Surface MCSs (Marine Cold Spells)
 
 Six surface MCSs occurred in Middle Atlantic Bight in 2025, one of which was the 8th strongest on record starting on Feb 6th, peaking on Feb 23st, and lasting 31 days.
 
-![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_MAB_Surface_MCS.png){width=100%}
+![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_MAB_Surface_MCS.png){width=100%}
 
 Bottom MCSs (Marine Cold Spells) 
 
@@ -67,7 +67,7 @@ One bottom MCSs occurred in the Middle Atlantic Bight in 2025, which was the 5th
 
 *These are raw temperature values and are not de-trended (but MCSs are based on detrended data).
 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_MAB_Bottom_MCS.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_MAB_Bottom_MCS.png){width=100%}
 
 
 ## Indicator statistics 

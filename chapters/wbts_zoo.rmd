@@ -48,9 +48,9 @@ Time series indices of *C. finmarchicus* stage structure (CSI), abundance of cop
 ## Key Results and Visualizations
 ***Calanus Abundance Index***
 
-![Figure 1a](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_CI_phenology.png){width=100%}
+![Figure 1a](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/WBTS_CI_phenology.png){width=100%}
 
-![Figure 1b](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_CI_seasonal.png){width=100%}
+![Figure 1b](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/WBTS_CI_seasonal.png){width=100%}
 
 Abundance (no. m^-2^) of C. finmarchicus stages C3-C6 estimated from 200 μm mesh vertical ring net tows. Individual data points with fitted lines show GAM predictions and 95% confidence intervals (shaded areas) when significant. (A) WBTS station annual cycle climatology (January 2005–November 2025). Data from 2004–2010: green circles; 2011–2022: blue triangles; 2023: purple diamonds; 2024: gold stars; 2025: red squares. (B) WBTS station seasonal abundance time series for spring, summer, fall, and winter. Vertical lines in (A) denote season boundaries shown in (B). If the seasonal abundance time series is significant, GAM predictions are calculated with day of year set to 37, 110, 197, and 306 for winter, spring, summer, and fall, respectively.
 
@@ -60,9 +60,9 @@ There was no significant trend in abundance of stages C3-C6 in Wilkinson Basin i
 
 ***Copepodite Stage Index (CSI)***
 
-![Figure 2a](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_CSI_phenology.png){width=100%}
+![Figure 2a](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/WBTS_CSI_phenology.png){width=100%}
 
-![Figure 2b](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_CSI_seasonal.png){width=100%}
+![Figure 2b](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/WBTS_CSI_seasonal.png){width=100%}
 
 The CSI shows the mean *C. finmarchicus*s C1-C6 stage composition estimated from 200 μm mesh vertical ring net tows at each sampling date. Individual data points with fitted lines show GAM predictions and 95% confidence intervals (shaded areas) when significant. (A) WBTS station annual cycle climatology (January 2005–November 2025). Data from 2004–2010: green circles; 2011–2022: blue triangles; 2023: purple diamonds; 2024: gold stars; 2025: red squares. (B) WBTS station seasonal time series for spring, summer, fall, and winter. Vertical lines in (A) denote season boundaries shown in (B). If the seasonal time series is significant, GAM predictions are calculated with day of year set to 37, 110, 197, and 306 for winter, spring, summer, and fall, respectively.
 
@@ -70,9 +70,9 @@ The annual life cycle of *C. finmarchicus*, as represented by its CSI climatolog
 
 ***Total Mesozooplankton Biomass***
 
-![Figure 3a](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_biomass_phenology.png){width=100%}
+![Figure 3a](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/WBTS_biomass_phenology.png){width=100%}
 
-![Figure 3b](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/WBTS_biomass_seasonal.png){width=100%}
+![Figure 3b](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/WBTS_biomass_seasonal.png){width=100%}
 
 Total Mesozooplankton biomass time series data represented by total dry weight (g m^−2^) measured from samples collected with 200-μm mesh vertical ring net tows. Individual data points with fitted lines show GAM predictions and 95% confidence intervals (shaded areas) when significant. (A) WBTS station annual cycle climatology (January 2005–November 2025). Data from 2004–2010: green circles; 2011–2022: blue triangles; 2023: purple diamonds; 2024: gold stars; 2025: red squares. (B) WBTS station seasonal abundance time series for spring, summer, fall, and winter. Vertical lines in (A) denote season boundaries shown in (B). If the seasonal abundance time series is significant, GAM predictions are calculated with day of year set to 37, 110, 197, and 306 for winter, spring, summer, and fall, respectively.
 

@@ -35,16 +35,16 @@ The animations depict high variability in time and space and increases in sampli
 
 The lowest observed values of surface pH in the Mid-Atlantic were observed in the summer, and the lowest surface aragonite saturation state levels occurred in western Long Island Sound and nearshore New Jersey coastal waters during the summer. Shelf waters off southern New England exhibited low surface and bottom pH and aragonite saturation state during winter 2024. In the Gulf of Maine, the lowest observed values of surface pH and aragonite saturation state occurred in the winter and fall seasons.
 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_bottom_ph_seasonal.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_bottom_ph_seasonal.png){width=100%}
 Figure 1. Seasonal bottom pH on the U.S. Northeast Shelf plotted from available quality-controlled vessel- and glider-based datasets. Winter (Dec, Jan, Feb) data availability: 2012-2025; Spring (Mar, Apr, May) data availability: 2014-2025; Summer (Jun, Jul, Aug) data availability: 2007-2025; and Fall (Sept, Oct, Nov) data availability: 2013-2024.
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_bottom_omega_seasonal.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_bottom_omega_seasonal.png){width=100%}
 Figure 2. Seasonal bottom aragonite saturation state (omega) on the U.S. Northeast Shelf plotted from available quality-controlled vessel- and glider-based datasets. Winter (Dec, Jan, Feb) data availability: 2012-2025; Spring (Mar, Apr, May) data availability: 2014-2025; Summer (Jun, Jul, Aug) data availability: 2007-2025; and Fall (Sept, Oct, Nov) data availability: 2013-2024.
 
-![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_surface_ph_seasonal.png){width=100%}
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_surface_ph_seasonal.png){width=100%}
 Figure 3. Seasonal surface pH on the U.S. Northeast Shelf plotted from available quality-controlled vessel- and glider-based datasets. Winter (Dec, Jan, Feb) data availability: 2012-2025; Spring (Mar, Apr, May) data availability: 2006-2025; Summer (Jun, Jul, Aug) data availability: 2004-2025; and Fall (Sept, Oct, Nov) data availability: 2013-2024.
 
-![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_surface_omega_seasonal.png){width=100%}
+![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_surface_omega_seasonal.png){width=100%}
 Figure 4. Seasonal surface aragonite saturation state (omega) on the U.S. Northeast Shelf plotted from available quality-controlled vessel- and glider-based datasets. Winter (Dec, Jan, Feb) data availability: 2012-2025; Spring (Mar, Apr, May) data availability: 2006-2025; Summer (Jun, Jul, Aug) data availability: 2004-2025; and Fall (Sept, Oct, Nov) data availability: 2013-2024.
 
 Locations and times where species sensitivity levels for aragonite saturation state were reached 
@@ -53,33 +53,33 @@ Ocean acidification risks vary among species and include reduced survival, growt
 
 Aragonite saturation state was at or below the sensitivity levels for both Atlantic sea scallop (Placopecten magellanicus; Fig. 5) and longfin squid (Doryteuthis pealeii; Fig. 6) most frequently during the summer (2007-2025) and fall (only 2023, 2024), although these levels were reached for both species also during winter 2024 and, for Atlantic sea scallop in spring 2024 and 2025. Higher OA risk conditions were observed for Atlantic sea scallop and longfin squid in Long Island Sound and the nearshore and mid shelf regions of the New Jersey shelf during summers of 2016, 2018, 2019, 2023, 2024, and, for longfin squid only, 2025. The spatial range of potentially unfavorable habitat for Atlantic sea scallops and longfin squid in the summer-time was highest in 2023 and 2024 compared to the observed past years and the most recent summer 2025.
 
-![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_bottom_omega_scallop.png){width=100%}
+![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_bottom_omega_scallop.png){width=100%}
 Figure 5. Locations where bottom aragonite saturation state (omega) in the habitat depth range were at or below the laboratory-derived sensitivity level for Atlantic sea scallop during different seasons for the time periods 2007-2022 (dark cyan), 2023 only (magenta), 2024 only (cyan), and 2025 only (orange). There are no data included for fall 2025. Gray circles indicate locations where bottom omega values were above the species-specific sensitivity values within the habitat depth range.
 
-![Figure 6](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_bottom_omega_squid.png){width=100%}
+![Figure 6](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_bottom_omega_squid.png){width=100%}
 Figure 6. Locations where bottom aragonite saturation state (omega) in the habitat depth range were at or below the laboratory-derived sensitivity level for longfin squid during different seasons for the time periods 2007-2022 (dark cyan), 2023 only (magenta), 2024 only (cyan), and 2025 only (orange). There are no data included for fall 2025. Gray circles indicate locations where bottom omega values were above the species-specific sensitivity values within the habitat depth range.
 
 Higher OA risk conditions observed for Atlantic cod (Gadus morhua; Fig. 7) and American lobster (Homarus americanus; Fig. 8) were more spotty compared to those observed for Atlantic sea scallop and longfin squid in the Mid-Atlantic. However, when observed, they occurred most frequently during the summer, although these levels were also reached at a few locations for both species during fall and winter. The locations this typically occurred within their habitat depth ranges were in western Gulf of Maine and off the coast of eastern Maine. These areas include Stellwagen Bank, slope waters south of Penobscot and Blue Hill Bays, and Wilkinson Basin and additionally, for Atlantic cod, slope waters south of Maquoit Bay and in waters of Jeffreys Ledge and Jordan Basin. Unlike in the Mid-Atlantic, higher OA risk conditions in the Gulf of Maine for Atlantic cod and American lobster occurred in 2023 compared to 2024.
 
-![Figure 7](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_bottom_omega_cod.png){width=100%}
+![Figure 7](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_bottom_omega_cod.png){width=100%}
 Figure 7. Locations where bottom aragonite saturation state (omega) in the habitat depth range were at or below the laboratory-derived sensitivity level for Atlantic cod during different seasons for the time periods 2007-2022 (dark cyan), 2023 only (magenta), and 2024 (cyan). There are no data included for spring 2023-2024 and for 2025. Gray circles indicate locations where bottom omega values were above the species-specific sensitivity values within the habitat depth range.
 
-![Figure 8](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_bottom_omega_lobster.png){width=100%}
+![Figure 8](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_bottom_omega_lobster.png){width=100%}
 Figure 8. Locations where bottom aragonite saturation state (omega) in the habitat depth range were at or below the laboratory-derived sensitivity level for American lobster during different seasons for the time periods 2007-2022 (dark cyan), 2023 only (magenta), and 2024 (cyan). There are no data included for spring 2023-2024 and for 2025. Gray circles indicate locations where bottom omega values were above the species-specific sensitivity values within the habitat depth range.
 
 OA risk conditions observed for pteropods (Limacina spp.) exhibited spatiotemporal differences whereby the spatial range of potentially unfavorable habitat was highest in the Gulf of Maine in 2023 (primarily winter and fall; Fig. 9) highest in the Mid-Atlantic in 2024 (primarily offshore in winter and nearshore in summer; Fig. 10). This could be related to the large volume of Labrador slope water, with lower temperatures and omega values, that flowed from the north, through Gulf of Maine in late 2023/early 2024, and then through the Mid-Atlantic Bight in 2024. In 2025, sensitivity levels of pteropods were reached during spring and summer in the Mid-Atlantic, although we are lacking observations for fall 2025 in the Mid-Atlantic and for all of 2025 in the Gulf of Maine.
 
-![Figure 9](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_surface_omega_pteropods_GOM.png){width=100%}
+![Figure 9](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_surface_omega_pteropods_GOM.png){width=100%}
 Figure 9. Locations in the Gulf of Maine where surface aragonite saturation state (omega) in the habitat depth range were at or below the laboratory-derived sensitivity level for pteropods during different seasons for the time periods 2004-2022 (dark cyan), 2023 only (magenta), 2024 (cyan), and 2025 (orange). There are no data included for spring 2023-2024 and for 2025. Gray circles indicate locations where bottom omega values were above the species-specific sensitivity values within the habitat depth range.
 
-![Figure 10](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_surface_omega_pteropods_MAB.png){width=100%}
+![Figure 10](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_surface_omega_pteropods_MAB.png){width=100%}
 Figure 10. Locations in the Mid-Atlantic Bight where surface aragonite saturation state (omega) in the habitat depth range were at or below the laboratory-derived sensitivity level for pteropods during different seasons for the time periods 2007-2022 (dark cyan), 2023 only (magenta), 2024 (cyan), and 2025 (orange). There are no data included for fall 2025. Gray circles indicate locations where bottom omega values were above the species-specific sensitivity values within the habitat depth range.
 
 Interannual variability between summers of 2023, 2024, 2025 
 
 The progression from summer 2023 to summer 2025 in the Mid-Atlantic and Gulf of Maine is characterized by a switch from a warmer bottom temperature anomaly in 2023 to colder bottom temperature anomalies in 2024 and 2025 (Fig. 11, row A). In the Mid-Atlantic, the greater (colder) anomalies were concentrated inshore in 2024 but on the shelf break in 2025. In the Mid-Atlantic, the cooling between the summers of 2023 and 2024 corresponded with decreasing summer bottom aragonite saturation state values (Fig. 11, row B). The bottom aragonite saturation state observed on the Mid-Atlantic coastal shelf during summer 2024 were the lowest values recorded when compared to all of the years sampled (since 2007 and in 2025). However, bottom aragonite saturation state values were generally higher in the Mid-Atlantic in summer 2025. With low quantity of recent data in the Gulf of Maine (none for 2025), it is difficult to make the interannual comparison. At the same time, there was little difference in chlorophyll-a anomalies between the 3 years in the Mid-Atlantic compared to the Gulf of Maine which saw a large swing from positive to negative chlorophyll-a anomaly between 2023 and 2024 (Fig. 11, row C). If we loosely define chlorophyll climatology as a proxy for food availability, this suggests that for the Mid-Atlantic, there is little to no change in that lower-on-average availability over time, even during periods of low aragonite saturation state.
 
-![Figure 11](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_OA_multivariate.png){width=100%}
+![Figure 11](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_OA_multivariate.png){width=100%}
 Figure 11. Bottom temperature anomaly (row A), bottom aragonite saturation state (row B), and surface chlorophyll anomaly (row C) for the summers of 2023 (left column), 2024 (middle column), and 2025 (right column). The bottom temperature anomaly for each summer-year was calculated as the difference from the summer mean 2012-2025. Bottom temperature data courtesy of the E.U. Copernicus Marine Service Information (CMEMS): Global Ocean Physics Reanalysis (GLORYS12V1) dataset. The bottom aragonite saturation state values were those observed from available vessel- and glider-based efforts during the summers of 2023, 2024, and 2025. The surface chlorophyll-a anomaly for each summer-year was calculated as the difference from the summer mean 2012-2025. Satellite-derived surface chlorophyll-a data courtesy of the NASA Ocean Biology Distributed Active Archive Center (OB.DAAC).
 
 
@@ -110,7 +110,8 @@ The updated datasets this year provided the seasonal evaluation of available car
 
 **Variable definitions**
 
-1. depth_interpolated meters 2. temperature degrees Celsius 3. chlorophyll_a µg L-1 4. oxygen_concentration_shifted_mgL mg L-1 5. pH_shifted 6. aragonite_saturation_state
+1. depth_interpolated meters 2. temperature degrees Celsius 3. chlorophyll_a µg L-1 
+4. oxygen_concentration_shifted_mgL mg L-1 5. pH_shifted 6. aragonite_saturation_state
 
 
 No Data

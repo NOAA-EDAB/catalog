@@ -20,10 +20,10 @@ In the Gulf of Maine, we examined the weekly acoustic presence of eight cetacean
 
 ## Key Results and Visualizations
 This figure summarizes the weekly acoustic presence of eight cetacean species and one cetacean family in the Gulf of Maine, derived from data collected across four years (2019-2023) and thirty recording sites.
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_cetacean_acoustic_GOM.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_cetacean_acoustic_GOM.png){width=100%}
 
 This figure summarizes the weekly acoustic presence of six baleen whale species in the Mid-Atlantic Bight, derived from data collected across two years (2022-2024) and thirteen recording sites.
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_cetacean_acoustic_MAB.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_cetacean_acoustic_MAB.png){width=100%}
 
 
 ## Indicator statistics 

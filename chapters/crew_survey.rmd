@@ -21,18 +21,18 @@ This data was collected using a mixed-methods and intercept-style approach acros
 
 ## Key Results and Visualizations
 Results of this research express evidence for the phenomenon the “graying of the fleet” as the average age for a crew member steadily increased in age category “55 or older” over the three survey waves. Additionally, results expose a decline in entrants into the fishing sector with years in commercial fishing escalating among survey participants, suggesting less people are getting involved and those who are involved are increasing their cumulative years in this career. 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/CrewSurvey_AllEPU_grayfleet.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/CrewSurvey_AllEPU_grayfleet.png){width=100%}
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/CrewSurvey_AllEPU_recruitment.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/CrewSurvey_AllEPU_recruitment.png){width=100%}
 
 Participation in the Northeast’s three major fisheries fluctuates over the three waves, with the scallop fishery seeing significant decline as survey participants describe participation in “other” fisheries, which can be anything commercially viable in Northeast ports.
-![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/CrewSurvey_AllEPU_fisheryshifts.png){width=100%}
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/CrewSurvey_AllEPU_fisheryshifts.png){width=100%}
 
 Demographic data collected by these survey waves serve as a valuable snapshot of the resources and opportunities commercial fishing crew and hired captains are working with. This research reveals the majority of crew possess a high school education level or even less, as is shared in this figure.
-![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/CrewSurvey_AllEPU_education.png){width=100%}
+![Figure 4](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/CrewSurvey_AllEPU_education.png){width=100%}
 
 The results from this study are measured using a Likert-style scale to cover satisfaction of Basic Needs, Social-Psychological Needs, and Self-Actualization through survey questions. Aspects of the crews’ satisfaction on job and related variables are revealed through ranges of dissatisfaction to satisfaction with the highest level of satisfaction variable being “adventure of the job” and the lowest satisfaction level being “time away from home” and “physical fatigue of the job.” The majority of responses reflect varying degrees of moderate satisfaction among the variables.
-![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/CrewSurvey_AllEPU_satisfaction.png){width=100%}
+![Figure 5](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/CrewSurvey_AllEPU_satisfaction.png){width=100%}
 
 
 ## Indicator statistics 
@@ -60,11 +60,15 @@ Managers and policy makers have a responsibility to consider the effects of mana
 
 **Variable definitions**
 
-1) Name: survey_wave; Definition: which iteration the survey was implemented.  2) Name: primary_port; Definition: main port for participant to fish from.  
-3) Name: fishery_category; Definition: what is their main fishery.  4) Name: age_category; Definition: age of survey participant.  
-5) Name: education_combined; Defined: a combination of participant’s education attainment.  6) Name: race; Defined: participants’ self-described race.  
-7) Name: hispanic; Definition: yes or no.  7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.  
-8) Name: health_insurance; Definition: does the participant have health insurance or not.  9) Name: marital_status; Definition: are they married or not.  
+1) Name: survey_wave; Definition: which iteration the survey was implemented.  
+2) Name: primary_port; Definition: main port for participant to fish from.  
+3) Name: fishery_category; Definition: what is their main fishery.  
+4) Name: age_category; Definition: age of survey participant.  
+5) Name: education_combined; Defined: a combination of participant’s education attainment.  
+6) Name: race; Defined: participants’ self-described race.  7) Name: hispanic; Definition: yes or no.  
+7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.  
+8) Name: health_insurance; Definition: does the participant have health insurance or not.  
+9) Name: marital_status; Definition: are they married or not.  
 10) Name: years_in_commercial_fishing_categorical; Definition: a participant’s time spent in commercial fishing.  
 11) Name: owner_operator_status; Definition: is the participant an owner of a vessel of which they operate a business.  
 12) Name: position_on_current_vessel; Definition: what position do they hold.  
