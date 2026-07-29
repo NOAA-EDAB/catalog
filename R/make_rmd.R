@@ -50,15 +50,15 @@ make_rmd <- function(listobject, n = 10){
   ### Create status badge, if applicable
   if (!is.null(listobject$page_status)) {
     if (listobject$page_status == "Under Review"){
-      cat(paste0('<a href="https://bbeltz1.github.io/catalogv2/page_status.html#under-review" class="btn btn-danger button_small"><i class="fa fa-warning"></i> Under Review</a>'),append=T,fill=T,file=con)
+      cat(paste0('<a href="https://noaa-edab.github.io/catalog/page_status.html#under-review" class="btn btn-danger button_small"><i class="fa fa-warning"></i> Under Review</a>'),append=T,fill=T,file=con)
       cat("",append=T,fill=T,file=con) # add space
 
     } else if (listobject$page_status == "Under Construction") {
-        cat(paste0('<a href="https://bbeltz1.github.io/catalogv2/page_status.html#under-construction" class="btn btn-warning button_small"><i class="fas fa-hard-hat"></i> Under Construction</a>'),append=T,fill=T,file=con)
+        cat(paste0('<a href="https://noaa-edab.github.io/catalog/page_status.html#under-construction" class="btn btn-warning button_small"><i class="fas fa-hard-hat"></i> Under Construction</a>'),append=T,fill=T,file=con)
         cat("",append=T,fill=T,file=con) # add space
 
     } else if (listobject$page_status == "In Development") {
-        cat(paste0('<a href="https://bbeltz1.github.io/catalogv2/page_status.html#in-development" class="btn btn-success button_small"><i class="fas fa-pencil-ruler"></i> In Development</a>'),append=T,fill=T,file=con)
+        cat(paste0('<a href="https://noaa-edab.github.io/catalog/page_status.html#in-development" class="btn btn-success button_small"><i class="fas fa-pencil-ruler"></i> In Development</a>'),append=T,fill=T,file=con)
         cat("",append=T,fill=T,file=con) # add space
     }
   }
