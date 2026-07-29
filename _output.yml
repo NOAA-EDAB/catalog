@@ -1,49 +1,16 @@
 bookdown::bs4_book:
-  split_bib: true
-  css: style.css
-  theme:
-    primary: "#4D6F8D"
-  repo: https://github.com/NOAA-EDAB/catalog
-
-bookdown::gitbook:
-  css: style.css
-  # includes:
-  #   in_header: [ga_script.html]
-  config:
-    # toc:
-    #   collapse: section
-    #   before: |
-    #     <li><a href="./">Mastering Shiny</a></li>
-    edit: https://github.com/NOAA-EDAB/catalog/edit/main/
-    download: []
-    sharing:
-      facebook: no
-      twitter: no
-      github: yes
-      all: []
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
-bookdown::epub_book: default
-
-
-
-
-
-# bookdown::gitbook:
-#   css: css/style.css
-#   split_by: chapter
-#   config:
-#     toc: 
-#       collapse: section
-#       before: |
-#         <li><a href="./">Synthetic Indicator Catalogue</a></li>
-#       after: |
-#         <li><a href="https://github.com/NOAA-EDAB/catalog" target="blank">github repo</a></li>
-# #    edit: https://github.com/andybeet/test-doc/edit/main/%s
-#     #download: ["pdf"]
-# #bookdown::pdf_book:
-#  # keep_tex: yes
+    template: template.html
+    theme:
+      preset: spacelab
+      primary: "#00467e"
+      secondary: "#d55e00"
+      success: "#93d501"
+      warning: "#ffc904"
+      danger: "#ca0b00"
+    css: style.css
+    repo: 
+      base: https://github.com/NOAA-EDAB/catalog
+      branch: main
+    footnotes_inline: false
+    split_bib: true
+    pandoc_args: ["--trace"]
