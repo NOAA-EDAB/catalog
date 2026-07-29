@@ -1,20 +1,50 @@
 # Sea Surface Temperature - Ocean Model {#surface_temp_mom6}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The data presented here are seasonal sea surface temperature anomalies for the period 1993-2019 from the MOM6 hindcast ocean model for the Northwest Atlantic.  Also shown here are 10-year forecasts of sea surface temperature anomalies (2023-2033) from the MOM6 decadal forecast ocean model for the Northwest Atlantic.
-
-**Indicator family**: 
-
-- [x] Oceanographic
-
 
 **Contributor(s)**: Laura Gruenburg, Vimal Koul
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [x] Oceanographic
+
+
+**Indicator Category**:
+
+- [x] Syntheses of published information
+- [x] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
+```{r download_surface_temp_mom6}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::surface_temp_mom6,
+output_name = 'surface_temp_mom6',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 This indicator shows seasonal sea surface temperature anomalies from a regional ocean model for the Northwest Atlantic based on the Modular Ocean Model Version 6 (NWA MOM6).  The model is at roughly 1/12 a degree horizontal resolution with data from 1993-2019 from a hindcast simulation, which has no data assimilation.  Investigating the ability of this model to reproduce key indicators can help us to develop confidence in the model as well as learn where improvements can be made.
 
@@ -25,35 +55,15 @@ Here we show seasonal sea surface temperature anomalies in the Mid-Atlantic Bigh
 
 We also show the 10-year forecast for annual sea surface temperature anomalies in the MAB, GB, and GOM.  This forecast is from the decadal forecast of NWA MOM6 (@koul_predicted_2024), which was initialized in 2022 and ran for 10 years.  The forecast indicates a stagnation in surface temperature warming over the next ten years.  Retrospective forecasts, where a forecast is initiated in the past and output is compared to observations, have shown that the NWA MOM6 decadal forecast is able to correctly predict periods of temperature stability and rapid warming in this region (@koul_predicted_2024).
 
+## Implications
+Sea surface temperature is important for many marine species that have specific thermal preferences and tolerances.  When a region becomes too warm or cool, a species may respond in many ways including by shifting its range or changing its behavior.  Understanding how surface temperature may vary in the future can help us anticipate changes to marine communities and living marine resources.
 
 ## Indicator statistics 
 Spatial scale: The model data is on a roughly 1/12 degree grid.  Here we show the data averaged by EPU.
 
 Temporal scale: Winter (January, February, March), Spring (April, May, June), Summer (July, August, September), Fall (October, November, December), and Annual
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-
-
-```{r autostats_surface_temp_mom6}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Sea surface temperature is important for many marine species that have specific thermal preferences and tolerances.  When a region becomes too warm or cool, a species may respond in many ways including by shifting its range or changing its behavior.  Understanding how surface temperature may vary in the future can help us anticipate changes to marine communities and living marine resources.
-
-## Get the data
-
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::surface_temp_mom6`
-
 **Variable definitions**
-
-1) Time: Year; Season: 1 - Winter starting from month 1 (Jan, Feb, Mar), 4 - Spring starting from month 4 (Apr, May, Jun), 7 - Summer starting from month 7 (Jul, Aug, Sep), 10 - Fall starting from month 10 (Oct, Nov, Dec); Value: Sea Surface Temperature Anomaly value; EPU: Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); Unit: degrees C 
- 
-2) Time: Year; Val: Annual Sea Surface Temperature Anomaly; EPU: Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); e_member: ensemble member, 1-10 or ensemble mean; Unit: degrees C
 
 ```{r vars_surface_temp_mom6}
 # Pull all var names
@@ -63,20 +73,15 @@ vars <- ecodata::surface_temp_mom6 |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Syntheses of published information
-- [x] Database pull with analysis
+**Point of contact**: EDAB, edab.data@noaa.gov
 
+**ecodata dataset**: `ecodata::surface_temp_mom6`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/surface_temp_mom6.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/surface_temp_mom6.html>
 

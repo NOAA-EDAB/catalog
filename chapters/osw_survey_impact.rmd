@@ -1,40 +1,39 @@
 # Survey Impacts from Offshore Energy Development {#osw_survey_impact}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Offshore energy development is expected to have several impacts on federal and state surveys.
-
-**Indicator family**: 
-
-- [X] Social
-
 
 **Contributor(s)**: Douglas Christel
 
 **Affiliations**: GARFO
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Proceed as though this were a short summary of a typical introduction section in a paper.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Proceed as though this were a short summary of a typical results section in a paper.
+- [X] Social
 
 
-## Indicator statistics 
-Spatial scale: full shelf
+**Indicator Category**:
 
-Temporal scale: Decadal
+- [X] Syntheses of published information
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_osw_survey_impact}
-# Either from Contributor or ecodata
-```
+## Introduction to Indicator
+Proceed as though this were a short summary of a typical introduction section in a paper.
+
+## Key Results and Visualizations
+Proceed as though this were a short summary of a typical results section in a paper.
 
 ## Implications
 Proposed energy development areas interact with the region’s federal scientific surveys @friedland_spatial_2023. Scientific surveys are impacted by offshore energy in four ways:
@@ -45,29 +44,20 @@ Proposed energy development areas interact with the region’s federal scientifi
 
 Increased vessel transit between stations may decrease data collections that are already limited by annual days-at-sea day allocations. The total survey area overlap ranges from 1-70% for all Greater Atlantic federal surveys. The Gulf of Maine Cooperative Research Bottom Longline Survey (41%) and the Shrimp Survey (70%) have the largest percent overlap with the draft Gulf of Maine Energy Areas. The remaining surveys range from 1-16% overlap.  Individual survey strata have significant interaction with energy areas, including the sea scallop survey (up to 96% of individual strata) and the bottom trawl survey (BTS, up to 60% strata overlap). Additionally, up to 50% of the southern New England North Atlantic right whale survey’s area overlaps with proposed project areas and a region-wide survey mitigation program is underway @northeast_fisheries_science_center_us_fall_2022
 
-## Get the data
+## Indicator statistics 
+Spatial scale: full shelf
 
-**Point of contact**: [douglas.christel@noaa.gov](mailto:douglas.christel@noaa.gov){.email}
-
-**ecodata name**: No dataset
+Temporal scale: Decadal
 
 **Variable definitions**
 
 No Data
 
+## Get the data
 
-No Data
+**Point of contact**: douglas.christel@noaa.gov
 
-**Indicator Category**:
-
-- [X] Syntheses of published information
-
-
-## Public Availability
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
 

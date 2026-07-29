@@ -1,20 +1,50 @@
 # Marine Heatwave Events {#heatwave_year}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Surface and bottom marine heatwaves (MHWs) for 2025.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Vincent Saba, Joseph Caracappa
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_heatwave_year}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::heatwave_year,
+output_name = 'heatwave_year',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 Marine heatwaves (MHWs) measure not just temperature, but how long the ecosystem is subjected to the high temperature. They are driven by both atmospheric and oceanographic factors and can have dramatic impacts on marine ecosystems. Marine heatwaves are measured in terms of intensity (water temperature) and duration (the cumulative number of degree days) using measurements of sea surface temperature (surface MHWs) or models of bottom temperature (bottom MHWs). Recent research (@jacox_thermal_2020 and @jacox_global_2022) have modified the original MHW methodology,  @hobday_hierarchical_2016. The MHW indices for both surface and bottom use temperature time-series data that are detrended and the entire time-series are used as the climatology (e.g. 1982-2024 in this SOE). Surface MHW events are based on the criteria of a warming event that lasts for five or more days with sea surface temperatures above the 90th percentile of the historical daily climatology (1982-2024). Bottom MHW events are based on the criteria of a warming event that lasts for thirty or more days with bottom temperatures above the 90th percentile of the historical daily climatology (1982-2024). The longer time period criterion for bottom temperature is due to the longer persistence time of ocean bottom temperature anomalies in the U.S. northeast shelf (@chen_seasonal_2021). The new MHW indices can now discern extreme events that truly are “extreme” rather than occupying most of the year. Because this approach moves from a fixed baseline to a shifting baseline by detrending ocean temperature data and using the entire time-series as a climatology, the global warming signal is removed and thus we are left with extremes in the variability of ocean temperature. To assess total heat stress on marine organisms, one can combine long-term ocean warming and MHWs. Therefore, the 2025 SOE also reports on long-term SST and bottom temperature time-series that clearly show the decadal ocean warming trend.
 
@@ -49,57 +79,95 @@ Bottom MHWs (Marine Heatwaves)
 
 There were no bottom MHWs observed in the Middle Atlantic Bight in 2025.
 
+**Mid-Atlantic, Surface**
 ```{r plot_heatwave_yearMidAtlanticSurface}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Surface')
+ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Surface') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'heatwave_yearMidAtlanticSurface',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, Surface**
 ```{r plot_heatwave_yearNewEnglandSurface}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Surface')
+ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Surface') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'heatwave_yearNewEnglandSurface',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, Bottom**
 ```{r plot_heatwave_yearMidAtlanticBottom}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Bottom')
+ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Bottom') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'heatwave_yearMidAtlanticBottom',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, Bottom**
 ```{r plot_heatwave_yearNewEnglandBottom}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Bottom')
+ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Bottom') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'heatwave_yearNewEnglandBottom',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+Implications of MHWs on living marine resources in the U.S.NES are currently being investigated. The 2012 surface MHW events in the Gulf of Maine did have impacts on the lobster fishery in the summer and fall of 2012.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: Daily
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_heatwave_year}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Implications of MHWs on living marine resources in the U.S.NES are currently being investigated. The 2012 surface MHW events in the Gulf of Maine did have impacts on the lobster fishery in the summer and fall of 2012.
-
-## Get the data
-
-**Point of contact**: [Vincent Saba (vincent.saba@noaa.gov)](mailto:Vincent Saba (vincent.saba@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::heatwave_year`
-
 **Variable definitions**
-
-1) MHW maximum Intensity (detrended) = degrees C 2) MHW duration = days.
 
 ```{r vars_heatwave_year}
 # Pull all var names
@@ -109,20 +177,15 @@ vars <- ecodata::heatwave_year |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Database pull with analysis
+**Point of contact**: Vincent Saba (vincent.saba@noaa.gov)
 
+**ecodata dataset**: `ecodata::heatwave_year`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/heatwave_year.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/heatwave_year.html>
 

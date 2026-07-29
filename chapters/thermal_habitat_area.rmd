@@ -1,73 +1,125 @@
 # Thermal Habitat Area {#thermal_habitat_area}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2025
-
-**Indicator family**: 
-
-- [X] Oceanographic
-- [X] Habitat
-
 
 **Contributor(s)**: Joe Caracappa
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-See "Thermal Habitat Gridded" for cell-based calculations. Many deep water benthic and demersal species exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal preferences may impair these processes. This analysis assesses the thermal habitat available within a region and depth range from 0.5 to 30 °C at 0.5 °C increments. Thermal habitat area is calculated by identifying 1/12 degree cells within a given EPU that are greater than or equal to the temperature threshold then taking the sum of all cell areas. Data from 1993-01-01 to 2025-12-31 were obtained from the CMEMS' GLORYS12V1 global reanalysis product. This indicator was expanded from a working paper for the [2025 Atlantic Sea Scallop Research Track](https://apps-nefsc.fisheries.noaa.gov/saw/sasi_files.php?year=2025&species_id=26&stock_id=6&review_type_id=5&info_type_id=5&map_type_id=&filename=2025_SCA_RT_WP_TOR1b%20Climate%20Influences.pdf). This indicator is also available as annual means using the same methods under `ecodata::thermal_habitat_area_annual`.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-For each EPU, bottom temperature data were separated by depth bin (0-25m; 25m-100m; and \>100m), as well as temperature threshold (0.5-30 °C), and the proportion of each EPU exceeding these thresholds was calculated on a daily basis from 1993 to 2025. Each year in the time series is plotted as a separate line showing the suitable thermal habitat profile for that year. The current year is highlighted in black. Generally the MAB is warmer, so these curves are shifted to the right compared to GB and the GOM. The unusually cold conditions in 2024 and 2025 are shown by leftward shifts in temperature profiles compared to previous years. However, since 2024, the profiles for shallow areas show a flattening in the mid temperature ranges, indicating that a larger area was warmer than normal and potentially unsuitable for some species.
-
-```{r plot_thermal_habitat_areaMABMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'MAB', report = 'MidAtlantic')
-ggplotObject
-```
-
-```{r plot_thermal_habitat_areaGBNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GB', report = 'NewEngland')
-ggplotObject
-```
-
-```{r plot_thermal_habitat_areaGOMNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GOM', report = 'NewEngland')
-ggplotObject
-```
+- [X] Oceanographic
+- [X] Habitat
 
 
-## Indicator statistics 
-Spatial scale: EPU
+**Indicator Category**:
 
-Temporal scale: daily
+- [X] Extensive analysis, not yet published
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_thermal_habitat_area}
-# Either from Contributor or ecodata
+```{r download_thermal_habitat_area}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::thermal_habitat_area,
+output_name = 'thermal_habitat_area',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+See "Thermal Habitat Gridded" for cell-based calculations. Many deep water benthic and demersal species exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal preferences may impair these processes. This analysis assesses the thermal habitat available within a region and depth range from 0.5 to 30 °C at 0.5 °C increments. Thermal habitat area is calculated by identifying 1/12 degree cells within a given EPU that are greater than or equal to the temperature threshold then taking the sum of all cell areas. Data from 1993-01-01 to 2025-12-31 were obtained from the CMEMS' GLORYS12V1 global reanalysis product. This indicator was expanded from a working paper for the [2025 Atlantic Sea Scallop Research Track](https://apps-nefsc.fisheries.noaa.gov/saw/sasi_files.php?year=2025&species_id=26&stock_id=6&review_type_id=5&info_type_id=5&map_type_id=&filename=2025_SCA_RT_WP_TOR1b%20Climate%20Influences.pdf). This indicator is also available as annual means using the same methods under `ecodata::thermal_habitat_area_annual`.
+
+## Key Results and Visualizations
+For each EPU, bottom temperature data were separated by depth bin (0-25m; 25m-100m; and \>100m), as well as temperature threshold (0.5-30 °C), and the proportion of each EPU exceeding these thresholds was calculated on a daily basis from 1993 to 2025. Each year in the time series is plotted as a separate line showing the suitable thermal habitat profile for that year. The current year is highlighted in black. Generally the MAB is warmer, so these curves are shifted to the right compared to GB and the GOM. The unusually cold conditions in 2024 and 2025 are shown by leftward shifts in temperature profiles compared to previous years. However, since 2024, the profiles for shallow areas show a flattening in the mid temperature ranges, indicating that a larger area was warmer than normal and potentially unsuitable for some species.
+
+**Mid-Atlantic Bight**
+```{r plot_thermal_habitat_areaMABMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'MAB', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'thermal_habitat_areaMABMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Georges Bank**
+```{r plot_thermal_habitat_areaGBNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GB', report = 'NewEngland') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'thermal_habitat_areaGBNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Gulf of Maine**
+```{r plot_thermal_habitat_areaGOMNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GOM', report = 'NewEngland') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'thermal_habitat_areaGOMNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 If a large proportion of species current habitat become thermally inhospitable, it can influence species' productivity and in, extreme cases, cause mortality. Monitoring the shape of these thermal suitability profiles can help identify areas that could influence temperature-sensitive species.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: EPU
 
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
-
-**ecodata name**: `ecodata::thermal_habitat_area`
+Temporal scale: daily
 
 **Variable definitions**
-
-Time: year EPU: EPU name  Depth: Depth category  Var: Temperature Category  Value: Proportion of area above temp.threshold  
-Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  temp.threshold: numeric temperature category  Units: Proportion
 
 ```{r vars_thermal_habitat_area}
 # Pull all var names
@@ -77,19 +129,15 @@ vars <- ecodata::thermal_habitat_area |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: joseph.caracappa@noaa.gov
 
+**ecodata dataset**: `ecodata::thermal_habitat_area`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/thermal_habitat_area.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/thermal_habitat_area.html>
 

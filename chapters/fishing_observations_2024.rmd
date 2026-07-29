@@ -1,22 +1,42 @@
 # Fishing Community Ecosystem Observations {#fishing_observations_2024}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The information presented here were provided by members of the fishing community in response to the question "what unusual conditions or events did you observe during 2024?". Submissions were provided by 11 different fishermen ranging from Maine to Virginia.
 
-**Indicator family**: 
+**Contributor(s)**: Information from 11 fishermen synthesized by Anna Mercer
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [X] Oceanographic
 - [X] Lower trophic levels
 - [X] Megafauna
 
 
-**Contributor(s)**: Information from 11 fishermen synthesized by Anna Mercer
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [X] Other
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
+
+**Indicator Category**:
+
+New source of information from the fishing fleet
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+
 ## Introduction to Indicator
 The information presented here were provided by members of the fishing community in response to the question "what unusual conditions or events did you observe during 2024?". Submissions were provided by 11 different fishermen ranging from Maine to Virginia.
 
@@ -70,53 +90,23 @@ Scallops in Rhode Island Sound and Block Island Sound had poor quality meat qual
 Unusual pulse of longfin in September in mid-Atlantic canyons, appeared to be two cohorts, one being pushed in from off the bank, and one coming from inshore summer squid grounds 
 Giant (10+ inch mantle length) longfin squid south of Long Island in late October and early November
 
+## Implications
+2024 was a markedly different from previous year, both in terms of oceanography and fishery productivity. Colder water conditions resulted in delayed migration of many species from offshore to inshore (longfin squid, black sea bass), redistribution of some species (haddock, pollock, bluefin tuna, Atlantic mackerel, bluefish, bonito), and proliferation of some species that have been less abundant in previous years (Atlantic mackerel). Given that many of these changes were most evident in summer months, it is highly unlikely that spring/fall survey data will characterize the changes observed in 2024.
 
 ## Indicator statistics 
 Spatial scale: Gulf of Maine to Virginia, general locations
 
 Temporal scale: Year round
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_fishing_observations_2024}
-# Either from Contributor or ecodata
-```
-
-## Implications
-2024 was a markedly different from previous year, both in terms of oceanography and fishery productivity. Colder water conditions resulted in delayed migration of many species from offshore to inshore (longfin squid, black sea bass), redistribution of some species (haddock, pollock, bluefin tuna, Atlantic mackerel, bluefish, bonito), and proliferation of some species that have been less abundant in previous years (Atlantic mackerel). Given that many of these changes were most evident in summer months, it is highly unlikely that spring/fall survey data will characterize the changes observed in 2024.
-
-## Get the data
-
-**Point of contact**: [anna.mercer@noaa.gov](mailto:anna.mercer@noaa.gov){.email}
-
-**ecodata name**: No dataset
-
 **Variable definitions**
 
 NA
 
+## Get the data
 
-No Data
+**Point of contact**: anna.mercer@noaa.gov
 
-**Indicator Category**:
-
-- [X] Other
-
-
-**Indicator Category**:
-
-New source of information from the fishing fleet
-
-## Public Availability
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
 

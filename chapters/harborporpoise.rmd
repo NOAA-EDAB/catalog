@@ -1,67 +1,104 @@
 # Harbor Porpoise Bycatch {#harborporpoise}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The data presented here are a time series of estimates of harbor porpoise bycatch from U.S. North Atlantic commercial fisheries.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Debra Palka, Kristin Precoda
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Marine mammals including harbor porpoise are protected under the Marine Mammal Protection Act (MMPA). The goal of the MMPA is to obtain and maintain optimum sustainable populations of marine mammals and to ensure they continue to function as significant elements of marine ecosystems. Protected species management objectives include managing bycatch to remain below potential biological removal (PBR) thresholds, recovering endangered populations, and monitoring unusual mortality events. Here we report estimated bycatch and PBR thresholds for harbor porpoise in the Northeast U.S., which are subject to a Take Reduction Team under the Marine Mammal Protection Act.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-The total estimated bycatch from all U.S. North Atlantic commercial fisheries is plotted by year. In 2023, a total of 62 harbor porpoise were estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Harbor porpoise bycatch estimates have been below PBR thresholds since 2010, thus meeting a management objective (Fig. 1). Earlier, however, bycatch was above PBR.
-
-```{r plot_harborporpoiseMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_harborporpoise(report = 'MidAtlantic')
-ggplotObject
-```
-
-```{r plot_harborporpoiseNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_harborporpoise(report = 'NewEngland')
-ggplotObject
-```
+- [X] Megafauna
 
 
-## Indicator statistics 
-Spatial scale: US waters from North Carolina to Canada, from the U.S. coastline to the U.S. exclusive economic zone 200 nautical miles offshore, thus including all EPUs, the full shelf and beyond.
+**Indicator Category**:
 
-Temporal scale: Annual from 1990 to 2023.
+- [X] Syntheses of published information
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_harborporpoise}
-# Either from Contributor or ecodata
+```{r download_harborporpoise}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::harborporpoise,
+output_name = 'harborporpoise',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Marine mammals including harbor porpoise are protected under the Marine Mammal Protection Act (MMPA). The goal of the MMPA is to obtain and maintain optimum sustainable populations of marine mammals and to ensure they continue to function as significant elements of marine ecosystems. Protected species management objectives include managing bycatch to remain below potential biological removal (PBR) thresholds, recovering endangered populations, and monitoring unusual mortality events. Here we report estimated bycatch and PBR thresholds for harbor porpoise in the Northeast U.S., which are subject to a Take Reduction Team under the Marine Mammal Protection Act.
+
+## Key Results and Visualizations
+The total estimated bycatch from all U.S. North Atlantic commercial fisheries is plotted by year. In 2023, a total of 62 harbor porpoise were estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Harbor porpoise bycatch estimates have been below PBR thresholds since 2010, thus meeting a management objective (Fig. 1). Earlier, however, bycatch was above PBR.
+
+**Mid-Atlantic**
+```{r plot_harborporpoiseMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_harborporpoise(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'harborporpoiseMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England**
+```{r plot_harborporpoiseNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_harborporpoise(report = 'NewEngland') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'harborporpoiseNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 A bycatch reduction plan developed by the Take Reduction Team was needed to reduce the bycatch of harbor porpoises starting in 1997 (https://www.fisheries.noaa.gov/new-england-mid-atlantic/marine-mammal-protection/harbor-porpoise-take-reduction-plan; Fig. 1). The reduction in harbor porpoise bycatch since 2010 is probably related not only to the Take Reduction Team’s bycatch mitigation plan but also to a corresponding decrease in gillnet fishing effort and to seasonal shifts of harbor porpoise that appear to be related to climate changes.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: US waters from North Carolina to Canada, from the U.S. coastline to the U.S. exclusive economic zone 200 nautical miles offshore, thus including all EPUs, the full shelf and beyond.
 
-**Point of contact**: [Debra Palka (debra.palka@noaa.gov)](mailto:Debra Palka (debra.palka@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::harborporpoise`
+Temporal scale: Annual from 1990 to 2023.
 
 **Variable definitions**
-
-1. pbr = Potential Biological Removal level. Unit = n (number of animals) 2. totalest1y = Total bycatch estimate over all gear types per year 
-3. totalest5y = Total bycatch estimate over all gear types as a 5-year running average 4. total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
-5. total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_harborporpoise}
 # Pull all var names
@@ -71,19 +108,15 @@ vars <- ecodata::harborporpoise |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
+**Point of contact**: Debra Palka (debra.palka@noaa.gov)
 
+**ecodata dataset**: `ecodata::harborporpoise`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/harborporpoise.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-Source data are available in public [stock assessment reports](https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-stock-assessment-reports-region) and [CRDs](https://www.fisheries.noaa.gov/new-england-mid-atlantic/science-data/northeast-fisheries-science-center-publications).
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/harborporpoise.html>
 

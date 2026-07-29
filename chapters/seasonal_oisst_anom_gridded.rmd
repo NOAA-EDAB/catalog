@@ -1,65 +1,23 @@
 # Seasonal OISST Anomaly Map {#seasonal_oisst_anom_gridded}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Mapped seasonal sea surface temperature anomaly
-
-**Indicator family**: 
-
-- [X] Oceanographic
-- [X] Habitat
-
 
 **Contributor(s)**: Brandon Beltz, Abigail Tyrell
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. These data extend from 1981 to present. Anomalies are calculated by subtracting the seasonal long-term mean temperature (1982-2010) from the mean SST by year and season. Gridded anomalies are presented on a map for each year.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Despite record setting ocean temperatures in 2023, the Northeast US shelf had both warm and cool sea surface temperature anomalies in each season.
-
-```{r plot_seasonal_oisst_anom_griddedMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'MidAtlantic')
-ggplotObject
-```
-
-```{r plot_seasonal_oisst_anom_griddedNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'NewEngland')
-ggplotObject
-```
-
-
-## Indicator statistics 
-Spatial scale: EPUs on full shelf map
-
-Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summer (July - September), Fall (October - December)
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_seasonal_oisst_anom_gridded}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system. Maps show how temperature change has been distributed in each EPU each year.
-
-## Get the data
-
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::seasonal_oisst_anom_gridded`
-
-**Variable definitions**
-
+- [X] Oceanographic
+- [X] Habitat
 
 
 **Indicator Category**:
@@ -67,14 +25,91 @@ Sea surface temperature is an indicator of thermal habitat for pelagic species. 
 - [X] Database pull with analysis
 
 
-## Public Availability
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_seasonal_oisst_anom_gridded}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::seasonal_oisst_anom_gridded,
+output_name = 'seasonal_oisst_anom_gridded',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+
+## Introduction to Indicator
+Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. These data extend from 1981 to present. Anomalies are calculated by subtracting the seasonal long-term mean temperature (1982-2010) from the mean SST by year and season. Gridded anomalies are presented on a map for each year.
+
+## Key Results and Visualizations
+Despite record setting ocean temperatures in 2023, the Northeast US shelf had both warm and cool sea surface temperature anomalies in each season.
+
+**Mid-Atlantic**
+```{r plot_seasonal_oisst_anom_griddedMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seasonal_oisst_anom_griddedMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England**
+```{r plot_seasonal_oisst_anom_griddedNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'NewEngland') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seasonal_oisst_anom_griddedNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+## Implications
+Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system. Maps show how temperature change has been distributed in each EPU each year.
+
+## Indicator statistics 
+Spatial scale: EPUs on full shelf map
+
+Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summer (July - September), Fall (October - December)
+
+**Variable definitions**
+
+## Get the data
+
+**Point of contact**: EDAB, edab.data@noaa.gov
+
+**ecodata dataset**: `ecodata::seasonal_oisst_anom_gridded`
+
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom_gridded.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom_gridded.html>
 

@@ -1,20 +1,35 @@
 # Marine Cold Spell Events {#cold_spell}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 24, 2026*
+
 **Description**: Surface and bottom marine cold spells (MCSs) for 2025.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Vincent Saba
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
 ## Introduction to Indicator
 Marine cold spells.
 
@@ -69,48 +84,23 @@ One bottom MCSs occurred in the Middle Atlantic Bight in 2025, which was the 5th
 
 ![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_MAB_Bottom_MCS.png){width=100%}
 
+## Implications
+Cooler than average conditions in the US NES.  Both surface and bottom cold spells were observed with one bottom cold spell almost 2C below average in the MAB.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: Daily
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_cold_spell}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Cooler than average conditions in the US NES.  Both surface and bottom cold spells were observed with one bottom cold spell almost 2C below average in the MAB.
-
-## Get the data
-
-**Point of contact**: [Vincent Saba (vincent.saba@noaa.gov)](mailto:Vincent Saba (vincent.saba@noaa.gov)){.email}
-
-**ecodata name**: No dataset
-
 **Variable definitions**
 
 1. MCS maximum Intensity (detrended) = degrees C 2. MCS duration = days.
 
+## Get the data
 
-No Data
+**Point of contact**: Vincent Saba (vincent.saba@noaa.gov)
 
-**Indicator Category**:
-
-- [X] Published Methods
-- [X] Database pull with analysis
-
-
-## Public Availability
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
 

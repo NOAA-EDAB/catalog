@@ -1,68 +1,108 @@
 # Aquaculture Production {#aquaculture}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+<a href="https://noaa-edab.github.io/catalog/page_status.html#under-review" class="btn btn-danger button_small"><i class="fa fa-warning"></i> Under Review</a>
+
+*Last updated July 23, 2026*
+
 **Description**: Oyster production: number of oysters harvested from aquaculture.
 
-**Indicator family**: 
+**Contributor(s)**: Christopher Schillaci, Maine DMR, NH DES, MA DMF, RI CRMC, MD DNR
+
+**Affiliations**: NOAA
+
+**Indicator Family**: 
 
 - [X] Megafauna
 - [X] Social
 - [X] Economic
 
 
-**Contributor(s)**: Christopher Schillaci, Maine DMR, NH DES, MA DMF, RI CRMC, MD DNR
+**Indicator Category**:
 
-**Affiliations**: NOAA
+- [X] Syntheses of published information
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Aquaculture can produce seafood as well as other products. Here we summarize available data on aquaculture production from the Northeast US.
-
-## Key Results and Visualizations
-Overall, oyster production has generally increased and production per area has also improved. Aquaculture reporting is state specific, which can make it difficult to collate in a meaningful way. However, reporting coverage is improving year to year as aquaculture increases across the coast. The data included here only include oyster numbers at this time. Data after 2017 have decreased but, due to a lack of data from recent years, it is unclear if this has continued.
-
-```{r plot_aquacultureMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_aquaculture(report = 'MidAtlantic', n = 10)
-ggplotObject
-```
-
-```{r plot_aquacultureNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_aquaculture(report = 'NewEngland', n = 10)
-ggplotObject
-```
-
-
-## Indicator statistics 
-Spatial scale: Mid Atlantic and New England
-
-Temporal scale: Annual
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_aquaculture}
-# Either from Contributor or ecodata
+```{r download_aquaculture}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::aquaculture,
+output_name = 'aquaculture',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Aquaculture can produce seafood as well as other products. Here we summarize available data on aquaculture production from the Northeast US.
+
+## Key Results and Visualizations
+Overall, oyster production has generally increased and production per area has also improved. Aquaculture reporting is state specific, which can make it difficult to collate in a meaningful way. However, reporting coverage is improving year to year as aquaculture increases across the coast. The data included here only include oyster numbers at this time. Data after 2017 have decreased but, due to a lack of data from recent years, it is unclear if this has continued.
+
+**Mid-Atlantic**
+```{r plot_aquacultureMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_aquaculture(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'aquacultureMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England**
+```{r plot_aquacultureNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_aquaculture(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'aquacultureNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 Aquaculture production contributes to overall seafood production in the Northeast US. This indicator provides only a portion of aquaculture production in the region, but increases in this portion are apparent across the whole time series. Recent decreases (since 2017) may indicate a downward change in this aquaculture portion; however, there is not enough data from years following 2017 to indicate any significant decreasing trends.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Mid Atlantic and New England
 
-**Point of contact**: [Chris Schillaci <christopher.schillaci@noaa.gov>](mailto:Chris Schillaci <christopher.schillaci@noaa.gov>){.email}
-
-**ecodata name**: `ecodata::aquaculture`
+Temporal scale: Annual
 
 **Variable definitions**
-
-Pieces: number of oysters produced (all regions)                 Shellfish lease Acres: area used for shellfish production (New England states only), acres  
-Production/Acre: Pieces divided by Shellfish lease acres (New England states only)
 
 ```{r vars_aquaculture}
 # Pull all var names
@@ -72,19 +112,15 @@ vars <- ecodata::aquaculture |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
+**Point of contact**: Chris Schillaci <christopher.schillaci@noaa.gov>
 
+**ecodata dataset**: `ecodata::aquaculture`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/aquaculture.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/aquaculture.html>
 

@@ -1,23 +1,53 @@
 # Community Social Vulnerability Indicators (CSVI) {#engagement}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The data here consist of two sources; 1) Port Commercial Fishing Activity Indicator scores which is comprised of commercial fishing landings and permit data from 2007 through 2024 summarized to indicate port-level activity in commercial fishing. 2) Community Social Vulnerability Indicators (CSVI) generated from 2023 American Community Survey 5-yr estimates Dataset in the U.S. Census American Community Survey (ACS) for coastal communities at the Census Designated Place or County Subdivision level.
 
 Note, the Mid-Atlantic analysis for the PCFA Indicator does not include data from North Carolina (NC) given delays in receiving data from the Southeast region. NC ports land a significant portion of fish from Southeast managed species and thus, we elected to not include NC to avoid the risk of underestimation.
-
-**Indicator family**: 
-
-- [x] Social
-- [x] Economic
-
 
 **Contributor(s)**: Robert Murphy, Tanya Noteva, Changhua Weng
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [x] Social
+- [x] Economic
+
+
+**Indicator Category**:
+
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
+```{r download_engagement}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::engagement,
+output_name = 'engagement',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 We report the top ten ports with the highest relative participation in commercial fishing for 2024 and each top port’s history of relative participation (2007-2024). This is a new indicator named the ‘Port Commercial Fishing Activity (PCFA) Indicator’ and is an adaptation of the previous fishing engagement indicator from the CSVIs. The new PCFA indicator provides a relative metric of the activity of a specific port in commercial fishing and utilizes the same data sources as previously included in the CSVI engagement indicator; the number of commercial fishing permits, the number of permitted dealers, the pounds of landed fish, and the value of landed fish. Instead of conducting an annual Principal Components Analysis, this new indicator method simply normalizes each column of data (across all years) using a min-max scaling approach (range = 0 – 1) and then takes the mean of each column to create a composite average score for each port by year. Note, the value of landed fish data is first normalized by year to account for inflation over time. The PCFA analysis is conducted for each region (MA and NE) separately such that scores are comparable within region only.
 
@@ -30,67 +60,96 @@ New England: Temporal comparisons of the new Port Commercial Fishing Activity In
 
 Mid-Atlantic: Temporal comparisons of the new Port Commercial Fishing Activity Indicator (PCFA) revealed notable trends across several top fishing ports. Six of the top 2024 communities experienced declines in PCFA scores from 15% - 35% compared to their average scores from 2007-2011 (from hereon, percentage changes are reported in this same format); Point Pleasant Beach, NJ; Ocean City, MD; Bronx, NY; Barnegat Light, NJ; Newport News, VA; Cape May, NJ. Of particular concern, the municipalities that house Bronx, NY and Newport News, VA both rank moderate or higher for all three socio-demographic CSVIs as well, suggesting that fishing industry participants that live in and/or utilize resources in this municipality may more vulnerable to change. Opposite trends (i.e., positive growth in fishing activity) were identified for the other four top communities, most notably Hampton Bays/Shinnecock, NY benefited from a 84% increase in PCFA scores over time.
 
+**Mid-Atlantic, Commercial**
 ```{r plot_engagementMidAtlanticCommercial}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Commercial')
+ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Commercial') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'engagementMidAtlanticCommercial',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, Commercial**
 ```{r plot_engagementNewEnglandCommercial}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Commercial')
+ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Commercial') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'engagementNewEnglandCommercial',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, Recreational**
 ```{r plot_engagementMidAtlanticRecreational}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Recreational')
+ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Recreational') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'engagementMidAtlanticRecreational',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, Recreational**
 ```{r plot_engagementNewEnglandRecreational}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Recreational')
+ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Recreational') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'engagementNewEnglandRecreational',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+A new composite indicator – the ‘Port Commercial Fishing Activity (PCFA) Indicator’ – utilizes NOAA data on dealers, fish landings, and commercial permits to explore trends in commercial fishing activity over time in top ports. This information can be used to understand how changes in fish stocks, regulations, and other social-ecological factors may have disparately impacted ports throughout the Greater Atlantic region.
+By integrating the Community Social Vulnerability Indicators, we highlight municipalities with relatively concerning socio-demographic conditions. As such, fishing industry participants that live in and/or utilize resources in these municipalities may be more vulnerable to changes.
 
 ## Indicator statistics 
 Spatial scale: Greater Atlantic region fishing ports and coastal municipalities
 
 Temporal scale: PCFA Indicator = Annual from 2007-2024;  CSVI = 2023
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-
-
-```{r autostats_engagement}
-# Either from Contributor or ecodata
-```
-
-## Implications
-A new composite indicator – the ‘Port Commercial Fishing Activity (PCFA) Indicator’ – utilizes NOAA data on dealers, fish landings, and commercial permits to explore trends in commercial fishing activity over time in top ports. This information can be used to understand how changes in fish stocks, regulations, and other social-ecological factors may have disparately impacted ports throughout the Greater Atlantic region.
-By integrating the Community Social Vulnerability Indicators, we highlight municipalities with relatively concerning socio-demographic conditions. As such, fishing industry participants that live in and/or utilize resources in these municipalities may be more vulnerable to changes.
-
-## Get the data
-
-**Point of contact**: [Robert Murphy (robert.murphy@noaa.gov)](mailto:Robert Murphy (robert.murphy@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::engagement`
-
 **Variable definitions**
-
-1.	Community: name of the municipality identified as a community in the CSVIs. 2.	personal_disruption_rank: CSVI personal disruption factor score ranking. Low, moderate, moderate high, high 
-3.	pop_composition_rank: CSVI population composition factor score ranking. Low, moderate, moderate high, high 
-4.	poverty_rank: CSVI poverty factor score ranking. Low, moderate, moderate high, high 
-5.	labor_force_str_rank: CSVI labor force structure factor score ranking. Low, moderate, moderate high, high 
-6.	housing_characteristics_rank: CSVI housing characteristics factor score ranking. Low, moderate, moderate high, high 
-7.	housing_disrupt__rank: CSVI housing disruption factor score ranking. Low, moderate, moderate high, high 
-8.	retiree_migration_rank: CSVI retiree migration factor score ranking. Low, moderate, moderate high, high 
-9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 10.	PORT_NAME: fishing data port name 11.	STATE_ABB: fishing data port state abbreviation 
-12.	place_id: fishing data port and state abbreviation combined 13.	YEAR: the year of fishing data 
-14.	fishing_mean_score: composite Port Commercial Fishing Activity Indicator score (range between 0 and 1)
 
 ```{r vars_engagement}
 # Pull all var names
@@ -100,20 +159,19 @@ vars <- ecodata::engagement |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Published Methods
-- [x] Extensive analysis, not yet published
+**Point of contact**: Robert Murphy (robert.murphy@noaa.gov)
 
+**ecodata dataset**: `ecodata::engagement`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/engagement.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Please email Robert Murphy (robert.murphy@noaa.gov) for further information and queries of fishing and vulnerability indicator source data.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/engagement.html>
 

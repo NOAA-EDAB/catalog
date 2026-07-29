@@ -1,21 +1,35 @@
 # Communities at Sea Indicators {#communities_at_sea}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 24, 2026*
+
 **Description**: The following information was developed using the Communities at Sea (CaS) database developed at Rutgers University. CaS is derived from Vessel Trip Reports and Permit data for the period 1996-2023.
-
-**Indicator family**: 
-
-- [x] Social
-- [x] Economic
-
 
 **Contributor(s)**: Kevin St. Martin
 
 **Affiliations**: Rutgers, NEFMC SSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
+**Indicator Family**: 
+
+- [x] Social
+- [x] Economic
+
+
+**Indicator Category**:
+
+
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
 ## Introduction to Indicator
 The following information was developed using the Communities at Sea (CaS) database developed at Rutgers University. CaS is derived from Vessel Trip Reports and Permit data for the period 1996-2023. The basic unit of analysis available through CaS are peer groups of vessels that are active in the same port and share the same general gear type. In the case of groundfish trawlers, vessel length is also considered. For each port, CaS computes the presence of (3 or more) active vessels grouped by: dredge, gillnet, groundfish/trawl less than 65 feet, groundfish/trawl greater than 65 feet, lobster, longline, other pots and traps, midwater seine, and shrimp trawl gear types. The aggregate activity of these peer groups of vessels (aka communities) inform a variety of indices indicating community change, precarity, and adaptive capacity.
 
@@ -62,47 +76,27 @@ To understand how fishing communities in the Northeast US might respond to chang
 
 ![Figure 8](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_communities_at_sea_adaptability.png){width=100%}
 
+## Implications
+These indicators provide insight into the fate of commercial fishing communities as they attempt to adapt to regulatory and environmental change. Based on aggregations of peer groups of vessels, they document the viability and adaptive capacities of fishing enterprises with shared fishing histories and faced with similar constraints and opportunities. In particular, they highlight the uneven impacts of regulatory and environmental change by community and state, and they suggest region-wide processes of decline and consolidation.
 
 ## Indicator statistics 
 Spatial scale: _No response_
 
 Temporal scale: _No response_
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-
-
-```{r autostats_communities_at_sea}
-# Either from Contributor or ecodata
-```
-
-## Implications
-These indicators provide insight into the fate of commercial fishing communities as they attempt to adapt to regulatory and environmental change. Based on aggregations of peer groups of vessels, they document the viability and adaptive capacities of fishing enterprises with shared fishing histories and faced with similar constraints and opportunities. In particular, they highlight the uneven impacts of regulatory and environmental change by community and state, and they suggest region-wide processes of decline and consolidation.
-
-## Get the data
-
-**Point of contact**: [Kevin St. Martin (kevin.st.martin@rutgers.edu)](mailto:Kevin St. Martin (kevin.st.martin@rutgers.edu)){.email}
-
-**ecodata name**: No dataset
-
 **Variable definitions**
 
 
 
+## Get the data
 
-No Data
+**Point of contact**: Kevin St. Martin (kevin.st.martin@rutgers.edu)
 
-**Indicator Category**:
-
-
-
-
-## Public Availability
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 _No response_
 

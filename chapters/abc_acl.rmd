@@ -1,93 +1,25 @@
 # ABC or ACL for Managed Stocks {#abc_acl}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
-
-**Indicator family**: 
-
-- [X] Social
-- [X] Economic
-
 
 **Contributor(s)**: Brandon Muffley, Jason, Didden, Julia Beaty, Jose Montanez, Karson Cisneros, Jessica Coakley, Hannah Hart, Kiley Dancy, Hayden Dubniczki
 
 **Affiliations**: MAFMC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-The ratio of total estimates catch (landings and dead discards) compared to the specified catch limit, either the Acceptable Biological Catch (ABC) or the Annual Catch Limit (ACL) by species and sector (e.g., commercial or recreational, if appropriate). This ratio can provide an understanding of management control to constrain total catch below the acceptable/specified limits through different management tools (e.g., trip limits, seasons, gear requirements etc.). Ratios above one can be an indicator of poor management control and/or uncertainties, or indicative that the catch limits in place are constraining on the fishery. Ratios below one could indicate greater management control and/or fewer uncertainties or that their may be other factors (e.g., markets, price, availability) may be limiting a sectors ability to reach its catch limits.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Catch divided by ABC/ACL for MAFMC managed fisheries. Red line indicates the median ratio across all fisheries. A secondary figure is also produced that provides the sum of catch limits across all MAFMC managed commercial (C) and recreational (R) fisheries.
-
-High points in the catch divided by ABC/ACL are recreational black sea bass (up to 2021) and scup (2022). No significant overages in 2023 were similar to the high ones in 2021 and 2022, but a number were slightly over in 2023 - recreational and commercial scup, recreational sea bass, recreational and commercial blueline tilefish, and spiny dogfish.
-
-```{r plot_abc_aclMidAtlanticStacked}
-# Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Stacked')
-ggplotObject
-```
-
-```{r plot_abc_aclNewEnglandStacked}
-# Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Stacked')
-ggplotObject
-```
-
-```{r plot_abc_aclMidAtlanticCatch}
-# Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Catch')
-ggplotObject
-```
-
-```{r plot_abc_aclNewEnglandCatch}
-# Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Catch')
-ggplotObject
-```
+- [X] Social
+- [X] Economic
 
 
-## Indicator statistics 
-Spatial scale: Cape Hatteras, NC north to Maine
-
-Temporal scale: Annual
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_abc_acl}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Increasing/decreasing trends in the total ABC/ACL across all stocks can provide insights into potential changes to system productivity and fishing opportunities for Council managed species. While evaluating total estimated catch relative to the catch limit (ABC or ACL) can help provide insight into the degree of management control to constrain catch, limit overfishing, and identify potential underfishing situations (ie., not achieving the desired catch). 
-
-Since 2012, the total catch limits in the Mid-Atlantic have fluctuated slightly without any trend and the 2023 catch limit was similar to those set over the last four years. There is more variability at the species and sector level, but this suggests that overall stock abundance, productivity, and fishing opportunities have remained relatively stable within the Mid-Atlantic. Similarly, total estimated catch relative to the total catch limits in the Mid-Atlantic has fluctuated relatively little and without trend and has been below the total catch limit every year from 2012-2023 with a median of about 70 percent. This suggests that current catch limits are generally not constraining for most stocks and that there is some level of management control to ensure total catch remains below the catch limits to limit the risks of overfishing. In general, those fisheries where total catch exceeded the associated catch limit are associated with the recreational sector, particularly scup and black sea bass that have high biomass and availability.
-
-## Get the data
-
-**Point of contact**: [Brandon Muffley (bmuffley@mafmc.org)](mailto:Brandon Muffley (bmuffley@mafmc.org)){.email}
-
-**ecodata name**: `ecodata::abc_acl`
-
-**Variable definitions**
-
-Catch - definition: total landings and dead discards; units - metric tons (MT) 
-Acceptable biological catch (ABC) - the annual catch level recommended for a stock or stock complex by the Scientific and Statistical Committee that could be equal to or less than the Overfishing Limit (OFL); units - metric tons (MT) 
-Annual Catch Limit (ACL) - sector specific total catch limits which can be equal to or less than the ABC; units - metric tons (MT)
-
-```{r vars_abc_acl}
-# Pull all var names
-vars <- ecodata::abc_acl |>
-   dplyr::select(Var, Units) |>
-   dplyr::distinct()
-
-DT::datatable(vars)
-```
 **Indicator Category**:
 
 - [X] Other
@@ -97,14 +29,143 @@ DT::datatable(vars)
 
 Management reports (e.g., specification packages, fishery information documents), stock assessment reports, or data pulls from CAMS
 
-## Public Availability
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_abc_acl}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::abc_acl,
+output_name = 'abc_acl',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+
+## Introduction to Indicator
+The ratio of total estimates catch (landings and dead discards) compared to the specified catch limit, either the Acceptable Biological Catch (ABC) or the Annual Catch Limit (ACL) by species and sector (e.g., commercial or recreational, if appropriate). This ratio can provide an understanding of management control to constrain total catch below the acceptable/specified limits through different management tools (e.g., trip limits, seasons, gear requirements etc.). Ratios above one can be an indicator of poor management control and/or uncertainties, or indicative that the catch limits in place are constraining on the fishery. Ratios below one could indicate greater management control and/or fewer uncertainties or that their may be other factors (e.g., markets, price, availability) may be limiting a sectors ability to reach its catch limits.
+
+## Key Results and Visualizations
+Catch divided by ABC/ACL for MAFMC managed fisheries. Red line indicates the median ratio across all fisheries. A secondary figure is also produced that provides the sum of catch limits across all MAFMC managed commercial (C) and recreational (R) fisheries.
+
+High points in the catch divided by ABC/ACL are recreational black sea bass (up to 2021) and scup (2022). No significant overages in 2023 were similar to the high ones in 2021 and 2022, but a number were slightly over in 2023 - recreational and commercial scup, recreational sea bass, recreational and commercial blueline tilefish, and spiny dogfish.
+
+**Mid-Atlantic, Stacked**
+```{r plot_abc_aclMidAtlanticStacked}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Stacked') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'abc_aclMidAtlanticStacked',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England, Stacked**
+```{r plot_abc_aclNewEnglandStacked}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Stacked') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'abc_aclNewEnglandStacked',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Mid-Atlantic, Catch**
+```{r plot_abc_aclMidAtlanticCatch}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Catch') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'abc_aclMidAtlanticCatch',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England, Catch**
+```{r plot_abc_aclNewEnglandCatch}
+# Plot indicator
+ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Catch') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'abc_aclNewEnglandCatch',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+## Implications
+Increasing/decreasing trends in the total ABC/ACL across all stocks can provide insights into potential changes to system productivity and fishing opportunities for Council managed species. While evaluating total estimated catch relative to the catch limit (ABC or ACL) can help provide insight into the degree of management control to constrain catch, limit overfishing, and identify potential underfishing situations (ie., not achieving the desired catch). 
+
+Since 2012, the total catch limits in the Mid-Atlantic have fluctuated slightly without any trend and the 2023 catch limit was similar to those set over the last four years. There is more variability at the species and sector level, but this suggests that overall stock abundance, productivity, and fishing opportunities have remained relatively stable within the Mid-Atlantic. Similarly, total estimated catch relative to the total catch limits in the Mid-Atlantic has fluctuated relatively little and without trend and has been below the total catch limit every year from 2012-2023 with a median of about 70 percent. This suggests that current catch limits are generally not constraining for most stocks and that there is some level of management control to ensure total catch remains below the catch limits to limit the risks of overfishing. In general, those fisheries where total catch exceeded the associated catch limit are associated with the recreational sector, particularly scup and black sea bass that have high biomass and availability.
+
+## Indicator statistics 
+Spatial scale: Cape Hatteras, NC north to Maine
+
+Temporal scale: Annual
+
+**Variable definitions**
+
+```{r vars_abc_acl}
+# Pull all var names
+vars <- ecodata::abc_acl |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+## Get the data
+
+**Point of contact**: Brandon Muffley (bmuffley@mafmc.org)
+
+**ecodata dataset**: `ecodata::abc_acl`
+
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/abc_acl.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/abc_acl.html>
 

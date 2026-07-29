@@ -1,65 +1,104 @@
 # Bottom Temperature - in situ {#bottom_temp_insitu}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The data presented here are time series of regional average bottom temperature anomalies from ship-based measurements made on the Northeast Continental Shelf.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Paula Fratantoni; Chris Melrose; Tamara Holzwarth-Davis
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-The bottom temperature index incorporates near-bottom temperature measurements collected on Northeast Fisheries Science Center (NEFSC) surveys between 1977-present. Early measurements were made using surface bucket samples, mechanical bathythermographs and expendable bathythermograph probes, but by 1991 the CTD – an acronym for conductivity temperature and depth – became standard equipment on all NEFSC surveys. Near-bottom refers to the deepest observation at each station that falls within 10 m of the reported water depth. Observations encompass the entire continental shelf area extending from Cape Hatteras, NC to Nova Scotia, Canada, inclusive of the Gulf of Maine and Georges Bank.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-_No response_
-
-```{r plot_bottom_temp_insituMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'MidAtlantic', n = 10)
-ggplotObject
-```
-
-```{r plot_bottom_temp_insituNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'NewEngland', n = 10)
-ggplotObject
-```
+- [X] Oceanographic
 
 
-## Indicator statistics 
-Spatial scale: by EPU
+**Indicator Category**:
 
-Temporal scale: Annual
+- [X] Extensive analysis, not yet published
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_bottom_temp_insitu}
-# Either from Contributor or ecodata
+```{r download_bottom_temp_insitu}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::bottom_temp_insitu,
+output_name = 'bottom_temp_insitu',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+The bottom temperature index incorporates near-bottom temperature measurements collected on Northeast Fisheries Science Center (NEFSC) surveys between 1977-present. Early measurements were made using surface bucket samples, mechanical bathythermographs and expendable bathythermograph probes, but by 1991 the CTD – an acronym for conductivity temperature and depth – became standard equipment on all NEFSC surveys. Near-bottom refers to the deepest observation at each station that falls within 10 m of the reported water depth. Observations encompass the entire continental shelf area extending from Cape Hatteras, NC to Nova Scotia, Canada, inclusive of the Gulf of Maine and Georges Bank.
+
+## Key Results and Visualizations
+_No response_
+
+**Mid-Atlantic**
+```{r plot_bottom_temp_insituMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_insituMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England**
+```{r plot_bottom_temp_insituNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_insituNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 _No response_
 
-## Get the data
+## Indicator statistics 
+Spatial scale: by EPU
 
-**Point of contact**: [Paula.Fratantoni@noaa.gov](mailto:Paula.Fratantoni@noaa.gov){.email}
-
-**ecodata name**: `ecodata::bottom_temp_insitu`
+Temporal scale: Annual
 
 **Variable definitions**
-
-Tbot_anom; Definition: Bottom temperature anomaly; Units: degree Celsius
 
 ```{r vars_bottom_temp_insitu}
 # Pull all var names
@@ -69,19 +108,15 @@ vars <- ecodata::bottom_temp_insitu |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: paula.fratantoni@noaa.gov
 
+**ecodata dataset**: `ecodata::bottom_temp_insitu`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/bottom_temp_insitu.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/bottom_temp_insitu.html>
 

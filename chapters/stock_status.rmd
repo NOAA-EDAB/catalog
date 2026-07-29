@@ -1,21 +1,51 @@
 # Stock Status {#stock_status}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Summary of the most recent stock status results for each assessed species
-
-**Indicator family**: 
-
-- [X] Social
-- [X] Economic
-
 
 **Contributor(s)**: Sarah Gaichas, Andy Beet, Jeff Vieser, Chris Legault
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Social
+- [X] Economic
+
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_stock_status}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::stock_status,
+output_name = 'stock_status',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 [Stock assessments](https://www.fisheries.noaa.gov/topic/population-assessments/fish-stocks) are conducted regularly for fisheries managed by the New England and Mid-Atlantic Fishery Management Councils to support decisions on catch limits and to determine whether conservation objectives for each stock are being met. Single species management objectives include
 1. Maintaining biomass above minimum thresholds, and 
@@ -26,32 +56,45 @@ This indicator summarizes the most recent stock status, defined as stock assessm
 ## Key Results and Visualizations
 Single species management objectives (1. maintaining biomass above minimum thresholds and 2. maintaining fishing mortality below overfishing limits) are being met for all but three MAFMC managed species, though the status of six stocks is unknown. Single species management objectives are not being met for some NEFMC managed species.  Eight stocks are currently estimated to be below B<sub>MSY</sub>, while status relative to B<sub>MSY</sub> could not be assessed for 13 additional stocks.
 
+**Mid-Atlantic**
 ```{r plot_stock_statusMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_stock_status(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_stock_status(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'stock_statusMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England**
 ```{r plot_stock_statusNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_stock_status(report = 'NewEngland')
+ggplotObject <- ecodata::plot_stock_status(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'stock_statusNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Stock-specific spatial scale, reported by Council
-
-Temporal scale: Annual update for the aggregate; individual stock status 1-5 years depending on assessment cycle
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_stock_status}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Stock status affects catch limits established by the Council, which in turn may affect landings trends. 
@@ -60,19 +103,12 @@ In the Mid Atlantic, stock status is unlikely to be contributing to landings tre
 
 In New England, stock status and associated management constraints are likely contributing to decreased landings. With the poor or unknown stock status of many managed species, the decline in commercial seafood landings in the Gulf of Maine most likely reflects lower catch quotas implemented to rebuild overfished stocks, as well as market dynamics.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Stock-specific spatial scale, reported by Council
 
-**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
-
-**ecodata name**: `ecodata::stock_status`
+Temporal scale: Annual update for the aggregate; individual stock status 1-5 years depending on assessment cycle
 
 **Variable definitions**
-
-Variables in `ecodata::stock_status`  **Stock:**  Name of stock   **Last assessment:** Most recent assessment year for stock status  
-**Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both"  
-**Code:**  Short stock name for plotting corresponding to **Stock**        
-**Var:**  "F.Fmsy" (Current year fishing mortality F relative to F<sub>MSY</sub>) "B.Bmsy" (Current year biomass B relative to B<sub>MSY</sub>)        **Value:** Decimal value of Var  
-**Units:** Unitless
 
 ```{r vars_stock_status}
 # Pull all var names
@@ -82,20 +118,15 @@ vars <- ecodata::stock_status |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+**Point of contact**: Sarah.Gaichas@noaa.gov
 
+**ecodata dataset**: `ecodata::stock_status`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/stock_status.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/stock_status.html>
 

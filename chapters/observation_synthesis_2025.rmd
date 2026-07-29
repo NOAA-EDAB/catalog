@@ -1,8 +1,20 @@
 # 2025 Observation Synthesis {#observation_synthesis_2025}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 24, 2026*
+
 **Description**: Synthesis of noteworthy observations reported in 2025 across the Northeast U.S. region that should be recorded and considered in future analyses.
 
-**Indicator family**: 
+**Contributor(s)**: 
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [x] Oceanographic
 - [x] Habitat
@@ -11,14 +23,20 @@
 - [x] Social
 
 
-**Contributor(s)**: 
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [x] Other
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
+
+**Indicator Category**:
+
+Observations
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
 ## Introduction to Indicator
 This synthesis intends to provide a record of noteworthy observations reported in 2025 across the Northeast U.S. region. Observations were solicited from contributors to the State of the Ecosystem reports, colleagues at the Northeast Fisheries Science Center, academic and management partners, and the fishing industry. An email account ([northeast.ecosystem.highlights@noaa.gov](mailto:northeast.ecosystem.highlights@noaa.gov)) is available so that anyone can provide observations to the SOE team. Items selected for inclusion in the synthesis include observations that were at or near their respective time series record (high or low) or had a large departure from the recent trends, were reported by multiple contributors, affected fishing efforts, or were considered newsworthy. The observations included in the synthesis are not exhaustive and the full ecosystem and fisheries impacts are still to be determined. They should, however, be noted and considered in future analyses and management decisions.
 
@@ -92,51 +110,23 @@ We received 27 responses and the summarized observations listed below. Note, the
 #### Offshore Wind
 [Active offshore wind projects](https://noaa-edab.github.io/catalog/wind_dev_speed.html) continue to be developed throughout the region. In Southern New England, South Fork Wind Farm remains the first and only commercial scale project under operation (12 turbines). Vineyard Wind 1 and Revolution Wind continued construction, and Empire Wind 1 in the New York Bight and Sunrise Wind began offshore construction in 2025. Coastal Virginia Offshore Wind (CVOW) also continued construction in the Mid-Atlantic. All projects currently under construction are anticipated to be complete by the end of 2026. New London, CT and New Bedford, MA have expanded dedicated space and infrastructure for the offshore wind industry with increased port activity for the first projects under construction in southern New England. There are eight additional projects that have Construction and Operations Plan (COP) approvals (three in Southern New England and five in the Mid-Atlantic/New York Bight) that could begin construction in 2026. However, construction schedules are highly uncertain at this time.
 
+## Implications
+2024 and 2025 were a markedly different from recent years, both in terms of oceanography and fishing. Observations from multiple sources helped identify events that may not show up in all spatially and temporally aggregated data. The implications of these events are still to be determined, but should be noted for future analyses. It is unknown if the conditions observed in 2024 and 2025 were a short term event or if they will continue into 2026.
 
 ## Indicator statistics 
 Spatial scale: NES
 
 Temporal scale: 2025
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-
-
-```{r autostats_observation_synthesis_2025}
-# Either from Contributor or ecodata
-```
-
-## Implications
-2024 and 2025 were a markedly different from recent years, both in terms of oceanography and fishing. Observations from multiple sources helped identify events that may not show up in all spatially and temporally aggregated data. The implications of these events are still to be determined, but should be noted for future analyses. It is unknown if the conditions observed in 2024 and 2025 were a short term event or if they will continue into 2026.
-
-## Get the data
-
-**Point of contact**: [kimberly.hyde@noaa.gov](mailto:kimberly.hyde@noaa.gov){.email}
-
-**ecodata name**: No dataset
-
 **Variable definitions**
 
 NA
 
+## Get the data
 
-No Data
+**Point of contact**: kimberly.hyde@noaa.gov
 
-**Indicator Category**:
-
-- [x] Other
-
-
-**Indicator Category**:
-
-Observations
-
-## Public Availability
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
 

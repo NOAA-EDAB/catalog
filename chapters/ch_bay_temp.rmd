@@ -1,61 +1,86 @@
 # Chesapeake Bay Temperature {#ch_bay_temp}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: This data is collected from the CBIBS buoy system.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Charles Pellerin
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Temperature data from the Chesapeake Bay Interpretive Buoy System (CBIBS) are used to monitor water conditions and identify conditions capable of impacting the Chesapeake Bay marine ecosystem.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Surface water temperatures at Gooses Reef show a distinct seasonal pattern. The 2024 daily temperature averages closely align with the historical averages throughout the year. However, 2024 daily temperature averages were above the historical averages during the Spring and mid Fall.
-
-```{r plot_ch_bay_tempMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_ch_bay_temp(report = 'MidAtlantic')
-ggplotObject
-```
+- [X] Oceanographic
 
 
-## Indicator statistics 
-Spatial scale: Main stem of the Chesapeake Bay
+**Indicator Category**:
 
-Temporal scale: Annual
+- [X] Database pull
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_ch_bay_temp}
-# Either from Contributor or ecodata
+```{r download_ch_bay_temp}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::ch_bay_temp,
+output_name = 'ch_bay_temp',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Temperature data from the Chesapeake Bay Interpretive Buoy System (CBIBS) are used to monitor water conditions and identify conditions capable of impacting the Chesapeake Bay marine ecosystem.
+
+## Key Results and Visualizations
+Surface water temperatures at Gooses Reef show a distinct seasonal pattern. The 2024 daily temperature averages closely align with the historical averages throughout the year. However, 2024 daily temperature averages were above the historical averages during the Spring and mid Fall.
+
+**Mid-Atlantic**
+```{r plot_ch_bay_tempMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_ch_bay_temp(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'ch_bay_tempMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 Since 2007, the Chesapeake Bay Interpretive Buoy System (CBIBS) has provided invaluable, high-quality water quality data, underscoring the critical need for continuous monitoring of key parameters. The system has consistently collected robust data on meteorological, water quality and oceanographic parameters. While the system experienced maintenance challenges inherent in complex observational systems deployed in dynamic marine environments, the vast majority of the data collected is reliable and paints a picture of ongoing changes in Chesapeake Bay. This publicly available resource provides a high degree of confidence for Chesapeake Bay stakeholders, and is a vital tool for informing evidence-based environmental management decisions. The long-term nature of the CBIBS dataset allows for the detection of long-term trends in water column habitat and the assessment of restoration efforts.  
 
 Surface water temperatures during 2024 were mostly at or above historical averages across all sites, with notably above average temperatures during spring and summer months, and greater instances of at or below historical average temperatures towards the end of the year. The above average temperatures observed in the spring and summer months, may have had important effects on key living resources, such as striped bass, oysters, and other fish species within Chesapeake Bay. Above average temperatures could lead to decreases in the area of suitable habitat, disruptions in migration patterns, increased stress and mortality of aquatic species, and other negative impacts on key living resources within the Chesapeake Bay. Specifically, water temperatures above 82.4°F exceed suitable habitat thresholds for striped bass from about mid-July to mid-August at all buoy locations where data was available. Water temperatures coupled with [low dissolved oxygen](https://www.vims.edu/newsandevents/topstories/2024/2024-dead-zone-report-card.php) during spring and summer exacerbate impacts on habitat suitability for striped bass, blue crabs and other species. A number of anglers reported good catches of red drum during the summer. During this summer’s routine sampling at Poplar Island, NOAA Chesapeake Bay Office scientists recorded the highest number of red drum since monitoring began in 1995. This may indicate habitat conditions in the lower and upper Bay are conducive to red drum. This may be related to rising water temperatures linked to climate change as well as conservation measures implemented by management agencies. However, there are few new studies focused on understanding these changes.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Main stem of the Chesapeake Bay
 
-**Point of contact**: [Charles Pellerin (charles.pellerin@noaa.gov)](mailto:Charles Pellerin (charles.pellerin@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::ch_bay_temp`
+Temporal scale: Annual
 
 **Variable definitions**
-
-1) Temperature; degree C 2) Time; year
 
 ```{r vars_ch_bay_temp}
 # Pull all var names
@@ -65,19 +90,15 @@ vars <- ecodata::ch_bay_temp |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull
+**Point of contact**: Charles Pellerin (charles.pellerin@noaa.gov)
 
+**ecodata dataset**: `ecodata::ch_bay_temp`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/ch_bay_temp.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/ch_bay_temp.html>
 
