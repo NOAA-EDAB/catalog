@@ -1,21 +1,54 @@
 # Ecosystem overfishing {#ppr}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+<a href="https://noaa-edab.github.io/catalog/page_status.html#in-development" class="btn btn-success button_small"><i class="fas fa-pencil-ruler"></i> In Development</a>
+
+*Last updated July 23, 2026*
+
 **Description**: Ecosystem overfishing is an ecological, and not legal, term that ultimately evaluates how much fish are caught in an ecosystem relative to how much can be produced. Several indices are used to evaluate ecosystem overfishing, the Ryther index, the Fogarty index, and primary production required.
-
-**Indicator family**: 
-
-- [X] Megafauna
-- [X] Economic
-
 
 **Contributor(s)**: Andrew Beet
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Megafauna
+- [X] Economic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+
+```{r download_ppr}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::ppr,
+output_name = 'ppr',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 The Ryther index is defined as total catch per unit area in the ecosystem [@link_global_2019]. The units are mt km^-2 year^-1. It measures the total removal of fish biomass by area in a Large Marine Ecosystem relative to how much that entire ecosystem can produce.  In general terms, the lower the Ryther index, the less likely an ecosystem will be experiencing ecosystem overfishing.
 
@@ -28,125 +61,315 @@ Compared to thresholds based on global estimates of primary production and catch
 
 Thresholds based on regional estimates of primary productivity, are not yet available. This work is ongoing
 
+**Mid-Atlantic Bight, pp, global**
 ```{r plot_pprMidAtlanticMABppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'pp', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticMABppglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Georges Bank, pp, global**
 ```{r plot_pprNewEnglandGBppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'pp', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGBppglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Gulf of Maine, pp, global**
 ```{r plot_pprNewEnglandGOMppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'pp', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGOMppglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic Bight, fogarty, global**
 ```{r plot_pprMidAtlanticMABfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'fogarty', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticMABfogartyglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Georges Bank, fogarty, global**
 ```{r plot_pprNewEnglandGBfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'fogarty', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGBfogartyglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Gulf of Maine, fogarty, global**
 ```{r plot_pprNewEnglandGOMfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'fogarty', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGOMfogartyglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic Bight, ryther, global**
 ```{r plot_pprMidAtlanticMABrytherglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ryther', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticMABrytherglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Georges Bank, ryther, global**
 ```{r plot_pprNewEnglandGBrytherglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ryther', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGBrytherglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Gulf of Maine, ryther, global**
 ```{r plot_pprNewEnglandGOMrytherglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ryther', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGOMrytherglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic Bight, ppr, global**
 ```{r plot_pprMidAtlanticMABpprglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ppr', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ppr', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticMABpprglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Georges Bank, ppr, global**
 ```{r plot_pprNewEnglandGBpprglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ppr', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ppr', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGBpprglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Gulf of Maine, ppr, global**
 ```{r plot_pprNewEnglandGOMpprglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ppr', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ppr', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGOMpprglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic Bight, mtl, global**
 ```{r plot_pprMidAtlanticMABmtlglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'mtl', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'mtl', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticMABmtlglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Georges Bank, mtl, global**
 ```{r plot_pprNewEnglandGBmtlglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'mtl', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'mtl', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGBmtlglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Gulf of Maine, mtl, global**
 ```{r plot_pprNewEnglandGOMmtlglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'mtl', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'mtl', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGOMmtlglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+There is insufficient evidence to determine whether ecosystem overfishing in occuring in our region. However the overall amount  of ecosystem fishing has been declining over the past several years.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_ppr}
-# Either from Contributor or ecodata
-```
-
-## Implications
-There is insufficient evidence to determine whether ecosystem overfishing in occuring in our region. However the overall amount  of ecosystem fishing has been declining over the past several years.
-
-## Get the data
-
-**Point of contact**: [andrew.beet@noaa.gov](mailto:andrew.beet@noaa.gov){.email}
-
-**ecodata name**: `ecodata::ppr`
-
 **Variable definitions**
-
-1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
 # Pull all var names
@@ -156,19 +379,19 @@ vars <- ecodata::ppr |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: andrew.beet@noaa.gov
 
+**ecodata dataset**: `ecodata::ppr`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/ppr.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Please email andrew.beet@noaa.gov for further information and queries of source data.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/ppr.html>
 

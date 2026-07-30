@@ -1,20 +1,51 @@
 # Cetacean Passive Acoustic Monitoring {#cetacean_acoustic}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+<a href="https://noaa-edab.github.io/catalog/page_status.html#under-construction" class="btn btn-warning button_small"><i class="fas fa-hard-hat"></i> Under Construction</a>
+
+*Last updated July 24, 2026*
+
 **Description**: Passive acoustic monitoring (PAM) is a non-invasive method for studying cetaceans, relying on the detection of the unique vocalizations that cetaceans produce. PAM provides continuous sampling effort in areas that are otherwise difficult to access and provides information on multiple species simultaneously. The resulting long-term, robust datasets allow for insights into species distributions, behavior, and habitat use. Furthermore, PAM can be used from a management perspective to implement risk mitigation efforts, assess the cumulative impacts of stressors, and evaluate potential behavioral and distributional changes resulting from climate change or anthropogenic activity.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Renea Briner, Amanda Holdman, Daryll Carlson, Genevieve Davis, Rhett Finley, Sophie Ferguson, Leila Hatch, Katie Kowarski, Bruce Martin, Jessica McCordic, Jennifer Miksis-Olds, Hilary Moors-Murphy, Xavier Mouy, Anita Murray, Maricarmen Serna, Erin Summers, Joy Stanistreet, Lindsey Transue, Christopher Tremblay, Annabel Westell, Rebecca Vanhoeck, Emma Vergow, Sofie Van Parijs, Mark Baumgartner, Joel Bell, Amy Engelhaupt, Paige Hanson, Hana Koilpillai, Melinda Rekdahl, Howard Rosenbaum, Julianne Wilder
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [x] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_cetacean_acoustic}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::cetacean_acoustic,
+output_name = 'cetacean_acoustic',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 In the Gulf of Maine, we examined the weekly acoustic presence of eight cetacean species (harbor porpoise and sperm, humpback, minke, North Atlantic right, sei, fin, and blue whales) and one cetacean family (delphinid spp.). Data were collected across four years (2019-2023) and thirty recording sites. In the Mid-Atlantic Bight, we examined the weekly acoustic presence of six baleen whale species (North Atlantic right, sei, humpback, fin, blue, and minke whales). Data were collected across two years (2022-2024) and thirteen recording sites. This summary allows for an improved understanding of how frequently each of the species was acoustically active and whether they exhibited seasonal patterns in their activity within the region. This data serves as a baseline summary for a previously understudied region that has historically been viewed as a migratory corridor for baleen species. A full description is in preparation for publication.
 
@@ -24,21 +55,6 @@ This figure summarizes the weekly acoustic presence of eight cetacean species an
 
 This figure summarizes the weekly acoustic presence of six baleen whale species in the Mid-Atlantic Bight, derived from data collected across two years (2022-2024) and thirteen recording sites.
 ![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_cetacean_acoustic_MAB.png){width=100%}
-
-
-## Indicator statistics 
-Spatial scale: A total of thirty PAM units were located throughout the Gulf of Maine spanning the coastal shelf, deep basins, and offshore banks. A total of thirteen PAM units were located throughout the US Mid-Atlantic Bight shelf area of the Northwestern Atlantic Ocean. The southernmost recorders were located off the mouth of the Chesapeake Bay and the northernmost recorders were located south of Long Island, NY. Recorders were arranged in transects spanning the continental shelf.
-
-Temporal scale: In the Gulf of Maine, acoustic data were summarized from a four-year continuous sampling period spanning September 2019 to September 2023. In the Mid-Atlantic Bight, acoustic data were summarized from a two-year continuous sampling period spanning June 2022 to November 2024.
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_cetacean_acoustic}
-# Either from Contributor or ecodata
-```
 
 ## Implications
 Acoustic summaries show that the Gulf of Maine and Mid-Atlantic Bight are important habitats for cetaceans, with many species detected year-round. Peak acoustic presence varied by species/family, with all groups exhibiting seasonal presence patterns. More fine-scale analyses reveal interannual and subregional differences in cetacean acoustic presence, highlighting the dynamic nature of the region.
@@ -61,16 +77,12 @@ Summer Presence: No species were consistently detected in summer months (June-Ju
 
 Highly Variable: Minke whale acoustic presence greatly varied by site and year, but generally peaked in spring (March-April) and late summer into fall (August-October).
 
-## Get the data
+## Indicator statistics 
+Spatial scale: A total of thirty PAM units were located throughout the Gulf of Maine spanning the coastal shelf, deep basins, and offshore banks. A total of thirteen PAM units were located throughout the US Mid-Atlantic Bight shelf area of the Northwestern Atlantic Ocean. The southernmost recorders were located off the mouth of the Chesapeake Bay and the northernmost recorders were located south of Long Island, NY. Recorders were arranged in transects spanning the continental shelf.
 
-**Point of contact**: [Sofie Van Parijs (sofie.vanparijs@noaa.gov)](mailto:Sofie Van Parijs (sofie.vanparijs@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::cetacean_acoustic`
+Temporal scale: In the Gulf of Maine, acoustic data were summarized from a four-year continuous sampling period spanning September 2019 to September 2023. In the Mid-Atlantic Bight, acoustic data were summarized from a two-year continuous sampling period spanning June 2022 to November 2024.
 
 **Variable definitions**
-
-1) Acoustic presence; Definition: At least 1 species-specific call was observed on a given day. For North Atlantic right whale acoustic presence is defined as 3 species-specific calls observed on a given day.  
-2) Weekly acoustic presence: Definition: median number of days of acoustic presence per calendar week across all data at four recording sites
 
 ```{r vars_cetacean_acoustic}
 # Pull all var names
@@ -80,19 +92,15 @@ vars <- ecodata::cetacean_acoustic |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Extensive analysis, not yet published
+**Point of contact**: Sofie Van Parijs (sofie.vanparijs@noaa.gov)
 
+**ecodata dataset**: `ecodata::cetacean_acoustic`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/cetacean_acoustic.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/cetacean_acoustic.html>
 

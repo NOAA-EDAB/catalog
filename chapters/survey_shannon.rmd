@@ -1,43 +1,29 @@
 # Bottom trawl survey diversity index {#survey_shannon}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Diversity metric for the bottom trawl survey data
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Andy Beet, Sean Lucey
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Diversity metrics may be useful in determining shifts in species composition through time. The shannon-diversity index, a way to measure diversity using species richness and evenness is implemented in the attempt to determine changes over time. The index has a maximum value when all species are equally abundant.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-A significant long term decline in the diversity metric is apparent in Georges Bank in both the Spring and the Fall. This is not seen in Gulf of Maine or the Mid Atlantic
-
-```{r plot_survey_shannonMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_survey_shannon(report = 'MidAtlantic', n = 10)
-ggplotObject
-```
-
-```{r plot_survey_shannonNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_survey_shannon(report = 'NewEngland', n = 10)
-ggplotObject
-```
+- [X] Megafauna
 
 
-## Indicator statistics 
-Spatial scale: EPU
+**Indicator Category**:
 
-Temporal scale: SPRING, FALL
+- [X] Published Methods
+- [X] Database pull
+
 
 **Synthesis Theme**:
 
@@ -45,24 +31,78 @@ Temporal scale: SPRING, FALL
 - [X] Ecosystem Reorganization
 
 
-```{r autostats_survey_shannon}
-# Either from Contributor or ecodata
+```{r download_survey_shannon}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::survey_shannon,
+output_name = 'survey_shannon',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Diversity metrics may be useful in determining shifts in species composition through time. The shannon-diversity index, a way to measure diversity using species richness and evenness is implemented in the attempt to determine changes over time. The index has a maximum value when all species are equally abundant.
+
+## Key Results and Visualizations
+A significant long term decline in the diversity metric is apparent in Georges Bank in both the Spring and the Fall. This is not seen in Gulf of Maine or the Mid Atlantic
+
+**Mid-Atlantic**
+```{r plot_survey_shannonMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_survey_shannon(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'survey_shannonMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England**
+```{r plot_survey_shannonNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_survey_shannon(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'survey_shannonNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 A decline in the shannon diversity index over time could be a result of several factors; a decline in the number of species being found in the system over time or a select few becoming more abundant (relative to the rest) over time. If the number of species remain contant through time, then the decline represents a shift to a more unbalanced, uneven system where some species are more abundannt that others. An increase would represent the opposite, a shift, in direction, to a more balanced, even system.
 
 If the number of species is changing through time, the inference is more complicated since the maximum value of the shannon-index is a function of the number of species.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: EPU
 
-**Point of contact**: [andrew.beet@noaa.gov](mailto:andrew.beet@noaa.gov){.email}
-
-**ecodata name**: `ecodata::survey_shannon`
+Temporal scale: SPRING, FALL
 
 **Variable definitions**
-
-Name: NEFSC survey species diversity (SPRING, FALL) Units: Shannon index (unitless)
 
 ```{r vars_survey_shannon}
 # Pull all var names
@@ -72,20 +112,15 @@ vars <- ecodata::survey_shannon |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Database pull
+**Point of contact**: andrew.beet@noaa.gov
 
+**ecodata dataset**: `ecodata::survey_shannon`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/survey_shannon.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/survey_shannon.html>
 

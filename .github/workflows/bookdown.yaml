@@ -15,7 +15,7 @@ jobs:
   build:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v6
 
@@ -28,10 +28,29 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
 
       - name: Build book
-        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = FALSE)'
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: site
+          path: _book
+
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: _book
         
       - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4.8.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.

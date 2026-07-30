@@ -1,20 +1,54 @@
 # Phytoplankton {#chl_pp}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Satellite derived phytoplankton data including chlorophyll concentration, primary production, and phytoplankton size class for the Northeast Continental Shelf and ecological production units.
-
-**Indicator family**: 
-
-- [X] Lower trophic levels
-
 
 **Contributor(s)**: Kimberly Hyde
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Lower trophic levels
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Other
+
+
+**Indicator Category**:
+
+Publicly available satellite data that are processed and analyzed
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_chl_pp}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::chl_pp,
+output_name = 'chl_pp',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 Phytoplankton are key biological regulators of the structure and function of most marine ecosystems. They are the foundation of the marine food web and are the primary food source for zooplankton and filter feeders such as shellfish. Numerous environmental and oceanographic factors interact to drive the abundance, composition, spatial distribution, seasonal timing and productivity of phytoplankton. Satellite derived measurements of chlorophyll, the dominant photosynthetic pigment in phytoplankton, are used to estimate total phytoplankton biomass. Phytoplankton growth depends on the availability of carbon dioxide, sunlight and nutrients and their growth rates can be influenced by water temperature, water depth, wind, and grazing pressure.  Primary productivity is a measure of the amount of carbon produced by phytoplankton. The size structure of the phytoplankton community influences important biogeochemical and ecological processes, including transfer of energy through the marine food web.
 
@@ -33,148 +67,375 @@ Concentrations of chlorophyll _a_ (a proxy for biomass) were below average durin
 #### 2024
 Concentrations of chlorophyll _a_ (a proxy for biomass) were above average during the winter-spring and fall bloom periods in all regions. There was no evidence of a repeat of the widespread _Tripos muelleri_ [bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2023.html) observed in [2023](https://doi.org/10.25923/f8xc-hj17). There was, however, an atypical localized [coccolithophore bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2024.html#key-results-and-visualizations-61) south of Long Island, New York in late June to early July. Mid-Atlantic primary production peaked in early summer in 2024 and was above average in late fall, which is attributed to the above average late fall bloom. Georges Bank fall productivity was also above average due to the abnormally large fall phytoplankton bloom. Conversely, the Gulf of Maine spring bloom accounted for the largest above average spike in that region. The 2024 phytoplankton size class distribution was near the seasonal climatology in all regions except during the above average phytoplankton bloom periods.
 
+**chl, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticchlweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'weekly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'weekly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticchlweeklyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**pp, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticppweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'weekly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'weekly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticppweeklyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**size, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticsizeweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'weekly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'weekly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticsizeweeklyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**chl, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticchlmonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'monthly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'monthly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticchlmonthlyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**pp, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticppmonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'monthly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'monthly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticppmonthlyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**size, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticsizemonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'monthly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'monthly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticsizemonthlyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**chl, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandchlweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandchlweeklyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**pp, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandppweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandppweeklyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**size, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandsizeweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandsizeweeklyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**chl, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandchlmonthlyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandchlmonthlyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**pp, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandppmonthlyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandppmonthlyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**size, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandsizemonthlyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandsizemonthlyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**chl, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandchlweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandchlweeklyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**pp, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandppweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandppweeklyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**size, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandsizeweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandsizeweeklyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**chl, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandchlmonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandchlmonthlyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**pp, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandppmonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandppmonthlyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**size, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandsizemonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandsizemonthlyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+Phytoplankton abundance, productivity, diversity, cell size, phenology, and carbon fluxes are regulated by the local physical and chemical environment and grazing. Interannual and climatological changes in temperature, freshwater inputs (due to ice sheet melting and/or enhanced river discharge), wind direction, and wind speed can alter the circulation patterns, upwelling conditions, and nutrient fluxes, directly affecting the timing, location, species composition of phytoplankton blooms in the NES. As the NES responds to warming, changing phenologies, changing chemistry, and changes in circulation patterns, we must understand how varying biophysical interactions control phytoplankton and subsequently affect fisheries, their habitats and the people, businesses and communities that depend on them.
 
 ## Indicator statistics 
 Spatial scale: By EPU and gridded for the entire shelf
 
 Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to 2020)
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_chl_pp}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Phytoplankton abundance, productivity, diversity, cell size, phenology, and carbon fluxes are regulated by the local physical and chemical environment and grazing. Interannual and climatological changes in temperature, freshwater inputs (due to ice sheet melting and/or enhanced river discharge), wind direction, and wind speed can alter the circulation patterns, upwelling conditions, and nutrient fluxes, directly affecting the timing, location, species composition of phytoplankton blooms in the NES. As the NES responds to warming, changing phenologies, changing chemistry, and changes in circulation patterns, we must understand how varying biophysical interactions control phytoplankton and subsequently affect fisheries, their habitats and the people, businesses and communities that depend on them.
-
-## Get the data
-
-**Point of contact**: [kimberly.hyde@noaa.gov](mailto:kimberly.hyde@noaa.gov){.email}
-
-**ecodata name**: `ecodata::chl_pp`
-
 **Variable definitions**
-
-1) Chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters; mg m^-3 
-2) Chlorophyll anomaly; Ratio of chlorophyll _a_ concentration to the long-term (1998 to present year) climatology; unitless (ratio) 
-3) Primary productivity; Daily net primary production of biomass expressed as carbon per unit volume in seawater per day; gCarbon m^-2 d^-1 
-4) Primary productivity anomaly;  Ratio of net primary production to the long-term (1998 to present year) climatology; unitless (ratio) 
-5) Microplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the microplankton (20-200 µm) fraction; mg m^-3 
-6) Nanoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the nanoplankton (2-20 µm) fraction; mg m^-3 
-7) Picoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the picoplankton (0.2-2 µm) fraction; mg m^-3 
-8) Annual summed primary production - TBD
 
 ```{r vars_chl_pp}
 # Pull all var names
@@ -184,24 +445,15 @@ vars <- ecodata::chl_pp |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Other
+**Point of contact**: kimberly.hyde@noaa.gov
 
+**ecodata dataset**: `ecodata::chl_pp`
 
-**Indicator Category**:
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/chl_pp.html>
 
-Publicly available satellite data that are processed and analyzed
-
-## Public Availability
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/chl_pp.html>
 

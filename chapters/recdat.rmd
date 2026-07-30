@@ -1,21 +1,53 @@
 # Recreational Fishing Indicators {#recdat}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: A variety of indicators derived from MRIP Recreational Fisheries Statistics, including total recreational catch, total angler trips by region, annual diversity of recreational fleet effort, and annual diversity of managed species.
-
-**Indicator family**: 
-
-- [X] Social
-- [X] Economic
-
 
 **Contributor(s)**: Geret DePiper, Scott Steinback
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Social
+- [X] Economic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+
+```{r download_recdat}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::recdat,
+output_name = 'recdat',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 We use total recreational harvest as an indicator of seafood production and total recreational trips and total recreational anglers as proxies for recreational value generated from the Mid-Atlantic and New England regions respectively. We estimate both recreational catch diversity in species managed by the Fisheries Management Councils; Mid-Atlantic (MAFMC), New England (NEFMC), South Atlantic (SAFMC) and Atlantic States (ASFMC), and fleet effort diversity using the effective Shannon index.
 
@@ -26,70 +58,165 @@ Recreational effort (angler trips) in New England increased during 1980-2010, bu
 
 In New England, recreational species catch diversity has been above the time series average since 2008 with a long-term positive trend. In the Mid-Atlantic, recreational species catch diversity has no long term trend so is considered stable, and has been at or above the long term average in 9 of the last 10 years.
 
+**landings, Mid-Atlantic**
 ```{r plot_recdatlandingsMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'recdatlandingsMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**effortdiversity, Mid-Atlantic**
 ```{r plot_recdateffortdiversityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'recdateffortdiversityMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**catchdiversity, Mid-Atlantic**
 ```{r plot_recdatcatchdiversityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'recdatcatchdiversityMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**effort, Mid-Atlantic**
 ```{r plot_recdateffortMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'recdateffortMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**landings, New England**
 ```{r plot_recdatlandingsNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'recdatlandingsNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**effortdiversity, New England**
 ```{r plot_recdateffortdiversityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'recdateffortdiversityNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**catchdiversity, New England**
 ```{r plot_recdatcatchdiversityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'recdatcatchdiversityNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**effort, New England**
 ```{r plot_recdateffortNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'recdateffortNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Mid-Atlantic and New England
-
-Temporal scale: Annual
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_recdat}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 The decline in recreational seafood harvest in New England stems from multiple drivers. Changes in demographics and preferences over recreational activities likely play a role in non-HMS (Highly Migratory Species) declines in recreational harvest, with current harvests near the lowest in the time series. Drivers of the the decline in Mid-Atlantic recreational seafood harvest are unclear. NOAA Fisheries’ Marine Recreational Information Program survey methodology was updated in 2018, so it is unclear whether the record-low landings for species other than sharks in 2018 are driven by changes in fishing behavior or the change in the survey methodology. Nevertheless, the recreational harvest seems to be stabilizing at a lower level than historical estimates.
@@ -98,18 +225,12 @@ Diversity indices can be used to evaluate stability objectives as well as risks 
 
 The increase in recreational species catch diversity in New England is due to recent increases in ASMFC and MAFMC managed species within the region as well as decreased limits on more traditional regional species. Stability in Mid-Atlantic recreational species catch diversity has been maintained by a different set of species over time. A recent increase in Atlantic States Marine Fisheries Commission (ASMFC) and South Atlantic Fishery Management Council (SAFMC) managed species in recreational catch is helping to maintain diversity in the same range that MAFMC and New England Fishery Management Council (NEFMC) species supported in the 1990s.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Mid-Atlantic and New England
 
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::recdat`
+Temporal scale: Annual
 
 **Variable definitions**
-
-Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1.  
-1) Name: Recreational Seafood; Definition: Recreational Harvest; Units: lbs 2) Name: Recreational Effort; Definition: Recreational Trips; Units: Angler Trips 
-3) Name: Recreational Effort Diversity; Definition: Recreational fleet effort diversity across modes; Units: Effective Shannon Metric 
-4) Name: Recreational Catch Diversity; Definition: Recreational Diversity of Catch across managed species; Units: Effective Shannon Metric
 
 ```{r vars_recdat}
 # Pull all var names
@@ -119,20 +240,15 @@ vars <- ecodata::recdat |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Database pull with analysis
+**Point of contact**: EDAB, edab.data@noaa.gov
 
+**ecodata dataset**: `ecodata::recdat`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/recdat.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/recdat.html>
 

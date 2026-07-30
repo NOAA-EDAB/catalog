@@ -1,72 +1,125 @@
 # Sea-surface temperature anomaly {#seasonal_oisst_anom}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Seasonal sea surface temperature anomaly
-
-**Indicator family**: 
-
-- [X] Oceanographic
-- [X] Habitat
-
 
 **Contributor(s)**: Brandon Beltz, Abigail Tyrell
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Sea surface temperature can be used as a proxy for overall thermal conditions in the system. Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. These data extend from 1981 to present. Anomalies are calculated by subtracting the long-term mean temperature from 1990-2010 for each season, from the seasonal-annual mean SST.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Since 1982, SST has been increasing in all seasons in all three EPUs. 2023 was the warmest winter SST in the GOM and GB on record. All record warmest seasonal SST years have occurred on or after 2012. 2023 also saw relatively cooler summer temperatures in GB and the GOM and fall temperatures in all regions.
-
-```{r plot_seasonal_oisst_anomMABMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'MAB', report = 'MidAtlantic', n = 10)
-ggplotObject
-```
-
-```{r plot_seasonal_oisst_anomGBNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'GB', report = 'NewEngland', n = 10)
-ggplotObject
-```
-
-```{r plot_seasonal_oisst_anomGOMNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'GOM', report = 'NewEngland', n = 10)
-ggplotObject
-```
+- [X] Oceanographic
+- [X] Habitat
 
 
-## Indicator statistics 
-Spatial scale: EPU
+**Indicator Category**:
 
-Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summer (July - September), Fall (October - December)
+- [X] Database pull with analysis
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_seasonal_oisst_anom}
-# Either from Contributor or ecodata
+```{r download_seasonal_oisst_anom}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::seasonal_oisst_anom,
+output_name = 'seasonal_oisst_anom',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Sea surface temperature can be used as a proxy for overall thermal conditions in the system. Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. These data extend from 1981 to present. Anomalies are calculated by subtracting the long-term mean temperature from 1990-2010 for each season, from the seasonal-annual mean SST.
+
+## Key Results and Visualizations
+Since 1982, SST has been increasing in all seasons in all three EPUs. 2023 was the warmest winter SST in the GOM and GB on record. All record warmest seasonal SST years have occurred on or after 2012. 2023 also saw relatively cooler summer temperatures in GB and the GOM and fall temperatures in all regions.
+
+**Mid-Atlantic Bight**
+```{r plot_seasonal_oisst_anomMABMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'MAB', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seasonal_oisst_anomMABMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Georges Bank**
+```{r plot_seasonal_oisst_anomGBNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'GB', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seasonal_oisst_anomGBNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Gulf of Maine**
+```{r plot_seasonal_oisst_anomGOMNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_seasonal_oisst_anom(EPU = 'GOM', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seasonal_oisst_anomGOMNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: EPU
 
-**Point of contact**: [brandon.beltz@noaa.gov](mailto:brandon.beltz@noaa.gov){.email}
-
-**ecodata name**: `ecodata::seasonal_oisst_anom`
+Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summer (July - September), Fall (October - December)
 
 **Variable definitions**
-
-Time: year, Var: season, Value: temperature anomaly (degrees Celcius), EPU
 
 ```{r vars_seasonal_oisst_anom}
 # Pull all var names
@@ -76,19 +129,15 @@ vars <- ecodata::seasonal_oisst_anom |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull with analysis
+**Point of contact**: brandon.beltz@noaa.gov
 
+**ecodata dataset**: `ecodata::seasonal_oisst_anom`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom.html>
 

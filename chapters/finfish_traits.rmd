@@ -1,20 +1,51 @@
 # NE Shelf Functional Trait Indicators {#finfish_traits}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: These data represent estimates of trait distributions for key functional traits amongst finfish species at each EPU on the Northeast Continental Shelf.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Bart DiFiore, Kathy Mills, Scott Large
 
 **Affiliations**: Massachusetts
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
+
+```{r download_finfish_traits}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::finfish_traits,
+output_name = 'finfish_traits',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 Functional traits, such as length at maturity, asymptotic body size, or fecundity, offer a means to synthesize change across complex, diverse communities while avoiding the pitfalls of examining change in any given species. In general, ecological theory predicts that if many species play similar roles in an ecosystem, known as high functional redundancy, then the loss of any one species will be compensated by the prevalence of functionally similar species, allowing for greater stability and resilience at the ecosystem level. Therefore, monitoring changes in functional trait distributions can provide a means of assessing ecosystem-scale resilience. 
 
@@ -25,177 +56,457 @@ Here, we compiled eight key functional traits and three aggregate trait ordinati
 
 I'm happy to share the code used to produce these figures from the data linked above.
 
+**Mid-Atlantic, trophic_level**
 ```{r plot_finfish_traitsMidAtlantictrophic_level}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'trophic_level', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'trophic_level', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlantictrophic_level',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, trophic_level**
 ```{r plot_finfish_traitsNewEnglandtrophic_level}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'trophic_level', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'trophic_level', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandtrophic_level',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, offspring_size**
 ```{r plot_finfish_traitsMidAtlanticoffspring_size}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'offspring_size', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'offspring_size', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticoffspring_size',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, offspring_size**
 ```{r plot_finfish_traitsNewEnglandoffspring_size}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'offspring_size', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'offspring_size', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandoffspring_size',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, age_maturity**
 ```{r plot_finfish_traitsMidAtlanticage_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'age_maturity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'age_maturity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticage_maturity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, age_maturity**
 ```{r plot_finfish_traitsNewEnglandage_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'age_maturity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'age_maturity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandage_maturity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, length_maturity**
 ```{r plot_finfish_traitsMidAtlanticlength_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'length_maturity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'length_maturity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticlength_maturity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, length_maturity**
 ```{r plot_finfish_traitsNewEnglandlength_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'length_maturity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'length_maturity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandlength_maturity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, fecundity**
 ```{r plot_finfish_traitsMidAtlanticfecundity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'fecundity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'fecundity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticfecundity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, fecundity**
 ```{r plot_finfish_traitsNewEnglandfecundity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'fecundity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'fecundity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandfecundity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, l_inf**
 ```{r plot_finfish_traitsMidAtlanticl_inf}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'l_inf', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'l_inf', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticl_inf',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, l_inf**
 ```{r plot_finfish_traitsNewEnglandl_inf}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'l_inf', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'l_inf', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandl_inf',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, k**
 ```{r plot_finfish_traitsMidAtlantick}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'k', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'k', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlantick',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, k**
 ```{r plot_finfish_traitsNewEnglandk}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'k', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'k', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandk',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, max_obs_length**
 ```{r plot_finfish_traitsMidAtlanticmax_obs_length}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'max_obs_length', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'max_obs_length', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticmax_obs_length',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, max_obs_length**
 ```{r plot_finfish_traitsNewEnglandmax_obs_length}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'max_obs_length', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'max_obs_length', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandmax_obs_length',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, PC1**
 ```{r plot_finfish_traitsMidAtlanticPC1}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC1', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC1', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticPC1',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, PC1**
 ```{r plot_finfish_traitsNewEnglandPC1}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC1', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC1', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandPC1',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, PC2**
 ```{r plot_finfish_traitsMidAtlanticPC2}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC2', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC2', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticPC2',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, PC2**
 ```{r plot_finfish_traitsNewEnglandPC2}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC2', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC2', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandPC2',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, PC3**
 ```{r plot_finfish_traitsMidAtlanticPC3}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC3', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC3', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsMidAtlanticPC3',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, PC3**
 ```{r plot_finfish_traitsNewEnglandPC3}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC3', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC3', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'finfish_traitsNewEnglandPC3',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: By EPU and full shelf
-
-Temporal scale: 1963-2023, Spring (January-June) & Fall (July-December)
-
-**Synthesis Theme**:
-
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_finfish_traits}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 In general, there appears to be equivocal evidence for functional redundancy in traits at both the scale of the NE Shelf and within particular EPU’s. For instance, for trait ordination axes related to the pace of life and fecundity, there was stability in trait distributions for species captured during the fall survey. However, in the spring survey there was evidence for long-term shifts towards slower life history strategies (larger body size, lower fecundity, fewer offspring). 
 
 At the EPU scale, there was little evidence for long-term linear trends in trait distributions in the Gulf of Maine and Scotian Shelf finfish communities, suggesting a high level of functional redundancy and stability in the face of dramatic shifts in oceanographic conditions (e.g. increasing temperatures) and other anthropogenic impacts. Conversely, there was evidence for long term change in trait distributions in the mid-Atlantic Bight and Georges Bank. For instance, the fall finfish community on George’s Bank and the spring finfish community in the mid-Atlantic Bight are both showing long-term shifts towards slower life history strategies with lower fecundity. These changes suggest that more research across the finfish community in these regions is needed to understand the ecological and economic ramifications of such change.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: By EPU and full shelf
 
-**Point of contact**: [Bart DiFiore (bartholomew.p.difiore@mass.gov)](mailto:Bart DiFiore (bartholomew.p.difiore@mass.gov)){.email}
-
-**ecodata name**: `ecodata::finfish_traits`
+Temporal scale: 1963-2023, Spring (January-June) & Fall (July-December)
 
 **Variable definitions**
-
-**Grouping variables** - region: Categorical variable for either the whole NE shelf or each of the four EPU's. - est_year: Year at which the values were estimated.  
-- season: Season for which the values were estimated. Only spring and fall are represented.  **CWM Trait values** 
-Each of the following variables are community weighted mean (CWM) estimates for the particular trait at either the scale of the EPU and the whole NE Shelf. In all cases, a species is represented by a single trait value. For instance, all cod fish in the data set are assigned a common trophic level that is invariant with body size, time, season, etc. This data represents *inter*specific variation in traits, and does not account for *intra*specific variation. Please see methods for where we sourced trait estimates. 
-- trophic_level: Trophic level - offspring_size: Average estimated size of offspring (mm) - age_maturity: Average estimated age at 50% maturity (years). 
-- length_maturity: Average estimated length at 50% maturity (cm). - fecundity: Average number of offspring produced per spawning adult.  
-- l_inf: Infinite length parameter for the species Von Bertalanffy growth equation. - k: Growth parameter for the species Von Bertalanffy growth equation. 
-- max_obs_length: Maximum observed length recorded in FishBase or related databases.  **CWM Trait Ordinations**  
-- PC1: CWM for the first principle component axis that explains ~61% of the variance. Due to trait loading we consider this axis representative of "Pace of Life".  
-- PC2: CWM for the second principle component axis that explains ~19% of the variance. Due to trait loading we consider this axis representative of "Fecundity" and/or reproductive investment.  
-- PC3: CWM for the third principle component axis that explains ~9% of the variance. The only trait that loads strongly on this axis is trophic level. However, species do not appear to sort strongly by trophic position along this axis and we do not recommend that users consider this reflective of changes in trophic position without further consideration.
 
 ```{r vars_finfish_traits}
 # Pull all var names
@@ -205,20 +516,15 @@ vars <- ecodata::finfish_traits |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
-- [X] Database pull with analysis
+**Point of contact**: Bart DiFiore (bartholomew.p.difiore@mass.gov)
 
+**ecodata dataset**: `ecodata::finfish_traits`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/finfish_traits.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/finfish_traits.html>
 

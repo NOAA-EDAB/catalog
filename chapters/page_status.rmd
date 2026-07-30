@@ -1,0 +1,20 @@
+# Page status {#page_status}
+
+**Some pages in this online Catalog may be marked with various status badges. Please see below for details:**
+
+## Under Review
+Indicates that the contents or underlying data of a page are actively being reviewed.
+Please treat information on "Under Review" pages with care.
+For advice on using the information of a particular page, please email the SOE team (see below).
+
+## In Development
+Indicates that a page and its contents are actively being worked on.
+The information on "In Development" pages is likely to change frequently and with little notice.
+Please revisit the page often to ensure you are using the latest contents and underlying data.
+For updates on the development of a particular page, please email the SOE team (see below).
+
+## Under Construction
+Indicates that the structure or visualizations of a page are likely to change.
+Although the page itself may change, the contents and underlying data of "Under Construction" pages will likely stay the same and may be safely used.
+
+**If you have any questions about the status of a particular page or use of its underlying data, please email the SOE team (nefsc.soe.leads@noaa.gov) for assistance.**
