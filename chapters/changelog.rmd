@@ -2,7 +2,7 @@
 
 ## catalog v4.0.0 {.unnumbered}
 
-Date: 07/30/2026
+Date: 07/31/2026
 
 ### Features {.unnumbered}
 
