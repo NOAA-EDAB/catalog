@@ -1,20 +1,50 @@
 # Relative condition {#condition}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: NEFSC fall bottom trawl survey relative condition
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: NOAA EDAB
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
+
+```{r download_condition}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::condition,
+output_name = 'condition',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 The health and well being of individual fish can be related to body shape condition indices (i.e., weight at a given length) such as relative condition index, which is the ratio of observed weight to predicted weight based on length [@le_cren_length-weight_1951]. Heavier and fatter fish at a given length have higher relative condition which is expected to improve growth, reproductive output, and survival.
 
@@ -35,52 +65,75 @@ A pattern of generally good condition was observed across many species in the GO
 
 Preliminary General Additive Models show that for many species, temperature and copepod size structure have the strongest associations with relative fish condition. Directional trends show that some species are improving in condition with increases in water temperature, likely as a result of increased metabolic rates with sufficient food availability. Whereas other species are declining in condition with increases in water temperature, likely as a result of food limitations with increased metabolic rates, or reaching thermal temperature maxims and having to move into less productive areas in search of suitable thermal habitat. These species may be more susceptible to climate change. Preliminary change point analyses show that the decline in relative condition in the 2000s that is seen across many species aligns with a period dominated by large bodied copepods. Perretti et al. [@perretti_regime_2017] found similar periods of copepod size structure changes, and found that periods dominated by large bodied copepods were associated with low recruitment in groundfish. Relative fish condition is likely the mechanism for these linkages, where poor body condition leads to low fish recruitment.
 
+**Mid-Atlantic Bight**
 ```{r plot_conditionMABMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(EPU = 'MAB', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_condition(EPU = 'MAB', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'conditionMABMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Georges Bank**
 ```{r plot_conditionGBNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(EPU = 'GB', report = 'NewEngland')
+ggplotObject <- ecodata::plot_condition(EPU = 'GB', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'conditionGBNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Gulf of Maine**
 ```{r plot_conditionGOMNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(EPU = 'GOM', report = 'NewEngland')
+ggplotObject <- ecodata::plot_condition(EPU = 'GOM', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'conditionGOMNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+These changes in condition have direct implications for stock assessments, catch quotas and management, and may indirectly impact fish recruitment and mortality.
 
 ## Indicator statistics 
 Spatial scale: The spatial scale for relative condition was on the EPU level.
 
 Temporal scale: The temporal scale for relative condition was the fall NEFSC bottom trawl survey (Sept.-Nov.).
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-
-
-```{r autostats_condition}
-# Either from Contributor or ecodata
-```
-
-## Implications
-These changes in condition have direct implications for stock assessments, catch quotas and management, and may indirectly impact fish recruitment and mortality.
-
-## Get the data
-
-**Point of contact**: [nefsc.soe.leads@noaa.gov](mailto:nefsc.soe.leads@noaa.gov){.email}
-
-**ecodata name**: `ecodata::condition`
-
 **Variable definitions**
-
-Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data MeanCond: annual mean by EPU and species of relative condition (unitless)
 
 ```{r vars_condition}
 # Pull all var names
@@ -90,19 +143,15 @@ vars <- ecodata::condition |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull with analysis
+**Point of contact**: nefsc.soe.leads@noaa.gov
 
+**ecodata dataset**: `ecodata::condition`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/condition.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/condition.html>
 

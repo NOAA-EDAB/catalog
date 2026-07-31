@@ -1,68 +1,68 @@
 # Thermal Habitat Gridded {#thermal_habitat_gridded}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The number of days per year per 1/12 degree cell that exceeds a temperature threshold.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-- [X] Habitat
-
 
 **Contributor(s)**: Joe Caracappa
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Many deep water benthic and demersal species exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal presences may impair these processes. Data originate from GLORYS12V1 global reanalysis for 1993-01-01 to 2025-12-31. Cells are mapped to 3 depth bins: 0-25m, 25-100m, and >100m. Temperature thresholds range from 0.5 to 30 °C at 0.5 °C increments. The GLORYS 1/12 degree grid is mapped to EPU_NOESTUARIES shape files by the center point of each grid cell.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Maps of full NE shelf with cell shading gradient showing number of days exceeding temperature thresholds. Thresholds at 15C and 24C are shown as they correspond to generalized tolerances for warm and cold water species. In 2025, much of the Mid-Atlantic Bight (MAB), the shelf break and Nantucket Shoals experienced some days exceeding 15C, with a longer duration in the southern MAB. In 2025, only the southern and/or shallow portion of the MAB exceeded the 24C threshold.
-
-```{r plot_thermal_habitat_griddedMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'MidAtlantic')
-ggplotObject
-```
-
-```{r plot_thermal_habitat_griddedNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'NewEngland')
-ggplotObject
-```
+- [X] Oceanographic
+- [X] Habitat
 
 
-## Indicator statistics 
-Spatial scale: full shelf
+**Indicator Category**:
 
-Temporal scale: annual
+- [X] Extensive analysis, not yet published
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_thermal_habitat_gridded}
-# Either from Contributor or ecodata
+## Introduction to Indicator
+Many deep water benthic and demersal species exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal presences may impair these processes. Data originate from GLORYS12V1 global reanalysis for 1993-01-01 to 2025-12-31. Cells are mapped to 3 depth bins: 0-25m, 25-100m, and >100m. Temperature thresholds range from 0.5 to 30 °C at 0.5 °C increments. The GLORYS 1/12 degree grid is mapped to EPU_NOESTUARIES shape files by the center point of each grid cell.
+
+## Key Results and Visualizations
+Maps of full NE shelf with cell shading gradient showing number of days exceeding temperature thresholds. Thresholds at 15C and 24C are shown as they correspond to generalized tolerances for warm and cold water species. In 2025, much of the Mid-Atlantic Bight (MAB), the shelf break and Nantucket Shoals experienced some days exceeding 15C, with a longer duration in the southern MAB. In 2025, only the southern and/or shallow portion of the MAB exceeded the 24C threshold.
+
+**Mid-Atlantic**
+```{r plot_thermal_habitat_griddedMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
+ggplotObject
 ```
+<br>
+
+**New England**
+```{r plot_thermal_habitat_griddedNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'NewEngland') +
+ggplot2::ggtitle('')
+ggplotObject
+```
+<br>
 
 ## Implications
 Using a high resolution bottom temperature product shows localized heat stress within EPUs that may be masked when looking at mean EPU bottom temperature. It is important to look at the spatial patterns of temperature exceedances to understand the potential impacts on species with different thermal tolerances and habitat preferences. The duration of such events is also important in determining potential mortality risk.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: full shelf
 
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
-
-**ecodata name**: `ecodata::thermal_habitat_gridded`
+Temporal scale: annual
 
 **Variable definitions**
-
-Time: year EPU: EPU Depth: Depth Category Var: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature)  
-Value: Number of days exceeding Var Latitude: latitude of cell center point Longitude: longitude of cell center point 
-Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) Units: Number of Days
 
 ```{r vars_thermal_habitat_gridded}
 # Pull all var names
@@ -72,19 +72,15 @@ vars <- ecodata::thermal_habitat_gridded |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: joseph.caracappa@noaa.gov
 
+**ecodata dataset**: `ecodata::thermal_habitat_gridded`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/thermal_habitat_gridded.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/thermal_habitat_gridded.html>
 

@@ -1,65 +1,104 @@
 # Slopewater Proportions {#slopewater}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: This index gives the relative proportions of watermass type observed in the deep Northeast Channel (150-200 m water depth).
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Paula Fratantoni
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Temperature and salinity measurements are examined to assess the composition of the waters entering the Gulf of Maine through the deep Northeast Channel. The analysis closely follows the methodology described by @mountain_labrador_2012. This method assumes that the waters flowing into the Northeast Channel between 150 and 200 meters depth are composed of slope waters, originating offshore of the continental shelf, and shelf waters, originating on the continental shelf south of Nova Scotia.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-_No response_
-
-```{r plot_slopewaterMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_slopewater(report = 'MidAtlantic', n = 10)
-ggplotObject
-```
-
-```{r plot_slopewaterNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_slopewater(report = 'NewEngland', n = 10)
-ggplotObject
-```
+- [X] Oceanographic
 
 
-## Indicator statistics 
-Spatial scale: Within the central Northeast Channel
+**Indicator Category**:
 
-Temporal scale: Annual
+- [X] Extensive analysis, not yet published
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_slopewater}
-# Either from Contributor or ecodata
+```{r download_slopewater}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::slopewater,
+output_name = 'slopewater',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Temperature and salinity measurements are examined to assess the composition of the waters entering the Gulf of Maine through the deep Northeast Channel. The analysis closely follows the methodology described by @mountain_labrador_2012. This method assumes that the waters flowing into the Northeast Channel between 150 and 200 meters depth are composed of slope waters, originating offshore of the continental shelf, and shelf waters, originating on the continental shelf south of Nova Scotia.
+
+## Key Results and Visualizations
+_No response_
+
+**Mid-Atlantic**
+```{r plot_slopewaterMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_slopewater(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'slopewaterMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England**
+```{r plot_slopewaterNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_slopewater(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'slopewaterNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 _No response_
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Within the central Northeast Channel
 
-**Point of contact**: [Paula Fratantoni (paula.fratantoni@noaa.gov)](mailto:Paula Fratantoni (paula.fratantoni@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::slopewater`
+Temporal scale: Annual
 
 **Variable definitions**
-
-Name: LSW; Definition: Percent total that is Labrador Slope Water; Units: percent; Name: WSW: Definition: Percent total that is Warm Slope Water; Units: percent
 
 ```{r vars_slopewater}
 # Pull all var names
@@ -69,19 +108,15 @@ vars <- ecodata::slopewater |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: Paula Fratantoni (paula.fratantoni@noaa.gov)
 
+**ecodata dataset**: `ecodata::slopewater`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/slopewater.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/slopewater.html>
 

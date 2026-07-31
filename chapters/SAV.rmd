@@ -1,37 +1,28 @@
 # Chesapeake Bay Submerged Aquatic Vegetation {#SAV}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The data provided here are the 1984-2024 area distribution and percent coverage of submerged aquatic vegetation in the Chesapeake Bay and its tributaries that area measured and calculated from photo-interpreted aerial imagery taken during surveys conducted in the growing season.
-
-**Indicator family**: 
-
-- [X] Lower trophic levels
-
 
 **Contributor(s)**: Christoper J. Patrick, David J. Wilcox, Jennifer R. Whiting, Anna K. Kenne, Erica R. Blue, Matthew J. Smith
 
 **Affiliations**: VIMS
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Underwater grass beds are critical to the Chesapeake Bay ecosystem. They provide food and shelter to fish and wildlife, sequester carbon, add oxygen to the water, absorb nutrient pollution, reduce shoreline erosion and help suspended particles of sediment settle to the bottom. Because they are sensitive to pollution but quick to respond to improvements in water quality, underwater grass abundance is a good indicator of the Bay’s health. Before Europeans colonized the region, up to 600,000 acres of underwater grasses may have grown along the shorelines of the Bay and its tributaries. By the mid-1980s, nutrient and sediment pollution had weakened or eliminated many of these grass beds. While climate change, shoreline hardening and stressors that reduce water clarity will continue to impact our restoration success, many of these stressors can be managed with on-the-ground efforts to reduce pollution and research has shown that nutrient reductions made under the Chesapeake Bay Total Maximum Daily Load (Bay TMDL) have played a critical role in the overall underwater grass recovery documented since the Bay-wide aerial survey began in 1984.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Significant increases and simultaneous decreases in different regions of the bay resulted in little net change in total SAV coverage between 2023 and 2024 (1% decline, -216 hectares, -533 acres).  The Polyhaline and Oligohaline zones saw significant increases in SAV, there was a modest increase in the Tidal Fresh zone, and the Mesohaline zone suffered significant declines.  The Polyhaline zone increased 14% relative to 2023 (1,212 hectares, 2,996 acres).  Segments across the Polyhaline all increased with the largest gains (hectares/acres) occurring in Mobjack Bay, Poquoson Flats, and nearby Western Shore areas.  Significantly, this is most SAV reported in the Polyhaline Zone in the history of the survey, surpassing the previous record set in 1993 by 317 hectares (783 acres).  These gains, largely attributable to eelgrass, add to a pattern of consecutive year over year increases in the Polyhaline since the 2019 crash and extension of the meadows into deeper waters.  This may indicate improved water clarity in this area of the Bay.  The Tidal Fresh Zone was stable, exhibiting a 2% increase (149 hectares, 369 acres) and the Oligohaline Zone showed a 46% increase (584 hectares, 1,442 acres), driven by simultaneous recoveries in multiple areas including the Sassafras, Gunpowder, Back, and Middle Rivers, as well as increases in observed SAV in the Potomac River.  In contrast, the Mesohaline underwent a 14% decline (-2,161 hectares, -5,340 acres), which largely occurred along the Eastern Shore of Maryland in the Choptank (-895 hectares, -2,212 acres) and Little Choptank Rivers (-302 hectares, -746 acres) as well as Tangier Sound (-801 hectares, -1,979 acres).  The declines in the Choptank mirror measured reductions in water quality within the river, highlighting the strong coupling between water quality and SAV within the Chesapeake Bay, and down-bay declines in Tangier Sound may be connected.  These contrasting changes observed throughout the system reflect the incredible diversity of geographic regions, land-use regimes, SAV species, and local environmental conditions that contribute in aggregate to Baywide SAV status each year.
-
-```{r plot_SAVMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_SAV(report = 'MidAtlantic', n = 10)
-ggplotObject
-```
+- [X] Lower trophic levels
 
 
-## Indicator statistics 
-Spatial scale: The data covers the tidal Chesapeake Bay region.
+**Indicator Category**:
 
-Temporal scale: 1984-2024, annual
+- [X] Published Methods
+
 
 **Synthesis Theme**:
 
@@ -39,9 +30,46 @@ Temporal scale: 1984-2024, annual
 - [X] Regime Shifts
 
 
-```{r autostats_SAV}
-# Either from Contributor or ecodata
+```{r download_SAV}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::SAV,
+output_name = 'SAV',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Underwater grass beds are critical to the Chesapeake Bay ecosystem. They provide food and shelter to fish and wildlife, sequester carbon, add oxygen to the water, absorb nutrient pollution, reduce shoreline erosion and help suspended particles of sediment settle to the bottom. Because they are sensitive to pollution but quick to respond to improvements in water quality, underwater grass abundance is a good indicator of the Bay’s health. Before Europeans colonized the region, up to 600,000 acres of underwater grasses may have grown along the shorelines of the Bay and its tributaries. By the mid-1980s, nutrient and sediment pollution had weakened or eliminated many of these grass beds. While climate change, shoreline hardening and stressors that reduce water clarity will continue to impact our restoration success, many of these stressors can be managed with on-the-ground efforts to reduce pollution and research has shown that nutrient reductions made under the Chesapeake Bay Total Maximum Daily Load (Bay TMDL) have played a critical role in the overall underwater grass recovery documented since the Bay-wide aerial survey began in 1984.
+
+## Key Results and Visualizations
+Significant increases and simultaneous decreases in different regions of the bay resulted in little net change in total SAV coverage between 2023 and 2024 (1% decline, -216 hectares, -533 acres).  The Polyhaline and Oligohaline zones saw significant increases in SAV, there was a modest increase in the Tidal Fresh zone, and the Mesohaline zone suffered significant declines.  The Polyhaline zone increased 14% relative to 2023 (1,212 hectares, 2,996 acres).  Segments across the Polyhaline all increased with the largest gains (hectares/acres) occurring in Mobjack Bay, Poquoson Flats, and nearby Western Shore areas.  Significantly, this is most SAV reported in the Polyhaline Zone in the history of the survey, surpassing the previous record set in 1993 by 317 hectares (783 acres).  These gains, largely attributable to eelgrass, add to a pattern of consecutive year over year increases in the Polyhaline since the 2019 crash and extension of the meadows into deeper waters.  This may indicate improved water clarity in this area of the Bay.  The Tidal Fresh Zone was stable, exhibiting a 2% increase (149 hectares, 369 acres) and the Oligohaline Zone showed a 46% increase (584 hectares, 1,442 acres), driven by simultaneous recoveries in multiple areas including the Sassafras, Gunpowder, Back, and Middle Rivers, as well as increases in observed SAV in the Potomac River.  In contrast, the Mesohaline underwent a 14% decline (-2,161 hectares, -5,340 acres), which largely occurred along the Eastern Shore of Maryland in the Choptank (-895 hectares, -2,212 acres) and Little Choptank Rivers (-302 hectares, -746 acres) as well as Tangier Sound (-801 hectares, -1,979 acres).  The declines in the Choptank mirror measured reductions in water quality within the river, highlighting the strong coupling between water quality and SAV within the Chesapeake Bay, and down-bay declines in Tangier Sound may be connected.  These contrasting changes observed throughout the system reflect the incredible diversity of geographic regions, land-use regimes, SAV species, and local environmental conditions that contribute in aggregate to Baywide SAV status each year.
+
+**Mid-Atlantic**
+```{r plot_SAVMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_SAV(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'SAVMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 Bay-wide: In 2024, 82,778 acres of SAV were mapped in the Chesapeake Bay.  This is 45% of the Bay SAV goal:
@@ -53,19 +81,12 @@ Bay-wide: In 2024, 82,778 acres of SAV were mapped in the Chesapeake Bay.  This 
 
 The outlook toward achieving the outcome goal is off course. Significant increases and simultaneous decreases in different regions of the Bay resulted in little net change in total SAV coverage between 2023 and 2024 (1% decline, -260 hectares, -641 acres). It is unlikely that we will meet the interim goal of 130,000 acres by 2025.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: The data covers the tidal Chesapeake Bay region.
 
-**Point of contact**: [Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)](mailto:Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)){.email}
-
-**ecodata name**: `ecodata::SAV`
+Temporal scale: 1984-2024, annual
 
 **Variable definitions**
-
-1) Name: Year; Definition: SAV growing season; year 2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres 
-3) Name: Oligohaline Total; Definition: SAV area in the Oligohaline Zone; Units: acres 
-4) Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres 
-5) Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres 
-6) Name: Baywide Total; Definition: Total SAV area in Chesapeake Bay; Units: acres
 
 ```{r vars_SAV}
 # Pull all var names
@@ -75,19 +96,15 @@ vars <- ecodata::SAV |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)
 
+**ecodata dataset**: `ecodata::SAV`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/SAV.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/SAV.html>
 

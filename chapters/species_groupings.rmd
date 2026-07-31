@@ -1,46 +1,29 @@
 # Feeding guilds by management bodies {#species_groupings}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Classification of species guild membership by management bodies.
-
-**Indicator family**: 
-
-- [X] Megafauna
-- [X] Economic
-
 
 **Contributor(s)**: Sarah Gaichas, Sean Lucey
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Feeding guilds are groups of species that feed similarly. At the ecosystem level, the food web is likely stable if overall biomass of feeding groups is stable over time, even if populations of species within the groups may be changing. 
+**Indicator Family**: 
 
-We defined feeding guilds for fish and invertebrates captured by bottom trawl surveys using diet similarity, either from diet analysis or from literature [@garrison_dietary_2000; @smith_trophic_2010], and see [NEFSC food habits online](https://fwdp.shinyapps.io/tm2020/)
-
-## Key Results and Visualizations
-Each management body (MAFMC, NEFSC, State etc) has its managed species associated with different feeding guilds. This data set shows which managed species for each management body are in which guilds.
-
-```{r plot_species_groupingsMidAtlantic2024}
-# Plot indicator
-ggplotObject <- ecodata::plot_species_groupings(report = 'MidAtlantic', varName = '2024')
-ggplotObject
-```
-
-```{r plot_species_groupingsNewEngland2024}
-# Plot indicator
-ggplotObject <- ecodata::plot_species_groupings(report = 'NewEngland', varName = '2024')
-ggplotObject
-```
+- [X] Megafauna
+- [X] Economic
 
 
-## Indicator statistics 
-Spatial scale: Coastwide
+**Indicator Category**:
 
-Temporal scale: N/A
+- [X] Database pull with analysis
+
 
 **Synthesis Theme**:
 
@@ -49,38 +32,88 @@ Temporal scale: N/A
 - [x] Ecosystem Reorganization
 
 
-```{r autostats_species_groupings}
-# Either from Contributor or ecodata
+```{r download_species_groupings}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::species_groupings,
+output_name = 'species_groupings',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Feeding guilds are groups of species that feed similarly. At the ecosystem level, the food web is likely stable if overall biomass of feeding groups is stable over time, even if populations of species within the groups may be changing. 
+
+We defined feeding guilds for fish and invertebrates captured by bottom trawl surveys using diet similarity, either from diet analysis or from literature [@garrison_dietary_2000; @smith_trophic_2010], and see [NEFSC food habits online](https://fwdp.shinyapps.io/tm2020/)
+
+## Key Results and Visualizations
+Each management body (MAFMC, NEFSC, State etc) has its managed species associated with different feeding guilds. This data set shows which managed species for each management body are in which guilds.
+
+**Mid-Atlantic, 2024**
+```{r plot_species_groupingsMidAtlantic2024}
+# Plot indicator
+ggplotObject <- ecodata::plot_species_groupings(report = 'MidAtlantic', varName = '2024') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'species_groupingsMidAtlantic2024',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England, 2024**
+```{r plot_species_groupingsNewEngland2024}
+# Plot indicator
+ggplotObject <- ecodata::plot_species_groupings(report = 'NewEngland', varName = '2024') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'species_groupingsNewEngland2024',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 We changed species groupings in response to comments over the years. The table shows feeding guilds used in the 2024-2025 reports.  In 2025 an FMP column was added in response to Council requests.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Coastwide
 
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::species_groupings`
+Temporal scale: N/A
 
 **Variable definitions**
 
-1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024-2025) 2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 
-3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 4. Joint = Jointly managed species by feeding guild 
-5. State or Other = Species managed by other bodies listed by feeding guild 6. FMP = Fishery Management Plan for Council managed species
+## Get the data
 
-**Indicator Category**:
+**Point of contact**: EDAB, edab.data@noaa.gov
 
-- [X] Database pull with analysis
+**ecodata dataset**: `ecodata::species_groupings`
 
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/species_groupings.html>
 
-## Public Availability
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/species_groupings.html>
 

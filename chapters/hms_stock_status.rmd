@@ -1,20 +1,49 @@
 # Atlantic Highly Migratory Species Stock Status {#hms_stock_status}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Summary of stock assessment results for each assessed HMS species as of December 2023.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Jennifer Cudney, Heather Baertlein, Jackie Wilson, George Silva
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+
+
+**Synthesis Theme**:
+
+- [X] Regime Shifts
+
+
+```{r download_hms_stock_status}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::hms_stock_status,
+output_name = 'hms_stock_status',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 This section summarizes Highly Migratory Species Stock Status as it is presented in the most recent Atlantic Highly Migratory Species Stock Assessment and Fishery Evaluation (SAFE) report (2024-2025). Stock assessments for Atlantic HMS are completed through one of three processes. Most Atlantic HMS stocks that are managed internationally under the authority of the MSA and ATCA (tunas, billfish, swordfish, some pelagic sharks) are assessed by the International Commission for the Conservation of Atlantic Tunas’ Standing Committee on Research and Statistics (ICCAT SCRS). Sharks managed domestically under the MSA are assessed through the SouthEast Data Assessment and Review (SEDAR) process. Sharks may also be assessed through an independent stock assessment is completed by a third party and approved for use in management by NOAA Fisheries (“external assessments”). Most HMS assessments are completed through either the ICCAT or SEDAR process.  Separate tables summarize thresholds and stock status for all species or stocks assessed through these pathways (and for which the results have been accepted for use in management), and provide information on the timing of upcoming assessments.
 
@@ -25,50 +54,55 @@ Based on the thresholds identifying whether a stock is considered “overfished�
 
 Based on the thresholds identifying whether a stock is experiencing “overfishing” in the HMS FMP, overfishing is not occurring (or not likely occurring) for 19 species or stocks, overfishing is occurring for 5 species or stocks, and the status of 4 species or stocks is unknown.
 
+**Mid-Atlantic**
 ```{r plot_hms_stock_statusMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_stock_status(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_hms_stock_status(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_stock_statusMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England**
 ```{r plot_hms_stock_statusNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_stock_status(report = 'NewEngland')
+ggplotObject <- ecodata::plot_hms_stock_status(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_stock_statusNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+This summarizes information in the HMS SAFE Report, which itself is intended to provide a high-level summary of stock status information. Specific implications of stock status trends through time are available in the latest assessments.
 
 ## Indicator statistics 
 Spatial scale: Species-specific; depends on the extent of the managed stock. Can be regional (e.g., Gulf of America or Atlantic blacktip shark) or could be basin-wide (e.g., North Atlantic swordfish, Western Atlantic bluefin)
 
 Temporal scale: Stock status as of December 2025. Status is stock-specific with regards to temporal nature of thresholds, estimated rebuilding times, and data analyzed for stock assessments.
 
-**Synthesis Theme**:
-
-- [X] Regime Shifts
-
-
-```{r autostats_hms_stock_status}
-# Either from Contributor or ecodata
-```
-
-## Implications
-This summarizes information in the HMS SAFE Report, which itself is intended to provide a high-level summary of stock status information. Specific implications of stock status trends through time are available in the latest assessments.
-
-## Get the data
-
-**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::hms_stock_status`
-
 **Variable definitions**
-
-1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  2. Bmsy = biomass at maximum sustainable yield  
-3. Threshold = the threshold identified in respective assessments to indicate status (e.g., overfished, not overfished, overfishing is occurring, overfishing is not occurring) 
-4. Stock status,  5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
-6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  7. Stock = the name of the stock assessed  
-8. Last Assessment Year = the year in which the latest assessment was finalized  9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  
-10. Notes = additional information.  11. Shark Stock = the name of the stock assessed
 
 ```{r vars_hms_stock_status}
 # Pull all var names
@@ -78,19 +112,15 @@ vars <- ecodata::hms_stock_status |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
+**Point of contact**: Jennifer Cudney (jennifer.cudney@noaa.gov)
 
+**ecodata dataset**: `ecodata::hms_stock_status`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/hms_stock_status.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-None; this information is publicly available
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/hms_stock_status.html>
 

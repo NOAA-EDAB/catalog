@@ -1,21 +1,50 @@
 # Community Port Landings and Revenue from Wind Energy Areas (WEAs) {#wind_port}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Percent of port-level revenue from wind lease areas and Community Social Vulnerability Indicators
-
-**Indicator family**: 
-
-- [X] Social
-- [X] Economic
-
 
 **Contributor(s)**: Angela Silva, Doug Christel, Benjamin Galuardi, Nicole Morgan, Bobby Murphy, Abigail Tyrell
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Social
+- [X] Economic
+
+
+**Indicator Category**:
+
+- [x] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
+
+```{r download_wind_port}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::wind_port,
+output_name = 'wind_port',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 This indicator describes fishing revenue that can be attributed to areas leased for offshore wind development. The fishing footprint model ([@benjamin_visualizing_2018], [@depiper_statistically_2014]) is used to allocate trip-level revenue to wind lease areas. These trips are aggregated by port to determine the port-level revenue derived from wind lease areas. Further information is available on the [NOAA website](https://www.fisheries.noaa.gov/resource/data/socioeconomic-impacts-atlantic-offshore-wind-development). For this indicator, wind lease areas are assessed as two groups, leases under construction or fully developed, and leases where construction has not yet begun. This distinction has been added to better illustrate which ports may be subject to potential near-term impacts of offshore wind infrastructure.
 
@@ -34,51 +63,57 @@ Additionally, there are 4 New England ports that meet the reporting criteria whe
 
 The second set of figures shows ports where the majority of revenue within the wind lease areas was derived from species managed by the opposite regional Fisheries Management Council. The top figure shows the ports where the majority of the revenue within the wind lease areas that are under construction or operational is derived from species managed by the opposite region's Council. The bottom figure shows ports where the majority of the revenue from all wind lease areas is derived from species managed by the opposite region's Council. This analysis was conducted using only non-confidential revenues. This breakdown was produced in response to a request from the Councils to help them better understand the potential impacts of wind lease areas on Council-managed species.
 
+**Mid-Atlantic**
 ```{r plot_wind_portMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_port(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_wind_port(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_portMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England**
 ```{r plot_wind_portNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_port(report = 'NewEngland')
+ggplotObject <- ecodata::plot_wind_port(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_portNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Full Shelf, broken down into Mid-Atlantic and New England communities
-
-Temporal scale: 2008-2024
-
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-
-
-```{r autostats_wind_port}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 BOEM reports that cumulative offshore wind development (if all proposed projects are developed) could have moderate impacts on low-income members of socially vulnerable communities who work in the commercial fishing and for-hire fishing industry due to disruptions to fish populations, restrictions on navigation and increased vessel traffic as well as existing vulnerabilities of low-income workers to economic impacts [@boem_vineyard_2020]. Impacts of offshore wind development may unevenly affect individual operators, with permit-based revenue being much higher than the port-based mean for some permit holders.
 
 Offshore wind presents a new use of the ocean which is a permanent long term change compared to other stressors faced by the fishing industry that are mostly cyclical or temporary in nature (e.g., stock changes, temporary closures). The most immediate effect of offshore wind energy development is the loss of access to fishing grounds, which forces fishermen to adapt their decisions and businesses as a result of displacement of fishing effort. Displacement of effort often reduces profitability with increased fuel and labor costs or reduced catch per unit effort (CPUE) as new grounds may be less productive or see an increase in crowding. The heightened uncertainty around offshore wind may discourage new entrants or marginalize small-scale fisheries and communities which are often less resilient to displacement. The cascade of socioeconomic stressors can extend from the individual vessel operations to the supply chain, seafood support businesses, and the broader coastal communities. Applying standardized monitoring plans and methodologies would help identify realized impacts as the first projects undergo construction and operation.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Full Shelf, broken down into Mid-Atlantic and New England communities
 
-**Point of contact**: [Abby Tyrell (abigail.tyrell@noaa.gov)](mailto:Abby Tyrell (abigail.tyrell@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::wind_port`
+Temporal scale: 2008-2024
 
 **Variable definitions**
-
-perc_MIN: minimum percent of port revenue derived from wind lease areas perc_MAX: maximum percent of port revenue derived from wind lease areas 
-perc_AVG: average percent of port revenue derived from wind lease areas MaxVal: maximum amount of revenue derived from wind lease areas (2024$) 
-EJ: 1 = community scored Med-High or higher in at least one of the vulnerability indicators that address social vulnerability concerns (i.e., Poverty, Population Composition, Personal Disruption); 0 = community did not score Med-High or higher in at least one of the vulnerability indicators that address social vulnerability concerns 
-Gentrification: 1 = community scored Med-High or higher in one or more gentrification pressure indicators (i.e., Housing Disruption, Retiree Migration, Urban Sprawl); 0 = community did not score Med-High or higher in one or more gentrification pressure indicators 
-lease_status: 3 categories, whether the leases areas assessed were "All leases", "Leases, construction not in progress", or "Leases, construction in progress or complete"
 
 ```{r vars_wind_port}
 # Pull all var names
@@ -88,19 +123,15 @@ vars <- ecodata::wind_port |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Extensive analysis, not yet published
+**Point of contact**: Abby Tyrell (abigail.tyrell@noaa.gov)
 
+**ecodata dataset**: `ecodata::wind_port`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/wind_port.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/wind_port.html>
 

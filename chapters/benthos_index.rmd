@@ -1,20 +1,49 @@
 # Benthic Invertebrate Indices {#benthos_index}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Aggregate macrobenthos and megabenthos invertebrate indices from fish stomach contents
-
-**Indicator family**: 
-
-- [X] Lower trophic levels
-
 
 **Contributor(s)**: Maxwell Grezlik, Sarah Gaichas, James Gartland, Brian E. Smith, Sarah Weisberg, Sean Lucey
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Lower trophic levels
+
+
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_benthos_index}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::benthos_index,
+output_name = 'benthos_index',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 Benthic invertebrates provide supporting ecosystem services as important prey for many economically important fish species on the Northeast US shelf.  Changes to the benthic invertebrate forage base could have important implications for regional food webs. However, we lack direct measurements of benthic invertebrate biomass for most unexploited taxa. Spatially explicit indices of abundance for benthos groups were estimated using spatio-temporal modeling (VAST, @thorson_comparing_2017; @thorson_guidance_2019).
 
@@ -33,106 +62,177 @@ Variables plotted are seasonal (Fall or Spring) Macrobenthos or Megabenthos Biom
 
 Eastward and Northward components of the Center of Gravity, along with the Center of Gravity SE, are plotted for Fall and Spring Macrobenthos or Megabenthos Biomass.
 
+**Mid-Atlantic, Megabenthos, index**
 ```{r plot_benthos_indexMidAtlanticMegabenthosindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Megabenthos', plottype = 'index', n = 10)
+ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Megabenthos', plottype = 'index', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexMidAtlanticMegabenthosindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, Megabenthos, index**
 ```{r plot_benthos_indexNewEnglandMegabenthosindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Megabenthos', plottype = 'index', n = 10)
+ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Megabenthos', plottype = 'index', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexNewEnglandMegabenthosindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, Macrobenthos, index**
 ```{r plot_benthos_indexMidAtlanticMacrobenthosindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Macrobenthos', plottype = 'index', n = 10)
+ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Macrobenthos', plottype = 'index', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexMidAtlanticMacrobenthosindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, Macrobenthos, index**
 ```{r plot_benthos_indexNewEnglandMacrobenthosindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Macrobenthos', plottype = 'index', n = 10)
+ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Macrobenthos', plottype = 'index', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexNewEnglandMacrobenthosindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, Megabenthos, cog**
 ```{r plot_benthos_indexMidAtlanticMegabenthoscog}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Megabenthos', plottype = 'cog', n = 10)
+ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Megabenthos', plottype = 'cog', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexMidAtlanticMegabenthoscog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, Megabenthos, cog**
 ```{r plot_benthos_indexNewEnglandMegabenthoscog}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Megabenthos', plottype = 'cog', n = 10)
+ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Megabenthos', plottype = 'cog', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexNewEnglandMegabenthoscog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, Macrobenthos, cog**
 ```{r plot_benthos_indexMidAtlanticMacrobenthoscog}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Macrobenthos', plottype = 'cog', n = 10)
+ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Macrobenthos', plottype = 'cog', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexMidAtlanticMacrobenthoscog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England, Macrobenthos, cog**
 ```{r plot_benthos_indexNewEnglandMacrobenthoscog}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Macrobenthos', plottype = 'cog', n = 10)
+ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Macrobenthos', plottype = 'cog', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexNewEnglandMacrobenthoscog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: by EPU and full shelf
-
-Temporal scale: Spring (January-June), Fall (July-December)
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_benthos_index}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Macrobenthos indices show long term declines in spring in all EPUs. In contrast, Megabenthos indices show long term increases in fall in all EPUs. Megabenthos indices also show a recent trend in spring in GB.
 
 Center of gravity indicators show recent trends towards the east in spring for Megabenthos in all EPUs. Macrobenthos center of gravity shows a significant long term trend towards the west and south in spring over time. This is the opposite direction observed for aggregate forage fish and surveyed fish species in aggregate.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: by EPU and full shelf
 
-**Point of contact**: [Maxwell Grezlik (maxwell.grezlik@noaa.gov)](mailto:Maxwell Grezlik (maxwell.grezlik@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::benthos_index`
+Temporal scale: Spring (January-June), Fall (July-December)
 
 **Variable definitions**
-
-1. Spring Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 1-6, units relative grams per stomach 
-2. Spring Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 1-6, units relative grams per stomach 
-3. Fall Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
-4. Fall Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
-5. Fall Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 7-12, units kilometers 
-6. Fall Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 7-12, units kilometers 
-7. Fall Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 7-12, units kilometers 
-8. Fall Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 7-12, units kilometers 
-9. Spring Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 1-6, units kilometers 
-10. Spring Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 1-6, units kilometers 
-11. Spring Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 1-6, units kilometers 
-12. Spring Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 1-6, units kilometers 
-13. Spring Megabenthos Biomass Estimate = aggregate megabenthos biomass months 1-6, units relative grams per stomach 
-14. Spring Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 1-6, units relative grams per stomach 
-15. Fall Megabenthos Biomass Estimate = aggregate megabenthos biomass months 7-12, units relative grams per stomach 
-16. Fall Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 7-12, units relative grams per stomach 
-17. Fall Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 7-12, units kilometers 
-18. Fall Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 7-12, units kilometers 
-19. Fall Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 7-12, units kilometers 
-20. Fall Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 7-12, units kilometers 
-21. Spring Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 1-6, units kilometers 
-22. Spring Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 1-6, units kilometers 
-23. Spring Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 1-6, units kilometers 
-24. Spring Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 1-6, units kilometers
 
 ```{r vars_benthos_index}
 # Pull all var names
@@ -142,21 +242,17 @@ vars <- ecodata::benthos_index |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: Maxwell Grezlik (maxwell.grezlik@noaa.gov)
 
+**ecodata dataset**: `ecodata::benthos_index`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/benthos_index.html>
+
+### Public Availability
 
 Source data are publicly available.
 Initial model development (used in the SOE published in 2023-2025) is available at: https://github.com/NOAA-EDAB/benthos_index.html
 Code for data updates (used in the SOE published in 2026-present) is available at: https://github.com/NEFSC/READ-EDAB-VAST_indices/tree/main/benthos
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/benthos_index.html>
 

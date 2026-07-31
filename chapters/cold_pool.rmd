@@ -1,20 +1,50 @@
 # Cold Pool Index {#cold_pool}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Three annual cold pool indices (and standard error) for 1959 through 2024
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Joe Caracappa, Vincent Saba, Zhuomin Chen
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Syntheses of published information
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_cold_pool}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::cold_pool,
+output_name = 'cold_pool',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 The cold pool is seasonal feature in the Mid-Atlantic Bight that is defined by it's low temperature (< 10 deg C), relative freshness ( < 34 psu), and moderate depth (20 -200m). It is typically present between June and September. Cold pool dynamics can influence the recruitment and settlement of fish species. This indicator set shows the intensity, extent, and persistence of the cold pool each year based on gridded model and reanalysis products.
 
@@ -23,56 +53,77 @@ Changes in ocean temperature and circulation alter habitat features such as the 
 ## Key Results and Visualizations
 Time series plots of the three cold pool indices. Cold pool index shows the mean temperature within the cold pool where positive values indicate a warming cold pool. Cold pool extent shows the change in maximum area relative to the historical mean, where negative values indicate a shrinking cold pool. Cold pool persistence measures the duration of the cold pool relative to the historical mean. Negative values indicate a shorter duration. In general the cold pool has been getting warmer, has persisted for a shorter duration, and has covered a smaller footprint since the 1960s.
 
+**Mid-Atlantic, cold_pool**
 ```{r plot_cold_poolMidAtlanticcold_pool}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'cold_pool', n = 10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'cold_pool', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'cold_poolMidAtlanticcold_pool',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, persistence**
 ```{r plot_cold_poolMidAtlanticpersistence}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'persistence', n = 10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'persistence', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'cold_poolMidAtlanticpersistence',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic, extent**
 ```{r plot_cold_poolMidAtlanticextent}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'extent', n = 10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'extent', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'cold_poolMidAtlanticextent',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: MAB
-
-Temporal scale: annual
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_cold_pool}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Changes in cold pool indicators can be signs of changes in regional/seasonal oceanographic patterns. This may impact the recruitment and behavior of species dependent on the cold pool.
 
 Changes in the cold pool habitat can affect species distribution, recruitment, and migration timing for multiple federally managed species. Southern New England-Mid Atlantic yellowtail flounder recruitment and settlement are related to the strength of the cold pool [@miller_state-space_2016]. The settlement of pre-recruits during the cold pool event represents a bottleneck in yellowtail life history, during which a local and temporary increase in bottom temperature negatively impacts the survival of the settlers. Including the effect of cold pool variations on yellowtail recruitment reduced retrospective patterns and improved the skill of short-term forecasts in a stock assessment model [@dupontavice_ocean_2022; @miller_state-space_2016]. The cold pool also provides habitat for the ocean quahog [@powell_ocean_2020; @friedland_middle_2022]. Growth rates of ocean quahogs in the MAB (southern portion of their range) have increased over the last 200 years whereas little to no change has been documented in the northern portion of their range in southern New England, likely a response to a warming and shrinking cold pool [@pace_two-hundred_2018].
 
-## Get the data
+## Indicator statistics 
+Spatial scale: MAB
 
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
-
-**ecodata name**: `ecodata::cold_pool`
+Temporal scale: annual
 
 **Variable definitions**
-
-1) Source: ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-2) year 3) cold_pool_index: measure of mean temperature within cold pool 4) se_cold_pool_index: standard error of cold_pool_index 
-5) persistence_index: measure of duration of cold pool 6) se_persistence_index: standard error of persistence_index 
-7) extent_index: measure of spatial extent of cold pool 8) se_extent_index: standard error of extent_index
 
 ```{r vars_cold_pool}
 # Pull all var names
@@ -82,20 +133,15 @@ vars <- ecodata::cold_pool |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Syntheses of published information
+**Point of contact**: joseph.caracappa@noaa.gov
 
+**ecodata dataset**: `ecodata::cold_pool`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/cold_pool.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/cold_pool.html>
 

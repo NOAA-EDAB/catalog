@@ -1,20 +1,49 @@
 # Atlantic Highly Migratory Species Pelagic Observer Program CPUE {#hms_cpue}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: CPUE from pelagic observer program (POP) observed hauls, presented as number of fish per haul, by year and species from 1992-2024.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Tobey Curtis, Daniel Daye, Jennifer Cudney
 
 **Affiliations**: HMS
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Regime Shifts
+
+
+```{r download_hms_cpue}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::hms_cpue,
+output_name = 'hms_cpue',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 The Pelagic Observer Program (POP) is operated out of the Southeast Fisheries Science Center, but provides observers in all regions (including the high seas) where U.S. flagged and HMS-permitted vessels fish under regulations for the HMS pelagic longline fishery. Data from the POP is collected during trips on pelagic longline vessels that are generally targeting swordfish, and yellowfin and bigeye tunas. Once a set is retrieved, information like the length, dressed weight, sex, and tag number of each individual fish is recorded by trained observers. Between 2018 and 2022, observer coverage for the entire pelagic longline fleet (i.e., from Maine to Texas, and the U.S. Caribbean and high seas) ranged from 9 to 13 percent of total overall reported sets.
 
@@ -23,58 +52,95 @@ POP CPUE data are reported by pelagic observer program for  reporting areas (See
 
 Updates from previous year: An additional year of data (2024) has been added. Blackfin tuna is not managed under the HMS FMP and has been removed from this year’s analyses.  The supplied graphs also correct the y-axis titles and only display CPUE data. Dusky and Oceanic Whitetip shark were previously listed as being part of the “Pelagic” management group - this is incorrect and they have been reclassified as part of the “Prohibited” shark group.
 
+**shark, Mid-Atlantic**
 ```{r plot_hms_cpuesharkMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_cpuesharkMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**tuna, Mid-Atlantic**
 ```{r plot_hms_cpuetunaMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_cpuetunaMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**shark, New England**
 ```{r plot_hms_cpuesharkNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'NewEngland')
+ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_cpuesharkNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**tuna, New England**
 ```{r plot_hms_cpuetunaNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'NewEngland')
+ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_cpuetunaNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+Pelagic observer data summarizes catch per unit effort information for a subset of total pelagic longline effort in the U.S. EEZ, and should not be interpreted as a census of total  interactions for the northeast region pelagic longline fleet. CPUE trends can be used to evaluate whether the observed catch rate has changed through time. We do not recommend using count data to depict changes through time, as this is not a census of total interactions with the pelagic longline fleet and would likely underestimate pelagic longline interactions occurring in the region.
 
 ## Indicator statistics 
 Spatial scale: Northeast region (shelf + high seas). Data contributions cover both the Northeast Coastal (NEC) and Mid-Atlantic Bight (MAB) pelagic longline reporting areas. Data for the two areas are combined.
 
 Temporal scale: Annually; data spans from 1992-2024
 
-**Synthesis Theme**:
-
-- [X] Regime Shifts
-
-
-```{r autostats_hms_cpue}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Pelagic observer data summarizes catch per unit effort information for a subset of total pelagic longline effort in the U.S. EEZ, and should not be interpreted as a census of total  interactions for the northeast region pelagic longline fleet. CPUE trends can be used to evaluate whether the observed catch rate has changed through time. We do not recommend using count data to depict changes through time, as this is not a census of total interactions with the pelagic longline fleet and would likely underestimate pelagic longline interactions occurring in the region.
-
-## Get the data
-
-**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::hms_cpue`
-
 **Variable definitions**
-
-1) Year: year in which observations were made. 
-2) CPUE per species or management group; total # fish caught / total # hauls; Includes Large Coastal Shark, Small Coastal Shark, Pelagic Shark, Prohibited Shark, Blue Marlin (BUM), Swordfish (SWO), White Marlin (WHM), Sailfish (SAI), Albacore Tuna (ALB), Skipjack Tuna (SKJ), Bigeye Tuna (BET), Bluefin Tuna (BFT), and Yellowfin Tuna (YFT).
 
 ```{r vars_hms_cpue}
 # Pull all var names
@@ -84,19 +150,19 @@ vars <- ecodata::hms_cpue |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull with analysis
+**Point of contact**: Jennifer Cudney (jennifer.cudney@noaa.gov)
 
+**ecodata dataset**: `ecodata::hms_cpue`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/hms_cpue.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Pelagic observer data is considered confidential data, and must be screened to ensure that data meet requirements for "rule of three" at the set and vessel level before they can be distributed. For more information regarding the dataset please see the SEFSC POP InPort catalog entry. For data requests contact popobserver@noaa.gov
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/hms_cpue.html>
 

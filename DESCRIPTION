@@ -4,12 +4,13 @@ Title: Northeast US Ecosystem Indicator Catalog
 Description: Catalog containing indicator used in the State of the Ecosystem Report and Beyond...
 Authors@R: c(person("Brandon", "Beltz", email = "brandon.beltz@noaa.gov", role = c("cre", "aut")),
              person("Andy", "Beet", email = "andrew.beet@noaa.gov", role = "aut"))
-Version: 3.0.0
+Version: 4.0.0
 License: file LICENSE
 Depends: 
   bookdown, 
   rmarkdown,
   tidyverse,
+  downloadthis,
   DT,
   ecodata
 Suggests:

@@ -1,106 +1,226 @@
 # Fishery Impacts from Offshore Wind Development {#wind_revenue}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The data presented here are annual fishery landings and ex-vessel revenues of species managed by the New England and Mid-Atlantic Fishery Management Councils by vessels issued a NMFS Greater Atlantic Regional Fisheries Office permit when fishing in offshore wind projects that are operational or currently under construction (Coastal Virginia Offshore Wind, Sunrise Wind, Revolution Wind, Vineyard Wind 1, South Fork Wind, and Empire Wind).
-
-**Indicator family**: 
-
-- [X] Social
-- [X] Economic
-
 
 **Contributor(s)**: Douglas Christel, Benjamin Galuardi
 
 **Affiliations**: GARFO
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Historic fishery landings and revenue from trips that occurred within operational offshore wind projects and those under construction may be displaced and future fishing effort, landings, and revenue may change (increase or decrease) due to the presence of structures, construction and maintenance operations, and changes to species composition and distribution affected by project infrastructure and operations.  These data highlight the scale and potential fisheries, gear types, and ports that may be affected by changes to historic fishing patterns as a result of offshore wind projects.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Figures illustrate annual fishery landings and revenue trends from trips operating within operational wind projects and those currently under construction along with the proportion of annual regional fishery landings and revenue that has historically been harvested from within these projects.
-
-```{r plot_wind_revenuelandingMidAtlanticfacets}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'facets', n = 10)
-ggplotObject
-```
-
-```{r plot_wind_revenuevalueMidAtlanticfacets}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'facets', n = 10)
-ggplotObject
-```
-
-```{r plot_wind_revenuelandingNewEnglandfacets}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'facets', n = 10)
-ggplotObject
-```
-
-```{r plot_wind_revenuevalueNewEnglandfacets}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'facets', n = 10)
-ggplotObject
-```
-
-```{r plot_wind_revenuelandingMidAtlanticnofacets}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'nofacets', n = 10)
-ggplotObject
-```
-
-```{r plot_wind_revenuevalueMidAtlanticnofacets}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'nofacets', n = 10)
-ggplotObject
-```
-
-```{r plot_wind_revenuelandingNewEnglandnofacets}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'nofacets', n = 10)
-ggplotObject
-```
-
-```{r plot_wind_revenuevalueNewEnglandnofacets}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'nofacets', n = 10)
-ggplotObject
-```
+- [X] Social
+- [X] Economic
 
 
-## Indicator statistics 
-Spatial scale: Offshore wind lease areas throughout the Exclusive Economic Zone from Maine through North Carolina
+**Indicator Category**:
 
-Temporal scale: Annual from 2008-2024
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_wind_revenue}
-# Either from Contributor or ecodata
+```{r download_wind_revenue}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::wind_revenue,
+output_name = 'wind_revenue',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Historic fishery landings and revenue from trips that occurred within operational offshore wind projects and those under construction may be displaced and future fishing effort, landings, and revenue may change (increase or decrease) due to the presence of structures, construction and maintenance operations, and changes to species composition and distribution affected by project infrastructure and operations.  These data highlight the scale and potential fisheries, gear types, and ports that may be affected by changes to historic fishing patterns as a result of offshore wind projects.
+
+## Key Results and Visualizations
+Figures illustrate annual fishery landings and revenue trends from trips operating within operational wind projects and those currently under construction along with the proportion of annual regional fishery landings and revenue that has historically been harvested from within these projects.
+
+**landing, Mid-Atlantic, facets**
+```{r plot_wind_revenuelandingMidAtlanticfacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'facets', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuelandingMidAtlanticfacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**value, Mid-Atlantic, facets**
+```{r plot_wind_revenuevalueMidAtlanticfacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'facets', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuevalueMidAtlanticfacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**landing, New England, facets**
+```{r plot_wind_revenuelandingNewEnglandfacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'facets', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuelandingNewEnglandfacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**value, New England, facets**
+```{r plot_wind_revenuevalueNewEnglandfacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'facets', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuevalueNewEnglandfacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**landing, Mid-Atlantic, nofacets**
+```{r plot_wind_revenuelandingMidAtlanticnofacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'nofacets', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuelandingMidAtlanticnofacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**value, Mid-Atlantic, nofacets**
+```{r plot_wind_revenuevalueMidAtlanticnofacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'nofacets', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuevalueMidAtlanticnofacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**landing, New England, nofacets**
+```{r plot_wind_revenuelandingNewEnglandnofacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'nofacets', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuelandingNewEnglandnofacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**value, New England, nofacets**
+```{r plot_wind_revenuevalueNewEnglandnofacets}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'nofacets', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuevalueNewEnglandnofacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 The figures generally depict periodic fluctuations in fishery landings and revenue from withing active offshore wind projects with both parameters generally decreasing over time for most species. Fishery landings and revenue within active offshore wind projects represent a very low proportion of regional fishery landings and revenue for managed species, suggesting that fishery impacts may not be substantial and that effort displacement outside of active offshore wind project areas may not substantially affect fishing operations or resources in other areas.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Offshore wind lease areas throughout the Exclusive Economic Zone from Maine through North Carolina
 
-**Point of contact**: [Douglas Christel (douglas.christel@noaa.gov)](mailto:Douglas Christel (douglas.christel@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::wind_revenue`
+Temporal scale: Annual from 2008-2024
 
 **Variable definitions**
-
-1) Managed species; Definition: Fishery species managed by the New England and Mid-Atlantic Fishery Management Councils or the Atlantic States Marine Fisheries Commission 
-2) Year; Definition: Calendar year in which fishery landings occurred  3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 
-4) Revenue; Definition: Total amount paid to the vessel for each species landed; Units: 2022 dollars 
-5) Percent GARFO Landings; Definition: Proportion of landings of each managed species from within existing/proposed offshore wind lease areas relative to the total landings of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage 
-6) Percent GARFO Revenue; Definition: Proportion of revenue of each managed species from within existing/proposed offshore wind lease areas relative to the total revenue of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage
 
 ```{r vars_wind_revenue}
 # Pull all var names
@@ -110,20 +230,19 @@ vars <- ecodata::wind_revenue |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+**Point of contact**: Douglas Christel (douglas.christel@noaa.gov)
 
+**ecodata dataset**: `ecodata::wind_revenue`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/wind_revenue.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Please email douglas.christel@noaa.gov for further information or request supporting data from nmfs.gar.data.requests@noaa.gov.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/wind_revenue.html>
 

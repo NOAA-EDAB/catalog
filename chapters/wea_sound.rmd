@@ -1,45 +1,61 @@
 # Ambient Sounds Levels in the NE {#wea_sound}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+<a href="https://noaa-edab.github.io/catalog/page_status.html#under-construction" class="btn btn-warning button_small"><i class="fas fa-hard-hat"></i> Under Construction</a>
+
+*Last updated July 24, 2026*
+
 **Description**: Passive acoustic monitoring (PAM) simultaneously captures the biological, anthropogenic, climatological, and geological sounds occurring in an area. PAM provides continuous sampling effort in areas that are otherwise difficult to access, resulting in long-term, robust datasets. Ambient sound (soundscape) metrics show the distribution of acoustic energy across frequencies. Peaks in sound levels within particular frequency bins indicate louder sounds at those frequencies, with frequencies below 1000 Hz typically representing contributions from baleen whales, vessel traffic, and noise-generating fishes. Therefore, soundscapes can be used as an indicator of ecosystem health and to identify changes to sound sources, which could be indicative of changes in phenology, species distributions, storm activity, and human activity.
-
-**Indicator family**: 
-
-- [x] Oceanographic
-- [x] Habitat
-
 
 **Contributor(s)**: Renea Briner, Amanda Holdman, Genevieve Davis, Rhett Finley, Sophie Ferguson, Leila Hatch, Samara Haver, Jessica McCordic, Xavier Mouy, Anita Murray, Maricarmen Serna, Anne Smith, Erin Summers, Lindsey Transue, Christopher Tremblay, Annabel Westell, Rebecca Vanhoeck,  Sofie Van Parijs, Isabella Garfield, Joel Bell, Amy Engelhaupt
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-This indicator examines hybrid millidecade sound pressure levels. In the Gulf of Maine, data were collected across four and a half years (2020-2024) and nine recording sites. In the Mid-Atlantic Bight, data were collected across two years (2022-2024) and nine recording sites. The metrics allow for an improved understanding of the dominant sound sources and whether these sound sources exhibited spatial or seasonal patterns in their activity within the region. A full description is in preparation for publication.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-This figure summarizes hybrid millidecade sound pressure levels throughout the Gulf of Maine, derived from data collected across four and a half years (2020-2024) and nine recording sites.
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_ambient_sound_GOM.png){width=100%}
-
-This figure summarizes hybrid millidecade sound pressure levels throughout the Mid-Atlantic Bight, derived from data collected across two years (2022-2024) and nine recording sites.
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_ambient_sound_MAB.png){width=100%}
+- [x] Oceanographic
+- [x] Habitat
 
 
-## Indicator statistics 
-Spatial scale: Hybrid millidecade metrics are provided for nine sites throughout the Gulf of Maine. Sites broadly cluster into three subregions: coastal Gulf of Maine (Lubec, MDR, Monhegan, Portland, and York), Stellwagen Bank National Marine Sanctuary (SB03), and the edge of George’s Bank in the offshore Gulf of Maine (USTR01, USTR03, and USTR11). Hybrid millidecade metrics are provided for nine sites throughout the Mid-Atlantic Bight. The southernmost recorders were located off the mouth of the Chesapeake Bay and the northernmost recorders were located off the mouth of the Delaware Bay. Recorders were arranged in transects spanning the continental shelf, with inshore sites ending in “01” and offshore sites in “03”.
+**Indicator Category**:
 
-Temporal scale: In the Gulf of Maine, acoustic data were summarized from a four-and-a-half-year continuous sampling period spanning January 2020 to July 2024. In the Mid-Atlantic Bight, acoustic data were summarized from a two-year continuous sampling period spanning June 2022 to November 2024.
+- [x] Extensive analysis, not yet published
+
 
 **Synthesis Theme**:
 
 - [x] Multiple System Drivers
 
 
-```{r autostats_wea_sound}
-# Either from Contributor or ecodata
+```{r download_wea_sound}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::wea_sound,
+output_name = 'wea_sound',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+This indicator examines hybrid millidecade sound pressure levels. In the Gulf of Maine, data were collected across four and a half years (2020-2024) and nine recording sites. In the Mid-Atlantic Bight, data were collected across two years (2022-2024) and nine recording sites. The metrics allow for an improved understanding of the dominant sound sources and whether these sound sources exhibited spatial or seasonal patterns in their activity within the region. A full description is in preparation for publication.
+
+## Key Results and Visualizations
+This figure summarizes hybrid millidecade sound pressure levels throughout the Gulf of Maine, derived from data collected across four and a half years (2020-2024) and nine recording sites.
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_ambient_sound_GOM.png){width=100%}
+
+This figure summarizes hybrid millidecade sound pressure levels throughout the Mid-Atlantic Bight, derived from data collected across two years (2022-2024) and nine recording sites.
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_ambient_sound_MAB.png){width=100%}
 
 ## Implications
 Gulf of Maine
@@ -50,15 +66,12 @@ Mid-Atlantic Bight
 
 Ambient sound metrics show that the Mid-Atlantic Bight is an important habitat for numerous soniferous fish populations, as the dominant sound source in the region is fish choruses. The contributions of fish choruses varied spatially and temporally, with the highest chorus sound levels recorded at the three inshore sites (i.e. DB01, ES01, and CB01) throughout the summer and into fall, with at least three choruses observed. Each chorus peaked in distinct octave level (OL) bands, occupying the 500, 1000, and 2000 Hz OLs most significantly.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Hybrid millidecade metrics are provided for nine sites throughout the Gulf of Maine. Sites broadly cluster into three subregions: coastal Gulf of Maine (Lubec, MDR, Monhegan, Portland, and York), Stellwagen Bank National Marine Sanctuary (SB03), and the edge of George’s Bank in the offshore Gulf of Maine (USTR01, USTR03, and USTR11). Hybrid millidecade metrics are provided for nine sites throughout the Mid-Atlantic Bight. The southernmost recorders were located off the mouth of the Chesapeake Bay and the northernmost recorders were located off the mouth of the Delaware Bay. Recorders were arranged in transects spanning the continental shelf, with inshore sites ending in “01” and offshore sites in “03”.
 
-**Point of contact**: [Renea Briner (renea.briner@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)](mailto:Renea Briner (renea.briner@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::wea_sound`
+Temporal scale: In the Gulf of Maine, acoustic data were summarized from a four-and-a-half-year continuous sampling period spanning January 2020 to July 2024. In the Mid-Atlantic Bight, acoustic data were summarized from a two-year continuous sampling period spanning June 2022 to November 2024.
 
 **Variable definitions**
-
-Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1.
 
 ```{r vars_wea_sound}
 # Pull all var names
@@ -68,19 +81,15 @@ vars <- ecodata::wea_sound |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Extensive analysis, not yet published
+**Point of contact**: Renea Briner (renea.briner@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)
 
+**ecodata dataset**: `ecodata::wea_sound`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/wea_sound.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/wea_sound.html>
 

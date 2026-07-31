@@ -1,20 +1,52 @@
 # Zooplankton Abundance Anomalies - Principal Components {#zoo_community}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis.
-
-**Indicator family**: 
-
-- [x] Lower trophic levels
-
 
 **Contributor(s)**: Ryan Morse, Harvey Walsh
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [x] Lower trophic levels
+
+
+**Indicator Category**:
+
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
+
+
+```{r download_zoo_community}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::zoo_community,
+output_name = 'zoo_community',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 Principal component analysis (PCA) is a technique used to reduce complexity in ecological data. We ran a PCA on the annual abundance anomalies of the dominant zooplankton taxa for each EPU and for the Northeast Shelf as a whole. The abundance anomalies were calculated similarly to Kane (@kane_zooplankton_2007) by first log transforming the zooplankton abundance data and  then estimating a daily expected abundance value for each taxa using an annual spline based on all years of data. To determine the abundance anomalies, the expected abundance value on the day the sample was collected was subtracted from the observed abundance value for each taxa for each EPU. These values were aggregated by EPU and year. The PCA scores from the first and second principal components of the annual abundance anomalies area shown in these figures. PCA scores range from positive to negative values. However, there is no distinct or implied meaning of either 'positive' or 'negative' values. Instead, when plotted as a time series and the series crosses the horizontal axis Y=0 line, this may represent an implied change in state. Major changes in zooplankton community composition, sometime referred to as regime shifts, may be represented by a change in the state of the PCA series.
 
@@ -339,47 +371,55 @@ pseudo_100m3 | 0.25 |   | mlucens_100m3 | 0.40
 
 </html>
 
+**Mid-Atlantic**
 ```{r plot_zoo_communityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_community(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_zoo_community(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zoo_communityMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**New England**
 ```{r plot_zoo_communityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_community(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_zoo_community(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zoo_communityNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+The recent switch in state of PC1 in the GOM and GB may indicate a restructuring of the zooplankton community is underway. These changes may be driven partly by changes in the abundance of Calanus finmarchicus, Centropages typicus, Psuedocalanus spp., and other taxa.
 
 ## Indicator statistics 
 Spatial scale: by EPU and full Northeast Shelf
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-- [x] Regime Shifts
-- [x] Ecosystem Reorganization
-
-
-```{r autostats_zoo_community}
-# Either from Contributor or ecodata
-```
-
-## Implications
-The recent switch in state of PC1 in the GOM and GB may indicate a restructuring of the zooplankton community is underway. These changes may be driven partly by changes in the abundance of Calanus finmarchicus, Centropages typicus, Psuedocalanus spp., and other taxa.
-
-## Get the data
-
-**Point of contact**: [Ryan Morse ryan.morse@noaa.gov](mailto:Ryan Morse ryan.morse@noaa.gov){.email}
-
-**ecodata name**: `ecodata::zoo_community`
-
 **Variable definitions**
-
-1) Name: Comp.1; Definition: Principal Component 1 score; Units: unitless. 2)  Name: Comp.2; Definition: Principal Component 2 score; Units: unitless.
 
 ```{r vars_zoo_community}
 # Pull all var names
@@ -389,20 +429,15 @@ vars <- ecodata::zoo_community |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Published Methods
-- [x] Extensive analysis, not yet published
+**Point of contact**: Ryan Morse ryan.morse@noaa.gov
 
+**ecodata dataset**: `ecodata::zoo_community`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/zoo_community.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/zoo_community.html>
 

@@ -1,56 +1,28 @@
 # Expected Number of Species {#exp_n}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Diversity metric from the Northeast Fisheries Science Center (NEFSC) Bottom Trawl Surveys.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Diversity estimates have been developed to understand whether the overall structure of the ecosystem has remained stable or is changing. There are a large number of diversity indices that can be used to measure diversity; for the purposes of the State of the Ecosystem report we report on the expected number of species in a sample size (E(S<sub>n</sub>)).  These “rarefied” samples allow for comparisons between sample sites with varying number of species present. The estimate of (E(S<sub>n</sub>) is less biased than other diversity indices which usually increase with sample size. It also has a more meaningful biological interpretation than other indices. For example, if a predator eats 10 random individuals,  
-E(S<sub>n</sub>) will predict the number of species consumed.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas. There is an apparent trend in the data from the Albatross time period in the Gulf of Maine. There is a declining trend in the Mid-Atlantic data from the spring Bigelow period.
-
-```{r plot_exp_nfallMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'MidAtlantic', n = 10)
-ggplotObject
-```
-
-```{r plot_exp_nspringMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'MidAtlantic', n = 10)
-ggplotObject
-```
-
-```{r plot_exp_nfallNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'NewEngland', n = 10)
-ggplotObject
-```
-
-```{r plot_exp_nspringNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'NewEngland', n = 10)
-ggplotObject
-```
+- [X] Megafauna
 
 
-## Indicator statistics 
-Spatial scale: By EPU
+**Indicator Category**:
 
-Temporal scale: Spring (March-May) and Fall (September-November)
+- [X] Database pull with analysis
+
 
 **Synthesis Theme**:
 
@@ -59,23 +31,117 @@ Temporal scale: Spring (March-May) and Fall (September-November)
 - [X] Ecosystem Reorganization
 
 
-```{r autostats_exp_n}
-# Either from Contributor or ecodata
+```{r download_exp_n}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::exp_n,
+output_name = 'exp_n',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Diversity estimates have been developed to understand whether the overall structure of the ecosystem has remained stable or is changing. There are a large number of diversity indices that can be used to measure diversity; for the purposes of the State of the Ecosystem report we report on the expected number of species in a sample size (E(S<sub>n</sub>)).  These “rarefied” samples allow for comparisons between sample sites with varying number of species present. The estimate of (E(S<sub>n</sub>) is less biased than other diversity indices which usually increase with sample size. It also has a more meaningful biological interpretation than other indices. For example, if a predator eats 10 random individuals,  
+E(S<sub>n</sub>) will predict the number of species consumed.
+
+## Key Results and Visualizations
+Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas. There is an apparent trend in the data from the Albatross time period in the Gulf of Maine. There is a declining trend in the Mid-Atlantic data from the spring Bigelow period.
+
+**fall, Mid-Atlantic**
+```{r plot_exp_nfallMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'exp_nfallMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**spring, Mid-Atlantic**
+```{r plot_exp_nspringMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'exp_nspringMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**fall, New England**
+```{r plot_exp_nfallNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'exp_nfallNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**spring, New England**
+```{r plot_exp_nspringNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'exp_nspringNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 Diversity is used as a proxy for stability. Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management [@friedland_changes_2020]. This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse. Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored. Recent declining adult diversity in the Mid-Atlantic should also be closely monitored for management implications.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: By EPU
 
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::exp_n`
+Temporal scale: Spring (March-May) and Fall (September-November)
 
 **Variable definitions**
-
-1) Name: Season Region Expected Number of Species - Vessel; Definition: The expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species - Albatross"; Units: n species per 1000 ind.  
-2) Name: Season Region Expected Number of Species Standard Deviation - Vessel; Definition: The variance around the expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species Standard Deviation - Albatross"; Units: n species per 1000 ind.
 
 ```{r vars_exp_n}
 # Pull all var names
@@ -85,19 +151,15 @@ vars <- ecodata::exp_n |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull with analysis
+**Point of contact**: EDAB, edab.data@noaa.gov
 
+**ecodata dataset**: `ecodata::exp_n`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/exp_n.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/exp_n.html>
 

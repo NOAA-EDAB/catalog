@@ -1,33 +1,28 @@
-
-# [Northeast US Ecosystem Indicator Catalog](https://noaa-edab.github.io/catalog/)
+# Northeast US Ecosystem Indicator Catalog
 
 [![build-book](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml)
 [![gitleaks](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml)
 [![Run PR Checks](https://github.com/NOAA-EDAB/catalog/actions/workflows/verify_pr.yml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/verify_pr.yml)
 
-Catalog of indicators used in the State of the Ecosystem reports and
-other ecosystem assessment products.
+## Overview
 
-This book is in development.
+The [Northeast US Ecosystem Indicator Catalog](https://noaa-edab.github.io/catalog/), often shortened to "Catalog", is a bookdown document developed by the Ecosystem Dynamics and Assessment Branch of the Northeast Fisheries Science Center which details the ecological context of the indicators featured in State of the Ecosystem (SOE) reporting. When paired with the [SOE Technical Documentation, "tech-doc"](https://noaa-edab.github.io/tech-doc/), this document provides the most comprehensive information available for the SOE indicators featured in the [`ecodata` package](https://noaa-edab.github.io/ecodata/). Catalog is frequently referenced in the SOE reports, which can be accessed using the table below:
 
-## Contact
+| Year | State of the Ecosystem: New England | State of the Ecosystem: Mid-Atlantic |
+|------|-------------------------------------|--------------------------------------|
+| 2020 | [State of the Ecosystem 2020: New England](https://doi.org/10.25923/4tdk-eg57) | [State of the Ecosystem 2020: Mid-Atlantic](https://doi.org/10.25923/1f8j-d564) |
+| 2021 | [State of the Ecosystem 2021: New England](https://doi.org/10.25923/6pww-mw45) | [State of the Ecosystem 2021: Mid-Atlantic](https://doi.org/10.25923/jd1w-dc26) |
+| 2022 | [State of the Ecosystem 2022: New England](https://doi.org/10.25923/ypv2-mw79) | [State of the Ecosystem 2022: Mid-Atlantic](https://doi.org/10.25923/5s5y-0h81) |
+| 2023 | [State of the Ecosystem 2023: New England](https://doi.org/10.25923/9sb9-nj66) | [State of the Ecosystem 2023: Mid-Atlantic](https://doi.org/10.25923/vy6j-w454) |
+| 2024 | [State of the Ecosystem 2024: New England](https://doi.org/10.25923/f8xc-hj17) | [State of the Ecosystem 2024: Mid-Atlantic](https://doi.org/10.25923/vz5a-d111) |
+| 2025 | [State of the Ecosystem 2025: New England](https://doi.org/10.25923/zr75-a788) | [State of the Ecosystem 2025: Mid-Atlantic](https://doi.org/10.25923/23nx-qf59) |
 
-| [Brandon-Beltz](https://github.com/BBeltz1)
-|--------------------------------
-| [![](https://avatars.githubusercontent.com/u/136381970?s=100&u=b65aaafd27d4c925988755e61e497e2e7d573622&v=4)](https://github.com/BBeltz1) |
+## Maintainers
 
-#### Legal disclaimer
+| [Brandon Beltz](https://github.com/BBeltz1) | [Andy Beet](https://github.com/andybeet) |
+|----|----| 
+| <a href="https://github.com/BBeltz1"><img src="https://avatars.githubusercontent.com/u/136381970?v=4" alt="Brandon Beltz avatar" width="100" align="center"></a> | <a href="https://github.com/andybeet"><img src="https://avatars.githubusercontent.com/u/22455149?v=4" alt="Andy Beet avatar" width="100" align="center"></a> |
 
-*This repository is a scientific product and is not official
-communication of the National Oceanic and Atmospheric Administration, or
-the United States Department of Commerce. All NOAA GitHub project code
-is provided on an 'as is' basis and the user assumes responsibility for
-its use. Any claims against the Department of Commerce or Department of
-Commerce bureaus stemming from the use of this GitHub project will be
-governed by all applicable Federal law. Any reference to specific
-commercial products, processes, or services by service mark, trademark,
-manufacturer, or otherwise, does not constitute or imply their
-endorsement, recommendation or favoring by the Department of Commerce.
-The Department of Commerce seal and logo, or the seal and logo of a DOC
-bureau, shall not be used in any manner to imply endorsement of any
-commercial product or activity by DOC or the United States Government.*
+## Legal Disclaimer
+
+This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an 'as is' basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.

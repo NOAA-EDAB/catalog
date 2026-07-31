@@ -118,6 +118,7 @@ rmd_files:
 # #################### RESOURCES ##################
     -   "chapters/sectionHeaders/resources.rmd"
     -   "chapters/glossary.Rmd"
+    -   "chapters/page_status.rmd"
     -   "chapters/changelog.rmd"
     -   "chapters/references.Rmd"
 before_chapter_script: _common.R

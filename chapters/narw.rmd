@@ -1,20 +1,50 @@
 # Right Whale Abundance {#narw}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The data presented here are time series of the North Atlantic right whale population abundance estimates and calf abundance estimates.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Daniel Linden; Richard Pace; New England Aquarium
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
+
+```{r download_narw}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::narw,
+output_name = 'narw',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 Endangered North Atlantic right whales are approaching extinction.
 The latest population estimate for the beginning of 2024 indicates there were approximately 384 individuals remaining.
@@ -38,45 +68,85 @@ Since 2017, the total UME right whale mortalities includes 41 dead stranded whal
 Recent research suggests that many mortalities go unobserved and the true number of mortalities are about three times the count of the observed mortalities [@pace_cryptic_2021].
 The primary cause of death is "human interaction" from entanglements or vessel strikes.
 
+**adult, Mid-Atlantic**
 ```{r plot_narwadultMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'narwadultMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**calf, Mid-Atlantic**
 ```{r plot_narwcalfMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'narwcalfMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**adult, New England**
 ```{r plot_narwadultNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'narwadultNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**calf, New England**
 ```{r plot_narwcalfNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'narwcalfNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Full shelf and farther offshore corresponding to all EPUs and beyond
-
-Temporal scale: Annual 1990 - present
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-
-
-```{r autostats_narw}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Strong evidence exists to suggest that interactions between right whales and both the fixed gear fisheries in the U.S. and Canada and vessel strikes in the U.S. are contributing substantially to the decline of the species [@hayes_north_2018].
@@ -85,18 +155,12 @@ Further, right whale distribution has changed since 2010. New research suggests 
 The UMEs are under investigation and are likely the result of multiple drivers.
 For all large whale UMEs, human interaction appears to have contributed to increased mortalities, although investigations are not complete.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Full shelf and farther offshore corresponding to all EPUs and beyond
 
-**Point of contact**: [Daniel Linden (daniel.linden@noaa.gov), Danielle Cholewiak (danielle.cholewiak@noaa.gov)](mailto:Daniel Linden (daniel.linden@noaa.gov), Danielle Cholewiak (danielle.cholewiak@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::narw`
+Temporal scale: Annual 1990 - present
 
 **Variable definitions**
-
-NARW Abundance 1) Year 2) lower95 = lower 95% confidence interval value in number of animals.  3) Median=median estimate of right whale abundance in number of animals.  
-4) Upper95= upper 95% confidence interval value in number of animals.   5) Mean= mean estimate of right whale abundance in number of animals.   
-6) SD=standard deviation of estimate of right whale abundance in number of animals.  NARW Calves 1) Year 
-2) Tot.Calves = total number of right whale calves born that year in number of animals.
 
 ```{r vars_narw}
 # Pull all var names
@@ -106,20 +170,15 @@ vars <- ecodata::narw |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: Daniel Linden (daniel.linden@noaa.gov), Danielle Cholewiak (danielle.cholewiak@noaa.gov)
 
+**ecodata dataset**: `ecodata::narw`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/narw.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-Source data are available from the New England Aquarium upon request.
-Analysis is based on methods by Pace, Corkeron, and Kraus 2017 [@pace_statespace_2017], as documented most recently by Linden 2025 [@linden_using_2025].
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/narw.html>
 

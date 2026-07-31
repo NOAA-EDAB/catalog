@@ -1,65 +1,105 @@
 # Inshore Survey (Mid Atlantic) {#mab_inshore_survey}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: Biomass time series for aggregate species groups from the NEAMAP inshore bottom trawl surveys conducted from Cape Hatteras to Rhode Island.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: James Gartland, Matt Camisa, Rebecca Peters, Sean Lucey
 
 **Affiliations**: VIMS, Maine
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-Indicators from these inshore surveys are analogous to those produced by the NEFSC trawl survey in the [aggregate survey biomass](https://noaa-edab.github.io/catalog/aggregate_biomass.html) indicator dataset.
+**Indicator Family**: 
 
-## Key Results and Visualizations
-Each survey shows trends by aggregate group.
-
-```{r plot_mab_inshore_surveyMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'MidAtlantic', n = 10)
-ggplotObject
-```
-
-```{r plot_mab_inshore_surveyNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'NewEngland', n = 10)
-ggplotObject
-```
+- [X] Megafauna
 
 
-## Indicator statistics 
-Spatial scale: Nearshore regions of the MAB
+**Indicator Category**:
 
-Temporal scale: Spring and Fall
+- [X] Syntheses of published information
+- [X] Database pull
+
 
 **Synthesis Theme**:
 
 - [X] Multiple System Drivers
 
 
-```{r autostats_mab_inshore_survey}
-# Either from Contributor or ecodata
+```{r download_mab_inshore_survey}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::mab_inshore_survey,
+output_name = 'mab_inshore_survey',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+Indicators from these inshore surveys are analogous to those produced by the NEFSC trawl survey in the [aggregate survey biomass](https://noaa-edab.github.io/catalog/aggregate_biomass.html) indicator dataset.
+
+## Key Results and Visualizations
+Each survey shows trends by aggregate group.
+
+**Mid-Atlantic**
+```{r plot_mab_inshore_surveyMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'mab_inshore_surveyMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England**
+```{r plot_mab_inshore_surveyNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'mab_inshore_surveyNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 The trends in the NEAMAP inshore survey vary compared to the NEFSC survey. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Nearshore regions of the MAB
 
-**Point of contact**: [James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov](mailto:James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov){.email}
-
-**ecodata name**: `ecodata::mab_inshore_survey`
+Temporal scale: Spring and Fall
 
 **Variable definitions**
-
-See variable definitions for `aggregate_biomass`
 
 ```{r vars_mab_inshore_survey}
 # Pull all var names
@@ -69,20 +109,15 @@ vars <- ecodata::mab_inshore_survey |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull
+**Point of contact**: James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov
 
+**ecodata dataset**: `ecodata::mab_inshore_survey`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/mab_inshore_survey.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/mab_inshore_survey.html>
 

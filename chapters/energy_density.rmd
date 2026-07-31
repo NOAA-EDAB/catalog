@@ -1,20 +1,50 @@
 # Forage Fish Energy Density {#energy_density}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 24, 2026*
+
 **Description**: The data presented here are the seasonal (Spring and Fall) energy density (kJ/g wet weight) for eight important forage species: alewife, Atlantic herring, silver hake, northern sand lance, Atlantic mackerel, butterfish, northern shortfin squid, and inshore longfin squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed at the Woods Hole Laboratory to estimate energy density.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Mark Wuenschel, Joseph Warren
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Ecosystem Reorganization
+
+
+```{r download_energy_density}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::energy_density,
+output_name = 'energy_density',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 The energy density of prey, in conjunction with its mass, indicates the total amount of energy passing from lower trophic levels to higher predators. Therefore, the value of forage species to upper trophic levels is a function of their energetic quality and biomass. Fish energy density can vary widely in response to changes in ecosystem productivity and shifting physiological demands, such as metabolic increases due to rising temperatures. Furthermore, energetic variability (often several-fold) can be particularly notable in species that have seasonal energetic cycles related to reproduction, migration, or ontogenetic shifts in energy storage.
 
@@ -25,49 +55,43 @@ The line plots depict the mean energy density (kJ/g wet weight) for eight specie
 
 New in the 2026 SOE forage fish energy density indicator are split-panel bubble plots to illustrate spatiotemporal trends in forage species abundance and energy density across four ecological production units (EPUs): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS). The split-panels provide seasonal comparisons (Spring: left; Fall: right). Catch data from NEFSC bottom trawl surveys were aggregated to derive the mean catch (kg) per representative tow and mean energy density (kJ/g wet weight) for each species-year-season-EPU combination. Bubble size scales with mean catch, while fill intensity represents mean energy density (darker hues indicate higher values).
 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_ED_Figure_GB.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_ED_Figure_GB.png){width=100%}
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_Figure_GOM.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_Figure_GOM.png){width=100%}
 
-![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_Figure_MAB.png){width=100%}
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_Figure_MAB.png){width=100%}
 
+**Mid-Atlantic**
 ```{r plot_energy_densityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_energy_density(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_energy_density(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'energy_densityMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Full shelf and by EPU
-
-Temporal scale: Spring and Fall Bottom Trawl Survey
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_energy_density}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 The nutritional content of forage fish changes seasonally in response to ecosystem conditions, with possible declines in energy density for Atlantic herring and Illex squid relative to the 1980s, but similar energy density for other forage species.
 
 It is important to note/caveat that some of the previous estimates of forage fish energy density (from 1980s and 1990s) were based on very small sample sizes (sometimes 4 individuals). Recent work on Atlantic herring [42] shows that herring energy density was higher in summer (in between the spring and fall surveys reported here) and some summer values from 2021-2023 overlap with previous estimates.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Full shelf and by EPU
 
-**Point of contact**: [Mark Wuenschel (mark.wuenschel@noaa.gov)](mailto:Mark Wuenschel (mark.wuenschel@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::energy_density`
+Temporal scale: Spring and Fall Bottom Trawl Survey
 
 **Variable definitions**
-
-Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 2) Mean energy density (ED; kJ/g wet weight) 
-3) Mean catch per (representative) tow (kg) 4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
 
 ```{r vars_energy_density}
 # Pull all var names
@@ -77,19 +101,19 @@ vars <- ecodata::energy_density |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: Mark Wuenschel (mark.wuenschel@noaa.gov)
 
+**ecodata dataset**: `ecodata::energy_density`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/energy_density.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Email mark.wuenschel@noaa.gov for further information. Data tables are being created to make this readily available soon.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/energy_density.html>
 

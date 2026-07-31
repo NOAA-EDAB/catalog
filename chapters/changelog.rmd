@@ -1,6 +1,25 @@
 # Changelog {.unnumbered}
 
-## catalog 3.0.0 {.unnumbered}
+## catalog v4.0.0 {.unnumbered}
+
+Date: 07/31/2026
+
+### Features {.unnumbered}
+
+- Buttons to download `ecodata` datasets
+- Buttons to download plot data
+- Page status flags
+- Page last modified date
+- Plot headers with arguments
+- Custom theme and page aesthetics
+- Restructured page elements
+
+### Bug Fixes {.unnumbered}
+
+- Corrected invalid `ecodata` URLs
+- Github API pull now handles more than 100 issues
+
+## catalog v3.0.0 {.unnumbered}
 
 Date: 07/16/2026
 

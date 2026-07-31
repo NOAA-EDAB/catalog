@@ -1,68 +1,107 @@
 # Speed and Scale of Offshore Wind Development in the Northeast {#wind_dev_speed}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 24, 2026*
+
 **Description**: The footprint and timeline of offshore wind development in the Northeast by 2030
-
-**Indicator family**: 
-
-- [X] Social
-- [X] Economic
-
 
 **Contributor(s)**: Angela Silva
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
-## Introduction to Indicator
-The data presented here is a timeline of proposed construction in the Northeast of offshore wind development projects to 2030. The lease area color corresponds to the year of proposed development. Project component data (e.g., number of foundations, cable miles, GW, and acreage for each project are described in the table). Areas currently under planning for additional lease areas are outlined in red and totals reflected in the bottom of the table. This information is up to date as of December 2023 and project statistics come from Appendix E3 of the Revolution Wind Final Environmental Impact Statement Table E-1. This indicator does not reflect potential changes to schedules from recently terminated Power Purchase Agreements for some projects (Ocean Wind 1 and 2, Empire Wind 2, and Skipjack Wind).
+**Indicator Family**: 
 
-## Key Results and Visualizations
-The colored chart below also presents the offshore wind development timeline in the Greater Atlantic region with the estimated year that foundations would be constructed (matches the color of the wind areas). These timelines and data estimates are expected to shift, but represent the most recent information available as of July 2023. 
-
-![Speed of offshore wind development](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/Offshore_Wind_Development_V5_NicoleMucci.png){width=100%}
-
-```{r plot_wind_dev_speedMidAtlantic}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_dev_speed(report = 'MidAtlantic')
-ggplotObject
-```
-
-```{r plot_wind_dev_speedNewEngland}
-# Plot indicator
-ggplotObject <- ecodata::plot_wind_dev_speed(report = 'NewEngland')
-ggplotObject
-```
+- [X] Social
+- [X] Economic
 
 
-## Indicator statistics 
-Spatial scale: Greater Atlantic region
+**Indicator Category**:
 
-Temporal scale: NA
+- [X] Syntheses of published information
+
 
 **Synthesis Theme**:
 
 - [x] Multiple System Drivers
 
 
-```{r autostats_wind_dev_speed}
-# Either from Contributor or ecodata
+```{r download_wind_dev_speed}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::wind_dev_speed,
+output_name = 'wind_dev_speed',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
+## Introduction to Indicator
+The data presented here is a timeline of proposed construction in the Northeast of offshore wind development projects to 2030. The lease area color corresponds to the year of proposed development. Project component data (e.g., number of foundations, cable miles, GW, and acreage for each project are described in the table). Areas currently under planning for additional lease areas are outlined in red and totals reflected in the bottom of the table. This information is up to date as of December 2023 and project statistics come from Appendix E3 of the Revolution Wind Final Environmental Impact Statement Table E-1. This indicator does not reflect potential changes to schedules from recently terminated Power Purchase Agreements for some projects (Ocean Wind 1 and 2, Empire Wind 2, and Skipjack Wind).
+
+## Key Results and Visualizations
+The colored chart below also presents the offshore wind development timeline in the Greater Atlantic region with the estimated year that foundations would be constructed (matches the color of the wind areas). These timelines and data estimates are expected to shift, but represent the most recent information available as of July 2023. 
+
+![Speed of offshore wind development](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/Offshore_Wind_Development_V5_NicoleMucci.png){width=100%}
+
+**Mid-Atlantic**
+```{r plot_wind_dev_speedMidAtlantic}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_dev_speed(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_dev_speedMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**New England**
+```{r plot_wind_dev_speedNewEngland}
+# Plot indicator
+ggplotObject <- ecodata::plot_wind_dev_speed(report = 'NewEngland') +
+ggplot2::ggtitle('')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_dev_speedNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
 
 ## Implications
 NA
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Greater Atlantic region
 
-**Point of contact**: [Angela Silva (angela.silva@noaa.gov)](mailto:Angela Silva (angela.silva@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::wind_dev_speed`
+Temporal scale: NA
 
 **Variable definitions**
-
-NA
 
 ```{r vars_wind_dev_speed}
 # Pull all var names
@@ -72,19 +111,15 @@ vars <- ecodata::wind_dev_speed |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
+**Point of contact**: Angela Silva (angela.silva@noaa.gov)
 
+**ecodata dataset**: `ecodata::wind_dev_speed`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/wind_dev_speed.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/wind_dev_speed.html>
 

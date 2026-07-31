@@ -1,20 +1,50 @@
 # Bottom temperature - Seasonal Anomaly {#bottom_temp_model_anom}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
+*Last updated July 23, 2026*
+
 **Description**: The data presented here are seasonal bottom temperature anomalies. This includes seasonal bottom temperature anomalies by each EPU on the Northeast Continental Shelf from observation-based bottom temperature sources as well as the MOM6 ocean model.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Joseph Caracappa, Vincent Saba, Zhuomin Chen, Laura Gruenburg, Andrew Ross
 
 **Affiliations**: NEFSC, GFDL
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r download_bottom_temp_model_anom}
+# Download dataset from ecodata
+try(downloadthis::download_this(
+ecodata::bottom_temp_model_anom,
+output_name = 'bottom_temp_model_anom',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+
 ## Introduction to Indicator
 The raw bottom temperature product is in a horizontal 1/12 degree grid between 1959 and 2023 and is made of daily bottom temperature estimates from:
 
@@ -31,71 +61,135 @@ Here we show the seasonal temperature anomalies in the Mid Atlantic Bight (MAB),
 
 The MOM6 model hindcast does a good job at reproducing seasonal bottom temperature anomalies calculated from GLORYS12 reanalysis data. Because the 1959 through 1992 ROMS was biased corrected using the GLORYS12 dataset, calculating seasonal climatologies using primarily MOM6 data introduces a new, different bias. The differing ability of the model to accurately reproduce bottom temperature during different seasons also likely contributes to the discrepancies between the two time series in the annual bottom temperature plots.
 
+**Mid-Atlantic Bight, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomMABMidAtlanticseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'seasonal', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'seasonal', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_model_anomMABMidAtlanticseasonalGLORYS',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Georges Bank, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomGBNewEnglandseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_model_anomGBNewEnglandseasonalGLORYS',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Gulf of Maine, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomGOMNewEnglandseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_model_anomGOMNewEnglandseasonalGLORYS',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Mid-Atlantic Bight, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomMABMidAtlanticannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'annual', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'annual', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_model_anomMABMidAtlanticannualGLORYS',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Georges Bank, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomGBNewEnglandannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_model_anomGBNewEnglandannualGLORYS',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+**Gulf of Maine, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomGOMNewEnglandannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_model_anomGOMNewEnglandannualGLORYS',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
+<br>
 
+## Implications
+Bottom temperature is an important driver for benthic and demersal species growth, metabolism, and reproduction. Changes in seasonal bottom temperature have implications for species' phenology. Data from ocean models is an important tool that we can use to understand changes to the marine environment. The MOM6 regional model for the Northwest Atlantic hindcast can provide consistent data in space and time where gaps exist in observations. Model data can also be used to forecast future conditions. The ability of MOM6 to reproduce seasonal temperature anomalies in these EPUs increases confidence in the model.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: annual-seasonal
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_bottom_temp_model_anom}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Bottom temperature is an important driver for benthic and demersal species growth, metabolism, and reproduction. Changes in seasonal bottom temperature have implications for species' phenology. Data from ocean models is an important tool that we can use to understand changes to the marine environment. The MOM6 regional model for the Northwest Atlantic hindcast can provide consistent data in space and time where gaps exist in observations. Model data can also be used to forecast future conditions. The ability of MOM6 to reproduce seasonal temperature anomalies in these EPUs increases confidence in the model.
-
-## Get the data
-
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
-
-**ecodata name**: `ecodata::bottom_temp_model_anom`
-
 **Variable definitions**
-
-Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) Subarea: EPU name 
-Source:  ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-bt_temp : mean bottom temperature for each year/season across entire EPU ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
 
 ```{r vars_bottom_temp_model_anom}
 # Pull all var names
@@ -105,20 +199,15 @@ vars <- ecodata::bottom_temp_model_anom |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+**Point of contact**: joseph.caracappa@noaa.gov
 
+**ecodata dataset**: `ecodata::bottom_temp_model_anom`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/bottom_temp_model_anom.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/bottom_temp_model_anom.html>
 
