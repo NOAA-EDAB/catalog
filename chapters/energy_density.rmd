@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 24, 2026*
+*Last updated August 13, 2026*
 
 **Description**: The data presented here are the seasonal (Spring and Fall) energy density (kJ/g wet weight) for eight important forage species: alewife, Atlantic herring, silver hake, northern sand lance, Atlantic mackerel, butterfish, northern shortfin squid, and inshore longfin squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed at the Woods Hole Laboratory to estimate energy density.
 
@@ -55,11 +55,11 @@ The line plots depict the mean energy density (kJ/g wet weight) for eight specie
 
 New in the 2026 SOE forage fish energy density indicator are split-panel bubble plots to illustrate spatiotemporal trends in forage species abundance and energy density across four ecological production units (EPUs): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS). The split-panels provide seasonal comparisons (Spring: left; Fall: right). Catch data from NEFSC bottom trawl surveys were aggregated to derive the mean catch (kg) per representative tow and mean energy density (kJ/g wet weight) for each species-year-season-EPU combination. Bubble size scales with mean catch, while fill intensity represents mean energy density (darker hues indicate higher values).
 
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_ED_Figure_GB.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/SOE_2026_ED_Figure_GB.png){width=100%}
 
-![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_Figure_GOM.png){width=100%}
+![Figure 2](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/SOE_2026_Figure_GOM.png){width=100%}
 
-![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_Figure_MAB.png){width=100%}
+![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/SOE_2026_Figure_MAB.png){width=100%}
 
 **Mid-Atlantic**
 ```{r plot_energy_densityMidAtlantic}
