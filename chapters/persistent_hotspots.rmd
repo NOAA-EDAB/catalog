@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 23, 2026*
+*Last updated August 13, 2026*
 
 **Description**: Integrated persistent annual hotspots derived from at-sea observations of seabirds, cetaceans and sea turtles collected on systematic ship and aerial surveys
 
@@ -34,9 +34,9 @@ library(downloadthis)
 Locations of high densities through time of seabirds, marine mammals, and sea turtles
 
 ## Key Results and Visualizations
-![North Atlantic Right Whale hotspots](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/NARW_hotspots_final_2024.jpg){width=100%}
+![North Atlantic Right Whale hotspots](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/NARW_hotspots_final_2024.jpg){width=100%}
 
-![Seabirds, Turtles, & marine mammals hotspots](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2023_birds_mammals_turtles_2024.png){width=100%}
+![Seabirds, Turtles, & marine mammals hotspots](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/SOE_2023_birds_mammals_turtles_2024.png){width=100%}
 
 ## Implications
 Persistent hotpots through time identify places where seabirds, marine mammals and sea turtles frequently aggregate to feed, and may indicate locations of seasonal and annual resilience. Individual hotspot richness maps represent annual persistent hotspots of 71 species and also common taxa challenging to identify to the species level on at-sea surveys but whose abundance and spatial patterns significantly contribute to richness and diversity on the Atlantic EEZ. The integrated maps represent very high densities and very high persistence; however, one or both parameters can be adjusted to identify other important locations, for example, to reveal areas of high density and moderate persistence.
