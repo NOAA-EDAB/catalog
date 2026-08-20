@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 24, 2026*
+*Last updated August 13, 2026*
 
 **Description**: The presented data are weekly averages of the partial pressure of carbon dioxide (pCO2) and the saturation state of calcium carbonate as aragonite (Omega-a), measured by the Gulf of Maine coastal buoy cooperatively operated by NOAA’s Pacific Marine Ecological Laboratory (PMEL) and the University of New Hampshire’s Ocean Process Analysis Laboratory. The buoy is located at 43.02 degrees North and 70.54 degrees West. pCO2 was measured directly, while Omega-a was calculated from observed pCO2, water temperature, salinity, and total alkalinity (modeled from temperature, salinity and month, similar to McGarry et al. 2021[@mcgarry_multiple_2021]). The weekly averages from 2025 are depicted against the climatological bounds from observations at this site between 2006-2024.
 
@@ -35,9 +35,9 @@ library(downloadthis)
 The pCO2 represents the partial pressure of carbon dioxide resulting from the combination of water mass mixing, air-sea exchange, and biogeochemical processes.  Omega-a represents the saturation of calcium carbonate, an important mineral for many shell-building marine species and commonly-sed indicator of ocean acidification condition.
 
 ## Key Results and Visualizations
-![](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_gom_acidification_pCO2.png){width=100%}
+![](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/SOE_2026_gom_acidification_pCO2.png){width=100%}
 
-![](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_gom_acidification_omega.png){width=100%}
+![](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/SOE_2026_gom_acidification_omega.png){width=100%}
 
 In 2025, pCO2 followed the general pattern of elevated levels in the fall and winter and reduced levels in the spring and early summer. A data gap is present when the buoy was removed for service.  Omega-a reflected the pCO2, with lower levels in the fall and winter and elevated levels in spring and early summer. This pattern is generally due to a combination of seasonal temperature shifts and the cyclical spring phytoplankton bloom. However, the levels of pCO2 at the beginning and end of 2025 were generally above the climatological mean, and Omega-a was similarly low. This pattern was also seen in 2024; however, the salinity in 2025 was not abnormally low as in 2024. This may indicate that other factors are contributing to the higher pCO2 and lower Omega-a in the early and late stages of both years.
 
