@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 23, 2026*
+*Last updated August 13, 2026*
 
 **Description**: Synthesis of noteworthy observations reported in 2024 across the Northeast U.S region. To report a noteworthy observation please contact: northeast.ecosystem.highlights@noaa.gov
 
@@ -49,19 +49,19 @@ This synthesis intends to provide a record of noteworthy observations reported i
 Late 2023 and early 2024 observations indicate movement of cooler and fresher water into the Northwest Atlantic [@record_early_2024], although there are seasonal and local exceptions to this pattern. Anomalously cold (Fig. 1) and low salinity conditions were recorded throughout the Northeast Shelf and were widespread across the Slope Sea for much of the year. These cooler and fresher conditions are linked to the southward movement of the eastern portion of the [Gulf Stream](https://noaa-edab.github.io/catalog/gsi.html) and possibly an increased influx of Labrador Slope and Scotian Shelf water into the system (@goncalves_neto_changes_2021).
 
 ![Figure 1. February 2024 sea surface temperature difference compared to the February 2000-2020 long-term mean from the
-NOAA Advanced Clear-Sky Processor for Ocean (ACSPO) Super-collated SST.](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/Feb2024-SST-ANOM_KHyde_2025.png){width=100%}
+NOAA Advanced Clear-Sky Processor for Ocean (ACSPO) Super-collated SST.](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/report_images/Feb2024-SST-ANOM_KHyde_2025.png){width=100%}
 
 The negative 2024 Gulf Stream Index value indicates that the position of the Gulf Stream was south of its mean position.  This is mainly due to the southward movement of the eastern Gulf Stream between 64° and 55°W (Fig. 2a). The western part of the Gulf Stream, however, maintained its relatively northward position (Fig. 2b). The number of [warm core rings](https://noaa-edab.github.io/catalog/wcr.html?q=warm%20#wcr) formed in 2023 (17) and 2024 (23) were well below the 2000-2017 average of 33 and closer to 1980 to 1999 average of 18 (@gangopadhyay_observed_2019). In 2024, most warm core rings were small and short lived, lasting for only 1 to 2 weeks. Most of the rings formed east of the seamounts chain and were reabsorbed by the Gulf Stream before reaching the Northeast Shelf Break. 
 
-![](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/GSI_2025.png){width=100%}
+![](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/report_images/GSI_2025.png){width=100%}
 
-![Figure 2. Index representing changes in the location of the north wall of a) the Gulf Stream between 74 and 55 degrees west and b) the Western Gulf Stream (between 64 and 55 degrees W). Positive values represent a more northerly Gulf Stream position, with increasing trend (orange).](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/wGSI_2025.png){width=100%}
+![Figure 2. Index representing changes in the location of the north wall of a) the Gulf Stream between 74 and 55 degrees west and b) the Western Gulf Stream (between 64 and 55 degrees W). Positive values represent a more northerly Gulf Stream position, with increasing trend (orange).](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/report_images/wGSI_2025.png){width=100%}
 
 In 2023, Labrador Slope water accounted for more than 50% of the [source water](https://noaa-edab.github.io/catalog/slopewater.html) entering the Gulf of Maine through the Northeast Channel (Fig. 3); data are still being processed for 2024. Colder, fresher water detected deep in the Jordan Basin for the [first half of 2024](https://noaa-edab.github.io/catalog/observation_synthesis_2024.html) suggests an increased influx of Labrador Slope and Scotian Shelf water (@record_early_2024), which resulted in colder and fresher conditions throughout the Northwest Atlantic and contributed to the increased size and colder temperatures of the Mid-Atlantic [Cold Pool](https://noaa-edab.github.io/catalog/cold_pool.html).
 
 ![Figure 3. The proportion of Warm Slope Water (WSW) and Labrador Slope Water (LSW) enter the Gulf of Maine through
 the Northeast Channel. The orange and teal dashed lines represent the long-term proportion averages for the WSW and
-LSW respectively.](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/SlopewaterNE_2025.png){width=100%}
+LSW respectively.](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/report_images/SlopewaterNE_2025.png){width=100%}
 
 ##### Northeast Shelf and Local Phenomena
 The influx of the northern waters is likely linked to multiple observations across the Northeast Shelf including the uncommon presence of Arctic Calanus zooplankton species in the Gulf of Maine, delayed migration of many species, and redistribution of some species. 
@@ -74,14 +74,14 @@ During the summer months there were multiple prolonged upwelling events that bro
 
 ![Figure 4. An OLCI Sentinel 3A true color image with enhanced contrast captured on July 2, 2024. Coccolithophores shed
 their coccolith plates during the later stages of the bloom cycle, which results in the milky turquoise water color (Image
-credit: NOAA STAR, OCView and Ocean Color Science Team).](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/20240702_Long_Island_algae_bloom_KHyde_2025.png){width=100%}
+credit: NOAA STAR, OCView and Ocean Color Science Team).](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/report_images/20240702_Long_Island_algae_bloom_KHyde_2025.png){width=100%}
 
 Summer bottom [ocean acidification (OA)](https://noaa-edab.github.io/catalog/ocean_acidification.html) risk in the Mid-Atlantic was the highest recorded since sampling began in 2007. High OA risk is measured as low aragonite saturation state(
 Ω). Similarly, the winter/early spring [Gulf of Maine surface OA risk](https://noaa-edab.github.io/catalog/gom_acidification.html) was significantly above the climatological average and near the sensitivity levels for cod (Ω&lt;1.19) and lobster (Ω&lt;1.09) (Fig. 5). These observations were likely driven by the greater volume of fresher, less-buffered Labrador Slope water entering the Gulf of Maine and Mid-Atlantic, as well as cooler conditions. The 2023 and 2024 high summer OA risk has increased the extent of potentially unfavorable habitat for Atlantic sea scallops (Ω&lt;1.1) and longfin squid (Ω&lt;0.96). Additionally, for the first time, high OA risk conditions were observed outside of summer (fall for both species and spring for Atlantic sea scallops).
 
 ![Figure 5. Weekly average surface 1) partial pressure of carbon dioxide (pCO2) and b) aragonite saturation state (
 Ω
-a) measured at the long-term buoy location in the Gulf of Maine at 43.02 N and 70.54 W.](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/Hunt_WBD_2024_pCO2_OMa_Weekly_Climatology-ChrisH_2025.png){width=100%}
+a) measured at the long-term buoy location in the Gulf of Maine at 43.02 N and 70.54 W.](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/report_images/Hunt_WBD_2024_pCO2_OMa_Weekly_Climatology-ChrisH_2025.png){width=100%}
 
 ##### Chesapeake Bay
 
