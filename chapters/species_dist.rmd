@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 23, 2026*
+*Last updated August 13, 2026*
 
 **Description**: Species mean depth, along-shelf distance, and distance to coastline
 
@@ -59,7 +59,7 @@ Published distribution metrics for highly migratory species are also available f
 
 20 of 22 modeled tuna stocks had significant poleward shifts in their gravity center and/or one of their distribution limits. In the North Atlantic, albacore and bluefin tuna had modeled habitat shift northward [@erauskin-extramiana_large-scale_2019]. Species distribution shifts have been noted for several highly migratory species, including sharks, billfish and tunas between 2002 and 2019 (Fig. 1) [@crear_climate-influenced_2023].
 
-![Figure 1. The median location of catch each year for albacore tuna (a), bigeye tuna (b), large bluefin tuna (c), small bluefin tuna (d), skipjack tuna (e), yellowfin tuna (f), blue shark (g), shortfin mako shark (h), thresher shark (i), blue marlin (j), swordfish (k), and white marlin (l). The color of the dot indicates the year, and the error bars represent the upper and lower quartiles for a given year. To reduce overlap among median catch locations, a small jitter was added to the median latitude and longitude when appropriate. Source: reprinted from Crear et al. 2023 (Fig 3)](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/LPSFig_Spatial_HighRes-JenCudney_2025.png){width=100%}
+![Figure 1. The median location of catch each year for albacore tuna (a), bigeye tuna (b), large bluefin tuna (c), small bluefin tuna (d), skipjack tuna (e), yellowfin tuna (f), blue shark (g), shortfin mako shark (h), thresher shark (i), blue marlin (j), swordfish (k), and white marlin (l). The color of the dot indicates the year, and the error bars represent the upper and lower quartiles for a given year. To reduce overlap among median catch locations, a small jitter was added to the median latitude and longitude when appropriate. Source: reprinted from Crear et al. 2023 (Fig 3)](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/report_images/LPSFig_Spatial_HighRes-JenCudney_2025.png){width=100%}
 
 *NEFSC bottom trawl captured fish `(ecodata::species_dist)`*
 
