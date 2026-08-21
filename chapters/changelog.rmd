@@ -1,5 +1,13 @@
 # Changelog {.unnumbered}
 
+## catalog v4.0.1 {.unnumbered}
+
+Date: 08/21/2026
+
+### Bug Fixes {.unnumbered}
+
+- Corrected image URLs pointing to deprecated `ecodata` folder
+
 ## catalog v4.0.0 {.unnumbered}
 
 Date: 07/31/2026
