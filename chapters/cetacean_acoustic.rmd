@@ -8,7 +8,7 @@ library(downloadthis)
 
 <a href="https://noaa-edab.github.io/catalog/page_status.html#under-construction" class="btn btn-warning button_small"><i class="fas fa-hard-hat"></i> Under Construction</a>
 
-*Last updated July 24, 2026*
+*Last updated August 13, 2026*
 
 **Description**: Passive acoustic monitoring (PAM) is a non-invasive method for studying cetaceans, relying on the detection of the unique vocalizations that cetaceans produce. PAM provides continuous sampling effort in areas that are otherwise difficult to access and provides information on multiple species simultaneously. The resulting long-term, robust datasets allow for insights into species distributions, behavior, and habitat use. Furthermore, PAM can be used from a management perspective to implement risk mitigation efforts, assess the cumulative impacts of stressors, and evaluate potential behavioral and distributional changes resulting from climate change or anthropogenic activity.
 
@@ -51,10 +51,10 @@ In the Gulf of Maine, we examined the weekly acoustic presence of eight cetacean
 
 ## Key Results and Visualizations
 This figure summarizes the weekly acoustic presence of eight cetacean species and one cetacean family in the Gulf of Maine, derived from data collected across four years (2019-2023) and thirty recording sites.
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_cetacean_acoustic_GOM.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/SOE_2026_cetacean_acoustic_GOM.png){width=100%}
 
 This figure summarizes the weekly acoustic presence of six baleen whale species in the Mid-Atlantic Bight, derived from data collected across two years (2022-2024) and thirteen recording sites.
-![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/workshop/images/SOE_2026_cetacean_acoustic_MAB.png){width=100%}
+![Figure 1](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/SOE_2026_cetacean_acoustic_MAB.png){width=100%}
 
 ## Implications
 Acoustic summaries show that the Gulf of Maine and Mid-Atlantic Bight are important habitats for cetaceans, with many species detected year-round. Peak acoustic presence varied by species/family, with all groups exhibiting seasonal presence patterns. More fine-scale analyses reveal interannual and subregional differences in cetacean acoustic presence, highlighting the dynamic nature of the region.

@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 23, 2026*
+*Last updated August 13, 2026*
 
 **Description**: Shifts in the timing of life-cycle events are a risk to meeting seasonal and temporal management objectives.
 
@@ -40,7 +40,7 @@ Migration timing of some tuna and large whale species has changed. For example, 
 
 @crear_climate-influenced_2023 analyzed the timing of when the first 25% of intercepts occurred by year and state for recreationally important HMS between 2019 and 2022. Bigeye tuna were caught in recreational fisheries 50 days earlier (Fig 1a); small and large bluefin intercepted in Massachusetts were caught 38 and 80 days earlier (Fig 1b), respectively; blue sharks in Connecticut were captured 66 days earlier (Fig 1e); and blue marlin in New York were captured 27 days earlier (Fig 1g).
 
-![Figure 1. Raw and predicted values for day of the year when 25% of intercepts occurred for each year for highly migratory species (HMS) where year was significant: Bigeye tuna (a), large bluefin tuna (b), small bluefin tuna (c), skipjack tuna (d), blue shark (e), shortfin mako (f), and blue marlin (g). Dashed lines indicate raw day-of-year values each year, whereas solid lines indicate the predicted day-of-year values. Plots where only black lines exist indicates there was no significant interaction between year and state intercept (a,d). For all other plots, colors represent the raw and predicted day-of-year values for each state for that species. Abbreviated states are CT, Connecticut; DE, Delaware; MA, Massachusetts; MD, Maryland; ME, Maine; NH, New Hampshire; NJ, New Jersey; NY, New York; RI, Rhode Island; VA, Virginia. Source: reprinted from Crear et al. 2023 (Fig 5)](https://github.com/NOAA-EDAB/ecodata/raw/dev/data-raw/workshop/images/multispecies_lower_timing-JenCudney_2025.png){width=100%}
+![Figure 1. Raw and predicted values for day of the year when 25% of intercepts occurred for each year for highly migratory species (HMS) where year was significant: Bigeye tuna (a), large bluefin tuna (b), small bluefin tuna (c), skipjack tuna (d), blue shark (e), shortfin mako (f), and blue marlin (g). Dashed lines indicate raw day-of-year values each year, whereas solid lines indicate the predicted day-of-year values. Plots where only black lines exist indicates there was no significant interaction between year and state intercept (a,d). For all other plots, colors represent the raw and predicted day-of-year values for each state for that species. Abbreviated states are CT, Connecticut; DE, Delaware; MA, Massachusetts; MD, Maryland; ME, Maine; NH, New Hampshire; NJ, New Jersey; NY, New York; RI, Rhode Island; VA, Virginia. Source: reprinted from Crear et al. 2023 (Fig 5)](https://github.com/NOAA-EDAB/ecodata/raw/main/data-raw/report_images/multispecies_lower_timing-JenCudney_2025.png){width=100%}
 
 
 In Cape Cod Bay, peak spring habitat use by right and humpback whales has shifted 18-19 days later over time. [@pendleton_decadal-scale_2022] 
